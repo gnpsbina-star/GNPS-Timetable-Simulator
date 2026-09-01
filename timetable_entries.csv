@@ -1,0 +1,1987 @@
+entry_id,class_name,class_teacher,day,period_index,period_name,period_time,raw_value,subject,teacher
+1,CLASS 1 Rose,Swati Napit,Monday,0,Morning Assembly,07:50 to 08:20,Prayer,Prayer,
+2,CLASS 1 Rose,Swati Napit,Monday,1,1st Period,08:30 to 9:15,Yoga_Pradeep,Yoga,Pradeep
+3,CLASS 1 Rose,Swati Napit,Monday,2,2nd Period,9:15 to 10:00,Hindi_Swati,Hindi,Swati Napit
+4,CLASS 1 Rose,Swati Napit,Monday,3,3rd Period,10:00 to 10:45,Distation&Cursive_Swati,Distation&Cursive,Swati Napit
+5,CLASS 1 Rose,Swati Napit,Monday,4,Lunch,10:45 to 11:05,Lunch _ Swati Napit,Lunch,Swati Napit
+6,CLASS 1 Rose,Swati Napit,Monday,5,4th Period,11:05 to 11:50,Eng_Swati,Eng,Swati Napit
+7,CLASS 1 Rose,Swati Napit,Monday,6,5th Period,11:50 to 12:30,Art & Craft_Swati,Art & Craft,Swati Napit
+8,CLASS 1 Rose,Swati Napit,Monday,7,6th Period,12:30 to 1:10,EVS_Swati,EVS,Swati Napit
+9,CLASS 1 Rose,Swati Napit,Tuesday,0,Morning Assembly,07:50 to 08:20,CYCLE TEST,CYCLE TEST,
+10,CLASS 1 Rose,Swati Napit,Tuesday,1,1st Period,08:30 to 9:15,Eng_Swati,Eng,Swati Napit
+11,CLASS 1 Rose,Swati Napit,Tuesday,2,2nd Period,9:15 to 10:00,Hindi_Swati,Hindi,Swati Napit
+12,CLASS 1 Rose,Swati Napit,Tuesday,3,3rd Period,10:00 to 10:45,Dance_Akash,Dance,Akash
+13,CLASS 1 Rose,Swati Napit,Tuesday,4,Lunch,10:45 to 11:05,Lunch _ Swati Napit,Lunch,Swati Napit
+14,CLASS 1 Rose,Swati Napit,Tuesday,5,4th Period,11:05 to 11:50,Game_Komal,Game,Komal
+15,CLASS 1 Rose,Swati Napit,Tuesday,6,5th Period,11:50 to 12:30,Math_Swati,Math,Swati Napit
+16,CLASS 1 Rose,Swati Napit,Tuesday,7,6th Period,12:30 to 1:10,EVS_Swati,EVS,Swati Napit
+17,CLASS 1 Rose,Swati Napit,Wednesday,0,Morning Assembly,07:50 to 08:20,Prayer,Prayer,
+18,CLASS 1 Rose,Swati Napit,Wednesday,1,1st Period,08:30 to 9:15,Eng_Swati,Eng,Swati Napit
+19,CLASS 1 Rose,Swati Napit,Wednesday,2,2nd Period,9:15 to 10:00,Hindi_Swati,Hindi,Swati Napit
+20,CLASS 1 Rose,Swati Napit,Wednesday,3,3rd Period,10:00 to 10:45,Distation&Cursive_Swati,Distation&Cursive,Swati Napit
+21,CLASS 1 Rose,Swati Napit,Wednesday,4,Lunch,10:45 to 11:05,Lunch _ Swati Napit,Lunch,Swati Napit
+22,CLASS 1 Rose,Swati Napit,Wednesday,5,4th Period,11:05 to 11:50,Eng Read_Swati,Eng Read,Swati Napit
+23,CLASS 1 Rose,Swati Napit,Wednesday,6,5th Period,11:50 to 12:30,Math_Swati,Math,Swati Napit
+24,CLASS 1 Rose,Swati Napit,Wednesday,7,6th Period,12:30 to 1:10,EVS_Swati,EVS,Swati Napit
+25,CLASS 1 Rose,Swati Napit,Thursday,0,Morning Assembly,07:50 to 08:20,Prayer,Prayer,
+26,CLASS 1 Rose,Swati Napit,Thursday,1,1st Period,08:30 to 9:15,IT_Swati Napit,IT,Swati Napit
+27,CLASS 1 Rose,Swati Napit,Thursday,2,2nd Period,9:15 to 10:00,Hindi_Swati,Hindi,Swati Napit
+28,CLASS 1 Rose,Swati Napit,Thursday,3,3rd Period,10:00 to 10:45,Distation&Cursive_Swati,Distation&Cursive,Swati Napit
+29,CLASS 1 Rose,Swati Napit,Thursday,4,Lunch,10:45 to 11:05,Lunch _ Swati Napit,Lunch,Swati Napit
+30,CLASS 1 Rose,Swati Napit,Thursday,5,4th Period,11:05 to 11:50,Eng_Swati,Eng,Swati Napit
+31,CLASS 1 Rose,Swati Napit,Thursday,6,5th Period,11:50 to 12:30,Math_Swati,Math,Swati Napit
+32,CLASS 1 Rose,Swati Napit,Thursday,7,6th Period,12:30 to 1:10,EVS_Swati,EVS,Swati Napit
+33,CLASS 1 Rose,Swati Napit,Friday,0,Morning Assembly,07:50 to 08:20,CYCLE TEST,CYCLE TEST,
+34,CLASS 1 Rose,Swati Napit,Friday,1,1st Period,08:30 to 9:15,Eng Read_Swati,Eng Read,Swati Napit
+35,CLASS 1 Rose,Swati Napit,Friday,2,2nd Period,9:15 to 10:00,Hindi Read_Swati,Hindi Read,Swati Napit
+36,CLASS 1 Rose,Swati Napit,Friday,3,3rd Period,10:00 to 10:45,Distation&Cursive_Swati,Distation&Cursive,Swati Napit
+37,CLASS 1 Rose,Swati Napit,Friday,4,Lunch,10:45 to 11:05,Lunch _ Swati Napit,Lunch,Swati Napit
+38,CLASS 1 Rose,Swati Napit,Friday,5,4th Period,11:05 to 11:50,GK_Swati,GK,Swati Napit
+39,CLASS 1 Rose,Swati Napit,Friday,6,5th Period,11:50 to 12:30,Math_Swati,Math,Swati Napit
+40,CLASS 1 Rose,Swati Napit,Friday,7,6th Period,12:30 to 1:10,Art & Craft_Swati,Art & Craft,Swati Napit
+41,CLASS 1 Rose,Swati Napit,Saturday,0,Morning Assembly,07:50 to 08:20,CCA,CCA,
+42,CLASS 1 Rose,Swati Napit,Saturday,1,1st Period,08:30 to 9:15,IT_Swati Napit,IT,Swati Napit
+43,CLASS 1 Rose,Swati Napit,Saturday,2,2nd Period,9:15 to 10:00,Hindi Read_Swati,Hindi Read,Swati Napit
+44,CLASS 1 Rose,Swati Napit,Saturday,3,3rd Period,10:00 to 10:45,Distation&Cursive_Swati,Distation&Cursive,Swati Napit
+45,CLASS 1 Rose,Swati Napit,Saturday,4,Lunch,10:45 to 11:05,Lunch _ Swati Napit,Lunch,Swati Napit
+46,CLASS 1 Rose,Swati Napit,Saturday,5,4th Period,11:05 to 11:50,GK_Swati,GK,Swati Napit
+47,CLASS 1 Rose,Swati Napit,Saturday,6,5th Period,11:50 to 12:30,,,
+48,CLASS 1 Rose,Swati Napit,Saturday,7,6th Period,12:30 to 1:10,,,
+49,CLASS 1 Marigold,Anjali Jain,Monday,0,Morning Assembly,07:50 to 08:20,Prayer,Prayer,
+50,CLASS 1 Marigold,Anjali Jain,Monday,1,1st Period,08:30 to 9:15,Eng_Anjali Jain,Eng,Anjali Jain
+51,CLASS 1 Marigold,Anjali Jain,Monday,2,2nd Period,9:15 to 10:00,Hindi_Anjali Jain,Hindi,Anjali Jain
+52,CLASS 1 Marigold,Anjali Jain,Monday,3,3rd Period,10:00 to 10:45,Distation&Cursive_Anjali Jain,Distation&Cursive,Anjali Jain
+53,CLASS 1 Marigold,Anjali Jain,Monday,4,Lunch,10:45 to 11:05,Lunch _ Anjali Jain,Lunch,Anjali Jain
+54,CLASS 1 Marigold,Anjali Jain,Monday,5,4th Period,11:05 to 11:50,GK_Anjali Jain,GK,Anjali Jain
+55,CLASS 1 Marigold,Anjali Jain,Monday,6,5th Period,11:50 to 12:30,Yoga_Pradeep,Yoga,Pradeep
+56,CLASS 1 Marigold,Anjali Jain,Monday,7,6th Period,12:30 to 1:10,EVS_Anjali Jain,EVS,Anjali Jain
+57,CLASS 1 Marigold,Anjali Jain,Tuesday,0,Morning Assembly,07:50 to 08:20,CYCLE TEST,CYCLE TEST,
+58,CLASS 1 Marigold,Anjali Jain,Tuesday,1,1st Period,08:30 to 9:15,Eng_Anjali Jain,Eng,Anjali Jain
+59,CLASS 1 Marigold,Anjali Jain,Tuesday,2,2nd Period,9:15 to 10:00,Hindi_Anjali Jain,Hindi,Anjali Jain
+60,CLASS 1 Marigold,Anjali Jain,Tuesday,3,3rd Period,10:00 to 10:45,Distation&Cursive_Anjali Jain,Distation&Cursive,Anjali Jain
+61,CLASS 1 Marigold,Anjali Jain,Tuesday,4,Lunch,10:45 to 11:05,Lunch _ Anjali Jain,Lunch,Anjali Jain
+62,CLASS 1 Marigold,Anjali Jain,Tuesday,5,4th Period,11:05 to 11:50,GK_Anjali Jain,GK,Anjali Jain
+63,CLASS 1 Marigold,Anjali Jain,Tuesday,6,5th Period,11:50 to 12:30,Game_Komal,Game,Komal
+64,CLASS 1 Marigold,Anjali Jain,Tuesday,7,6th Period,12:30 to 1:10,EVS_Anjali Jain,EVS,Anjali Jain
+65,CLASS 1 Marigold,Anjali Jain,Wednesday,0,Morning Assembly,07:50 to 08:20,Prayer,Prayer,
+66,CLASS 1 Marigold,Anjali Jain,Wednesday,1,1st Period,08:30 to 9:15,Eng_Anjali Jain,Eng,Anjali Jain
+67,CLASS 1 Marigold,Anjali Jain,Wednesday,2,2nd Period,9:15 to 10:00,Hindi_Anjali Jain,Hindi,Anjali Jain
+68,CLASS 1 Marigold,Anjali Jain,Wednesday,3,3rd Period,10:00 to 10:45,Distation&Cursive_Anjali Jain,Distation&Cursive,Anjali Jain
+69,CLASS 1 Marigold,Anjali Jain,Wednesday,4,Lunch,10:45 to 11:05,Lunch _ Anjali Jain,Lunch,Anjali Jain
+70,CLASS 1 Marigold,Anjali Jain,Wednesday,5,4th Period,11:05 to 11:50,Math_Anjali Jain,Math,Anjali Jain
+71,CLASS 1 Marigold,Anjali Jain,Wednesday,6,5th Period,11:50 to 12:30,Art & Craft_Anjali Jain,Art & Craft,Anjali Jain
+72,CLASS 1 Marigold,Anjali Jain,Wednesday,7,6th Period,12:30 to 1:10,EVS_Anjali Jain,EVS,Anjali Jain
+73,CLASS 1 Marigold,Anjali Jain,Thursday,0,Morning Assembly,07:50 to 08:20,Prayer,Prayer,
+74,CLASS 1 Marigold,Anjali Jain,Thursday,1,1st Period,08:30 to 9:15,Eng_Anjali Jain,Eng,Anjali Jain
+75,CLASS 1 Marigold,Anjali Jain,Thursday,2,2nd Period,9:15 to 10:00,Hindi_Anjali Jain,Hindi,Anjali Jain
+76,CLASS 1 Marigold,Anjali Jain,Thursday,3,3rd Period,10:00 to 10:45,Distation&Cursive_Anjali Jain,Distation&Cursive,Anjali Jain
+77,CLASS 1 Marigold,Anjali Jain,Thursday,4,Lunch,10:45 to 11:05,Lunch _ Anjali Jain,Lunch,Anjali Jain
+78,CLASS 1 Marigold,Anjali Jain,Thursday,5,4th Period,11:05 to 11:50,Math_Anjali Jain,Math,Anjali Jain
+79,CLASS 1 Marigold,Anjali Jain,Thursday,6,5th Period,11:50 to 12:30,Math_Anjali Jain,Math,Anjali Jain
+80,CLASS 1 Marigold,Anjali Jain,Thursday,7,6th Period,12:30 to 1:10,EVS_Anjali Jain,EVS,Anjali Jain
+81,CLASS 1 Marigold,Anjali Jain,Friday,0,Morning Assembly,07:50 to 08:20,CYCLE TEST,CYCLE TEST,
+82,CLASS 1 Marigold,Anjali Jain,Friday,1,1st Period,08:30 to 9:15,Eng Read_Anjali Jain,Eng Read,Anjali Jain
+83,CLASS 1 Marigold,Anjali Jain,Friday,2,2nd Period,9:15 to 10:00,Hindi Read_Anjali Jain,Hindi Read,Anjali Jain
+84,CLASS 1 Marigold,Anjali Jain,Friday,3,3rd Period,10:00 to 10:45,Dance_Akash,Dance,Akash
+85,CLASS 1 Marigold,Anjali Jain,Friday,4,Lunch,10:45 to 11:05,Lunch _ Anjali Jain,Lunch,Anjali Jain
+86,CLASS 1 Marigold,Anjali Jain,Friday,5,4th Period,11:05 to 11:50,IT_Anjali Jain,IT,Anjali Jain
+87,CLASS 1 Marigold,Anjali Jain,Friday,6,5th Period,11:50 to 12:30,Math_Anjali Jain,Math,Anjali Jain
+88,CLASS 1 Marigold,Anjali Jain,Friday,7,6th Period,12:30 to 1:10,Art & Craft_Anjali Jain,Art & Craft,Anjali Jain
+89,CLASS 1 Marigold,Anjali Jain,Saturday,0,Morning Assembly,07:50 to 08:20,CCA,CCA,
+90,CLASS 1 Marigold,Anjali Jain,Saturday,1,1st Period,08:30 to 9:15,Eng Read_Anjali Jain,Eng Read,Anjali Jain
+91,CLASS 1 Marigold,Anjali Jain,Saturday,2,2nd Period,9:15 to 10:00,Hindi Read_Anjali Jain,Hindi Read,Anjali Jain
+92,CLASS 1 Marigold,Anjali Jain,Saturday,3,3rd Period,10:00 to 10:45,Distation&Cursive_Anjali Jain,Distation&Cursive,Anjali Jain
+93,CLASS 1 Marigold,Anjali Jain,Saturday,4,Lunch,10:45 to 11:05,Lunch _ Anjali Jain,Lunch,Anjali Jain
+94,CLASS 1 Marigold,Anjali Jain,Saturday,5,4th Period,11:05 to 11:50,IT_Anjali Jain,IT,Anjali Jain
+95,CLASS 1 Marigold,Anjali Jain,Saturday,6,5th Period,11:50 to 12:30,,,
+96,CLASS 1 Marigold,Anjali Jain,Saturday,7,6th Period,12:30 to 1:10,,,
+97,CLASS 1 Lily,Raji Jain,Monday,0,Morning Assembly,07:50 to 08:20,Prayer,Prayer,
+98,CLASS 1 Lily,Raji Jain,Monday,1,1st Period,08:30 to 9:15,Eng_Raji,Eng,Raji Jain
+99,CLASS 1 Lily,Raji Jain,Monday,2,2nd Period,9:15 to 10:00,Hindi_Raji,Hindi,Raji Jain
+100,CLASS 1 Lily,Raji Jain,Monday,3,3rd Period,10:00 to 10:45,Distation&Cursive_Raji,Distation&Cursive,Raji Jain
+101,CLASS 1 Lily,Raji Jain,Monday,4,Lunch,10:45 to 11:05,Lunch _ Raji Jain,Lunch,Raji Jain
+102,CLASS 1 Lily,Raji Jain,Monday,5,4th Period,11:05 to 11:50,IT_Raji,IT,Raji Jain
+103,CLASS 1 Lily,Raji Jain,Monday,6,5th Period,11:50 to 12:30,Math_Raji,Math,Raji Jain
+104,CLASS 1 Lily,Raji Jain,Monday,7,6th Period,12:30 to 1:10,EVS_Raji,EVS,Raji Jain
+105,CLASS 1 Lily,Raji Jain,Tuesday,0,Morning Assembly,07:50 to 08:20,CYCLE TEST,CYCLE TEST,
+106,CLASS 1 Lily,Raji Jain,Tuesday,1,1st Period,08:30 to 9:15,Eng_Raji,Eng,Raji Jain
+107,CLASS 1 Lily,Raji Jain,Tuesday,2,2nd Period,9:15 to 10:00,Hindi_Raji,Hindi,Raji Jain
+108,CLASS 1 Lily,Raji Jain,Tuesday,3,3rd Period,10:00 to 10:45,Distation&Cursive_Raji,Distation&Cursive,Raji Jain
+109,CLASS 1 Lily,Raji Jain,Tuesday,4,Lunch,10:45 to 11:05,Lunch _ Raji Jain,Lunch,Raji Jain
+110,CLASS 1 Lily,Raji Jain,Tuesday,5,4th Period,11:05 to 11:50,IT_Raji,IT,Raji Jain
+111,CLASS 1 Lily,Raji Jain,Tuesday,6,5th Period,11:50 to 12:30,Math_Raji,Math,Raji Jain
+112,CLASS 1 Lily,Raji Jain,Tuesday,7,6th Period,12:30 to 1:10,EVS_Raji,EVS,Raji Jain
+113,CLASS 1 Lily,Raji Jain,Wednesday,0,Morning Assembly,07:50 to 08:20,Prayer,Prayer,
+114,CLASS 1 Lily,Raji Jain,Wednesday,1,1st Period,08:30 to 9:15,Eng_Raji,Eng,Raji Jain
+115,CLASS 1 Lily,Raji Jain,Wednesday,2,2nd Period,9:15 to 10:00,Hindi_Raji,Hindi,Raji Jain
+116,CLASS 1 Lily,Raji Jain,Wednesday,3,3rd Period,10:00 to 10:45,Distation&Cursive_Raji,Distation&Cursive,Raji Jain
+117,CLASS 1 Lily,Raji Jain,Wednesday,4,Lunch,10:45 to 11:05,Lunch _ Raji Jain,Lunch,Raji Jain
+118,CLASS 1 Lily,Raji Jain,Wednesday,5,4th Period,11:05 to 11:50,GK_Raji,GK,Raji Jain
+119,CLASS 1 Lily,Raji Jain,Wednesday,6,5th Period,11:50 to 12:30,Math_Raji,Math,Raji Jain
+120,CLASS 1 Lily,Raji Jain,Wednesday,7,6th Period,12:30 to 1:10,EVS_Raji,EVS,Raji Jain
+121,CLASS 1 Lily,Raji Jain,Thursday,0,Morning Assembly,07:50 to 08:20,Prayer,Prayer,
+122,CLASS 1 Lily,Raji Jain,Thursday,1,1st Period,08:30 to 9:15,Eng_Raji,Eng,Raji Jain
+123,CLASS 1 Lily,Raji Jain,Thursday,2,2nd Period,9:15 to 10:00,Hindi_Raji,Hindi,Raji Jain
+124,CLASS 1 Lily,Raji Jain,Thursday,3,3rd Period,10:00 to 10:45,Game_Komal,Game,Komal
+125,CLASS 1 Lily,Raji Jain,Thursday,4,Lunch,10:45 to 11:05,Lunch _ Raji Jain,Lunch,Raji Jain
+126,CLASS 1 Lily,Raji Jain,Thursday,5,4th Period,11:05 to 11:50,GK_Raji,GK,Raji Jain
+127,CLASS 1 Lily,Raji Jain,Thursday,6,5th Period,11:50 to 12:30,Art & Craft_Raji,Art & Craft,Raji Jain
+128,CLASS 1 Lily,Raji Jain,Thursday,7,6th Period,12:30 to 1:10,EVS_Raji,EVS,Raji Jain
+129,CLASS 1 Lily,Raji Jain,Friday,0,Morning Assembly,07:50 to 08:20,CYCLE TEST,CYCLE TEST,
+130,CLASS 1 Lily,Raji Jain,Friday,1,1st Period,08:30 to 9:15,Eng Read_Raji,Eng Read,Raji Jain
+131,CLASS 1 Lily,Raji Jain,Friday,2,2nd Period,9:15 to 10:00,Hindi Read_Raji,Hindi Read,Raji Jain
+132,CLASS 1 Lily,Raji Jain,Friday,3,3rd Period,10:00 to 10:45,Distation&Cursive_Raji,Distation&Cursive,Raji Jain
+133,CLASS 1 Lily,Raji Jain,Friday,4,Lunch,10:45 to 11:05,Lunch _ Raji Jain,Lunch,Raji Jain
+134,CLASS 1 Lily,Raji Jain,Friday,5,4th Period,11:05 to 11:50,Math_Raji,Math,Raji Jain
+135,CLASS 1 Lily,Raji Jain,Friday,6,5th Period,11:50 to 12:30,Dance_Akash,Dance,Akash
+136,CLASS 1 Lily,Raji Jain,Friday,7,6th Period,12:30 to 1:10,Art & Craft_Raji,Art & Craft,Raji Jain
+137,CLASS 1 Lily,Raji Jain,Saturday,0,Morning Assembly,07:50 to 08:20,CCA,CCA,
+138,CLASS 1 Lily,Raji Jain,Saturday,1,1st Period,08:30 to 9:15,Eng Read_Raji,Eng Read,Raji Jain
+139,CLASS 1 Lily,Raji Jain,Saturday,2,2nd Period,9:15 to 10:00,Hindi Read_Raji,Hindi Read,Raji Jain
+140,CLASS 1 Lily,Raji Jain,Saturday,3,3rd Period,10:00 to 10:45,Yoga_Pradeep,Yoga,Pradeep
+141,CLASS 1 Lily,Raji Jain,Saturday,4,Lunch,10:45 to 11:05,Lunch _ Raji Jain,Lunch,Raji Jain
+142,CLASS 1 Lily,Raji Jain,Saturday,5,4th Period,11:05 to 11:50,Math_Raji,Math,Raji Jain
+143,CLASS 1 Lily,Raji Jain,Saturday,6,5th Period,11:50 to 12:30,,,
+144,CLASS 1 Lily,Raji Jain,Saturday,7,6th Period,12:30 to 1:10,,,
+145,CLASS 1 Sunflower,Sanskriti Singhai,Monday,0,Morning Assembly,07:50 to 08:20,Prayer,Prayer,
+146,CLASS 1 Sunflower,Sanskriti Singhai,Monday,1,1st Period,08:30 to 9:15,Eng_Sanskriti,Eng,Sanskriti Singhai
+147,CLASS 1 Sunflower,Sanskriti Singhai,Monday,2,2nd Period,9:15 to 10:00,Hindi_Sanskriti,Hindi,Sanskriti Singhai
+148,CLASS 1 Sunflower,Sanskriti Singhai,Monday,3,3rd Period,10:00 to 10:45,EVS_Sanskriti,EVS,Sanskriti Singhai
+149,CLASS 1 Sunflower,Sanskriti Singhai,Monday,4,Lunch,10:45 to 11:05,Lunch _ Sanskriti Singhai,Lunch,Sanskriti Singhai
+150,CLASS 1 Sunflower,Sanskriti Singhai,Monday,5,4th Period,11:05 to 11:50,Math_Sanskriti,Math,Sanskriti Singhai
+151,CLASS 1 Sunflower,Sanskriti Singhai,Monday,6,5th Period,11:50 to 12:30,IT_Sanskriti,IT,Sanskriti Singhai
+152,CLASS 1 Sunflower,Sanskriti Singhai,Monday,7,6th Period,12:30 to 1:10,Distation&Cursive_Sanskriti,Distation&Cursive,Sanskriti Singhai
+153,CLASS 1 Sunflower,Sanskriti Singhai,Tuesday,0,Morning Assembly,07:50 to 08:20,CYCLE TEST,CYCLE TEST,
+154,CLASS 1 Sunflower,Sanskriti Singhai,Tuesday,1,1st Period,08:30 to 9:15,Eng_Sanskriti,Eng,Sanskriti Singhai
+155,CLASS 1 Sunflower,Sanskriti Singhai,Tuesday,2,2nd Period,9:15 to 10:00,Hindi_Sanskriti,Hindi,Sanskriti Singhai
+156,CLASS 1 Sunflower,Sanskriti Singhai,Tuesday,3,3rd Period,10:00 to 10:45,EVS_Sanskriti,EVS,Sanskriti Singhai
+157,CLASS 1 Sunflower,Sanskriti Singhai,Tuesday,4,Lunch,10:45 to 11:05,Lunch _ Sanskriti Singhai,Lunch,Sanskriti Singhai
+158,CLASS 1 Sunflower,Sanskriti Singhai,Tuesday,5,4th Period,11:05 to 11:50,Math_Sanskriti,Math,Sanskriti Singhai
+159,CLASS 1 Sunflower,Sanskriti Singhai,Tuesday,6,5th Period,11:50 to 12:30,IT_Sanskriti,IT,Sanskriti Singhai
+160,CLASS 1 Sunflower,Sanskriti Singhai,Tuesday,7,6th Period,12:30 to 1:10,Dance_Akash,Dance,Akash
+161,CLASS 1 Sunflower,Sanskriti Singhai,Wednesday,0,Morning Assembly,07:50 to 08:20,Prayer,Prayer,
+162,CLASS 1 Sunflower,Sanskriti Singhai,Wednesday,1,1st Period,08:30 to 9:15,Eng_Sanskriti,Eng,Sanskriti Singhai
+163,CLASS 1 Sunflower,Sanskriti Singhai,Wednesday,2,2nd Period,9:15 to 10:00,Hindi_Sanskriti,Hindi,Sanskriti Singhai
+164,CLASS 1 Sunflower,Sanskriti Singhai,Wednesday,3,3rd Period,10:00 to 10:45,EVS_Sanskriti,EVS,Sanskriti Singhai
+165,CLASS 1 Sunflower,Sanskriti Singhai,Wednesday,4,Lunch,10:45 to 11:05,Lunch _ Sanskriti Singhai,Lunch,Sanskriti Singhai
+166,CLASS 1 Sunflower,Sanskriti Singhai,Wednesday,5,4th Period,11:05 to 11:50,Math_Sanskriti,Math,Sanskriti Singhai
+167,CLASS 1 Sunflower,Sanskriti Singhai,Wednesday,6,5th Period,11:50 to 12:30,Art & Craft_Sanskriti,Art & Craft,Sanskriti Singhai
+168,CLASS 1 Sunflower,Sanskriti Singhai,Wednesday,7,6th Period,12:30 to 1:10,Hindi_Sanskriti,Hindi,Sanskriti Singhai
+169,CLASS 1 Sunflower,Sanskriti Singhai,Thursday,0,Morning Assembly,07:50 to 08:20,Prayer,Prayer,
+170,CLASS 1 Sunflower,Sanskriti Singhai,Thursday,1,1st Period,08:30 to 9:15,Eng_Sanskriti,Eng,Sanskriti Singhai
+171,CLASS 1 Sunflower,Sanskriti Singhai,Thursday,2,2nd Period,9:15 to 10:00,Yoga_Pradeep,Yoga,Pradeep
+172,CLASS 1 Sunflower,Sanskriti Singhai,Thursday,3,3rd Period,10:00 to 10:45,EVS_Sanskriti,EVS,Sanskriti Singhai
+173,CLASS 1 Sunflower,Sanskriti Singhai,Thursday,4,Lunch,10:45 to 11:05,Lunch _ Sanskriti Singhai,Lunch,Sanskriti Singhai
+174,CLASS 1 Sunflower,Sanskriti Singhai,Thursday,5,4th Period,11:05 to 11:50,Hindi_Sanskriti,Hindi,Sanskriti Singhai
+175,CLASS 1 Sunflower,Sanskriti Singhai,Thursday,6,5th Period,11:50 to 12:30,Art & Craft_Sanskriti,Art & Craft,Sanskriti Singhai
+176,CLASS 1 Sunflower,Sanskriti Singhai,Thursday,7,6th Period,12:30 to 1:10,Distation&Cursive_Sanskriti,Distation&Cursive,Sanskriti Singhai
+177,CLASS 1 Sunflower,Sanskriti Singhai,Friday,0,Morning Assembly,07:50 to 08:20,CYCLE TEST,CYCLE TEST,
+178,CLASS 1 Sunflower,Sanskriti Singhai,Friday,1,1st Period,08:30 to 9:15,Eng Read_Sanskriti,Eng Read,Sanskriti Singhai
+179,CLASS 1 Sunflower,Sanskriti Singhai,Friday,2,2nd Period,9:15 to 10:00,Hindi Read_Sanskriti,Hindi Read,Sanskriti Singhai
+180,CLASS 1 Sunflower,Sanskriti Singhai,Friday,3,3rd Period,10:00 to 10:45,EVS_Sanskriti,EVS,Sanskriti Singhai
+181,CLASS 1 Sunflower,Sanskriti Singhai,Friday,4,Lunch,10:45 to 11:05,Lunch _ Sanskriti Singhai,Lunch,Sanskriti Singhai
+182,CLASS 1 Sunflower,Sanskriti Singhai,Friday,5,4th Period,11:05 to 11:50,GK_Sanskriti,GK,Sanskriti Singhai
+183,CLASS 1 Sunflower,Sanskriti Singhai,Friday,6,5th Period,11:50 to 12:30,Distation&Cursive_Sanskriti,Distation&Cursive,Sanskriti Singhai
+184,CLASS 1 Sunflower,Sanskriti Singhai,Friday,7,6th Period,12:30 to 1:10,Game_Komal,Game,Komal
+185,CLASS 1 Sunflower,Sanskriti Singhai,Saturday,0,Morning Assembly,07:50 to 08:20,CCA,CCA,
+186,CLASS 1 Sunflower,Sanskriti Singhai,Saturday,1,1st Period,08:30 to 9:15,Eng Read_Sanskriti,Eng Read,Sanskriti Singhai
+187,CLASS 1 Sunflower,Sanskriti Singhai,Saturday,2,2nd Period,9:15 to 10:00,Hindi Read_Sanskriti,Hindi Read,Sanskriti Singhai
+188,CLASS 1 Sunflower,Sanskriti Singhai,Saturday,3,3rd Period,10:00 to 10:45,Distation&Cursive_Sanskriti,Distation&Cursive,Sanskriti Singhai
+189,CLASS 1 Sunflower,Sanskriti Singhai,Saturday,4,Lunch,10:45 to 11:05,Lunch _ Sanskriti Singhai,Lunch,Sanskriti Singhai
+190,CLASS 1 Sunflower,Sanskriti Singhai,Saturday,5,4th Period,11:05 to 11:50,GK_Sanskriti,GK,Sanskriti Singhai
+191,CLASS 1 Sunflower,Sanskriti Singhai,Saturday,6,5th Period,11:50 to 12:30,,,
+192,CLASS 1 Sunflower,Sanskriti Singhai,Saturday,7,6th Period,12:30 to 1:10,,,
+193,CLASS 2 Rose,Reenu Yadav,Monday,0,Morning Assembly,07:50 to 08:20,Prayer,Prayer,
+194,CLASS 2 Rose,Reenu Yadav,Monday,1,1st Period,08:30 to 9:15,Eng_Reenu,Eng,Reenu Yadav
+195,CLASS 2 Rose,Reenu Yadav,Monday,2,2nd Period,9:15 to 10:00,Hindi_Reenu,Hindi,Reenu Yadav
+196,CLASS 2 Rose,Reenu Yadav,Monday,3,3rd Period,10:00 to 10:45,EVS_Reenu,EVS,Reenu Yadav
+197,CLASS 2 Rose,Reenu Yadav,Monday,4,Lunch,10:45 to 11:05,Lunch _ Reenu Yadav,Lunch,Reenu Yadav
+198,CLASS 2 Rose,Reenu Yadav,Monday,5,4th Period,11:05 to 11:50,Dance_Akash,Dance,Akash
+199,CLASS 2 Rose,Reenu Yadav,Monday,6,5th Period,11:50 to 12:30,Math_Reenu,Math,Reenu Yadav
+200,CLASS 2 Rose,Reenu Yadav,Monday,7,6th Period,12:30 to 1:10,IT_Kalyani,IT,Kalyani Choudhary
+201,CLASS 2 Rose,Reenu Yadav,Tuesday,0,Morning Assembly,07:50 to 08:20,CYCLE TEST,CYCLE TEST,
+202,CLASS 2 Rose,Reenu Yadav,Tuesday,1,1st Period,08:30 to 9:15,Game_Komal,Game,Komal
+203,CLASS 2 Rose,Reenu Yadav,Tuesday,2,2nd Period,9:15 to 10:00,Hindi_Reenu,Hindi,Reenu Yadav
+204,CLASS 2 Rose,Reenu Yadav,Tuesday,3,3rd Period,10:00 to 10:45,Distation&Cursive_Reenu,Distation&Cursive,Reenu Yadav
+205,CLASS 2 Rose,Reenu Yadav,Tuesday,4,Lunch,10:45 to 11:05,Lunch _ Reenu Yadav,Lunch,Reenu Yadav
+206,CLASS 2 Rose,Reenu Yadav,Tuesday,5,4th Period,11:05 to 11:50,Eng_Reenu,Eng,Reenu Yadav
+207,CLASS 2 Rose,Reenu Yadav,Tuesday,6,5th Period,11:50 to 12:30,Math_Reenu,Math,Reenu Yadav
+208,CLASS 2 Rose,Reenu Yadav,Tuesday,7,6th Period,12:30 to 1:10,IT_Kalyani,IT,Kalyani Choudhary
+209,CLASS 2 Rose,Reenu Yadav,Wednesday,0,Morning Assembly,07:50 to 08:20,Prayer,Prayer,
+210,CLASS 2 Rose,Reenu Yadav,Wednesday,1,1st Period,08:30 to 9:15,Eng_Reenu,Eng,Reenu Yadav
+211,CLASS 2 Rose,Reenu Yadav,Wednesday,2,2nd Period,9:15 to 10:00,Hindi_Reenu,Hindi,Reenu Yadav
+212,CLASS 2 Rose,Reenu Yadav,Wednesday,3,3rd Period,10:00 to 10:45,EVS_Reenu,EVS,Reenu Yadav
+213,CLASS 2 Rose,Reenu Yadav,Wednesday,4,Lunch,10:45 to 11:05,Lunch _ Reenu Yadav,Lunch,Reenu Yadav
+214,CLASS 2 Rose,Reenu Yadav,Wednesday,5,4th Period,11:05 to 11:50,Distation&Cursive_Reenu,Distation&Cursive,Reenu Yadav
+215,CLASS 2 Rose,Reenu Yadav,Wednesday,6,5th Period,11:50 to 12:30,Math_Reenu,Math,Reenu Yadav
+216,CLASS 2 Rose,Reenu Yadav,Wednesday,7,6th Period,12:30 to 1:10,GK_Reenu,GK,Reenu Yadav
+217,CLASS 2 Rose,Reenu Yadav,Thursday,0,Morning Assembly,07:50 to 08:20,Prayer,Prayer,
+218,CLASS 2 Rose,Reenu Yadav,Thursday,1,1st Period,08:30 to 9:15,Eng_Reenu,Eng,Reenu Yadav
+219,CLASS 2 Rose,Reenu Yadav,Thursday,2,2nd Period,9:15 to 10:00,Hindi_Reenu,Hindi,Reenu Yadav
+220,CLASS 2 Rose,Reenu Yadav,Thursday,3,3rd Period,10:00 to 10:45,EVS_Reenu,EVS,Reenu Yadav
+221,CLASS 2 Rose,Reenu Yadav,Thursday,4,Lunch,10:45 to 11:05,Lunch _ Reenu Yadav,Lunch,Reenu Yadav
+222,CLASS 2 Rose,Reenu Yadav,Thursday,5,4th Period,11:05 to 11:50,Distation&Cursive_Reenu,Distation&Cursive,Reenu Yadav
+223,CLASS 2 Rose,Reenu Yadav,Thursday,6,5th Period,11:50 to 12:30,Math_Reenu,Math,Reenu Yadav
+224,CLASS 2 Rose,Reenu Yadav,Thursday,7,6th Period,12:30 to 1:10,Art & Craft_Reenu,Art & Craft,Reenu Yadav
+225,CLASS 2 Rose,Reenu Yadav,Friday,0,Morning Assembly,07:50 to 08:20,CYCLE TEST,CYCLE TEST,
+226,CLASS 2 Rose,Reenu Yadav,Friday,1,1st Period,08:30 to 9:15,Eng Read_Reenu,Eng Read,Reenu Yadav
+227,CLASS 2 Rose,Reenu Yadav,Friday,2,2nd Period,9:15 to 10:00,Hindi Read_Reenu,Hindi Read,Reenu Yadav
+228,CLASS 2 Rose,Reenu Yadav,Friday,3,3rd Period,10:00 to 10:45,EVS_Reenu,EVS,Reenu Yadav
+229,CLASS 2 Rose,Reenu Yadav,Friday,4,Lunch,10:45 to 11:05,Lunch _ Reenu Yadav,Lunch,Reenu Yadav
+230,CLASS 2 Rose,Reenu Yadav,Friday,5,4th Period,11:05 to 11:50,Distation&Cursive_Reenu,Distation&Cursive,Reenu Yadav
+231,CLASS 2 Rose,Reenu Yadav,Friday,6,5th Period,11:50 to 12:30,GK_Reenu,GK,Reenu Yadav
+232,CLASS 2 Rose,Reenu Yadav,Friday,7,6th Period,12:30 to 1:10,Art & Craft_Reenu,Art & Craft,Reenu Yadav
+233,CLASS 2 Rose,Reenu Yadav,Saturday,0,Morning Assembly,07:50 to 08:20,CCA,CCA,
+234,CLASS 2 Rose,Reenu Yadav,Saturday,1,1st Period,08:30 to 9:15,Eng Read_Reenu,Eng Read,Reenu Yadav
+235,CLASS 2 Rose,Reenu Yadav,Saturday,2,2nd Period,9:15 to 10:00,Hindi Read_Reenu,Hindi Read,Reenu Yadav
+236,CLASS 2 Rose,Reenu Yadav,Saturday,3,3rd Period,10:00 to 10:45,Distation&Cursive_Reenu,Distation&Cursive,Reenu Yadav
+237,CLASS 2 Rose,Reenu Yadav,Saturday,4,Lunch,10:45 to 11:05,Lunch _ Reenu Yadav,Lunch,Reenu Yadav
+238,CLASS 2 Rose,Reenu Yadav,Saturday,5,4th Period,11:05 to 11:50,Yoga_Pradeep,Yoga,Pradeep
+239,CLASS 2 Rose,Reenu Yadav,Saturday,6,5th Period,11:50 to 12:30,,,
+240,CLASS 2 Rose,Reenu Yadav,Saturday,7,6th Period,12:30 to 1:10,,,
+241,CLASS 2 Marigold,Arti Ahirwar,Monday,0,Morning Assembly,07:50 to 08:20,Prayer,Prayer,
+242,CLASS 2 Marigold,Arti Ahirwar,Monday,1,1st Period,08:30 to 9:15,Eng_Arti A,Eng,Arti Ahirwar
+243,CLASS 2 Marigold,Arti Ahirwar,Monday,2,2nd Period,9:15 to 10:00,Hindi_Arti A,Hindi,Arti Ahirwar
+244,CLASS 2 Marigold,Arti Ahirwar,Monday,3,3rd Period,10:00 to 10:45,Art & Craft_Rajaram,Art & Craft,Rajaram
+245,CLASS 2 Marigold,Arti Ahirwar,Monday,4,Lunch,10:45 to 11:05,Lunch _ Arti Ahirwar,Lunch,Arti Ahirwar
+246,CLASS 2 Marigold,Arti Ahirwar,Monday,5,4th Period,11:05 to 11:50,Distation&Cursive_Arti A,Distation&Cursive,Arti Ahirwar
+247,CLASS 2 Marigold,Arti Ahirwar,Monday,6,5th Period,11:50 to 12:30,Math_Arti A,Math,Arti Ahirwar
+248,CLASS 2 Marigold,Arti Ahirwar,Monday,7,6th Period,12:30 to 1:10,EVS_Arti A,EVS,Arti Ahirwar
+249,CLASS 2 Marigold,Arti Ahirwar,Tuesday,0,Morning Assembly,07:50 to 08:20,CYCLE TEST,CYCLE TEST,
+250,CLASS 2 Marigold,Arti Ahirwar,Tuesday,1,1st Period,08:30 to 9:15,Eng_Arti A,Eng,Arti Ahirwar
+251,CLASS 2 Marigold,Arti Ahirwar,Tuesday,2,2nd Period,9:15 to 10:00,Hindi_Arti A,Hindi,Arti Ahirwar
+252,CLASS 2 Marigold,Arti Ahirwar,Tuesday,3,3rd Period,10:00 to 10:45,Art & Craft_Rajaram,Art & Craft,Rajaram
+253,CLASS 2 Marigold,Arti Ahirwar,Tuesday,4,Lunch,10:45 to 11:05,Lunch _ Arti Ahirwar,Lunch,Arti Ahirwar
+254,CLASS 2 Marigold,Arti Ahirwar,Tuesday,5,4th Period,11:05 to 11:50,Dance_Akash,Dance,Akash
+255,CLASS 2 Marigold,Arti Ahirwar,Tuesday,6,5th Period,11:50 to 12:30,Math_Arti A,Math,Arti Ahirwar
+256,CLASS 2 Marigold,Arti Ahirwar,Tuesday,7,6th Period,12:30 to 1:10,EVS_Arti A,EVS,Arti Ahirwar
+257,CLASS 2 Marigold,Arti Ahirwar,Wednesday,0,Morning Assembly,07:50 to 08:20,Prayer,Prayer,
+258,CLASS 2 Marigold,Arti Ahirwar,Wednesday,1,1st Period,08:30 to 9:15,Yoga_Pradeep,Yoga,Pradeep
+259,CLASS 2 Marigold,Arti Ahirwar,Wednesday,2,2nd Period,9:15 to 10:00,Hindi_Arti A,Hindi,Arti Ahirwar
+260,CLASS 2 Marigold,Arti Ahirwar,Wednesday,3,3rd Period,10:00 to 10:45,Game_Komal,Game,Komal
+261,CLASS 2 Marigold,Arti Ahirwar,Wednesday,4,Lunch,10:45 to 11:05,Lunch _ Arti Ahirwar,Lunch,Arti Ahirwar
+262,CLASS 2 Marigold,Arti Ahirwar,Wednesday,5,4th Period,11:05 to 11:50,Eng_Arti A,Eng,Arti Ahirwar
+263,CLASS 2 Marigold,Arti Ahirwar,Wednesday,6,5th Period,11:50 to 12:30,Math_Arti A,Math,Arti Ahirwar
+264,CLASS 2 Marigold,Arti Ahirwar,Wednesday,7,6th Period,12:30 to 1:10,IT_Arti A,IT,Arti Ahirwar
+265,CLASS 2 Marigold,Arti Ahirwar,Thursday,0,Morning Assembly,07:50 to 08:20,Prayer,Prayer,
+266,CLASS 2 Marigold,Arti Ahirwar,Thursday,1,1st Period,08:30 to 9:15,Eng_Arti A,Eng,Arti Ahirwar
+267,CLASS 2 Marigold,Arti Ahirwar,Thursday,2,2nd Period,9:15 to 10:00,Hindi_Arti A,Hindi,Arti Ahirwar
+268,CLASS 2 Marigold,Arti Ahirwar,Thursday,3,3rd Period,10:00 to 10:45,GK_Arti A,GK,Arti Ahirwar
+269,CLASS 2 Marigold,Arti Ahirwar,Thursday,4,Lunch,10:45 to 11:05,Lunch _ Arti Ahirwar,Lunch,Arti Ahirwar
+270,CLASS 2 Marigold,Arti Ahirwar,Thursday,5,4th Period,11:05 to 11:50,Distation&Cursive_Arti A,Distation&Cursive,Arti Ahirwar
+271,CLASS 2 Marigold,Arti Ahirwar,Thursday,6,5th Period,11:50 to 12:30,Distation&Cursive_Arti A,Distation&Cursive,Arti Ahirwar
+272,CLASS 2 Marigold,Arti Ahirwar,Thursday,7,6th Period,12:30 to 1:10,IT_Arti A,IT,Arti Ahirwar
+273,CLASS 2 Marigold,Arti Ahirwar,Friday,0,Morning Assembly,07:50 to 08:20,CYCLE TEST,CYCLE TEST,
+274,CLASS 2 Marigold,Arti Ahirwar,Friday,1,1st Period,08:30 to 9:15,Eng Read_Arti A,Eng Read,Arti Ahirwar
+275,CLASS 2 Marigold,Arti Ahirwar,Friday,2,2nd Period,9:15 to 10:00,Hindi Read_Arti A,Hindi Read,Arti Ahirwar
+276,CLASS 2 Marigold,Arti Ahirwar,Friday,3,3rd Period,10:00 to 10:45,EVS_Arti A,EVS,Arti Ahirwar
+277,CLASS 2 Marigold,Arti Ahirwar,Friday,4,Lunch,10:45 to 11:05,Lunch _ Arti Ahirwar,Lunch,Arti Ahirwar
+278,CLASS 2 Marigold,Arti Ahirwar,Friday,5,4th Period,11:05 to 11:50,Distation&Cursive_Arti A,Distation&Cursive,Arti Ahirwar
+279,CLASS 2 Marigold,Arti Ahirwar,Friday,6,5th Period,11:50 to 12:30,Math_Arti A,Math,Arti Ahirwar
+280,CLASS 2 Marigold,Arti Ahirwar,Friday,7,6th Period,12:30 to 1:10,GK_Arti A,GK,Arti Ahirwar
+281,CLASS 2 Marigold,Arti Ahirwar,Saturday,0,Morning Assembly,07:50 to 08:20,CCA,CCA,
+282,CLASS 2 Marigold,Arti Ahirwar,Saturday,1,1st Period,08:30 to 9:15,Eng Read_Arti A,Eng Read,Arti Ahirwar
+283,CLASS 2 Marigold,Arti Ahirwar,Saturday,2,2nd Period,9:15 to 10:00,Hindi Read_Arti A,Hindi Read,Arti Ahirwar
+284,CLASS 2 Marigold,Arti Ahirwar,Saturday,3,3rd Period,10:00 to 10:45,EVS_Arti A,EVS,Arti Ahirwar
+285,CLASS 2 Marigold,Arti Ahirwar,Saturday,4,Lunch,10:45 to 11:05,Lunch _ Arti Ahirwar,Lunch,Arti Ahirwar
+286,CLASS 2 Marigold,Arti Ahirwar,Saturday,5,4th Period,11:05 to 11:50,Distation&Cursive_Arti A,Distation&Cursive,Arti Ahirwar
+287,CLASS 2 Marigold,Arti Ahirwar,Saturday,6,5th Period,11:50 to 12:30,,,
+288,CLASS 2 Marigold,Arti Ahirwar,Saturday,7,6th Period,12:30 to 1:10,,,
+289,CLASS 2 Lily,Kalyani Choudhary,Monday,0,Morning Assembly,07:50 to 08:20,Prayer,Prayer,
+290,CLASS 2 Lily,Kalyani Choudhary,Monday,1,1st Period,08:30 to 9:15,Eng_Kalyani,Eng,Kalyani Choudhary
+291,CLASS 2 Lily,Kalyani Choudhary,Monday,2,2nd Period,9:15 to 10:00,Hindi_Kalyani,Hindi,Kalyani Choudhary
+292,CLASS 2 Lily,Kalyani Choudhary,Monday,3,3rd Period,10:00 to 10:45,EVS_Kalyani,EVS,Kalyani Choudhary
+293,CLASS 2 Lily,Kalyani Choudhary,Monday,4,Lunch,10:45 to 11:05,Lunch _ Kalyani Choudhary,Lunch,Kalyani Choudhary
+294,CLASS 2 Lily,Kalyani Choudhary,Monday,5,4th Period,11:05 to 11:50,Distation&Cursive_Kalyani,Distation&Cursive,Kalyani Choudhary
+295,CLASS 2 Lily,Kalyani Choudhary,Monday,6,5th Period,11:50 to 12:30,Math_Kalyani,Math,Kalyani Choudhary
+296,CLASS 2 Lily,Kalyani Choudhary,Monday,7,6th Period,12:30 to 1:10,Yoga_Pradeep,Yoga,Pradeep
+297,CLASS 2 Lily,Kalyani Choudhary,Tuesday,0,Morning Assembly,07:50 to 08:20,CYCLE TEST,CYCLE TEST,
+298,CLASS 2 Lily,Kalyani Choudhary,Tuesday,1,1st Period,08:30 to 9:15,Eng_Kalyani,Eng,Kalyani Choudhary
+299,CLASS 2 Lily,Kalyani Choudhary,Tuesday,2,2nd Period,9:15 to 10:00,Hindi_Kalyani,Hindi,Kalyani Choudhary
+300,CLASS 2 Lily,Kalyani Choudhary,Tuesday,3,3rd Period,10:00 to 10:45,EVS_Kalyani,EVS,Kalyani Choudhary
+301,CLASS 2 Lily,Kalyani Choudhary,Tuesday,4,Lunch,10:45 to 11:05,Lunch _ Kalyani Choudhary,Lunch,Kalyani Choudhary
+302,CLASS 2 Lily,Kalyani Choudhary,Tuesday,5,4th Period,11:05 to 11:50,Distation&Cursive_Kalyani,Distation&Cursive,Kalyani Choudhary
+303,CLASS 2 Lily,Kalyani Choudhary,Tuesday,6,5th Period,11:50 to 12:30,Math_Kalyani,Math,Kalyani Choudhary
+304,CLASS 2 Lily,Kalyani Choudhary,Tuesday,7,6th Period,12:30 to 1:10,Game_Komal,Game,Komal
+305,CLASS 2 Lily,Kalyani Choudhary,Wednesday,0,Morning Assembly,07:50 to 08:20,Prayer,Prayer,
+306,CLASS 2 Lily,Kalyani Choudhary,Wednesday,1,1st Period,08:30 to 9:15,Eng_Kalyani,Eng,Kalyani Choudhary
+307,CLASS 2 Lily,Kalyani Choudhary,Wednesday,2,2nd Period,9:15 to 10:00,Hindi_Kalyani,Hindi,Kalyani Choudhary
+308,CLASS 2 Lily,Kalyani Choudhary,Wednesday,3,3rd Period,10:00 to 10:45,EVS_Kalyani,EVS,Kalyani Choudhary
+309,CLASS 2 Lily,Kalyani Choudhary,Wednesday,4,Lunch,10:45 to 11:05,Lunch _ Kalyani Choudhary,Lunch,Kalyani Choudhary
+310,CLASS 2 Lily,Kalyani Choudhary,Wednesday,5,4th Period,11:05 to 11:50,Distation&Cursive_Kalyani,Distation&Cursive,Kalyani Choudhary
+311,CLASS 2 Lily,Kalyani Choudhary,Wednesday,6,5th Period,11:50 to 12:30,Math_Kalyani,Math,Kalyani Choudhary
+312,CLASS 2 Lily,Kalyani Choudhary,Wednesday,7,6th Period,12:30 to 1:10,Art & Craft_Kalyani,Art & Craft,Kalyani Choudhary
+313,CLASS 2 Lily,Kalyani Choudhary,Thursday,0,Morning Assembly,07:50 to 08:20,Prayer,Prayer,
+314,CLASS 2 Lily,Kalyani Choudhary,Thursday,1,1st Period,08:30 to 9:15,Eng_Kalyani,Eng,Kalyani Choudhary
+315,CLASS 2 Lily,Kalyani Choudhary,Thursday,2,2nd Period,9:15 to 10:00,Hindi_Kalyani,Hindi,Kalyani Choudhary
+316,CLASS 2 Lily,Kalyani Choudhary,Thursday,3,3rd Period,10:00 to 10:45,EVS_Kalyani,EVS,Kalyani Choudhary
+317,CLASS 2 Lily,Kalyani Choudhary,Thursday,4,Lunch,10:45 to 11:05,Lunch _ Kalyani Choudhary,Lunch,Kalyani Choudhary
+318,CLASS 2 Lily,Kalyani Choudhary,Thursday,5,4th Period,11:05 to 11:50,Distation&Cursive_Kalyani,Distation&Cursive,Kalyani Choudhary
+319,CLASS 2 Lily,Kalyani Choudhary,Thursday,6,5th Period,11:50 to 12:30,Math_Kalyani,Math,Kalyani Choudhary
+320,CLASS 2 Lily,Kalyani Choudhary,Thursday,7,6th Period,12:30 to 1:10,GK_Kalyani,GK,Kalyani Choudhary
+321,CLASS 2 Lily,Kalyani Choudhary,Friday,0,Morning Assembly,07:50 to 08:20,CYCLE TEST,CYCLE TEST,
+322,CLASS 2 Lily,Kalyani Choudhary,Friday,1,1st Period,08:30 to 9:15,Eng Read_Kalyani,Eng Read,Kalyani Choudhary
+323,CLASS 2 Lily,Kalyani Choudhary,Friday,2,2nd Period,9:15 to 10:00,Hindi Read_Kalyani,Hindi Read,Kalyani Choudhary
+324,CLASS 2 Lily,Kalyani Choudhary,Friday,3,3rd Period,10:00 to 10:45,IT_Kalyani,IT,Kalyani Choudhary
+325,CLASS 2 Lily,Kalyani Choudhary,Friday,4,Lunch,10:45 to 11:05,Lunch _ Kalyani Choudhary,Lunch,Kalyani Choudhary
+326,CLASS 2 Lily,Kalyani Choudhary,Friday,5,4th Period,11:05 to 11:50,Distation&Cursive_Kalyani,Distation&Cursive,Kalyani Choudhary
+327,CLASS 2 Lily,Kalyani Choudhary,Friday,6,5th Period,11:50 to 12:30,Art & Craft_Kalyani,Art & Craft,Kalyani Choudhary
+328,CLASS 2 Lily,Kalyani Choudhary,Friday,7,6th Period,12:30 to 1:10,GK_Kalyani,GK,Kalyani Choudhary
+329,CLASS 2 Lily,Kalyani Choudhary,Saturday,0,Morning Assembly,07:50 to 08:20,CCA,CCA,
+330,CLASS 2 Lily,Kalyani Choudhary,Saturday,1,1st Period,08:30 to 9:15,Eng Read_Kalyani,Eng Read,Kalyani Choudhary
+331,CLASS 2 Lily,Kalyani Choudhary,Saturday,2,2nd Period,9:15 to 10:00,Hindi Read_Kalyani,Hindi Read,Kalyani Choudhary
+332,CLASS 2 Lily,Kalyani Choudhary,Saturday,3,3rd Period,10:00 to 10:45,IT_Kalyani,IT,Kalyani Choudhary
+333,CLASS 2 Lily,Kalyani Choudhary,Saturday,4,Lunch,10:45 to 11:05,Lunch _ Kalyani Choudhary,Lunch,Kalyani Choudhary
+334,CLASS 2 Lily,Kalyani Choudhary,Saturday,5,4th Period,11:05 to 11:50,Dance_Akash,Dance,Akash
+335,CLASS 2 Lily,Kalyani Choudhary,Saturday,6,5th Period,11:50 to 12:30,,,
+336,CLASS 2 Lily,Kalyani Choudhary,Saturday,7,6th Period,12:30 to 1:10,,,
+337,CLASS 3 Rose,Vandna Saraf,Monday,0,Morning Assembly,07:50 to 08:20,Prayer,Prayer,
+338,CLASS 3 Rose,Vandna Saraf,Monday,1,1st Period,08:30 to 9:15,Math_Vandna,Math,Vandna Saraf
+339,CLASS 3 Rose,Vandna Saraf,Monday,2,2nd Period,9:15 to 10:00,Hindi_Neha Rai,Hindi,Neha Rai
+340,CLASS 3 Rose,Vandna Saraf,Monday,3,3rd Period,10:00 to 10:45,Eng_Shilpi Sahu,Eng,Shilpi Sahunsari
+341,CLASS 3 Rose,Vandna Saraf,Monday,4,Lunch,10:45 to 11:05,Lunch _ Vandna Saraf,Lunch,Vandna Saraf
+342,CLASS 3 Rose,Vandna Saraf,Monday,5,4th Period,11:05 to 11:50,EVS_Arti Sagar,EVS,Arti Sagar
+343,CLASS 3 Rose,Vandna Saraf,Monday,6,5th Period,11:50 to 12:30,Art&Craft_Anubha,Art&Craft,Anubha
+344,CLASS 3 Rose,Vandna Saraf,Monday,7,6th Period,12:30 to 1:10,GK_Reenu,GK,Reenu Yadav
+345,CLASS 3 Rose,Vandna Saraf,Tuesday,0,Morning Assembly,07:50 to 08:20,CYCLE TEST,CYCLE TEST,
+346,CLASS 3 Rose,Vandna Saraf,Tuesday,1,1st Period,08:30 to 9:15,Math_Vandna,Math,Vandna Saraf
+347,CLASS 3 Rose,Vandna Saraf,Tuesday,2,2nd Period,9:15 to 10:00,Hindi_Neha Rai,Hindi,Neha Rai
+348,CLASS 3 Rose,Vandna Saraf,Tuesday,3,3rd Period,10:00 to 10:45,IT_Shilpi Sahu,IT,Shilpi Sahunsari
+349,CLASS 3 Rose,Vandna Saraf,Tuesday,4,Lunch,10:45 to 11:05,Lunch _ Vandna Saraf,Lunch,Vandna Saraf
+350,CLASS 3 Rose,Vandna Saraf,Tuesday,5,4th Period,11:05 to 11:50,EVS_Arti Sagar,EVS,Arti Sagar
+351,CLASS 3 Rose,Vandna Saraf,Tuesday,6,5th Period,11:50 to 12:30,Eng_Shilpi Sahu,Eng,Shilpi Sahunsari
+352,CLASS 3 Rose,Vandna Saraf,Tuesday,7,6th Period,12:30 to 1:10,GK_Reenu,GK,Reenu Yadav
+353,CLASS 3 Rose,Vandna Saraf,Wednesday,0,Morning Assembly,07:50 to 08:20,Prayer,Prayer,
+354,CLASS 3 Rose,Vandna Saraf,Wednesday,1,1st Period,08:30 to 9:15,Math_Vandna,Math,Vandna Saraf
+355,CLASS 3 Rose,Vandna Saraf,Wednesday,2,2nd Period,9:15 to 10:00,Hindi_Neha Rai,Hindi,Neha Rai
+356,CLASS 3 Rose,Vandna Saraf,Wednesday,3,3rd Period,10:00 to 10:45,Eng_Shilpi Sahu,Eng,Shilpi Sahunsari
+357,CLASS 3 Rose,Vandna Saraf,Wednesday,4,Lunch,10:45 to 11:05,Lunch _ Vandna Saraf,Lunch,Vandna Saraf
+358,CLASS 3 Rose,Vandna Saraf,Wednesday,5,4th Period,11:05 to 11:50,Game_Komal,Game,Komal
+359,CLASS 3 Rose,Vandna Saraf,Wednesday,6,5th Period,11:50 to 12:30,Distation&Cursive_Arshee,Distation&Cursive,Arshee
+360,CLASS 3 Rose,Vandna Saraf,Wednesday,7,6th Period,12:30 to 1:10,Art&Craft_Anubha,Art&Craft,Anubha
+361,CLASS 3 Rose,Vandna Saraf,Thursday,0,Morning Assembly,07:50 to 08:20,Prayer,Prayer,
+362,CLASS 3 Rose,Vandna Saraf,Thursday,1,1st Period,08:30 to 9:15,Math_Vandna,Math,Vandna Saraf
+363,CLASS 3 Rose,Vandna Saraf,Thursday,2,2nd Period,9:15 to 10:00,Hindi_Neha Rai,Hindi,Neha Rai
+364,CLASS 3 Rose,Vandna Saraf,Thursday,3,3rd Period,10:00 to 10:45,Eng_Shilpi Sahu,Eng,Shilpi Sahunsari
+365,CLASS 3 Rose,Vandna Saraf,Thursday,4,Lunch,10:45 to 11:05,Lunch _ Vandna Saraf,Lunch,Vandna Saraf
+366,CLASS 3 Rose,Vandna Saraf,Thursday,5,4th Period,11:05 to 11:50,EVS_Arti Sagar,EVS,Arti Sagar
+367,CLASS 3 Rose,Vandna Saraf,Thursday,6,5th Period,11:50 to 12:30,Yoga_Pradeep,Yoga,Pradeep
+368,CLASS 3 Rose,Vandna Saraf,Thursday,7,6th Period,12:30 to 1:10,Dance_Akash,Dance,Akash
+369,CLASS 3 Rose,Vandna Saraf,Friday,0,Morning Assembly,07:50 to 08:20,CYCLE TEST,CYCLE TEST,
+370,CLASS 3 Rose,Vandna Saraf,Friday,1,1st Period,08:30 to 9:15,Math_Vandna,Math,Vandna Saraf
+371,CLASS 3 Rose,Vandna Saraf,Friday,2,2nd Period,9:15 to 10:00,Hindi_Neha Rai,Hindi,Neha Rai
+372,CLASS 3 Rose,Vandna Saraf,Friday,3,3rd Period,10:00 to 10:45,Eng_Shilpi Sahu,Eng,Shilpi Sahunsari
+373,CLASS 3 Rose,Vandna Saraf,Friday,4,Lunch,10:45 to 11:05,Lunch _ Vandna Saraf,Lunch,Vandna Saraf
+374,CLASS 3 Rose,Vandna Saraf,Friday,5,4th Period,11:05 to 11:50,EVS_Arti Sagar,EVS,Arti Sagar
+375,CLASS 3 Rose,Vandna Saraf,Friday,6,5th Period,11:50 to 12:30,Distation&Cursive_Arshee,Distation&Cursive,Arshee
+376,CLASS 3 Rose,Vandna Saraf,Friday,7,6th Period,12:30 to 1:10,IT_Shilpi Sahu,IT,Shilpi Sahunsari
+377,CLASS 3 Rose,Vandna Saraf,Saturday,0,Morning Assembly,07:50 to 08:20,CCA,CCA,
+378,CLASS 3 Rose,Vandna Saraf,Saturday,1,1st Period,08:30 to 9:15,Music_Atul,Music,Atul
+379,CLASS 3 Rose,Vandna Saraf,Saturday,2,2nd Period,9:15 to 10:00,Hindi_Neha Rai,Hindi,Neha Rai
+380,CLASS 3 Rose,Vandna Saraf,Saturday,3,3rd Period,10:00 to 10:45,Eng_Shilpi Sahu,Eng,Shilpi Sahunsari
+381,CLASS 3 Rose,Vandna Saraf,Saturday,4,Lunch,10:45 to 11:05,Lunch _ Vandna Saraf,Lunch,Vandna Saraf
+382,CLASS 3 Rose,Vandna Saraf,Saturday,5,4th Period,11:05 to 11:50,EVS_Arti Sagar,EVS,Arti Sagar
+383,CLASS 3 Rose,Vandna Saraf,Saturday,6,5th Period,11:50 to 12:30,,,
+384,CLASS 3 Rose,Vandna Saraf,Saturday,7,6th Period,12:30 to 1:10,,,
+385,CLASS 3 Marigold,Shilpi Sahunsari,Monday,0,Morning Assembly,07:50 to 08:20,Prayer,Prayer,
+386,CLASS 3 Marigold,Shilpi Sahunsari,Monday,1,1st Period,08:30 to 9:15,Eng_Shilpi Sahu,Eng,Shilpi Sahunsari
+387,CLASS 3 Marigold,Shilpi Sahunsari,Monday,2,2nd Period,9:15 to 10:00,Art&Craft_Anubha,Art&Craft,Anubha
+388,CLASS 3 Marigold,Shilpi Sahunsari,Monday,3,3rd Period,10:00 to 10:45,Music_Atul,Music,Atul
+389,CLASS 3 Marigold,Shilpi Sahunsari,Monday,4,Lunch,10:45 to 11:05,Lunch _ Shilpi Sahunsari,Lunch,Shilpi Sahunsari
+390,CLASS 3 Marigold,Shilpi Sahunsari,Monday,5,4th Period,11:05 to 11:50,Hindi_Neha Rai,Hindi,Neha Rai
+391,CLASS 3 Marigold,Shilpi Sahunsari,Monday,6,5th Period,11:50 to 12:30,GK_Anjali Jain,GK,Anjali Jain
+392,CLASS 3 Marigold,Shilpi Sahunsari,Monday,7,6th Period,12:30 to 1:10,EVS_Arti Sagar,EVS,Arti Sagar
+393,CLASS 3 Marigold,Shilpi Sahunsari,Tuesday,0,Morning Assembly,07:50 to 08:20,CYCLE TEST,CYCLE TEST,
+394,CLASS 3 Marigold,Shilpi Sahunsari,Tuesday,1,1st Period,08:30 to 9:15,Eng_Shilpi Sahu,Eng,Shilpi Sahunsari
+395,CLASS 3 Marigold,Shilpi Sahunsari,Tuesday,2,2nd Period,9:15 to 10:00,Game_Komal,Game,Komal
+396,CLASS 3 Marigold,Shilpi Sahunsari,Tuesday,3,3rd Period,10:00 to 10:45,Math_Neelam,Math,Neelam Sahu
+397,CLASS 3 Marigold,Shilpi Sahunsari,Tuesday,4,Lunch,10:45 to 11:05,Lunch _ Shilpi Sahunsari,Lunch,Shilpi Sahunsari
+398,CLASS 3 Marigold,Shilpi Sahunsari,Tuesday,5,4th Period,11:05 to 11:50,Hindi_Neha Rai,Hindi,Neha Rai
+399,CLASS 3 Marigold,Shilpi Sahunsari,Tuesday,6,5th Period,11:50 to 12:30,GK_Anjali Jain,GK,Anjali Jain
+400,CLASS 3 Marigold,Shilpi Sahunsari,Tuesday,7,6th Period,12:30 to 1:10,EVS_Arti Sagar,EVS,Arti Sagar
+401,CLASS 3 Marigold,Shilpi Sahunsari,Wednesday,0,Morning Assembly,07:50 to 08:20,Prayer,Prayer,
+402,CLASS 3 Marigold,Shilpi Sahunsari,Wednesday,1,1st Period,08:30 to 9:15,Eng_Shilpi Sahu,Eng,Shilpi Sahunsari
+403,CLASS 3 Marigold,Shilpi Sahunsari,Wednesday,2,2nd Period,9:15 to 10:00,Math_Neelam,Math,Neelam Sahu
+404,CLASS 3 Marigold,Shilpi Sahunsari,Wednesday,3,3rd Period,10:00 to 10:45,Yoga_Pradeep,Yoga,Pradeep
+405,CLASS 3 Marigold,Shilpi Sahunsari,Wednesday,4,Lunch,10:45 to 11:05,Lunch _ Shilpi Sahunsari,Lunch,Shilpi Sahunsari
+406,CLASS 3 Marigold,Shilpi Sahunsari,Wednesday,5,4th Period,11:05 to 11:50,Hindi_Neha Rai,Hindi,Neha Rai
+407,CLASS 3 Marigold,Shilpi Sahunsari,Wednesday,6,5th Period,11:50 to 12:30,Distation&Cursive_Shilpi Sahu,Distation&Cursive,Shilpi Sahunsari
+408,CLASS 3 Marigold,Shilpi Sahunsari,Wednesday,7,6th Period,12:30 to 1:10,EVS_Arti Sagar,EVS,Arti Sagar
+409,CLASS 3 Marigold,Shilpi Sahunsari,Thursday,0,Morning Assembly,07:50 to 08:20,Prayer,Prayer,
+410,CLASS 3 Marigold,Shilpi Sahunsari,Thursday,1,1st Period,08:30 to 9:15,Eng_Shilpi Sahu,Eng,Shilpi Sahunsari
+411,CLASS 3 Marigold,Shilpi Sahunsari,Thursday,2,2nd Period,9:15 to 10:00,Dance_Akash,Dance,Akash
+412,CLASS 3 Marigold,Shilpi Sahunsari,Thursday,3,3rd Period,10:00 to 10:45,Math_Neelam,Math,Neelam Sahu
+413,CLASS 3 Marigold,Shilpi Sahunsari,Thursday,4,Lunch,10:45 to 11:05,Lunch _ Shilpi Sahunsari,Lunch,Shilpi Sahunsari
+414,CLASS 3 Marigold,Shilpi Sahunsari,Thursday,5,4th Period,11:05 to 11:50,Hindi_Neha Rai,Hindi,Neha Rai
+415,CLASS 3 Marigold,Shilpi Sahunsari,Thursday,6,5th Period,11:50 to 12:30,Distation&Cursive_Shilpi Sahu,Distation&Cursive,Shilpi Sahunsari
+416,CLASS 3 Marigold,Shilpi Sahunsari,Thursday,7,6th Period,12:30 to 1:10,EVS_Arti Sagar,EVS,Arti Sagar
+417,CLASS 3 Marigold,Shilpi Sahunsari,Friday,0,Morning Assembly,07:50 to 08:20,CYCLE TEST,CYCLE TEST,
+418,CLASS 3 Marigold,Shilpi Sahunsari,Friday,1,1st Period,08:30 to 9:15,Eng_Shilpi Sahu,Eng,Shilpi Sahunsari
+419,CLASS 3 Marigold,Shilpi Sahunsari,Friday,2,2nd Period,9:15 to 10:00,IT_Somya Nayak,IT,Somya Nayak
+420,CLASS 3 Marigold,Shilpi Sahunsari,Friday,3,3rd Period,10:00 to 10:45,Math_Neelam,Math,Neelam Sahu
+421,CLASS 3 Marigold,Shilpi Sahunsari,Friday,4,Lunch,10:45 to 11:05,Lunch _ Shilpi Sahunsari,Lunch,Shilpi Sahunsari
+422,CLASS 3 Marigold,Shilpi Sahunsari,Friday,5,4th Period,11:05 to 11:50,Hindi_Neha Rai,Hindi,Neha Rai
+423,CLASS 3 Marigold,Shilpi Sahunsari,Friday,6,5th Period,11:50 to 12:30,Art&Craft_Anubha,Art&Craft,Anubha
+424,CLASS 3 Marigold,Shilpi Sahunsari,Friday,7,6th Period,12:30 to 1:10,EVS_Arti Sagar,EVS,Arti Sagar
+425,CLASS 3 Marigold,Shilpi Sahunsari,Saturday,0,Morning Assembly,07:50 to 08:20,CCA,CCA,
+426,CLASS 3 Marigold,Shilpi Sahunsari,Saturday,1,1st Period,08:30 to 9:15,Eng_Shilpi Sahu,Eng,Shilpi Sahunsari
+427,CLASS 3 Marigold,Shilpi Sahunsari,Saturday,2,2nd Period,9:15 to 10:00,IT_Somya Nayak,IT,Somya Nayak
+428,CLASS 3 Marigold,Shilpi Sahunsari,Saturday,3,3rd Period,10:00 to 10:45,Math_Neelam,Math,Neelam Sahu
+429,CLASS 3 Marigold,Shilpi Sahunsari,Saturday,4,Lunch,10:45 to 11:05,Lunch _ Shilpi Sahunsari,Lunch,Shilpi Sahunsari
+430,CLASS 3 Marigold,Shilpi Sahunsari,Saturday,5,4th Period,11:05 to 11:50,Hindi_Neha Rai,Hindi,Neha Rai
+431,CLASS 3 Marigold,Shilpi Sahunsari,Saturday,6,5th Period,11:50 to 12:30,,,
+432,CLASS 3 Marigold,Shilpi Sahunsari,Saturday,7,6th Period,12:30 to 1:10,,,
+433,CLASS 3 Lily,Anubha,Monday,0,Morning Assembly,07:50 to 08:20,Prayer,Prayer,
+434,CLASS 3 Lily,Anubha,Monday,1,1st Period,08:30 to 9:15,Dance_Akash,Dance,Akash
+435,CLASS 3 Lily,Anubha,Monday,2,2nd Period,9:15 to 10:00,Eng_Shilpi Sahu,Eng,Shilpi Sahunsari
+436,CLASS 3 Lily,Anubha,Monday,3,3rd Period,10:00 to 10:45,Hindi_Neha Rai,Hindi,Neha Rai
+437,CLASS 3 Lily,Anubha,Monday,4,Lunch,10:45 to 11:05,Lunch _ Anubha,Lunch,Anubha
+438,CLASS 3 Lily,Anubha,Monday,5,4th Period,11:05 to 11:50,Music_Atul,Music,Atul
+439,CLASS 3 Lily,Anubha,Monday,6,5th Period,11:50 to 12:30,EVS_Arti Sagar,EVS,Arti Sagar
+440,CLASS 3 Lily,Anubha,Monday,7,6th Period,12:30 to 1:10,Math_Arshee,Math,Arshee
+441,CLASS 3 Lily,Anubha,Tuesday,0,Morning Assembly,07:50 to 08:20,CYCLE TEST,CYCLE TEST,
+442,CLASS 3 Lily,Anubha,Tuesday,1,1st Period,08:30 to 9:15,Distation&Cursive_Reenu,Distation&Cursive,Reenu Yadav
+443,CLASS 3 Lily,Anubha,Tuesday,2,2nd Period,9:15 to 10:00,Eng_Shilpi Sahu,Eng,Shilpi Sahunsari
+444,CLASS 3 Lily,Anubha,Tuesday,3,3rd Period,10:00 to 10:45,Hindi_Neha Rai,Hindi,Neha Rai
+445,CLASS 3 Lily,Anubha,Tuesday,4,Lunch,10:45 to 11:05,Lunch _ Anubha,Lunch,Anubha
+446,CLASS 3 Lily,Anubha,Tuesday,5,4th Period,11:05 to 11:50,Art&Craft_Anubha,Art&Craft,Anubha
+447,CLASS 3 Lily,Anubha,Tuesday,6,5th Period,11:50 to 12:30,EVS_Arti Sagar,EVS,Arti Sagar
+448,CLASS 3 Lily,Anubha,Tuesday,7,6th Period,12:30 to 1:10,Math_Arshee,Math,Arshee
+449,CLASS 3 Lily,Anubha,Wednesday,0,Morning Assembly,07:50 to 08:20,Prayer,Prayer,
+450,CLASS 3 Lily,Anubha,Wednesday,1,1st Period,08:30 to 9:15,IT_Sonakshi,IT,Sonakshi
+451,CLASS 3 Lily,Anubha,Wednesday,2,2nd Period,9:15 to 10:00,Eng_Shilpi Sahu,Eng,Shilpi Sahunsari
+452,CLASS 3 Lily,Anubha,Wednesday,3,3rd Period,10:00 to 10:45,Hindi_Neha Rai,Hindi,Neha Rai
+453,CLASS 3 Lily,Anubha,Wednesday,4,Lunch,10:45 to 11:05,Lunch _ Anubha,Lunch,Anubha
+454,CLASS 3 Lily,Anubha,Wednesday,5,4th Period,11:05 to 11:50,GK_Avdesh,GK,Avdesh
+455,CLASS 3 Lily,Anubha,Wednesday,6,5th Period,11:50 to 12:30,EVS_Arti Sagar,EVS,Arti Sagar
+456,CLASS 3 Lily,Anubha,Wednesday,7,6th Period,12:30 to 1:10,Math_Arshee,Math,Arshee
+457,CLASS 3 Lily,Anubha,Thursday,0,Morning Assembly,07:50 to 08:20,Prayer,Prayer,
+458,CLASS 3 Lily,Anubha,Thursday,1,1st Period,08:30 to 9:15,Yoga_Pradeep,Yoga,Pradeep
+459,CLASS 3 Lily,Anubha,Thursday,2,2nd Period,9:15 to 10:00,Eng_Shilpi Sahu,Eng,Shilpi Sahunsari
+460,CLASS 3 Lily,Anubha,Thursday,3,3rd Period,10:00 to 10:45,Hindi_Neha Rai,Hindi,Neha Rai
+461,CLASS 3 Lily,Anubha,Thursday,4,Lunch,10:45 to 11:05,Lunch _ Anubha,Lunch,Anubha
+462,CLASS 3 Lily,Anubha,Thursday,5,4th Period,11:05 to 11:50,IT_Sonakshi,IT,Sonakshi
+463,CLASS 3 Lily,Anubha,Thursday,6,5th Period,11:50 to 12:30,EVS_Arti Sagar,EVS,Arti Sagar
+464,CLASS 3 Lily,Anubha,Thursday,7,6th Period,12:30 to 1:10,Math_Arshee,Math,Arshee
+465,CLASS 3 Lily,Anubha,Friday,0,Morning Assembly,07:50 to 08:20,CYCLE TEST,CYCLE TEST,
+466,CLASS 3 Lily,Anubha,Friday,1,1st Period,08:30 to 9:15,Art&Craft_Anubha,Art&Craft,Anubha
+467,CLASS 3 Lily,Anubha,Friday,2,2nd Period,9:15 to 10:00,Eng_Shilpi Sahu,Eng,Shilpi Sahunsari
+468,CLASS 3 Lily,Anubha,Friday,3,3rd Period,10:00 to 10:45,Hindi_Neha Rai,Hindi,Neha Rai
+469,CLASS 3 Lily,Anubha,Friday,4,Lunch,10:45 to 11:05,Lunch _ Anubha,Lunch,Anubha
+470,CLASS 3 Lily,Anubha,Friday,5,4th Period,11:05 to 11:50,GK_Avdesh,GK,Avdesh
+471,CLASS 3 Lily,Anubha,Friday,6,5th Period,11:50 to 12:30,EVS_Arti Sagar,EVS,Arti Sagar
+472,CLASS 3 Lily,Anubha,Friday,7,6th Period,12:30 to 1:10,Math_Arshee,Math,Arshee
+473,CLASS 3 Lily,Anubha,Saturday,0,Morning Assembly,07:50 to 08:20,CCA,CCA,
+474,CLASS 3 Lily,Anubha,Saturday,1,1st Period,08:30 to 9:15,Game_Komal,Game,Komal
+475,CLASS 3 Lily,Anubha,Saturday,2,2nd Period,9:15 to 10:00,Eng_Shilpi Sahu,Eng,Shilpi Sahunsari
+476,CLASS 3 Lily,Anubha,Saturday,3,3rd Period,10:00 to 10:45,Hindi_Neha Rai,Hindi,Neha Rai
+477,CLASS 3 Lily,Anubha,Saturday,4,Lunch,10:45 to 11:05,Lunch _ Anubha,Lunch,Anubha
+478,CLASS 3 Lily,Anubha,Saturday,5,4th Period,11:05 to 11:50,Distation&Cursive_Reenu,Distation&Cursive,Reenu Yadav
+479,CLASS 3 Lily,Anubha,Saturday,6,5th Period,11:50 to 12:30,,,
+480,CLASS 3 Lily,Anubha,Saturday,7,6th Period,12:30 to 1:10,,,
+481,CLASS 3 Sunflower,Neha Rai,Monday,0,Morning Assembly,07:50 to 08:20,Prayer,Prayer,
+482,CLASS 3 Sunflower,Neha Rai,Monday,1,1st Period,08:30 to 9:15,Hindi_Neha Rai,Hindi,Neha Rai
+483,CLASS 3 Sunflower,Neha Rai,Monday,2,2nd Period,9:15 to 10:00,Distation&Cursive_Arshee,Distation&Cursive,Arshee
+484,CLASS 3 Sunflower,Neha Rai,Monday,3,3rd Period,10:00 to 10:45,EVS_Arti Sagar,EVS,Arti Sagar
+485,CLASS 3 Sunflower,Neha Rai,Monday,4,Lunch,10:45 to 11:05,Lunch _ Neha Rai,Lunch,Neha Rai
+486,CLASS 3 Sunflower,Neha Rai,Monday,5,4th Period,11:05 to 11:50,GK_Avdesh,GK,Avdesh
+487,CLASS 3 Sunflower,Neha Rai,Monday,6,5th Period,11:50 to 12:30,Eng_Arshee,Eng,Arshee
+488,CLASS 3 Sunflower,Neha Rai,Monday,7,6th Period,12:30 to 1:10,Maths_Vandna Saraf,Maths,Vandna Saraf
+489,CLASS 3 Sunflower,Neha Rai,Tuesday,0,Morning Assembly,07:50 to 08:20,CYCLE TEST,CYCLE TEST,
+490,CLASS 3 Sunflower,Neha Rai,Tuesday,1,1st Period,08:30 to 9:15,Hindi_Neha Rai,Hindi,Neha Rai
+491,CLASS 3 Sunflower,Neha Rai,Tuesday,2,2nd Period,9:15 to 10:00,Distation&Cursive_Arshee,Distation&Cursive,Arshee
+492,CLASS 3 Sunflower,Neha Rai,Tuesday,3,3rd Period,10:00 to 10:45,EVS_Arti Sagar,EVS,Arti Sagar
+493,CLASS 3 Sunflower,Neha Rai,Tuesday,4,Lunch,10:45 to 11:05,Lunch _ Neha Rai,Lunch,Neha Rai
+494,CLASS 3 Sunflower,Neha Rai,Tuesday,5,4th Period,11:05 to 11:50,GK_Avdesh,GK,Avdesh
+495,CLASS 3 Sunflower,Neha Rai,Tuesday,6,5th Period,11:50 to 12:30,Eng_Arshee,Eng,Arshee
+496,CLASS 3 Sunflower,Neha Rai,Tuesday,7,6th Period,12:30 to 1:10,Maths_Vandna Saraf,Maths,Vandna Saraf
+497,CLASS 3 Sunflower,Neha Rai,Wednesday,0,Morning Assembly,07:50 to 08:20,Prayer,Prayer,
+498,CLASS 3 Sunflower,Neha Rai,Wednesday,1,1st Period,08:30 to 9:15,Hindi_Neha Rai,Hindi,Neha Rai
+499,CLASS 3 Sunflower,Neha Rai,Wednesday,2,2nd Period,9:15 to 10:00,Yoga_Pradeep,Yoga,Pradeep
+500,CLASS 3 Sunflower,Neha Rai,Wednesday,3,3rd Period,10:00 to 10:45,EVS_Arti Sagar,EVS,Arti Sagar
+501,CLASS 3 Sunflower,Neha Rai,Wednesday,4,Lunch,10:45 to 11:05,Lunch _ Neha Rai,Lunch,Neha Rai
+502,CLASS 3 Sunflower,Neha Rai,Wednesday,5,4th Period,11:05 to 11:50,Eng_Arshee,Eng,Arshee
+503,CLASS 3 Sunflower,Neha Rai,Wednesday,6,5th Period,11:50 to 12:30,IT_sonakshi,IT,Sonakshi
+504,CLASS 3 Sunflower,Neha Rai,Wednesday,7,6th Period,12:30 to 1:10,Maths_Vandna Saraf,Maths,Vandna Saraf
+505,CLASS 3 Sunflower,Neha Rai,Thursday,0,Morning Assembly,07:50 to 08:20,Prayer,Prayer,
+506,CLASS 3 Sunflower,Neha Rai,Thursday,1,1st Period,08:30 to 9:15,Hindi_Neha Rai,Hindi,Neha Rai
+507,CLASS 3 Sunflower,Neha Rai,Thursday,2,2nd Period,9:15 to 10:00,IT_sonakshi,IT,Sonakshi
+508,CLASS 3 Sunflower,Neha Rai,Thursday,3,3rd Period,10:00 to 10:45,EVS_Arti Sagar,EVS,Arti Sagar
+509,CLASS 3 Sunflower,Neha Rai,Thursday,4,Lunch,10:45 to 11:05,Lunch _ Neha Rai,Lunch,Neha Rai
+510,CLASS 3 Sunflower,Neha Rai,Thursday,5,4th Period,11:05 to 11:50,Game_Komal,Game,Komal
+511,CLASS 3 Sunflower,Neha Rai,Thursday,6,5th Period,11:50 to 12:30,Art&Craft_Anubha,Art&Craft,Anubha
+512,CLASS 3 Sunflower,Neha Rai,Thursday,7,6th Period,12:30 to 1:10,Maths_Vandna Saraf,Maths,Vandna Saraf
+513,CLASS 3 Sunflower,Neha Rai,Friday,0,Morning Assembly,07:50 to 08:20,CYCLE TEST,CYCLE TEST,
+514,CLASS 3 Sunflower,Neha Rai,Friday,1,1st Period,08:30 to 9:15,Hindi_Neha Rai,Hindi,Neha Rai
+515,CLASS 3 Sunflower,Neha Rai,Friday,2,2nd Period,9:15 to 10:00,Eng_Arshee,Eng,Arshee
+516,CLASS 3 Sunflower,Neha Rai,Friday,3,3rd Period,10:00 to 10:45,EVS_Arti Sagar,EVS,Arti Sagar
+517,CLASS 3 Sunflower,Neha Rai,Friday,4,Lunch,10:45 to 11:05,Lunch _ Neha Rai,Lunch,Neha Rai
+518,CLASS 3 Sunflower,Neha Rai,Friday,5,4th Period,11:05 to 11:50,Eng_Arshee,Eng,Arshee
+519,CLASS 3 Sunflower,Neha Rai,Friday,6,5th Period,11:50 to 12:30,Music_Atul,Music,Atul
+520,CLASS 3 Sunflower,Neha Rai,Friday,7,6th Period,12:30 to 1:10,Maths_Vandna Saraf,Maths,Vandna Saraf
+521,CLASS 3 Sunflower,Neha Rai,Saturday,0,Morning Assembly,07:50 to 08:20,CCA,CCA,
+522,CLASS 3 Sunflower,Neha Rai,Saturday,1,1st Period,08:30 to 9:15,Hindi_Neha Rai,Hindi,Neha Rai
+523,CLASS 3 Sunflower,Neha Rai,Saturday,2,2nd Period,9:15 to 10:00,Dance_Akash,Dance,Akash
+524,CLASS 3 Sunflower,Neha Rai,Saturday,3,3rd Period,10:00 to 10:45,Art&Craft_Anubha,Art&Craft,Anubha
+525,CLASS 3 Sunflower,Neha Rai,Saturday,4,Lunch,10:45 to 11:05,Lunch _ Neha Rai,Lunch,Neha Rai
+526,CLASS 3 Sunflower,Neha Rai,Saturday,5,4th Period,11:05 to 11:50,Eng_Arshee,Eng,Arshee
+527,CLASS 3 Sunflower,Neha Rai,Saturday,6,5th Period,11:50 to 12:30,,,
+528,CLASS 3 Sunflower,Neha Rai,Saturday,7,6th Period,12:30 to 1:10,,,
+529,CLASS 4 Rose,Rajkmari Yadav,Monday,0,Morning Assembly,07:50 to 08:20,Prayer,Prayer,
+530,CLASS 4 Rose,Rajkmari Yadav,Monday,1,1st Period,08:30 to 9:15,Hindi_Rajkmari,Hindi,Rajkmari Yadav
+531,CLASS 4 Rose,Rajkmari Yadav,Monday,2,2nd Period,9:15 to 10:00,EVS_Arti Sagar,EVS,Arti Sagar
+532,CLASS 4 Rose,Rajkmari Yadav,Monday,3,3rd Period,10:00 to 10:45,Distation&Cursive_Arti A,Distation&Cursive,Arti Ahirwar
+533,CLASS 4 Rose,Rajkmari Yadav,Monday,4,Lunch,10:45 to 11:05,Lunch _ Rajkmari Yadav,Lunch,Rajkmari Yadav
+534,CLASS 4 Rose,Rajkmari Yadav,Monday,5,4th Period,11:05 to 11:50,Maths_Vandna Saraf,Maths,Vandna Saraf
+535,CLASS 4 Rose,Rajkmari Yadav,Monday,6,5th Period,11:50 to 12:30,Eng_Shilpi Sahu,Eng,Shilpi Sahunsari
+536,CLASS 4 Rose,Rajkmari Yadav,Monday,7,6th Period,12:30 to 1:10,Eng_Shilpi Sahu,Eng,Shilpi Sahunsari
+537,CLASS 4 Rose,Rajkmari Yadav,Tuesday,0,Morning Assembly,07:50 to 08:20,CYCLE TEST,CYCLE TEST,
+538,CLASS 4 Rose,Rajkmari Yadav,Tuesday,1,1st Period,08:30 to 9:15,GK_Anjali N,GK,Anjali Nalvanshi
+539,CLASS 4 Rose,Rajkmari Yadav,Tuesday,2,2nd Period,9:15 to 10:00,EVS_Arti Sagar,EVS,Arti Sagar
+540,CLASS 4 Rose,Rajkmari Yadav,Tuesday,3,3rd Period,10:00 to 10:45,Distation&Cursive_Arti A,Distation&Cursive,Arti Ahirwar
+541,CLASS 4 Rose,Rajkmari Yadav,Tuesday,4,Lunch,10:45 to 11:05,Lunch _ Rajkmari Yadav,Lunch,Rajkmari Yadav
+542,CLASS 4 Rose,Rajkmari Yadav,Tuesday,5,4th Period,11:05 to 11:50,Maths_Vandna Saraf,Maths,Vandna Saraf
+543,CLASS 4 Rose,Rajkmari Yadav,Tuesday,6,5th Period,11:50 to 12:30,Hindi_Rajkmari,Hindi,Rajkmari Yadav
+544,CLASS 4 Rose,Rajkmari Yadav,Tuesday,7,6th Period,12:30 to 1:10,Eng_Shilpi Sahu,Eng,Shilpi Sahunsari
+545,CLASS 4 Rose,Rajkmari Yadav,Wednesday,0,Morning Assembly,07:50 to 08:20,Prayer,Prayer,
+546,CLASS 4 Rose,Rajkmari Yadav,Wednesday,1,1st Period,08:30 to 9:15,Hindi_Rajkmari,Hindi,Rajkmari Yadav
+547,CLASS 4 Rose,Rajkmari Yadav,Wednesday,2,2nd Period,9:15 to 10:00,Art&Craft_Anubha,Art&Craft,Anubha
+548,CLASS 4 Rose,Rajkmari Yadav,Wednesday,3,3rd Period,10:00 to 10:45,Dance_Akash,Dance,Akash
+549,CLASS 4 Rose,Rajkmari Yadav,Wednesday,4,Lunch,10:45 to 11:05,Lunch _ Rajkmari Yadav,Lunch,Rajkmari Yadav
+550,CLASS 4 Rose,Rajkmari Yadav,Wednesday,5,4th Period,11:05 to 11:50,Maths_Vandna Saraf,Maths,Vandna Saraf
+551,CLASS 4 Rose,Rajkmari Yadav,Wednesday,6,5th Period,11:50 to 12:30,Music_Atul,Music,Atul
+552,CLASS 4 Rose,Rajkmari Yadav,Wednesday,7,6th Period,12:30 to 1:10,Eng_Shilpi Sahu,Eng,Shilpi Sahunsari
+553,CLASS 4 Rose,Rajkmari Yadav,Thursday,0,Morning Assembly,07:50 to 08:20,Prayer,Prayer,
+554,CLASS 4 Rose,Rajkmari Yadav,Thursday,1,1st Period,08:30 to 9:15,Hindi_Rajkmari,Hindi,Rajkmari Yadav
+555,CLASS 4 Rose,Rajkmari Yadav,Thursday,2,2nd Period,9:15 to 10:00,EVS_Arti Sagar,EVS,Arti Sagar
+556,CLASS 4 Rose,Rajkmari Yadav,Thursday,3,3rd Period,10:00 to 10:45,Yoga_Pradeep,Yoga,Pradeep
+557,CLASS 4 Rose,Rajkmari Yadav,Thursday,4,Lunch,10:45 to 11:05,Lunch _ Rajkmari Yadav,Lunch,Rajkmari Yadav
+558,CLASS 4 Rose,Rajkmari Yadav,Thursday,5,4th Period,11:05 to 11:50,Maths_Vandna Saraf,Maths,Vandna Saraf
+559,CLASS 4 Rose,Rajkmari Yadav,Thursday,6,5th Period,11:50 to 12:30,Game_Komal,Game,Komal
+560,CLASS 4 Rose,Rajkmari Yadav,Thursday,7,6th Period,12:30 to 1:10,Eng_Shilpi Sahu,Eng,Shilpi Sahunsari
+561,CLASS 4 Rose,Rajkmari Yadav,Friday,0,Morning Assembly,07:50 to 08:20,CYCLE TEST,CYCLE TEST,
+562,CLASS 4 Rose,Rajkmari Yadav,Friday,1,1st Period,08:30 to 9:15,Hindi_Rajkmari,Hindi,Rajkmari Yadav
+563,CLASS 4 Rose,Rajkmari Yadav,Friday,2,2nd Period,9:15 to 10:00,EVS_Arti Sagar,EVS,Arti Sagar
+564,CLASS 4 Rose,Rajkmari Yadav,Friday,3,3rd Period,10:00 to 10:45,GK_Anjali N,GK,Anjali Nalvanshi
+565,CLASS 4 Rose,Rajkmari Yadav,Friday,4,Lunch,10:45 to 11:05,Lunch _ Rajkmari Yadav,Lunch,Rajkmari Yadav
+566,CLASS 4 Rose,Rajkmari Yadav,Friday,5,4th Period,11:05 to 11:50,Maths_Vandna Saraf,Maths,Vandna Saraf
+567,CLASS 4 Rose,Rajkmari Yadav,Friday,6,5th Period,11:50 to 12:30,Eng_Shilpi Sahu,Eng,Shilpi Sahunsari
+568,CLASS 4 Rose,Rajkmari Yadav,Friday,7,6th Period,12:30 to 1:10,IT_sonakshi,IT,Sonakshi
+569,CLASS 4 Rose,Rajkmari Yadav,Saturday,0,Morning Assembly,07:50 to 08:20,CCA,CCA,
+570,CLASS 4 Rose,Rajkmari Yadav,Saturday,1,1st Period,08:30 to 9:15,Art&Craft_Anubha,Art&Craft,Anubha
+571,CLASS 4 Rose,Rajkmari Yadav,Saturday,2,2nd Period,9:15 to 10:00,EVS_Arti Sagar,EVS,Arti Sagar
+572,CLASS 4 Rose,Rajkmari Yadav,Saturday,3,3rd Period,10:00 to 10:45,Hindi_Rajkmari,Hindi,Rajkmari Yadav
+573,CLASS 4 Rose,Rajkmari Yadav,Saturday,4,Lunch,10:45 to 11:05,Lunch _ Rajkmari Yadav,Lunch,Rajkmari Yadav
+574,CLASS 4 Rose,Rajkmari Yadav,Saturday,5,4th Period,11:05 to 11:50,IT_sonakshi,IT,Sonakshi
+575,CLASS 4 Rose,Rajkmari Yadav,Saturday,6,5th Period,11:50 to 12:30,,,
+576,CLASS 4 Rose,Rajkmari Yadav,Saturday,7,6th Period,12:30 to 1:10,,,
+577,CLASS 4 Marigold,Arshee,Monday,0,Morning Assembly,07:50 to 08:20,Prayer,Prayer,
+578,CLASS 4 Marigold,Arshee,Monday,1,1st Period,08:30 to 9:15,Eng_Arshee,Eng,Arshee
+579,CLASS 4 Marigold,Arshee,Monday,2,2nd Period,9:15 to 10:00,EVS_Anjali N,EVS,Anjali Nalvanshi
+580,CLASS 4 Marigold,Arshee,Monday,3,3rd Period,10:00 to 10:45,Distation&Cursive_Arshee,Distation&Cursive,Arshee
+581,CLASS 4 Marigold,Arshee,Monday,4,Lunch,10:45 to 11:05,Lunch _ Arshee,Lunch,Arshee
+582,CLASS 4 Marigold,Arshee,Monday,5,4th Period,11:05 to 11:50,Math_Neelam,Math,Neelam Sahu
+583,CLASS 4 Marigold,Arshee,Monday,6,5th Period,11:50 to 12:30,Hindi_Rajkmari,Hindi,Rajkmari Yadav
+584,CLASS 4 Marigold,Arshee,Monday,7,6th Period,12:30 to 1:10,Hindi_Rajkmari,Hindi,Rajkmari Yadav
+585,CLASS 4 Marigold,Arshee,Tuesday,0,Morning Assembly,07:50 to 08:20,CYCLE TEST,CYCLE TEST,
+586,CLASS 4 Marigold,Arshee,Tuesday,1,1st Period,08:30 to 9:15,Yoga_Pradeep,Yoga,Pradeep
+587,CLASS 4 Marigold,Arshee,Tuesday,2,2nd Period,9:15 to 10:00,IT_Manish Chauhan,IT,Manish Chauhan
+588,CLASS 4 Marigold,Arshee,Tuesday,3,3rd Period,10:00 to 10:45,Art&Craft_Anubha,Art&Craft,Anubha
+589,CLASS 4 Marigold,Arshee,Tuesday,4,Lunch,10:45 to 11:05,Lunch _ Arshee,Lunch,Arshee
+590,CLASS 4 Marigold,Arshee,Tuesday,5,4th Period,11:05 to 11:50,Math_Neelam,Math,Neelam Sahu
+591,CLASS 4 Marigold,Arshee,Tuesday,6,5th Period,11:50 to 12:30,EVS_Anjali N,EVS,Anjali Nalvanshi
+592,CLASS 4 Marigold,Arshee,Tuesday,7,6th Period,12:30 to 1:10,Hindi_Rajkmari,Hindi,Rajkmari Yadav
+593,CLASS 4 Marigold,Arshee,Wednesday,0,Morning Assembly,07:50 to 08:20,Prayer,Prayer,
+594,CLASS 4 Marigold,Arshee,Wednesday,1,1st Period,08:30 to 9:15,Eng_Arshee,Eng,Arshee
+595,CLASS 4 Marigold,Arshee,Wednesday,2,2nd Period,9:15 to 10:00,Music_Atul,Music,Atul
+596,CLASS 4 Marigold,Arshee,Wednesday,3,3rd Period,10:00 to 10:45,Distation&Cursive_Arshee,Distation&Cursive,Arshee
+597,CLASS 4 Marigold,Arshee,Wednesday,4,Lunch,10:45 to 11:05,Lunch _ Arshee,Lunch,Arshee
+598,CLASS 4 Marigold,Arshee,Wednesday,5,4th Period,11:05 to 11:50,GK_Arti Sagar,GK,Arti Sagar
+599,CLASS 4 Marigold,Arshee,Wednesday,6,5th Period,11:50 to 12:30,EVS_Anjali N,EVS,Anjali Nalvanshi
+600,CLASS 4 Marigold,Arshee,Wednesday,7,6th Period,12:30 to 1:10,Hindi_Rajkmari,Hindi,Rajkmari Yadav
+601,CLASS 4 Marigold,Arshee,Thursday,0,Morning Assembly,07:50 to 08:20,Prayer,Prayer,
+602,CLASS 4 Marigold,Arshee,Thursday,1,1st Period,08:30 to 9:15,Eng_Arshee,Eng,Arshee
+603,CLASS 4 Marigold,Arshee,Thursday,2,2nd Period,9:15 to 10:00,Eng_Arshee,Eng,Arshee
+604,CLASS 4 Marigold,Arshee,Thursday,3,3rd Period,10:00 to 10:45,IT_Manish Chauhan,IT,Manish Chauhan
+605,CLASS 4 Marigold,Arshee,Thursday,4,Lunch,10:45 to 11:05,Lunch _ Arshee,Lunch,Arshee
+606,CLASS 4 Marigold,Arshee,Thursday,5,4th Period,11:05 to 11:50,Math_Neelam,Math,Neelam Sahu
+607,CLASS 4 Marigold,Arshee,Thursday,6,5th Period,11:50 to 12:30,EVS_Anjali N,EVS,Anjali Nalvanshi
+608,CLASS 4 Marigold,Arshee,Thursday,7,6th Period,12:30 to 1:10,Hindi_Rajkmari,Hindi,Rajkmari Yadav
+609,CLASS 4 Marigold,Arshee,Friday,0,Morning Assembly,07:50 to 08:20,CYCLE TEST,CYCLE TEST,
+610,CLASS 4 Marigold,Arshee,Friday,1,1st Period,08:30 to 9:15,Eng_Arshee,Eng,Arshee
+611,CLASS 4 Marigold,Arshee,Friday,2,2nd Period,9:15 to 10:00,Math_Neelam,Math,Neelam Sahu
+612,CLASS 4 Marigold,Arshee,Friday,3,3rd Period,10:00 to 10:45,GAME_Komal,GAME,Komal
+613,CLASS 4 Marigold,Arshee,Friday,4,Lunch,10:45 to 11:05,Lunch _ Arshee,Lunch,Arshee
+614,CLASS 4 Marigold,Arshee,Friday,5,4th Period,11:05 to 11:50,Art&Craft_Anubha,Art&Craft,Anubha
+615,CLASS 4 Marigold,Arshee,Friday,6,5th Period,11:50 to 12:30,EVS_Anjali N,EVS,Anjali Nalvanshi
+616,CLASS 4 Marigold,Arshee,Friday,7,6th Period,12:30 to 1:10,Hindi_Rajkmari,Hindi,Rajkmari Yadav
+617,CLASS 4 Marigold,Arshee,Saturday,0,Morning Assembly,07:50 to 08:20,CCA,CCA,
+618,CLASS 4 Marigold,Arshee,Saturday,1,1st Period,08:30 to 9:15,GK_Arti Sagar,GK,Arti Sagar
+619,CLASS 4 Marigold,Arshee,Saturday,2,2nd Period,9:15 to 10:00,Eng_Arshee,Eng,Arshee
+620,CLASS 4 Marigold,Arshee,Saturday,3,3rd Period,10:00 to 10:45,Dance_Akash,Dance,Akash
+621,CLASS 4 Marigold,Arshee,Saturday,4,Lunch,10:45 to 11:05,Lunch _ Arshee,Lunch,Arshee
+622,CLASS 4 Marigold,Arshee,Saturday,5,4th Period,11:05 to 11:50,Math_Neelam,Math,Neelam Sahu
+623,CLASS 4 Marigold,Arshee,Saturday,6,5th Period,11:50 to 12:30,,,
+624,CLASS 4 Marigold,Arshee,Saturday,7,6th Period,12:30 to 1:10,,,
+625,CLASS 4 Lily,Arti Sagar,Monday,0,Morning Assembly,07:50 to 08:20,Prayer,Prayer,
+626,CLASS 4 Lily,Arti Sagar,Monday,1,1st Period,08:30 to 9:15,EVS_Arti Sagar,EVS,Arti Sagar
+627,CLASS 4 Lily,Arti Sagar,Monday,2,2nd Period,9:15 to 10:00,Math_Neelam,Math,Neelam Sahu
+628,CLASS 4 Lily,Arti Sagar,Monday,3,3rd Period,10:00 to 10:45,Dance_Akash,Dance,Akash
+629,CLASS 4 Lily,Arti Sagar,Monday,4,Lunch,10:45 to 11:05,Lunch _ Arti Sagar,Lunch,Arti Sagar
+630,CLASS 4 Lily,Arti Sagar,Monday,5,4th Period,11:05 to 11:50,Eng_Shilpi Sahu,Eng,Shilpi Sahunsari
+631,CLASS 4 Lily,Arti Sagar,Monday,6,5th Period,11:50 to 12:30,Hindi_Neha Rai,Hindi,Neha Rai
+632,CLASS 4 Lily,Arti Sagar,Monday,7,6th Period,12:30 to 1:10,Art&Craft_Rajaram,Art&Craft,Rajaram
+633,CLASS 4 Lily,Arti Sagar,Tuesday,0,Morning Assembly,07:50 to 08:20,CYCLE TEST,CYCLE TEST,
+634,CLASS 4 Lily,Arti Sagar,Tuesday,1,1st Period,08:30 to 9:15,EVS_Arti Sagar,EVS,Arti Sagar
+635,CLASS 4 Lily,Arti Sagar,Tuesday,2,2nd Period,9:15 to 10:00,Math_Neelam,Math,Neelam Sahu
+636,CLASS 4 Lily,Arti Sagar,Tuesday,3,3rd Period,10:00 to 10:45,Yoga_Pradeep,Yoga,Pradeep
+637,CLASS 4 Lily,Arti Sagar,Tuesday,4,Lunch,10:45 to 11:05,Lunch _ Arti Sagar,Lunch,Arti Sagar
+638,CLASS 4 Lily,Arti Sagar,Tuesday,5,4th Period,11:05 to 11:50,Eng_Shilpi Sahu,Eng,Shilpi Sahunsari
+639,CLASS 4 Lily,Arti Sagar,Tuesday,6,5th Period,11:50 to 12:30,Hindi_Neha Rai,Hindi,Neha Rai
+640,CLASS 4 Lily,Arti Sagar,Tuesday,7,6th Period,12:30 to 1:10,Art&Craft_Rajaram,Art&Craft,Rajaram
+641,CLASS 4 Lily,Arti Sagar,Wednesday,0,Morning Assembly,07:50 to 08:20,Prayer,Prayer,
+642,CLASS 4 Lily,Arti Sagar,Wednesday,1,1st Period,08:30 to 9:15,EVS_Arti Sagar,EVS,Arti Sagar
+643,CLASS 4 Lily,Arti Sagar,Wednesday,2,2nd Period,9:15 to 10:00,GK_Arti Sagar,GK,Arti Sagar
+644,CLASS 4 Lily,Arti Sagar,Wednesday,3,3rd Period,10:00 to 10:45,Math_Neelam,Math,Neelam Sahu
+645,CLASS 4 Lily,Arti Sagar,Wednesday,4,Lunch,10:45 to 11:05,Lunch _ Arti Sagar,Lunch,Arti Sagar
+646,CLASS 4 Lily,Arti Sagar,Wednesday,5,4th Period,11:05 to 11:50,Eng_Shilpi Sahu,Eng,Shilpi Sahunsari
+647,CLASS 4 Lily,Arti Sagar,Wednesday,6,5th Period,11:50 to 12:30,Hindi_Neha Rai,Hindi,Neha Rai
+648,CLASS 4 Lily,Arti Sagar,Wednesday,7,6th Period,12:30 to 1:10,IT_Manish Chauhan,IT,Manish Chauhan
+649,CLASS 4 Lily,Arti Sagar,Thursday,0,Morning Assembly,07:50 to 08:20,Prayer,Prayer,
+650,CLASS 4 Lily,Arti Sagar,Thursday,1,1st Period,08:30 to 9:15,EVS_Arti Sagar,EVS,Arti Sagar
+651,CLASS 4 Lily,Arti Sagar,Thursday,2,2nd Period,9:15 to 10:00,Math_Neelam,Math,Neelam Sahu
+652,CLASS 4 Lily,Arti Sagar,Thursday,3,3rd Period,10:00 to 10:45,Distation&Cursive_Arshee,Distation&Cursive,Arshee
+653,CLASS 4 Lily,Arti Sagar,Thursday,4,Lunch,10:45 to 11:05,Lunch _ Arti Sagar,Lunch,Arti Sagar
+654,CLASS 4 Lily,Arti Sagar,Thursday,5,4th Period,11:05 to 11:50,Eng_Shilpi Sahu,Eng,Shilpi Sahunsari
+655,CLASS 4 Lily,Arti Sagar,Thursday,6,5th Period,11:50 to 12:30,Hindi_Neha Rai,Hindi,Neha Rai
+656,CLASS 4 Lily,Arti Sagar,Thursday,7,6th Period,12:30 to 1:10,Music_Atul,Music,Atul
+657,CLASS 4 Lily,Arti Sagar,Friday,0,Morning Assembly,07:50 to 08:20,CYCLE TEST,CYCLE TEST,
+658,CLASS 4 Lily,Arti Sagar,Friday,1,1st Period,08:30 to 9:15,EVS_Arti Sagar,EVS,Arti Sagar
+659,CLASS 4 Lily,Arti Sagar,Friday,2,2nd Period,9:15 to 10:00,GAME_Komal,GAME,Komal
+660,CLASS 4 Lily,Arti Sagar,Friday,3,3rd Period,10:00 to 10:45,IT_Manish Chauhan,IT,Manish Chauhan
+661,CLASS 4 Lily,Arti Sagar,Friday,4,Lunch,10:45 to 11:05,Lunch _ Arti Sagar,Lunch,Arti Sagar
+662,CLASS 4 Lily,Arti Sagar,Friday,5,4th Period,11:05 to 11:50,Eng_Shilpi Sahu,Eng,Shilpi Sahunsari
+663,CLASS 4 Lily,Arti Sagar,Friday,6,5th Period,11:50 to 12:30,Hindi_Neha Rai,Hindi,Neha Rai
+664,CLASS 4 Lily,Arti Sagar,Friday,7,6th Period,12:30 to 1:10,Hindi_Neha Rai,Hindi,Neha Rai
+665,CLASS 4 Lily,Arti Sagar,Saturday,0,Morning Assembly,07:50 to 08:20,CCA,CCA,
+666,CLASS 4 Lily,Arti Sagar,Saturday,1,1st Period,08:30 to 9:15,Distation&Cursive_Arshee,Distation&Cursive,Arshee
+667,CLASS 4 Lily,Arti Sagar,Saturday,2,2nd Period,9:15 to 10:00,Math_Neelam,Math,Neelam Sahu
+668,CLASS 4 Lily,Arti Sagar,Saturday,3,3rd Period,10:00 to 10:45,GK_Arti Sagar,GK,Arti Sagar
+669,CLASS 4 Lily,Arti Sagar,Saturday,4,Lunch,10:45 to 11:05,Lunch _ Arti Sagar,Lunch,Arti Sagar
+670,CLASS 4 Lily,Arti Sagar,Saturday,5,4th Period,11:05 to 11:50,Eng_Shilpi Sahu,Eng,Shilpi Sahunsari
+671,CLASS 4 Lily,Arti Sagar,Saturday,6,5th Period,11:50 to 12:30,,,
+672,CLASS 4 Lily,Arti Sagar,Saturday,7,6th Period,12:30 to 1:10,,,
+673,CLASS 5 Rose,Neelam Sahu,Monday,0,Morning Assembly,07:50 to 08:20,Prayer,Prayer,
+674,CLASS 5 Rose,Neelam Sahu,Monday,1,1st Period,08:30 to 9:15,Math_Neelam,Math,Neelam Sahu
+675,CLASS 5 Rose,Neelam Sahu,Monday,2,2nd Period,9:15 to 10:00,GAME_Komal,GAME,Komal
+676,CLASS 5 Rose,Neelam Sahu,Monday,3,3rd Period,10:00 to 10:45,Hindi_Rajkmari,Hindi,Rajkmari Yadav
+677,CLASS 5 Rose,Neelam Sahu,Monday,4,Lunch,10:45 to 11:05,Lunch _ Neelam Sahu,Lunch,Neelam Sahu
+678,CLASS 5 Rose,Neelam Sahu,Monday,5,4th Period,11:05 to 11:50,Eng_Sanchitika,Eng,Sanchitika
+679,CLASS 5 Rose,Neelam Sahu,Monday,6,5th Period,11:50 to 12:30,IT_Manish Chauhan,IT,Manish Chauhan
+680,CLASS 5 Rose,Neelam Sahu,Monday,7,6th Period,12:30 to 1:10,GK_Avdesh,GK,Avdesh
+681,CLASS 5 Rose,Neelam Sahu,Tuesday,0,Morning Assembly,07:50 to 08:20,CYCLE TEST,CYCLE TEST,
+682,CLASS 5 Rose,Neelam Sahu,Tuesday,1,1st Period,08:30 to 9:15,Math_Neelam,Math,Neelam Sahu
+683,CLASS 5 Rose,Neelam Sahu,Tuesday,2,2nd Period,9:15 to 10:00,EVS_Anjali N,EVS,Anjali Nalvanshi
+684,CLASS 5 Rose,Neelam Sahu,Tuesday,3,3rd Period,10:00 to 10:45,Hindi_Rajkmari,Hindi,Rajkmari Yadav
+685,CLASS 5 Rose,Neelam Sahu,Tuesday,4,Lunch,10:45 to 11:05,Lunch _ Neelam Sahu,Lunch,Neelam Sahu
+686,CLASS 5 Rose,Neelam Sahu,Tuesday,5,4th Period,11:05 to 11:50,Eng_Sanchitika,Eng,Sanchitika
+687,CLASS 5 Rose,Neelam Sahu,Tuesday,6,5th Period,11:50 to 12:30,IT_Manish Chauhan,IT,Manish Chauhan
+688,CLASS 5 Rose,Neelam Sahu,Tuesday,7,6th Period,12:30 to 1:10,GK_Avdesh,GK,Avdesh
+689,CLASS 5 Rose,Neelam Sahu,Wednesday,0,Morning Assembly,07:50 to 08:20,Prayer,Prayer,
+690,CLASS 5 Rose,Neelam Sahu,Wednesday,1,1st Period,08:30 to 9:15,Math_Neelam,Math,Neelam Sahu
+691,CLASS 5 Rose,Neelam Sahu,Wednesday,2,2nd Period,9:15 to 10:00,EVS_Anjali N,EVS,Anjali Nalvanshi
+692,CLASS 5 Rose,Neelam Sahu,Wednesday,3,3rd Period,10:00 to 10:45,Hindi_Rajkmari,Hindi,Rajkmari Yadav
+693,CLASS 5 Rose,Neelam Sahu,Wednesday,4,Lunch,10:45 to 11:05,Lunch _ Neelam Sahu,Lunch,Neelam Sahu
+694,CLASS 5 Rose,Neelam Sahu,Wednesday,5,4th Period,11:05 to 11:50,Eng_Sanchitika,Eng,Sanchitika
+695,CLASS 5 Rose,Neelam Sahu,Wednesday,6,5th Period,11:50 to 12:30,Art&Craft_Anubha,Art&Craft,Anubha
+696,CLASS 5 Rose,Neelam Sahu,Wednesday,7,6th Period,12:30 to 1:10,Yoga_Pradeep,Yoga,Pradeep
+697,CLASS 5 Rose,Neelam Sahu,Thursday,0,Morning Assembly,07:50 to 08:20,Prayer,Prayer,
+698,CLASS 5 Rose,Neelam Sahu,Thursday,1,1st Period,08:30 to 9:15,Math_Neelam,Math,Neelam Sahu
+699,CLASS 5 Rose,Neelam Sahu,Thursday,2,2nd Period,9:15 to 10:00,EVS_Anjali N,EVS,Anjali Nalvanshi
+700,CLASS 5 Rose,Neelam Sahu,Thursday,3,3rd Period,10:00 to 10:45,Hindi_Rajkmari,Hindi,Rajkmari Yadav
+701,CLASS 5 Rose,Neelam Sahu,Thursday,4,Lunch,10:45 to 11:05,Lunch _ Neelam Sahu,Lunch,Neelam Sahu
+702,CLASS 5 Rose,Neelam Sahu,Thursday,5,4th Period,11:05 to 11:50,Eng_Sanchitika,Eng,Sanchitika
+703,CLASS 5 Rose,Neelam Sahu,Thursday,6,5th Period,11:50 to 12:30,Distation&Cursive_Arshee,Distation&Cursive,Arshee
+704,CLASS 5 Rose,Neelam Sahu,Thursday,7,6th Period,12:30 to 1:10,Art&Craft_Anubha,Art&Craft,Anubha
+705,CLASS 5 Rose,Neelam Sahu,Friday,0,Morning Assembly,07:50 to 08:20,CYCLE TEST,CYCLE TEST,
+706,CLASS 5 Rose,Neelam Sahu,Friday,1,1st Period,08:30 to 9:15,Math_Neelam,Math,Neelam Sahu
+707,CLASS 5 Rose,Neelam Sahu,Friday,2,2nd Period,9:15 to 10:00,EVS_Anjali N,EVS,Anjali Nalvanshi
+708,CLASS 5 Rose,Neelam Sahu,Friday,3,3rd Period,10:00 to 10:45,Music_Atul,Music,Atul
+709,CLASS 5 Rose,Neelam Sahu,Friday,4,Lunch,10:45 to 11:05,Lunch _ Neelam Sahu,Lunch,Neelam Sahu
+710,CLASS 5 Rose,Neelam Sahu,Friday,5,4th Period,11:05 to 11:50,Eng_Sanchitika,Eng,Sanchitika
+711,CLASS 5 Rose,Neelam Sahu,Friday,6,5th Period,11:50 to 12:30,Hindi_Rajkmari,Hindi,Rajkmari Yadav
+712,CLASS 5 Rose,Neelam Sahu,Friday,7,6th Period,12:30 to 1:10,Dance_Akash,Dance,Akash
+713,CLASS 5 Rose,Neelam Sahu,Saturday,0,Morning Assembly,07:50 to 08:20,CCA,CCA,
+714,CLASS 5 Rose,Neelam Sahu,Saturday,1,1st Period,08:30 to 9:15,Hindi_Rajkmari,Hindi,Rajkmari Yadav
+715,CLASS 5 Rose,Neelam Sahu,Saturday,2,2nd Period,9:15 to 10:00,EVS_Anjali N,EVS,Anjali Nalvanshi
+716,CLASS 5 Rose,Neelam Sahu,Saturday,3,3rd Period,10:00 to 10:45,Distation&Cursive_Arshee,Distation&Cursive,Arshee
+717,CLASS 5 Rose,Neelam Sahu,Saturday,4,Lunch,10:45 to 11:05,Lunch _ Neelam Sahu,Lunch,Neelam Sahu
+718,CLASS 5 Rose,Neelam Sahu,Saturday,5,4th Period,11:05 to 11:50,Eng_Sanchitika,Eng,Sanchitika
+719,CLASS 5 Rose,Neelam Sahu,Saturday,6,5th Period,11:50 to 12:30,,,
+720,CLASS 5 Rose,Neelam Sahu,Saturday,7,6th Period,12:30 to 1:10,,,
+721,CLASS 5 Marigold,Shewta Dubey,Monday,0,Morning Assembly,07:50 to 08:20,Prayer,Prayer,
+722,CLASS 5 Marigold,Shewta Dubey,Monday,1,1st Period,08:30 to 9:15,Hindi_Shewta,Hindi,Shewta Dubey
+723,CLASS 5 Marigold,Shewta Dubey,Monday,2,2nd Period,9:15 to 10:00,Eng_Sanchitika,Eng,Sanchitika
+724,CLASS 5 Marigold,Shewta Dubey,Monday,3,3rd Period,10:00 to 10:45,EVS_Anjali N,EVS,Anjali Nalvanshi
+725,CLASS 5 Marigold,Shewta Dubey,Monday,4,Lunch,10:45 to 11:05,Lunch _ Shewta Dubey,Lunch,Shewta Dubey
+726,CLASS 5 Marigold,Shewta Dubey,Monday,5,4th Period,11:05 to 11:50,Distation&Cursive_Arshee,Distation&Cursive,Arshee
+727,CLASS 5 Marigold,Shewta Dubey,Monday,6,5th Period,11:50 to 12:30,Math_Neelam,Math,Neelam Sahu
+728,CLASS 5 Marigold,Shewta Dubey,Monday,7,6th Period,12:30 to 1:10,Dance_Akash,Dance,Akash
+729,CLASS 5 Marigold,Shewta Dubey,Tuesday,0,Morning Assembly,07:50 to 08:20,CYCLE TEST,CYCLE TEST,
+730,CLASS 5 Marigold,Shewta Dubey,Tuesday,1,1st Period,08:30 to 9:15,Hindi_Shewta,Hindi,Shewta Dubey
+731,CLASS 5 Marigold,Shewta Dubey,Tuesday,2,2nd Period,9:15 to 10:00,Eng_Sanchitika,Eng,Sanchitika
+732,CLASS 5 Marigold,Shewta Dubey,Tuesday,3,3rd Period,10:00 to 10:45,EVS_Anjali N,EVS,Anjali Nalvanshi
+733,CLASS 5 Marigold,Shewta Dubey,Tuesday,4,Lunch,10:45 to 11:05,Lunch _ Shewta Dubey,Lunch,Shewta Dubey
+734,CLASS 5 Marigold,Shewta Dubey,Tuesday,5,4th Period,11:05 to 11:50,Distation&Cursive_Arshee,Distation&Cursive,Arshee
+735,CLASS 5 Marigold,Shewta Dubey,Tuesday,6,5th Period,11:50 to 12:30,Math_Neelam,Math,Neelam Sahu
+736,CLASS 5 Marigold,Shewta Dubey,Tuesday,7,6th Period,12:30 to 1:10,Yoga_Pradeep,Yoga,Pradeep
+737,CLASS 5 Marigold,Shewta Dubey,Wednesday,0,Morning Assembly,07:50 to 08:20,Prayer,Prayer,
+738,CLASS 5 Marigold,Shewta Dubey,Wednesday,1,1st Period,08:30 to 9:15,Hindi_Shewta,Hindi,Shewta Dubey
+739,CLASS 5 Marigold,Shewta Dubey,Wednesday,2,2nd Period,9:15 to 10:00,Eng_Sanchitika,Eng,Sanchitika
+740,CLASS 5 Marigold,Shewta Dubey,Wednesday,3,3rd Period,10:00 to 10:45,EVS_Anjali N,EVS,Anjali Nalvanshi
+741,CLASS 5 Marigold,Shewta Dubey,Wednesday,4,Lunch,10:45 to 11:05,Lunch _ Shewta Dubey,Lunch,Shewta Dubey
+742,CLASS 5 Marigold,Shewta Dubey,Wednesday,5,4th Period,11:05 to 11:50,GK_Neelam,GK,Neelam Sahu
+743,CLASS 5 Marigold,Shewta Dubey,Wednesday,6,5th Period,11:50 to 12:30,Math_Neelam,Math,Neelam Sahu
+744,CLASS 5 Marigold,Shewta Dubey,Wednesday,7,6th Period,12:30 to 1:10,GAME_Komal,GAME,Komal
+745,CLASS 5 Marigold,Shewta Dubey,Thursday,0,Morning Assembly,07:50 to 08:20,Prayer,Prayer,
+746,CLASS 5 Marigold,Shewta Dubey,Thursday,1,1st Period,08:30 to 9:15,Hindi_Shewta,Hindi,Shewta Dubey
+747,CLASS 5 Marigold,Shewta Dubey,Thursday,2,2nd Period,9:15 to 10:00,Eng_Sanchitika,Eng,Sanchitika
+748,CLASS 5 Marigold,Shewta Dubey,Thursday,3,3rd Period,10:00 to 10:45,EVS_Anjali N,EVS,Anjali Nalvanshi
+749,CLASS 5 Marigold,Shewta Dubey,Thursday,4,Lunch,10:45 to 11:05,Lunch _ Shewta Dubey,Lunch,Shewta Dubey
+750,CLASS 5 Marigold,Shewta Dubey,Thursday,5,4th Period,11:05 to 11:50,Art&Craft_Anubha,Art&Craft,Anubha
+751,CLASS 5 Marigold,Shewta Dubey,Thursday,6,5th Period,11:50 to 12:30,Math_Neelam,Math,Neelam Sahu
+752,CLASS 5 Marigold,Shewta Dubey,Thursday,7,6th Period,12:30 to 1:10,IT_Manish Chauhan,IT,Manish Chauhan
+753,CLASS 5 Marigold,Shewta Dubey,Friday,0,Morning Assembly,07:50 to 08:20,CYCLE TEST,CYCLE TEST,
+754,CLASS 5 Marigold,Shewta Dubey,Friday,1,1st Period,08:30 to 9:15,Hindi_Shewta,Hindi,Shewta Dubey
+755,CLASS 5 Marigold,Shewta Dubey,Friday,2,2nd Period,9:15 to 10:00,Eng_Sanchitika,Eng,Sanchitika
+756,CLASS 5 Marigold,Shewta Dubey,Friday,3,3rd Period,10:00 to 10:45,Art&Craft_Anubha,Art&Craft,Anubha
+757,CLASS 5 Marigold,Shewta Dubey,Friday,4,Lunch,10:45 to 11:05,Lunch _ Shewta Dubey,Lunch,Shewta Dubey
+758,CLASS 5 Marigold,Shewta Dubey,Friday,5,4th Period,11:05 to 11:50,GK_Neelam,GK,Neelam Sahu
+759,CLASS 5 Marigold,Shewta Dubey,Friday,6,5th Period,11:50 to 12:30,Math_Neelam,Math,Neelam Sahu
+760,CLASS 5 Marigold,Shewta Dubey,Friday,7,6th Period,12:30 to 1:10,IT_Manish Chauhan,IT,Manish Chauhan
+761,CLASS 5 Marigold,Shewta Dubey,Saturday,0,Morning Assembly,07:50 to 08:20,CCA,CCA,
+762,CLASS 5 Marigold,Shewta Dubey,Saturday,1,1st Period,08:30 to 9:15,Hindi_Shewta,Hindi,Shewta Dubey
+763,CLASS 5 Marigold,Shewta Dubey,Saturday,2,2nd Period,9:15 to 10:00,Eng_Sanchitika,Eng,Sanchitika
+764,CLASS 5 Marigold,Shewta Dubey,Saturday,3,3rd Period,10:00 to 10:45,EVS_Anjali N,EVS,Anjali Nalvanshi
+765,CLASS 5 Marigold,Shewta Dubey,Saturday,4,Lunch,10:45 to 11:05,Lunch _ Shewta Dubey,Lunch,Shewta Dubey
+766,CLASS 5 Marigold,Shewta Dubey,Saturday,5,4th Period,11:05 to 11:50,Music_Atul,Music,Atul
+767,CLASS 5 Marigold,Shewta Dubey,Saturday,6,5th Period,11:50 to 12:30,,,
+768,CLASS 5 Marigold,Shewta Dubey,Saturday,7,6th Period,12:30 to 1:10,,,
+769,CLASS 5 Lily,Sanchitika,Monday,0,Morning Assembly,07:50 to 08:20,Prayer,Prayer,
+770,CLASS 5 Lily,Sanchitika,Monday,1,1st Period,08:30 to 9:15,Eng_Sanchitika,Eng,Sanchitika
+771,CLASS 5 Lily,Sanchitika,Monday,2,2nd Period,9:15 to 10:00,Maths_Vandna Saraf,Maths,Vandna Saraf
+772,CLASS 5 Lily,Sanchitika,Monday,3,3rd Period,10:00 to 10:45,IT_Manish Chauhan,IT,Manish Chauhan
+773,CLASS 5 Lily,Sanchitika,Monday,4,Lunch,10:45 to 11:05,Lunch _ Sanchitika,Lunch,Sanchitika
+774,CLASS 5 Lily,Sanchitika,Monday,5,4th Period,11:05 to 11:50,Hindi_Rajkmari,Hindi,Rajkmari Yadav
+775,CLASS 5 Lily,Sanchitika,Monday,6,5th Period,11:50 to 12:30,Dance_Akash,Dance,Akash
+776,CLASS 5 Lily,Sanchitika,Monday,7,6th Period,12:30 to 1:10,EVS_Anjali N,EVS,Anjali Nalvanshi
+777,CLASS 5 Lily,Sanchitika,Tuesday,0,Morning Assembly,07:50 to 08:20,CYCLE TEST,CYCLE TEST,
+778,CLASS 5 Lily,Sanchitika,Tuesday,1,1st Period,08:30 to 9:15,IT_Manish Chauhan,IT,Manish Chauhan
+779,CLASS 5 Lily,Sanchitika,Tuesday,2,2nd Period,9:15 to 10:00,Maths_Vandna Saraf,Maths,Vandna Saraf
+780,CLASS 5 Lily,Sanchitika,Tuesday,3,3rd Period,10:00 to 10:45,Distation&Cursive_Arshee,Distation&Cursive,Arshee
+781,CLASS 5 Lily,Sanchitika,Tuesday,4,Lunch,10:45 to 11:05,Lunch _ Sanchitika,Lunch,Sanchitika
+782,CLASS 5 Lily,Sanchitika,Tuesday,5,4th Period,11:05 to 11:50,Hindi_Rajkmari,Hindi,Rajkmari Yadav
+783,CLASS 5 Lily,Sanchitika,Tuesday,6,5th Period,11:50 to 12:30,Eng_Sanchitika,Eng,Sanchitika
+784,CLASS 5 Lily,Sanchitika,Tuesday,7,6th Period,12:30 to 1:10,EVS_Anjali N,EVS,Anjali Nalvanshi
+785,CLASS 5 Lily,Sanchitika,Wednesday,0,Morning Assembly,07:50 to 08:20,Prayer,Prayer,
+786,CLASS 5 Lily,Sanchitika,Wednesday,1,1st Period,08:30 to 9:15,Eng_Sanchitika,Eng,Sanchitika
+787,CLASS 5 Lily,Sanchitika,Wednesday,2,2nd Period,9:15 to 10:00,Maths_Vandna Saraf,Maths,Vandna Saraf
+788,CLASS 5 Lily,Sanchitika,Wednesday,3,3rd Period,10:00 to 10:45,Art&Craft_Anubha,Art&Craft,Anubha
+789,CLASS 5 Lily,Sanchitika,Wednesday,4,Lunch,10:45 to 11:05,Lunch _ Sanchitika,Lunch,Sanchitika
+790,CLASS 5 Lily,Sanchitika,Wednesday,5,4th Period,11:05 to 11:50,Hindi_Rajkmari,Hindi,Rajkmari Yadav
+791,CLASS 5 Lily,Sanchitika,Wednesday,6,5th Period,11:50 to 12:30,Yoga_Pradeep,Yoga,Pradeep
+792,CLASS 5 Lily,Sanchitika,Wednesday,7,6th Period,12:30 to 1:10,EVS_Anjali N,EVS,Anjali Nalvanshi
+793,CLASS 5 Lily,Sanchitika,Thursday,0,Morning Assembly,07:50 to 08:20,Prayer,Prayer,
+794,CLASS 5 Lily,Sanchitika,Thursday,1,1st Period,08:30 to 9:15,Eng_Sanchitika,Eng,Sanchitika
+795,CLASS 5 Lily,Sanchitika,Thursday,2,2nd Period,9:15 to 10:00,GAME_Komal,GAME,Komal
+796,CLASS 5 Lily,Sanchitika,Thursday,3,3rd Period,10:00 to 10:45,Art&Craft_Anubha,Art&Craft,Anubha
+797,CLASS 5 Lily,Sanchitika,Thursday,4,Lunch,10:45 to 11:05,Lunch _ Sanchitika,Lunch,Sanchitika
+798,CLASS 5 Lily,Sanchitika,Thursday,5,4th Period,11:05 to 11:50,Hindi_Rajkmari,Hindi,Rajkmari Yadav
+799,CLASS 5 Lily,Sanchitika,Thursday,6,5th Period,11:50 to 12:30,Music_Atul,Music,Atul
+800,CLASS 5 Lily,Sanchitika,Thursday,7,6th Period,12:30 to 1:10,EVS_Anjali N,EVS,Anjali Nalvanshi
+801,CLASS 5 Lily,Sanchitika,Friday,0,Morning Assembly,07:50 to 08:20,CYCLE TEST,CYCLE TEST,
+802,CLASS 5 Lily,Sanchitika,Friday,1,1st Period,08:30 to 9:15,Eng_Sanchitika,Eng,Sanchitika
+803,CLASS 5 Lily,Sanchitika,Friday,2,2nd Period,9:15 to 10:00,Maths_Vandna Saraf,Maths,Vandna Saraf
+804,CLASS 5 Lily,Sanchitika,Friday,3,3rd Period,10:00 to 10:45,Distation&Cursive_Arshee,Distation&Cursive,Arshee
+805,CLASS 5 Lily,Sanchitika,Friday,4,Lunch,10:45 to 11:05,Lunch _ Sanchitika,Lunch,Sanchitika
+806,CLASS 5 Lily,Sanchitika,Friday,5,4th Period,11:05 to 11:50,Hindi_Rajkmari,Hindi,Rajkmari Yadav
+807,CLASS 5 Lily,Sanchitika,Friday,6,5th Period,11:50 to 12:30,GK_Raji,GK,Raji Jain
+808,CLASS 5 Lily,Sanchitika,Friday,7,6th Period,12:30 to 1:10,EVS_Anjali N,EVS,Anjali Nalvanshi
+809,CLASS 5 Lily,Sanchitika,Saturday,0,Morning Assembly,07:50 to 08:20,CCA,CCA,
+810,CLASS 5 Lily,Sanchitika,Saturday,1,1st Period,08:30 to 9:15,Eng_Sanchitika,Eng,Sanchitika
+811,CLASS 5 Lily,Sanchitika,Saturday,2,2nd Period,9:15 to 10:00,Maths_Vandna Saraf,Maths,Vandna Saraf
+812,CLASS 5 Lily,Sanchitika,Saturday,3,3rd Period,10:00 to 10:45,GK_Raji,GK,Raji Jain
+813,CLASS 5 Lily,Sanchitika,Saturday,4,Lunch,10:45 to 11:05,Lunch _ Sanchitika,Lunch,Sanchitika
+814,CLASS 5 Lily,Sanchitika,Saturday,5,4th Period,11:05 to 11:50,Hindi_Rajkmari,Hindi,Rajkmari Yadav
+815,CLASS 5 Lily,Sanchitika,Saturday,6,5th Period,11:50 to 12:30,,,
+816,CLASS 5 Lily,Sanchitika,Saturday,7,6th Period,12:30 to 1:10,,,
+817,CLASS 5 Sunflower,Anjali Nalvanshi,Monday,0,Morning Assembly,07:50 to 08:20,Prayer,Prayer,
+818,CLASS 5 Sunflower,Anjali Nalvanshi,Monday,1,1st Period,08:30 to 9:15,EVS_Anjali N,EVS,Anjali Nalvanshi
+819,CLASS 5 Sunflower,Anjali Nalvanshi,Monday,2,2nd Period,9:15 to 10:00,Hindi_Rajkmari,Hindi,Rajkmari Yadav
+820,CLASS 5 Sunflower,Anjali Nalvanshi,Monday,3,3rd Period,10:00 to 10:45,Eng_Sanchitika,Eng,Sanchitika
+821,CLASS 5 Sunflower,Anjali Nalvanshi,Monday,4,Lunch,10:45 to 11:05,Lunch _ Anjali Nalvanshi,Lunch,Anjali Nalvanshi
+822,CLASS 5 Sunflower,Anjali Nalvanshi,Monday,5,4th Period,11:05 to 11:50,GK_Anjali N,GK,Anjali Nalvanshi
+823,CLASS 5 Sunflower,Anjali Nalvanshi,Monday,6,5th Period,11:50 to 12:30,Maths_Vandna Saraf,Maths,Vandna Saraf
+824,CLASS 5 Sunflower,Anjali Nalvanshi,Monday,7,6th Period,12:30 to 1:10,IT_Manish Chauhan,IT,Manish Chauhan
+825,CLASS 5 Sunflower,Anjali Nalvanshi,Tuesday,0,Morning Assembly,07:50 to 08:20,CYCLE TEST,CYCLE TEST,
+826,CLASS 5 Sunflower,Anjali Nalvanshi,Tuesday,1,1st Period,08:30 to 9:15,Distation&Cursive_Arshee,Distation&Cursive,Arshee
+827,CLASS 5 Sunflower,Anjali Nalvanshi,Tuesday,2,2nd Period,9:15 to 10:00,Hindi_Rajkmari,Hindi,Rajkmari Yadav
+828,CLASS 5 Sunflower,Anjali Nalvanshi,Tuesday,3,3rd Period,10:00 to 10:45,Eng_Sanchitika,Eng,Sanchitika
+829,CLASS 5 Sunflower,Anjali Nalvanshi,Tuesday,4,Lunch,10:45 to 11:05,Lunch _ Anjali Nalvanshi,Lunch,Anjali Nalvanshi
+830,CLASS 5 Sunflower,Anjali Nalvanshi,Tuesday,5,4th Period,11:05 to 11:50,GK_Anjali N,GK,Anjali Nalvanshi
+831,CLASS 5 Sunflower,Anjali Nalvanshi,Tuesday,6,5th Period,11:50 to 12:30,Maths_Vandna Saraf,Maths,Vandna Saraf
+832,CLASS 5 Sunflower,Anjali Nalvanshi,Tuesday,7,6th Period,12:30 to 1:10,IT_Manish Chauhan,IT,Manish Chauhan
+833,CLASS 5 Sunflower,Anjali Nalvanshi,Wednesday,0,Morning Assembly,07:50 to 08:20,Prayer,Prayer,
+834,CLASS 5 Sunflower,Anjali Nalvanshi,Wednesday,1,1st Period,08:30 to 9:15,EVS_Anjali N,EVS,Anjali Nalvanshi
+835,CLASS 5 Sunflower,Anjali Nalvanshi,Wednesday,2,2nd Period,9:15 to 10:00,Hindi_Rajkmari,Hindi,Rajkmari Yadav
+836,CLASS 5 Sunflower,Anjali Nalvanshi,Wednesday,3,3rd Period,10:00 to 10:45,Eng_Sanchitika,Eng,Sanchitika
+837,CLASS 5 Sunflower,Anjali Nalvanshi,Wednesday,4,Lunch,10:45 to 11:05,Lunch _ Anjali Nalvanshi,Lunch,Anjali Nalvanshi
+838,CLASS 5 Sunflower,Anjali Nalvanshi,Wednesday,5,4th Period,11:05 to 11:50,Music_Atul,Music,Atul
+839,CLASS 5 Sunflower,Anjali Nalvanshi,Wednesday,6,5th Period,11:50 to 12:30,Maths_Vandna Saraf,Maths,Vandna Saraf
+840,CLASS 5 Sunflower,Anjali Nalvanshi,Wednesday,7,6th Period,12:30 to 1:10,Dance_Akash,Dance,Akash
+841,CLASS 5 Sunflower,Anjali Nalvanshi,Thursday,0,Morning Assembly,07:50 to 08:20,Prayer,Prayer,
+842,CLASS 5 Sunflower,Anjali Nalvanshi,Thursday,1,1st Period,08:30 to 9:15,EVS_Anjali N,EVS,Anjali Nalvanshi
+843,CLASS 5 Sunflower,Anjali Nalvanshi,Thursday,2,2nd Period,9:15 to 10:00,Hindi_Rajkmari,Hindi,Rajkmari Yadav
+844,CLASS 5 Sunflower,Anjali Nalvanshi,Thursday,3,3rd Period,10:00 to 10:45,Eng_Sanchitika,Eng,Sanchitika
+845,CLASS 5 Sunflower,Anjali Nalvanshi,Thursday,4,Lunch,10:45 to 11:05,Lunch _ Anjali Nalvanshi,Lunch,Anjali Nalvanshi
+846,CLASS 5 Sunflower,Anjali Nalvanshi,Thursday,5,4th Period,11:05 to 11:50,Distation&Cursive_Arshee,Distation&Cursive,Arshee
+847,CLASS 5 Sunflower,Anjali Nalvanshi,Thursday,6,5th Period,11:50 to 12:30,Maths_Vandna Saraf,Maths,Vandna Saraf
+848,CLASS 5 Sunflower,Anjali Nalvanshi,Thursday,7,6th Period,12:30 to 1:10,Yoga_Pradeep,Yoga,Pradeep
+849,CLASS 5 Sunflower,Anjali Nalvanshi,Friday,0,Morning Assembly,07:50 to 08:20,CYCLE TEST,CYCLE TEST,
+850,CLASS 5 Sunflower,Anjali Nalvanshi,Friday,1,1st Period,08:30 to 9:15,EVS_Anjali N,EVS,Anjali Nalvanshi
+851,CLASS 5 Sunflower,Anjali Nalvanshi,Friday,2,2nd Period,9:15 to 10:00,Hindi_Rajkmari,Hindi,Rajkmari Yadav
+852,CLASS 5 Sunflower,Anjali Nalvanshi,Friday,3,3rd Period,10:00 to 10:45,Eng_Sanchitika,Eng,Sanchitika
+853,CLASS 5 Sunflower,Anjali Nalvanshi,Friday,4,Lunch,10:45 to 11:05,Lunch _ Anjali Nalvanshi,Lunch,Anjali Nalvanshi
+854,CLASS 5 Sunflower,Anjali Nalvanshi,Friday,5,4th Period,11:05 to 11:50,Games_Komal,Games,Komal
+855,CLASS 5 Sunflower,Anjali Nalvanshi,Friday,6,5th Period,11:50 to 12:30,Maths_Vandna Saraf,Maths,Vandna Saraf
+856,CLASS 5 Sunflower,Anjali Nalvanshi,Friday,7,6th Period,12:30 to 1:10,Art&Craft_Anubha,Art&Craft,Anubha
+857,CLASS 5 Sunflower,Anjali Nalvanshi,Saturday,0,Morning Assembly,07:50 to 08:20,CCA,CCA,
+858,CLASS 5 Sunflower,Anjali Nalvanshi,Saturday,1,1st Period,08:30 to 9:15,EVS_Anjali N,EVS,Anjali Nalvanshi
+859,CLASS 5 Sunflower,Anjali Nalvanshi,Saturday,2,2nd Period,9:15 to 10:00,Hindi_Rajkmari,Hindi,Rajkmari Yadav
+860,CLASS 5 Sunflower,Anjali Nalvanshi,Saturday,3,3rd Period,10:00 to 10:45,Eng_Sanchitika,Eng,Sanchitika
+861,CLASS 5 Sunflower,Anjali Nalvanshi,Saturday,4,Lunch,10:45 to 11:05,Lunch _ Anjali Nalvanshi,Lunch,Anjali Nalvanshi
+862,CLASS 5 Sunflower,Anjali Nalvanshi,Saturday,5,4th Period,11:05 to 11:50,Art&Craft_Anubha,Art&Craft,Anubha
+863,CLASS 5 Sunflower,Anjali Nalvanshi,Saturday,6,5th Period,11:50 to 12:30,,,
+864,CLASS 5 Sunflower,Anjali Nalvanshi,Saturday,7,6th Period,12:30 to 1:10,,,
+865,CLASS 6 Rose,Shruti Badkul,Monday,0,Morning Assembly,07:50 to 08:20,Prayer,Prayer,
+866,CLASS 6 Rose,Shruti Badkul,Monday,1,1st Period,08:30 to 9:15,Science_Somya Nayak,Science,Somya Nayak
+867,CLASS 6 Rose,Shruti Badkul,Monday,2,2nd Period,9:15 to 10:00,SST_Shruti,SST,Shruti Badkul
+868,CLASS 6 Rose,Shruti Badkul,Monday,3,3rd Period,10:00 to 10:45,Eng_Harshita,Eng,Harshita
+869,CLASS 6 Rose,Shruti Badkul,Monday,4,Lunch,10:45 to 11:05,Lunch _ Shruti Badkul,Lunch,Shruti Badkul
+870,CLASS 6 Rose,Shruti Badkul,Monday,5,4th Period,11:05 to 11:50,Hindi_Shewta,Hindi,Shewta Dubey
+871,CLASS 6 Rose,Shruti Badkul,Monday,6,5th Period,11:50 to 12:30,GK_Anjali N,GK,Anjali Nalvanshi
+872,CLASS 6 Rose,Shruti Badkul,Monday,7,6th Period,12:30 to 1:10,Math_Neelam,Math,Neelam Sahu
+873,CLASS 6 Rose,Shruti Badkul,Monday,8,7th Period,1:10 to 1:50,SKT_Jageshwar S,SKT,Jageshwar Sharma
+874,CLASS 6 Rose,Shruti Badkul,Tuesday,0,Morning Assembly,07:50 to 08:20,CYCLE TEST,CYCLE TEST,
+875,CLASS 6 Rose,Shruti Badkul,Tuesday,1,1st Period,08:30 to 9:15,Science_Somya Nayak,Science,Somya Nayak
+876,CLASS 6 Rose,Shruti Badkul,Tuesday,2,2nd Period,9:15 to 10:00,Drawing_Rajaram,Drawing,Rajaram
+877,CLASS 6 Rose,Shruti Badkul,Tuesday,3,3rd Period,10:00 to 10:45,SST_Shruti,SST,Shruti Badkul
+878,CLASS 6 Rose,Shruti Badkul,Tuesday,4,Lunch,10:45 to 11:05,Lunch _ Shruti Badkul,Lunch,Shruti Badkul
+879,CLASS 6 Rose,Shruti Badkul,Tuesday,5,4th Period,11:05 to 11:50,Hindi_Shewta,Hindi,Shewta Dubey
+880,CLASS 6 Rose,Shruti Badkul,Tuesday,6,5th Period,11:50 to 12:30,SKT_Jageshwar S,SKT,Jageshwar Sharma
+881,CLASS 6 Rose,Shruti Badkul,Tuesday,7,6th Period,12:30 to 1:10,Math_Neelam,Math,Neelam Sahu
+882,CLASS 6 Rose,Shruti Badkul,Tuesday,8,7th Period,1:10 to 1:50,GK_Anjali N,GK,Anjali Nalvanshi
+883,CLASS 6 Rose,Shruti Badkul,Wednesday,0,Morning Assembly,07:50 to 08:20,Prayer,Prayer,
+884,CLASS 6 Rose,Shruti Badkul,Wednesday,1,1st Period,08:30 to 9:15,Science_Somya Nayak,Science,Somya Nayak
+885,CLASS 6 Rose,Shruti Badkul,Wednesday,2,2nd Period,9:15 to 10:00,SST_Shruti,SST,Shruti Badkul
+886,CLASS 6 Rose,Shruti Badkul,Wednesday,3,3rd Period,10:00 to 10:45,Eng_Harshita,Eng,Harshita
+887,CLASS 6 Rose,Shruti Badkul,Wednesday,4,Lunch,10:45 to 11:05,Lunch _ Shruti Badkul,Lunch,Shruti Badkul
+888,CLASS 6 Rose,Shruti Badkul,Wednesday,5,4th Period,11:05 to 11:50,Hindi_Shewta,Hindi,Shewta Dubey
+889,CLASS 6 Rose,Shruti Badkul,Wednesday,6,5th Period,11:50 to 12:30,IT_Manish Chauhan,IT,Manish Chauhan
+890,CLASS 6 Rose,Shruti Badkul,Wednesday,7,6th Period,12:30 to 1:10,Math_Neelam,Math,Neelam Sahu
+891,CLASS 6 Rose,Shruti Badkul,Wednesday,8,7th Period,1:10 to 1:50,Math_Neelam,Math,Neelam Sahu
+892,CLASS 6 Rose,Shruti Badkul,Thursday,0,Morning Assembly,07:50 to 08:20,Prayer,Prayer,
+893,CLASS 6 Rose,Shruti Badkul,Thursday,1,1st Period,08:30 to 9:15,Science_Somya Nayak,Science,Somya Nayak
+894,CLASS 6 Rose,Shruti Badkul,Thursday,2,2nd Period,9:15 to 10:00,SST_Shruti,SST,Shruti Badkul
+895,CLASS 6 Rose,Shruti Badkul,Thursday,3,3rd Period,10:00 to 10:45,Eng_Harshita,Eng,Harshita
+896,CLASS 6 Rose,Shruti Badkul,Thursday,4,Lunch,10:45 to 11:05,Lunch _ Shruti Badkul,Lunch,Shruti Badkul
+897,CLASS 6 Rose,Shruti Badkul,Thursday,5,4th Period,11:05 to 11:50,Hindi_Shewta,Hindi,Shewta Dubey
+898,CLASS 6 Rose,Shruti Badkul,Thursday,6,5th Period,11:50 to 12:30,Dance_Akash,Dance,Akash
+899,CLASS 6 Rose,Shruti Badkul,Thursday,7,6th Period,12:30 to 1:10,Math_Neelam,Math,Neelam Sahu
+900,CLASS 6 Rose,Shruti Badkul,Thursday,8,7th Period,1:10 to 1:50,Music_Atul,Music,Atul
+901,CLASS 6 Rose,Shruti Badkul,Friday,0,Morning Assembly,07:50 to 08:20,CYCLE TEST,CYCLE TEST,
+902,CLASS 6 Rose,Shruti Badkul,Friday,1,1st Period,08:30 to 9:15,Science_Somya Nayak,Science,Somya Nayak
+903,CLASS 6 Rose,Shruti Badkul,Friday,2,2nd Period,9:15 to 10:00,SST_Shruti,SST,Shruti Badkul
+904,CLASS 6 Rose,Shruti Badkul,Friday,3,3rd Period,10:00 to 10:45,Eng_Harshita,Eng,Harshita
+905,CLASS 6 Rose,Shruti Badkul,Friday,4,Lunch,10:45 to 11:05,Lunch _ Shruti Badkul,Lunch,Shruti Badkul
+906,CLASS 6 Rose,Shruti Badkul,Friday,5,4th Period,11:05 to 11:50,Hindi_Shewta,Hindi,Shewta Dubey
+907,CLASS 6 Rose,Shruti Badkul,Friday,6,5th Period,11:50 to 12:30,Yoga_Pradeep,Yoga,Pradeep
+908,CLASS 6 Rose,Shruti Badkul,Friday,7,6th Period,12:30 to 1:10,Math_Neelam,Math,Neelam Sahu
+909,CLASS 6 Rose,Shruti Badkul,Friday,8,7th Period,1:10 to 1:50,Music_Atul,Music,Atul
+910,CLASS 6 Rose,Shruti Badkul,Saturday,0,Morning Assembly,07:50 to 08:20,CCA,CCA,
+911,CLASS 6 Rose,Shruti Badkul,Saturday,1,1st Period,08:30 to 9:15,IT_Manish Chauhan,IT,Manish Chauhan
+912,CLASS 6 Rose,Shruti Badkul,Saturday,2,2nd Period,9:15 to 10:00,Drawing_Rajaram,Drawing,Rajaram
+913,CLASS 6 Rose,Shruti Badkul,Saturday,3,3rd Period,10:00 to 10:45,Eng_Harshita,Eng,Harshita
+914,CLASS 6 Rose,Shruti Badkul,Saturday,4,Lunch,10:45 to 11:05,Lunch _ Shruti Badkul,Lunch,Shruti Badkul
+915,CLASS 6 Rose,Shruti Badkul,Saturday,5,4th Period,11:05 to 11:50,SKT_Jageshwar S,SKT,Jageshwar Sharma
+916,CLASS 6 Rose,Shruti Badkul,Saturday,6,5th Period,11:50 to 12:30,,,
+917,CLASS 6 Rose,Shruti Badkul,Saturday,7,6th Period,12:30 to 1:10,,,
+918,CLASS 6 Rose,Shruti Badkul,Saturday,8,7th Period,1:10 to 1:50,,,
+919,CLASS 6 Marigold,Nidhi,Monday,0,Morning Assembly,07:50 to 08:20,Prayer,Prayer,
+920,CLASS 6 Marigold,Nidhi,Monday,1,1st Period,08:30 to 9:15,Hindi_Nidhi,Hindi,Nidhi
+921,CLASS 6 Marigold,Nidhi,Monday,2,2nd Period,9:15 to 10:00,Music_Atul,Music,Atul
+922,CLASS 6 Marigold,Nidhi,Monday,3,3rd Period,10:00 to 10:45,Maths_Vandna Saraf,Maths,Vandna Saraf
+923,CLASS 6 Marigold,Nidhi,Monday,4,Lunch,10:45 to 11:05,Lunch _ Nidhi,Lunch,Nidhi
+924,CLASS 6 Marigold,Nidhi,Monday,5,4th Period,11:05 to 11:50,IT_Manish Chauhan,IT,Manish Chauhan
+925,CLASS 6 Marigold,Nidhi,Monday,6,5th Period,11:50 to 12:30,SKT_Jageshwar S,SKT,Jageshwar Sharma
+926,CLASS 6 Marigold,Nidhi,Monday,7,6th Period,12:30 to 1:10,Eng_Sanchitika,Eng,Sanchitika
+927,CLASS 6 Marigold,Nidhi,Monday,8,7th Period,1:10 to 1:50,Sci_Charulata,Sci,Charulata
+928,CLASS 6 Marigold,Nidhi,Tuesday,0,Morning Assembly,07:50 to 08:20,CYCLE TEST,CYCLE TEST,
+929,CLASS 6 Marigold,Nidhi,Tuesday,1,1st Period,08:30 to 9:15,Music_Atul,Music,Atul
+930,CLASS 6 Marigold,Nidhi,Tuesday,2,2nd Period,9:15 to 10:00,SST_Anuraj,SST,Anuraj
+931,CLASS 6 Marigold,Nidhi,Tuesday,3,3rd Period,10:00 to 10:45,Maths_Vandna Saraf,Maths,Vandna Saraf
+932,CLASS 6 Marigold,Nidhi,Tuesday,4,Lunch,10:45 to 11:05,Lunch _ Nidhi,Lunch,Nidhi
+933,CLASS 6 Marigold,Nidhi,Tuesday,5,4th Period,11:05 to 11:50,Yoga_Pradeep,Yoga,Pradeep
+934,CLASS 6 Marigold,Nidhi,Tuesday,6,5th Period,11:50 to 12:30,Drawing_Rajaram,Drawing,Rajaram
+935,CLASS 6 Marigold,Nidhi,Tuesday,7,6th Period,12:30 to 1:10,Eng_Sanchitika,Eng,Sanchitika
+936,CLASS 6 Marigold,Nidhi,Tuesday,8,7th Period,1:10 to 1:50,Sci_Charulata,Sci,Charulata
+937,CLASS 6 Marigold,Nidhi,Wednesday,0,Morning Assembly,07:50 to 08:20,Prayer,Prayer,
+938,CLASS 6 Marigold,Nidhi,Wednesday,1,1st Period,08:30 to 9:15,Hindi_Nidhi,Hindi,Nidhi
+939,CLASS 6 Marigold,Nidhi,Wednesday,2,2nd Period,9:15 to 10:00,SST_Anuraj,SST,Anuraj
+940,CLASS 6 Marigold,Nidhi,Wednesday,3,3rd Period,10:00 to 10:45,Maths_Vandna Saraf,Maths,Vandna Saraf
+941,CLASS 6 Marigold,Nidhi,Wednesday,4,Lunch,10:45 to 11:05,Lunch _ Nidhi,Lunch,Nidhi
+942,CLASS 6 Marigold,Nidhi,Wednesday,5,4th Period,11:05 to 11:50,Drawing_Rajaram,Drawing,Rajaram
+943,CLASS 6 Marigold,Nidhi,Wednesday,6,5th Period,11:50 to 12:30,SKT_Jageshwar S,SKT,Jageshwar Sharma
+944,CLASS 6 Marigold,Nidhi,Wednesday,7,6th Period,12:30 to 1:10,Eng_Sanchitika,Eng,Sanchitika
+945,CLASS 6 Marigold,Nidhi,Wednesday,8,7th Period,1:10 to 1:50,Sci_Charulata,Sci,Charulata
+946,CLASS 6 Marigold,Nidhi,Thursday,0,Morning Assembly,07:50 to 08:20,Prayer,Prayer,
+947,CLASS 6 Marigold,Nidhi,Thursday,1,1st Period,08:30 to 9:15,Hindi_Nidhi,Hindi,Nidhi
+948,CLASS 6 Marigold,Nidhi,Thursday,2,2nd Period,9:15 to 10:00,SST_Anuraj,SST,Anuraj
+949,CLASS 6 Marigold,Nidhi,Thursday,3,3rd Period,10:00 to 10:45,Maths_Vandna Saraf,Maths,Vandna Saraf
+950,CLASS 6 Marigold,Nidhi,Thursday,4,Lunch,10:45 to 11:05,Lunch _ Nidhi,Lunch,Nidhi
+951,CLASS 6 Marigold,Nidhi,Thursday,5,4th Period,11:05 to 11:50,Dance_Akash,Dance,Akash
+952,CLASS 6 Marigold,Nidhi,Thursday,6,5th Period,11:50 to 12:30,SKT_Jageshwar S,SKT,Jageshwar Sharma
+953,CLASS 6 Marigold,Nidhi,Thursday,7,6th Period,12:30 to 1:10,Eng_Sanchitika,Eng,Sanchitika
+954,CLASS 6 Marigold,Nidhi,Thursday,8,7th Period,1:10 to 1:50,Sci_Charulata,Sci,Charulata
+955,CLASS 6 Marigold,Nidhi,Friday,0,Morning Assembly,07:50 to 08:20,CYCLE TEST,CYCLE TEST,
+956,CLASS 6 Marigold,Nidhi,Friday,1,1st Period,08:30 to 9:15,Hindi_Nidhi,Hindi,Nidhi
+957,CLASS 6 Marigold,Nidhi,Friday,2,2nd Period,9:15 to 10:00,SST_Anuraj,SST,Anuraj
+958,CLASS 6 Marigold,Nidhi,Friday,3,3rd Period,10:00 to 10:45,Maths_Vandna Saraf,Maths,Vandna Saraf
+959,CLASS 6 Marigold,Nidhi,Friday,4,Lunch,10:45 to 11:05,Lunch _ Nidhi,Lunch,Nidhi
+960,CLASS 6 Marigold,Nidhi,Friday,5,4th Period,11:05 to 11:50,GK_Anjali N,GK,Anjali Nalvanshi
+961,CLASS 6 Marigold,Nidhi,Friday,6,5th Period,11:50 to 12:30,IT_Manish Chauhan,IT,Manish Chauhan
+962,CLASS 6 Marigold,Nidhi,Friday,7,6th Period,12:30 to 1:10,Eng_Sanchitika,Eng,Sanchitika
+963,CLASS 6 Marigold,Nidhi,Friday,8,7th Period,1:10 to 1:50,Sci_Charulata,Sci,Charulata
+964,CLASS 6 Marigold,Nidhi,Saturday,0,Morning Assembly,07:50 to 08:20,CCA,CCA,
+965,CLASS 6 Marigold,Nidhi,Saturday,1,1st Period,08:30 to 9:15,Hindi_Nidhi,Hindi,Nidhi
+966,CLASS 6 Marigold,Nidhi,Saturday,2,2nd Period,9:15 to 10:00,SST_Anuraj,SST,Anuraj
+967,CLASS 6 Marigold,Nidhi,Saturday,3,3rd Period,10:00 to 10:45,Maths_Vandna Saraf,Maths,Vandna Saraf
+968,CLASS 6 Marigold,Nidhi,Saturday,4,Lunch,10:45 to 11:05,Lunch _ Nidhi,Lunch,Nidhi
+969,CLASS 6 Marigold,Nidhi,Saturday,5,4th Period,11:05 to 11:50,GK_Anjali N,GK,Anjali Nalvanshi
+970,CLASS 6 Marigold,Nidhi,Saturday,6,5th Period,11:50 to 12:30,,,
+971,CLASS 6 Marigold,Nidhi,Saturday,7,6th Period,12:30 to 1:10,,,
+972,CLASS 6 Marigold,Nidhi,Saturday,8,7th Period,1:10 to 1:50,,,
+973,CLASS 6 Lily,Avdesh,Monday,0,Morning Assembly,07:50 to 08:20,Prayer,Prayer,
+974,CLASS 6 Lily,Avdesh,Monday,1,1st Period,08:30 to 9:15,Maths_Avdesh,Maths,Avdesh
+975,CLASS 6 Lily,Avdesh,Monday,2,2nd Period,9:15 to 10:00,Hindi_Shewta,Hindi,Shewta Dubey
+976,CLASS 6 Lily,Avdesh,Monday,3,3rd Period,10:00 to 10:45,SST_Anuraj,SST,Anuraj
+977,CLASS 6 Lily,Avdesh,Monday,4,Lunch,10:45 to 11:05,Lunch _ Avdesh,Lunch,Avdesh
+978,CLASS 6 Lily,Avdesh,Monday,5,4th Period,11:05 to 11:50,Drawing_Rajaram,Drawing,Rajaram
+979,CLASS 6 Lily,Avdesh,Monday,6,5th Period,11:50 to 12:30,GK_Sanchitika,GK,Sanchitika
+980,CLASS 6 Lily,Avdesh,Monday,7,6th Period,12:30 to 1:10,SKT_Jageshwar S,SKT,Jageshwar Sharma
+981,CLASS 6 Lily,Avdesh,Monday,8,7th Period,1:10 to 1:50,Eng_Sanchitika,Eng,Sanchitika
+982,CLASS 6 Lily,Avdesh,Tuesday,0,Morning Assembly,07:50 to 08:20,CYCLE TEST,CYCLE TEST,
+983,CLASS 6 Lily,Avdesh,Tuesday,1,1st Period,08:30 to 9:15,Maths_Avdesh,Maths,Avdesh
+984,CLASS 6 Lily,Avdesh,Tuesday,2,2nd Period,9:15 to 10:00,Music_Atul,Music,Atul
+985,CLASS 6 Lily,Avdesh,Tuesday,3,3rd Period,10:00 to 10:45,SST_Anuraj,SST,Anuraj
+986,CLASS 6 Lily,Avdesh,Tuesday,4,Lunch,10:45 to 11:05,Lunch _ Avdesh,Lunch,Avdesh
+987,CLASS 6 Lily,Avdesh,Tuesday,5,4th Period,11:05 to 11:50,IT_Manish Chauhan,IT,Manish Chauhan
+988,CLASS 6 Lily,Avdesh,Tuesday,6,5th Period,11:50 to 12:30,Sci_Charulata,Sci,Charulata
+989,CLASS 6 Lily,Avdesh,Tuesday,7,6th Period,12:30 to 1:10,Hindi_Shewta,Hindi,Shewta Dubey
+990,CLASS 6 Lily,Avdesh,Tuesday,8,7th Period,1:10 to 1:50,Eng_Sanchitika,Eng,Sanchitika
+991,CLASS 6 Lily,Avdesh,Wednesday,0,Morning Assembly,07:50 to 08:20,Prayer,Prayer,
+992,CLASS 6 Lily,Avdesh,Wednesday,1,1st Period,08:30 to 9:15,Maths_Avdesh,Maths,Avdesh
+993,CLASS 6 Lily,Avdesh,Wednesday,2,2nd Period,9:15 to 10:00,Dance_Akash,Dance,Akash
+994,CLASS 6 Lily,Avdesh,Wednesday,3,3rd Period,10:00 to 10:45,SST_Anuraj,SST,Anuraj
+995,CLASS 6 Lily,Avdesh,Wednesday,4,Lunch,10:45 to 11:05,Lunch _ Avdesh,Lunch,Avdesh
+996,CLASS 6 Lily,Avdesh,Wednesday,5,4th Period,11:05 to 11:50,Sci_Charulata,Sci,Charulata
+997,CLASS 6 Lily,Avdesh,Wednesday,6,5th Period,11:50 to 12:30,GK_Sanchitika,GK,Sanchitika
+998,CLASS 6 Lily,Avdesh,Wednesday,7,6th Period,12:30 to 1:10,Drawing_Rajaram,Drawing,Rajaram
+999,CLASS 6 Lily,Avdesh,Wednesday,8,7th Period,1:10 to 1:50,Eng_Sanchitika,Eng,Sanchitika
+1000,CLASS 6 Lily,Avdesh,Thursday,0,Morning Assembly,07:50 to 08:20,Prayer,Prayer,
+1001,CLASS 6 Lily,Avdesh,Thursday,1,1st Period,08:30 to 9:15,IT_Manish Chauhan,IT,Manish Chauhan
+1002,CLASS 6 Lily,Avdesh,Thursday,2,2nd Period,9:15 to 10:00,Maths_Vandna Saraf,Maths,Vandna Saraf
+1003,CLASS 6 Lily,Avdesh,Thursday,3,3rd Period,10:00 to 10:45,SST_Anuraj,SST,Anuraj
+1004,CLASS 6 Lily,Avdesh,Thursday,4,Lunch,10:45 to 11:05,Lunch _ Avdesh,Lunch,Avdesh
+1005,CLASS 6 Lily,Avdesh,Thursday,5,4th Period,11:05 to 11:50,SKT_Jageshwar S,SKT,Jageshwar Sharma
+1006,CLASS 6 Lily,Avdesh,Thursday,6,5th Period,11:50 to 12:30,Sci_Charulata,Sci,Charulata
+1007,CLASS 6 Lily,Avdesh,Thursday,7,6th Period,12:30 to 1:10,Hindi_Shewta,Hindi,Shewta Dubey
+1008,CLASS 6 Lily,Avdesh,Thursday,8,7th Period,1:10 to 1:50,Eng_Sanchitika,Eng,Sanchitika
+1009,CLASS 6 Lily,Avdesh,Friday,0,Morning Assembly,07:50 to 08:20,CYCLE TEST,CYCLE TEST,
+1010,CLASS 6 Lily,Avdesh,Friday,1,1st Period,08:30 to 9:15,Maths_Avdesh,Maths,Avdesh
+1011,CLASS 6 Lily,Avdesh,Friday,2,2nd Period,9:15 to 10:00,Music_Atul,Music,Atul
+1012,CLASS 6 Lily,Avdesh,Friday,3,3rd Period,10:00 to 10:45,Yoga_Pradeep,Yoga,Pradeep
+1013,CLASS 6 Lily,Avdesh,Friday,4,Lunch,10:45 to 11:05,Lunch _ Avdesh,Lunch,Avdesh
+1014,CLASS 6 Lily,Avdesh,Friday,5,4th Period,11:05 to 11:50,SKT_Jageshwar S,SKT,Jageshwar Sharma
+1015,CLASS 6 Lily,Avdesh,Friday,6,5th Period,11:50 to 12:30,Sci_Charulata,Sci,Charulata
+1016,CLASS 6 Lily,Avdesh,Friday,7,6th Period,12:30 to 1:10,Hindi_Shewta,Hindi,Shewta Dubey
+1017,CLASS 6 Lily,Avdesh,Friday,8,7th Period,1:10 to 1:50,Eng_Sanchitika,Eng,Sanchitika
+1018,CLASS 6 Lily,Avdesh,Saturday,0,Morning Assembly,07:50 to 08:20,CCA,CCA,
+1019,CLASS 6 Lily,Avdesh,Saturday,1,1st Period,08:30 to 9:15,Sci_Charulata,Sci,Charulata
+1020,CLASS 6 Lily,Avdesh,Saturday,2,2nd Period,9:15 to 10:00,Hindi_Shewta,Hindi,Shewta Dubey
+1021,CLASS 6 Lily,Avdesh,Saturday,3,3rd Period,10:00 to 10:45,SST_Anuraj,SST,Anuraj
+1022,CLASS 6 Lily,Avdesh,Saturday,4,Lunch,10:45 to 11:05,Lunch _ Avdesh,Lunch,Avdesh
+1023,CLASS 6 Lily,Avdesh,Saturday,5,4th Period,11:05 to 11:50,Maths_Vandna Saraf,Maths,Vandna Saraf
+1024,CLASS 6 Lily,Avdesh,Saturday,6,5th Period,11:50 to 12:30,,,
+1025,CLASS 6 Lily,Avdesh,Saturday,7,6th Period,12:30 to 1:10,,,
+1026,CLASS 6 Lily,Avdesh,Saturday,8,7th Period,1:10 to 1:50,,,
+1027,CLASS 6 Sunflower,Harshita,Monday,0,Morning Assembly,07:50 to 08:20,Prayer,Prayer,
+1028,CLASS 6 Sunflower,Harshita,Monday,1,1st Period,08:30 to 9:15,Eng_Harshita,Eng,Harshita
+1029,CLASS 6 Sunflower,Harshita,Monday,2,2nd Period,9:15 to 10:00,Maths_Deepmali,Maths,Deepmali
+1030,CLASS 6 Sunflower,Harshita,Monday,3,3rd Period,10:00 to 10:45,SKT_Jageshwar S,SKT,Jageshwar Sharma
+1031,CLASS 6 Sunflower,Harshita,Monday,4,Lunch,10:45 to 11:05,Lunch _ Harshita,Lunch,Harshita
+1032,CLASS 6 Sunflower,Harshita,Monday,5,4th Period,11:05 to 11:50,SST_Shruti,SST,Shruti Badkul
+1033,CLASS 6 Sunflower,Harshita,Monday,6,5th Period,11:50 to 12:30,Hindi_Shewta,Hindi,Shewta Dubey
+1034,CLASS 6 Sunflower,Harshita,Monday,7,6th Period,12:30 to 1:10,Sci_Charulata,Sci,Charulata
+1035,CLASS 6 Sunflower,Harshita,Monday,8,7th Period,1:10 to 1:50,Music_Atul,Music,Atul
+1036,CLASS 6 Sunflower,Harshita,Tuesday,0,Morning Assembly,07:50 to 08:20,CYCLE TEST,CYCLE TEST,
+1037,CLASS 6 Sunflower,Harshita,Tuesday,1,1st Period,08:30 to 9:15,Eng_Harshita,Eng,Harshita
+1038,CLASS 6 Sunflower,Harshita,Tuesday,2,2nd Period,9:15 to 10:00,Maths_Deepmali,Maths,Deepmali
+1039,CLASS 6 Sunflower,Harshita,Tuesday,3,3rd Period,10:00 to 10:45,SKT_Jageshwar S,SKT,Jageshwar Sharma
+1040,CLASS 6 Sunflower,Harshita,Tuesday,4,Lunch,10:45 to 11:05,Lunch _ Harshita,Lunch,Harshita
+1041,CLASS 6 Sunflower,Harshita,Tuesday,5,4th Period,11:05 to 11:50,SST_Shruti,SST,Shruti Badkul
+1042,CLASS 6 Sunflower,Harshita,Tuesday,6,5th Period,11:50 to 12:30,Hindi_Shewta,Hindi,Shewta Dubey
+1043,CLASS 6 Sunflower,Harshita,Tuesday,7,6th Period,12:30 to 1:10,Sci_Charulata,Sci,Charulata
+1044,CLASS 6 Sunflower,Harshita,Tuesday,8,7th Period,1:10 to 1:50,Music_Atul,Music,Atul
+1045,CLASS 6 Sunflower,Harshita,Wednesday,0,Morning Assembly,07:50 to 08:20,Prayer,Prayer,
+1046,CLASS 6 Sunflower,Harshita,Wednesday,1,1st Period,08:30 to 9:15,IT_Manish Chauhan,IT,Manish Chauhan
+1047,CLASS 6 Sunflower,Harshita,Wednesday,2,2nd Period,9:15 to 10:00,Maths_Deepmali,Maths,Deepmali
+1048,CLASS 6 Sunflower,Harshita,Wednesday,3,3rd Period,10:00 to 10:45,SKT_Jageshwar S,SKT,Jageshwar Sharma
+1049,CLASS 6 Sunflower,Harshita,Wednesday,4,Lunch,10:45 to 11:05,Lunch _ Harshita,Lunch,Harshita
+1050,CLASS 6 Sunflower,Harshita,Wednesday,5,4th Period,11:05 to 11:50,GK_Anjali N,GK,Anjali Nalvanshi
+1051,CLASS 6 Sunflower,Harshita,Wednesday,6,5th Period,11:50 to 12:30,Hindi_Shewta,Hindi,Shewta Dubey
+1052,CLASS 6 Sunflower,Harshita,Wednesday,7,6th Period,12:30 to 1:10,Sci_Charulata,Sci,Charulata
+1053,CLASS 6 Sunflower,Harshita,Wednesday,8,7th Period,1:10 to 1:50,GK_Anjali N,GK,Anjali Nalvanshi
+1054,CLASS 6 Sunflower,Harshita,Thursday,0,Morning Assembly,07:50 to 08:20,Prayer,Prayer,
+1055,CLASS 6 Sunflower,Harshita,Thursday,1,1st Period,08:30 to 9:15,Eng_Harshita,Eng,Harshita
+1056,CLASS 6 Sunflower,Harshita,Thursday,2,2nd Period,9:15 to 10:00,Maths_Deepmali,Maths,Deepmali
+1057,CLASS 6 Sunflower,Harshita,Thursday,3,3rd Period,10:00 to 10:45,SST_Shruti,SST,Shruti Badkul
+1058,CLASS 6 Sunflower,Harshita,Thursday,4,Lunch,10:45 to 11:05,Lunch _ Harshita,Lunch,Harshita
+1059,CLASS 6 Sunflower,Harshita,Thursday,5,4th Period,11:05 to 11:50,IT_Manish Chauhan,IT,Manish Chauhan
+1060,CLASS 6 Sunflower,Harshita,Thursday,6,5th Period,11:50 to 12:30,Hindi_Shewta,Hindi,Shewta Dubey
+1061,CLASS 6 Sunflower,Harshita,Thursday,7,6th Period,12:30 to 1:10,Sci_Charulata,Sci,Charulata
+1062,CLASS 6 Sunflower,Harshita,Thursday,8,7th Period,1:10 to 1:50,Eng_Harshita,Eng,Harshita
+1063,CLASS 6 Sunflower,Harshita,Friday,0,Morning Assembly,07:50 to 08:20,CYCLE TEST,CYCLE TEST,
+1064,CLASS 6 Sunflower,Harshita,Friday,1,1st Period,08:30 to 9:15,Eng_Harshita,Eng,Harshita
+1065,CLASS 6 Sunflower,Harshita,Friday,2,2nd Period,9:15 to 10:00,Maths_Deepmali,Maths,Deepmali
+1066,CLASS 6 Sunflower,Harshita,Friday,3,3rd Period,10:00 to 10:45,Drawing_Rajaram,Drawing,Rajaram
+1067,CLASS 6 Sunflower,Harshita,Friday,4,Lunch,10:45 to 11:05,Lunch _ Harshita,Lunch,Harshita
+1068,CLASS 6 Sunflower,Harshita,Friday,5,4th Period,11:05 to 11:50,SST_Shruti,SST,Shruti Badkul
+1069,CLASS 6 Sunflower,Harshita,Friday,6,5th Period,11:50 to 12:30,Hindi_Shewta,Hindi,Shewta Dubey
+1070,CLASS 6 Sunflower,Harshita,Friday,7,6th Period,12:30 to 1:10,Sci_Charulata,Sci,Charulata
+1071,CLASS 6 Sunflower,Harshita,Friday,8,7th Period,1:10 to 1:50,Yoga_Pradeep,Yoga,Pradeep
+1072,CLASS 6 Sunflower,Harshita,Saturday,0,Morning Assembly,07:50 to 08:20,CCA,CCA,
+1073,CLASS 6 Sunflower,Harshita,Saturday,1,1st Period,08:30 to 9:15,Dance_Akash,Dance,Akash
+1074,CLASS 6 Sunflower,Harshita,Saturday,2,2nd Period,9:15 to 10:00,Maths_Deepmali,Maths,Deepmali
+1075,CLASS 6 Sunflower,Harshita,Saturday,3,3rd Period,10:00 to 10:45,Drawing_Rajaram,Drawing,Rajaram
+1076,CLASS 6 Sunflower,Harshita,Saturday,4,Lunch,10:45 to 11:05,Lunch _ Harshita,Lunch,Harshita
+1077,CLASS 6 Sunflower,Harshita,Saturday,5,4th Period,11:05 to 11:50,SST_Shruti,SST,Shruti Badkul
+1078,CLASS 6 Sunflower,Harshita,Saturday,6,5th Period,11:50 to 12:30,,,
+1079,CLASS 6 Sunflower,Harshita,Saturday,7,6th Period,12:30 to 1:10,,,
+1080,CLASS 6 Sunflower,Harshita,Saturday,8,7th Period,1:10 to 1:50,,,
+1081,CLASS 7 Rose,Charulata,Monday,0,Morning Assembly,07:50 to 08:20,Prayer,Prayer,
+1082,CLASS 7 Rose,Charulata,Monday,1,1st Period,08:30 to 9:15,Sci_Charulata,Sci,Charulata
+1083,CLASS 7 Rose,Charulata,Monday,2,2nd Period,9:15 to 10:00,Eng_Harshita,Eng,Harshita
+1084,CLASS 7 Rose,Charulata,Monday,3,3rd Period,10:00 to 10:45,Yoga_Pradeep,Yoga,Pradeep
+1085,CLASS 7 Rose,Charulata,Monday,4,Lunch,10:45 to 11:05,Lunch _ Charulata,Lunch,Charulata
+1086,CLASS 7 Rose,Charulata,Monday,5,4th Period,11:05 to 11:50,SKT_Jageshwar S,SKT,Jageshwar Sharma
+1087,CLASS 7 Rose,Charulata,Monday,6,5th Period,11:50 to 12:30,Hindi_Nidhi,Hindi,Nidhi
+1088,CLASS 7 Rose,Charulata,Monday,7,6th Period,12:30 to 1:10,Maths_Deepmali,Maths,Deepmali
+1089,CLASS 7 Rose,Charulata,Monday,8,7th Period,1:10 to 1:50,GK_Anuraj,GK,Anuraj
+1090,CLASS 7 Rose,Charulata,Tuesday,0,Morning Assembly,07:50 to 08:20,CYCLE TEST,CYCLE TEST,
+1091,CLASS 7 Rose,Charulata,Tuesday,1,1st Period,08:30 to 9:15,Sci_Charulata,Sci,Charulata
+1092,CLASS 7 Rose,Charulata,Tuesday,2,2nd Period,9:15 to 10:00,Eng_Harshita,Eng,Harshita
+1093,CLASS 7 Rose,Charulata,Tuesday,3,3rd Period,10:00 to 10:45,Music_Atul,Music,Atul
+1094,CLASS 7 Rose,Charulata,Tuesday,4,Lunch,10:45 to 11:05,Lunch _ Charulata,Lunch,Charulata
+1095,CLASS 7 Rose,Charulata,Tuesday,5,4th Period,11:05 to 11:50,SKT_Jageshwar S,SKT,Jageshwar Sharma
+1096,CLASS 7 Rose,Charulata,Tuesday,6,5th Period,11:50 to 12:30,Hindi_Nidhi,Hindi,Nidhi
+1097,CLASS 7 Rose,Charulata,Tuesday,7,6th Period,12:30 to 1:10,Maths_Deepmali,Maths,Deepmali
+1098,CLASS 7 Rose,Charulata,Tuesday,8,7th Period,1:10 to 1:50,SST_Anuraj,SST,Anuraj
+1099,CLASS 7 Rose,Charulata,Wednesday,0,Morning Assembly,07:50 to 08:20,Prayer,Prayer,
+1100,CLASS 7 Rose,Charulata,Wednesday,1,1st Period,08:30 to 9:15,Sci_Charulata,Sci,Charulata
+1101,CLASS 7 Rose,Charulata,Wednesday,2,2nd Period,9:15 to 10:00,Eng_Harshita,Eng,Harshita
+1102,CLASS 7 Rose,Charulata,Wednesday,3,3rd Period,10:00 to 10:45,IT_Manish Chauhan,IT,Manish Chauhan
+1103,CLASS 7 Rose,Charulata,Wednesday,4,Lunch,10:45 to 11:05,Lunch _ Charulata,Lunch,Charulata
+1104,CLASS 7 Rose,Charulata,Wednesday,5,4th Period,11:05 to 11:50,SKT_Jageshwar S,SKT,Jageshwar Sharma
+1105,CLASS 7 Rose,Charulata,Wednesday,6,5th Period,11:50 to 12:30,Hindi_Nidhi,Hindi,Nidhi
+1106,CLASS 7 Rose,Charulata,Wednesday,7,6th Period,12:30 to 1:10,SST_Anuraj,SST,Anuraj
+1107,CLASS 7 Rose,Charulata,Wednesday,8,7th Period,1:10 to 1:50,Maths_Deepmali,Maths,Deepmali
+1108,CLASS 7 Rose,Charulata,Thursday,0,Morning Assembly,07:50 to 08:20,Prayer,Prayer,
+1109,CLASS 7 Rose,Charulata,Thursday,1,1st Period,08:30 to 9:15,Sci_Charulata,Sci,Charulata
+1110,CLASS 7 Rose,Charulata,Thursday,2,2nd Period,9:15 to 10:00,Drawing_Rajaram,Drawing,Rajaram
+1111,CLASS 7 Rose,Charulata,Thursday,3,3rd Period,10:00 to 10:45,Dance_Akash,Dance,Akash
+1112,CLASS 7 Rose,Charulata,Thursday,4,Lunch,10:45 to 11:05,Lunch _ Charulata,Lunch,Charulata
+1113,CLASS 7 Rose,Charulata,Thursday,5,4th Period,11:05 to 11:50,Music_Atul,Music,Atul
+1114,CLASS 7 Rose,Charulata,Thursday,6,5th Period,11:50 to 12:30,Hindi_Nidhi,Hindi,Nidhi
+1115,CLASS 7 Rose,Charulata,Thursday,7,6th Period,12:30 to 1:10,SST_Anuraj,SST,Anuraj
+1116,CLASS 7 Rose,Charulata,Thursday,8,7th Period,1:10 to 1:50,Maths_Deepmali,Maths,Deepmali
+1117,CLASS 7 Rose,Charulata,Friday,0,Morning Assembly,07:50 to 08:20,CYCLE TEST,CYCLE TEST,
+1118,CLASS 7 Rose,Charulata,Friday,1,1st Period,08:30 to 9:15,Sci_Charulata,Sci,Charulata
+1119,CLASS 7 Rose,Charulata,Friday,2,2nd Period,9:15 to 10:00,Eng_Harshita,Eng,Harshita
+1120,CLASS 7 Rose,Charulata,Friday,3,3rd Period,10:00 to 10:45,GK_Anuraj,GK,Anuraj
+1121,CLASS 7 Rose,Charulata,Friday,4,Lunch,10:45 to 11:05,Lunch _ Charulata,Lunch,Charulata
+1122,CLASS 7 Rose,Charulata,Friday,5,4th Period,11:05 to 11:50,Drawing_Rajaram,Drawing,Rajaram
+1123,CLASS 7 Rose,Charulata,Friday,6,5th Period,11:50 to 12:30,Hindi_Nidhi,Hindi,Nidhi
+1124,CLASS 7 Rose,Charulata,Friday,7,6th Period,12:30 to 1:10,SST_Anuraj,SST,Anuraj
+1125,CLASS 7 Rose,Charulata,Friday,8,7th Period,1:10 to 1:50,Maths_Deepmali,Maths,Deepmali
+1126,CLASS 7 Rose,Charulata,Saturday,0,Morning Assembly,07:50 to 08:20,CCA,CCA,
+1127,CLASS 7 Rose,Charulata,Saturday,1,1st Period,08:30 to 9:15,Maths_Deepmali,Maths,Deepmali
+1128,CLASS 7 Rose,Charulata,Saturday,2,2nd Period,9:15 to 10:00,Eng_Harshita,Eng,Harshita
+1129,CLASS 7 Rose,Charulata,Saturday,3,3rd Period,10:00 to 10:45,IT_Manish Chauhan,IT,Manish Chauhan
+1130,CLASS 7 Rose,Charulata,Saturday,4,Lunch,10:45 to 11:05,Lunch _ Charulata,Lunch,Charulata
+1131,CLASS 7 Rose,Charulata,Saturday,5,4th Period,11:05 to 11:50,SST_Anuraj,SST,Anuraj
+1132,CLASS 7 Rose,Charulata,Saturday,6,5th Period,11:50 to 12:30,,,
+1133,CLASS 7 Rose,Charulata,Saturday,7,6th Period,12:30 to 1:10,,,
+1134,CLASS 7 Rose,Charulata,Saturday,8,7th Period,1:10 to 1:50,,,
+1135,CLASS 7 Marigold,Deepmali,Monday,0,Morning Assembly,07:50 to 08:20,Prayer,Prayer,
+1136,CLASS 7 Marigold,Deepmali,Monday,1,1st Period,08:30 to 9:15,SST_Shruti,SST,Shruti Badkul
+1137,CLASS 7 Marigold,Deepmali,Monday,2,2nd Period,9:15 to 10:00,GK_Anuraj,GK,Anuraj
+1138,CLASS 7 Marigold,Deepmali,Monday,3,3rd Period,10:00 to 10:45,Hindi_Shewta,Hindi,Shewta Dubey
+1139,CLASS 7 Marigold,Deepmali,Monday,4,Lunch,10:45 to 11:05,Lunch _ Deepmali,Lunch,Deepmali
+1140,CLASS 7 Marigold,Deepmali,Monday,5,4th Period,11:05 to 11:50,Sci_Charulata,Sci,Charulata
+1141,CLASS 7 Marigold,Deepmali,Monday,6,5th Period,11:50 to 12:30,Maths_Deepmali,Maths,Deepmali
+1142,CLASS 7 Marigold,Deepmali,Monday,7,6th Period,12:30 to 1:10,Music_Atul,Music,Atul
+1143,CLASS 7 Marigold,Deepmali,Monday,8,7th Period,1:10 to 1:50,Eng_Harshita,Eng,Harshita
+1144,CLASS 7 Marigold,Deepmali,Tuesday,0,Morning Assembly,07:50 to 08:20,CYCLE TEST,CYCLE TEST,
+1145,CLASS 7 Marigold,Deepmali,Tuesday,1,1st Period,08:30 to 9:15,SST_Shruti,SST,Shruti Badkul
+1146,CLASS 7 Marigold,Deepmali,Tuesday,2,2nd Period,9:15 to 10:00,Yoga_Pradeep,Yoga,Pradeep
+1147,CLASS 7 Marigold,Deepmali,Tuesday,3,3rd Period,10:00 to 10:45,Hindi_Shewta,Hindi,Shewta Dubey
+1148,CLASS 7 Marigold,Deepmali,Tuesday,4,Lunch,10:45 to 11:05,Lunch _ Deepmali,Lunch,Deepmali
+1149,CLASS 7 Marigold,Deepmali,Tuesday,5,4th Period,11:05 to 11:50,Sci_Charulata,Sci,Charulata
+1150,CLASS 7 Marigold,Deepmali,Tuesday,6,5th Period,11:50 to 12:30,Maths_Deepmali,Maths,Deepmali
+1151,CLASS 7 Marigold,Deepmali,Tuesday,7,6th Period,12:30 to 1:10,SKT_Jageshwar S,SKT,Jageshwar Sharma
+1152,CLASS 7 Marigold,Deepmali,Tuesday,8,7th Period,1:10 to 1:50,Eng_Harshita,Eng,Harshita
+1153,CLASS 7 Marigold,Deepmali,Wednesday,0,Morning Assembly,07:50 to 08:20,Prayer,Prayer,
+1154,CLASS 7 Marigold,Deepmali,Wednesday,1,1st Period,08:30 to 9:15,SST_Shruti,SST,Shruti Badkul
+1155,CLASS 7 Marigold,Deepmali,Wednesday,2,2nd Period,9:15 to 10:00,Hindi_Shewta,Hindi,Shewta Dubey
+1156,CLASS 7 Marigold,Deepmali,Wednesday,3,3rd Period,10:00 to 10:45,Music_Atul,Music,Atul
+1157,CLASS 7 Marigold,Deepmali,Wednesday,4,Lunch,10:45 to 11:05,Lunch _ Deepmali,Lunch,Deepmali
+1158,CLASS 7 Marigold,Deepmali,Wednesday,5,4th Period,11:05 to 11:50,Dance_Akash,Dance,Akash
+1159,CLASS 7 Marigold,Deepmali,Wednesday,6,5th Period,11:50 to 12:30,Maths_Deepmali,Maths,Deepmali
+1160,CLASS 7 Marigold,Deepmali,Wednesday,7,6th Period,12:30 to 1:10,Maths_Deepmali,Maths,Deepmali
+1161,CLASS 7 Marigold,Deepmali,Wednesday,8,7th Period,1:10 to 1:50,Eng_Harshita,Eng,Harshita
+1162,CLASS 7 Marigold,Deepmali,Thursday,0,Morning Assembly,07:50 to 08:20,Prayer,Prayer,
+1163,CLASS 7 Marigold,Deepmali,Thursday,1,1st Period,08:30 to 9:15,GK_Anuraj,GK,Anuraj
+1164,CLASS 7 Marigold,Deepmali,Thursday,2,2nd Period,9:15 to 10:00,Eng_Harshita,Eng,Harshita
+1165,CLASS 7 Marigold,Deepmali,Thursday,3,3rd Period,10:00 to 10:45,Hindi_Shewta,Hindi,Shewta Dubey
+1166,CLASS 7 Marigold,Deepmali,Thursday,4,Lunch,10:45 to 11:05,Lunch _ Deepmali,Lunch,Deepmali
+1167,CLASS 7 Marigold,Deepmali,Thursday,5,4th Period,11:05 to 11:50,Sci_Charulata,Sci,Charulata
+1168,CLASS 7 Marigold,Deepmali,Thursday,6,5th Period,11:50 to 12:30,Maths_Deepmali,Maths,Deepmali
+1169,CLASS 7 Marigold,Deepmali,Thursday,7,6th Period,12:30 to 1:10,Maths_Deepmali,Maths,Deepmali
+1170,CLASS 7 Marigold,Deepmali,Thursday,8,7th Period,1:10 to 1:50,IT_Manish Chauhan,IT,Manish Chauhan
+1171,CLASS 7 Marigold,Deepmali,Friday,0,Morning Assembly,07:50 to 08:20,CYCLE TEST,CYCLE TEST,
+1172,CLASS 7 Marigold,Deepmali,Friday,1,1st Period,08:30 to 9:15,Drawing_Rajaram,Drawing,Rajaram
+1173,CLASS 7 Marigold,Deepmali,Friday,2,2nd Period,9:15 to 10:00,Hindi_Shewta,Hindi,Shewta Dubey
+1174,CLASS 7 Marigold,Deepmali,Friday,3,3rd Period,10:00 to 10:45,SST_Shruti,SST,Shruti Badkul
+1175,CLASS 7 Marigold,Deepmali,Friday,4,Lunch,10:45 to 11:05,Lunch _ Deepmali,Lunch,Deepmali
+1176,CLASS 7 Marigold,Deepmali,Friday,5,4th Period,11:05 to 11:50,Sci_Charulata,Sci,Charulata
+1177,CLASS 7 Marigold,Deepmali,Friday,6,5th Period,11:50 to 12:30,SKT_Jageshwar S,SKT,Jageshwar Sharma
+1178,CLASS 7 Marigold,Deepmali,Friday,7,6th Period,12:30 to 1:10,Eng_Harshita,Eng,Harshita
+1179,CLASS 7 Marigold,Deepmali,Friday,8,7th Period,1:10 to 1:50,IT_Manish Chauhan,IT,Manish Chauhan
+1180,CLASS 7 Marigold,Deepmali,Saturday,0,Morning Assembly,07:50 to 08:20,CCA,CCA,
+1181,CLASS 7 Marigold,Deepmali,Saturday,1,1st Period,08:30 to 9:15,Drawing_Rajaram,Drawing,Rajaram
+1182,CLASS 7 Marigold,Deepmali,Saturday,2,2nd Period,9:15 to 10:00,SST_Shruti,SST,Shruti Badkul
+1183,CLASS 7 Marigold,Deepmali,Saturday,3,3rd Period,10:00 to 10:45,SKT_Jageshwar S,SKT,Jageshwar Sharma
+1184,CLASS 7 Marigold,Deepmali,Saturday,4,Lunch,10:45 to 11:05,Lunch _ Deepmali,Lunch,Deepmali
+1185,CLASS 7 Marigold,Deepmali,Saturday,5,4th Period,11:05 to 11:50,Sci_Charulata,Sci,Charulata
+1186,CLASS 7 Marigold,Deepmali,Saturday,6,5th Period,11:50 to 12:30,,,
+1187,CLASS 7 Marigold,Deepmali,Saturday,7,6th Period,12:30 to 1:10,,,
+1188,CLASS 7 Marigold,Deepmali,Saturday,8,7th Period,1:10 to 1:50,,,
+1189,CLASS 7 Lily,Anuraj,Monday,0,Morning Assembly,07:50 to 08:20,Prayer,Prayer,
+1190,CLASS 7 Lily,Anuraj,Monday,1,1st Period,08:30 to 9:15,SST_Anuraj,SST,Anuraj
+1191,CLASS 7 Lily,Anuraj,Monday,2,2nd Period,9:15 to 10:00,SKT_Jageshwar S,SKT,Jageshwar Sharma
+1192,CLASS 7 Lily,Anuraj,Monday,3,3rd Period,10:00 to 10:45,Sci_Charulata,Sci,Charulata
+1193,CLASS 7 Lily,Anuraj,Monday,4,Lunch,10:45 to 11:05,Lunch _ Anuraj,Lunch,Anuraj
+1194,CLASS 7 Lily,Anuraj,Monday,5,4th Period,11:05 to 11:50,Maths_Deepmali,Maths,Deepmali
+1195,CLASS 7 Lily,Anuraj,Monday,6,5th Period,11:50 to 12:30,Music_Atul,Music,Atul
+1196,CLASS 7 Lily,Anuraj,Monday,7,6th Period,12:30 to 1:10,Eng_Harshita,Eng,Harshita
+1197,CLASS 7 Lily,Anuraj,Monday,8,7th Period,1:10 to 1:50,Hindi_Shewta,Hindi,Shewta Dubey
+1198,CLASS 7 Lily,Anuraj,Tuesday,0,Morning Assembly,07:50 to 08:20,CYCLE TEST,CYCLE TEST,
+1199,CLASS 7 Lily,Anuraj,Tuesday,1,1st Period,08:30 to 9:15,SST_Anuraj,SST,Anuraj
+1200,CLASS 7 Lily,Anuraj,Tuesday,2,2nd Period,9:15 to 10:00,SKT_Jageshwar S,SKT,Jageshwar Sharma
+1201,CLASS 7 Lily,Anuraj,Tuesday,3,3rd Period,10:00 to 10:45,Sci_Charulata,Sci,Charulata
+1202,CLASS 7 Lily,Anuraj,Tuesday,4,Lunch,10:45 to 11:05,Lunch _ Anuraj,Lunch,Anuraj
+1203,CLASS 7 Lily,Anuraj,Tuesday,5,4th Period,11:05 to 11:50,Maths_Deepmali,Maths,Deepmali
+1204,CLASS 7 Lily,Anuraj,Tuesday,6,5th Period,11:50 to 12:30,Eng_Harshita,Eng,Harshita
+1205,CLASS 7 Lily,Anuraj,Tuesday,7,6th Period,12:30 to 1:10,GK_Harshita,GK,Harshita
+1206,CLASS 7 Lily,Anuraj,Tuesday,8,7th Period,1:10 to 1:50,Hindi_Shewta,Hindi,Shewta Dubey
+1207,CLASS 7 Lily,Anuraj,Wednesday,0,Morning Assembly,07:50 to 08:20,Prayer,Prayer,
+1208,CLASS 7 Lily,Anuraj,Wednesday,1,1st Period,08:30 to 9:15,SST_Anuraj,SST,Anuraj
+1209,CLASS 7 Lily,Anuraj,Wednesday,2,2nd Period,9:15 to 10:00,SKT_Jageshwar S,SKT,Jageshwar Sharma
+1210,CLASS 7 Lily,Anuraj,Wednesday,3,3rd Period,10:00 to 10:45,Sci_Charulata,Sci,Charulata
+1211,CLASS 7 Lily,Anuraj,Wednesday,4,Lunch,10:45 to 11:05,Lunch _ Anuraj,Lunch,Anuraj
+1212,CLASS 7 Lily,Anuraj,Wednesday,5,4th Period,11:05 to 11:50,Maths_Deepmali,Maths,Deepmali
+1213,CLASS 7 Lily,Anuraj,Wednesday,6,5th Period,11:50 to 12:30,Eng_Harshita,Eng,Harshita
+1214,CLASS 7 Lily,Anuraj,Wednesday,7,6th Period,12:30 to 1:10,GK_Harshita,GK,Harshita
+1215,CLASS 7 Lily,Anuraj,Wednesday,8,7th Period,1:10 to 1:50,IT_Manish Chauhan,IT,Manish Chauhan
+1216,CLASS 7 Lily,Anuraj,Thursday,0,Morning Assembly,07:50 to 08:20,Prayer,Prayer,
+1217,CLASS 7 Lily,Anuraj,Thursday,1,1st Period,08:30 to 9:15,Dance_Akash,Dance,Akash
+1218,CLASS 7 Lily,Anuraj,Thursday,2,2nd Period,9:15 to 10:00,IT_Manish Chauhan,IT,Manish Chauhan
+1219,CLASS 7 Lily,Anuraj,Thursday,3,3rd Period,10:00 to 10:45,Sci_Charulata,Sci,Charulata
+1220,CLASS 7 Lily,Anuraj,Thursday,4,Lunch,10:45 to 11:05,Lunch _ Anuraj,Lunch,Anuraj
+1221,CLASS 7 Lily,Anuraj,Thursday,5,4th Period,11:05 to 11:50,Maths_Deepmali,Maths,Deepmali
+1222,CLASS 7 Lily,Anuraj,Thursday,6,5th Period,11:50 to 12:30,Eng_Harshita,Eng,Harshita
+1223,CLASS 7 Lily,Anuraj,Thursday,7,6th Period,12:30 to 1:10,Drawing_Rajaram,Drawing,Rajaram
+1224,CLASS 7 Lily,Anuraj,Thursday,8,7th Period,1:10 to 1:50,Hindi_Shewta,Hindi,Shewta Dubey
+1225,CLASS 7 Lily,Anuraj,Friday,0,Morning Assembly,07:50 to 08:20,CYCLE TEST,CYCLE TEST,
+1226,CLASS 7 Lily,Anuraj,Friday,1,1st Period,08:30 to 9:15,SST_Anuraj,SST,Anuraj
+1227,CLASS 7 Lily,Anuraj,Friday,2,2nd Period,9:15 to 10:00,Drawing_Rajaram,Drawing,Rajaram
+1228,CLASS 7 Lily,Anuraj,Friday,3,3rd Period,10:00 to 10:45,Sci_Charulata,Sci,Charulata
+1229,CLASS 7 Lily,Anuraj,Friday,4,Lunch,10:45 to 11:05,Lunch _ Anuraj,Lunch,Anuraj
+1230,CLASS 7 Lily,Anuraj,Friday,5,4th Period,11:05 to 11:50,Maths_Deepmali,Maths,Deepmali
+1231,CLASS 7 Lily,Anuraj,Friday,6,5th Period,11:50 to 12:30,Eng_Harshita,Eng,Harshita
+1232,CLASS 7 Lily,Anuraj,Friday,7,6th Period,12:30 to 1:10,Music_Atul,Music,Atul
+1233,CLASS 7 Lily,Anuraj,Friday,8,7th Period,1:10 to 1:50,Hindi_Shewta,Hindi,Shewta Dubey
+1234,CLASS 7 Lily,Anuraj,Saturday,0,Morning Assembly,07:50 to 08:20,CCA,CCA,
+1235,CLASS 7 Lily,Anuraj,Saturday,1,1st Period,08:30 to 9:15,SST_Anuraj,SST,Anuraj
+1236,CLASS 7 Lily,Anuraj,Saturday,2,2nd Period,9:15 to 10:00,Yoga_Pradeep,Yoga,Pradeep
+1237,CLASS 7 Lily,Anuraj,Saturday,3,3rd Period,10:00 to 10:45,Hindi_Shewta,Hindi,Shewta Dubey
+1238,CLASS 7 Lily,Anuraj,Saturday,4,Lunch,10:45 to 11:05,Lunch _ Anuraj,Lunch,Anuraj
+1239,CLASS 7 Lily,Anuraj,Saturday,5,4th Period,11:05 to 11:50,Maths_Deepmali,Maths,Deepmali
+1240,CLASS 7 Lily,Anuraj,Saturday,6,5th Period,11:50 to 12:30,,,
+1241,CLASS 7 Lily,Anuraj,Saturday,7,6th Period,12:30 to 1:10,,,
+1242,CLASS 7 Lily,Anuraj,Saturday,8,7th Period,1:10 to 1:50,,,
+1243,CLASS 7 Sunflower,Jageshwar Sharma,Monday,0,Morning Assembly,07:50 to 08:20,Prayer,Prayer,
+1244,CLASS 7 Sunflower,Jageshwar Sharma,Monday,1,1st Period,08:30 to 9:15,SKT_Jageshwar S,SKT,Jageshwar Sharma
+1245,CLASS 7 Sunflower,Jageshwar Sharma,Monday,2,2nd Period,9:15 to 10:00,IT_Manish Chauhan,IT,Manish Chauhan
+1246,CLASS 7 Sunflower,Jageshwar Sharma,Monday,3,3rd Period,10:00 to 10:45,Maths_Deepmali,Maths,Deepmali
+1247,CLASS 7 Sunflower,Jageshwar Sharma,Monday,4,Lunch,10:45 to 11:05,Lunch _ Jageshwar Sharma,Lunch,Jageshwar Sharma
+1248,CLASS 7 Sunflower,Jageshwar Sharma,Monday,5,4th Period,11:05 to 11:50,Eng_Harshita,Eng,Harshita
+1249,CLASS 7 Sunflower,Jageshwar Sharma,Monday,6,5th Period,11:50 to 12:30,Eng_Harshita,Eng,Harshita
+1250,CLASS 7 Sunflower,Jageshwar Sharma,Monday,7,6th Period,12:30 to 1:10,SST_Shruti,SST,Shruti Badkul
+1251,CLASS 7 Sunflower,Jageshwar Sharma,Monday,8,7th Period,1:10 to 1:50,Dance_Akash,Dance,Akash
+1252,CLASS 7 Sunflower,Jageshwar Sharma,Tuesday,0,Morning Assembly,07:50 to 08:20,CYCLE TEST,CYCLE TEST,
+1253,CLASS 7 Sunflower,Jageshwar Sharma,Tuesday,1,1st Period,08:30 to 9:15,SKT_Jageshwar S,SKT,Jageshwar Sharma
+1254,CLASS 7 Sunflower,Jageshwar Sharma,Tuesday,2,2nd Period,9:15 to 10:00,Sci_Charulata,Sci,Charulata
+1255,CLASS 7 Sunflower,Jageshwar Sharma,Tuesday,3,3rd Period,10:00 to 10:45,Maths_Deepmali,Maths,Deepmali
+1256,CLASS 7 Sunflower,Jageshwar Sharma,Tuesday,4,Lunch,10:45 to 11:05,Lunch _ Jageshwar Sharma,Lunch,Jageshwar Sharma
+1257,CLASS 7 Sunflower,Jageshwar Sharma,Tuesday,5,4th Period,11:05 to 11:50,Eng_Harshita,Eng,Harshita
+1258,CLASS 7 Sunflower,Jageshwar Sharma,Tuesday,6,5th Period,11:50 to 12:30,Yoga_Pradeep,Yoga,Pradeep
+1259,CLASS 7 Sunflower,Jageshwar Sharma,Tuesday,7,6th Period,12:30 to 1:10,Hindi_Nidhi,Hindi,Nidhi
+1260,CLASS 7 Sunflower,Jageshwar Sharma,Tuesday,8,7th Period,1:10 to 1:50,Hindi_Nidhi,Hindi,Nidhi
+1261,CLASS 7 Sunflower,Jageshwar Sharma,Wednesday,0,Morning Assembly,07:50 to 08:20,Prayer,Prayer,
+1262,CLASS 7 Sunflower,Jageshwar Sharma,Wednesday,1,1st Period,08:30 to 9:15,SKT_Jageshwar S,SKT,Jageshwar Sharma
+1263,CLASS 7 Sunflower,Jageshwar Sharma,Wednesday,2,2nd Period,9:15 to 10:00,Sci_Charulata,Sci,Charulata
+1264,CLASS 7 Sunflower,Jageshwar Sharma,Wednesday,3,3rd Period,10:00 to 10:45,Maths_Deepmali,Maths,Deepmali
+1265,CLASS 7 Sunflower,Jageshwar Sharma,Wednesday,4,Lunch,10:45 to 11:05,Lunch _ Jageshwar Sharma,Lunch,Jageshwar Sharma
+1266,CLASS 7 Sunflower,Jageshwar Sharma,Wednesday,5,4th Period,11:05 to 11:50,Eng_Harshita,Eng,Harshita
+1267,CLASS 7 Sunflower,Jageshwar Sharma,Wednesday,6,5th Period,11:50 to 12:30,Drawing_Rajaram,Drawing,Rajaram
+1268,CLASS 7 Sunflower,Jageshwar Sharma,Wednesday,7,6th Period,12:30 to 1:10,SST_Shruti,SST,Shruti Badkul
+1269,CLASS 7 Sunflower,Jageshwar Sharma,Wednesday,8,7th Period,1:10 to 1:50,Hindi_Nidhi,Hindi,Nidhi
+1270,CLASS 7 Sunflower,Jageshwar Sharma,Thursday,0,Morning Assembly,07:50 to 08:20,Prayer,Prayer,
+1271,CLASS 7 Sunflower,Jageshwar Sharma,Thursday,1,1st Period,08:30 to 9:15,Music_Atul,Music,Atul
+1272,CLASS 7 Sunflower,Jageshwar Sharma,Thursday,2,2nd Period,9:15 to 10:00,Sci_Charulata,Sci,Charulata
+1273,CLASS 7 Sunflower,Jageshwar Sharma,Thursday,3,3rd Period,10:00 to 10:45,Maths_Deepmali,Maths,Deepmali
+1274,CLASS 7 Sunflower,Jageshwar Sharma,Thursday,4,Lunch,10:45 to 11:05,Lunch _ Jageshwar Sharma,Lunch,Jageshwar Sharma
+1275,CLASS 7 Sunflower,Jageshwar Sharma,Thursday,5,4th Period,11:05 to 11:50,GK_Anuraj,GK,Anuraj
+1276,CLASS 7 Sunflower,Jageshwar Sharma,Thursday,6,5th Period,11:50 to 12:30,Drawing_Rajaram,Drawing,Rajaram
+1277,CLASS 7 Sunflower,Jageshwar Sharma,Thursday,7,6th Period,12:30 to 1:10,SST_Shruti,SST,Shruti Badkul
+1278,CLASS 7 Sunflower,Jageshwar Sharma,Thursday,8,7th Period,1:10 to 1:50,Hindi_Nidhi,Hindi,Nidhi
+1279,CLASS 7 Sunflower,Jageshwar Sharma,Friday,0,Morning Assembly,07:50 to 08:20,CYCLE TEST,CYCLE TEST,
+1280,CLASS 7 Sunflower,Jageshwar Sharma,Friday,1,1st Period,08:30 to 9:15,Music_Atul,Music,Atul
+1281,CLASS 7 Sunflower,Jageshwar Sharma,Friday,2,2nd Period,9:15 to 10:00,Sci_Charulata,Sci,Charulata
+1282,CLASS 7 Sunflower,Jageshwar Sharma,Friday,3,3rd Period,10:00 to 10:45,Maths_Deepmali,Maths,Deepmali
+1283,CLASS 7 Sunflower,Jageshwar Sharma,Friday,4,Lunch,10:45 to 11:05,Lunch _ Jageshwar Sharma,Lunch,Jageshwar Sharma
+1284,CLASS 7 Sunflower,Jageshwar Sharma,Friday,5,4th Period,11:05 to 11:50,GK_Anuraj,GK,Anuraj
+1285,CLASS 7 Sunflower,Jageshwar Sharma,Friday,6,5th Period,11:50 to 12:30,SST_Shruti,SST,Shruti Badkul
+1286,CLASS 7 Sunflower,Jageshwar Sharma,Friday,7,6th Period,12:30 to 1:10,SST_Shruti,SST,Shruti Badkul
+1287,CLASS 7 Sunflower,Jageshwar Sharma,Friday,8,7th Period,1:10 to 1:50,Hindi_Nidhi,Hindi,Nidhi
+1288,CLASS 7 Sunflower,Jageshwar Sharma,Saturday,0,Morning Assembly,07:50 to 08:20,CCA,CCA,
+1289,CLASS 7 Sunflower,Jageshwar Sharma,Saturday,1,1st Period,08:30 to 9:15,Eng_Harshita,Eng,Harshita
+1290,CLASS 7 Sunflower,Jageshwar Sharma,Saturday,2,2nd Period,9:15 to 10:00,Sci_Charulata,Sci,Charulata
+1291,CLASS 7 Sunflower,Jageshwar Sharma,Saturday,3,3rd Period,10:00 to 10:45,Maths_Deepmali,Maths,Deepmali
+1292,CLASS 7 Sunflower,Jageshwar Sharma,Saturday,4,Lunch,10:45 to 11:05,Lunch _ Jageshwar Sharma,Lunch,Jageshwar Sharma
+1293,CLASS 7 Sunflower,Jageshwar Sharma,Saturday,5,4th Period,11:05 to 11:50,IT_Manish Chauhan,IT,Manish Chauhan
+1294,CLASS 7 Sunflower,Jageshwar Sharma,Saturday,6,5th Period,11:50 to 12:30,,,
+1295,CLASS 7 Sunflower,Jageshwar Sharma,Saturday,7,6th Period,12:30 to 1:10,,,
+1296,CLASS 7 Sunflower,Jageshwar Sharma,Saturday,8,7th Period,1:10 to 1:50,,,
+1297,CLASS 8 Rose,Mraganshi,Monday,0,Morning Assembly,07:50 to 08:20,Prayer,Prayer,
+1298,CLASS 8 Rose,Mraganshi,Monday,1,1st Period,08:30 to 9:15,Sci_Mraganshi,Sci,Mraganshi
+1299,CLASS 8 Rose,Mraganshi,Monday,2,2nd Period,9:15 to 10:00,Drawing_Rajaram,Drawing,Rajaram
+1300,CLASS 8 Rose,Mraganshi,Monday,3,3rd Period,10:00 to 10:45,Eng_Somya Rai,Eng,Somya Rai
+1301,CLASS 8 Rose,Mraganshi,Monday,4,Lunch,10:45 to 11:05,Lunch _ Mraganshi,Lunch,Mraganshi
+1302,CLASS 8 Rose,Mraganshi,Monday,5,4th Period,11:05 to 11:50,Hindi_Nidhi,Hindi,Nidhi
+1303,CLASS 8 Rose,Mraganshi,Monday,6,5th Period,11:50 to 12:30,Math_Somya Nayak,Math,Somya Nayak
+1304,CLASS 8 Rose,Mraganshi,Monday,7,6th Period,12:30 to 1:10,Hindi_Nidhi,Hindi,Nidhi
+1305,CLASS 8 Rose,Mraganshi,Monday,8,7th Period,1:10 to 1:50,SST_Shruti,SST,Shruti Badkul
+1306,CLASS 8 Rose,Mraganshi,Tuesday,0,Morning Assembly,07:50 to 08:20,CYCLE TEST,CYCLE TEST,
+1307,CLASS 8 Rose,Mraganshi,Tuesday,1,1st Period,08:30 to 9:15,Sci_Mraganshi,Sci,Mraganshi
+1308,CLASS 8 Rose,Mraganshi,Tuesday,2,2nd Period,9:15 to 10:00,SST_Shruti,SST,Shruti Badkul
+1309,CLASS 8 Rose,Mraganshi,Tuesday,3,3rd Period,10:00 to 10:45,Eng_Somya Rai,Eng,Somya Rai
+1310,CLASS 8 Rose,Mraganshi,Tuesday,4,Lunch,10:45 to 11:05,Lunch _ Mraganshi,Lunch,Mraganshi
+1311,CLASS 8 Rose,Mraganshi,Tuesday,5,4th Period,11:05 to 11:50,Hindi_Nidhi,Hindi,Nidhi
+1312,CLASS 8 Rose,Mraganshi,Tuesday,6,5th Period,11:50 to 12:30,Math_Somya Nayak,Math,Somya Nayak
+1313,CLASS 8 Rose,Mraganshi,Tuesday,7,6th Period,12:30 to 1:10,Math_Somya Nayak,Math,Somya Nayak
+1314,CLASS 8 Rose,Mraganshi,Tuesday,8,7th Period,1:10 to 1:50,IT_Manish Chauhan,IT,Manish Chauhan
+1315,CLASS 8 Rose,Mraganshi,Wednesday,0,Morning Assembly,07:50 to 08:20,Prayer,Prayer,
+1316,CLASS 8 Rose,Mraganshi,Wednesday,1,1st Period,08:30 to 9:15,Sci_Mraganshi,Sci,Mraganshi
+1317,CLASS 8 Rose,Mraganshi,Wednesday,2,2nd Period,9:15 to 10:00,IT_Manish Chauhan,IT,Manish Chauhan
+1318,CLASS 8 Rose,Mraganshi,Wednesday,3,3rd Period,10:00 to 10:45,Eng_Somya Rai,Eng,Somya Rai
+1319,CLASS 8 Rose,Mraganshi,Wednesday,4,Lunch,10:45 to 11:05,Lunch _ Mraganshi,Lunch,Mraganshi
+1320,CLASS 8 Rose,Mraganshi,Wednesday,5,4th Period,11:05 to 11:50,SST_Shruti,SST,Shruti Badkul
+1321,CLASS 8 Rose,Mraganshi,Wednesday,6,5th Period,11:50 to 12:30,Math_Somya Nayak,Math,Somya Nayak
+1322,CLASS 8 Rose,Mraganshi,Wednesday,7,6th Period,12:30 to 1:10,SKT_Jageshwar S,SKT,Jageshwar Sharma
+1323,CLASS 8 Rose,Mraganshi,Wednesday,8,7th Period,1:10 to 1:50,GK_Mraganshi,GK,Mraganshi
+1324,CLASS 8 Rose,Mraganshi,Thursday,0,Morning Assembly,07:50 to 08:20,Prayer,Prayer,
+1325,CLASS 8 Rose,Mraganshi,Thursday,1,1st Period,08:30 to 9:15,Sci_Mraganshi,Sci,Mraganshi
+1326,CLASS 8 Rose,Mraganshi,Thursday,2,2nd Period,9:15 to 10:00,Music_Atul,Music,Atul
+1327,CLASS 8 Rose,Mraganshi,Thursday,3,3rd Period,10:00 to 10:45,SKT_Jageshwar S,SKT,Jageshwar Sharma
+1328,CLASS 8 Rose,Mraganshi,Thursday,4,Lunch,10:45 to 11:05,Lunch _ Mraganshi,Lunch,Mraganshi
+1329,CLASS 8 Rose,Mraganshi,Thursday,5,4th Period,11:05 to 11:50,SST_Shruti,SST,Shruti Badkul
+1330,CLASS 8 Rose,Mraganshi,Thursday,6,5th Period,11:50 to 12:30,Math_Somya Nayak,Math,Somya Nayak
+1331,CLASS 8 Rose,Mraganshi,Thursday,7,6th Period,12:30 to 1:10,Hindi_Nidhi,Hindi,Nidhi
+1332,CLASS 8 Rose,Mraganshi,Thursday,8,7th Period,1:10 to 1:50,Eng_Somya Rai,Eng,Somya Rai
+1333,CLASS 8 Rose,Mraganshi,Friday,0,Morning Assembly,07:50 to 08:20,CYCLE TEST,CYCLE TEST,
+1334,CLASS 8 Rose,Mraganshi,Friday,1,1st Period,08:30 to 9:15,Sci_Mraganshi,Sci,Mraganshi
+1335,CLASS 8 Rose,Mraganshi,Friday,2,2nd Period,9:15 to 10:00,Dance_Akash,Dance,Akash
+1336,CLASS 8 Rose,Mraganshi,Friday,3,3rd Period,10:00 to 10:45,SKT_Jageshwar S,SKT,Jageshwar Sharma
+1337,CLASS 8 Rose,Mraganshi,Friday,4,Lunch,10:45 to 11:05,Lunch _ Mraganshi,Lunch,Mraganshi
+1338,CLASS 8 Rose,Mraganshi,Friday,5,4th Period,11:05 to 11:50,Music_Atul,Music,Atul
+1339,CLASS 8 Rose,Mraganshi,Friday,6,5th Period,11:50 to 12:30,Math_Somya Nayak,Math,Somya Nayak
+1340,CLASS 8 Rose,Mraganshi,Friday,7,6th Period,12:30 to 1:10,Yoga_Pradeep,Yoga,Pradeep
+1341,CLASS 8 Rose,Mraganshi,Friday,8,7th Period,1:10 to 1:50,Eng_Somya Rai,Eng,Somya Rai
+1342,CLASS 8 Rose,Mraganshi,Saturday,0,Morning Assembly,07:50 to 08:20,CCA,CCA,
+1343,CLASS 8 Rose,Mraganshi,Saturday,1,1st Period,08:30 to 9:15,GK_Mraganshi,GK,Mraganshi
+1344,CLASS 8 Rose,Mraganshi,Saturday,2,2nd Period,9:15 to 10:00,Hindi_Nidhi,Hindi,Nidhi
+1345,CLASS 8 Rose,Mraganshi,Saturday,3,3rd Period,10:00 to 10:45,SST_Shruti,SST,Shruti Badkul
+1346,CLASS 8 Rose,Mraganshi,Saturday,4,Lunch,10:45 to 11:05,Lunch _ Mraganshi,Lunch,Mraganshi
+1347,CLASS 8 Rose,Mraganshi,Saturday,5,4th Period,11:05 to 11:50,Drawing_Rajaram,Drawing,Rajaram
+1348,CLASS 8 Rose,Mraganshi,Saturday,6,5th Period,11:50 to 12:30,,,
+1349,CLASS 8 Rose,Mraganshi,Saturday,7,6th Period,12:30 to 1:10,,,
+1350,CLASS 8 Rose,Mraganshi,Saturday,8,7th Period,1:10 to 1:50,,,
+1351,CLASS 8 Marigold,Manish Chauhan,Monday,0,Morning Assembly,07:50 to 08:20,Prayer,Prayer,
+1352,CLASS 8 Marigold,Manish Chauhan,Monday,1,1st Period,08:30 to 9:15,IT_Manish Chauhan,IT,Manish Chauhan
+1353,CLASS 8 Marigold,Manish Chauhan,Monday,2,2nd Period,9:15 to 10:00,Math_Somya Nayak,Math,Somya Nayak
+1354,CLASS 8 Marigold,Manish Chauhan,Monday,3,3rd Period,10:00 to 10:45,Hindi_Nidhi,Hindi,Nidhi
+1355,CLASS 8 Marigold,Manish Chauhan,Monday,4,Lunch,10:45 to 11:05,Lunch _ Manish Chauhan,Lunch,Manish Chauhan
+1356,CLASS 8 Marigold,Manish Chauhan,Monday,5,4th Period,11:05 to 11:50,SST_Anuraj,SST,Anuraj
+1357,CLASS 8 Marigold,Manish Chauhan,Monday,6,5th Period,11:50 to 12:30,Sci_Mraganshi,Sci,Mraganshi
+1358,CLASS 8 Marigold,Manish Chauhan,Monday,7,6th Period,12:30 to 1:10,Math_Somya Nayak,Math,Somya Nayak
+1359,CLASS 8 Marigold,Manish Chauhan,Monday,8,7th Period,1:10 to 1:50,Eng_Somya Rai,Eng,Somya Rai
+1360,CLASS 8 Marigold,Manish Chauhan,Tuesday,0,Morning Assembly,07:50 to 08:20,CYCLE TEST,CYCLE TEST,
+1361,CLASS 8 Marigold,Manish Chauhan,Tuesday,1,1st Period,08:30 to 9:15,Dance_Akash,Dance,Akash
+1362,CLASS 8 Marigold,Manish Chauhan,Tuesday,2,2nd Period,9:15 to 10:00,Math_Somya Nayak,Math,Somya Nayak
+1363,CLASS 8 Marigold,Manish Chauhan,Tuesday,3,3rd Period,10:00 to 10:45,GK_Harshita,GK,Harshita
+1364,CLASS 8 Marigold,Manish Chauhan,Tuesday,4,Lunch,10:45 to 11:05,Lunch _ Manish Chauhan,Lunch,Manish Chauhan
+1365,CLASS 8 Marigold,Manish Chauhan,Tuesday,5,4th Period,11:05 to 11:50,SST_Anuraj,SST,Anuraj
+1366,CLASS 8 Marigold,Manish Chauhan,Tuesday,6,5th Period,11:50 to 12:30,Sci_Mraganshi,Sci,Mraganshi
+1367,CLASS 8 Marigold,Manish Chauhan,Tuesday,7,6th Period,12:30 to 1:10,Music_Atul,Music,Atul
+1368,CLASS 8 Marigold,Manish Chauhan,Tuesday,8,7th Period,1:10 to 1:50,Eng_Somya Rai,Eng,Somya Rai
+1369,CLASS 8 Marigold,Manish Chauhan,Wednesday,0,Morning Assembly,07:50 to 08:20,Prayer,Prayer,
+1370,CLASS 8 Marigold,Manish Chauhan,Wednesday,1,1st Period,08:30 to 9:15,Drawing_Rajaram,Drawing,Rajaram
+1371,CLASS 8 Marigold,Manish Chauhan,Wednesday,2,2nd Period,9:15 to 10:00,Math_Somya Nayak,Math,Somya Nayak
+1372,CLASS 8 Marigold,Manish Chauhan,Wednesday,3,3rd Period,10:00 to 10:45,Hindi_Nidhi,Hindi,Nidhi
+1373,CLASS 8 Marigold,Manish Chauhan,Wednesday,4,Lunch,10:45 to 11:05,Lunch _ Manish Chauhan,Lunch,Manish Chauhan
+1374,CLASS 8 Marigold,Manish Chauhan,Wednesday,5,4th Period,11:05 to 11:50,SST_Anuraj,SST,Anuraj
+1375,CLASS 8 Marigold,Manish Chauhan,Wednesday,6,5th Period,11:50 to 12:30,Sci_Mraganshi,Sci,Mraganshi
+1376,CLASS 8 Marigold,Manish Chauhan,Wednesday,7,6th Period,12:30 to 1:10,Music_Atul,Music,Atul
+1377,CLASS 8 Marigold,Manish Chauhan,Wednesday,8,7th Period,1:10 to 1:50,Eng_Somya Rai,Eng,Somya Rai
+1378,CLASS 8 Marigold,Manish Chauhan,Thursday,0,Morning Assembly,07:50 to 08:20,Prayer,Prayer,
+1379,CLASS 8 Marigold,Manish Chauhan,Thursday,1,1st Period,08:30 to 9:15,Drawing_Rajaram,Drawing,Rajaram
+1380,CLASS 8 Marigold,Manish Chauhan,Thursday,2,2nd Period,9:15 to 10:00,SKT_Jageshwar S,SKT,Jageshwar Sharma
+1381,CLASS 8 Marigold,Manish Chauhan,Thursday,3,3rd Period,10:00 to 10:45,Hindi_Nidhi,Hindi,Nidhi
+1382,CLASS 8 Marigold,Manish Chauhan,Thursday,4,Lunch,10:45 to 11:05,Lunch _ Manish Chauhan,Lunch,Manish Chauhan
+1383,CLASS 8 Marigold,Manish Chauhan,Thursday,5,4th Period,11:05 to 11:50,GK_Harshita,GK,Harshita
+1384,CLASS 8 Marigold,Manish Chauhan,Thursday,6,5th Period,11:50 to 12:30,Sci_Mraganshi,Sci,Mraganshi
+1385,CLASS 8 Marigold,Manish Chauhan,Thursday,7,6th Period,12:30 to 1:10,Math_Somya Nayak,Math,Somya Nayak
+1386,CLASS 8 Marigold,Manish Chauhan,Thursday,8,7th Period,1:10 to 1:50,SST_Anuraj,SST,Anuraj
+1387,CLASS 8 Marigold,Manish Chauhan,Friday,0,Morning Assembly,07:50 to 08:20,CYCLE TEST,CYCLE TEST,
+1388,CLASS 8 Marigold,Manish Chauhan,Friday,1,1st Period,08:30 to 9:15,IT_Manish Chauhan,IT,Manish Chauhan
+1389,CLASS 8 Marigold,Manish Chauhan,Friday,2,2nd Period,9:15 to 10:00,SKT_Jageshwar S,SKT,Jageshwar Sharma
+1390,CLASS 8 Marigold,Manish Chauhan,Friday,3,3rd Period,10:00 to 10:45,Hindi_Nidhi,Hindi,Nidhi
+1391,CLASS 8 Marigold,Manish Chauhan,Friday,4,Lunch,10:45 to 11:05,Lunch _ Manish Chauhan,Lunch,Manish Chauhan
+1392,CLASS 8 Marigold,Manish Chauhan,Friday,5,4th Period,11:05 to 11:50,Eng_Somya Rai,Eng,Somya Rai
+1393,CLASS 8 Marigold,Manish Chauhan,Friday,6,5th Period,11:50 to 12:30,Sci_Mraganshi,Sci,Mraganshi
+1394,CLASS 8 Marigold,Manish Chauhan,Friday,7,6th Period,12:30 to 1:10,Math_Somya Nayak,Math,Somya Nayak
+1395,CLASS 8 Marigold,Manish Chauhan,Friday,8,7th Period,1:10 to 1:50,SST_Anuraj,SST,Anuraj
+1396,CLASS 8 Marigold,Manish Chauhan,Saturday,0,Morning Assembly,07:50 to 08:20,CCA,CCA,
+1397,CLASS 8 Marigold,Manish Chauhan,Saturday,1,1st Period,08:30 to 9:15,Yoga_Pradeep,Yoga,Pradeep
+1398,CLASS 8 Marigold,Manish Chauhan,Saturday,2,2nd Period,9:15 to 10:00,SKT_Jageshwar S,SKT,Jageshwar Sharma
+1399,CLASS 8 Marigold,Manish Chauhan,Saturday,3,3rd Period,10:00 to 10:45,Hindi_Nidhi,Hindi,Nidhi
+1400,CLASS 8 Marigold,Manish Chauhan,Saturday,4,Lunch,10:45 to 11:05,Lunch _ Manish Chauhan,Lunch,Manish Chauhan
+1401,CLASS 8 Marigold,Manish Chauhan,Saturday,5,4th Period,11:05 to 11:50,Eng_Somya Rai,Eng,Somya Rai
+1402,CLASS 8 Marigold,Manish Chauhan,Saturday,6,5th Period,11:50 to 12:30,,,
+1403,CLASS 8 Marigold,Manish Chauhan,Saturday,7,6th Period,12:30 to 1:10,,,
+1404,CLASS 8 Marigold,Manish Chauhan,Saturday,8,7th Period,1:10 to 1:50,,,
+1405,CLASS 8 Lily,Somya Nayak,Monday,0,Morning Assembly,07:50 to 08:20,Prayer,Prayer,
+1406,CLASS 8 Lily,Somya Nayak,Monday,1,1st Period,08:30 to 9:15,Music_Atul,Music,Atul
+1407,CLASS 8 Lily,Somya Nayak,Monday,2,2nd Period,9:15 to 10:00,Hindi_Nidhi,Hindi,Nidhi
+1408,CLASS 8 Lily,Somya Nayak,Monday,3,3rd Period,10:00 to 10:45,Eng_Mraganshi,Eng,Mraganshi
+1409,CLASS 8 Lily,Somya Nayak,Monday,4,Lunch,10:45 to 11:05,Lunch _ Somya Nayak,Lunch,Somya Nayak
+1410,CLASS 8 Lily,Somya Nayak,Monday,5,4th Period,11:05 to 11:50,Math_Somya Nayak,Math,Somya Nayak
+1411,CLASS 8 Lily,Somya Nayak,Monday,6,5th Period,11:50 to 12:30,Drawing_Rajaram,Drawing,Rajaram
+1412,CLASS 8 Lily,Somya Nayak,Monday,7,6th Period,12:30 to 1:10,SST_Anuraj,SST,Anuraj
+1413,CLASS 8 Lily,Somya Nayak,Monday,8,7th Period,1:10 to 1:50,Sci_Mraganshi,Sci,Mraganshi
+1414,CLASS 8 Lily,Somya Nayak,Tuesday,0,Morning Assembly,07:50 to 08:20,Prayer,Prayer,
+1415,CLASS 8 Lily,Somya Nayak,Tuesday,1,1st Period,08:30 to 9:15,Hindi_Nidhi,Hindi,Nidhi
+1416,CLASS 8 Lily,Somya Nayak,Tuesday,2,2nd Period,9:15 to 10:00,Hindi_Nidhi,Hindi,Nidhi
+1417,CLASS 8 Lily,Somya Nayak,Tuesday,3,3rd Period,10:00 to 10:45,Eng_Mraganshi,Eng,Mraganshi
+1418,CLASS 8 Lily,Somya Nayak,Tuesday,4,Lunch,10:45 to 11:05,Lunch _ Somya Nayak,Lunch,Somya Nayak
+1419,CLASS 8 Lily,Somya Nayak,Tuesday,5,4th Period,11:05 to 11:50,Math_Somya Nayak,Math,Somya Nayak
+1420,CLASS 8 Lily,Somya Nayak,Tuesday,6,5th Period,11:50 to 12:30,SST_Anuraj,SST,Anuraj
+1421,CLASS 8 Lily,Somya Nayak,Tuesday,7,6th Period,12:30 to 1:10,Sci_Mraganshi,Sci,Mraganshi
+1422,CLASS 8 Lily,Somya Nayak,Tuesday,8,7th Period,1:10 to 1:50,Dance_Akash,Dance,Akash
+1423,CLASS 8 Lily,Somya Nayak,Wednesday,0,Morning Assembly,07:50 to 08:20,Prayer,Prayer,
+1424,CLASS 8 Lily,Somya Nayak,Wednesday,1,1st Period,08:30 to 9:15,GK_Deepmali,GK,Deepmali
+1425,CLASS 8 Lily,Somya Nayak,Wednesday,2,2nd Period,9:15 to 10:00,Hindi_Nidhi,Hindi,Nidhi
+1426,CLASS 8 Lily,Somya Nayak,Wednesday,3,3rd Period,10:00 to 10:45,Drawing_Rajaram,Drawing,Rajaram
+1427,CLASS 8 Lily,Somya Nayak,Wednesday,4,Lunch,10:45 to 11:05,Lunch _ Somya Nayak,Lunch,Somya Nayak
+1428,CLASS 8 Lily,Somya Nayak,Wednesday,5,4th Period,11:05 to 11:50,Math_Somya Nayak,Math,Somya Nayak
+1429,CLASS 8 Lily,Somya Nayak,Wednesday,6,5th Period,11:50 to 12:30,SST_Anuraj,SST,Anuraj
+1430,CLASS 8 Lily,Somya Nayak,Wednesday,7,6th Period,12:30 to 1:10,Sci_Mraganshi,Sci,Mraganshi
+1431,CLASS 8 Lily,Somya Nayak,Wednesday,8,7th Period,1:10 to 1:50,Music_Atul,Music,Atul
+1432,CLASS 8 Lily,Somya Nayak,Thursday,0,Morning Assembly,07:50 to 08:20,Prayer,Prayer,
+1433,CLASS 8 Lily,Somya Nayak,Thursday,1,1st Period,08:30 to 9:15,SKT_Jageshwar S,SKT,Jageshwar Sharma
+1434,CLASS 8 Lily,Somya Nayak,Thursday,2,2nd Period,9:15 to 10:00,Hindi_Nidhi,Hindi,Nidhi
+1435,CLASS 8 Lily,Somya Nayak,Thursday,3,3rd Period,10:00 to 10:45,Eng_Mraganshi,Eng,Mraganshi
+1436,CLASS 8 Lily,Somya Nayak,Thursday,4,Lunch,10:45 to 11:05,Lunch _ Somya Nayak,Lunch,Somya Nayak
+1437,CLASS 8 Lily,Somya Nayak,Thursday,5,4th Period,11:05 to 11:50,Math_Somya Nayak,Math,Somya Nayak
+1438,CLASS 8 Lily,Somya Nayak,Thursday,6,5th Period,11:50 to 12:30,SST_Anuraj,SST,Anuraj
+1439,CLASS 8 Lily,Somya Nayak,Thursday,7,6th Period,12:30 to 1:10,Sci_Mraganshi,Sci,Mraganshi
+1440,CLASS 8 Lily,Somya Nayak,Thursday,8,7th Period,1:10 to 1:50,Yoga_Pradeep,Yoga,Pradeep
+1441,CLASS 8 Lily,Somya Nayak,Friday,0,Morning Assembly,07:50 to 08:20,Prayer,Prayer,
+1442,CLASS 8 Lily,Somya Nayak,Friday,1,1st Period,08:30 to 9:15,SKT_Jageshwar S,SKT,Jageshwar Sharma
+1443,CLASS 8 Lily,Somya Nayak,Friday,2,2nd Period,9:15 to 10:00,IT_Manish Chauhan,IT,Manish Chauhan
+1444,CLASS 8 Lily,Somya Nayak,Friday,3,3rd Period,10:00 to 10:45,Eng_Mraganshi,Eng,Mraganshi
+1445,CLASS 8 Lily,Somya Nayak,Friday,4,Lunch,10:45 to 11:05,Lunch _ Somya Nayak,Lunch,Somya Nayak
+1446,CLASS 8 Lily,Somya Nayak,Friday,5,4th Period,11:05 to 11:50,Math_Somya Nayak,Math,Somya Nayak
+1447,CLASS 8 Lily,Somya Nayak,Friday,6,5th Period,11:50 to 12:30,SST_Anuraj,SST,Anuraj
+1448,CLASS 8 Lily,Somya Nayak,Friday,7,6th Period,12:30 to 1:10,Sci_Mraganshi,Sci,Mraganshi
+1449,CLASS 8 Lily,Somya Nayak,Friday,8,7th Period,1:10 to 1:50,GK_Harshita,GK,Harshita
+1450,CLASS 8 Lily,Somya Nayak,Saturday,0,Morning Assembly,07:50 to 08:20,CCA,CCA,
+1451,CLASS 8 Lily,Somya Nayak,Saturday,1,1st Period,08:30 to 9:15,SKT_Jageshwar S,SKT,Jageshwar Sharma
+1452,CLASS 8 Lily,Somya Nayak,Saturday,2,2nd Period,9:15 to 10:00,IT_Manish Chauhan,IT,Manish Chauhan
+1453,CLASS 8 Lily,Somya Nayak,Saturday,3,3rd Period,10:00 to 10:45,Eng_Mraganshi,Eng,Mraganshi
+1454,CLASS 8 Lily,Somya Nayak,Saturday,4,Lunch,10:45 to 11:05,Lunch _ Somya Nayak,Lunch,Somya Nayak
+1455,CLASS 8 Lily,Somya Nayak,Saturday,5,4th Period,11:05 to 11:50,Math_Somya Nayak,Math,Somya Nayak
+1456,CLASS 8 Lily,Somya Nayak,Saturday,6,5th Period,11:50 to 12:30,,,
+1457,CLASS 8 Lily,Somya Nayak,Saturday,7,6th Period,12:30 to 1:10,,,
+1458,CLASS 8 Lily,Somya Nayak,Saturday,8,7th Period,1:10 to 1:50,,,
+1459,CLASS 9 Rose,Somya Rai,Monday,0,Morning Assembly,07:50 to 08:20,Prayer,Prayer,
+1460,CLASS 9 Rose,Somya Rai,Monday,1,1st Period,08:30 to 9:15,Eng_Somya Rai,Eng,Somya Rai
+1461,CLASS 9 Rose,Somya Rai,Monday,2,2nd Period,9:15 to 10:00,Math_JR,Math,Jageshwar R
+1462,CLASS 9 Rose,Somya Rai,Monday,3,3rd Period,10:00 to 10:45,Math_JR,Math,Jageshwar R
+1463,CLASS 9 Rose,Somya Rai,Monday,4,Lunch,10:45 to 11:05,Lunch _ Somya Rai,Lunch,Somya Rai
+1464,CLASS 9 Rose,Somya Rai,Monday,5,4th Period,11:05 to 11:50,Chem_Mraganshi,Chem,Mraganshi
+1465,CLASS 9 Rose,Somya Rai,Monday,6,5th Period,11:50 to 12:30,Hindi_Rashmi,Hindi,Rashmi
+1466,CLASS 9 Rose,Somya Rai,Monday,7,6th Period,12:30 to 1:10,SST_Manish Mathur,SST,Manish Mathur
+1467,CLASS 9 Rose,Somya Rai,Tuesday,0,Morning Assembly,07:50 to 08:20,CYCLE TEST,CYCLE TEST,
+1468,CLASS 9 Rose,Somya Rai,Tuesday,1,1st Period,08:30 to 9:15,Eng_Somya Rai,Eng,Somya Rai
+1469,CLASS 9 Rose,Somya Rai,Tuesday,2,2nd Period,9:15 to 10:00,Math_JR,Math,Jageshwar R
+1470,CLASS 9 Rose,Somya Rai,Tuesday,3,3rd Period,10:00 to 10:45,Math_JR,Math,Jageshwar R
+1471,CLASS 9 Rose,Somya Rai,Tuesday,4,Lunch,10:45 to 11:05,Lunch _ Somya Rai,Lunch,Somya Rai
+1472,CLASS 9 Rose,Somya Rai,Tuesday,5,4th Period,11:05 to 11:50,Chem_Mraganshi,Chem,Mraganshi
+1473,CLASS 9 Rose,Somya Rai,Tuesday,6,5th Period,11:50 to 12:30,Hindi_Rashmi,Hindi,Rashmi
+1474,CLASS 9 Rose,Somya Rai,Tuesday,7,6th Period,12:30 to 1:10,SST_Manish Mathur,SST,Manish Mathur
+1475,CLASS 9 Rose,Somya Rai,Wednesday,0,Morning Assembly,07:50 to 08:20,Prayer,Prayer,
+1476,CLASS 9 Rose,Somya Rai,Wednesday,1,1st Period,08:30 to 9:15,Games_Komal,Games,Komal
+1477,CLASS 9 Rose,Somya Rai,Wednesday,2,2nd Period,9:15 to 10:00,Math_JR,Math,Jageshwar R
+1478,CLASS 9 Rose,Somya Rai,Wednesday,3,3rd Period,10:00 to 10:45,Math_JR,Math,Jageshwar R
+1479,CLASS 9 Rose,Somya Rai,Wednesday,4,Lunch,10:45 to 11:05,Lunch _ Somya Rai,Lunch,Somya Rai
+1480,CLASS 9 Rose,Somya Rai,Wednesday,5,4th Period,11:05 to 11:50,Chem_Mraganshi,Chem,Mraganshi
+1481,CLASS 9 Rose,Somya Rai,Wednesday,6,5th Period,11:50 to 12:30,Hindi_Rashmi,Hindi,Rashmi
+1482,CLASS 9 Rose,Somya Rai,Wednesday,7,6th Period,12:30 to 1:10,SST_Manish Mathur,SST,Manish Mathur
+1483,CLASS 9 Rose,Somya Rai,Thursday,0,Morning Assembly,07:50 to 08:20,Prayer,Prayer,
+1484,CLASS 9 Rose,Somya Rai,Thursday,1,1st Period,08:30 to 9:15,Eng_Somya Rai,Eng,Somya Rai
+1485,CLASS 9 Rose,Somya Rai,Thursday,2,2nd Period,9:15 to 10:00,Physics_Anuj,Physics,Anuj Jain
+1486,CLASS 9 Rose,Somya Rai,Thursday,3,3rd Period,10:00 to 10:45,Math_JR,Math,Jageshwar R
+1487,CLASS 9 Rose,Somya Rai,Thursday,4,Lunch,10:45 to 11:05,Lunch _ Somya Rai,Lunch,Somya Rai
+1488,CLASS 9 Rose,Somya Rai,Thursday,5,4th Period,11:05 to 11:50,SST_Manish Mathur,SST,Manish Mathur
+1489,CLASS 9 Rose,Somya Rai,Thursday,6,5th Period,11:50 to 12:30,Hindi_Rashmi,Hindi,Rashmi
+1490,CLASS 9 Rose,Somya Rai,Thursday,7,6th Period,12:30 to 1:10,Bio_Ram,Bio,Ram Kumar
+1491,CLASS 9 Rose,Somya Rai,Friday,0,Morning Assembly,07:50 to 08:20,CYCLE TEST,CYCLE TEST,
+1492,CLASS 9 Rose,Somya Rai,Friday,1,1st Period,08:30 to 9:15,Games_Geetesh,Games,Geetesh
+1493,CLASS 9 Rose,Somya Rai,Friday,2,2nd Period,9:15 to 10:00,Physics_Anuj,Physics,Anuj Jain
+1494,CLASS 9 Rose,Somya Rai,Friday,3,3rd Period,10:00 to 10:45,Math_JR,Math,Jageshwar R
+1495,CLASS 9 Rose,Somya Rai,Friday,4,Lunch,10:45 to 11:05,Lunch _ Somya Rai,Lunch,Somya Rai
+1496,CLASS 9 Rose,Somya Rai,Friday,5,4th Period,11:05 to 11:50,SST_Manish Mathur,SST,Manish Mathur
+1497,CLASS 9 Rose,Somya Rai,Friday,6,5th Period,11:50 to 12:30,Hindi_Rashmi,Hindi,Rashmi
+1498,CLASS 9 Rose,Somya Rai,Friday,7,6th Period,12:30 to 1:10,Bio_Ram,Bio,Ram Kumar
+1499,CLASS 9 Rose,Somya Rai,Saturday,0,Morning Assembly,07:50 to 08:20,CCA,CCA,
+1500,CLASS 9 Rose,Somya Rai,Saturday,1,1st Period,08:30 to 9:15,Eng_Somya Rai,Eng,Somya Rai
+1501,CLASS 9 Rose,Somya Rai,Saturday,2,2nd Period,9:15 to 10:00,Physics_Anuj,Physics,Anuj Jain
+1502,CLASS 9 Rose,Somya Rai,Saturday,3,3rd Period,10:00 to 10:45,Math_JR,Math,Jageshwar R
+1503,CLASS 9 Rose,Somya Rai,Saturday,4,Lunch,10:45 to 11:05,Lunch _ Somya Rai,Lunch,Somya Rai
+1504,CLASS 9 Rose,Somya Rai,Saturday,5,4th Period,11:05 to 11:50,SST_Manish Mathur,SST,Manish Mathur
+1505,CLASS 9 Rose,Somya Rai,Saturday,6,5th Period,11:50 to 12:30,Eng_Somya Rai,Eng,Somya Rai
+1506,CLASS 9 Rose,Somya Rai,Saturday,7,6th Period,12:30 to 1:10,Bio_Ram,Bio,Ram Kumar
+1507,CLASS 9 Marigold,Anuj Jain,Monday,0,Morning Assembly,07:50 to 08:20,Prayer,Prayer,
+1508,CLASS 9 Marigold,Anuj Jain,Monday,1,1st Period,08:30 to 9:15,Physics_Anuj,Physics,Anuj Jain
+1509,CLASS 9 Marigold,Anuj Jain,Monday,2,2nd Period,9:15 to 10:00,Games_Geetesh,Games,Geetesh
+1510,CLASS 9 Marigold,Anuj Jain,Monday,3,3rd Period,10:00 to 10:45,Hindi_Rashmi,Hindi,Rashmi
+1511,CLASS 9 Marigold,Anuj Jain,Monday,4,Lunch,10:45 to 11:05,Lunch _ Anuj Jain,Lunch,Anuj Jain
+1512,CLASS 9 Marigold,Anuj Jain,Monday,5,4th Period,11:05 to 11:50,Bio_Ram,Bio,Ram Kumar
+1513,CLASS 9 Marigold,Anuj Jain,Monday,6,5th Period,11:50 to 12:30,SST_Shruti,SST,Shruti Badkul
+1514,CLASS 9 Marigold,Anuj Jain,Monday,7,6th Period,12:30 to 1:10,Math_JR,Math,Jageshwar R
+1515,CLASS 9 Marigold,Anuj Jain,Tuesday,0,Morning Assembly,07:50 to 08:20,CYCLE TEST,CYCLE TEST,
+1516,CLASS 9 Marigold,Anuj Jain,Tuesday,1,1st Period,08:30 to 9:15,Physics_Anuj,Physics,Anuj Jain
+1517,CLASS 9 Marigold,Anuj Jain,Tuesday,2,2nd Period,9:15 to 10:00,Eng_Somya Rai,Eng,Somya Rai
+1518,CLASS 9 Marigold,Anuj Jain,Tuesday,3,3rd Period,10:00 to 10:45,Hindi_Rashmi,Hindi,Rashmi
+1519,CLASS 9 Marigold,Anuj Jain,Tuesday,4,Lunch,10:45 to 11:05,Lunch _ Anuj Jain,Lunch,Anuj Jain
+1520,CLASS 9 Marigold,Anuj Jain,Tuesday,5,4th Period,11:05 to 11:50,Bio_Ram,Bio,Ram Kumar
+1521,CLASS 9 Marigold,Anuj Jain,Tuesday,6,5th Period,11:50 to 12:30,SST_Shruti,SST,Shruti Badkul
+1522,CLASS 9 Marigold,Anuj Jain,Tuesday,7,6th Period,12:30 to 1:10,Math_JR,Math,Jageshwar R
+1523,CLASS 9 Marigold,Anuj Jain,Wednesday,0,Morning Assembly,07:50 to 08:20,Prayer,Prayer,
+1524,CLASS 9 Marigold,Anuj Jain,Wednesday,1,1st Period,08:30 to 9:15,Physics_Anuj,Physics,Anuj Jain
+1525,CLASS 9 Marigold,Anuj Jain,Wednesday,2,2nd Period,9:15 to 10:00,Eng_Somya Rai,Eng,Somya Rai
+1526,CLASS 9 Marigold,Anuj Jain,Wednesday,3,3rd Period,10:00 to 10:45,Hindi_Rashmi,Hindi,Rashmi
+1527,CLASS 9 Marigold,Anuj Jain,Wednesday,4,Lunch,10:45 to 11:05,Lunch _ Anuj Jain,Lunch,Anuj Jain
+1528,CLASS 9 Marigold,Anuj Jain,Wednesday,5,4th Period,11:05 to 11:50,Bio_Ram,Bio,Ram Kumar
+1529,CLASS 9 Marigold,Anuj Jain,Wednesday,6,5th Period,11:50 to 12:30,SST_Shruti,SST,Shruti Badkul
+1530,CLASS 9 Marigold,Anuj Jain,Wednesday,7,6th Period,12:30 to 1:10,Math_JR,Math,Jageshwar R
+1531,CLASS 9 Marigold,Anuj Jain,Thursday,0,Morning Assembly,07:50 to 08:20,Prayer,Prayer,
+1532,CLASS 9 Marigold,Anuj Jain,Thursday,1,1st Period,08:30 to 9:15,SST_Shruti,SST,Shruti Badkul
+1533,CLASS 9 Marigold,Anuj Jain,Thursday,2,2nd Period,9:15 to 10:00,Eng_Somya Rai,Eng,Somya Rai
+1534,CLASS 9 Marigold,Anuj Jain,Thursday,3,3rd Period,10:00 to 10:45,Hindi_Rashmi,Hindi,Rashmi
+1535,CLASS 9 Marigold,Anuj Jain,Thursday,4,Lunch,10:45 to 11:05,Lunch _ Anuj Jain,Lunch,Anuj Jain
+1536,CLASS 9 Marigold,Anuj Jain,Thursday,5,4th Period,11:05 to 11:50,Chem_Mraganshi,Chem,Mraganshi
+1537,CLASS 9 Marigold,Anuj Jain,Thursday,6,5th Period,11:50 to 12:30,Math_JR,Math,Jageshwar R
+1538,CLASS 9 Marigold,Anuj Jain,Thursday,7,6th Period,12:30 to 1:10,Math_JR,Math,Jageshwar R
+1539,CLASS 9 Marigold,Anuj Jain,Friday,0,Morning Assembly,07:50 to 08:20,CYCLE TEST,CYCLE TEST,
+1540,CLASS 9 Marigold,Anuj Jain,Friday,1,1st Period,08:30 to 9:15,SST_Shruti,SST,Shruti Badkul
+1541,CLASS 9 Marigold,Anuj Jain,Friday,2,2nd Period,9:15 to 10:00,Eng_Somya Rai,Eng,Somya Rai
+1542,CLASS 9 Marigold,Anuj Jain,Friday,3,3rd Period,10:00 to 10:45,Hindi_Rashmi,Hindi,Rashmi
+1543,CLASS 9 Marigold,Anuj Jain,Friday,4,Lunch,10:45 to 11:05,Lunch _ Anuj Jain,Lunch,Anuj Jain
+1544,CLASS 9 Marigold,Anuj Jain,Friday,5,4th Period,11:05 to 11:50,Chem_Mraganshi,Chem,Mraganshi
+1545,CLASS 9 Marigold,Anuj Jain,Friday,6,5th Period,11:50 to 12:30,Math_JR,Math,Jageshwar R
+1546,CLASS 9 Marigold,Anuj Jain,Friday,7,6th Period,12:30 to 1:10,Math_JR,Math,Jageshwar R
+1547,CLASS 9 Marigold,Anuj Jain,Saturday,0,Morning Assembly,07:50 to 08:20,CCA,CCA,
+1548,CLASS 9 Marigold,Anuj Jain,Saturday,1,1st Period,08:30 to 9:15,SST_Shruti,SST,Shruti Badkul
+1549,CLASS 9 Marigold,Anuj Jain,Saturday,2,2nd Period,9:15 to 10:00,Eng_Somya Rai,Eng,Somya Rai
+1550,CLASS 9 Marigold,Anuj Jain,Saturday,3,3rd Period,10:00 to 10:45,Games_Komal,Games,Komal
+1551,CLASS 9 Marigold,Anuj Jain,Saturday,4,Lunch,10:45 to 11:05,Lunch _ Anuj Jain,Lunch,Anuj Jain
+1552,CLASS 9 Marigold,Anuj Jain,Saturday,5,4th Period,11:05 to 11:50,Chem_Mraganshi,Chem,Mraganshi
+1553,CLASS 9 Marigold,Anuj Jain,Saturday,6,5th Period,11:50 to 12:30,Math_JR,Math,Jageshwar R
+1554,CLASS 9 Marigold,Anuj Jain,Saturday,7,6th Period,12:30 to 1:10,Math_JR,Math,Jageshwar R
+1555,CLASS 9 Lily,Manish Mathur,Monday,0,Morning Assembly,07:50 to 08:20,Prayer,Prayer,
+1556,CLASS 9 Lily,Manish Mathur,Monday,1,1st Period,08:30 to 9:15,SST_Manish Mathur,SST,Manish Mathur
+1557,CLASS 9 Lily,Manish Mathur,Monday,2,2nd Period,9:15 to 10:00,Chem_Mraganshi,Chem,Mraganshi
+1558,CLASS 9 Lily,Manish Mathur,Monday,3,3rd Period,10:00 to 10:45,Math_Somya Nayak,Math,Somya Nayak
+1559,CLASS 9 Lily,Manish Mathur,Monday,4,Lunch,10:45 to 11:05,Lunch _ Manish Mathur,Lunch,Manish Mathur
+1560,CLASS 9 Lily,Manish Mathur,Monday,5,4th Period,11:05 to 11:50,Eng_Somya Rai,Eng,Somya Rai
+1561,CLASS 9 Lily,Manish Mathur,Monday,6,5th Period,11:50 to 12:30,Bio_Ram,Bio,Ram Kumar
+1562,CLASS 9 Lily,Manish Mathur,Monday,7,6th Period,12:30 to 1:10,Hindi_Rashmi,Hindi,Rashmi
+1563,CLASS 9 Lily,Manish Mathur,Tuesday,0,Morning Assembly,07:50 to 08:20,CYCLE TEST,CYCLE TEST,
+1564,CLASS 9 Lily,Manish Mathur,Tuesday,1,1st Period,08:30 to 9:15,SST_Manish Mathur,SST,Manish Mathur
+1565,CLASS 9 Lily,Manish Mathur,Tuesday,2,2nd Period,9:15 to 10:00,Chem_Mraganshi,Chem,Mraganshi
+1566,CLASS 9 Lily,Manish Mathur,Tuesday,3,3rd Period,10:00 to 10:45,Math_Somya Nayak,Math,Somya Nayak
+1567,CLASS 9 Lily,Manish Mathur,Tuesday,4,Lunch,10:45 to 11:05,Lunch _ Manish Mathur,Lunch,Manish Mathur
+1568,CLASS 9 Lily,Manish Mathur,Tuesday,5,4th Period,11:05 to 11:50,Eng_Somya Rai,Eng,Somya Rai
+1569,CLASS 9 Lily,Manish Mathur,Tuesday,6,5th Period,11:50 to 12:30,Bio_Ram,Bio,Ram Kumar
+1570,CLASS 9 Lily,Manish Mathur,Tuesday,7,6th Period,12:30 to 1:10,Hindi_Rashmi,Hindi,Rashmi
+1571,CLASS 9 Lily,Manish Mathur,Wednesday,0,Morning Assembly,07:50 to 08:20,Prayer,Prayer,
+1572,CLASS 9 Lily,Manish Mathur,Wednesday,1,1st Period,08:30 to 9:15,SST_Manish Mathur,SST,Manish Mathur
+1573,CLASS 9 Lily,Manish Mathur,Wednesday,2,2nd Period,9:15 to 10:00,Chem_Mraganshi,Chem,Mraganshi
+1574,CLASS 9 Lily,Manish Mathur,Wednesday,3,3rd Period,10:00 to 10:45,Math_Somya Nayak,Math,Somya Nayak
+1575,CLASS 9 Lily,Manish Mathur,Wednesday,4,Lunch,10:45 to 11:05,Lunch _ Manish Mathur,Lunch,Manish Mathur
+1576,CLASS 9 Lily,Manish Mathur,Wednesday,5,4th Period,11:05 to 11:50,Eng_Somya Rai,Eng,Somya Rai
+1577,CLASS 9 Lily,Manish Mathur,Wednesday,6,5th Period,11:50 to 12:30,Bio_Ram,Bio,Ram Kumar
+1578,CLASS 9 Lily,Manish Mathur,Wednesday,7,6th Period,12:30 to 1:10,Math_Somya Nayak,Math,Somya Nayak
+1579,CLASS 9 Lily,Manish Mathur,Thursday,0,Morning Assembly,07:50 to 08:20,Prayer,Prayer,
+1580,CLASS 9 Lily,Manish Mathur,Thursday,1,1st Period,08:30 to 9:15,Physics_Anuj,Physics,Anuj Jain
+1581,CLASS 9 Lily,Manish Mathur,Thursday,2,2nd Period,9:15 to 10:00,Math_Somya Nayak,Math,Somya Nayak
+1582,CLASS 9 Lily,Manish Mathur,Thursday,3,3rd Period,10:00 to 10:45,Math_Somya Nayak,Math,Somya Nayak
+1583,CLASS 9 Lily,Manish Mathur,Thursday,4,Lunch,10:45 to 11:05,Lunch _ Manish Mathur,Lunch,Manish Mathur
+1584,CLASS 9 Lily,Manish Mathur,Thursday,5,4th Period,11:05 to 11:50,Eng_Somya Rai,Eng,Somya Rai
+1585,CLASS 9 Lily,Manish Mathur,Thursday,6,5th Period,11:50 to 12:30,Games_Geetesh,Games,Geetesh
+1586,CLASS 9 Lily,Manish Mathur,Thursday,7,6th Period,12:30 to 1:10,SST_Manish Mathur,SST,Manish Mathur
+1587,CLASS 9 Lily,Manish Mathur,Friday,0,Morning Assembly,07:50 to 08:20,CYCLE TEST,CYCLE TEST,
+1588,CLASS 9 Lily,Manish Mathur,Friday,1,1st Period,08:30 to 9:15,Physics_Anuj,Physics,Anuj Jain
+1589,CLASS 9 Lily,Manish Mathur,Friday,2,2nd Period,9:15 to 10:00,Hindi_Rashmi,Hindi,Rashmi
+1590,CLASS 9 Lily,Manish Mathur,Friday,3,3rd Period,10:00 to 10:45,Math_Somya Nayak,Math,Somya Nayak
+1591,CLASS 9 Lily,Manish Mathur,Friday,4,Lunch,10:45 to 11:05,Lunch _ Manish Mathur,Lunch,Manish Mathur
+1592,CLASS 9 Lily,Manish Mathur,Friday,5,4th Period,11:05 to 11:50,Hindi_Rashmi,Hindi,Rashmi
+1593,CLASS 9 Lily,Manish Mathur,Friday,6,5th Period,11:50 to 12:30,Eng_Somya Rai,Eng,Somya Rai
+1594,CLASS 9 Lily,Manish Mathur,Friday,7,6th Period,12:30 to 1:10,SST_Manish Mathur,SST,Manish Mathur
+1595,CLASS 9 Lily,Manish Mathur,Saturday,0,Morning Assembly,07:50 to 08:20,CCA,CCA,
+1596,CLASS 9 Lily,Manish Mathur,Saturday,1,1st Period,08:30 to 9:15,Physics_Anuj,Physics,Anuj Jain
+1597,CLASS 9 Lily,Manish Mathur,Saturday,2,2nd Period,9:15 to 10:00,Games_Geetesh,Games,Geetesh
+1598,CLASS 9 Lily,Manish Mathur,Saturday,3,3rd Period,10:00 to 10:45,Math_Somya Nayak,Math,Somya Nayak
+1599,CLASS 9 Lily,Manish Mathur,Saturday,4,Lunch,10:45 to 11:05,Lunch _ Manish Mathur,Lunch,Manish Mathur
+1600,CLASS 9 Lily,Manish Mathur,Saturday,5,4th Period,11:05 to 11:50,Hindi_Rashmi,Hindi,Rashmi
+1601,CLASS 9 Lily,Manish Mathur,Saturday,6,5th Period,11:50 to 12:30,Math_Somya Nayak,Math,Somya Nayak
+1602,CLASS 9 Lily,Manish Mathur,Saturday,7,6th Period,12:30 to 1:10,SST_Manish Mathur,SST,Manish Mathur
+1603,CLASS 10 Rose,Rashmi,Monday,0,Morning Assembly,07:50 to 08:20,Prayer,Prayer,
+1604,CLASS 10 Rose,Rashmi,Monday,1,1st Period,08:30 to 9:15,Hindi_Rashmi,Hindi,Rashmi
+1605,CLASS 10 Rose,Rashmi,Monday,2,2nd Period,9:15 to 10:00,Physics_Anuj,Physics,Anuj Jain
+1606,CLASS 10 Rose,Rashmi,Monday,3,3rd Period,10:00 to 10:45,SST_Rahul,SST,Rahul Vish.
+1607,CLASS 10 Rose,Rashmi,Monday,4,Lunch,10:45 to 11:05,Lunch _ Rashmi,Lunch,Rashmi
+1608,CLASS 10 Rose,Rashmi,Monday,5,4th Period,11:05 to 11:50,Math_Rajpal,Math,Rajpal
+1609,CLASS 10 Rose,Rashmi,Monday,6,5th Period,11:50 to 12:30,Eng_Somya Rai,Eng,Somya Rai
+1610,CLASS 10 Rose,Rashmi,Monday,7,6th Period,12:30 to 1:10,Bio_Ram,Bio,Ram Kumar
+1611,CLASS 10 Rose,Rashmi,Tuesday,0,Morning Assembly,07:50 to 08:20,CYCLE TEST,CYCLE TEST,
+1612,CLASS 10 Rose,Rashmi,Tuesday,1,1st Period,08:30 to 9:15,Hindi_Rashmi,Hindi,Rashmi
+1613,CLASS 10 Rose,Rashmi,Tuesday,2,2nd Period,9:15 to 10:00,Physics_Anuj,Physics,Anuj Jain
+1614,CLASS 10 Rose,Rashmi,Tuesday,3,3rd Period,10:00 to 10:45,SST_Rahul,SST,Rahul Vish.
+1615,CLASS 10 Rose,Rashmi,Tuesday,4,Lunch,10:45 to 11:05,Lunch _ Rashmi,Lunch,Rashmi
+1616,CLASS 10 Rose,Rashmi,Tuesday,5,4th Period,11:05 to 11:50,Math_Rajpal,Math,Rajpal
+1617,CLASS 10 Rose,Rashmi,Tuesday,6,5th Period,11:50 to 12:30,Eng_Somya Rai,Eng,Somya Rai
+1618,CLASS 10 Rose,Rashmi,Tuesday,7,6th Period,12:30 to 1:10,Bio_Ram,Bio,Ram Kumar
+1619,CLASS 10 Rose,Rashmi,Wednesday,0,Morning Assembly,07:50 to 08:20,Prayer,Prayer,
+1620,CLASS 10 Rose,Rashmi,Wednesday,1,1st Period,08:30 to 9:15,Hindi_Rashmi,Hindi,Rashmi
+1621,CLASS 10 Rose,Rashmi,Wednesday,2,2nd Period,9:15 to 10:00,Physics_Anuj,Physics,Anuj Jain
+1622,CLASS 10 Rose,Rashmi,Wednesday,3,3rd Period,10:00 to 10:45,SST_Rahul,SST,Rahul Vish.
+1623,CLASS 10 Rose,Rashmi,Wednesday,4,Lunch,10:45 to 11:05,Lunch _ Rashmi,Lunch,Rashmi
+1624,CLASS 10 Rose,Rashmi,Wednesday,5,4th Period,11:05 to 11:50,Math_Rajpal,Math,Rajpal
+1625,CLASS 10 Rose,Rashmi,Wednesday,6,5th Period,11:50 to 12:30,Eng_Somya Rai,Eng,Somya Rai
+1626,CLASS 10 Rose,Rashmi,Wednesday,7,6th Period,12:30 to 1:10,Bio_Ram,Bio,Ram Kumar
+1627,CLASS 10 Rose,Rashmi,Thursday,0,Morning Assembly,07:50 to 08:20,Prayer,Prayer,
+1628,CLASS 10 Rose,Rashmi,Thursday,1,1st Period,08:30 to 9:15,Games_Geetesh,Games,Geetesh
+1629,CLASS 10 Rose,Rashmi,Thursday,2,2nd Period,9:15 to 10:00,Chem_Mraganshi,Chem,Mraganshi
+1630,CLASS 10 Rose,Rashmi,Thursday,3,3rd Period,10:00 to 10:45,SST_Rahul,SST,Rahul Vish.
+1631,CLASS 10 Rose,Rashmi,Thursday,4,Lunch,10:45 to 11:05,Lunch _ Rashmi,Lunch,Rashmi
+1632,CLASS 10 Rose,Rashmi,Thursday,5,4th Period,11:05 to 11:50,Math_Rajpal,Math,Rajpal
+1633,CLASS 10 Rose,Rashmi,Thursday,6,5th Period,11:50 to 12:30,Math_Rajpal,Math,Rajpal
+1634,CLASS 10 Rose,Rashmi,Thursday,7,6th Period,12:30 to 1:10,Eng_Somya Rai,Eng,Somya Rai
+1635,CLASS 10 Rose,Rashmi,Friday,0,Morning Assembly,07:50 to 08:20,CYCLE TEST,CYCLE TEST,
+1636,CLASS 10 Rose,Rashmi,Friday,1,1st Period,08:30 to 9:15,Hindi_Rashmi,Hindi,Rashmi
+1637,CLASS 10 Rose,Rashmi,Friday,2,2nd Period,9:15 to 10:00,Chem_Mraganshi,Chem,Mraganshi
+1638,CLASS 10 Rose,Rashmi,Friday,3,3rd Period,10:00 to 10:45,SST_Rahul,SST,Rahul Vish.
+1639,CLASS 10 Rose,Rashmi,Friday,4,Lunch,10:45 to 11:05,Lunch _ Rashmi,Lunch,Rashmi
+1640,CLASS 10 Rose,Rashmi,Friday,5,4th Period,11:05 to 11:50,Math_Rajpal,Math,Rajpal
+1641,CLASS 10 Rose,Rashmi,Friday,6,5th Period,11:50 to 12:30,Math_Rajpal,Math,Rajpal
+1642,CLASS 10 Rose,Rashmi,Friday,7,6th Period,12:30 to 1:10,Eng_Somya Rai,Eng,Somya Rai
+1643,CLASS 10 Rose,Rashmi,Saturday,0,Morning Assembly,07:50 to 08:20,CCA,CCA,
+1644,CLASS 10 Rose,Rashmi,Saturday,1,1st Period,08:30 to 9:15,Hindi_Rashmi,Hindi,Rashmi
+1645,CLASS 10 Rose,Rashmi,Saturday,2,2nd Period,9:15 to 10:00,Chem_Mraganshi,Chem,Mraganshi
+1646,CLASS 10 Rose,Rashmi,Saturday,3,3rd Period,10:00 to 10:45,SST_Rahul,SST,Rahul Vish.
+1647,CLASS 10 Rose,Rashmi,Saturday,4,Lunch,10:45 to 11:05,Lunch _ Rashmi,Lunch,Rashmi
+1648,CLASS 10 Rose,Rashmi,Saturday,5,4th Period,11:05 to 11:50,Math_Rajpal,Math,Rajpal
+1649,CLASS 10 Rose,Rashmi,Saturday,6,5th Period,11:50 to 12:30,Math_Rajpal,Math,Rajpal
+1650,CLASS 10 Rose,Rashmi,Saturday,7,6th Period,12:30 to 1:10,Eng_Somya Rai,Eng,Somya Rai
+1651,CLASS 10 Marigold,Jageshwar R,Monday,0,Morning Assembly,07:50 to 08:20,Prayer,Prayer,
+1652,CLASS 10 Marigold,Jageshwar R,Monday,1,1st Period,08:30 to 9:15,Math_JR,Math,Jageshwar R
+1653,CLASS 10 Marigold,Jageshwar R,Monday,2,2nd Period,9:15 to 10:00,Eng_Jyotshran,Eng,Jyotsharan
+1654,CLASS 10 Marigold,Jageshwar R,Monday,3,3rd Period,10:00 to 10:45,Chem_Divy,Chem,Divya Upadhaya
+1655,CLASS 10 Marigold,Jageshwar R,Monday,4,Lunch,10:45 to 11:05,Lunch _ Jageshwar R,Lunch,Jageshwar R
+1656,CLASS 10 Marigold,Jageshwar R,Monday,5,4th Period,11:05 to 11:50,GAMES_Geetesh,GAMES,Geetesh
+1657,CLASS 10 Marigold,Jageshwar R,Monday,6,5th Period,11:50 to 12:30,SST_Rahul,SST,Rahul Vish.
+1658,CLASS 10 Marigold,Jageshwar R,Monday,7,6th Period,12:30 to 1:10,Physics_Anuj,Physics,Anuj Jain
+1659,CLASS 10 Marigold,Jageshwar R,Tuesday,0,Morning Assembly,07:50 to 08:20,CYCLE TEST,CYCLE TEST,
+1660,CLASS 10 Marigold,Jageshwar R,Tuesday,1,1st Period,08:30 to 9:15,Math_JR,Math,Jageshwar R
+1661,CLASS 10 Marigold,Jageshwar R,Tuesday,2,2nd Period,9:15 to 10:00,Eng_Jyotshran,Eng,Jyotsharan
+1662,CLASS 10 Marigold,Jageshwar R,Tuesday,3,3rd Period,10:00 to 10:45,Chem_Divy,Chem,Divya Upadhaya
+1663,CLASS 10 Marigold,Jageshwar R,Tuesday,4,Lunch,10:45 to 11:05,Lunch _ Jageshwar R,Lunch,Jageshwar R
+1664,CLASS 10 Marigold,Jageshwar R,Tuesday,5,4th Period,11:05 to 11:50,Hindi_Rashmi,Hindi,Rashmi
+1665,CLASS 10 Marigold,Jageshwar R,Tuesday,6,5th Period,11:50 to 12:30,SST_Rahul,SST,Rahul Vish.
+1666,CLASS 10 Marigold,Jageshwar R,Tuesday,7,6th Period,12:30 to 1:10,Physics_Anuj,Physics,Anuj Jain
+1667,CLASS 10 Marigold,Jageshwar R,Wednesday,0,Morning Assembly,07:50 to 08:20,Prayer,Prayer,
+1668,CLASS 10 Marigold,Jageshwar R,Wednesday,1,1st Period,08:30 to 9:15,Math_JR,Math,Jageshwar R
+1669,CLASS 10 Marigold,Jageshwar R,Wednesday,2,2nd Period,9:15 to 10:00,Eng_Jyotshran,Eng,Jyotsharan
+1670,CLASS 10 Marigold,Jageshwar R,Wednesday,3,3rd Period,10:00 to 10:45,Chem_Divy,Chem,Divya Upadhaya
+1671,CLASS 10 Marigold,Jageshwar R,Wednesday,4,Lunch,10:45 to 11:05,Lunch _ Jageshwar R,Lunch,Jageshwar R
+1672,CLASS 10 Marigold,Jageshwar R,Wednesday,5,4th Period,11:05 to 11:50,Hindi_Rashmi,Hindi,Rashmi
+1673,CLASS 10 Marigold,Jageshwar R,Wednesday,6,5th Period,11:50 to 12:30,SST_Rahul,SST,Rahul Vish.
+1674,CLASS 10 Marigold,Jageshwar R,Wednesday,7,6th Period,12:30 to 1:10,Physics_Anuj,Physics,Anuj Jain
+1675,CLASS 10 Marigold,Jageshwar R,Thursday,0,Morning Assembly,07:50 to 08:20,Prayer,Prayer,
+1676,CLASS 10 Marigold,Jageshwar R,Thursday,1,1st Period,08:30 to 9:15,Math_JR,Math,Jageshwar R
+1677,CLASS 10 Marigold,Jageshwar R,Thursday,2,2nd Period,9:15 to 10:00,Math_JR,Math,Jageshwar R
+1678,CLASS 10 Marigold,Jageshwar R,Thursday,3,3rd Period,10:00 to 10:45,Eng_Jyotshran,Eng,Jyotsharan
+1679,CLASS 10 Marigold,Jageshwar R,Thursday,4,Lunch,10:45 to 11:05,Lunch _ Jageshwar R,Lunch,Jageshwar R
+1680,CLASS 10 Marigold,Jageshwar R,Thursday,5,4th Period,11:05 to 11:50,Bio_Ram,Bio,Ram Kumar
+1681,CLASS 10 Marigold,Jageshwar R,Thursday,6,5th Period,11:50 to 12:30,SST_Rahul,SST,Rahul Vish.
+1682,CLASS 10 Marigold,Jageshwar R,Thursday,7,6th Period,12:30 to 1:10,Hindi_Rashmi,Hindi,Rashmi
+1683,CLASS 10 Marigold,Jageshwar R,Friday,0,Morning Assembly,07:50 to 08:20,CYCLE TEST,CYCLE TEST,
+1684,CLASS 10 Marigold,Jageshwar R,Friday,1,1st Period,08:30 to 9:15,Math_JR,Math,Jageshwar R
+1685,CLASS 10 Marigold,Jageshwar R,Friday,2,2nd Period,9:15 to 10:00,Math_JR,Math,Jageshwar R
+1686,CLASS 10 Marigold,Jageshwar R,Friday,3,3rd Period,10:00 to 10:45,Eng_Jyotshran,Eng,Jyotsharan
+1687,CLASS 10 Marigold,Jageshwar R,Friday,4,Lunch,10:45 to 11:05,Lunch _ Jageshwar R,Lunch,Jageshwar R
+1688,CLASS 10 Marigold,Jageshwar R,Friday,5,4th Period,11:05 to 11:50,Bio_Ram,Bio,Ram Kumar
+1689,CLASS 10 Marigold,Jageshwar R,Friday,6,5th Period,11:50 to 12:30,SST_Rahul,SST,Rahul Vish.
+1690,CLASS 10 Marigold,Jageshwar R,Friday,7,6th Period,12:30 to 1:10,Hindi_Rashmi,Hindi,Rashmi
+1691,CLASS 10 Marigold,Jageshwar R,Saturday,0,Morning Assembly,07:50 to 08:20,CCA,CCA,
+1692,CLASS 10 Marigold,Jageshwar R,Saturday,1,1st Period,08:30 to 9:15,Math_JR,Math,Jageshwar R
+1693,CLASS 10 Marigold,Jageshwar R,Saturday,2,2nd Period,9:15 to 10:00,Math_JR,Math,Jageshwar R
+1694,CLASS 10 Marigold,Jageshwar R,Saturday,3,3rd Period,10:00 to 10:45,Eng_Jyotshran,Eng,Jyotsharan
+1695,CLASS 10 Marigold,Jageshwar R,Saturday,4,Lunch,10:45 to 11:05,Lunch _ Jageshwar R,Lunch,Jageshwar R
+1696,CLASS 10 Marigold,Jageshwar R,Saturday,5,4th Period,11:05 to 11:50,Bio_Ram,Bio,Ram Kumar
+1697,CLASS 10 Marigold,Jageshwar R,Saturday,6,5th Period,11:50 to 12:30,SST_Rahul,SST,Rahul Vish.
+1698,CLASS 10 Marigold,Jageshwar R,Saturday,7,6th Period,12:30 to 1:10,Hindi_Rashmi,Hindi,Rashmi
+1699,CLASS 10 Lily,Jyotsharan,Monday,0,Morning Assembly,07:50 to 08:20,Prayer,Prayer,
+1700,CLASS 10 Lily,Jyotsharan,Monday,1,1st Period,08:30 to 9:15,Eng_Jyotshran,Eng,Jyotsharan
+1701,CLASS 10 Lily,Jyotsharan,Monday,2,2nd Period,9:15 to 10:00,Hindi_Rashmi,Hindi,Rashmi
+1702,CLASS 10 Lily,Jyotsharan,Monday,3,3rd Period,10:00 to 10:45,Physics_Anuj,Physics,Anuj Jain
+1703,CLASS 10 Lily,Jyotsharan,Monday,4,Lunch,10:45 to 11:05,Lunch _ Jyotsharan,Lunch,Jyotsharan
+1704,CLASS 10 Lily,Jyotsharan,Monday,5,4th Period,11:05 to 11:50,Math_JR,Math,Jageshwar R
+1705,CLASS 10 Lily,Jyotsharan,Monday,6,5th Period,11:50 to 12:30,Math_JR,Math,Jageshwar R
+1706,CLASS 10 Lily,Jyotsharan,Monday,7,6th Period,12:30 to 1:10,SST_Rahul,SST,Rahul Vish.
+1707,CLASS 10 Lily,Jyotsharan,Tuesday,0,Morning Assembly,07:50 to 08:20,CYCLE TEST,CYCLE TEST,
+1708,CLASS 10 Lily,Jyotsharan,Tuesday,1,1st Period,08:30 to 9:15,Eng_Jyotshran,Eng,Jyotsharan
+1709,CLASS 10 Lily,Jyotsharan,Tuesday,2,2nd Period,9:15 to 10:00,Hindi_Rashmi,Hindi,Rashmi
+1710,CLASS 10 Lily,Jyotsharan,Tuesday,3,3rd Period,10:00 to 10:45,Physics_Anuj,Physics,Anuj Jain
+1711,CLASS 10 Lily,Jyotsharan,Tuesday,4,Lunch,10:45 to 11:05,Lunch _ Jyotsharan,Lunch,Jyotsharan
+1712,CLASS 10 Lily,Jyotsharan,Tuesday,5,4th Period,11:05 to 11:50,Math_JR,Math,Jageshwar R
+1713,CLASS 10 Lily,Jyotsharan,Tuesday,6,5th Period,11:50 to 12:30,Math_JR,Math,Jageshwar R
+1714,CLASS 10 Lily,Jyotsharan,Tuesday,7,6th Period,12:30 to 1:10,SST_Rahul,SST,Rahul Vish.
+1715,CLASS 10 Lily,Jyotsharan,Wednesday,0,Morning Assembly,07:50 to 08:20,Prayer,Prayer,
+1716,CLASS 10 Lily,Jyotsharan,Wednesday,1,1st Period,08:30 to 9:15,Eng_Jyotshran,Eng,Jyotsharan
+1717,CLASS 10 Lily,Jyotsharan,Wednesday,2,2nd Period,9:15 to 10:00,Hindi_Rashmi,Hindi,Rashmi
+1718,CLASS 10 Lily,Jyotsharan,Wednesday,3,3rd Period,10:00 to 10:45,Physics_Anuj,Physics,Anuj Jain
+1719,CLASS 10 Lily,Jyotsharan,Wednesday,4,Lunch,10:45 to 11:05,Lunch _ Jyotsharan,Lunch,Jyotsharan
+1720,CLASS 10 Lily,Jyotsharan,Wednesday,5,4th Period,11:05 to 11:50,Math_JR,Math,Jageshwar R
+1721,CLASS 10 Lily,Jyotsharan,Wednesday,6,5th Period,11:50 to 12:30,Math_JR,Math,Jageshwar R
+1722,CLASS 10 Lily,Jyotsharan,Wednesday,7,6th Period,12:30 to 1:10,SST_Rahul,SST,Rahul Vish.
+1723,CLASS 10 Lily,Jyotsharan,Thursday,0,Morning Assembly,07:50 to 08:20,Prayer,Prayer,
+1724,CLASS 10 Lily,Jyotsharan,Thursday,1,1st Period,08:30 to 9:15,Eng_Jyotshran,Eng,Jyotsharan
+1725,CLASS 10 Lily,Jyotsharan,Thursday,2,2nd Period,9:15 to 10:00,Hindi_Rashmi,Hindi,Rashmi
+1726,CLASS 10 Lily,Jyotsharan,Thursday,3,3rd Period,10:00 to 10:45,Chem_Divy,Chem,Divya Upadhaya
+1727,CLASS 10 Lily,Jyotsharan,Thursday,4,Lunch,10:45 to 11:05,Lunch _ Jyotsharan,Lunch,Jyotsharan
+1728,CLASS 10 Lily,Jyotsharan,Thursday,5,4th Period,11:05 to 11:50,Math_JR,Math,Jageshwar R
+1729,CLASS 10 Lily,Jyotsharan,Thursday,6,5th Period,11:50 to 12:30,Bio_Ram,Bio,Ram Kumar
+1730,CLASS 10 Lily,Jyotsharan,Thursday,7,6th Period,12:30 to 1:10,SST_Rahul,SST,Rahul Vish.
+1731,CLASS 10 Lily,Jyotsharan,Friday,0,Morning Assembly,07:50 to 08:20,CYCLE TEST,CYCLE TEST,
+1732,CLASS 10 Lily,Jyotsharan,Friday,1,1st Period,08:30 to 9:15,Eng_Jyotshran,Eng,Jyotsharan
+1733,CLASS 10 Lily,Jyotsharan,Friday,2,2nd Period,9:15 to 10:00,Games_Geetesh,Games,Geetesh
+1734,CLASS 10 Lily,Jyotsharan,Friday,3,3rd Period,10:00 to 10:45,Chem_Divy,Chem,Divya Upadhaya
+1735,CLASS 10 Lily,Jyotsharan,Friday,4,Lunch,10:45 to 11:05,Lunch _ Jyotsharan,Lunch,Jyotsharan
+1736,CLASS 10 Lily,Jyotsharan,Friday,5,4th Period,11:05 to 11:50,Math_JR,Math,Jageshwar R
+1737,CLASS 10 Lily,Jyotsharan,Friday,6,5th Period,11:50 to 12:30,Bio_Ram,Bio,Ram Kumar
+1738,CLASS 10 Lily,Jyotsharan,Friday,7,6th Period,12:30 to 1:10,SST_Rahul,SST,Rahul Vish.
+1739,CLASS 10 Lily,Jyotsharan,Saturday,0,Morning Assembly,07:50 to 08:20,CCA,CCA,
+1740,CLASS 10 Lily,Jyotsharan,Saturday,1,1st Period,08:30 to 9:15,Eng_Jyotshran,Eng,Jyotsharan
+1741,CLASS 10 Lily,Jyotsharan,Saturday,2,2nd Period,9:15 to 10:00,Hindi_Rashmi,Hindi,Rashmi
+1742,CLASS 10 Lily,Jyotsharan,Saturday,3,3rd Period,10:00 to 10:45,Chem_Divy,Chem,Divya Upadhaya
+1743,CLASS 10 Lily,Jyotsharan,Saturday,4,Lunch,10:45 to 11:05,Lunch _ Jyotsharan,Lunch,Jyotsharan
+1744,CLASS 10 Lily,Jyotsharan,Saturday,5,4th Period,11:05 to 11:50,Math_JR,Math,Jageshwar R
+1745,CLASS 10 Lily,Jyotsharan,Saturday,6,5th Period,11:50 to 12:30,Bio_Ram,Bio,Ram Kumar
+1746,CLASS 10 Lily,Jyotsharan,Saturday,7,6th Period,12:30 to 1:10,SST_Rahul,SST,Rahul Vish.
+1747,CLASS 11 (Bio + Math),Divya Upadhaya,Monday,0,Morning Assembly,07:50 to 08:20,Prayer,Prayer,
+1748,CLASS 11 (Bio + Math),Divya Upadhaya,Monday,1,1st Period,08:30 to 9:15,Chem_Divy,Chem,Divya Upadhaya
+1749,CLASS 11 (Bio + Math),Divya Upadhaya,Monday,2,2nd Period,9:15 to 10:00,Chem_Divy,Chem,Divya Upadhaya
+1750,CLASS 11 (Bio + Math),Divya Upadhaya,Monday,3,3rd Period,10:00 to 10:45,"Bio / Math (Ram Kumar, Rajpal)",Bio / Math,"Ram Kumar, Rajpal"
+1751,CLASS 11 (Bio + Math),Divya Upadhaya,Monday,4,Lunch,10:45 to 11:05,Lunch _ Divya Upadhaya,Lunch,Divya Upadhaya
+1752,CLASS 11 (Bio + Math),Divya Upadhaya,Monday,5,4th Period,11:05 to 11:50,PE_Shailandra,PE,Shailandra
+1753,CLASS 11 (Bio + Math),Divya Upadhaya,Monday,6,5th Period,11:50 to 12:30,Physics_Anuj,Physics,Anuj Jain
+1754,CLASS 11 (Bio + Math),Divya Upadhaya,Monday,7,6th Period,12:30 to 1:10,Eng_Jyotshran,Eng,Jyotsharan
+1755,CLASS 11 (Bio + Math),Divya Upadhaya,Tuesday,0,Morning Assembly,07:50 to 08:20,CYCLE TEST,CYCLE TEST,
+1756,CLASS 11 (Bio + Math),Divya Upadhaya,Tuesday,1,1st Period,08:30 to 9:15,Chem_Divy,Chem,Divya Upadhaya
+1757,CLASS 11 (Bio + Math),Divya Upadhaya,Tuesday,2,2nd Period,9:15 to 10:00,Chem_Divy,Chem,Divya Upadhaya
+1758,CLASS 11 (Bio + Math),Divya Upadhaya,Tuesday,3,3rd Period,10:00 to 10:45,"Bio / Math (Ram Kumar, Rajpal)",Bio / Math,"Ram Kumar, Rajpal"
+1759,CLASS 11 (Bio + Math),Divya Upadhaya,Tuesday,4,Lunch,10:45 to 11:05,Lunch _ Divya Upadhaya,Lunch,Divya Upadhaya
+1760,CLASS 11 (Bio + Math),Divya Upadhaya,Tuesday,5,4th Period,11:05 to 11:50,PE_Shailandra,PE,Shailandra
+1761,CLASS 11 (Bio + Math),Divya Upadhaya,Tuesday,6,5th Period,11:50 to 12:30,Physics_Anuj,Physics,Anuj Jain
+1762,CLASS 11 (Bio + Math),Divya Upadhaya,Tuesday,7,6th Period,12:30 to 1:10,Eng_Jyotshran,Eng,Jyotsharan
+1763,CLASS 11 (Bio + Math),Divya Upadhaya,Wednesday,0,Morning Assembly,07:50 to 08:20,Prayer,Prayer,
+1764,CLASS 11 (Bio + Math),Divya Upadhaya,Wednesday,1,1st Period,08:30 to 9:15,Chem_Divy,Chem,Divya Upadhaya
+1765,CLASS 11 (Bio + Math),Divya Upadhaya,Wednesday,2,2nd Period,9:15 to 10:00,Chem_Divy,Chem,Divya Upadhaya
+1766,CLASS 11 (Bio + Math),Divya Upadhaya,Wednesday,3,3rd Period,10:00 to 10:45,"Bio / Math (Ram Kumar, Rajpal)",Bio / Math,"Ram Kumar, Rajpal"
+1767,CLASS 11 (Bio + Math),Divya Upadhaya,Wednesday,4,Lunch,10:45 to 11:05,Lunch _ Divya Upadhaya,Lunch,Divya Upadhaya
+1768,CLASS 11 (Bio + Math),Divya Upadhaya,Wednesday,5,4th Period,11:05 to 11:50,PE Practical_Geetesh,PE Practical,Geetesh
+1769,CLASS 11 (Bio + Math),Divya Upadhaya,Wednesday,6,5th Period,11:50 to 12:30,Physics_Anuj,Physics,Anuj Jain
+1770,CLASS 11 (Bio + Math),Divya Upadhaya,Wednesday,7,6th Period,12:30 to 1:10,Eng_Jyotshran,Eng,Jyotsharan
+1771,CLASS 11 (Bio + Math),Divya Upadhaya,Thursday,0,Morning Assembly,07:50 to 08:20,Prayer,Prayer,
+1772,CLASS 11 (Bio + Math),Divya Upadhaya,Thursday,1,1st Period,08:30 to 9:15,Chem_Divy,Chem,Divya Upadhaya
+1773,CLASS 11 (Bio + Math),Divya Upadhaya,Thursday,2,2nd Period,9:15 to 10:00,"Bio / Math (Ram Kumar, Rajpal)",Bio / Math,"Ram Kumar, Rajpal"
+1774,CLASS 11 (Bio + Math),Divya Upadhaya,Thursday,3,3rd Period,10:00 to 10:45,"Bio / Math (Ram Kumar, Rajpal)",Bio / Math,"Ram Kumar, Rajpal"
+1775,CLASS 11 (Bio + Math),Divya Upadhaya,Thursday,4,Lunch,10:45 to 11:05,Lunch _ Divya Upadhaya,Lunch,Divya Upadhaya
+1776,CLASS 11 (Bio + Math),Divya Upadhaya,Thursday,5,4th Period,11:05 to 11:50,Eng_Jyotshran,Eng,Jyotsharan
+1777,CLASS 11 (Bio + Math),Divya Upadhaya,Thursday,6,5th Period,11:50 to 12:30,Physics_Anuj,Physics,Anuj Jain
+1778,CLASS 11 (Bio + Math),Divya Upadhaya,Thursday,7,6th Period,12:30 to 1:10,Physics_Anuj,Physics,Anuj Jain
+1779,CLASS 11 (Bio + Math),Divya Upadhaya,Friday,0,Morning Assembly,07:50 to 08:20,CYCLE TEST,CYCLE TEST,
+1780,CLASS 11 (Bio + Math),Divya Upadhaya,Friday,1,1st Period,08:30 to 9:15,Chem_Divy,Chem,Divya Upadhaya
+1781,CLASS 11 (Bio + Math),Divya Upadhaya,Friday,2,2nd Period,9:15 to 10:00,"Bio / Math (Ram Kumar, Rajpal)",Bio / Math,"Ram Kumar, Rajpal"
+1782,CLASS 11 (Bio + Math),Divya Upadhaya,Friday,3,3rd Period,10:00 to 10:45,"Bio / Math (Ram Kumar, Rajpal)",Bio / Math,"Ram Kumar, Rajpal"
+1783,CLASS 11 (Bio + Math),Divya Upadhaya,Friday,4,Lunch,10:45 to 11:05,Lunch _ Divya Upadhaya,Lunch,Divya Upadhaya
+1784,CLASS 11 (Bio + Math),Divya Upadhaya,Friday,5,4th Period,11:05 to 11:50,Eng_Jyotshran,Eng,Jyotsharan
+1785,CLASS 11 (Bio + Math),Divya Upadhaya,Friday,6,5th Period,11:50 to 12:30,Physics_Anuj,Physics,Anuj Jain
+1786,CLASS 11 (Bio + Math),Divya Upadhaya,Friday,7,6th Period,12:30 to 1:10,Physics_Anuj,Physics,Anuj Jain
+1787,CLASS 11 (Bio + Math),Divya Upadhaya,Saturday,0,Morning Assembly,07:50 to 08:20,Prayer,Prayer,
+1788,CLASS 11 (Bio + Math),Divya Upadhaya,Saturday,1,1st Period,08:30 to 9:15,Chem_Divy,Chem,Divya Upadhaya
+1789,CLASS 11 (Bio + Math),Divya Upadhaya,Saturday,2,2nd Period,9:15 to 10:00,"Bio / Math (Ram Kumar, Rajpal)",Bio / Math,"Ram Kumar, Rajpal"
+1790,CLASS 11 (Bio + Math),Divya Upadhaya,Saturday,3,3rd Period,10:00 to 10:45,"Bio / Math (Ram Kumar, Rajpal)",Bio / Math,"Ram Kumar, Rajpal"
+1791,CLASS 11 (Bio + Math),Divya Upadhaya,Saturday,4,Lunch,10:45 to 11:05,Lunch _ Divya Upadhaya,Lunch,Divya Upadhaya
+1792,CLASS 11 (Bio + Math),Divya Upadhaya,Saturday,5,4th Period,11:05 to 11:50,Eng_Jyotshran,Eng,Jyotsharan
+1793,CLASS 11 (Bio + Math),Divya Upadhaya,Saturday,6,5th Period,11:50 to 12:30,Physics_Anuj,Physics,Anuj Jain
+1794,CLASS 11 (Bio + Math),Divya Upadhaya,Saturday,7,6th Period,12:30 to 1:10,Physics_Anuj,Physics,Anuj Jain
+1795,CLASS 11 Comm.,Deepak (Left),Monday,0,Morning Assembly,07:50 to 08:20,Prayer,Prayer,
+1796,CLASS 11 Comm.,Deepak (Left),Monday,1,1st Period,08:30 to 9:15,PE Practical_Geetesh,PE Practical,Geetesh
+1797,CLASS 11 Comm.,Deepak (Left),Monday,2,2nd Period,9:15 to 10:00,Eco_Rahul,Eco,Rahul Vish.
+1798,CLASS 11 Comm.,Deepak (Left),Monday,3,3rd Period,10:00 to 10:45,BST_Manish Mathur,BST,Manish Mathur
+1799,CLASS 11 Comm.,Deepak (Left),Monday,4,Lunch,10:45 to 11:05,Lunch _ Deepak (Left),Lunch,Deepak (Left)
+1800,CLASS 11 Comm.,Deepak (Left),Monday,5,4th Period,11:05 to 11:50,Eng_Jyotshran,Eng,Jyotsharan
+1801,CLASS 11 Comm.,Deepak (Left),Monday,6,5th Period,11:50 to 12:30,Account_Prashant,Account,Prashant
+1802,CLASS 11 Comm.,Deepak (Left),Monday,7,6th Period,12:30 to 1:10,Account_Prashant,Account,Prashant
+1803,CLASS 11 Comm.,Deepak (Left),Tuesday,0,Morning Assembly,07:50 to 08:20,CYCLE TEST,CYCLE TEST,
+1804,CLASS 11 Comm.,Deepak (Left),Tuesday,1,1st Period,08:30 to 9:15,PE Practical_Geetesh,PE Practical,Geetesh
+1805,CLASS 11 Comm.,Deepak (Left),Tuesday,2,2nd Period,9:15 to 10:00,Eco_Rahul,Eco,Rahul Vish.
+1806,CLASS 11 Comm.,Deepak (Left),Tuesday,3,3rd Period,10:00 to 10:45,BST_Manish Mathur,BST,Manish Mathur
+1807,CLASS 11 Comm.,Deepak (Left),Tuesday,4,Lunch,10:45 to 11:05,Lunch _ Deepak (Left),Lunch,Deepak (Left)
+1808,CLASS 11 Comm.,Deepak (Left),Tuesday,5,4th Period,11:05 to 11:50,Eng_Jyotshran,Eng,Jyotsharan
+1809,CLASS 11 Comm.,Deepak (Left),Tuesday,6,5th Period,11:50 to 12:30,Account_Prashant,Account,Prashant
+1810,CLASS 11 Comm.,Deepak (Left),Tuesday,7,6th Period,12:30 to 1:10,Account_Prashant,Account,Prashant
+1811,CLASS 11 Comm.,Deepak (Left),Wednesday,0,Morning Assembly,07:50 to 08:20,Prayer,Prayer,
+1812,CLASS 11 Comm.,Deepak (Left),Wednesday,1,1st Period,08:30 to 9:15,PE Practical_Geetesh,PE Practical,Geetesh
+1813,CLASS 11 Comm.,Deepak (Left),Wednesday,2,2nd Period,9:15 to 10:00,Eco_Rahul,Eco,Rahul Vish.
+1814,CLASS 11 Comm.,Deepak (Left),Wednesday,3,3rd Period,10:00 to 10:45,BST_Manish Mathur,BST,Manish Mathur
+1815,CLASS 11 Comm.,Deepak (Left),Wednesday,4,Lunch,10:45 to 11:05,Lunch _ Deepak (Left),Lunch,Deepak (Left)
+1816,CLASS 11 Comm.,Deepak (Left),Wednesday,5,4th Period,11:05 to 11:50,Eng_Jyotshran,Eng,Jyotsharan
+1817,CLASS 11 Comm.,Deepak (Left),Wednesday,6,5th Period,11:50 to 12:30,Account_Prashant,Account,Prashant
+1818,CLASS 11 Comm.,Deepak (Left),Wednesday,7,6th Period,12:30 to 1:10,Account_Prashant,Account,Prashant
+1819,CLASS 11 Comm.,Deepak (Left),Thursday,0,Morning Assembly,07:50 to 08:20,Prayer,Prayer,
+1820,CLASS 11 Comm.,Deepak (Left),Thursday,1,1st Period,08:30 to 9:15,BST_Manish Mathur,BST,Manish Mathur
+1821,CLASS 11 Comm.,Deepak (Left),Thursday,2,2nd Period,9:15 to 10:00,Eco_Rahul,Eco,Rahul Vish.
+1822,CLASS 11 Comm.,Deepak (Left),Thursday,3,3rd Period,10:00 to 10:45,Games_Geetesh,Games,Geetesh
+1823,CLASS 11 Comm.,Deepak (Left),Thursday,4,Lunch,10:45 to 11:05,Lunch _ Deepak (Left),Lunch,Deepak (Left)
+1824,CLASS 11 Comm.,Deepak (Left),Thursday,5,4th Period,11:05 to 11:50,PE Practical_Geetesh,PE Practical,Geetesh
+1825,CLASS 11 Comm.,Deepak (Left),Thursday,6,5th Period,11:50 to 12:30,Eng_Jyotshran,Eng,Jyotsharan
+1826,CLASS 11 Comm.,Deepak (Left),Thursday,7,6th Period,12:30 to 1:10,Account_Prashant,Account,Prashant
+1827,CLASS 11 Comm.,Deepak (Left),Friday,0,Morning Assembly,07:50 to 08:20,CYCLE TEST,CYCLE TEST,
+1828,CLASS 11 Comm.,Deepak (Left),Friday,1,1st Period,08:30 to 9:15,BST_Manish Mathur,BST,Manish Mathur
+1829,CLASS 11 Comm.,Deepak (Left),Friday,2,2nd Period,9:15 to 10:00,Eco_Rahul,Eco,Rahul Vish.
+1830,CLASS 11 Comm.,Deepak (Left),Friday,3,3rd Period,10:00 to 10:45,Games_Geetesh,Games,Geetesh
+1831,CLASS 11 Comm.,Deepak (Left),Friday,4,Lunch,10:45 to 11:05,Lunch _ Deepak (Left),Lunch,Deepak (Left)
+1832,CLASS 11 Comm.,Deepak (Left),Friday,5,4th Period,11:05 to 11:50,PE_Shailandra,PE,Shailandra
+1833,CLASS 11 Comm.,Deepak (Left),Friday,6,5th Period,11:50 to 12:30,Eng_Jyotshran,Eng,Jyotsharan
+1834,CLASS 11 Comm.,Deepak (Left),Friday,7,6th Period,12:30 to 1:10,Account_Prashant,Account,Prashant
+1835,CLASS 11 Comm.,Deepak (Left),Saturday,0,Morning Assembly,07:50 to 08:20,Prayer,Prayer,
+1836,CLASS 11 Comm.,Deepak (Left),Saturday,1,1st Period,08:30 to 9:15,BST_Manish Mathur,BST,Manish Mathur
+1837,CLASS 11 Comm.,Deepak (Left),Saturday,2,2nd Period,9:15 to 10:00,Eco_Rahul,Eco,Rahul Vish.
+1838,CLASS 11 Comm.,Deepak (Left),Saturday,3,3rd Period,10:00 to 10:45,Games_Geetesh,Games,Geetesh
+1839,CLASS 11 Comm.,Deepak (Left),Saturday,4,Lunch,10:45 to 11:05,Lunch _ Deepak (Left),Lunch,Deepak (Left)
+1840,CLASS 11 Comm.,Deepak (Left),Saturday,5,4th Period,11:05 to 11:50,PE_Shailandra,PE,Shailandra
+1841,CLASS 11 Comm.,Deepak (Left),Saturday,6,5th Period,11:50 to 12:30,Eng_Jyotshran,Eng,Jyotsharan
+1842,CLASS 11 Comm.,Deepak (Left),Saturday,7,6th Period,12:30 to 1:10,Account_Prashant,Account,Prashant
+1843,CLASS 12 (Bio + Math),Ram Kumar,Monday,0,Morning Assembly,07:50 to 08:20,Prayer,Prayer,
+1844,CLASS 12 (Bio + Math),Ram Kumar,Monday,1,1st Period,08:30 to 9:15,"Bio / Math (Ram Kumar, Rajpal)",Bio / Math,"Ram Kumar, Rajpal"
+1845,CLASS 12 (Bio + Math),Ram Kumar,Monday,2,2nd Period,9:15 to 10:00,"Bio / Math (Ram Kumar, Rajpal)",Bio / Math,"Ram Kumar, Rajpal"
+1846,CLASS 12 (Bio + Math),Ram Kumar,Monday,3,3rd Period,10:00 to 10:45,PE_Shailandra,PE,Shailandra
+1847,CLASS 12 (Bio + Math),Ram Kumar,Monday,4,Lunch,10:45 to 11:05,Lunch _ Ram Kumar,Lunch,Ram Kumar
+1848,CLASS 12 (Bio + Math),Ram Kumar,Monday,5,4th Period,11:05 to 11:50,Physics_Anuj,Physics,Anuj Jain
+1849,CLASS 12 (Bio + Math),Ram Kumar,Monday,6,5th Period,11:50 to 12:30,Eng_Jyotshran,Eng,Jyotsharan
+1850,CLASS 12 (Bio + Math),Ram Kumar,Monday,7,6th Period,12:30 to 1:10,Chem_Divy,Chem,Divya Upadhaya
+1851,CLASS 12 (Bio + Math),Ram Kumar,Tuesday,0,Morning Assembly,07:50 to 08:20,CYCLE TEST,CYCLE TEST,
+1852,CLASS 12 (Bio + Math),Ram Kumar,Tuesday,1,1st Period,08:30 to 9:15,"Bio / Math (Ram Kumar, Rajpal)",Bio / Math,"Ram Kumar, Rajpal"
+1853,CLASS 12 (Bio + Math),Ram Kumar,Tuesday,2,2nd Period,9:15 to 10:00,"Bio / Math (Ram Kumar, Rajpal)",Bio / Math,"Ram Kumar, Rajpal"
+1854,CLASS 12 (Bio + Math),Ram Kumar,Tuesday,3,3rd Period,10:00 to 10:45,PE_Shailandra,PE,Shailandra
+1855,CLASS 12 (Bio + Math),Ram Kumar,Tuesday,4,Lunch,10:45 to 11:05,Lunch _ Ram Kumar,Lunch,Ram Kumar
+1856,CLASS 12 (Bio + Math),Ram Kumar,Tuesday,5,4th Period,11:05 to 11:50,Physics_Anuj,Physics,Anuj Jain
+1857,CLASS 12 (Bio + Math),Ram Kumar,Tuesday,6,5th Period,11:50 to 12:30,Eng_Jyotshran,Eng,Jyotsharan
+1858,CLASS 12 (Bio + Math),Ram Kumar,Tuesday,7,6th Period,12:30 to 1:10,Chem_Divy,Chem,Divya Upadhaya
+1859,CLASS 12 (Bio + Math),Ram Kumar,Wednesday,0,Morning Assembly,07:50 to 08:20,Prayer,Prayer,
+1860,CLASS 12 (Bio + Math),Ram Kumar,Wednesday,1,1st Period,08:30 to 9:15,"Bio / Math (Ram Kumar, Rajpal)",Bio / Math,"Ram Kumar, Rajpal"
+1861,CLASS 12 (Bio + Math),Ram Kumar,Wednesday,2,2nd Period,9:15 to 10:00,"Bio / Math (Ram Kumar, Rajpal)",Bio / Math,"Ram Kumar, Rajpal"
+1862,CLASS 12 (Bio + Math),Ram Kumar,Wednesday,3,3rd Period,10:00 to 10:45,Games_Geetesh,Games,Geetesh
+1863,CLASS 12 (Bio + Math),Ram Kumar,Wednesday,4,Lunch,10:45 to 11:05,Lunch _ Ram Kumar,Lunch,Ram Kumar
+1864,CLASS 12 (Bio + Math),Ram Kumar,Wednesday,5,4th Period,11:05 to 11:50,Physics_Anuj,Physics,Anuj Jain
+1865,CLASS 12 (Bio + Math),Ram Kumar,Wednesday,6,5th Period,11:50 to 12:30,Eng_Jyotshran,Eng,Jyotsharan
+1866,CLASS 12 (Bio + Math),Ram Kumar,Wednesday,7,6th Period,12:30 to 1:10,Chem_Divy,Chem,Divya Upadhaya
+1867,CLASS 12 (Bio + Math),Ram Kumar,Thursday,0,Morning Assembly,07:50 to 08:20,Prayer,Prayer,
+1868,CLASS 12 (Bio + Math),Ram Kumar,Thursday,1,1st Period,08:30 to 9:15,"Bio / Math (Ram Kumar, Rajpal)",Bio / Math,"Ram Kumar, Rajpal"
+1869,CLASS 12 (Bio + Math),Ram Kumar,Thursday,2,2nd Period,9:15 to 10:00,Eng_Jyotshran,Eng,Jyotsharan
+1870,CLASS 12 (Bio + Math),Ram Kumar,Thursday,3,3rd Period,10:00 to 10:45,Physics_Anuj,Physics,Anuj Jain
+1871,CLASS 12 (Bio + Math),Ram Kumar,Thursday,4,Lunch,10:45 to 11:05,Lunch _ Ram Kumar,Lunch,Ram Kumar
+1872,CLASS 12 (Bio + Math),Ram Kumar,Thursday,5,4th Period,11:05 to 11:50,Physics_Anuj,Physics,Anuj Jain
+1873,CLASS 12 (Bio + Math),Ram Kumar,Thursday,6,5th Period,11:50 to 12:30,Chem_Divy,Chem,Divya Upadhaya
+1874,CLASS 12 (Bio + Math),Ram Kumar,Thursday,7,6th Period,12:30 to 1:10,Chem_Divy,Chem,Divya Upadhaya
+1875,CLASS 12 (Bio + Math),Ram Kumar,Friday,0,Morning Assembly,07:50 to 08:20,CYCLE TEST,CYCLE TEST,
+1876,CLASS 12 (Bio + Math),Ram Kumar,Friday,1,1st Period,08:30 to 9:15,"Bio / Math (Ram Kumar, Rajpal)",Bio / Math,"Ram Kumar, Rajpal"
+1877,CLASS 12 (Bio + Math),Ram Kumar,Friday,2,2nd Period,9:15 to 10:00,Eng_Jyotshran,Eng,Jyotsharan
+1878,CLASS 12 (Bio + Math),Ram Kumar,Friday,3,3rd Period,10:00 to 10:45,Physics_Anuj,Physics,Anuj Jain
+1879,CLASS 12 (Bio + Math),Ram Kumar,Friday,4,Lunch,10:45 to 11:05,Lunch _ Ram Kumar,Lunch,Ram Kumar
+1880,CLASS 12 (Bio + Math),Ram Kumar,Friday,5,4th Period,11:05 to 11:50,Physics_Anuj,Physics,Anuj Jain
+1881,CLASS 12 (Bio + Math),Ram Kumar,Friday,6,5th Period,11:50 to 12:30,Chem_Divy,Chem,Divya Upadhaya
+1882,CLASS 12 (Bio + Math),Ram Kumar,Friday,7,6th Period,12:30 to 1:10,Chem_Divy,Chem,Divya Upadhaya
+1883,CLASS 12 (Bio + Math),Ram Kumar,Saturday,0,Morning Assembly,07:50 to 08:20,Prayer,Prayer,
+1884,CLASS 12 (Bio + Math),Ram Kumar,Saturday,1,1st Period,08:30 to 9:15,"Bio / Math (Ram Kumar, Rajpal)",Bio / Math,"Ram Kumar, Rajpal"
+1885,CLASS 12 (Bio + Math),Ram Kumar,Saturday,2,2nd Period,9:15 to 10:00,Eng_Jyotshran,Eng,Jyotsharan
+1886,CLASS 12 (Bio + Math),Ram Kumar,Saturday,3,3rd Period,10:00 to 10:45,Physics_Anuj,Physics,Anuj Jain
+1887,CLASS 12 (Bio + Math),Ram Kumar,Saturday,4,Lunch,10:45 to 11:05,Lunch _ Ram Kumar,Lunch,Ram Kumar
+1888,CLASS 12 (Bio + Math),Ram Kumar,Saturday,5,4th Period,11:05 to 11:50,Physics_Anuj,Physics,Anuj Jain
+1889,CLASS 12 (Bio + Math),Ram Kumar,Saturday,6,5th Period,11:50 to 12:30,Chem_Divy,Chem,Divya Upadhaya
+1890,CLASS 12 (Bio + Math),Ram Kumar,Saturday,7,6th Period,12:30 to 1:10,Chem_Divy,Chem,Divya Upadhaya
+1891,CLASS 12 (Comm.),Rahul Vish.,Monday,0,Morning Assembly,07:50 to 08:20,Prayer,Prayer,
+1892,CLASS 12 (Comm.),Rahul Vish.,Monday,1,1st Period,08:30 to 9:15,Eco_Rahul,Eco,Rahul Vish.
+1893,CLASS 12 (Comm.),Rahul Vish.,Monday,2,2nd Period,9:15 to 10:00,BST_Manish Mathur,BST,Manish Mathur
+1894,CLASS 12 (Comm.),Rahul Vish.,Monday,3,3rd Period,10:00 to 10:45,Eng_Jyotshran,Eng,Jyotsharan
+1895,CLASS 12 (Comm.),Rahul Vish.,Monday,4,Lunch,10:45 to 11:05,Lunch _ Rahul Vish.,Lunch,Rahul Vish.
+1896,CLASS 12 (Comm.),Rahul Vish.,Monday,5,4th Period,11:05 to 11:50,Account_Rahul,Account,Rahul Vish.
+1897,CLASS 12 (Comm.),Rahul Vish.,Monday,6,5th Period,11:50 to 12:30,PE Practical_Geetesh,PE Practical,Geetesh
+1898,CLASS 12 (Comm.),Rahul Vish.,Monday,7,6th Period,12:30 to 1:10,PE_Shailandra,PE,Shailandra
+1899,CLASS 12 (Comm.),Rahul Vish.,Tuesday,0,Morning Assembly,07:50 to 08:20,CYCLE TEST,CYCLE TEST,
+1900,CLASS 12 (Comm.),Rahul Vish.,Tuesday,1,1st Period,08:30 to 9:15,Eco_Rahul,Eco,Rahul Vish.
+1901,CLASS 12 (Comm.),Rahul Vish.,Tuesday,2,2nd Period,9:15 to 10:00,BST_Manish Mathur,BST,Manish Mathur
+1902,CLASS 12 (Comm.),Rahul Vish.,Tuesday,3,3rd Period,10:00 to 10:45,Eng_Jyotshran,Eng,Jyotsharan
+1903,CLASS 12 (Comm.),Rahul Vish.,Tuesday,4,Lunch,10:45 to 11:05,Lunch _ Rahul Vish.,Lunch,Rahul Vish.
+1904,CLASS 12 (Comm.),Rahul Vish.,Tuesday,5,4th Period,11:05 to 11:50,Account_Rahul,Account,Rahul Vish.
+1905,CLASS 12 (Comm.),Rahul Vish.,Tuesday,6,5th Period,11:50 to 12:30,PE Practical_Geetesh,PE Practical,Geetesh
+1906,CLASS 12 (Comm.),Rahul Vish.,Tuesday,7,6th Period,12:30 to 1:10,PE_Shailandra,PE,Shailandra
+1907,CLASS 12 (Comm.),Rahul Vish.,Wednesday,0,Morning Assembly,07:50 to 08:20,Prayer,Prayer,
+1908,CLASS 12 (Comm.),Rahul Vish.,Wednesday,1,1st Period,08:30 to 9:15,Eco_Rahul,Eco,Rahul Vish.
+1909,CLASS 12 (Comm.),Rahul Vish.,Wednesday,2,2nd Period,9:15 to 10:00,BST_Manish Mathur,BST,Manish Mathur
+1910,CLASS 12 (Comm.),Rahul Vish.,Wednesday,3,3rd Period,10:00 to 10:45,Eng_Jyotshran,Eng,Jyotsharan
+1911,CLASS 12 (Comm.),Rahul Vish.,Wednesday,4,Lunch,10:45 to 11:05,Lunch _ Rahul Vish.,Lunch,Rahul Vish.
+1912,CLASS 12 (Comm.),Rahul Vish.,Wednesday,5,4th Period,11:05 to 11:50,Account_Rahul,Account,Rahul Vish.
+1913,CLASS 12 (Comm.),Rahul Vish.,Wednesday,6,5th Period,11:50 to 12:30,PE Practical_Geetesh,PE Practical,Geetesh
+1914,CLASS 12 (Comm.),Rahul Vish.,Wednesday,7,6th Period,12:30 to 1:10,PE Practical_Geetesh,PE Practical,Geetesh
+1915,CLASS 12 (Comm.),Rahul Vish.,Thursday,0,Morning Assembly,07:50 to 08:20,Prayer,Prayer,
+1916,CLASS 12 (Comm.),Rahul Vish.,Thursday,1,1st Period,08:30 to 9:15,Eco_Rahul,Eco,Rahul Vish.
+1917,CLASS 12 (Comm.),Rahul Vish.,Thursday,2,2nd Period,9:15 to 10:00,BST_Manish Mathur,BST,Manish Mathur
+1918,CLASS 12 (Comm.),Rahul Vish.,Thursday,3,3rd Period,10:00 to 10:45,Games_Geetesh,Games,Geetesh
+1919,CLASS 12 (Comm.),Rahul Vish.,Thursday,4,Lunch,10:45 to 11:05,Lunch _ Rahul Vish.,Lunch,Rahul Vish.
+1920,CLASS 12 (Comm.),Rahul Vish.,Thursday,5,4th Period,11:05 to 11:50,Account_Rahul,Account,Rahul Vish.
+1921,CLASS 12 (Comm.),Rahul Vish.,Thursday,6,5th Period,11:50 to 12:30,Account _ Deepak (Left),Account,Deepak (Left)
+1922,CLASS 12 (Comm.),Rahul Vish.,Thursday,7,6th Period,12:30 to 1:10,Eng_Jyotshran,Eng,Jyotsharan
+1923,CLASS 12 (Comm.),Rahul Vish.,Friday,0,Morning Assembly,07:50 to 08:20,CYCLE TEST,CYCLE TEST,
+1924,CLASS 12 (Comm.),Rahul Vish.,Friday,1,1st Period,08:30 to 9:15,Eco_Rahul,Eco,Rahul Vish.
+1925,CLASS 12 (Comm.),Rahul Vish.,Friday,2,2nd Period,9:15 to 10:00,BST_Manish Mathur,BST,Manish Mathur
+1926,CLASS 12 (Comm.),Rahul Vish.,Friday,3,3rd Period,10:00 to 10:45,Games_Geetesh,Games,Geetesh
+1927,CLASS 12 (Comm.),Rahul Vish.,Friday,4,Lunch,10:45 to 11:05,Lunch _ Rahul Vish.,Lunch,Rahul Vish.
+1928,CLASS 12 (Comm.),Rahul Vish.,Friday,5,4th Period,11:05 to 11:50,Account_Rahul,Account,Rahul Vish.
+1929,CLASS 12 (Comm.),Rahul Vish.,Friday,6,5th Period,11:50 to 12:30,Account _ Deepak (Left),Account,Deepak (Left)
+1930,CLASS 12 (Comm.),Rahul Vish.,Friday,7,6th Period,12:30 to 1:10,Eng_Jyotshran,Eng,Jyotsharan
+1931,CLASS 12 (Comm.),Rahul Vish.,Saturday,0,Morning Assembly,07:50 to 08:20,Prayer,Prayer,
+1932,CLASS 12 (Comm.),Rahul Vish.,Saturday,1,1st Period,08:30 to 9:15,Eco_Rahul,Eco,Rahul Vish.
+1933,CLASS 12 (Comm.),Rahul Vish.,Saturday,2,2nd Period,9:15 to 10:00,BST_Manish Mathur,BST,Manish Mathur
+1934,CLASS 12 (Comm.),Rahul Vish.,Saturday,3,3rd Period,10:00 to 10:45,Games_Geetesh,Games,Geetesh
+1935,CLASS 12 (Comm.),Rahul Vish.,Saturday,4,Lunch,10:45 to 11:05,Lunch _ Rahul Vish.,Lunch,Rahul Vish.
+1936,CLASS 12 (Comm.),Rahul Vish.,Saturday,5,4th Period,11:05 to 11:50,Account_Rahul,Account,Rahul Vish.
+1937,CLASS 12 (Comm.),Rahul Vish.,Saturday,6,5th Period,11:50 to 12:30,Account _ Deepak (Left),Account,Deepak (Left)
+1938,CLASS 12 (Comm.),Rahul Vish.,Saturday,7,6th Period,12:30 to 1:10,Eng_Jyotshran,Eng,Jyotsharan
+1939,CLASS 12 (Arts),Rahul Vish.,Monday,0,Morning Assembly,07:50 to 08:20,Prayer,Prayer,
+1940,CLASS 12 (Arts),Rahul Vish.,Monday,1,1st Period,08:30 to 9:15,Eco_Rahul,Eco,Rahul Vish.
+1941,CLASS 12 (Arts),Rahul Vish.,Monday,2,2nd Period,9:15 to 10:00,Library_Shantanu,Library,Shantanu
+1942,CLASS 12 (Arts),Rahul Vish.,Monday,3,3rd Period,10:00 to 10:45,Eng_Jyotshran,Eng,Jyotsharan
+1943,CLASS 12 (Arts),Rahul Vish.,Monday,4,Lunch,10:45 to 11:05,Lunch _ Rahul Vish.,Lunch,Rahul Vish.
+1944,CLASS 12 (Arts),Rahul Vish.,Monday,5,4th Period,11:05 to 11:50,Political Sci_Prashant,Political Sci,Prashant
+1945,CLASS 12 (Arts),Rahul Vish.,Monday,6,5th Period,11:50 to 12:30,Geo_Manish Mathur,Geo,Manish Mathur
+1946,CLASS 12 (Arts),Rahul Vish.,Monday,7,6th Period,12:30 to 1:10,PE_Shailandra,PE,Shailandra
+1947,CLASS 12 (Arts),Rahul Vish.,Tuesday,0,Morning Assembly,07:50 to 08:20,CYCLE TEST,CYCLE TEST,
+1948,CLASS 12 (Arts),Rahul Vish.,Tuesday,1,1st Period,08:30 to 9:15,Eco_Rahul,Eco,Rahul Vish.
+1949,CLASS 12 (Arts),Rahul Vish.,Tuesday,2,2nd Period,9:15 to 10:00,Library_Shantanu,Library,Shantanu
+1950,CLASS 12 (Arts),Rahul Vish.,Tuesday,3,3rd Period,10:00 to 10:45,Eng_Jyotshran,Eng,Jyotsharan
+1951,CLASS 12 (Arts),Rahul Vish.,Tuesday,4,Lunch,10:45 to 11:05,Lunch _ Rahul Vish.,Lunch,Rahul Vish.
+1952,CLASS 12 (Arts),Rahul Vish.,Tuesday,5,4th Period,11:05 to 11:50,Political Sci_Prashant,Political Sci,Prashant
+1953,CLASS 12 (Arts),Rahul Vish.,Tuesday,6,5th Period,11:50 to 12:30,Geo_Manish Mathur,Geo,Manish Mathur
+1954,CLASS 12 (Arts),Rahul Vish.,Tuesday,7,6th Period,12:30 to 1:10,PE_Shailandra,PE,Shailandra
+1955,CLASS 12 (Arts),Rahul Vish.,Wednesday,0,Morning Assembly,07:50 to 08:20,Prayer,Prayer,
+1956,CLASS 12 (Arts),Rahul Vish.,Wednesday,1,1st Period,08:30 to 9:15,Eco_Rahul,Eco,Rahul Vish.
+1957,CLASS 12 (Arts),Rahul Vish.,Wednesday,2,2nd Period,9:15 to 10:00,Library_Shantanu,Library,Shantanu
+1958,CLASS 12 (Arts),Rahul Vish.,Wednesday,3,3rd Period,10:00 to 10:45,Eng_Jyotshran,Eng,Jyotsharan
+1959,CLASS 12 (Arts),Rahul Vish.,Wednesday,4,Lunch,10:45 to 11:05,Lunch _ Rahul Vish.,Lunch,Rahul Vish.
+1960,CLASS 12 (Arts),Rahul Vish.,Wednesday,5,4th Period,11:05 to 11:50,Political Sci_Prashant,Political Sci,Prashant
+1961,CLASS 12 (Arts),Rahul Vish.,Wednesday,6,5th Period,11:50 to 12:30,Geo_Manish Mathur,Geo,Manish Mathur
+1962,CLASS 12 (Arts),Rahul Vish.,Wednesday,7,6th Period,12:30 to 1:10,PE Practical_Geetesh,PE Practical,Geetesh
+1963,CLASS 12 (Arts),Rahul Vish.,Thursday,0,Morning Assembly,07:50 to 08:20,Prayer,Prayer,
+1964,CLASS 12 (Arts),Rahul Vish.,Thursday,1,1st Period,08:30 to 9:15,Eco_Rahul,Eco,Rahul Vish.
+1965,CLASS 12 (Arts),Rahul Vish.,Thursday,2,2nd Period,9:15 to 10:00,Library_Shantanu,Library,Shantanu
+1966,CLASS 12 (Arts),Rahul Vish.,Thursday,3,3rd Period,10:00 to 10:45,Geo_Manish Mathur,Geo,Manish Mathur
+1967,CLASS 12 (Arts),Rahul Vish.,Thursday,4,Lunch,10:45 to 11:05,Lunch _ Rahul Vish.,Lunch,Rahul Vish.
+1968,CLASS 12 (Arts),Rahul Vish.,Thursday,5,4th Period,11:05 to 11:50,PE Practical_Geetesh,PE Practical,Geetesh
+1969,CLASS 12 (Arts),Rahul Vish.,Thursday,6,5th Period,11:50 to 12:30,Political Sci_Prashant,Political Sci,Prashant
+1970,CLASS 12 (Arts),Rahul Vish.,Thursday,7,6th Period,12:30 to 1:10,Eng_Jyotshran,Eng,Jyotsharan
+1971,CLASS 12 (Arts),Rahul Vish.,Friday,0,Morning Assembly,07:50 to 08:20,CYCLE TEST,CYCLE TEST,
+1972,CLASS 12 (Arts),Rahul Vish.,Friday,1,1st Period,08:30 to 9:15,Eco_Rahul,Eco,Rahul Vish.
+1973,CLASS 12 (Arts),Rahul Vish.,Friday,2,2nd Period,9:15 to 10:00,Library_Shantanu,Library,Shantanu
+1974,CLASS 12 (Arts),Rahul Vish.,Friday,3,3rd Period,10:00 to 10:45,Geo_Manish Mathur,Geo,Manish Mathur
+1975,CLASS 12 (Arts),Rahul Vish.,Friday,4,Lunch,10:45 to 11:05,Lunch _ Rahul Vish.,Lunch,Rahul Vish.
+1976,CLASS 12 (Arts),Rahul Vish.,Friday,5,4th Period,11:05 to 11:50,PE Practical_Geetesh,PE Practical,Geetesh
+1977,CLASS 12 (Arts),Rahul Vish.,Friday,6,5th Period,11:50 to 12:30,Political Sci_Prashant,Political Sci,Prashant
+1978,CLASS 12 (Arts),Rahul Vish.,Friday,7,6th Period,12:30 to 1:10,Eng_Jyotshran,Eng,Jyotsharan
+1979,CLASS 12 (Arts),Rahul Vish.,Saturday,0,Morning Assembly,07:50 to 08:20,Prayer,Prayer,
+1980,CLASS 12 (Arts),Rahul Vish.,Saturday,1,1st Period,08:30 to 9:15,Eco_Rahul,Eco,Rahul Vish.
+1981,CLASS 12 (Arts),Rahul Vish.,Saturday,2,2nd Period,9:15 to 10:00,Library_Shantanu,Library,Shantanu
+1982,CLASS 12 (Arts),Rahul Vish.,Saturday,3,3rd Period,10:00 to 10:45,Geo_Manish Mathur,Geo,Manish Mathur
+1983,CLASS 12 (Arts),Rahul Vish.,Saturday,4,Lunch,10:45 to 11:05,Lunch _ Rahul Vish.,Lunch,Rahul Vish.
+1984,CLASS 12 (Arts),Rahul Vish.,Saturday,5,4th Period,11:05 to 11:50,PE Practical_Geetesh,PE Practical,Geetesh
+1985,CLASS 12 (Arts),Rahul Vish.,Saturday,6,5th Period,11:50 to 12:30,Political Sci_Prashant,Political Sci,Prashant
+1986,CLASS 12 (Arts),Rahul Vish.,Saturday,7,6th Period,12:30 to 1:10,Eng_Jyotshran,Eng,Jyotsharan
