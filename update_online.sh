@@ -6,6 +6,7 @@ cd "$(dirname "$0")"
 
 echo "🔄 Step 1: Processing timetable and verifying 0 clashes..."
 python3 import_timetable.py
+python3 generate_timetable.py --verify || { echo "❌ Aborting: Clashes detected!"; exit 1; }
 
 echo ""
 echo "🚀 Step 2: Uploading updates to GitHub & Vercel..."

@@ -1,0 +1,6499 @@
+{
+  "config": {
+    "academic_year": "2026-27",
+    "title": "School Time Table (w.e.f - 01/04/2026)",
+    "days": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday"
+    ],
+    "periods_per_day": 8,
+    "period_definitions": [
+      {
+        "col_idx": 3,
+        "period_index": 0,
+        "name": "Morning Assembly",
+        "time": "07:50 to 08:20",
+        "is_lunch": false,
+        "raw_header": "07:50 to 08:20"
+      },
+      {
+        "col_idx": 4,
+        "period_index": 1,
+        "name": "1st Period",
+        "time": "08:30 to 9:15",
+        "is_lunch": false,
+        "raw_header": "1st Period 08:30 to 9:15"
+      },
+      {
+        "col_idx": 5,
+        "period_index": 2,
+        "name": "2nd Period",
+        "time": "9:15 to 10:00",
+        "is_lunch": false,
+        "raw_header": "2nd Period 9:15 to 10:00"
+      },
+      {
+        "col_idx": 6,
+        "period_index": 3,
+        "name": "3rd Period",
+        "time": "10:00 to 10:45",
+        "is_lunch": false,
+        "raw_header": "3rd Period 10:00 to 10:45"
+      },
+      {
+        "col_idx": 7,
+        "period_index": 4,
+        "name": "Lunch",
+        "time": "10:45 to 11:05",
+        "is_lunch": true,
+        "raw_header": "Lunch 10:45 to 11:05"
+      },
+      {
+        "col_idx": 8,
+        "period_index": 5,
+        "name": "4th Period",
+        "time": "11:05 to 11:50",
+        "is_lunch": false,
+        "raw_header": "4th Period 11:05 to 11:50"
+      },
+      {
+        "col_idx": 9,
+        "period_index": 6,
+        "name": "5th Period",
+        "time": "11:50 to 12:30",
+        "is_lunch": false,
+        "raw_header": "5th Period 11:50 to 12:30"
+      },
+      {
+        "col_idx": 10,
+        "period_index": 7,
+        "name": "6th Period",
+        "time": "12:30 to 1:10",
+        "is_lunch": false,
+        "raw_header": "6th Period 12:30 to 1:10"
+      }
+    ],
+    "school_timings": [
+      {
+        "category": "PlayGroup",
+        "timings": "09:30 AM to 12:10 PM"
+      },
+      {
+        "category": "Nursery, LKG & UKG",
+        "timings": "08:30 AM to 01:15 PM"
+      },
+      {
+        "category": "Class 1 to 5",
+        "timings": "07:30 AM to 01:15 PM"
+      },
+      {
+        "category": "Class 6 to 8",
+        "timings": "07:30 AM to 01:55 PM"
+      },
+      {
+        "category": "Class 9 & 12",
+        "timings": "07:30 AM to 01:15PM"
+      },
+      {
+        "category": "Office Timings",
+        "timings": "09:00 AM to 02:00 PM"
+      }
+    ]
+  },
+  "teachers": [
+    {
+      "id": "Akash",
+      "name": "Akash",
+      "max_weekly_periods": 34,
+      "max_daily_periods": 6,
+      "is_specialist": false,
+      "unavailable_slots": []
+    },
+    {
+      "id": "Anjali Jain",
+      "name": "Anjali Jain",
+      "max_weekly_periods": 34,
+      "max_daily_periods": 6,
+      "is_specialist": false,
+      "unavailable_slots": []
+    },
+    {
+      "id": "Anjali Nalvanshi",
+      "name": "Anjali Nalvanshi",
+      "max_weekly_periods": 35,
+      "max_daily_periods": 6,
+      "is_specialist": false,
+      "unavailable_slots": []
+    },
+    {
+      "id": "Anubha",
+      "name": "Anubha",
+      "max_weekly_periods": 34,
+      "max_daily_periods": 6,
+      "is_specialist": false,
+      "unavailable_slots": []
+    },
+    {
+      "id": "Anuj Jain",
+      "name": "Anuj Jain",
+      "max_weekly_periods": 36,
+      "max_daily_periods": 6,
+      "is_specialist": false,
+      "unavailable_slots": []
+    },
+    {
+      "id": "Anuraj",
+      "name": "Anuraj",
+      "max_weekly_periods": 36,
+      "max_daily_periods": 6,
+      "is_specialist": false,
+      "unavailable_slots": []
+    },
+    {
+      "id": "Arshee",
+      "name": "Arshee",
+      "max_weekly_periods": 34,
+      "max_daily_periods": 6,
+      "is_specialist": false,
+      "unavailable_slots": []
+    },
+    {
+      "id": "Arti Ahirwar",
+      "name": "Arti Ahirwar",
+      "max_weekly_periods": 34,
+      "max_daily_periods": 6,
+      "is_specialist": true,
+      "unavailable_slots": []
+    },
+    {
+      "id": "Arti Sagar",
+      "name": "Arti Sagar",
+      "max_weekly_periods": 34,
+      "max_daily_periods": 6,
+      "is_specialist": true,
+      "unavailable_slots": []
+    },
+    {
+      "id": "Atul",
+      "name": "Atul",
+      "max_weekly_periods": 34,
+      "max_daily_periods": 6,
+      "is_specialist": false,
+      "unavailable_slots": []
+    },
+    {
+      "id": "Avdesh",
+      "name": "Avdesh",
+      "max_weekly_periods": 34,
+      "max_daily_periods": 6,
+      "is_specialist": false,
+      "unavailable_slots": []
+    },
+    {
+      "id": "Charulata",
+      "name": "Charulata",
+      "max_weekly_periods": 35,
+      "max_daily_periods": 6,
+      "is_specialist": false,
+      "unavailable_slots": []
+    },
+    {
+      "id": "Deepmali",
+      "name": "Deepmali",
+      "max_weekly_periods": 34,
+      "max_daily_periods": 6,
+      "is_specialist": false,
+      "unavailable_slots": []
+    },
+    {
+      "id": "Divya Upadhaya",
+      "name": "Divya Upadhaya",
+      "max_weekly_periods": 34,
+      "max_daily_periods": 6,
+      "is_specialist": false,
+      "unavailable_slots": []
+    },
+    {
+      "id": "Geetesh",
+      "name": "Geetesh",
+      "max_weekly_periods": 34,
+      "max_daily_periods": 6,
+      "is_specialist": true,
+      "unavailable_slots": []
+    },
+    {
+      "id": "Harshita",
+      "name": "Harshita",
+      "max_weekly_periods": 35,
+      "max_daily_periods": 6,
+      "is_specialist": false,
+      "unavailable_slots": []
+    },
+    {
+      "id": "Jageshwar R",
+      "name": "Jageshwar R",
+      "max_weekly_periods": 36,
+      "max_daily_periods": 6,
+      "is_specialist": false,
+      "unavailable_slots": []
+    },
+    {
+      "id": "Jageshwar Sharma",
+      "name": "Jageshwar Sharma",
+      "max_weekly_periods": 34,
+      "max_daily_periods": 6,
+      "is_specialist": false,
+      "unavailable_slots": []
+    },
+    {
+      "id": "Jyotsharan",
+      "name": "Jyotsharan",
+      "max_weekly_periods": 42,
+      "max_daily_periods": 6,
+      "is_specialist": false,
+      "unavailable_slots": []
+    },
+    {
+      "id": "Kalyani Choudhary",
+      "name": "Kalyani Choudhary",
+      "max_weekly_periods": 34,
+      "max_daily_periods": 6,
+      "is_specialist": false,
+      "unavailable_slots": []
+    },
+    {
+      "id": "Komal",
+      "name": "Komal",
+      "max_weekly_periods": 34,
+      "max_daily_periods": 6,
+      "is_specialist": false,
+      "unavailable_slots": []
+    },
+    {
+      "id": "Manish Chauhan",
+      "name": "Manish Chauhan",
+      "max_weekly_periods": 34,
+      "max_daily_periods": 6,
+      "is_specialist": false,
+      "unavailable_slots": []
+    },
+    {
+      "id": "Manish Mathur",
+      "name": "Manish Mathur",
+      "max_weekly_periods": 34,
+      "max_daily_periods": 6,
+      "is_specialist": false,
+      "unavailable_slots": []
+    },
+    {
+      "id": "Mraganshi",
+      "name": "Mraganshi",
+      "max_weekly_periods": 34,
+      "max_daily_periods": 6,
+      "is_specialist": false,
+      "unavailable_slots": []
+    },
+    {
+      "id": "Neelam Sahu",
+      "name": "Neelam Sahu",
+      "max_weekly_periods": 34,
+      "max_daily_periods": 6,
+      "is_specialist": false,
+      "unavailable_slots": []
+    },
+    {
+      "id": "Neha Rai",
+      "name": "Neha Rai",
+      "max_weekly_periods": 34,
+      "max_daily_periods": 6,
+      "is_specialist": false,
+      "unavailable_slots": []
+    },
+    {
+      "id": "Nidhi",
+      "name": "Nidhi",
+      "max_weekly_periods": 34,
+      "max_daily_periods": 6,
+      "is_specialist": false,
+      "unavailable_slots": []
+    },
+    {
+      "id": "Pradeep",
+      "name": "Pradeep",
+      "max_weekly_periods": 34,
+      "max_daily_periods": 6,
+      "is_specialist": false,
+      "unavailable_slots": []
+    },
+    {
+      "id": "Prashant",
+      "name": "Prashant",
+      "max_weekly_periods": 34,
+      "max_daily_periods": 6,
+      "is_specialist": false,
+      "unavailable_slots": []
+    },
+    {
+      "id": "Rahul Vish.",
+      "name": "Rahul Vish.",
+      "max_weekly_periods": 42,
+      "max_daily_periods": 6,
+      "is_specialist": false,
+      "unavailable_slots": []
+    },
+    {
+      "id": "Rajaram",
+      "name": "Rajaram",
+      "max_weekly_periods": 34,
+      "max_daily_periods": 6,
+      "is_specialist": false,
+      "unavailable_slots": []
+    },
+    {
+      "id": "Raji Jain",
+      "name": "Raji Jain",
+      "max_weekly_periods": 34,
+      "max_daily_periods": 6,
+      "is_specialist": false,
+      "unavailable_slots": []
+    },
+    {
+      "id": "Rajkmari Yadav",
+      "name": "Rajkmari Yadav",
+      "max_weekly_periods": 34,
+      "max_daily_periods": 6,
+      "is_specialist": false,
+      "unavailable_slots": []
+    },
+    {
+      "id": "Rajpal",
+      "name": "Rajpal",
+      "max_weekly_periods": 34,
+      "max_daily_periods": 6,
+      "is_specialist": false,
+      "unavailable_slots": []
+    },
+    {
+      "id": "Ram Kumar",
+      "name": "Ram Kumar",
+      "max_weekly_periods": 36,
+      "max_daily_periods": 6,
+      "is_specialist": false,
+      "unavailable_slots": []
+    },
+    {
+      "id": "Rashmi",
+      "name": "Rashmi",
+      "max_weekly_periods": 34,
+      "max_daily_periods": 6,
+      "is_specialist": false,
+      "unavailable_slots": []
+    },
+    {
+      "id": "Reenu Yadav",
+      "name": "Reenu Yadav",
+      "max_weekly_periods": 34,
+      "max_daily_periods": 6,
+      "is_specialist": false,
+      "unavailable_slots": []
+    },
+    {
+      "id": "Sanchitika",
+      "name": "Sanchitika",
+      "max_weekly_periods": 36,
+      "max_daily_periods": 6,
+      "is_specialist": false,
+      "unavailable_slots": []
+    },
+    {
+      "id": "Sanskriti Singhai",
+      "name": "Sanskriti Singhai",
+      "max_weekly_periods": 34,
+      "max_daily_periods": 6,
+      "is_specialist": false,
+      "unavailable_slots": []
+    },
+    {
+      "id": "Shailandra",
+      "name": "Shailandra",
+      "max_weekly_periods": 34,
+      "max_daily_periods": 6,
+      "is_specialist": false,
+      "unavailable_slots": []
+    },
+    {
+      "id": "Shantanu",
+      "name": "Shantanu",
+      "max_weekly_periods": 34,
+      "max_daily_periods": 6,
+      "is_specialist": false,
+      "unavailable_slots": []
+    },
+    {
+      "id": "Shewta Dubey",
+      "name": "Shewta Dubey",
+      "max_weekly_periods": 34,
+      "max_daily_periods": 6,
+      "is_specialist": false,
+      "unavailable_slots": []
+    },
+    {
+      "id": "Shilpi Sahunsari",
+      "name": "Shilpi Sahunsari",
+      "max_weekly_periods": 34,
+      "max_daily_periods": 6,
+      "is_specialist": false,
+      "unavailable_slots": []
+    },
+    {
+      "id": "Shruti Badkul",
+      "name": "Shruti Badkul",
+      "max_weekly_periods": 34,
+      "max_daily_periods": 6,
+      "is_specialist": false,
+      "unavailable_slots": []
+    },
+    {
+      "id": "Somya Nayak",
+      "name": "Somya Nayak",
+      "max_weekly_periods": 34,
+      "max_daily_periods": 6,
+      "is_specialist": false,
+      "unavailable_slots": []
+    },
+    {
+      "id": "Somya Rai",
+      "name": "Somya Rai",
+      "max_weekly_periods": 34,
+      "max_daily_periods": 6,
+      "is_specialist": false,
+      "unavailable_slots": []
+    },
+    {
+      "id": "Sonakshi",
+      "name": "Sonakshi",
+      "max_weekly_periods": 34,
+      "max_daily_periods": 6,
+      "is_specialist": false,
+      "unavailable_slots": []
+    },
+    {
+      "id": "Swati Napit",
+      "name": "Swati Napit",
+      "max_weekly_periods": 34,
+      "max_daily_periods": 6,
+      "is_specialist": false,
+      "unavailable_slots": []
+    },
+    {
+      "id": "Vandna Saraf",
+      "name": "Vandna Saraf",
+      "max_weekly_periods": 34,
+      "max_daily_periods": 6,
+      "is_specialist": false,
+      "unavailable_slots": []
+    }
+  ],
+  "classes": [
+    {
+      "id": "CLASS_1_Rose",
+      "name": "CLASS 1 Rose",
+      "class_teacher": "Swati Napit",
+      "wing": "Primary"
+    },
+    {
+      "id": "CLASS_1_Marigold",
+      "name": "CLASS 1 Marigold",
+      "class_teacher": "Anjali Jain",
+      "wing": "Primary"
+    },
+    {
+      "id": "CLASS_1_Lily",
+      "name": "CLASS 1 Lily",
+      "class_teacher": "Raji Jain",
+      "wing": "Primary"
+    },
+    {
+      "id": "CLASS_1_Sunflower",
+      "name": "CLASS 1 Sunflower",
+      "class_teacher": "Sanskriti Singhai",
+      "wing": "Primary"
+    },
+    {
+      "id": "CLASS_2_Rose",
+      "name": "CLASS 2 Rose",
+      "class_teacher": "Reenu Yadav",
+      "wing": "Primary"
+    },
+    {
+      "id": "CLASS_2_Marigold",
+      "name": "CLASS 2 Marigold",
+      "class_teacher": "Arti Ahirwar",
+      "wing": "Primary"
+    },
+    {
+      "id": "CLASS_2_Lily",
+      "name": "CLASS 2 Lily",
+      "class_teacher": "Kalyani Choudhary",
+      "wing": "Primary"
+    },
+    {
+      "id": "CLASS_3_Rose",
+      "name": "CLASS 3 Rose",
+      "class_teacher": "Vandna Saraf",
+      "wing": "Primary"
+    },
+    {
+      "id": "CLASS_3_Marigold",
+      "name": "CLASS 3 Marigold",
+      "class_teacher": "Shilpi Sahunsari",
+      "wing": "Primary"
+    },
+    {
+      "id": "CLASS_3_Lily",
+      "name": "CLASS 3 Lily",
+      "class_teacher": "Anubha",
+      "wing": "Primary"
+    },
+    {
+      "id": "CLASS_3_Sunflower",
+      "name": "CLASS 3 Sunflower",
+      "class_teacher": "Neha Rai",
+      "wing": "Primary"
+    },
+    {
+      "id": "CLASS_4_Rose",
+      "name": "CLASS 4 Rose",
+      "class_teacher": "Rajkmari Yadav",
+      "wing": "Primary"
+    },
+    {
+      "id": "CLASS_4_Marigold",
+      "name": "CLASS 4 Marigold",
+      "class_teacher": "Arshee",
+      "wing": "Primary"
+    },
+    {
+      "id": "CLASS_4_Lily",
+      "name": "CLASS 4 Lily",
+      "class_teacher": "Arti Sagar",
+      "wing": "Primary"
+    },
+    {
+      "id": "CLASS_5_Rose",
+      "name": "CLASS 5 Rose",
+      "class_teacher": "Neelam Sahu",
+      "wing": "Primary"
+    },
+    {
+      "id": "CLASS_5_Marigold",
+      "name": "CLASS 5 Marigold",
+      "class_teacher": "Shewta Dubey",
+      "wing": "Primary"
+    },
+    {
+      "id": "CLASS_5_Lily",
+      "name": "CLASS 5 Lily",
+      "class_teacher": "Sanchitika",
+      "wing": "Primary"
+    },
+    {
+      "id": "CLASS_5_Sunflower",
+      "name": "CLASS 5 Sunflower",
+      "class_teacher": "Anjali Nalvanshi",
+      "wing": "Primary"
+    },
+    {
+      "id": "CLASS_6_Rose",
+      "name": "CLASS 6 Rose",
+      "class_teacher": "Shruti Badkul",
+      "wing": "Middle"
+    },
+    {
+      "id": "CLASS_6_Marigold",
+      "name": "CLASS 6 Marigold",
+      "class_teacher": "Nidhi",
+      "wing": "Middle"
+    },
+    {
+      "id": "CLASS_6_Lily",
+      "name": "CLASS 6 Lily",
+      "class_teacher": "Avdesh",
+      "wing": "Middle"
+    },
+    {
+      "id": "CLASS_6_Sunflower",
+      "name": "CLASS 6 Sunflower",
+      "class_teacher": "Harshita",
+      "wing": "Middle"
+    },
+    {
+      "id": "CLASS_7_Rose",
+      "name": "CLASS 7 Rose",
+      "class_teacher": "Charulata",
+      "wing": "Middle"
+    },
+    {
+      "id": "CLASS_7_Marigold",
+      "name": "CLASS 7 Marigold",
+      "class_teacher": "Deepmali",
+      "wing": "Middle"
+    },
+    {
+      "id": "CLASS_7_Lily",
+      "name": "CLASS 7 Lily",
+      "class_teacher": "Anuraj",
+      "wing": "Middle"
+    },
+    {
+      "id": "CLASS_7_Sunflower",
+      "name": "CLASS 7 Sunflower",
+      "class_teacher": "Jageshwar Sharma",
+      "wing": "Middle"
+    },
+    {
+      "id": "CLASS_8_Rose",
+      "name": "CLASS 8 Rose",
+      "class_teacher": "Mraganshi",
+      "wing": "Middle"
+    },
+    {
+      "id": "CLASS_8_Marigold",
+      "name": "CLASS 8 Marigold",
+      "class_teacher": "Manish Chauhan",
+      "wing": "Middle"
+    },
+    {
+      "id": "CLASS_8_Lily",
+      "name": "CLASS 8 Lily",
+      "class_teacher": "Somya Nayak",
+      "wing": "Middle"
+    },
+    {
+      "id": "CLASS_9_Rose",
+      "name": "CLASS 9 Rose",
+      "class_teacher": "Somya Rai",
+      "wing": "Senior"
+    },
+    {
+      "id": "CLASS_9_Marigold",
+      "name": "CLASS 9 Marigold",
+      "class_teacher": "Anuj Jain",
+      "wing": "Senior"
+    },
+    {
+      "id": "CLASS_9_Lily",
+      "name": "CLASS 9 Lily",
+      "class_teacher": "Manish Mathur",
+      "wing": "Senior"
+    },
+    {
+      "id": "CLASS_10_Rose",
+      "name": "CLASS 10 Rose",
+      "class_teacher": "Rashmi",
+      "wing": "Senior"
+    },
+    {
+      "id": "CLASS_10_Marigold",
+      "name": "CLASS 10 Marigold",
+      "class_teacher": "Jageshwar R",
+      "wing": "Senior"
+    },
+    {
+      "id": "CLASS_10_Lily",
+      "name": "CLASS 10 Lily",
+      "class_teacher": "Jyotsharan",
+      "wing": "Senior"
+    },
+    {
+      "id": "CLASS_11_(Bio_+_Math)",
+      "name": "CLASS 11 (Bio + Math)",
+      "class_teacher": "Divya Upadhaya",
+      "wing": "Senior"
+    },
+    {
+      "id": "CLASS_11_Comm.",
+      "name": "CLASS 11 Comm.",
+      "class_teacher": "Deepak (Left)",
+      "wing": "Senior"
+    },
+    {
+      "id": "CLASS_12_(Bio_+_Math)",
+      "name": "CLASS 12 (Bio + Math)",
+      "class_teacher": "Ram Kumar",
+      "wing": "Senior"
+    },
+    {
+      "id": "CLASS_12_(Comm.)",
+      "name": "CLASS 12 (Comm.)",
+      "class_teacher": "Rahul Vish.",
+      "wing": "Senior"
+    },
+    {
+      "id": "CLASS_12_(Arts)",
+      "name": "CLASS 12 (Arts)",
+      "class_teacher": "Rahul Vish.",
+      "wing": "Senior"
+    }
+  ],
+  "rooms": [
+    {
+      "id": "R_COMP",
+      "name": "Computer Lab",
+      "room_type": "ComputerLab",
+      "capacity": 40
+    },
+    {
+      "id": "R_SCI",
+      "name": "Science Lab",
+      "room_type": "ScienceLab",
+      "capacity": 40
+    },
+    {
+      "id": "R_GROUND",
+      "name": "Playground",
+      "room_type": "Ground",
+      "capacity": 100
+    }
+  ],
+  "events": [
+    {
+      "id": "EV_1",
+      "subject": "Yoga",
+      "teacher_ids": [
+        "Pradeep"
+      ],
+      "section_ids": [
+        "CLASS_1_Rose"
+      ],
+      "weekly_quota": 1,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_2",
+      "subject": "Hindi",
+      "teacher_ids": [
+        "Swati Napit"
+      ],
+      "section_ids": [
+        "CLASS_1_Rose"
+      ],
+      "weekly_quota": 4,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_3",
+      "subject": "Distation&Cursive",
+      "teacher_ids": [
+        "Swati Napit"
+      ],
+      "section_ids": [
+        "CLASS_1_Rose"
+      ],
+      "weekly_quota": 5,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_4",
+      "subject": "Eng",
+      "teacher_ids": [
+        "Swati Napit"
+      ],
+      "section_ids": [
+        "CLASS_1_Rose"
+      ],
+      "weekly_quota": 4,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_5",
+      "subject": "Art & Craft",
+      "teacher_ids": [
+        "Swati Napit"
+      ],
+      "section_ids": [
+        "CLASS_1_Rose"
+      ],
+      "weekly_quota": 2,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_6",
+      "subject": "EVS",
+      "teacher_ids": [
+        "Swati Napit"
+      ],
+      "section_ids": [
+        "CLASS_1_Rose"
+      ],
+      "weekly_quota": 4,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_7",
+      "subject": "Dance",
+      "teacher_ids": [
+        "Akash"
+      ],
+      "section_ids": [
+        "CLASS_1_Rose"
+      ],
+      "weekly_quota": 1,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_8",
+      "subject": "Game",
+      "teacher_ids": [
+        "Komal"
+      ],
+      "section_ids": [
+        "CLASS_1_Rose"
+      ],
+      "weekly_quota": 1,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_9",
+      "subject": "Math",
+      "teacher_ids": [
+        "Swati Napit"
+      ],
+      "section_ids": [
+        "CLASS_1_Rose"
+      ],
+      "weekly_quota": 4,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_10",
+      "subject": "Eng Read",
+      "teacher_ids": [
+        "Swati Napit"
+      ],
+      "section_ids": [
+        "CLASS_1_Rose"
+      ],
+      "weekly_quota": 2,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_11",
+      "subject": "IT",
+      "teacher_ids": [
+        "Swati Napit"
+      ],
+      "section_ids": [
+        "CLASS_1_Rose"
+      ],
+      "weekly_quota": 2,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_12",
+      "subject": "Hindi Read",
+      "teacher_ids": [
+        "Swati Napit"
+      ],
+      "section_ids": [
+        "CLASS_1_Rose"
+      ],
+      "weekly_quota": 2,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_13",
+      "subject": "GK",
+      "teacher_ids": [
+        "Swati Napit"
+      ],
+      "section_ids": [
+        "CLASS_1_Rose"
+      ],
+      "weekly_quota": 2,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_14",
+      "subject": "Eng",
+      "teacher_ids": [
+        "Anjali Jain"
+      ],
+      "section_ids": [
+        "CLASS_1_Marigold"
+      ],
+      "weekly_quota": 4,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_15",
+      "subject": "Hindi",
+      "teacher_ids": [
+        "Anjali Jain"
+      ],
+      "section_ids": [
+        "CLASS_1_Marigold"
+      ],
+      "weekly_quota": 4,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_16",
+      "subject": "Distation&Cursive",
+      "teacher_ids": [
+        "Anjali Jain"
+      ],
+      "section_ids": [
+        "CLASS_1_Marigold"
+      ],
+      "weekly_quota": 5,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_17",
+      "subject": "GK",
+      "teacher_ids": [
+        "Anjali Jain"
+      ],
+      "section_ids": [
+        "CLASS_1_Marigold"
+      ],
+      "weekly_quota": 2,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_18",
+      "subject": "Yoga",
+      "teacher_ids": [
+        "Pradeep"
+      ],
+      "section_ids": [
+        "CLASS_1_Marigold"
+      ],
+      "weekly_quota": 1,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_19",
+      "subject": "EVS",
+      "teacher_ids": [
+        "Anjali Jain"
+      ],
+      "section_ids": [
+        "CLASS_1_Marigold"
+      ],
+      "weekly_quota": 4,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_20",
+      "subject": "Game",
+      "teacher_ids": [
+        "Komal"
+      ],
+      "section_ids": [
+        "CLASS_1_Marigold"
+      ],
+      "weekly_quota": 1,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_21",
+      "subject": "Math",
+      "teacher_ids": [
+        "Anjali Jain"
+      ],
+      "section_ids": [
+        "CLASS_1_Marigold"
+      ],
+      "weekly_quota": 4,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_22",
+      "subject": "Art & Craft",
+      "teacher_ids": [
+        "Anjali Jain"
+      ],
+      "section_ids": [
+        "CLASS_1_Marigold"
+      ],
+      "weekly_quota": 2,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_23",
+      "subject": "Eng Read",
+      "teacher_ids": [
+        "Anjali Jain"
+      ],
+      "section_ids": [
+        "CLASS_1_Marigold"
+      ],
+      "weekly_quota": 2,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_24",
+      "subject": "Hindi Read",
+      "teacher_ids": [
+        "Anjali Jain"
+      ],
+      "section_ids": [
+        "CLASS_1_Marigold"
+      ],
+      "weekly_quota": 2,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_25",
+      "subject": "Dance",
+      "teacher_ids": [
+        "Akash"
+      ],
+      "section_ids": [
+        "CLASS_1_Marigold"
+      ],
+      "weekly_quota": 1,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_26",
+      "subject": "IT",
+      "teacher_ids": [
+        "Anjali Jain"
+      ],
+      "section_ids": [
+        "CLASS_1_Marigold"
+      ],
+      "weekly_quota": 2,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_27",
+      "subject": "Eng",
+      "teacher_ids": [
+        "Raji Jain"
+      ],
+      "section_ids": [
+        "CLASS_1_Lily"
+      ],
+      "weekly_quota": 4,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_28",
+      "subject": "Hindi",
+      "teacher_ids": [
+        "Raji Jain"
+      ],
+      "section_ids": [
+        "CLASS_1_Lily"
+      ],
+      "weekly_quota": 4,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_29",
+      "subject": "Distation&Cursive",
+      "teacher_ids": [
+        "Raji Jain"
+      ],
+      "section_ids": [
+        "CLASS_1_Lily"
+      ],
+      "weekly_quota": 4,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_30",
+      "subject": "IT",
+      "teacher_ids": [
+        "Raji Jain"
+      ],
+      "section_ids": [
+        "CLASS_1_Lily"
+      ],
+      "weekly_quota": 2,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_31",
+      "subject": "Math",
+      "teacher_ids": [
+        "Raji Jain"
+      ],
+      "section_ids": [
+        "CLASS_1_Lily"
+      ],
+      "weekly_quota": 5,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_32",
+      "subject": "EVS",
+      "teacher_ids": [
+        "Raji Jain"
+      ],
+      "section_ids": [
+        "CLASS_1_Lily"
+      ],
+      "weekly_quota": 4,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_33",
+      "subject": "GK",
+      "teacher_ids": [
+        "Raji Jain"
+      ],
+      "section_ids": [
+        "CLASS_1_Lily"
+      ],
+      "weekly_quota": 2,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_34",
+      "subject": "Game",
+      "teacher_ids": [
+        "Komal"
+      ],
+      "section_ids": [
+        "CLASS_1_Lily"
+      ],
+      "weekly_quota": 1,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_35",
+      "subject": "Art & Craft",
+      "teacher_ids": [
+        "Raji Jain"
+      ],
+      "section_ids": [
+        "CLASS_1_Lily"
+      ],
+      "weekly_quota": 2,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_36",
+      "subject": "Eng Read",
+      "teacher_ids": [
+        "Raji Jain"
+      ],
+      "section_ids": [
+        "CLASS_1_Lily"
+      ],
+      "weekly_quota": 2,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_37",
+      "subject": "Hindi Read",
+      "teacher_ids": [
+        "Raji Jain"
+      ],
+      "section_ids": [
+        "CLASS_1_Lily"
+      ],
+      "weekly_quota": 2,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_38",
+      "subject": "Dance",
+      "teacher_ids": [
+        "Akash"
+      ],
+      "section_ids": [
+        "CLASS_1_Lily"
+      ],
+      "weekly_quota": 1,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_39",
+      "subject": "Yoga",
+      "teacher_ids": [
+        "Pradeep"
+      ],
+      "section_ids": [
+        "CLASS_1_Lily"
+      ],
+      "weekly_quota": 1,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_40",
+      "subject": "Eng",
+      "teacher_ids": [
+        "Sanskriti Singhai"
+      ],
+      "section_ids": [
+        "CLASS_1_Sunflower"
+      ],
+      "weekly_quota": 4,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_41",
+      "subject": "Hindi",
+      "teacher_ids": [
+        "Sanskriti Singhai"
+      ],
+      "section_ids": [
+        "CLASS_1_Sunflower"
+      ],
+      "weekly_quota": 5,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_42",
+      "subject": "EVS",
+      "teacher_ids": [
+        "Sanskriti Singhai"
+      ],
+      "section_ids": [
+        "CLASS_1_Sunflower"
+      ],
+      "weekly_quota": 5,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_43",
+      "subject": "Math",
+      "teacher_ids": [
+        "Sanskriti Singhai"
+      ],
+      "section_ids": [
+        "CLASS_1_Sunflower"
+      ],
+      "weekly_quota": 3,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_44",
+      "subject": "IT",
+      "teacher_ids": [
+        "Sanskriti Singhai"
+      ],
+      "section_ids": [
+        "CLASS_1_Sunflower"
+      ],
+      "weekly_quota": 2,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_45",
+      "subject": "Distation&Cursive",
+      "teacher_ids": [
+        "Sanskriti Singhai"
+      ],
+      "section_ids": [
+        "CLASS_1_Sunflower"
+      ],
+      "weekly_quota": 4,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_46",
+      "subject": "Dance",
+      "teacher_ids": [
+        "Akash"
+      ],
+      "section_ids": [
+        "CLASS_1_Sunflower"
+      ],
+      "weekly_quota": 1,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_47",
+      "subject": "Art & Craft",
+      "teacher_ids": [
+        "Sanskriti Singhai"
+      ],
+      "section_ids": [
+        "CLASS_1_Sunflower"
+      ],
+      "weekly_quota": 2,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_48",
+      "subject": "Yoga",
+      "teacher_ids": [
+        "Pradeep"
+      ],
+      "section_ids": [
+        "CLASS_1_Sunflower"
+      ],
+      "weekly_quota": 1,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_49",
+      "subject": "Eng Read",
+      "teacher_ids": [
+        "Sanskriti Singhai"
+      ],
+      "section_ids": [
+        "CLASS_1_Sunflower"
+      ],
+      "weekly_quota": 2,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_50",
+      "subject": "Hindi Read",
+      "teacher_ids": [
+        "Sanskriti Singhai"
+      ],
+      "section_ids": [
+        "CLASS_1_Sunflower"
+      ],
+      "weekly_quota": 2,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_51",
+      "subject": "GK",
+      "teacher_ids": [
+        "Sanskriti Singhai"
+      ],
+      "section_ids": [
+        "CLASS_1_Sunflower"
+      ],
+      "weekly_quota": 2,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_52",
+      "subject": "Game",
+      "teacher_ids": [
+        "Komal"
+      ],
+      "section_ids": [
+        "CLASS_1_Sunflower"
+      ],
+      "weekly_quota": 1,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_53",
+      "subject": "Eng",
+      "teacher_ids": [
+        "Reenu Yadav"
+      ],
+      "section_ids": [
+        "CLASS_2_Rose"
+      ],
+      "weekly_quota": 4,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_54",
+      "subject": "Hindi",
+      "teacher_ids": [
+        "Reenu Yadav"
+      ],
+      "section_ids": [
+        "CLASS_2_Rose"
+      ],
+      "weekly_quota": 4,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_55",
+      "subject": "EVS",
+      "teacher_ids": [
+        "Reenu Yadav"
+      ],
+      "section_ids": [
+        "CLASS_2_Rose"
+      ],
+      "weekly_quota": 4,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_56",
+      "subject": "Dance",
+      "teacher_ids": [
+        "Akash"
+      ],
+      "section_ids": [
+        "CLASS_2_Rose"
+      ],
+      "weekly_quota": 1,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_57",
+      "subject": "Math",
+      "teacher_ids": [
+        "Reenu Yadav"
+      ],
+      "section_ids": [
+        "CLASS_2_Rose"
+      ],
+      "weekly_quota": 4,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_58",
+      "subject": "IT",
+      "teacher_ids": [
+        "Kalyani Choudhary"
+      ],
+      "section_ids": [
+        "CLASS_2_Rose"
+      ],
+      "weekly_quota": 2,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_59",
+      "subject": "Game",
+      "teacher_ids": [
+        "Komal"
+      ],
+      "section_ids": [
+        "CLASS_2_Rose"
+      ],
+      "weekly_quota": 1,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_60",
+      "subject": "Distation&Cursive",
+      "teacher_ids": [
+        "Reenu Yadav"
+      ],
+      "section_ids": [
+        "CLASS_2_Rose"
+      ],
+      "weekly_quota": 5,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_61",
+      "subject": "GK",
+      "teacher_ids": [
+        "Reenu Yadav"
+      ],
+      "section_ids": [
+        "CLASS_2_Rose"
+      ],
+      "weekly_quota": 2,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_62",
+      "subject": "Art & Craft",
+      "teacher_ids": [
+        "Reenu Yadav"
+      ],
+      "section_ids": [
+        "CLASS_2_Rose"
+      ],
+      "weekly_quota": 2,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_63",
+      "subject": "Eng Read",
+      "teacher_ids": [
+        "Reenu Yadav"
+      ],
+      "section_ids": [
+        "CLASS_2_Rose"
+      ],
+      "weekly_quota": 2,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_64",
+      "subject": "Hindi Read",
+      "teacher_ids": [
+        "Reenu Yadav"
+      ],
+      "section_ids": [
+        "CLASS_2_Rose"
+      ],
+      "weekly_quota": 2,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_65",
+      "subject": "Yoga",
+      "teacher_ids": [
+        "Pradeep"
+      ],
+      "section_ids": [
+        "CLASS_2_Rose"
+      ],
+      "weekly_quota": 1,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_66",
+      "subject": "Eng",
+      "teacher_ids": [
+        "Arti Ahirwar"
+      ],
+      "section_ids": [
+        "CLASS_2_Marigold"
+      ],
+      "weekly_quota": 4,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_67",
+      "subject": "Hindi",
+      "teacher_ids": [
+        "Arti Ahirwar"
+      ],
+      "section_ids": [
+        "CLASS_2_Marigold"
+      ],
+      "weekly_quota": 4,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_68",
+      "subject": "Art & Craft",
+      "teacher_ids": [
+        "Rajaram"
+      ],
+      "section_ids": [
+        "CLASS_2_Marigold"
+      ],
+      "weekly_quota": 2,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_69",
+      "subject": "Distation&Cursive",
+      "teacher_ids": [
+        "Arti Ahirwar"
+      ],
+      "section_ids": [
+        "CLASS_2_Marigold"
+      ],
+      "weekly_quota": 5,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_70",
+      "subject": "Math",
+      "teacher_ids": [
+        "Arti Ahirwar"
+      ],
+      "section_ids": [
+        "CLASS_2_Marigold"
+      ],
+      "weekly_quota": 4,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_71",
+      "subject": "EVS",
+      "teacher_ids": [
+        "Arti Ahirwar"
+      ],
+      "section_ids": [
+        "CLASS_2_Marigold"
+      ],
+      "weekly_quota": 4,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_72",
+      "subject": "Dance",
+      "teacher_ids": [
+        "Akash"
+      ],
+      "section_ids": [
+        "CLASS_2_Marigold"
+      ],
+      "weekly_quota": 1,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_73",
+      "subject": "Yoga",
+      "teacher_ids": [
+        "Pradeep"
+      ],
+      "section_ids": [
+        "CLASS_2_Marigold"
+      ],
+      "weekly_quota": 1,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_74",
+      "subject": "Game",
+      "teacher_ids": [
+        "Komal"
+      ],
+      "section_ids": [
+        "CLASS_2_Marigold"
+      ],
+      "weekly_quota": 1,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_75",
+      "subject": "IT",
+      "teacher_ids": [
+        "Arti Ahirwar"
+      ],
+      "section_ids": [
+        "CLASS_2_Marigold"
+      ],
+      "weekly_quota": 2,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_76",
+      "subject": "GK",
+      "teacher_ids": [
+        "Arti Ahirwar"
+      ],
+      "section_ids": [
+        "CLASS_2_Marigold"
+      ],
+      "weekly_quota": 2,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_77",
+      "subject": "Eng Read",
+      "teacher_ids": [
+        "Arti Ahirwar"
+      ],
+      "section_ids": [
+        "CLASS_2_Marigold"
+      ],
+      "weekly_quota": 2,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_78",
+      "subject": "Hindi Read",
+      "teacher_ids": [
+        "Arti Ahirwar"
+      ],
+      "section_ids": [
+        "CLASS_2_Marigold"
+      ],
+      "weekly_quota": 2,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_79",
+      "subject": "Eng",
+      "teacher_ids": [
+        "Kalyani Choudhary"
+      ],
+      "section_ids": [
+        "CLASS_2_Lily"
+      ],
+      "weekly_quota": 4,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_80",
+      "subject": "Hindi",
+      "teacher_ids": [
+        "Kalyani Choudhary"
+      ],
+      "section_ids": [
+        "CLASS_2_Lily"
+      ],
+      "weekly_quota": 4,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_81",
+      "subject": "EVS",
+      "teacher_ids": [
+        "Kalyani Choudhary"
+      ],
+      "section_ids": [
+        "CLASS_2_Lily"
+      ],
+      "weekly_quota": 4,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_82",
+      "subject": "Distation&Cursive",
+      "teacher_ids": [
+        "Kalyani Choudhary"
+      ],
+      "section_ids": [
+        "CLASS_2_Lily"
+      ],
+      "weekly_quota": 5,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_83",
+      "subject": "Math",
+      "teacher_ids": [
+        "Kalyani Choudhary"
+      ],
+      "section_ids": [
+        "CLASS_2_Lily"
+      ],
+      "weekly_quota": 4,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_84",
+      "subject": "Yoga",
+      "teacher_ids": [
+        "Pradeep"
+      ],
+      "section_ids": [
+        "CLASS_2_Lily"
+      ],
+      "weekly_quota": 1,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_85",
+      "subject": "Game",
+      "teacher_ids": [
+        "Komal"
+      ],
+      "section_ids": [
+        "CLASS_2_Lily"
+      ],
+      "weekly_quota": 1,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_86",
+      "subject": "Art & Craft",
+      "teacher_ids": [
+        "Kalyani Choudhary"
+      ],
+      "section_ids": [
+        "CLASS_2_Lily"
+      ],
+      "weekly_quota": 2,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_87",
+      "subject": "GK",
+      "teacher_ids": [
+        "Kalyani Choudhary"
+      ],
+      "section_ids": [
+        "CLASS_2_Lily"
+      ],
+      "weekly_quota": 2,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_88",
+      "subject": "Eng Read",
+      "teacher_ids": [
+        "Kalyani Choudhary"
+      ],
+      "section_ids": [
+        "CLASS_2_Lily"
+      ],
+      "weekly_quota": 2,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_89",
+      "subject": "Hindi Read",
+      "teacher_ids": [
+        "Kalyani Choudhary"
+      ],
+      "section_ids": [
+        "CLASS_2_Lily"
+      ],
+      "weekly_quota": 2,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_90",
+      "subject": "IT",
+      "teacher_ids": [
+        "Kalyani Choudhary"
+      ],
+      "section_ids": [
+        "CLASS_2_Lily"
+      ],
+      "weekly_quota": 2,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_91",
+      "subject": "Dance",
+      "teacher_ids": [
+        "Akash"
+      ],
+      "section_ids": [
+        "CLASS_2_Lily"
+      ],
+      "weekly_quota": 1,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_92",
+      "subject": "Math",
+      "teacher_ids": [
+        "Vandna Saraf"
+      ],
+      "section_ids": [
+        "CLASS_3_Rose"
+      ],
+      "weekly_quota": 5,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_93",
+      "subject": "Hindi",
+      "teacher_ids": [
+        "Neha Rai"
+      ],
+      "section_ids": [
+        "CLASS_3_Rose"
+      ],
+      "weekly_quota": 6,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_94",
+      "subject": "Eng",
+      "teacher_ids": [
+        "Shilpi Sahunsari"
+      ],
+      "section_ids": [
+        "CLASS_3_Rose"
+      ],
+      "weekly_quota": 6,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_95",
+      "subject": "EVS",
+      "teacher_ids": [
+        "Arti Sagar"
+      ],
+      "section_ids": [
+        "CLASS_3_Rose"
+      ],
+      "weekly_quota": 5,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_96",
+      "subject": "Art&Craft",
+      "teacher_ids": [
+        "Anubha"
+      ],
+      "section_ids": [
+        "CLASS_3_Rose"
+      ],
+      "weekly_quota": 2,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_97",
+      "subject": "GK",
+      "teacher_ids": [
+        "Reenu Yadav"
+      ],
+      "section_ids": [
+        "CLASS_3_Rose"
+      ],
+      "weekly_quota": 2,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_98",
+      "subject": "IT",
+      "teacher_ids": [
+        "Shilpi Sahunsari"
+      ],
+      "section_ids": [
+        "CLASS_3_Rose"
+      ],
+      "weekly_quota": 2,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_99",
+      "subject": "Game",
+      "teacher_ids": [
+        "Komal"
+      ],
+      "section_ids": [
+        "CLASS_3_Rose"
+      ],
+      "weekly_quota": 1,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_100",
+      "subject": "Distation&Cursive",
+      "teacher_ids": [
+        "Arshee"
+      ],
+      "section_ids": [
+        "CLASS_3_Rose"
+      ],
+      "weekly_quota": 2,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_101",
+      "subject": "Yoga",
+      "teacher_ids": [
+        "Pradeep"
+      ],
+      "section_ids": [
+        "CLASS_3_Rose"
+      ],
+      "weekly_quota": 1,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_102",
+      "subject": "Dance",
+      "teacher_ids": [
+        "Akash"
+      ],
+      "section_ids": [
+        "CLASS_3_Rose"
+      ],
+      "weekly_quota": 1,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_103",
+      "subject": "Music",
+      "teacher_ids": [
+        "Atul"
+      ],
+      "section_ids": [
+        "CLASS_3_Rose"
+      ],
+      "weekly_quota": 1,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_104",
+      "subject": "Eng",
+      "teacher_ids": [
+        "Shilpi Sahunsari"
+      ],
+      "section_ids": [
+        "CLASS_3_Marigold"
+      ],
+      "weekly_quota": 6,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_105",
+      "subject": "Art&Craft",
+      "teacher_ids": [
+        "Anubha"
+      ],
+      "section_ids": [
+        "CLASS_3_Marigold"
+      ],
+      "weekly_quota": 2,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_106",
+      "subject": "Music",
+      "teacher_ids": [
+        "Atul"
+      ],
+      "section_ids": [
+        "CLASS_3_Marigold"
+      ],
+      "weekly_quota": 1,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_107",
+      "subject": "Hindi",
+      "teacher_ids": [
+        "Neha Rai"
+      ],
+      "section_ids": [
+        "CLASS_3_Marigold"
+      ],
+      "weekly_quota": 6,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_108",
+      "subject": "GK",
+      "teacher_ids": [
+        "Anjali Jain"
+      ],
+      "section_ids": [
+        "CLASS_3_Marigold"
+      ],
+      "weekly_quota": 2,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_109",
+      "subject": "EVS",
+      "teacher_ids": [
+        "Arti Sagar"
+      ],
+      "section_ids": [
+        "CLASS_3_Marigold"
+      ],
+      "weekly_quota": 5,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_110",
+      "subject": "Game",
+      "teacher_ids": [
+        "Komal"
+      ],
+      "section_ids": [
+        "CLASS_3_Marigold"
+      ],
+      "weekly_quota": 1,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_111",
+      "subject": "Math",
+      "teacher_ids": [
+        "Neelam Sahu"
+      ],
+      "section_ids": [
+        "CLASS_3_Marigold"
+      ],
+      "weekly_quota": 5,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_112",
+      "subject": "Yoga",
+      "teacher_ids": [
+        "Pradeep"
+      ],
+      "section_ids": [
+        "CLASS_3_Marigold"
+      ],
+      "weekly_quota": 1,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_113",
+      "subject": "Distation&Cursive",
+      "teacher_ids": [
+        "Shilpi Sahunsari"
+      ],
+      "section_ids": [
+        "CLASS_3_Marigold"
+      ],
+      "weekly_quota": 2,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_114",
+      "subject": "Dance",
+      "teacher_ids": [
+        "Akash"
+      ],
+      "section_ids": [
+        "CLASS_3_Marigold"
+      ],
+      "weekly_quota": 1,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_115",
+      "subject": "IT",
+      "teacher_ids": [
+        "Somya Nayak"
+      ],
+      "section_ids": [
+        "CLASS_3_Marigold"
+      ],
+      "weekly_quota": 2,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_116",
+      "subject": "Dance",
+      "teacher_ids": [
+        "Akash"
+      ],
+      "section_ids": [
+        "CLASS_3_Lily"
+      ],
+      "weekly_quota": 1,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_117",
+      "subject": "Eng",
+      "teacher_ids": [
+        "Shilpi Sahunsari"
+      ],
+      "section_ids": [
+        "CLASS_3_Lily"
+      ],
+      "weekly_quota": 6,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_118",
+      "subject": "Hindi",
+      "teacher_ids": [
+        "Neha Rai"
+      ],
+      "section_ids": [
+        "CLASS_3_Lily"
+      ],
+      "weekly_quota": 6,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_119",
+      "subject": "Music",
+      "teacher_ids": [
+        "Atul"
+      ],
+      "section_ids": [
+        "CLASS_3_Lily"
+      ],
+      "weekly_quota": 1,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_120",
+      "subject": "EVS",
+      "teacher_ids": [
+        "Arti Sagar"
+      ],
+      "section_ids": [
+        "CLASS_3_Lily"
+      ],
+      "weekly_quota": 5,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_121",
+      "subject": "Math",
+      "teacher_ids": [
+        "Arshee"
+      ],
+      "section_ids": [
+        "CLASS_3_Lily"
+      ],
+      "weekly_quota": 5,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_122",
+      "subject": "Distation&Cursive",
+      "teacher_ids": [
+        "Reenu Yadav"
+      ],
+      "section_ids": [
+        "CLASS_3_Lily"
+      ],
+      "weekly_quota": 2,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_123",
+      "subject": "Art&Craft",
+      "teacher_ids": [
+        "Anubha"
+      ],
+      "section_ids": [
+        "CLASS_3_Lily"
+      ],
+      "weekly_quota": 2,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_124",
+      "subject": "IT",
+      "teacher_ids": [
+        "Sonakshi"
+      ],
+      "section_ids": [
+        "CLASS_3_Lily"
+      ],
+      "weekly_quota": 2,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_125",
+      "subject": "GK",
+      "teacher_ids": [
+        "Avdesh"
+      ],
+      "section_ids": [
+        "CLASS_3_Lily"
+      ],
+      "weekly_quota": 2,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_126",
+      "subject": "Yoga",
+      "teacher_ids": [
+        "Pradeep"
+      ],
+      "section_ids": [
+        "CLASS_3_Lily"
+      ],
+      "weekly_quota": 1,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_127",
+      "subject": "Game",
+      "teacher_ids": [
+        "Komal"
+      ],
+      "section_ids": [
+        "CLASS_3_Lily"
+      ],
+      "weekly_quota": 1,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_128",
+      "subject": "Hindi",
+      "teacher_ids": [
+        "Neha Rai"
+      ],
+      "section_ids": [
+        "CLASS_3_Sunflower"
+      ],
+      "weekly_quota": 6,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_129",
+      "subject": "Distation&Cursive",
+      "teacher_ids": [
+        "Arshee"
+      ],
+      "section_ids": [
+        "CLASS_3_Sunflower"
+      ],
+      "weekly_quota": 2,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_130",
+      "subject": "EVS",
+      "teacher_ids": [
+        "Arti Sagar"
+      ],
+      "section_ids": [
+        "CLASS_3_Sunflower"
+      ],
+      "weekly_quota": 5,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_131",
+      "subject": "GK",
+      "teacher_ids": [
+        "Avdesh"
+      ],
+      "section_ids": [
+        "CLASS_3_Sunflower"
+      ],
+      "weekly_quota": 2,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_132",
+      "subject": "Eng",
+      "teacher_ids": [
+        "Arshee"
+      ],
+      "section_ids": [
+        "CLASS_3_Sunflower"
+      ],
+      "weekly_quota": 6,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_133",
+      "subject": "Maths",
+      "teacher_ids": [
+        "Vandna Saraf"
+      ],
+      "section_ids": [
+        "CLASS_3_Sunflower"
+      ],
+      "weekly_quota": 5,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_134",
+      "subject": "Yoga",
+      "teacher_ids": [
+        "Pradeep"
+      ],
+      "section_ids": [
+        "CLASS_3_Sunflower"
+      ],
+      "weekly_quota": 1,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_135",
+      "subject": "IT",
+      "teacher_ids": [
+        "Sonakshi"
+      ],
+      "section_ids": [
+        "CLASS_3_Sunflower"
+      ],
+      "weekly_quota": 2,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_136",
+      "subject": "Game",
+      "teacher_ids": [
+        "Komal"
+      ],
+      "section_ids": [
+        "CLASS_3_Sunflower"
+      ],
+      "weekly_quota": 1,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_137",
+      "subject": "Art&Craft",
+      "teacher_ids": [
+        "Anubha"
+      ],
+      "section_ids": [
+        "CLASS_3_Sunflower"
+      ],
+      "weekly_quota": 2,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_138",
+      "subject": "Music",
+      "teacher_ids": [
+        "Atul"
+      ],
+      "section_ids": [
+        "CLASS_3_Sunflower"
+      ],
+      "weekly_quota": 1,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_139",
+      "subject": "Dance",
+      "teacher_ids": [
+        "Akash"
+      ],
+      "section_ids": [
+        "CLASS_3_Sunflower"
+      ],
+      "weekly_quota": 1,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_140",
+      "subject": "Hindi",
+      "teacher_ids": [
+        "Rajkmari Yadav"
+      ],
+      "section_ids": [
+        "CLASS_4_Rose"
+      ],
+      "weekly_quota": 6,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_141",
+      "subject": "EVS",
+      "teacher_ids": [
+        "Arti Sagar"
+      ],
+      "section_ids": [
+        "CLASS_4_Rose"
+      ],
+      "weekly_quota": 5,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_142",
+      "subject": "Distation&Cursive",
+      "teacher_ids": [
+        "Arti Ahirwar"
+      ],
+      "section_ids": [
+        "CLASS_4_Rose"
+      ],
+      "weekly_quota": 2,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_143",
+      "subject": "Maths",
+      "teacher_ids": [
+        "Vandna Saraf"
+      ],
+      "section_ids": [
+        "CLASS_4_Rose"
+      ],
+      "weekly_quota": 5,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_144",
+      "subject": "Eng",
+      "teacher_ids": [
+        "Shilpi Sahunsari"
+      ],
+      "section_ids": [
+        "CLASS_4_Rose"
+      ],
+      "weekly_quota": 6,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_145",
+      "subject": "GK",
+      "teacher_ids": [
+        "Anjali Nalvanshi"
+      ],
+      "section_ids": [
+        "CLASS_4_Rose"
+      ],
+      "weekly_quota": 2,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_146",
+      "subject": "Art&Craft",
+      "teacher_ids": [
+        "Anubha"
+      ],
+      "section_ids": [
+        "CLASS_4_Rose"
+      ],
+      "weekly_quota": 2,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_147",
+      "subject": "Dance",
+      "teacher_ids": [
+        "Akash"
+      ],
+      "section_ids": [
+        "CLASS_4_Rose"
+      ],
+      "weekly_quota": 1,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_148",
+      "subject": "Music",
+      "teacher_ids": [
+        "Atul"
+      ],
+      "section_ids": [
+        "CLASS_4_Rose"
+      ],
+      "weekly_quota": 1,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_149",
+      "subject": "Yoga",
+      "teacher_ids": [
+        "Pradeep"
+      ],
+      "section_ids": [
+        "CLASS_4_Rose"
+      ],
+      "weekly_quota": 1,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_150",
+      "subject": "Game",
+      "teacher_ids": [
+        "Komal"
+      ],
+      "section_ids": [
+        "CLASS_4_Rose"
+      ],
+      "weekly_quota": 1,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_151",
+      "subject": "IT",
+      "teacher_ids": [
+        "Sonakshi"
+      ],
+      "section_ids": [
+        "CLASS_4_Rose"
+      ],
+      "weekly_quota": 2,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_152",
+      "subject": "Eng",
+      "teacher_ids": [
+        "Arshee"
+      ],
+      "section_ids": [
+        "CLASS_4_Marigold"
+      ],
+      "weekly_quota": 6,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_153",
+      "subject": "EVS",
+      "teacher_ids": [
+        "Anjali Nalvanshi"
+      ],
+      "section_ids": [
+        "CLASS_4_Marigold"
+      ],
+      "weekly_quota": 5,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_154",
+      "subject": "Distation&Cursive",
+      "teacher_ids": [
+        "Arshee"
+      ],
+      "section_ids": [
+        "CLASS_4_Marigold"
+      ],
+      "weekly_quota": 2,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_155",
+      "subject": "Math",
+      "teacher_ids": [
+        "Neelam Sahu"
+      ],
+      "section_ids": [
+        "CLASS_4_Marigold"
+      ],
+      "weekly_quota": 5,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_156",
+      "subject": "Hindi",
+      "teacher_ids": [
+        "Rajkmari Yadav"
+      ],
+      "section_ids": [
+        "CLASS_4_Marigold"
+      ],
+      "weekly_quota": 6,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_157",
+      "subject": "Yoga",
+      "teacher_ids": [
+        "Pradeep"
+      ],
+      "section_ids": [
+        "CLASS_4_Marigold"
+      ],
+      "weekly_quota": 1,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_158",
+      "subject": "IT",
+      "teacher_ids": [
+        "Manish Chauhan"
+      ],
+      "section_ids": [
+        "CLASS_4_Marigold"
+      ],
+      "weekly_quota": 2,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_159",
+      "subject": "Art&Craft",
+      "teacher_ids": [
+        "Anubha"
+      ],
+      "section_ids": [
+        "CLASS_4_Marigold"
+      ],
+      "weekly_quota": 2,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_160",
+      "subject": "Music",
+      "teacher_ids": [
+        "Atul"
+      ],
+      "section_ids": [
+        "CLASS_4_Marigold"
+      ],
+      "weekly_quota": 1,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_161",
+      "subject": "GK",
+      "teacher_ids": [
+        "Arti Sagar"
+      ],
+      "section_ids": [
+        "CLASS_4_Marigold"
+      ],
+      "weekly_quota": 2,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_162",
+      "subject": "GAME",
+      "teacher_ids": [
+        "Komal"
+      ],
+      "section_ids": [
+        "CLASS_4_Marigold"
+      ],
+      "weekly_quota": 1,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_163",
+      "subject": "Dance",
+      "teacher_ids": [
+        "Akash"
+      ],
+      "section_ids": [
+        "CLASS_4_Marigold"
+      ],
+      "weekly_quota": 1,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_164",
+      "subject": "EVS",
+      "teacher_ids": [
+        "Arti Sagar"
+      ],
+      "section_ids": [
+        "CLASS_4_Lily"
+      ],
+      "weekly_quota": 5,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_165",
+      "subject": "Math",
+      "teacher_ids": [
+        "Neelam Sahu"
+      ],
+      "section_ids": [
+        "CLASS_4_Lily"
+      ],
+      "weekly_quota": 5,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_166",
+      "subject": "Dance",
+      "teacher_ids": [
+        "Akash"
+      ],
+      "section_ids": [
+        "CLASS_4_Lily"
+      ],
+      "weekly_quota": 1,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_167",
+      "subject": "Eng",
+      "teacher_ids": [
+        "Shilpi Sahunsari"
+      ],
+      "section_ids": [
+        "CLASS_4_Lily"
+      ],
+      "weekly_quota": 6,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_168",
+      "subject": "Hindi",
+      "teacher_ids": [
+        "Neha Rai"
+      ],
+      "section_ids": [
+        "CLASS_4_Lily"
+      ],
+      "weekly_quota": 6,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_169",
+      "subject": "Art&Craft",
+      "teacher_ids": [
+        "Rajaram"
+      ],
+      "section_ids": [
+        "CLASS_4_Lily"
+      ],
+      "weekly_quota": 2,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_170",
+      "subject": "Yoga",
+      "teacher_ids": [
+        "Pradeep"
+      ],
+      "section_ids": [
+        "CLASS_4_Lily"
+      ],
+      "weekly_quota": 1,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_171",
+      "subject": "GK",
+      "teacher_ids": [
+        "Arti Sagar"
+      ],
+      "section_ids": [
+        "CLASS_4_Lily"
+      ],
+      "weekly_quota": 2,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_172",
+      "subject": "IT",
+      "teacher_ids": [
+        "Manish Chauhan"
+      ],
+      "section_ids": [
+        "CLASS_4_Lily"
+      ],
+      "weekly_quota": 2,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_173",
+      "subject": "Distation&Cursive",
+      "teacher_ids": [
+        "Arshee"
+      ],
+      "section_ids": [
+        "CLASS_4_Lily"
+      ],
+      "weekly_quota": 2,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_174",
+      "subject": "Music",
+      "teacher_ids": [
+        "Atul"
+      ],
+      "section_ids": [
+        "CLASS_4_Lily"
+      ],
+      "weekly_quota": 1,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_175",
+      "subject": "GAME",
+      "teacher_ids": [
+        "Komal"
+      ],
+      "section_ids": [
+        "CLASS_4_Lily"
+      ],
+      "weekly_quota": 1,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_176",
+      "subject": "Math",
+      "teacher_ids": [
+        "Neelam Sahu"
+      ],
+      "section_ids": [
+        "CLASS_5_Rose"
+      ],
+      "weekly_quota": 5,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_177",
+      "subject": "GAME",
+      "teacher_ids": [
+        "Komal"
+      ],
+      "section_ids": [
+        "CLASS_5_Rose"
+      ],
+      "weekly_quota": 1,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_178",
+      "subject": "Hindi",
+      "teacher_ids": [
+        "Rajkmari Yadav"
+      ],
+      "section_ids": [
+        "CLASS_5_Rose"
+      ],
+      "weekly_quota": 6,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_179",
+      "subject": "Eng",
+      "teacher_ids": [
+        "Sanchitika"
+      ],
+      "section_ids": [
+        "CLASS_5_Rose"
+      ],
+      "weekly_quota": 6,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_180",
+      "subject": "IT",
+      "teacher_ids": [
+        "Manish Chauhan"
+      ],
+      "section_ids": [
+        "CLASS_5_Rose"
+      ],
+      "weekly_quota": 2,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_181",
+      "subject": "GK",
+      "teacher_ids": [
+        "Avdesh"
+      ],
+      "section_ids": [
+        "CLASS_5_Rose"
+      ],
+      "weekly_quota": 2,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_182",
+      "subject": "EVS",
+      "teacher_ids": [
+        "Anjali Nalvanshi"
+      ],
+      "section_ids": [
+        "CLASS_5_Rose"
+      ],
+      "weekly_quota": 5,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_183",
+      "subject": "Art&Craft",
+      "teacher_ids": [
+        "Anubha"
+      ],
+      "section_ids": [
+        "CLASS_5_Rose"
+      ],
+      "weekly_quota": 2,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_184",
+      "subject": "Yoga",
+      "teacher_ids": [
+        "Pradeep"
+      ],
+      "section_ids": [
+        "CLASS_5_Rose"
+      ],
+      "weekly_quota": 1,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_185",
+      "subject": "Distation&Cursive",
+      "teacher_ids": [
+        "Arshee"
+      ],
+      "section_ids": [
+        "CLASS_5_Rose"
+      ],
+      "weekly_quota": 2,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_186",
+      "subject": "Music",
+      "teacher_ids": [
+        "Atul"
+      ],
+      "section_ids": [
+        "CLASS_5_Rose"
+      ],
+      "weekly_quota": 1,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_187",
+      "subject": "Dance",
+      "teacher_ids": [
+        "Akash"
+      ],
+      "section_ids": [
+        "CLASS_5_Rose"
+      ],
+      "weekly_quota": 1,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_188",
+      "subject": "Hindi",
+      "teacher_ids": [
+        "Shewta Dubey"
+      ],
+      "section_ids": [
+        "CLASS_5_Marigold"
+      ],
+      "weekly_quota": 6,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_189",
+      "subject": "Eng",
+      "teacher_ids": [
+        "Sanchitika"
+      ],
+      "section_ids": [
+        "CLASS_5_Marigold"
+      ],
+      "weekly_quota": 6,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_190",
+      "subject": "EVS",
+      "teacher_ids": [
+        "Anjali Nalvanshi"
+      ],
+      "section_ids": [
+        "CLASS_5_Marigold"
+      ],
+      "weekly_quota": 5,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_191",
+      "subject": "Distation&Cursive",
+      "teacher_ids": [
+        "Arshee"
+      ],
+      "section_ids": [
+        "CLASS_5_Marigold"
+      ],
+      "weekly_quota": 2,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_192",
+      "subject": "Math",
+      "teacher_ids": [
+        "Neelam Sahu"
+      ],
+      "section_ids": [
+        "CLASS_5_Marigold"
+      ],
+      "weekly_quota": 5,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_193",
+      "subject": "Dance",
+      "teacher_ids": [
+        "Akash"
+      ],
+      "section_ids": [
+        "CLASS_5_Marigold"
+      ],
+      "weekly_quota": 1,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_194",
+      "subject": "Yoga",
+      "teacher_ids": [
+        "Pradeep"
+      ],
+      "section_ids": [
+        "CLASS_5_Marigold"
+      ],
+      "weekly_quota": 1,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_195",
+      "subject": "GK",
+      "teacher_ids": [
+        "Neelam Sahu"
+      ],
+      "section_ids": [
+        "CLASS_5_Marigold"
+      ],
+      "weekly_quota": 2,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_196",
+      "subject": "GAME",
+      "teacher_ids": [
+        "Komal"
+      ],
+      "section_ids": [
+        "CLASS_5_Marigold"
+      ],
+      "weekly_quota": 1,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_197",
+      "subject": "Art&Craft",
+      "teacher_ids": [
+        "Anubha"
+      ],
+      "section_ids": [
+        "CLASS_5_Marigold"
+      ],
+      "weekly_quota": 2,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_198",
+      "subject": "IT",
+      "teacher_ids": [
+        "Manish Chauhan"
+      ],
+      "section_ids": [
+        "CLASS_5_Marigold"
+      ],
+      "weekly_quota": 2,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_199",
+      "subject": "Music",
+      "teacher_ids": [
+        "Atul"
+      ],
+      "section_ids": [
+        "CLASS_5_Marigold"
+      ],
+      "weekly_quota": 1,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_200",
+      "subject": "Eng",
+      "teacher_ids": [
+        "Sanchitika"
+      ],
+      "section_ids": [
+        "CLASS_5_Lily"
+      ],
+      "weekly_quota": 6,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_201",
+      "subject": "Maths",
+      "teacher_ids": [
+        "Vandna Saraf"
+      ],
+      "section_ids": [
+        "CLASS_5_Lily"
+      ],
+      "weekly_quota": 5,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_202",
+      "subject": "IT",
+      "teacher_ids": [
+        "Manish Chauhan"
+      ],
+      "section_ids": [
+        "CLASS_5_Lily"
+      ],
+      "weekly_quota": 2,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_203",
+      "subject": "Hindi",
+      "teacher_ids": [
+        "Rajkmari Yadav"
+      ],
+      "section_ids": [
+        "CLASS_5_Lily"
+      ],
+      "weekly_quota": 6,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_204",
+      "subject": "Dance",
+      "teacher_ids": [
+        "Akash"
+      ],
+      "section_ids": [
+        "CLASS_5_Lily"
+      ],
+      "weekly_quota": 1,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_205",
+      "subject": "EVS",
+      "teacher_ids": [
+        "Anjali Nalvanshi"
+      ],
+      "section_ids": [
+        "CLASS_5_Lily"
+      ],
+      "weekly_quota": 5,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_206",
+      "subject": "Distation&Cursive",
+      "teacher_ids": [
+        "Arshee"
+      ],
+      "section_ids": [
+        "CLASS_5_Lily"
+      ],
+      "weekly_quota": 2,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_207",
+      "subject": "Art&Craft",
+      "teacher_ids": [
+        "Anubha"
+      ],
+      "section_ids": [
+        "CLASS_5_Lily"
+      ],
+      "weekly_quota": 2,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_208",
+      "subject": "Yoga",
+      "teacher_ids": [
+        "Pradeep"
+      ],
+      "section_ids": [
+        "CLASS_5_Lily"
+      ],
+      "weekly_quota": 1,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_209",
+      "subject": "GAME",
+      "teacher_ids": [
+        "Komal"
+      ],
+      "section_ids": [
+        "CLASS_5_Lily"
+      ],
+      "weekly_quota": 1,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_210",
+      "subject": "Music",
+      "teacher_ids": [
+        "Atul"
+      ],
+      "section_ids": [
+        "CLASS_5_Lily"
+      ],
+      "weekly_quota": 1,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_211",
+      "subject": "GK",
+      "teacher_ids": [
+        "Raji Jain"
+      ],
+      "section_ids": [
+        "CLASS_5_Lily"
+      ],
+      "weekly_quota": 2,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_212",
+      "subject": "EVS",
+      "teacher_ids": [
+        "Anjali Nalvanshi"
+      ],
+      "section_ids": [
+        "CLASS_5_Sunflower"
+      ],
+      "weekly_quota": 5,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_213",
+      "subject": "Hindi",
+      "teacher_ids": [
+        "Rajkmari Yadav"
+      ],
+      "section_ids": [
+        "CLASS_5_Sunflower"
+      ],
+      "weekly_quota": 6,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_214",
+      "subject": "Eng",
+      "teacher_ids": [
+        "Sanchitika"
+      ],
+      "section_ids": [
+        "CLASS_5_Sunflower"
+      ],
+      "weekly_quota": 6,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_215",
+      "subject": "GK",
+      "teacher_ids": [
+        "Anjali Nalvanshi"
+      ],
+      "section_ids": [
+        "CLASS_5_Sunflower"
+      ],
+      "weekly_quota": 2,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_216",
+      "subject": "Maths",
+      "teacher_ids": [
+        "Vandna Saraf"
+      ],
+      "section_ids": [
+        "CLASS_5_Sunflower"
+      ],
+      "weekly_quota": 5,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_217",
+      "subject": "IT",
+      "teacher_ids": [
+        "Manish Chauhan"
+      ],
+      "section_ids": [
+        "CLASS_5_Sunflower"
+      ],
+      "weekly_quota": 2,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_218",
+      "subject": "Distation&Cursive",
+      "teacher_ids": [
+        "Arshee"
+      ],
+      "section_ids": [
+        "CLASS_5_Sunflower"
+      ],
+      "weekly_quota": 2,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_219",
+      "subject": "Music",
+      "teacher_ids": [
+        "Atul"
+      ],
+      "section_ids": [
+        "CLASS_5_Sunflower"
+      ],
+      "weekly_quota": 1,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_220",
+      "subject": "Dance",
+      "teacher_ids": [
+        "Akash"
+      ],
+      "section_ids": [
+        "CLASS_5_Sunflower"
+      ],
+      "weekly_quota": 1,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_221",
+      "subject": "Yoga",
+      "teacher_ids": [
+        "Pradeep"
+      ],
+      "section_ids": [
+        "CLASS_5_Sunflower"
+      ],
+      "weekly_quota": 1,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_222",
+      "subject": "Games",
+      "teacher_ids": [
+        "Komal"
+      ],
+      "section_ids": [
+        "CLASS_5_Sunflower"
+      ],
+      "weekly_quota": 1,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_223",
+      "subject": "Art&Craft",
+      "teacher_ids": [
+        "Anubha"
+      ],
+      "section_ids": [
+        "CLASS_5_Sunflower"
+      ],
+      "weekly_quota": 2,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_224",
+      "subject": "Science",
+      "teacher_ids": [
+        "Somya Nayak"
+      ],
+      "section_ids": [
+        "CLASS_6_Rose"
+      ],
+      "weekly_quota": 5,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_225",
+      "subject": "SST",
+      "teacher_ids": [
+        "Shruti Badkul"
+      ],
+      "section_ids": [
+        "CLASS_6_Rose"
+      ],
+      "weekly_quota": 5,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_226",
+      "subject": "Eng",
+      "teacher_ids": [
+        "Harshita"
+      ],
+      "section_ids": [
+        "CLASS_6_Rose"
+      ],
+      "weekly_quota": 5,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_227",
+      "subject": "Hindi",
+      "teacher_ids": [
+        "Shewta Dubey"
+      ],
+      "section_ids": [
+        "CLASS_6_Rose"
+      ],
+      "weekly_quota": 5,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_228",
+      "subject": "GK",
+      "teacher_ids": [
+        "Anjali Nalvanshi"
+      ],
+      "section_ids": [
+        "CLASS_6_Rose"
+      ],
+      "weekly_quota": 2,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_229",
+      "subject": "Math",
+      "teacher_ids": [
+        "Neelam Sahu"
+      ],
+      "section_ids": [
+        "CLASS_6_Rose"
+      ],
+      "weekly_quota": 6,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_230",
+      "subject": "SKT",
+      "teacher_ids": [
+        "Jageshwar Sharma"
+      ],
+      "section_ids": [
+        "CLASS_6_Rose"
+      ],
+      "weekly_quota": 3,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_231",
+      "subject": "Drawing",
+      "teacher_ids": [
+        "Rajaram"
+      ],
+      "section_ids": [
+        "CLASS_6_Rose"
+      ],
+      "weekly_quota": 2,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_232",
+      "subject": "IT",
+      "teacher_ids": [
+        "Manish Chauhan"
+      ],
+      "section_ids": [
+        "CLASS_6_Rose"
+      ],
+      "weekly_quota": 2,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_233",
+      "subject": "Dance",
+      "teacher_ids": [
+        "Akash"
+      ],
+      "section_ids": [
+        "CLASS_6_Rose"
+      ],
+      "weekly_quota": 1,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_234",
+      "subject": "Music",
+      "teacher_ids": [
+        "Atul"
+      ],
+      "section_ids": [
+        "CLASS_6_Rose"
+      ],
+      "weekly_quota": 2,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_235",
+      "subject": "Yoga",
+      "teacher_ids": [
+        "Pradeep"
+      ],
+      "section_ids": [
+        "CLASS_6_Rose"
+      ],
+      "weekly_quota": 1,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_236",
+      "subject": "Hindi",
+      "teacher_ids": [
+        "Nidhi"
+      ],
+      "section_ids": [
+        "CLASS_6_Marigold"
+      ],
+      "weekly_quota": 5,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_237",
+      "subject": "Music",
+      "teacher_ids": [
+        "Atul"
+      ],
+      "section_ids": [
+        "CLASS_6_Marigold"
+      ],
+      "weekly_quota": 2,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_238",
+      "subject": "Maths",
+      "teacher_ids": [
+        "Vandna Saraf"
+      ],
+      "section_ids": [
+        "CLASS_6_Marigold"
+      ],
+      "weekly_quota": 6,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_239",
+      "subject": "IT",
+      "teacher_ids": [
+        "Manish Chauhan"
+      ],
+      "section_ids": [
+        "CLASS_6_Marigold"
+      ],
+      "weekly_quota": 2,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_240",
+      "subject": "SKT",
+      "teacher_ids": [
+        "Jageshwar Sharma"
+      ],
+      "section_ids": [
+        "CLASS_6_Marigold"
+      ],
+      "weekly_quota": 3,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_241",
+      "subject": "Eng",
+      "teacher_ids": [
+        "Sanchitika"
+      ],
+      "section_ids": [
+        "CLASS_6_Marigold"
+      ],
+      "weekly_quota": 5,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_242",
+      "subject": "Sci",
+      "teacher_ids": [
+        "Charulata"
+      ],
+      "section_ids": [
+        "CLASS_6_Marigold"
+      ],
+      "weekly_quota": 5,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_243",
+      "subject": "SST",
+      "teacher_ids": [
+        "Anuraj"
+      ],
+      "section_ids": [
+        "CLASS_6_Marigold"
+      ],
+      "weekly_quota": 5,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_244",
+      "subject": "Yoga",
+      "teacher_ids": [
+        "Pradeep"
+      ],
+      "section_ids": [
+        "CLASS_6_Marigold"
+      ],
+      "weekly_quota": 1,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_245",
+      "subject": "Drawing",
+      "teacher_ids": [
+        "Rajaram"
+      ],
+      "section_ids": [
+        "CLASS_6_Marigold"
+      ],
+      "weekly_quota": 2,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_246",
+      "subject": "Dance",
+      "teacher_ids": [
+        "Akash"
+      ],
+      "section_ids": [
+        "CLASS_6_Marigold"
+      ],
+      "weekly_quota": 1,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_247",
+      "subject": "GK",
+      "teacher_ids": [
+        "Anjali Nalvanshi"
+      ],
+      "section_ids": [
+        "CLASS_6_Marigold"
+      ],
+      "weekly_quota": 2,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_248",
+      "subject": "Maths",
+      "teacher_ids": [
+        "Avdesh"
+      ],
+      "section_ids": [
+        "CLASS_6_Lily"
+      ],
+      "weekly_quota": 4,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_249",
+      "subject": "Hindi",
+      "teacher_ids": [
+        "Shewta Dubey"
+      ],
+      "section_ids": [
+        "CLASS_6_Lily"
+      ],
+      "weekly_quota": 5,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_250",
+      "subject": "SST",
+      "teacher_ids": [
+        "Anuraj"
+      ],
+      "section_ids": [
+        "CLASS_6_Lily"
+      ],
+      "weekly_quota": 5,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_251",
+      "subject": "Drawing",
+      "teacher_ids": [
+        "Rajaram"
+      ],
+      "section_ids": [
+        "CLASS_6_Lily"
+      ],
+      "weekly_quota": 2,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_252",
+      "subject": "GK",
+      "teacher_ids": [
+        "Sanchitika"
+      ],
+      "section_ids": [
+        "CLASS_6_Lily"
+      ],
+      "weekly_quota": 2,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_253",
+      "subject": "SKT",
+      "teacher_ids": [
+        "Jageshwar Sharma"
+      ],
+      "section_ids": [
+        "CLASS_6_Lily"
+      ],
+      "weekly_quota": 3,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_254",
+      "subject": "Eng",
+      "teacher_ids": [
+        "Sanchitika"
+      ],
+      "section_ids": [
+        "CLASS_6_Lily"
+      ],
+      "weekly_quota": 5,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_255",
+      "subject": "Music",
+      "teacher_ids": [
+        "Atul"
+      ],
+      "section_ids": [
+        "CLASS_6_Lily"
+      ],
+      "weekly_quota": 2,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_256",
+      "subject": "IT",
+      "teacher_ids": [
+        "Manish Chauhan"
+      ],
+      "section_ids": [
+        "CLASS_6_Lily"
+      ],
+      "weekly_quota": 2,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_257",
+      "subject": "Sci",
+      "teacher_ids": [
+        "Charulata"
+      ],
+      "section_ids": [
+        "CLASS_6_Lily"
+      ],
+      "weekly_quota": 5,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_258",
+      "subject": "Dance",
+      "teacher_ids": [
+        "Akash"
+      ],
+      "section_ids": [
+        "CLASS_6_Lily"
+      ],
+      "weekly_quota": 1,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_259",
+      "subject": "Maths",
+      "teacher_ids": [
+        "Vandna Saraf"
+      ],
+      "section_ids": [
+        "CLASS_6_Lily"
+      ],
+      "weekly_quota": 2,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_260",
+      "subject": "Yoga",
+      "teacher_ids": [
+        "Pradeep"
+      ],
+      "section_ids": [
+        "CLASS_6_Lily"
+      ],
+      "weekly_quota": 1,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_261",
+      "subject": "Eng",
+      "teacher_ids": [
+        "Harshita"
+      ],
+      "section_ids": [
+        "CLASS_6_Sunflower"
+      ],
+      "weekly_quota": 5,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_262",
+      "subject": "Maths",
+      "teacher_ids": [
+        "Deepmali"
+      ],
+      "section_ids": [
+        "CLASS_6_Sunflower"
+      ],
+      "weekly_quota": 6,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_263",
+      "subject": "SKT",
+      "teacher_ids": [
+        "Jageshwar Sharma"
+      ],
+      "section_ids": [
+        "CLASS_6_Sunflower"
+      ],
+      "weekly_quota": 3,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_264",
+      "subject": "SST",
+      "teacher_ids": [
+        "Shruti Badkul"
+      ],
+      "section_ids": [
+        "CLASS_6_Sunflower"
+      ],
+      "weekly_quota": 5,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_265",
+      "subject": "Hindi",
+      "teacher_ids": [
+        "Shewta Dubey"
+      ],
+      "section_ids": [
+        "CLASS_6_Sunflower"
+      ],
+      "weekly_quota": 5,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_266",
+      "subject": "Sci",
+      "teacher_ids": [
+        "Charulata"
+      ],
+      "section_ids": [
+        "CLASS_6_Sunflower"
+      ],
+      "weekly_quota": 5,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_267",
+      "subject": "Music",
+      "teacher_ids": [
+        "Atul"
+      ],
+      "section_ids": [
+        "CLASS_6_Sunflower"
+      ],
+      "weekly_quota": 2,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_268",
+      "subject": "IT",
+      "teacher_ids": [
+        "Manish Chauhan"
+      ],
+      "section_ids": [
+        "CLASS_6_Sunflower"
+      ],
+      "weekly_quota": 2,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_269",
+      "subject": "GK",
+      "teacher_ids": [
+        "Anjali Nalvanshi"
+      ],
+      "section_ids": [
+        "CLASS_6_Sunflower"
+      ],
+      "weekly_quota": 2,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_270",
+      "subject": "Drawing",
+      "teacher_ids": [
+        "Rajaram"
+      ],
+      "section_ids": [
+        "CLASS_6_Sunflower"
+      ],
+      "weekly_quota": 2,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_271",
+      "subject": "Yoga",
+      "teacher_ids": [
+        "Pradeep"
+      ],
+      "section_ids": [
+        "CLASS_6_Sunflower"
+      ],
+      "weekly_quota": 1,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_272",
+      "subject": "Dance",
+      "teacher_ids": [
+        "Akash"
+      ],
+      "section_ids": [
+        "CLASS_6_Sunflower"
+      ],
+      "weekly_quota": 1,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_273",
+      "subject": "Sci",
+      "teacher_ids": [
+        "Charulata"
+      ],
+      "section_ids": [
+        "CLASS_7_Rose"
+      ],
+      "weekly_quota": 5,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_274",
+      "subject": "Eng",
+      "teacher_ids": [
+        "Harshita"
+      ],
+      "section_ids": [
+        "CLASS_7_Rose"
+      ],
+      "weekly_quota": 5,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_275",
+      "subject": "Yoga",
+      "teacher_ids": [
+        "Pradeep"
+      ],
+      "section_ids": [
+        "CLASS_7_Rose"
+      ],
+      "weekly_quota": 1,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_276",
+      "subject": "SKT",
+      "teacher_ids": [
+        "Jageshwar Sharma"
+      ],
+      "section_ids": [
+        "CLASS_7_Rose"
+      ],
+      "weekly_quota": 3,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_277",
+      "subject": "Hindi",
+      "teacher_ids": [
+        "Nidhi"
+      ],
+      "section_ids": [
+        "CLASS_7_Rose"
+      ],
+      "weekly_quota": 5,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_278",
+      "subject": "Maths",
+      "teacher_ids": [
+        "Deepmali"
+      ],
+      "section_ids": [
+        "CLASS_7_Rose"
+      ],
+      "weekly_quota": 6,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_279",
+      "subject": "GK",
+      "teacher_ids": [
+        "Anuraj"
+      ],
+      "section_ids": [
+        "CLASS_7_Rose"
+      ],
+      "weekly_quota": 2,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_280",
+      "subject": "Music",
+      "teacher_ids": [
+        "Atul"
+      ],
+      "section_ids": [
+        "CLASS_7_Rose"
+      ],
+      "weekly_quota": 2,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_281",
+      "subject": "SST",
+      "teacher_ids": [
+        "Anuraj"
+      ],
+      "section_ids": [
+        "CLASS_7_Rose"
+      ],
+      "weekly_quota": 5,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_282",
+      "subject": "IT",
+      "teacher_ids": [
+        "Manish Chauhan"
+      ],
+      "section_ids": [
+        "CLASS_7_Rose"
+      ],
+      "weekly_quota": 2,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_283",
+      "subject": "Drawing",
+      "teacher_ids": [
+        "Rajaram"
+      ],
+      "section_ids": [
+        "CLASS_7_Rose"
+      ],
+      "weekly_quota": 2,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_284",
+      "subject": "Dance",
+      "teacher_ids": [
+        "Akash"
+      ],
+      "section_ids": [
+        "CLASS_7_Rose"
+      ],
+      "weekly_quota": 1,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_285",
+      "subject": "SST",
+      "teacher_ids": [
+        "Shruti Badkul"
+      ],
+      "section_ids": [
+        "CLASS_7_Marigold"
+      ],
+      "weekly_quota": 5,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_286",
+      "subject": "GK",
+      "teacher_ids": [
+        "Anuraj"
+      ],
+      "section_ids": [
+        "CLASS_7_Marigold"
+      ],
+      "weekly_quota": 2,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_287",
+      "subject": "Hindi",
+      "teacher_ids": [
+        "Shewta Dubey"
+      ],
+      "section_ids": [
+        "CLASS_7_Marigold"
+      ],
+      "weekly_quota": 5,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_288",
+      "subject": "Sci",
+      "teacher_ids": [
+        "Charulata"
+      ],
+      "section_ids": [
+        "CLASS_7_Marigold"
+      ],
+      "weekly_quota": 5,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_289",
+      "subject": "Maths",
+      "teacher_ids": [
+        "Deepmali"
+      ],
+      "section_ids": [
+        "CLASS_7_Marigold"
+      ],
+      "weekly_quota": 6,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_290",
+      "subject": "Music",
+      "teacher_ids": [
+        "Atul"
+      ],
+      "section_ids": [
+        "CLASS_7_Marigold"
+      ],
+      "weekly_quota": 2,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_291",
+      "subject": "Eng",
+      "teacher_ids": [
+        "Harshita"
+      ],
+      "section_ids": [
+        "CLASS_7_Marigold"
+      ],
+      "weekly_quota": 5,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_292",
+      "subject": "Yoga",
+      "teacher_ids": [
+        "Pradeep"
+      ],
+      "section_ids": [
+        "CLASS_7_Marigold"
+      ],
+      "weekly_quota": 1,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_293",
+      "subject": "SKT",
+      "teacher_ids": [
+        "Jageshwar Sharma"
+      ],
+      "section_ids": [
+        "CLASS_7_Marigold"
+      ],
+      "weekly_quota": 3,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_294",
+      "subject": "Dance",
+      "teacher_ids": [
+        "Akash"
+      ],
+      "section_ids": [
+        "CLASS_7_Marigold"
+      ],
+      "weekly_quota": 1,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_295",
+      "subject": "IT",
+      "teacher_ids": [
+        "Manish Chauhan"
+      ],
+      "section_ids": [
+        "CLASS_7_Marigold"
+      ],
+      "weekly_quota": 2,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_296",
+      "subject": "Drawing",
+      "teacher_ids": [
+        "Rajaram"
+      ],
+      "section_ids": [
+        "CLASS_7_Marigold"
+      ],
+      "weekly_quota": 2,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_297",
+      "subject": "SST",
+      "teacher_ids": [
+        "Anuraj"
+      ],
+      "section_ids": [
+        "CLASS_7_Lily"
+      ],
+      "weekly_quota": 5,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_298",
+      "subject": "SKT",
+      "teacher_ids": [
+        "Jageshwar Sharma"
+      ],
+      "section_ids": [
+        "CLASS_7_Lily"
+      ],
+      "weekly_quota": 3,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_299",
+      "subject": "Sci",
+      "teacher_ids": [
+        "Charulata"
+      ],
+      "section_ids": [
+        "CLASS_7_Lily"
+      ],
+      "weekly_quota": 5,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_300",
+      "subject": "Maths",
+      "teacher_ids": [
+        "Deepmali"
+      ],
+      "section_ids": [
+        "CLASS_7_Lily"
+      ],
+      "weekly_quota": 6,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_301",
+      "subject": "Music",
+      "teacher_ids": [
+        "Atul"
+      ],
+      "section_ids": [
+        "CLASS_7_Lily"
+      ],
+      "weekly_quota": 2,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_302",
+      "subject": "Eng",
+      "teacher_ids": [
+        "Harshita"
+      ],
+      "section_ids": [
+        "CLASS_7_Lily"
+      ],
+      "weekly_quota": 5,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_303",
+      "subject": "Hindi",
+      "teacher_ids": [
+        "Shewta Dubey"
+      ],
+      "section_ids": [
+        "CLASS_7_Lily"
+      ],
+      "weekly_quota": 5,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_304",
+      "subject": "GK",
+      "teacher_ids": [
+        "Harshita"
+      ],
+      "section_ids": [
+        "CLASS_7_Lily"
+      ],
+      "weekly_quota": 2,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_305",
+      "subject": "IT",
+      "teacher_ids": [
+        "Manish Chauhan"
+      ],
+      "section_ids": [
+        "CLASS_7_Lily"
+      ],
+      "weekly_quota": 2,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_306",
+      "subject": "Dance",
+      "teacher_ids": [
+        "Akash"
+      ],
+      "section_ids": [
+        "CLASS_7_Lily"
+      ],
+      "weekly_quota": 1,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_307",
+      "subject": "Drawing",
+      "teacher_ids": [
+        "Rajaram"
+      ],
+      "section_ids": [
+        "CLASS_7_Lily"
+      ],
+      "weekly_quota": 2,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_308",
+      "subject": "Yoga",
+      "teacher_ids": [
+        "Pradeep"
+      ],
+      "section_ids": [
+        "CLASS_7_Lily"
+      ],
+      "weekly_quota": 1,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_309",
+      "subject": "SKT",
+      "teacher_ids": [
+        "Jageshwar Sharma"
+      ],
+      "section_ids": [
+        "CLASS_7_Sunflower"
+      ],
+      "weekly_quota": 3,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_310",
+      "subject": "IT",
+      "teacher_ids": [
+        "Manish Chauhan"
+      ],
+      "section_ids": [
+        "CLASS_7_Sunflower"
+      ],
+      "weekly_quota": 2,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_311",
+      "subject": "Maths",
+      "teacher_ids": [
+        "Deepmali"
+      ],
+      "section_ids": [
+        "CLASS_7_Sunflower"
+      ],
+      "weekly_quota": 6,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_312",
+      "subject": "Eng",
+      "teacher_ids": [
+        "Harshita"
+      ],
+      "section_ids": [
+        "CLASS_7_Sunflower"
+      ],
+      "weekly_quota": 5,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_313",
+      "subject": "SST",
+      "teacher_ids": [
+        "Shruti Badkul"
+      ],
+      "section_ids": [
+        "CLASS_7_Sunflower"
+      ],
+      "weekly_quota": 5,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_314",
+      "subject": "Dance",
+      "teacher_ids": [
+        "Akash"
+      ],
+      "section_ids": [
+        "CLASS_7_Sunflower"
+      ],
+      "weekly_quota": 1,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_315",
+      "subject": "Sci",
+      "teacher_ids": [
+        "Charulata"
+      ],
+      "section_ids": [
+        "CLASS_7_Sunflower"
+      ],
+      "weekly_quota": 5,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_316",
+      "subject": "Yoga",
+      "teacher_ids": [
+        "Pradeep"
+      ],
+      "section_ids": [
+        "CLASS_7_Sunflower"
+      ],
+      "weekly_quota": 1,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_317",
+      "subject": "Hindi",
+      "teacher_ids": [
+        "Nidhi"
+      ],
+      "section_ids": [
+        "CLASS_7_Sunflower"
+      ],
+      "weekly_quota": 5,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_318",
+      "subject": "Drawing",
+      "teacher_ids": [
+        "Rajaram"
+      ],
+      "section_ids": [
+        "CLASS_7_Sunflower"
+      ],
+      "weekly_quota": 2,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_319",
+      "subject": "Music",
+      "teacher_ids": [
+        "Atul"
+      ],
+      "section_ids": [
+        "CLASS_7_Sunflower"
+      ],
+      "weekly_quota": 2,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_320",
+      "subject": "GK",
+      "teacher_ids": [
+        "Anuraj"
+      ],
+      "section_ids": [
+        "CLASS_7_Sunflower"
+      ],
+      "weekly_quota": 2,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_321",
+      "subject": "Sci",
+      "teacher_ids": [
+        "Mraganshi"
+      ],
+      "section_ids": [
+        "CLASS_8_Rose"
+      ],
+      "weekly_quota": 5,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_322",
+      "subject": "Drawing",
+      "teacher_ids": [
+        "Rajaram"
+      ],
+      "section_ids": [
+        "CLASS_8_Rose"
+      ],
+      "weekly_quota": 2,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_323",
+      "subject": "Eng",
+      "teacher_ids": [
+        "Somya Rai"
+      ],
+      "section_ids": [
+        "CLASS_8_Rose"
+      ],
+      "weekly_quota": 5,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_324",
+      "subject": "Hindi",
+      "teacher_ids": [
+        "Nidhi"
+      ],
+      "section_ids": [
+        "CLASS_8_Rose"
+      ],
+      "weekly_quota": 5,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_325",
+      "subject": "Math",
+      "teacher_ids": [
+        "Somya Nayak"
+      ],
+      "section_ids": [
+        "CLASS_8_Rose"
+      ],
+      "weekly_quota": 6,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_326",
+      "subject": "SST",
+      "teacher_ids": [
+        "Shruti Badkul"
+      ],
+      "section_ids": [
+        "CLASS_8_Rose"
+      ],
+      "weekly_quota": 5,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_327",
+      "subject": "IT",
+      "teacher_ids": [
+        "Manish Chauhan"
+      ],
+      "section_ids": [
+        "CLASS_8_Rose"
+      ],
+      "weekly_quota": 2,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_328",
+      "subject": "SKT",
+      "teacher_ids": [
+        "Jageshwar Sharma"
+      ],
+      "section_ids": [
+        "CLASS_8_Rose"
+      ],
+      "weekly_quota": 3,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_329",
+      "subject": "GK",
+      "teacher_ids": [
+        "Mraganshi"
+      ],
+      "section_ids": [
+        "CLASS_8_Rose"
+      ],
+      "weekly_quota": 2,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_330",
+      "subject": "Music",
+      "teacher_ids": [
+        "Atul"
+      ],
+      "section_ids": [
+        "CLASS_8_Rose"
+      ],
+      "weekly_quota": 2,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_331",
+      "subject": "Dance",
+      "teacher_ids": [
+        "Akash"
+      ],
+      "section_ids": [
+        "CLASS_8_Rose"
+      ],
+      "weekly_quota": 1,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_332",
+      "subject": "Yoga",
+      "teacher_ids": [
+        "Pradeep"
+      ],
+      "section_ids": [
+        "CLASS_8_Rose"
+      ],
+      "weekly_quota": 1,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_333",
+      "subject": "IT",
+      "teacher_ids": [
+        "Manish Chauhan"
+      ],
+      "section_ids": [
+        "CLASS_8_Marigold"
+      ],
+      "weekly_quota": 2,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_334",
+      "subject": "Math",
+      "teacher_ids": [
+        "Somya Nayak"
+      ],
+      "section_ids": [
+        "CLASS_8_Marigold"
+      ],
+      "weekly_quota": 6,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_335",
+      "subject": "Hindi",
+      "teacher_ids": [
+        "Nidhi"
+      ],
+      "section_ids": [
+        "CLASS_8_Marigold"
+      ],
+      "weekly_quota": 5,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_336",
+      "subject": "SST",
+      "teacher_ids": [
+        "Anuraj"
+      ],
+      "section_ids": [
+        "CLASS_8_Marigold"
+      ],
+      "weekly_quota": 5,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_337",
+      "subject": "Sci",
+      "teacher_ids": [
+        "Mraganshi"
+      ],
+      "section_ids": [
+        "CLASS_8_Marigold"
+      ],
+      "weekly_quota": 5,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_338",
+      "subject": "Eng",
+      "teacher_ids": [
+        "Somya Rai"
+      ],
+      "section_ids": [
+        "CLASS_8_Marigold"
+      ],
+      "weekly_quota": 5,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_339",
+      "subject": "Dance",
+      "teacher_ids": [
+        "Akash"
+      ],
+      "section_ids": [
+        "CLASS_8_Marigold"
+      ],
+      "weekly_quota": 1,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_340",
+      "subject": "GK",
+      "teacher_ids": [
+        "Harshita"
+      ],
+      "section_ids": [
+        "CLASS_8_Marigold"
+      ],
+      "weekly_quota": 2,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_341",
+      "subject": "Music",
+      "teacher_ids": [
+        "Atul"
+      ],
+      "section_ids": [
+        "CLASS_8_Marigold"
+      ],
+      "weekly_quota": 2,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_342",
+      "subject": "Drawing",
+      "teacher_ids": [
+        "Rajaram"
+      ],
+      "section_ids": [
+        "CLASS_8_Marigold"
+      ],
+      "weekly_quota": 2,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_343",
+      "subject": "SKT",
+      "teacher_ids": [
+        "Jageshwar Sharma"
+      ],
+      "section_ids": [
+        "CLASS_8_Marigold"
+      ],
+      "weekly_quota": 3,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_344",
+      "subject": "Yoga",
+      "teacher_ids": [
+        "Pradeep"
+      ],
+      "section_ids": [
+        "CLASS_8_Marigold"
+      ],
+      "weekly_quota": 1,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_345",
+      "subject": "Music",
+      "teacher_ids": [
+        "Atul"
+      ],
+      "section_ids": [
+        "CLASS_8_Lily"
+      ],
+      "weekly_quota": 2,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_346",
+      "subject": "Hindi",
+      "teacher_ids": [
+        "Nidhi"
+      ],
+      "section_ids": [
+        "CLASS_8_Lily"
+      ],
+      "weekly_quota": 5,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_347",
+      "subject": "Eng",
+      "teacher_ids": [
+        "Mraganshi"
+      ],
+      "section_ids": [
+        "CLASS_8_Lily"
+      ],
+      "weekly_quota": 5,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_348",
+      "subject": "Math",
+      "teacher_ids": [
+        "Somya Nayak"
+      ],
+      "section_ids": [
+        "CLASS_8_Lily"
+      ],
+      "weekly_quota": 6,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_349",
+      "subject": "Drawing",
+      "teacher_ids": [
+        "Rajaram"
+      ],
+      "section_ids": [
+        "CLASS_8_Lily"
+      ],
+      "weekly_quota": 2,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_350",
+      "subject": "SST",
+      "teacher_ids": [
+        "Anuraj"
+      ],
+      "section_ids": [
+        "CLASS_8_Lily"
+      ],
+      "weekly_quota": 5,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_351",
+      "subject": "Sci",
+      "teacher_ids": [
+        "Mraganshi"
+      ],
+      "section_ids": [
+        "CLASS_8_Lily"
+      ],
+      "weekly_quota": 5,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_352",
+      "subject": "Dance",
+      "teacher_ids": [
+        "Akash"
+      ],
+      "section_ids": [
+        "CLASS_8_Lily"
+      ],
+      "weekly_quota": 1,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_353",
+      "subject": "GK",
+      "teacher_ids": [
+        "Deepmali"
+      ],
+      "section_ids": [
+        "CLASS_8_Lily"
+      ],
+      "weekly_quota": 1,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_354",
+      "subject": "SKT",
+      "teacher_ids": [
+        "Jageshwar Sharma"
+      ],
+      "section_ids": [
+        "CLASS_8_Lily"
+      ],
+      "weekly_quota": 3,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_355",
+      "subject": "Yoga",
+      "teacher_ids": [
+        "Pradeep"
+      ],
+      "section_ids": [
+        "CLASS_8_Lily"
+      ],
+      "weekly_quota": 1,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_356",
+      "subject": "IT",
+      "teacher_ids": [
+        "Manish Chauhan"
+      ],
+      "section_ids": [
+        "CLASS_8_Lily"
+      ],
+      "weekly_quota": 2,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_357",
+      "subject": "GK",
+      "teacher_ids": [
+        "Harshita"
+      ],
+      "section_ids": [
+        "CLASS_8_Lily"
+      ],
+      "weekly_quota": 1,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_358",
+      "subject": "Eng",
+      "teacher_ids": [
+        "Somya Rai"
+      ],
+      "section_ids": [
+        "CLASS_9_Rose"
+      ],
+      "weekly_quota": 5,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_359",
+      "subject": "Math",
+      "teacher_ids": [
+        "Jageshwar R"
+      ],
+      "section_ids": [
+        "CLASS_9_Rose"
+      ],
+      "weekly_quota": 9,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_360",
+      "subject": "Chem",
+      "teacher_ids": [
+        "Mraganshi"
+      ],
+      "section_ids": [
+        "CLASS_9_Rose"
+      ],
+      "weekly_quota": 3,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_361",
+      "subject": "Hindi",
+      "teacher_ids": [
+        "Rashmi"
+      ],
+      "section_ids": [
+        "CLASS_9_Rose"
+      ],
+      "weekly_quota": 5,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_362",
+      "subject": "SST",
+      "teacher_ids": [
+        "Manish Mathur"
+      ],
+      "section_ids": [
+        "CLASS_9_Rose"
+      ],
+      "weekly_quota": 6,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_363",
+      "subject": "Games",
+      "teacher_ids": [
+        "Komal"
+      ],
+      "section_ids": [
+        "CLASS_9_Rose"
+      ],
+      "weekly_quota": 1,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_364",
+      "subject": "Physics",
+      "teacher_ids": [
+        "Anuj Jain"
+      ],
+      "section_ids": [
+        "CLASS_9_Rose"
+      ],
+      "weekly_quota": 3,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_365",
+      "subject": "Bio",
+      "teacher_ids": [
+        "Ram Kumar"
+      ],
+      "section_ids": [
+        "CLASS_9_Rose"
+      ],
+      "weekly_quota": 3,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_366",
+      "subject": "Games",
+      "teacher_ids": [
+        "Geetesh"
+      ],
+      "section_ids": [
+        "CLASS_9_Rose"
+      ],
+      "weekly_quota": 1,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_367",
+      "subject": "Physics",
+      "teacher_ids": [
+        "Anuj Jain"
+      ],
+      "section_ids": [
+        "CLASS_9_Marigold"
+      ],
+      "weekly_quota": 3,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_368",
+      "subject": "Games",
+      "teacher_ids": [
+        "Geetesh"
+      ],
+      "section_ids": [
+        "CLASS_9_Marigold"
+      ],
+      "weekly_quota": 1,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_369",
+      "subject": "Hindi",
+      "teacher_ids": [
+        "Rashmi"
+      ],
+      "section_ids": [
+        "CLASS_9_Marigold"
+      ],
+      "weekly_quota": 5,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_370",
+      "subject": "Bio",
+      "teacher_ids": [
+        "Ram Kumar"
+      ],
+      "section_ids": [
+        "CLASS_9_Marigold"
+      ],
+      "weekly_quota": 3,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_371",
+      "subject": "SST",
+      "teacher_ids": [
+        "Shruti Badkul"
+      ],
+      "section_ids": [
+        "CLASS_9_Marigold"
+      ],
+      "weekly_quota": 6,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_372",
+      "subject": "Math",
+      "teacher_ids": [
+        "Jageshwar R"
+      ],
+      "section_ids": [
+        "CLASS_9_Marigold"
+      ],
+      "weekly_quota": 9,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_373",
+      "subject": "Eng",
+      "teacher_ids": [
+        "Somya Rai"
+      ],
+      "section_ids": [
+        "CLASS_9_Marigold"
+      ],
+      "weekly_quota": 5,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_374",
+      "subject": "Chem",
+      "teacher_ids": [
+        "Mraganshi"
+      ],
+      "section_ids": [
+        "CLASS_9_Marigold"
+      ],
+      "weekly_quota": 3,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_375",
+      "subject": "Games",
+      "teacher_ids": [
+        "Komal"
+      ],
+      "section_ids": [
+        "CLASS_9_Marigold"
+      ],
+      "weekly_quota": 1,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_376",
+      "subject": "SST",
+      "teacher_ids": [
+        "Manish Mathur"
+      ],
+      "section_ids": [
+        "CLASS_9_Lily"
+      ],
+      "weekly_quota": 6,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_377",
+      "subject": "Chem",
+      "teacher_ids": [
+        "Mraganshi"
+      ],
+      "section_ids": [
+        "CLASS_9_Lily"
+      ],
+      "weekly_quota": 3,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_378",
+      "subject": "Math",
+      "teacher_ids": [
+        "Somya Nayak"
+      ],
+      "section_ids": [
+        "CLASS_9_Lily"
+      ],
+      "weekly_quota": 9,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_379",
+      "subject": "Eng",
+      "teacher_ids": [
+        "Somya Rai"
+      ],
+      "section_ids": [
+        "CLASS_9_Lily"
+      ],
+      "weekly_quota": 5,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_380",
+      "subject": "Bio",
+      "teacher_ids": [
+        "Ram Kumar"
+      ],
+      "section_ids": [
+        "CLASS_9_Lily"
+      ],
+      "weekly_quota": 3,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_381",
+      "subject": "Hindi",
+      "teacher_ids": [
+        "Rashmi"
+      ],
+      "section_ids": [
+        "CLASS_9_Lily"
+      ],
+      "weekly_quota": 5,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_382",
+      "subject": "Physics",
+      "teacher_ids": [
+        "Anuj Jain"
+      ],
+      "section_ids": [
+        "CLASS_9_Lily"
+      ],
+      "weekly_quota": 3,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_383",
+      "subject": "Games",
+      "teacher_ids": [
+        "Geetesh"
+      ],
+      "section_ids": [
+        "CLASS_9_Lily"
+      ],
+      "weekly_quota": 2,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_384",
+      "subject": "Hindi",
+      "teacher_ids": [
+        "Rashmi"
+      ],
+      "section_ids": [
+        "CLASS_10_Rose"
+      ],
+      "weekly_quota": 5,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_385",
+      "subject": "Physics",
+      "teacher_ids": [
+        "Anuj Jain"
+      ],
+      "section_ids": [
+        "CLASS_10_Rose"
+      ],
+      "weekly_quota": 3,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_386",
+      "subject": "SST",
+      "teacher_ids": [
+        "Rahul Vish."
+      ],
+      "section_ids": [
+        "CLASS_10_Rose"
+      ],
+      "weekly_quota": 6,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_387",
+      "subject": "Math",
+      "teacher_ids": [
+        "Rajpal"
+      ],
+      "section_ids": [
+        "CLASS_10_Rose"
+      ],
+      "weekly_quota": 9,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_388",
+      "subject": "Eng",
+      "teacher_ids": [
+        "Somya Rai"
+      ],
+      "section_ids": [
+        "CLASS_10_Rose"
+      ],
+      "weekly_quota": 6,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_389",
+      "subject": "Bio",
+      "teacher_ids": [
+        "Ram Kumar"
+      ],
+      "section_ids": [
+        "CLASS_10_Rose"
+      ],
+      "weekly_quota": 3,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_390",
+      "subject": "Games",
+      "teacher_ids": [
+        "Geetesh"
+      ],
+      "section_ids": [
+        "CLASS_10_Rose"
+      ],
+      "weekly_quota": 1,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_391",
+      "subject": "Chem",
+      "teacher_ids": [
+        "Mraganshi"
+      ],
+      "section_ids": [
+        "CLASS_10_Rose"
+      ],
+      "weekly_quota": 3,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_392",
+      "subject": "Math",
+      "teacher_ids": [
+        "Jageshwar R"
+      ],
+      "section_ids": [
+        "CLASS_10_Marigold"
+      ],
+      "weekly_quota": 9,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_393",
+      "subject": "Eng",
+      "teacher_ids": [
+        "Jyotsharan"
+      ],
+      "section_ids": [
+        "CLASS_10_Marigold"
+      ],
+      "weekly_quota": 6,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_394",
+      "subject": "Chem",
+      "teacher_ids": [
+        "Divya Upadhaya"
+      ],
+      "section_ids": [
+        "CLASS_10_Marigold"
+      ],
+      "weekly_quota": 3,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_395",
+      "subject": "GAMES",
+      "teacher_ids": [
+        "Geetesh"
+      ],
+      "section_ids": [
+        "CLASS_10_Marigold"
+      ],
+      "weekly_quota": 1,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_396",
+      "subject": "SST",
+      "teacher_ids": [
+        "Rahul Vish."
+      ],
+      "section_ids": [
+        "CLASS_10_Marigold"
+      ],
+      "weekly_quota": 6,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_397",
+      "subject": "Physics",
+      "teacher_ids": [
+        "Anuj Jain"
+      ],
+      "section_ids": [
+        "CLASS_10_Marigold"
+      ],
+      "weekly_quota": 3,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_398",
+      "subject": "Hindi",
+      "teacher_ids": [
+        "Rashmi"
+      ],
+      "section_ids": [
+        "CLASS_10_Marigold"
+      ],
+      "weekly_quota": 5,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_399",
+      "subject": "Bio",
+      "teacher_ids": [
+        "Ram Kumar"
+      ],
+      "section_ids": [
+        "CLASS_10_Marigold"
+      ],
+      "weekly_quota": 3,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_400",
+      "subject": "Eng",
+      "teacher_ids": [
+        "Jyotsharan"
+      ],
+      "section_ids": [
+        "CLASS_10_Lily"
+      ],
+      "weekly_quota": 6,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_401",
+      "subject": "Hindi",
+      "teacher_ids": [
+        "Rashmi"
+      ],
+      "section_ids": [
+        "CLASS_10_Lily"
+      ],
+      "weekly_quota": 5,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_402",
+      "subject": "Physics",
+      "teacher_ids": [
+        "Anuj Jain"
+      ],
+      "section_ids": [
+        "CLASS_10_Lily"
+      ],
+      "weekly_quota": 3,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_403",
+      "subject": "Math",
+      "teacher_ids": [
+        "Jageshwar R"
+      ],
+      "section_ids": [
+        "CLASS_10_Lily"
+      ],
+      "weekly_quota": 9,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_404",
+      "subject": "SST",
+      "teacher_ids": [
+        "Rahul Vish."
+      ],
+      "section_ids": [
+        "CLASS_10_Lily"
+      ],
+      "weekly_quota": 6,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_405",
+      "subject": "Chem",
+      "teacher_ids": [
+        "Divya Upadhaya"
+      ],
+      "section_ids": [
+        "CLASS_10_Lily"
+      ],
+      "weekly_quota": 3,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_406",
+      "subject": "Bio",
+      "teacher_ids": [
+        "Ram Kumar"
+      ],
+      "section_ids": [
+        "CLASS_10_Lily"
+      ],
+      "weekly_quota": 3,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_407",
+      "subject": "Games",
+      "teacher_ids": [
+        "Geetesh"
+      ],
+      "section_ids": [
+        "CLASS_10_Lily"
+      ],
+      "weekly_quota": 1,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_408",
+      "subject": "Chem",
+      "teacher_ids": [
+        "Divya Upadhaya"
+      ],
+      "section_ids": [
+        "CLASS_11_(Bio_+_Math)"
+      ],
+      "weekly_quota": 9,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_409",
+      "subject": "Bio / Math",
+      "teacher_ids": [
+        "Ram Kumar, Rajpal"
+      ],
+      "section_ids": [
+        "CLASS_11_(Bio_+_Math)"
+      ],
+      "weekly_quota": 9,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_410",
+      "subject": "PE",
+      "teacher_ids": [
+        "Shailandra"
+      ],
+      "section_ids": [
+        "CLASS_11_(Bio_+_Math)"
+      ],
+      "weekly_quota": 2,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_411",
+      "subject": "Physics",
+      "teacher_ids": [
+        "Anuj Jain"
+      ],
+      "section_ids": [
+        "CLASS_11_(Bio_+_Math)"
+      ],
+      "weekly_quota": 9,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_412",
+      "subject": "Eng",
+      "teacher_ids": [
+        "Jyotsharan"
+      ],
+      "section_ids": [
+        "CLASS_11_(Bio_+_Math)"
+      ],
+      "weekly_quota": 6,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_413",
+      "subject": "PE Practical",
+      "teacher_ids": [
+        "Geetesh"
+      ],
+      "section_ids": [
+        "CLASS_11_(Bio_+_Math)"
+      ],
+      "weekly_quota": 1,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_414",
+      "subject": "PE Practical",
+      "teacher_ids": [
+        "Geetesh"
+      ],
+      "section_ids": [
+        "CLASS_11_Comm."
+      ],
+      "weekly_quota": 4,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_415",
+      "subject": "Eco",
+      "teacher_ids": [
+        "Rahul Vish."
+      ],
+      "section_ids": [
+        "CLASS_11_Comm."
+      ],
+      "weekly_quota": 6,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_416",
+      "subject": "BST",
+      "teacher_ids": [
+        "Manish Mathur"
+      ],
+      "section_ids": [
+        "CLASS_11_Comm."
+      ],
+      "weekly_quota": 6,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_417",
+      "subject": "Eng",
+      "teacher_ids": [
+        "Jyotsharan"
+      ],
+      "section_ids": [
+        "CLASS_11_Comm."
+      ],
+      "weekly_quota": 6,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_418",
+      "subject": "Account",
+      "teacher_ids": [
+        "Prashant"
+      ],
+      "section_ids": [
+        "CLASS_11_Comm."
+      ],
+      "weekly_quota": 9,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_419",
+      "subject": "Games",
+      "teacher_ids": [
+        "Geetesh"
+      ],
+      "section_ids": [
+        "CLASS_11_Comm."
+      ],
+      "weekly_quota": 3,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_420",
+      "subject": "PE",
+      "teacher_ids": [
+        "Shailandra"
+      ],
+      "section_ids": [
+        "CLASS_11_Comm."
+      ],
+      "weekly_quota": 2,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_421",
+      "subject": "Bio / Math",
+      "teacher_ids": [
+        "Ram Kumar, Rajpal"
+      ],
+      "section_ids": [
+        "CLASS_12_(Bio_+_Math)"
+      ],
+      "weekly_quota": 9,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_422",
+      "subject": "PE",
+      "teacher_ids": [
+        "Shailandra"
+      ],
+      "section_ids": [
+        "CLASS_12_(Bio_+_Math)"
+      ],
+      "weekly_quota": 2,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_423",
+      "subject": "Physics",
+      "teacher_ids": [
+        "Anuj Jain"
+      ],
+      "section_ids": [
+        "CLASS_12_(Bio_+_Math)"
+      ],
+      "weekly_quota": 9,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_424",
+      "subject": "Eng",
+      "teacher_ids": [
+        "Jyotsharan"
+      ],
+      "section_ids": [
+        "CLASS_12_(Bio_+_Math)"
+      ],
+      "weekly_quota": 6,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_425",
+      "subject": "Chem",
+      "teacher_ids": [
+        "Divya Upadhaya"
+      ],
+      "section_ids": [
+        "CLASS_12_(Bio_+_Math)"
+      ],
+      "weekly_quota": 9,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_426",
+      "subject": "Games",
+      "teacher_ids": [
+        "Geetesh"
+      ],
+      "section_ids": [
+        "CLASS_12_(Bio_+_Math)"
+      ],
+      "weekly_quota": 1,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_427",
+      "subject": "Eco",
+      "teacher_ids": [
+        "Rahul Vish."
+      ],
+      "section_ids": [
+        "CLASS_12_(Comm.)"
+      ],
+      "weekly_quota": 6,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_428",
+      "subject": "BST",
+      "teacher_ids": [
+        "Manish Mathur"
+      ],
+      "section_ids": [
+        "CLASS_12_(Comm.)"
+      ],
+      "weekly_quota": 6,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_429",
+      "subject": "Eng",
+      "teacher_ids": [
+        "Jyotsharan"
+      ],
+      "section_ids": [
+        "CLASS_12_(Comm.)"
+      ],
+      "weekly_quota": 6,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_430",
+      "subject": "Account",
+      "teacher_ids": [
+        "Rahul Vish."
+      ],
+      "section_ids": [
+        "CLASS_12_(Comm.)"
+      ],
+      "weekly_quota": 6,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_431",
+      "subject": "PE Practical",
+      "teacher_ids": [
+        "Geetesh"
+      ],
+      "section_ids": [
+        "CLASS_12_(Comm.)"
+      ],
+      "weekly_quota": 4,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_432",
+      "subject": "PE",
+      "teacher_ids": [
+        "Shailandra"
+      ],
+      "section_ids": [
+        "CLASS_12_(Comm.)"
+      ],
+      "weekly_quota": 2,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_433",
+      "subject": "Games",
+      "teacher_ids": [
+        "Geetesh"
+      ],
+      "section_ids": [
+        "CLASS_12_(Comm.)"
+      ],
+      "weekly_quota": 3,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_434",
+      "subject": "Account",
+      "teacher_ids": [
+        "Deepak (Left)"
+      ],
+      "section_ids": [
+        "CLASS_12_(Comm.)"
+      ],
+      "weekly_quota": 3,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_435",
+      "subject": "Eco",
+      "teacher_ids": [
+        "Rahul Vish."
+      ],
+      "section_ids": [
+        "CLASS_12_(Arts)"
+      ],
+      "weekly_quota": 6,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_436",
+      "subject": "Library",
+      "teacher_ids": [
+        "Shantanu"
+      ],
+      "section_ids": [
+        "CLASS_12_(Arts)"
+      ],
+      "weekly_quota": 6,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_437",
+      "subject": "Eng",
+      "teacher_ids": [
+        "Jyotsharan"
+      ],
+      "section_ids": [
+        "CLASS_12_(Arts)"
+      ],
+      "weekly_quota": 6,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_438",
+      "subject": "Political Sci",
+      "teacher_ids": [
+        "Prashant"
+      ],
+      "section_ids": [
+        "CLASS_12_(Arts)"
+      ],
+      "weekly_quota": 6,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_439",
+      "subject": "Geo",
+      "teacher_ids": [
+        "Manish Mathur"
+      ],
+      "section_ids": [
+        "CLASS_12_(Arts)"
+      ],
+      "weekly_quota": 6,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_440",
+      "subject": "PE",
+      "teacher_ids": [
+        "Shailandra"
+      ],
+      "section_ids": [
+        "CLASS_12_(Arts)"
+      ],
+      "weekly_quota": 2,
+      "room_type": "Classroom",
+      "duration": 1
+    },
+    {
+      "id": "EV_441",
+      "subject": "PE Practical",
+      "teacher_ids": [
+        "Geetesh"
+      ],
+      "section_ids": [
+        "CLASS_12_(Arts)"
+      ],
+      "weekly_quota": 4,
+      "room_type": "Classroom",
+      "duration": 1
+    }
+  ],
+  "baskets": []
+}
