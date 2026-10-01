@@ -21,7 +21,7 @@
         {
           "period_index": 1,
           "period_name": "1st Period",
-          "period_time": "08:30 to 9:15",
+          "period_time": "08:30 to 09:10 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -30,7 +30,7 @@
         {
           "period_index": 2,
           "period_name": "2nd Period",
-          "period_time": "9:15 to 10:00",
+          "period_time": "09:10 AM to 09:55 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -39,7 +39,7 @@
         {
           "period_index": 3,
           "period_name": "3rd Period",
-          "period_time": "10:00 to 10:45",
+          "period_time": "09:55 AM to 10:40 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -48,7 +48,7 @@
         {
           "period_index": 4,
           "period_name": "Lunch",
-          "period_time": "10:45 to 11:05",
+          "period_time": "10:40 AM to 11:00 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -57,7 +57,7 @@
         {
           "period_index": 5,
           "period_name": "4th Period",
-          "period_time": "11:05 to 11:50",
+          "period_time": "11:00 AM to 11:45 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -66,7 +66,7 @@
         {
           "period_index": 6,
           "period_name": "5th Period",
-          "period_time": "11:50 to 12:30",
+          "period_time": "11:45 AM to 12:25 PM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -75,7 +75,7 @@
         {
           "period_index": 7,
           "period_name": "6th Period",
-          "period_time": "12:30 to 1:10",
+          "period_time": "12:25 PM to 01:05 PM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -84,7 +84,7 @@
         {
           "period_index": 8,
           "period_name": "7th Period",
-          "period_time": "1:10 to 1:50",
+          "period_time": "01:05 PM to 01:45 PM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -104,7 +104,7 @@
         {
           "period_index": 1,
           "period_name": "1st Period",
-          "period_time": "08:30 to 9:15",
+          "period_time": "08:30 to 09:10 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -113,7 +113,7 @@
         {
           "period_index": 2,
           "period_name": "2nd Period",
-          "period_time": "9:15 to 10:00",
+          "period_time": "09:10 AM to 09:55 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -122,7 +122,7 @@
         {
           "period_index": 3,
           "period_name": "3rd Period",
-          "period_time": "10:00 to 10:45",
+          "period_time": "09:55 AM to 10:40 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -131,7 +131,7 @@
         {
           "period_index": 4,
           "period_name": "Lunch",
-          "period_time": "10:45 to 11:05",
+          "period_time": "10:40 AM to 11:00 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -140,7 +140,7 @@
         {
           "period_index": 5,
           "period_name": "4th Period",
-          "period_time": "11:05 to 11:50",
+          "period_time": "11:00 AM to 11:45 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -149,7 +149,7 @@
         {
           "period_index": 6,
           "period_name": "5th Period",
-          "period_time": "11:50 to 12:30",
+          "period_time": "11:45 AM to 12:25 PM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -158,7 +158,7 @@
         {
           "period_index": 7,
           "period_name": "6th Period",
-          "period_time": "12:30 to 1:10",
+          "period_time": "12:25 PM to 01:05 PM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -167,7 +167,7 @@
         {
           "period_index": 8,
           "period_name": "7th Period",
-          "period_time": "1:10 to 1:50",
+          "period_time": "01:05 PM to 01:45 PM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -187,7 +187,7 @@
         {
           "period_index": 1,
           "period_name": "1st Period",
-          "period_time": "08:30 to 9:15",
+          "period_time": "08:30 to 09:10 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -196,7 +196,7 @@
         {
           "period_index": 2,
           "period_name": "2nd Period",
-          "period_time": "9:15 to 10:00",
+          "period_time": "09:10 AM to 09:55 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -205,7 +205,7 @@
         {
           "period_index": 3,
           "period_name": "3rd Period",
-          "period_time": "10:00 to 10:45",
+          "period_time": "09:55 AM to 10:40 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -214,7 +214,7 @@
         {
           "period_index": 4,
           "period_name": "Lunch",
-          "period_time": "10:45 to 11:05",
+          "period_time": "10:40 AM to 11:00 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -223,7 +223,7 @@
         {
           "period_index": 5,
           "period_name": "4th Period",
-          "period_time": "11:05 to 11:50",
+          "period_time": "11:00 AM to 11:45 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -232,7 +232,7 @@
         {
           "period_index": 6,
           "period_name": "5th Period",
-          "period_time": "11:50 to 12:30",
+          "period_time": "11:45 AM to 12:25 PM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -241,7 +241,7 @@
         {
           "period_index": 7,
           "period_name": "6th Period",
-          "period_time": "12:30 to 1:10",
+          "period_time": "12:25 PM to 01:05 PM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -250,7 +250,7 @@
         {
           "period_index": 8,
           "period_name": "7th Period",
-          "period_time": "1:10 to 1:50",
+          "period_time": "01:05 PM to 01:45 PM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -270,7 +270,7 @@
         {
           "period_index": 1,
           "period_name": "1st Period",
-          "period_time": "08:30 to 9:15",
+          "period_time": "08:30 to 09:10 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -279,7 +279,7 @@
         {
           "period_index": 2,
           "period_name": "2nd Period",
-          "period_time": "9:15 to 10:00",
+          "period_time": "09:10 AM to 09:55 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -288,7 +288,7 @@
         {
           "period_index": 3,
           "period_name": "3rd Period",
-          "period_time": "10:00 to 10:45",
+          "period_time": "09:55 AM to 10:40 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -297,7 +297,7 @@
         {
           "period_index": 4,
           "period_name": "Lunch",
-          "period_time": "10:45 to 11:05",
+          "period_time": "10:40 AM to 11:00 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -306,7 +306,7 @@
         {
           "period_index": 5,
           "period_name": "4th Period",
-          "period_time": "11:05 to 11:50",
+          "period_time": "11:00 AM to 11:45 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -315,7 +315,7 @@
         {
           "period_index": 6,
           "period_name": "5th Period",
-          "period_time": "11:50 to 12:30",
+          "period_time": "11:45 AM to 12:25 PM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -324,7 +324,7 @@
         {
           "period_index": 7,
           "period_name": "6th Period",
-          "period_time": "12:30 to 1:10",
+          "period_time": "12:25 PM to 01:05 PM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -333,7 +333,7 @@
         {
           "period_index": 8,
           "period_name": "7th Period",
-          "period_time": "1:10 to 1:50",
+          "period_time": "01:05 PM to 01:45 PM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -353,7 +353,7 @@
         {
           "period_index": 1,
           "period_name": "1st Period",
-          "period_time": "08:30 to 9:15",
+          "period_time": "08:30 to 09:10 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -362,7 +362,7 @@
         {
           "period_index": 2,
           "period_name": "2nd Period",
-          "period_time": "9:15 to 10:00",
+          "period_time": "09:10 AM to 09:55 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -371,7 +371,7 @@
         {
           "period_index": 3,
           "period_name": "3rd Period",
-          "period_time": "10:00 to 10:45",
+          "period_time": "09:55 AM to 10:40 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -380,7 +380,7 @@
         {
           "period_index": 4,
           "period_name": "Lunch",
-          "period_time": "10:45 to 11:05",
+          "period_time": "10:40 AM to 11:00 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -389,7 +389,7 @@
         {
           "period_index": 5,
           "period_name": "4th Period",
-          "period_time": "11:05 to 11:50",
+          "period_time": "11:00 AM to 11:45 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -398,7 +398,7 @@
         {
           "period_index": 6,
           "period_name": "5th Period",
-          "period_time": "11:50 to 12:30",
+          "period_time": "11:45 AM to 12:25 PM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -407,7 +407,7 @@
         {
           "period_index": 7,
           "period_name": "6th Period",
-          "period_time": "12:30 to 1:10",
+          "period_time": "12:25 PM to 01:05 PM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -416,7 +416,7 @@
         {
           "period_index": 8,
           "period_name": "7th Period",
-          "period_time": "1:10 to 1:50",
+          "period_time": "01:05 PM to 01:45 PM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -436,7 +436,7 @@
         {
           "period_index": 1,
           "period_name": "1st Period",
-          "period_time": "08:30 to 9:15",
+          "period_time": "08:30 to 09:10 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -445,7 +445,7 @@
         {
           "period_index": 2,
           "period_name": "2nd Period",
-          "period_time": "9:15 to 10:00",
+          "period_time": "09:10 AM to 09:55 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -454,7 +454,7 @@
         {
           "period_index": 3,
           "period_name": "3rd Period",
-          "period_time": "10:00 to 10:45",
+          "period_time": "09:55 AM to 10:40 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -463,7 +463,7 @@
         {
           "period_index": 4,
           "period_name": "Lunch",
-          "period_time": "10:45 to 11:05",
+          "period_time": "10:40 AM to 11:00 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -472,7 +472,7 @@
         {
           "period_index": 5,
           "period_name": "4th Period",
-          "period_time": "11:05 to 11:50",
+          "period_time": "11:00 AM to 11:45 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -481,7 +481,7 @@
         {
           "period_index": 6,
           "period_name": "5th Period",
-          "period_time": "11:50 to 12:30",
+          "period_time": "11:45 AM to 12:25 PM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -490,7 +490,7 @@
         {
           "period_index": 7,
           "period_name": "6th Period",
-          "period_time": "12:30 to 1:10",
+          "period_time": "12:25 PM to 01:05 PM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -499,7 +499,7 @@
         {
           "period_index": 8,
           "period_name": "7th Period",
-          "period_time": "1:10 to 1:50",
+          "period_time": "01:05 PM to 01:45 PM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -530,7 +530,7 @@
         {
           "period_index": 1,
           "period_name": "1st Period",
-          "period_time": "08:30 to 9:15",
+          "period_time": "08:30 to 09:10 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -539,7 +539,7 @@
         {
           "period_index": 2,
           "period_name": "2nd Period",
-          "period_time": "9:15 to 10:00",
+          "period_time": "09:10 AM to 09:55 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -548,7 +548,7 @@
         {
           "period_index": 3,
           "period_name": "3rd Period",
-          "period_time": "10:00 to 10:45",
+          "period_time": "09:55 AM to 10:40 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -557,7 +557,7 @@
         {
           "period_index": 4,
           "period_name": "Lunch",
-          "period_time": "10:45 to 11:05",
+          "period_time": "10:40 AM to 11:00 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -566,7 +566,7 @@
         {
           "period_index": 5,
           "period_name": "4th Period",
-          "period_time": "11:05 to 11:50",
+          "period_time": "11:00 AM to 11:45 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -575,7 +575,7 @@
         {
           "period_index": 6,
           "period_name": "5th Period",
-          "period_time": "11:50 to 12:30",
+          "period_time": "11:45 AM to 12:25 PM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -584,7 +584,7 @@
         {
           "period_index": 7,
           "period_name": "6th Period",
-          "period_time": "12:30 to 1:10",
+          "period_time": "12:25 PM to 01:05 PM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -593,7 +593,7 @@
         {
           "period_index": 8,
           "period_name": "7th Period",
-          "period_time": "1:10 to 1:50",
+          "period_time": "01:05 PM to 01:45 PM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -613,7 +613,7 @@
         {
           "period_index": 1,
           "period_name": "1st Period",
-          "period_time": "08:30 to 9:15",
+          "period_time": "08:30 to 09:10 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -622,7 +622,7 @@
         {
           "period_index": 2,
           "period_name": "2nd Period",
-          "period_time": "9:15 to 10:00",
+          "period_time": "09:10 AM to 09:55 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -631,7 +631,7 @@
         {
           "period_index": 3,
           "period_name": "3rd Period",
-          "period_time": "10:00 to 10:45",
+          "period_time": "09:55 AM to 10:40 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -640,7 +640,7 @@
         {
           "period_index": 4,
           "period_name": "Lunch",
-          "period_time": "10:45 to 11:05",
+          "period_time": "10:40 AM to 11:00 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -649,7 +649,7 @@
         {
           "period_index": 5,
           "period_name": "4th Period",
-          "period_time": "11:05 to 11:50",
+          "period_time": "11:00 AM to 11:45 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -658,7 +658,7 @@
         {
           "period_index": 6,
           "period_name": "5th Period",
-          "period_time": "11:50 to 12:30",
+          "period_time": "11:45 AM to 12:25 PM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -667,7 +667,7 @@
         {
           "period_index": 7,
           "period_name": "6th Period",
-          "period_time": "12:30 to 1:10",
+          "period_time": "12:25 PM to 01:05 PM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -676,7 +676,7 @@
         {
           "period_index": 8,
           "period_name": "7th Period",
-          "period_time": "1:10 to 1:50",
+          "period_time": "01:05 PM to 01:45 PM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -696,7 +696,7 @@
         {
           "period_index": 1,
           "period_name": "1st Period",
-          "period_time": "08:30 to 9:15",
+          "period_time": "08:30 to 09:10 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -705,7 +705,7 @@
         {
           "period_index": 2,
           "period_name": "2nd Period",
-          "period_time": "9:15 to 10:00",
+          "period_time": "09:10 AM to 09:55 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -714,7 +714,7 @@
         {
           "period_index": 3,
           "period_name": "3rd Period",
-          "period_time": "10:00 to 10:45",
+          "period_time": "09:55 AM to 10:40 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -723,7 +723,7 @@
         {
           "period_index": 4,
           "period_name": "Lunch",
-          "period_time": "10:45 to 11:05",
+          "period_time": "10:40 AM to 11:00 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -732,7 +732,7 @@
         {
           "period_index": 5,
           "period_name": "4th Period",
-          "period_time": "11:05 to 11:50",
+          "period_time": "11:00 AM to 11:45 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -741,7 +741,7 @@
         {
           "period_index": 6,
           "period_name": "5th Period",
-          "period_time": "11:50 to 12:30",
+          "period_time": "11:45 AM to 12:25 PM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -750,7 +750,7 @@
         {
           "period_index": 7,
           "period_name": "6th Period",
-          "period_time": "12:30 to 1:10",
+          "period_time": "12:25 PM to 01:05 PM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -759,7 +759,7 @@
         {
           "period_index": 8,
           "period_name": "7th Period",
-          "period_time": "1:10 to 1:50",
+          "period_time": "01:05 PM to 01:45 PM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -779,7 +779,7 @@
         {
           "period_index": 1,
           "period_name": "1st Period",
-          "period_time": "08:30 to 9:15",
+          "period_time": "08:30 to 09:10 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -788,7 +788,7 @@
         {
           "period_index": 2,
           "period_name": "2nd Period",
-          "period_time": "9:15 to 10:00",
+          "period_time": "09:10 AM to 09:55 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -797,7 +797,7 @@
         {
           "period_index": 3,
           "period_name": "3rd Period",
-          "period_time": "10:00 to 10:45",
+          "period_time": "09:55 AM to 10:40 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -806,7 +806,7 @@
         {
           "period_index": 4,
           "period_name": "Lunch",
-          "period_time": "10:45 to 11:05",
+          "period_time": "10:40 AM to 11:00 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -815,7 +815,7 @@
         {
           "period_index": 5,
           "period_name": "4th Period",
-          "period_time": "11:05 to 11:50",
+          "period_time": "11:00 AM to 11:45 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -824,7 +824,7 @@
         {
           "period_index": 6,
           "period_name": "5th Period",
-          "period_time": "11:50 to 12:30",
+          "period_time": "11:45 AM to 12:25 PM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -833,7 +833,7 @@
         {
           "period_index": 7,
           "period_name": "6th Period",
-          "period_time": "12:30 to 1:10",
+          "period_time": "12:25 PM to 01:05 PM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -842,7 +842,7 @@
         {
           "period_index": 8,
           "period_name": "7th Period",
-          "period_time": "1:10 to 1:50",
+          "period_time": "01:05 PM to 01:45 PM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -862,7 +862,7 @@
         {
           "period_index": 1,
           "period_name": "1st Period",
-          "period_time": "08:30 to 9:15",
+          "period_time": "08:30 to 09:10 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -871,7 +871,7 @@
         {
           "period_index": 2,
           "period_name": "2nd Period",
-          "period_time": "9:15 to 10:00",
+          "period_time": "09:10 AM to 09:55 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -880,7 +880,7 @@
         {
           "period_index": 3,
           "period_name": "3rd Period",
-          "period_time": "10:00 to 10:45",
+          "period_time": "09:55 AM to 10:40 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -889,7 +889,7 @@
         {
           "period_index": 4,
           "period_name": "Lunch",
-          "period_time": "10:45 to 11:05",
+          "period_time": "10:40 AM to 11:00 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -898,7 +898,7 @@
         {
           "period_index": 5,
           "period_name": "4th Period",
-          "period_time": "11:05 to 11:50",
+          "period_time": "11:00 AM to 11:45 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -907,7 +907,7 @@
         {
           "period_index": 6,
           "period_name": "5th Period",
-          "period_time": "11:50 to 12:30",
+          "period_time": "11:45 AM to 12:25 PM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -916,7 +916,7 @@
         {
           "period_index": 7,
           "period_name": "6th Period",
-          "period_time": "12:30 to 1:10",
+          "period_time": "12:25 PM to 01:05 PM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -925,7 +925,7 @@
         {
           "period_index": 8,
           "period_name": "7th Period",
-          "period_time": "1:10 to 1:50",
+          "period_time": "01:05 PM to 01:45 PM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -945,7 +945,7 @@
         {
           "period_index": 1,
           "period_name": "1st Period",
-          "period_time": "08:30 to 9:15",
+          "period_time": "08:30 to 09:10 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -954,7 +954,7 @@
         {
           "period_index": 2,
           "period_name": "2nd Period",
-          "period_time": "9:15 to 10:00",
+          "period_time": "09:10 AM to 09:55 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -963,7 +963,7 @@
         {
           "period_index": 3,
           "period_name": "3rd Period",
-          "period_time": "10:00 to 10:45",
+          "period_time": "09:55 AM to 10:40 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -972,7 +972,7 @@
         {
           "period_index": 4,
           "period_name": "Lunch",
-          "period_time": "10:45 to 11:05",
+          "period_time": "10:40 AM to 11:00 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -981,7 +981,7 @@
         {
           "period_index": 5,
           "period_name": "4th Period",
-          "period_time": "11:05 to 11:50",
+          "period_time": "11:00 AM to 11:45 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -990,7 +990,7 @@
         {
           "period_index": 6,
           "period_name": "5th Period",
-          "period_time": "11:50 to 12:30",
+          "period_time": "11:45 AM to 12:25 PM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -999,7 +999,7 @@
         {
           "period_index": 7,
           "period_name": "6th Period",
-          "period_time": "12:30 to 1:10",
+          "period_time": "12:25 PM to 01:05 PM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -1008,7 +1008,7 @@
         {
           "period_index": 8,
           "period_name": "7th Period",
-          "period_time": "1:10 to 1:50",
+          "period_time": "01:05 PM to 01:45 PM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -1039,7 +1039,7 @@
         {
           "period_index": 1,
           "period_name": "1st Period",
-          "period_time": "08:30 to 9:15",
+          "period_time": "08:30 to 09:10 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -1048,7 +1048,7 @@
         {
           "period_index": 2,
           "period_name": "2nd Period",
-          "period_time": "9:15 to 10:00",
+          "period_time": "09:10 AM to 09:55 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -1057,7 +1057,7 @@
         {
           "period_index": 3,
           "period_name": "3rd Period",
-          "period_time": "10:00 to 10:45",
+          "period_time": "09:55 AM to 10:40 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -1066,7 +1066,7 @@
         {
           "period_index": 4,
           "period_name": "Lunch",
-          "period_time": "10:45 to 11:05",
+          "period_time": "10:40 AM to 11:00 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -1075,7 +1075,7 @@
         {
           "period_index": 5,
           "period_name": "4th Period",
-          "period_time": "11:05 to 11:50",
+          "period_time": "11:00 AM to 11:45 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -1084,7 +1084,7 @@
         {
           "period_index": 6,
           "period_name": "5th Period",
-          "period_time": "11:50 to 12:30",
+          "period_time": "11:45 AM to 12:25 PM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -1093,7 +1093,7 @@
         {
           "period_index": 7,
           "period_name": "6th Period",
-          "period_time": "12:30 to 1:10",
+          "period_time": "12:25 PM to 01:05 PM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -1102,7 +1102,7 @@
         {
           "period_index": 8,
           "period_name": "7th Period",
-          "period_time": "1:10 to 1:50",
+          "period_time": "01:05 PM to 01:45 PM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -1122,7 +1122,7 @@
         {
           "period_index": 1,
           "period_name": "1st Period",
-          "period_time": "08:30 to 9:15",
+          "period_time": "08:30 to 09:10 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -1131,7 +1131,7 @@
         {
           "period_index": 2,
           "period_name": "2nd Period",
-          "period_time": "9:15 to 10:00",
+          "period_time": "09:10 AM to 09:55 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -1140,7 +1140,7 @@
         {
           "period_index": 3,
           "period_name": "3rd Period",
-          "period_time": "10:00 to 10:45",
+          "period_time": "09:55 AM to 10:40 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -1149,7 +1149,7 @@
         {
           "period_index": 4,
           "period_name": "Lunch",
-          "period_time": "10:45 to 11:05",
+          "period_time": "10:40 AM to 11:00 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -1158,7 +1158,7 @@
         {
           "period_index": 5,
           "period_name": "4th Period",
-          "period_time": "11:05 to 11:50",
+          "period_time": "11:00 AM to 11:45 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -1167,7 +1167,7 @@
         {
           "period_index": 6,
           "period_name": "5th Period",
-          "period_time": "11:50 to 12:30",
+          "period_time": "11:45 AM to 12:25 PM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -1176,7 +1176,7 @@
         {
           "period_index": 7,
           "period_name": "6th Period",
-          "period_time": "12:30 to 1:10",
+          "period_time": "12:25 PM to 01:05 PM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -1185,7 +1185,7 @@
         {
           "period_index": 8,
           "period_name": "7th Period",
-          "period_time": "1:10 to 1:50",
+          "period_time": "01:05 PM to 01:45 PM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -1205,7 +1205,7 @@
         {
           "period_index": 1,
           "period_name": "1st Period",
-          "period_time": "08:30 to 9:15",
+          "period_time": "08:30 to 09:10 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -1214,7 +1214,7 @@
         {
           "period_index": 2,
           "period_name": "2nd Period",
-          "period_time": "9:15 to 10:00",
+          "period_time": "09:10 AM to 09:55 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -1223,7 +1223,7 @@
         {
           "period_index": 3,
           "period_name": "3rd Period",
-          "period_time": "10:00 to 10:45",
+          "period_time": "09:55 AM to 10:40 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -1232,7 +1232,7 @@
         {
           "period_index": 4,
           "period_name": "Lunch",
-          "period_time": "10:45 to 11:05",
+          "period_time": "10:40 AM to 11:00 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -1241,7 +1241,7 @@
         {
           "period_index": 5,
           "period_name": "4th Period",
-          "period_time": "11:05 to 11:50",
+          "period_time": "11:00 AM to 11:45 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -1250,7 +1250,7 @@
         {
           "period_index": 6,
           "period_name": "5th Period",
-          "period_time": "11:50 to 12:30",
+          "period_time": "11:45 AM to 12:25 PM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -1259,7 +1259,7 @@
         {
           "period_index": 7,
           "period_name": "6th Period",
-          "period_time": "12:30 to 1:10",
+          "period_time": "12:25 PM to 01:05 PM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -1268,7 +1268,7 @@
         {
           "period_index": 8,
           "period_name": "7th Period",
-          "period_time": "1:10 to 1:50",
+          "period_time": "01:05 PM to 01:45 PM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -1288,7 +1288,7 @@
         {
           "period_index": 1,
           "period_name": "1st Period",
-          "period_time": "08:30 to 9:15",
+          "period_time": "08:30 to 09:10 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -1297,7 +1297,7 @@
         {
           "period_index": 2,
           "period_name": "2nd Period",
-          "period_time": "9:15 to 10:00",
+          "period_time": "09:10 AM to 09:55 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -1306,7 +1306,7 @@
         {
           "period_index": 3,
           "period_name": "3rd Period",
-          "period_time": "10:00 to 10:45",
+          "period_time": "09:55 AM to 10:40 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -1315,7 +1315,7 @@
         {
           "period_index": 4,
           "period_name": "Lunch",
-          "period_time": "10:45 to 11:05",
+          "period_time": "10:40 AM to 11:00 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -1324,7 +1324,7 @@
         {
           "period_index": 5,
           "period_name": "4th Period",
-          "period_time": "11:05 to 11:50",
+          "period_time": "11:00 AM to 11:45 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -1333,7 +1333,7 @@
         {
           "period_index": 6,
           "period_name": "5th Period",
-          "period_time": "11:50 to 12:30",
+          "period_time": "11:45 AM to 12:25 PM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -1342,7 +1342,7 @@
         {
           "period_index": 7,
           "period_name": "6th Period",
-          "period_time": "12:30 to 1:10",
+          "period_time": "12:25 PM to 01:05 PM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -1351,7 +1351,7 @@
         {
           "period_index": 8,
           "period_name": "7th Period",
-          "period_time": "1:10 to 1:50",
+          "period_time": "01:05 PM to 01:45 PM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -1371,7 +1371,7 @@
         {
           "period_index": 1,
           "period_name": "1st Period",
-          "period_time": "08:30 to 9:15",
+          "period_time": "08:30 to 09:10 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -1380,7 +1380,7 @@
         {
           "period_index": 2,
           "period_name": "2nd Period",
-          "period_time": "9:15 to 10:00",
+          "period_time": "09:10 AM to 09:55 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -1389,7 +1389,7 @@
         {
           "period_index": 3,
           "period_name": "3rd Period",
-          "period_time": "10:00 to 10:45",
+          "period_time": "09:55 AM to 10:40 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -1398,7 +1398,7 @@
         {
           "period_index": 4,
           "period_name": "Lunch",
-          "period_time": "10:45 to 11:05",
+          "period_time": "10:40 AM to 11:00 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -1407,7 +1407,7 @@
         {
           "period_index": 5,
           "period_name": "4th Period",
-          "period_time": "11:05 to 11:50",
+          "period_time": "11:00 AM to 11:45 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -1416,7 +1416,7 @@
         {
           "period_index": 6,
           "period_name": "5th Period",
-          "period_time": "11:50 to 12:30",
+          "period_time": "11:45 AM to 12:25 PM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -1425,7 +1425,7 @@
         {
           "period_index": 7,
           "period_name": "6th Period",
-          "period_time": "12:30 to 1:10",
+          "period_time": "12:25 PM to 01:05 PM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -1434,7 +1434,7 @@
         {
           "period_index": 8,
           "period_name": "7th Period",
-          "period_time": "1:10 to 1:50",
+          "period_time": "01:05 PM to 01:45 PM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -1454,7 +1454,7 @@
         {
           "period_index": 1,
           "period_name": "1st Period",
-          "period_time": "08:30 to 9:15",
+          "period_time": "08:30 to 09:10 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -1463,7 +1463,7 @@
         {
           "period_index": 2,
           "period_name": "2nd Period",
-          "period_time": "9:15 to 10:00",
+          "period_time": "09:10 AM to 09:55 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -1472,7 +1472,7 @@
         {
           "period_index": 3,
           "period_name": "3rd Period",
-          "period_time": "10:00 to 10:45",
+          "period_time": "09:55 AM to 10:40 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -1481,7 +1481,7 @@
         {
           "period_index": 4,
           "period_name": "Lunch",
-          "period_time": "10:45 to 11:05",
+          "period_time": "10:40 AM to 11:00 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -1490,7 +1490,7 @@
         {
           "period_index": 5,
           "period_name": "4th Period",
-          "period_time": "11:05 to 11:50",
+          "period_time": "11:00 AM to 11:45 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -1499,7 +1499,7 @@
         {
           "period_index": 6,
           "period_name": "5th Period",
-          "period_time": "11:50 to 12:30",
+          "period_time": "11:45 AM to 12:25 PM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -1508,7 +1508,7 @@
         {
           "period_index": 7,
           "period_name": "6th Period",
-          "period_time": "12:30 to 1:10",
+          "period_time": "12:25 PM to 01:05 PM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -1517,7 +1517,7 @@
         {
           "period_index": 8,
           "period_name": "7th Period",
-          "period_time": "1:10 to 1:50",
+          "period_time": "01:05 PM to 01:45 PM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -1548,7 +1548,7 @@
         {
           "period_index": 1,
           "period_name": "1st Period",
-          "period_time": "08:30 to 9:15",
+          "period_time": "08:30 to 09:10 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -1557,7 +1557,7 @@
         {
           "period_index": 2,
           "period_name": "2nd Period",
-          "period_time": "9:15 to 10:00",
+          "period_time": "09:10 AM to 09:55 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -1566,7 +1566,7 @@
         {
           "period_index": 3,
           "period_name": "3rd Period",
-          "period_time": "10:00 to 10:45",
+          "period_time": "09:55 AM to 10:40 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -1575,7 +1575,7 @@
         {
           "period_index": 4,
           "period_name": "Lunch",
-          "period_time": "10:45 to 11:05",
+          "period_time": "10:40 AM to 11:00 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -1584,7 +1584,7 @@
         {
           "period_index": 5,
           "period_name": "4th Period",
-          "period_time": "11:05 to 11:50",
+          "period_time": "11:00 AM to 11:45 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -1593,7 +1593,7 @@
         {
           "period_index": 6,
           "period_name": "5th Period",
-          "period_time": "11:50 to 12:30",
+          "period_time": "11:45 AM to 12:25 PM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -1602,7 +1602,7 @@
         {
           "period_index": 7,
           "period_name": "6th Period",
-          "period_time": "12:30 to 1:10",
+          "period_time": "12:25 PM to 01:05 PM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -1611,7 +1611,7 @@
         {
           "period_index": 8,
           "period_name": "7th Period",
-          "period_time": "1:10 to 1:50",
+          "period_time": "01:05 PM to 01:45 PM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -1631,7 +1631,7 @@
         {
           "period_index": 1,
           "period_name": "1st Period",
-          "period_time": "08:30 to 9:15",
+          "period_time": "08:30 to 09:10 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -1640,7 +1640,7 @@
         {
           "period_index": 2,
           "period_name": "2nd Period",
-          "period_time": "9:15 to 10:00",
+          "period_time": "09:10 AM to 09:55 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -1649,7 +1649,7 @@
         {
           "period_index": 3,
           "period_name": "3rd Period",
-          "period_time": "10:00 to 10:45",
+          "period_time": "09:55 AM to 10:40 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -1658,7 +1658,7 @@
         {
           "period_index": 4,
           "period_name": "Lunch",
-          "period_time": "10:45 to 11:05",
+          "period_time": "10:40 AM to 11:00 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -1667,7 +1667,7 @@
         {
           "period_index": 5,
           "period_name": "4th Period",
-          "period_time": "11:05 to 11:50",
+          "period_time": "11:00 AM to 11:45 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -1676,7 +1676,7 @@
         {
           "period_index": 6,
           "period_name": "5th Period",
-          "period_time": "11:50 to 12:30",
+          "period_time": "11:45 AM to 12:25 PM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -1685,7 +1685,7 @@
         {
           "period_index": 7,
           "period_name": "6th Period",
-          "period_time": "12:30 to 1:10",
+          "period_time": "12:25 PM to 01:05 PM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -1694,7 +1694,7 @@
         {
           "period_index": 8,
           "period_name": "7th Period",
-          "period_time": "1:10 to 1:50",
+          "period_time": "01:05 PM to 01:45 PM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -1714,7 +1714,7 @@
         {
           "period_index": 1,
           "period_name": "1st Period",
-          "period_time": "08:30 to 9:15",
+          "period_time": "08:30 to 09:10 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -1723,7 +1723,7 @@
         {
           "period_index": 2,
           "period_name": "2nd Period",
-          "period_time": "9:15 to 10:00",
+          "period_time": "09:10 AM to 09:55 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -1732,7 +1732,7 @@
         {
           "period_index": 3,
           "period_name": "3rd Period",
-          "period_time": "10:00 to 10:45",
+          "period_time": "09:55 AM to 10:40 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -1741,7 +1741,7 @@
         {
           "period_index": 4,
           "period_name": "Lunch",
-          "period_time": "10:45 to 11:05",
+          "period_time": "10:40 AM to 11:00 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -1750,7 +1750,7 @@
         {
           "period_index": 5,
           "period_name": "4th Period",
-          "period_time": "11:05 to 11:50",
+          "period_time": "11:00 AM to 11:45 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -1759,7 +1759,7 @@
         {
           "period_index": 6,
           "period_name": "5th Period",
-          "period_time": "11:50 to 12:30",
+          "period_time": "11:45 AM to 12:25 PM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -1768,7 +1768,7 @@
         {
           "period_index": 7,
           "period_name": "6th Period",
-          "period_time": "12:30 to 1:10",
+          "period_time": "12:25 PM to 01:05 PM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -1777,7 +1777,7 @@
         {
           "period_index": 8,
           "period_name": "7th Period",
-          "period_time": "1:10 to 1:50",
+          "period_time": "01:05 PM to 01:45 PM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -1797,7 +1797,7 @@
         {
           "period_index": 1,
           "period_name": "1st Period",
-          "period_time": "08:30 to 9:15",
+          "period_time": "08:30 to 09:10 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -1806,7 +1806,7 @@
         {
           "period_index": 2,
           "period_name": "2nd Period",
-          "period_time": "9:15 to 10:00",
+          "period_time": "09:10 AM to 09:55 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -1815,7 +1815,7 @@
         {
           "period_index": 3,
           "period_name": "3rd Period",
-          "period_time": "10:00 to 10:45",
+          "period_time": "09:55 AM to 10:40 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -1824,7 +1824,7 @@
         {
           "period_index": 4,
           "period_name": "Lunch",
-          "period_time": "10:45 to 11:05",
+          "period_time": "10:40 AM to 11:00 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -1833,7 +1833,7 @@
         {
           "period_index": 5,
           "period_name": "4th Period",
-          "period_time": "11:05 to 11:50",
+          "period_time": "11:00 AM to 11:45 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -1842,7 +1842,7 @@
         {
           "period_index": 6,
           "period_name": "5th Period",
-          "period_time": "11:50 to 12:30",
+          "period_time": "11:45 AM to 12:25 PM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -1851,7 +1851,7 @@
         {
           "period_index": 7,
           "period_name": "6th Period",
-          "period_time": "12:30 to 1:10",
+          "period_time": "12:25 PM to 01:05 PM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -1860,7 +1860,7 @@
         {
           "period_index": 8,
           "period_name": "7th Period",
-          "period_time": "1:10 to 1:50",
+          "period_time": "01:05 PM to 01:45 PM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -1880,7 +1880,7 @@
         {
           "period_index": 1,
           "period_name": "1st Period",
-          "period_time": "08:30 to 9:15",
+          "period_time": "08:30 to 09:10 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -1889,7 +1889,7 @@
         {
           "period_index": 2,
           "period_name": "2nd Period",
-          "period_time": "9:15 to 10:00",
+          "period_time": "09:10 AM to 09:55 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -1898,7 +1898,7 @@
         {
           "period_index": 3,
           "period_name": "3rd Period",
-          "period_time": "10:00 to 10:45",
+          "period_time": "09:55 AM to 10:40 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -1907,7 +1907,7 @@
         {
           "period_index": 4,
           "period_name": "Lunch",
-          "period_time": "10:45 to 11:05",
+          "period_time": "10:40 AM to 11:00 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -1916,7 +1916,7 @@
         {
           "period_index": 5,
           "period_name": "4th Period",
-          "period_time": "11:05 to 11:50",
+          "period_time": "11:00 AM to 11:45 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -1925,7 +1925,7 @@
         {
           "period_index": 6,
           "period_name": "5th Period",
-          "period_time": "11:50 to 12:30",
+          "period_time": "11:45 AM to 12:25 PM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -1934,7 +1934,7 @@
         {
           "period_index": 7,
           "period_name": "6th Period",
-          "period_time": "12:30 to 1:10",
+          "period_time": "12:25 PM to 01:05 PM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -1943,7 +1943,7 @@
         {
           "period_index": 8,
           "period_name": "7th Period",
-          "period_time": "1:10 to 1:50",
+          "period_time": "01:05 PM to 01:45 PM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -1963,7 +1963,7 @@
         {
           "period_index": 1,
           "period_name": "1st Period",
-          "period_time": "08:30 to 9:15",
+          "period_time": "08:30 to 09:10 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -1972,7 +1972,7 @@
         {
           "period_index": 2,
           "period_name": "2nd Period",
-          "period_time": "9:15 to 10:00",
+          "period_time": "09:10 AM to 09:55 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -1981,7 +1981,7 @@
         {
           "period_index": 3,
           "period_name": "3rd Period",
-          "period_time": "10:00 to 10:45",
+          "period_time": "09:55 AM to 10:40 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -1990,7 +1990,7 @@
         {
           "period_index": 4,
           "period_name": "Lunch",
-          "period_time": "10:45 to 11:05",
+          "period_time": "10:40 AM to 11:00 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -1999,7 +1999,7 @@
         {
           "period_index": 5,
           "period_name": "4th Period",
-          "period_time": "11:05 to 11:50",
+          "period_time": "11:00 AM to 11:45 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -2008,7 +2008,7 @@
         {
           "period_index": 6,
           "period_name": "5th Period",
-          "period_time": "11:50 to 12:30",
+          "period_time": "11:45 AM to 12:25 PM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -2017,7 +2017,7 @@
         {
           "period_index": 7,
           "period_name": "6th Period",
-          "period_time": "12:30 to 1:10",
+          "period_time": "12:25 PM to 01:05 PM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -2026,7 +2026,7 @@
         {
           "period_index": 8,
           "period_name": "7th Period",
-          "period_time": "1:10 to 1:50",
+          "period_time": "01:05 PM to 01:45 PM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -2057,7 +2057,7 @@
         {
           "period_index": 1,
           "period_name": "1st Period",
-          "period_time": "08:30 to 9:15",
+          "period_time": "08:30 to 09:10 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -2066,7 +2066,7 @@
         {
           "period_index": 2,
           "period_name": "2nd Period",
-          "period_time": "9:15 to 10:00",
+          "period_time": "09:10 AM to 09:55 AM",
           "bookings": [
             {
               "subject": "Games",
@@ -2096,7 +2096,7 @@
         {
           "period_index": 3,
           "period_name": "3rd Period",
-          "period_time": "10:00 to 10:45",
+          "period_time": "09:55 AM to 10:40 AM",
           "bookings": [
             {
               "subject": "PE",
@@ -2116,7 +2116,7 @@
         {
           "period_index": 4,
           "period_name": "Lunch",
-          "period_time": "10:45 to 11:05",
+          "period_time": "10:40 AM to 11:00 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -2125,7 +2125,7 @@
         {
           "period_index": 5,
           "period_name": "4th Period",
-          "period_time": "11:05 to 11:50",
+          "period_time": "11:00 AM to 11:45 AM",
           "bookings": [
             {
               "subject": "Games",
@@ -2155,7 +2155,7 @@
         {
           "period_index": 6,
           "period_name": "5th Period",
-          "period_time": "11:50 to 12:30",
+          "period_time": "11:45 AM to 12:25 PM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -2164,7 +2164,7 @@
         {
           "period_index": 7,
           "period_name": "6th Period",
-          "period_time": "12:30 to 1:10",
+          "period_time": "12:25 PM to 01:05 PM",
           "bookings": [
             {
               "subject": "PE",
@@ -2185,7 +2185,7 @@
         {
           "period_index": 8,
           "period_name": "7th Period",
-          "period_time": "1:10 to 1:50",
+          "period_time": "01:05 PM to 01:45 PM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -2205,7 +2205,7 @@
         {
           "period_index": 1,
           "period_name": "1st Period",
-          "period_time": "08:30 to 9:15",
+          "period_time": "08:30 to 09:10 AM",
           "bookings": [
             {
               "subject": "Games",
@@ -2225,7 +2225,7 @@
         {
           "period_index": 2,
           "period_name": "2nd Period",
-          "period_time": "9:15 to 10:00",
+          "period_time": "09:10 AM to 09:55 AM",
           "bookings": [
             {
               "subject": "Games",
@@ -2245,7 +2245,7 @@
         {
           "period_index": 3,
           "period_name": "3rd Period",
-          "period_time": "10:00 to 10:45",
+          "period_time": "09:55 AM to 10:40 AM",
           "bookings": [
             {
               "subject": "PE",
@@ -2265,7 +2265,7 @@
         {
           "period_index": 4,
           "period_name": "Lunch",
-          "period_time": "10:45 to 11:05",
+          "period_time": "10:40 AM to 11:00 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -2274,7 +2274,7 @@
         {
           "period_index": 5,
           "period_name": "4th Period",
-          "period_time": "11:05 to 11:50",
+          "period_time": "11:00 AM to 11:45 AM",
           "bookings": [
             {
               "subject": "Games",
@@ -2304,7 +2304,7 @@
         {
           "period_index": 6,
           "period_name": "5th Period",
-          "period_time": "11:50 to 12:30",
+          "period_time": "11:45 AM to 12:25 PM",
           "bookings": [
             {
               "subject": "Games",
@@ -2324,7 +2324,7 @@
         {
           "period_index": 7,
           "period_name": "6th Period",
-          "period_time": "12:30 to 1:10",
+          "period_time": "12:25 PM to 01:05 PM",
           "bookings": [
             {
               "subject": "PE",
@@ -2355,7 +2355,7 @@
         {
           "period_index": 8,
           "period_name": "7th Period",
-          "period_time": "1:10 to 1:50",
+          "period_time": "01:05 PM to 01:45 PM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -2375,7 +2375,7 @@
         {
           "period_index": 1,
           "period_name": "1st Period",
-          "period_time": "08:30 to 9:15",
+          "period_time": "08:30 to 09:10 AM",
           "bookings": [
             {
               "subject": "Games",
@@ -2395,7 +2395,7 @@
         {
           "period_index": 2,
           "period_name": "2nd Period",
-          "period_time": "9:15 to 10:00",
+          "period_time": "09:10 AM to 09:55 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -2404,7 +2404,7 @@
         {
           "period_index": 3,
           "period_name": "3rd Period",
-          "period_time": "10:00 to 10:45",
+          "period_time": "09:55 AM to 10:40 AM",
           "bookings": [
             {
               "subject": "Games",
@@ -2434,7 +2434,7 @@
         {
           "period_index": 4,
           "period_name": "Lunch",
-          "period_time": "10:45 to 11:05",
+          "period_time": "10:40 AM to 11:00 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -2443,7 +2443,7 @@
         {
           "period_index": 5,
           "period_name": "4th Period",
-          "period_time": "11:05 to 11:50",
+          "period_time": "11:00 AM to 11:45 AM",
           "bookings": [
             {
               "subject": "Games",
@@ -2463,7 +2463,7 @@
         {
           "period_index": 6,
           "period_name": "5th Period",
-          "period_time": "11:50 to 12:30",
+          "period_time": "11:45 AM to 12:25 PM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -2472,7 +2472,7 @@
         {
           "period_index": 7,
           "period_name": "6th Period",
-          "period_time": "12:30 to 1:10",
+          "period_time": "12:25 PM to 01:05 PM",
           "bookings": [
             {
               "subject": "Games",
@@ -2492,7 +2492,7 @@
         {
           "period_index": 8,
           "period_name": "7th Period",
-          "period_time": "1:10 to 1:50",
+          "period_time": "01:05 PM to 01:45 PM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -2512,7 +2512,7 @@
         {
           "period_index": 1,
           "period_name": "1st Period",
-          "period_time": "08:30 to 9:15",
+          "period_time": "08:30 to 09:10 AM",
           "bookings": [
             {
               "subject": "Games",
@@ -2532,7 +2532,7 @@
         {
           "period_index": 2,
           "period_name": "2nd Period",
-          "period_time": "9:15 to 10:00",
+          "period_time": "09:10 AM to 09:55 AM",
           "bookings": [
             {
               "subject": "Games",
@@ -2552,7 +2552,7 @@
         {
           "period_index": 3,
           "period_name": "3rd Period",
-          "period_time": "10:00 to 10:45",
+          "period_time": "09:55 AM to 10:40 AM",
           "bookings": [
             {
               "subject": "Games",
@@ -2583,7 +2583,7 @@
         {
           "period_index": 4,
           "period_name": "Lunch",
-          "period_time": "10:45 to 11:05",
+          "period_time": "10:40 AM to 11:00 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -2592,7 +2592,7 @@
         {
           "period_index": 5,
           "period_name": "4th Period",
-          "period_time": "11:05 to 11:50",
+          "period_time": "11:00 AM to 11:45 AM",
           "bookings": [
             {
               "subject": "Games",
@@ -2612,7 +2612,7 @@
         {
           "period_index": 6,
           "period_name": "5th Period",
-          "period_time": "11:50 to 12:30",
+          "period_time": "11:45 AM to 12:25 PM",
           "bookings": [
             {
               "subject": "Games",
@@ -2642,7 +2642,7 @@
         {
           "period_index": 7,
           "period_name": "6th Period",
-          "period_time": "12:30 to 1:10",
+          "period_time": "12:25 PM to 01:05 PM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -2651,7 +2651,7 @@
         {
           "period_index": 8,
           "period_name": "7th Period",
-          "period_time": "1:10 to 1:50",
+          "period_time": "01:05 PM to 01:45 PM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -2671,7 +2671,7 @@
         {
           "period_index": 1,
           "period_name": "1st Period",
-          "period_time": "08:30 to 9:15",
+          "period_time": "08:30 to 09:10 AM",
           "bookings": [
             {
               "subject": "Games",
@@ -2691,7 +2691,7 @@
         {
           "period_index": 2,
           "period_name": "2nd Period",
-          "period_time": "9:15 to 10:00",
+          "period_time": "09:10 AM to 09:55 AM",
           "bookings": [
             {
               "subject": "Games",
@@ -2721,7 +2721,7 @@
         {
           "period_index": 3,
           "period_name": "3rd Period",
-          "period_time": "10:00 to 10:45",
+          "period_time": "09:55 AM to 10:40 AM",
           "bookings": [
             {
               "subject": "Games",
@@ -2752,7 +2752,7 @@
         {
           "period_index": 4,
           "period_name": "Lunch",
-          "period_time": "10:45 to 11:05",
+          "period_time": "10:40 AM to 11:00 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -2761,7 +2761,7 @@
         {
           "period_index": 5,
           "period_name": "4th Period",
-          "period_time": "11:05 to 11:50",
+          "period_time": "11:00 AM to 11:45 AM",
           "bookings": [
             {
               "subject": "Games",
@@ -2791,7 +2791,7 @@
         {
           "period_index": 6,
           "period_name": "5th Period",
-          "period_time": "11:50 to 12:30",
+          "period_time": "11:45 AM to 12:25 PM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -2800,7 +2800,7 @@
         {
           "period_index": 7,
           "period_name": "6th Period",
-          "period_time": "12:30 to 1:10",
+          "period_time": "12:25 PM to 01:05 PM",
           "bookings": [
             {
               "subject": "Games",
@@ -2820,7 +2820,7 @@
         {
           "period_index": 8,
           "period_name": "7th Period",
-          "period_time": "1:10 to 1:50",
+          "period_time": "01:05 PM to 01:45 PM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -2840,7 +2840,7 @@
         {
           "period_index": 1,
           "period_name": "1st Period",
-          "period_time": "08:30 to 9:15",
+          "period_time": "08:30 to 09:10 AM",
           "bookings": [
             {
               "subject": "Games",
@@ -2860,7 +2860,7 @@
         {
           "period_index": 2,
           "period_name": "2nd Period",
-          "period_time": "9:15 to 10:00",
+          "period_time": "09:10 AM to 09:55 AM",
           "bookings": [
             {
               "subject": "Games",
@@ -2880,7 +2880,7 @@
         {
           "period_index": 3,
           "period_name": "3rd Period",
-          "period_time": "10:00 to 10:45",
+          "period_time": "09:55 AM to 10:40 AM",
           "bookings": [
             {
               "subject": "Games",
@@ -2911,7 +2911,7 @@
         {
           "period_index": 4,
           "period_name": "Lunch",
-          "period_time": "10:45 to 11:05",
+          "period_time": "10:40 AM to 11:00 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -2920,7 +2920,7 @@
         {
           "period_index": 5,
           "period_name": "4th Period",
-          "period_time": "11:05 to 11:50",
+          "period_time": "11:00 AM to 11:45 AM",
           "bookings": [
             {
               "subject": "PE",
@@ -2940,7 +2940,7 @@
         {
           "period_index": 6,
           "period_name": "5th Period",
-          "period_time": "11:50 to 12:30",
+          "period_time": "11:45 AM to 12:25 PM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -2949,7 +2949,7 @@
         {
           "period_index": 7,
           "period_name": "6th Period",
-          "period_time": "12:30 to 1:10",
+          "period_time": "12:25 PM to 01:05 PM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -2958,7 +2958,7 @@
         {
           "period_index": 8,
           "period_name": "7th Period",
-          "period_time": "1:10 to 1:50",
+          "period_time": "01:05 PM to 01:45 PM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -2989,7 +2989,7 @@
         {
           "period_index": 1,
           "period_name": "1st Period",
-          "period_time": "08:30 to 9:15",
+          "period_time": "08:30 to 09:10 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -2998,7 +2998,7 @@
         {
           "period_index": 2,
           "period_name": "2nd Period",
-          "period_time": "9:15 to 10:00",
+          "period_time": "09:10 AM to 09:55 AM",
           "bookings": [
             {
               "subject": "Games",
@@ -3028,7 +3028,7 @@
         {
           "period_index": 3,
           "period_name": "3rd Period",
-          "period_time": "10:00 to 10:45",
+          "period_time": "09:55 AM to 10:40 AM",
           "bookings": [
             {
               "subject": "PE",
@@ -3048,7 +3048,7 @@
         {
           "period_index": 4,
           "period_name": "Lunch",
-          "period_time": "10:45 to 11:05",
+          "period_time": "10:40 AM to 11:00 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -3057,7 +3057,7 @@
         {
           "period_index": 5,
           "period_name": "4th Period",
-          "period_time": "11:05 to 11:50",
+          "period_time": "11:00 AM to 11:45 AM",
           "bookings": [
             {
               "subject": "Games",
@@ -3087,7 +3087,7 @@
         {
           "period_index": 6,
           "period_name": "5th Period",
-          "period_time": "11:50 to 12:30",
+          "period_time": "11:45 AM to 12:25 PM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -3096,7 +3096,7 @@
         {
           "period_index": 7,
           "period_name": "6th Period",
-          "period_time": "12:30 to 1:10",
+          "period_time": "12:25 PM to 01:05 PM",
           "bookings": [
             {
               "subject": "PE",
@@ -3117,7 +3117,7 @@
         {
           "period_index": 8,
           "period_name": "7th Period",
-          "period_time": "1:10 to 1:50",
+          "period_time": "01:05 PM to 01:45 PM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -3137,7 +3137,7 @@
         {
           "period_index": 1,
           "period_name": "1st Period",
-          "period_time": "08:30 to 9:15",
+          "period_time": "08:30 to 09:10 AM",
           "bookings": [
             {
               "subject": "Games",
@@ -3157,7 +3157,7 @@
         {
           "period_index": 2,
           "period_name": "2nd Period",
-          "period_time": "9:15 to 10:00",
+          "period_time": "09:10 AM to 09:55 AM",
           "bookings": [
             {
               "subject": "Games",
@@ -3177,7 +3177,7 @@
         {
           "period_index": 3,
           "period_name": "3rd Period",
-          "period_time": "10:00 to 10:45",
+          "period_time": "09:55 AM to 10:40 AM",
           "bookings": [
             {
               "subject": "PE",
@@ -3197,7 +3197,7 @@
         {
           "period_index": 4,
           "period_name": "Lunch",
-          "period_time": "10:45 to 11:05",
+          "period_time": "10:40 AM to 11:00 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -3206,7 +3206,7 @@
         {
           "period_index": 5,
           "period_name": "4th Period",
-          "period_time": "11:05 to 11:50",
+          "period_time": "11:00 AM to 11:45 AM",
           "bookings": [
             {
               "subject": "Games",
@@ -3236,7 +3236,7 @@
         {
           "period_index": 6,
           "period_name": "5th Period",
-          "period_time": "11:50 to 12:30",
+          "period_time": "11:45 AM to 12:25 PM",
           "bookings": [
             {
               "subject": "Games",
@@ -3256,7 +3256,7 @@
         {
           "period_index": 7,
           "period_name": "6th Period",
-          "period_time": "12:30 to 1:10",
+          "period_time": "12:25 PM to 01:05 PM",
           "bookings": [
             {
               "subject": "PE",
@@ -3287,7 +3287,7 @@
         {
           "period_index": 8,
           "period_name": "7th Period",
-          "period_time": "1:10 to 1:50",
+          "period_time": "01:05 PM to 01:45 PM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -3307,7 +3307,7 @@
         {
           "period_index": 1,
           "period_name": "1st Period",
-          "period_time": "08:30 to 9:15",
+          "period_time": "08:30 to 09:10 AM",
           "bookings": [
             {
               "subject": "Games",
@@ -3327,7 +3327,7 @@
         {
           "period_index": 2,
           "period_name": "2nd Period",
-          "period_time": "9:15 to 10:00",
+          "period_time": "09:10 AM to 09:55 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -3336,7 +3336,7 @@
         {
           "period_index": 3,
           "period_name": "3rd Period",
-          "period_time": "10:00 to 10:45",
+          "period_time": "09:55 AM to 10:40 AM",
           "bookings": [
             {
               "subject": "Games",
@@ -3366,7 +3366,7 @@
         {
           "period_index": 4,
           "period_name": "Lunch",
-          "period_time": "10:45 to 11:05",
+          "period_time": "10:40 AM to 11:00 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -3375,7 +3375,7 @@
         {
           "period_index": 5,
           "period_name": "4th Period",
-          "period_time": "11:05 to 11:50",
+          "period_time": "11:00 AM to 11:45 AM",
           "bookings": [
             {
               "subject": "Games",
@@ -3395,7 +3395,7 @@
         {
           "period_index": 6,
           "period_name": "5th Period",
-          "period_time": "11:50 to 12:30",
+          "period_time": "11:45 AM to 12:25 PM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -3404,7 +3404,7 @@
         {
           "period_index": 7,
           "period_name": "6th Period",
-          "period_time": "12:30 to 1:10",
+          "period_time": "12:25 PM to 01:05 PM",
           "bookings": [
             {
               "subject": "Games",
@@ -3424,7 +3424,7 @@
         {
           "period_index": 8,
           "period_name": "7th Period",
-          "period_time": "1:10 to 1:50",
+          "period_time": "01:05 PM to 01:45 PM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -3444,7 +3444,7 @@
         {
           "period_index": 1,
           "period_name": "1st Period",
-          "period_time": "08:30 to 9:15",
+          "period_time": "08:30 to 09:10 AM",
           "bookings": [
             {
               "subject": "Games",
@@ -3464,7 +3464,7 @@
         {
           "period_index": 2,
           "period_name": "2nd Period",
-          "period_time": "9:15 to 10:00",
+          "period_time": "09:10 AM to 09:55 AM",
           "bookings": [
             {
               "subject": "Games",
@@ -3484,7 +3484,7 @@
         {
           "period_index": 3,
           "period_name": "3rd Period",
-          "period_time": "10:00 to 10:45",
+          "period_time": "09:55 AM to 10:40 AM",
           "bookings": [
             {
               "subject": "Games",
@@ -3515,7 +3515,7 @@
         {
           "period_index": 4,
           "period_name": "Lunch",
-          "period_time": "10:45 to 11:05",
+          "period_time": "10:40 AM to 11:00 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -3524,7 +3524,7 @@
         {
           "period_index": 5,
           "period_name": "4th Period",
-          "period_time": "11:05 to 11:50",
+          "period_time": "11:00 AM to 11:45 AM",
           "bookings": [
             {
               "subject": "Games",
@@ -3544,7 +3544,7 @@
         {
           "period_index": 6,
           "period_name": "5th Period",
-          "period_time": "11:50 to 12:30",
+          "period_time": "11:45 AM to 12:25 PM",
           "bookings": [
             {
               "subject": "Games",
@@ -3574,7 +3574,7 @@
         {
           "period_index": 7,
           "period_name": "6th Period",
-          "period_time": "12:30 to 1:10",
+          "period_time": "12:25 PM to 01:05 PM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -3583,7 +3583,7 @@
         {
           "period_index": 8,
           "period_name": "7th Period",
-          "period_time": "1:10 to 1:50",
+          "period_time": "01:05 PM to 01:45 PM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -3603,7 +3603,7 @@
         {
           "period_index": 1,
           "period_name": "1st Period",
-          "period_time": "08:30 to 9:15",
+          "period_time": "08:30 to 09:10 AM",
           "bookings": [
             {
               "subject": "Games",
@@ -3623,7 +3623,7 @@
         {
           "period_index": 2,
           "period_name": "2nd Period",
-          "period_time": "9:15 to 10:00",
+          "period_time": "09:10 AM to 09:55 AM",
           "bookings": [
             {
               "subject": "Games",
@@ -3653,7 +3653,7 @@
         {
           "period_index": 3,
           "period_name": "3rd Period",
-          "period_time": "10:00 to 10:45",
+          "period_time": "09:55 AM to 10:40 AM",
           "bookings": [
             {
               "subject": "Games",
@@ -3684,7 +3684,7 @@
         {
           "period_index": 4,
           "period_name": "Lunch",
-          "period_time": "10:45 to 11:05",
+          "period_time": "10:40 AM to 11:00 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -3693,7 +3693,7 @@
         {
           "period_index": 5,
           "period_name": "4th Period",
-          "period_time": "11:05 to 11:50",
+          "period_time": "11:00 AM to 11:45 AM",
           "bookings": [
             {
               "subject": "Games",
@@ -3723,7 +3723,7 @@
         {
           "period_index": 6,
           "period_name": "5th Period",
-          "period_time": "11:50 to 12:30",
+          "period_time": "11:45 AM to 12:25 PM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -3732,7 +3732,7 @@
         {
           "period_index": 7,
           "period_name": "6th Period",
-          "period_time": "12:30 to 1:10",
+          "period_time": "12:25 PM to 01:05 PM",
           "bookings": [
             {
               "subject": "Games",
@@ -3752,7 +3752,7 @@
         {
           "period_index": 8,
           "period_name": "7th Period",
-          "period_time": "1:10 to 1:50",
+          "period_time": "01:05 PM to 01:45 PM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -3772,7 +3772,7 @@
         {
           "period_index": 1,
           "period_name": "1st Period",
-          "period_time": "08:30 to 9:15",
+          "period_time": "08:30 to 09:10 AM",
           "bookings": [
             {
               "subject": "Games",
@@ -3792,7 +3792,7 @@
         {
           "period_index": 2,
           "period_name": "2nd Period",
-          "period_time": "9:15 to 10:00",
+          "period_time": "09:10 AM to 09:55 AM",
           "bookings": [
             {
               "subject": "Games",
@@ -3812,7 +3812,7 @@
         {
           "period_index": 3,
           "period_name": "3rd Period",
-          "period_time": "10:00 to 10:45",
+          "period_time": "09:55 AM to 10:40 AM",
           "bookings": [
             {
               "subject": "Games",
@@ -3843,7 +3843,7 @@
         {
           "period_index": 4,
           "period_name": "Lunch",
-          "period_time": "10:45 to 11:05",
+          "period_time": "10:40 AM to 11:00 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -3852,7 +3852,7 @@
         {
           "period_index": 5,
           "period_name": "4th Period",
-          "period_time": "11:05 to 11:50",
+          "period_time": "11:00 AM to 11:45 AM",
           "bookings": [
             {
               "subject": "PE",
@@ -3872,7 +3872,7 @@
         {
           "period_index": 6,
           "period_name": "5th Period",
-          "period_time": "11:50 to 12:30",
+          "period_time": "11:45 AM to 12:25 PM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -3881,7 +3881,7 @@
         {
           "period_index": 7,
           "period_name": "6th Period",
-          "period_time": "12:30 to 1:10",
+          "period_time": "12:25 PM to 01:05 PM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -3890,7 +3890,7 @@
         {
           "period_index": 8,
           "period_name": "7th Period",
-          "period_time": "1:10 to 1:50",
+          "period_time": "01:05 PM to 01:45 PM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -3921,7 +3921,7 @@
         {
           "period_index": 1,
           "period_name": "1st Period",
-          "period_time": "08:30 to 9:15",
+          "period_time": "08:30 to 09:10 AM",
           "bookings": [
             {
               "subject": "Yoga",
@@ -3941,7 +3941,7 @@
         {
           "period_index": 2,
           "period_name": "2nd Period",
-          "period_time": "9:15 to 10:00",
+          "period_time": "09:10 AM to 09:55 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -3950,7 +3950,7 @@
         {
           "period_index": 3,
           "period_name": "3rd Period",
-          "period_time": "10:00 to 10:45",
+          "period_time": "09:55 AM to 10:40 AM",
           "bookings": [
             {
               "subject": "Yoga",
@@ -3970,7 +3970,7 @@
         {
           "period_index": 4,
           "period_name": "Lunch",
-          "period_time": "10:45 to 11:05",
+          "period_time": "10:40 AM to 11:00 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -3979,7 +3979,7 @@
         {
           "period_index": 5,
           "period_name": "4th Period",
-          "period_time": "11:05 to 11:50",
+          "period_time": "11:00 AM to 11:45 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -3988,7 +3988,7 @@
         {
           "period_index": 6,
           "period_name": "5th Period",
-          "period_time": "11:50 to 12:30",
+          "period_time": "11:45 AM to 12:25 PM",
           "bookings": [
             {
               "subject": "Yoga",
@@ -4008,7 +4008,7 @@
         {
           "period_index": 7,
           "period_name": "6th Period",
-          "period_time": "12:30 to 1:10",
+          "period_time": "12:25 PM to 01:05 PM",
           "bookings": [
             {
               "subject": "Yoga",
@@ -4028,7 +4028,7 @@
         {
           "period_index": 8,
           "period_name": "7th Period",
-          "period_time": "1:10 to 1:50",
+          "period_time": "01:05 PM to 01:45 PM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -4048,7 +4048,7 @@
         {
           "period_index": 1,
           "period_name": "1st Period",
-          "period_time": "08:30 to 9:15",
+          "period_time": "08:30 to 09:10 AM",
           "bookings": [
             {
               "subject": "Yoga",
@@ -4068,7 +4068,7 @@
         {
           "period_index": 2,
           "period_name": "2nd Period",
-          "period_time": "9:15 to 10:00",
+          "period_time": "09:10 AM to 09:55 AM",
           "bookings": [
             {
               "subject": "Yoga",
@@ -4088,7 +4088,7 @@
         {
           "period_index": 3,
           "period_name": "3rd Period",
-          "period_time": "10:00 to 10:45",
+          "period_time": "09:55 AM to 10:40 AM",
           "bookings": [
             {
               "subject": "Yoga",
@@ -4108,7 +4108,7 @@
         {
           "period_index": 4,
           "period_name": "Lunch",
-          "period_time": "10:45 to 11:05",
+          "period_time": "10:40 AM to 11:00 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -4117,7 +4117,7 @@
         {
           "period_index": 5,
           "period_name": "4th Period",
-          "period_time": "11:05 to 11:50",
+          "period_time": "11:00 AM to 11:45 AM",
           "bookings": [
             {
               "subject": "Yoga",
@@ -4137,7 +4137,7 @@
         {
           "period_index": 6,
           "period_name": "5th Period",
-          "period_time": "11:50 to 12:30",
+          "period_time": "11:45 AM to 12:25 PM",
           "bookings": [
             {
               "subject": "Yoga",
@@ -4157,7 +4157,7 @@
         {
           "period_index": 7,
           "period_name": "6th Period",
-          "period_time": "12:30 to 1:10",
+          "period_time": "12:25 PM to 01:05 PM",
           "bookings": [
             {
               "subject": "Yoga",
@@ -4177,7 +4177,7 @@
         {
           "period_index": 8,
           "period_name": "7th Period",
-          "period_time": "1:10 to 1:50",
+          "period_time": "01:05 PM to 01:45 PM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -4197,7 +4197,7 @@
         {
           "period_index": 1,
           "period_name": "1st Period",
-          "period_time": "08:30 to 9:15",
+          "period_time": "08:30 to 09:10 AM",
           "bookings": [
             {
               "subject": "Yoga",
@@ -4217,7 +4217,7 @@
         {
           "period_index": 2,
           "period_name": "2nd Period",
-          "period_time": "9:15 to 10:00",
+          "period_time": "09:10 AM to 09:55 AM",
           "bookings": [
             {
               "subject": "Yoga",
@@ -4237,7 +4237,7 @@
         {
           "period_index": 3,
           "period_name": "3rd Period",
-          "period_time": "10:00 to 10:45",
+          "period_time": "09:55 AM to 10:40 AM",
           "bookings": [
             {
               "subject": "Yoga",
@@ -4257,7 +4257,7 @@
         {
           "period_index": 4,
           "period_name": "Lunch",
-          "period_time": "10:45 to 11:05",
+          "period_time": "10:40 AM to 11:00 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -4266,7 +4266,7 @@
         {
           "period_index": 5,
           "period_name": "4th Period",
-          "period_time": "11:05 to 11:50",
+          "period_time": "11:00 AM to 11:45 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -4275,7 +4275,7 @@
         {
           "period_index": 6,
           "period_name": "5th Period",
-          "period_time": "11:50 to 12:30",
+          "period_time": "11:45 AM to 12:25 PM",
           "bookings": [
             {
               "subject": "Yoga",
@@ -4295,7 +4295,7 @@
         {
           "period_index": 7,
           "period_name": "6th Period",
-          "period_time": "12:30 to 1:10",
+          "period_time": "12:25 PM to 01:05 PM",
           "bookings": [
             {
               "subject": "Yoga",
@@ -4315,7 +4315,7 @@
         {
           "period_index": 8,
           "period_name": "7th Period",
-          "period_time": "1:10 to 1:50",
+          "period_time": "01:05 PM to 01:45 PM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -4335,7 +4335,7 @@
         {
           "period_index": 1,
           "period_name": "1st Period",
-          "period_time": "08:30 to 9:15",
+          "period_time": "08:30 to 09:10 AM",
           "bookings": [
             {
               "subject": "Yoga",
@@ -4355,7 +4355,7 @@
         {
           "period_index": 2,
           "period_name": "2nd Period",
-          "period_time": "9:15 to 10:00",
+          "period_time": "09:10 AM to 09:55 AM",
           "bookings": [
             {
               "subject": "Yoga",
@@ -4375,7 +4375,7 @@
         {
           "period_index": 3,
           "period_name": "3rd Period",
-          "period_time": "10:00 to 10:45",
+          "period_time": "09:55 AM to 10:40 AM",
           "bookings": [
             {
               "subject": "Yoga",
@@ -4395,7 +4395,7 @@
         {
           "period_index": 4,
           "period_name": "Lunch",
-          "period_time": "10:45 to 11:05",
+          "period_time": "10:40 AM to 11:00 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -4404,7 +4404,7 @@
         {
           "period_index": 5,
           "period_name": "4th Period",
-          "period_time": "11:05 to 11:50",
+          "period_time": "11:00 AM to 11:45 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -4413,7 +4413,7 @@
         {
           "period_index": 6,
           "period_name": "5th Period",
-          "period_time": "11:50 to 12:30",
+          "period_time": "11:45 AM to 12:25 PM",
           "bookings": [
             {
               "subject": "Yoga",
@@ -4433,7 +4433,7 @@
         {
           "period_index": 7,
           "period_name": "6th Period",
-          "period_time": "12:30 to 1:10",
+          "period_time": "12:25 PM to 01:05 PM",
           "bookings": [
             {
               "subject": "Yoga",
@@ -4453,7 +4453,7 @@
         {
           "period_index": 8,
           "period_name": "7th Period",
-          "period_time": "1:10 to 1:50",
+          "period_time": "01:05 PM to 01:45 PM",
           "bookings": [
             {
               "subject": "Yoga",
@@ -4484,7 +4484,7 @@
         {
           "period_index": 1,
           "period_name": "1st Period",
-          "period_time": "08:30 to 9:15",
+          "period_time": "08:30 to 09:10 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -4493,7 +4493,7 @@
         {
           "period_index": 2,
           "period_name": "2nd Period",
-          "period_time": "9:15 to 10:00",
+          "period_time": "09:10 AM to 09:55 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -4502,7 +4502,7 @@
         {
           "period_index": 3,
           "period_name": "3rd Period",
-          "period_time": "10:00 to 10:45",
+          "period_time": "09:55 AM to 10:40 AM",
           "bookings": [
             {
               "subject": "Yoga",
@@ -4522,7 +4522,7 @@
         {
           "period_index": 4,
           "period_name": "Lunch",
-          "period_time": "10:45 to 11:05",
+          "period_time": "10:40 AM to 11:00 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -4531,7 +4531,7 @@
         {
           "period_index": 5,
           "period_name": "4th Period",
-          "period_time": "11:05 to 11:50",
+          "period_time": "11:00 AM to 11:45 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -4540,7 +4540,7 @@
         {
           "period_index": 6,
           "period_name": "5th Period",
-          "period_time": "11:50 to 12:30",
+          "period_time": "11:45 AM to 12:25 PM",
           "bookings": [
             {
               "subject": "Yoga",
@@ -4560,7 +4560,7 @@
         {
           "period_index": 7,
           "period_name": "6th Period",
-          "period_time": "12:30 to 1:10",
+          "period_time": "12:25 PM to 01:05 PM",
           "bookings": [
             {
               "subject": "Yoga",
@@ -4580,7 +4580,7 @@
         {
           "period_index": 8,
           "period_name": "7th Period",
-          "period_time": "1:10 to 1:50",
+          "period_time": "01:05 PM to 01:45 PM",
           "bookings": [
             {
               "subject": "Yoga",
@@ -4611,7 +4611,7 @@
         {
           "period_index": 1,
           "period_name": "1st Period",
-          "period_time": "08:30 to 9:15",
+          "period_time": "08:30 to 09:10 AM",
           "bookings": [
             {
               "subject": "Yoga",
@@ -4631,7 +4631,7 @@
         {
           "period_index": 2,
           "period_name": "2nd Period",
-          "period_time": "9:15 to 10:00",
+          "period_time": "09:10 AM to 09:55 AM",
           "bookings": [
             {
               "subject": "Yoga",
@@ -4651,7 +4651,7 @@
         {
           "period_index": 3,
           "period_name": "3rd Period",
-          "period_time": "10:00 to 10:45",
+          "period_time": "09:55 AM to 10:40 AM",
           "bookings": [
             {
               "subject": "Yoga",
@@ -4671,7 +4671,7 @@
         {
           "period_index": 4,
           "period_name": "Lunch",
-          "period_time": "10:45 to 11:05",
+          "period_time": "10:40 AM to 11:00 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -4680,7 +4680,7 @@
         {
           "period_index": 5,
           "period_name": "4th Period",
-          "period_time": "11:05 to 11:50",
+          "period_time": "11:00 AM to 11:45 AM",
           "bookings": [
             {
               "subject": "Yoga",
@@ -4700,7 +4700,7 @@
         {
           "period_index": 6,
           "period_name": "5th Period",
-          "period_time": "11:50 to 12:30",
+          "period_time": "11:45 AM to 12:25 PM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -4709,7 +4709,7 @@
         {
           "period_index": 7,
           "period_name": "6th Period",
-          "period_time": "12:30 to 1:10",
+          "period_time": "12:25 PM to 01:05 PM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -4718,7 +4718,7 @@
         {
           "period_index": 8,
           "period_name": "7th Period",
-          "period_time": "1:10 to 1:50",
+          "period_time": "01:05 PM to 01:45 PM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -4749,7 +4749,7 @@
         {
           "period_index": 1,
           "period_name": "1st Period",
-          "period_time": "08:30 to 9:15",
+          "period_time": "08:30 to 09:10 AM",
           "bookings": [
             {
               "subject": "Yoga",
@@ -4769,7 +4769,7 @@
         {
           "period_index": 2,
           "period_name": "2nd Period",
-          "period_time": "9:15 to 10:00",
+          "period_time": "09:10 AM to 09:55 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -4778,7 +4778,7 @@
         {
           "period_index": 3,
           "period_name": "3rd Period",
-          "period_time": "10:00 to 10:45",
+          "period_time": "09:55 AM to 10:40 AM",
           "bookings": [
             {
               "subject": "Yoga",
@@ -4798,7 +4798,7 @@
         {
           "period_index": 4,
           "period_name": "Lunch",
-          "period_time": "10:45 to 11:05",
+          "period_time": "10:40 AM to 11:00 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -4807,7 +4807,7 @@
         {
           "period_index": 5,
           "period_name": "4th Period",
-          "period_time": "11:05 to 11:50",
+          "period_time": "11:00 AM to 11:45 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -4816,7 +4816,7 @@
         {
           "period_index": 6,
           "period_name": "5th Period",
-          "period_time": "11:50 to 12:30",
+          "period_time": "11:45 AM to 12:25 PM",
           "bookings": [
             {
               "subject": "Yoga",
@@ -4836,7 +4836,7 @@
         {
           "period_index": 7,
           "period_name": "6th Period",
-          "period_time": "12:30 to 1:10",
+          "period_time": "12:25 PM to 01:05 PM",
           "bookings": [
             {
               "subject": "Yoga",
@@ -4856,7 +4856,7 @@
         {
           "period_index": 8,
           "period_name": "7th Period",
-          "period_time": "1:10 to 1:50",
+          "period_time": "01:05 PM to 01:45 PM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -4876,7 +4876,7 @@
         {
           "period_index": 1,
           "period_name": "1st Period",
-          "period_time": "08:30 to 9:15",
+          "period_time": "08:30 to 09:10 AM",
           "bookings": [
             {
               "subject": "Yoga",
@@ -4896,7 +4896,7 @@
         {
           "period_index": 2,
           "period_name": "2nd Period",
-          "period_time": "9:15 to 10:00",
+          "period_time": "09:10 AM to 09:55 AM",
           "bookings": [
             {
               "subject": "Yoga",
@@ -4916,7 +4916,7 @@
         {
           "period_index": 3,
           "period_name": "3rd Period",
-          "period_time": "10:00 to 10:45",
+          "period_time": "09:55 AM to 10:40 AM",
           "bookings": [
             {
               "subject": "Yoga",
@@ -4936,7 +4936,7 @@
         {
           "period_index": 4,
           "period_name": "Lunch",
-          "period_time": "10:45 to 11:05",
+          "period_time": "10:40 AM to 11:00 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -4945,7 +4945,7 @@
         {
           "period_index": 5,
           "period_name": "4th Period",
-          "period_time": "11:05 to 11:50",
+          "period_time": "11:00 AM to 11:45 AM",
           "bookings": [
             {
               "subject": "Yoga",
@@ -4965,7 +4965,7 @@
         {
           "period_index": 6,
           "period_name": "5th Period",
-          "period_time": "11:50 to 12:30",
+          "period_time": "11:45 AM to 12:25 PM",
           "bookings": [
             {
               "subject": "Yoga",
@@ -4985,7 +4985,7 @@
         {
           "period_index": 7,
           "period_name": "6th Period",
-          "period_time": "12:30 to 1:10",
+          "period_time": "12:25 PM to 01:05 PM",
           "bookings": [
             {
               "subject": "Yoga",
@@ -5005,7 +5005,7 @@
         {
           "period_index": 8,
           "period_name": "7th Period",
-          "period_time": "1:10 to 1:50",
+          "period_time": "01:05 PM to 01:45 PM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -5025,7 +5025,7 @@
         {
           "period_index": 1,
           "period_name": "1st Period",
-          "period_time": "08:30 to 9:15",
+          "period_time": "08:30 to 09:10 AM",
           "bookings": [
             {
               "subject": "Yoga",
@@ -5045,7 +5045,7 @@
         {
           "period_index": 2,
           "period_name": "2nd Period",
-          "period_time": "9:15 to 10:00",
+          "period_time": "09:10 AM to 09:55 AM",
           "bookings": [
             {
               "subject": "Yoga",
@@ -5065,7 +5065,7 @@
         {
           "period_index": 3,
           "period_name": "3rd Period",
-          "period_time": "10:00 to 10:45",
+          "period_time": "09:55 AM to 10:40 AM",
           "bookings": [
             {
               "subject": "Yoga",
@@ -5085,7 +5085,7 @@
         {
           "period_index": 4,
           "period_name": "Lunch",
-          "period_time": "10:45 to 11:05",
+          "period_time": "10:40 AM to 11:00 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -5094,7 +5094,7 @@
         {
           "period_index": 5,
           "period_name": "4th Period",
-          "period_time": "11:05 to 11:50",
+          "period_time": "11:00 AM to 11:45 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -5103,7 +5103,7 @@
         {
           "period_index": 6,
           "period_name": "5th Period",
-          "period_time": "11:50 to 12:30",
+          "period_time": "11:45 AM to 12:25 PM",
           "bookings": [
             {
               "subject": "Yoga",
@@ -5123,7 +5123,7 @@
         {
           "period_index": 7,
           "period_name": "6th Period",
-          "period_time": "12:30 to 1:10",
+          "period_time": "12:25 PM to 01:05 PM",
           "bookings": [
             {
               "subject": "Yoga",
@@ -5143,7 +5143,7 @@
         {
           "period_index": 8,
           "period_name": "7th Period",
-          "period_time": "1:10 to 1:50",
+          "period_time": "01:05 PM to 01:45 PM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -5163,7 +5163,7 @@
         {
           "period_index": 1,
           "period_name": "1st Period",
-          "period_time": "08:30 to 9:15",
+          "period_time": "08:30 to 09:10 AM",
           "bookings": [
             {
               "subject": "Yoga",
@@ -5183,7 +5183,7 @@
         {
           "period_index": 2,
           "period_name": "2nd Period",
-          "period_time": "9:15 to 10:00",
+          "period_time": "09:10 AM to 09:55 AM",
           "bookings": [
             {
               "subject": "Yoga",
@@ -5203,7 +5203,7 @@
         {
           "period_index": 3,
           "period_name": "3rd Period",
-          "period_time": "10:00 to 10:45",
+          "period_time": "09:55 AM to 10:40 AM",
           "bookings": [
             {
               "subject": "Yoga",
@@ -5223,7 +5223,7 @@
         {
           "period_index": 4,
           "period_name": "Lunch",
-          "period_time": "10:45 to 11:05",
+          "period_time": "10:40 AM to 11:00 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -5232,7 +5232,7 @@
         {
           "period_index": 5,
           "period_name": "4th Period",
-          "period_time": "11:05 to 11:50",
+          "period_time": "11:00 AM to 11:45 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -5241,7 +5241,7 @@
         {
           "period_index": 6,
           "period_name": "5th Period",
-          "period_time": "11:50 to 12:30",
+          "period_time": "11:45 AM to 12:25 PM",
           "bookings": [
             {
               "subject": "Yoga",
@@ -5261,7 +5261,7 @@
         {
           "period_index": 7,
           "period_name": "6th Period",
-          "period_time": "12:30 to 1:10",
+          "period_time": "12:25 PM to 01:05 PM",
           "bookings": [
             {
               "subject": "Yoga",
@@ -5281,7 +5281,7 @@
         {
           "period_index": 8,
           "period_name": "7th Period",
-          "period_time": "1:10 to 1:50",
+          "period_time": "01:05 PM to 01:45 PM",
           "bookings": [
             {
               "subject": "Yoga",
@@ -5312,7 +5312,7 @@
         {
           "period_index": 1,
           "period_name": "1st Period",
-          "period_time": "08:30 to 9:15",
+          "period_time": "08:30 to 09:10 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -5321,7 +5321,7 @@
         {
           "period_index": 2,
           "period_name": "2nd Period",
-          "period_time": "9:15 to 10:00",
+          "period_time": "09:10 AM to 09:55 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -5330,7 +5330,7 @@
         {
           "period_index": 3,
           "period_name": "3rd Period",
-          "period_time": "10:00 to 10:45",
+          "period_time": "09:55 AM to 10:40 AM",
           "bookings": [
             {
               "subject": "Yoga",
@@ -5350,7 +5350,7 @@
         {
           "period_index": 4,
           "period_name": "Lunch",
-          "period_time": "10:45 to 11:05",
+          "period_time": "10:40 AM to 11:00 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -5359,7 +5359,7 @@
         {
           "period_index": 5,
           "period_name": "4th Period",
-          "period_time": "11:05 to 11:50",
+          "period_time": "11:00 AM to 11:45 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -5368,7 +5368,7 @@
         {
           "period_index": 6,
           "period_name": "5th Period",
-          "period_time": "11:50 to 12:30",
+          "period_time": "11:45 AM to 12:25 PM",
           "bookings": [
             {
               "subject": "Yoga",
@@ -5388,7 +5388,7 @@
         {
           "period_index": 7,
           "period_name": "6th Period",
-          "period_time": "12:30 to 1:10",
+          "period_time": "12:25 PM to 01:05 PM",
           "bookings": [
             {
               "subject": "Yoga",
@@ -5408,7 +5408,7 @@
         {
           "period_index": 8,
           "period_name": "7th Period",
-          "period_time": "1:10 to 1:50",
+          "period_time": "01:05 PM to 01:45 PM",
           "bookings": [
             {
               "subject": "Yoga",
@@ -5439,7 +5439,7 @@
         {
           "period_index": 1,
           "period_name": "1st Period",
-          "period_time": "08:30 to 9:15",
+          "period_time": "08:30 to 09:10 AM",
           "bookings": [
             {
               "subject": "Yoga",
@@ -5459,7 +5459,7 @@
         {
           "period_index": 2,
           "period_name": "2nd Period",
-          "period_time": "9:15 to 10:00",
+          "period_time": "09:10 AM to 09:55 AM",
           "bookings": [
             {
               "subject": "Yoga",
@@ -5479,7 +5479,7 @@
         {
           "period_index": 3,
           "period_name": "3rd Period",
-          "period_time": "10:00 to 10:45",
+          "period_time": "09:55 AM to 10:40 AM",
           "bookings": [
             {
               "subject": "Yoga",
@@ -5499,7 +5499,7 @@
         {
           "period_index": 4,
           "period_name": "Lunch",
-          "period_time": "10:45 to 11:05",
+          "period_time": "10:40 AM to 11:00 AM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -5508,7 +5508,7 @@
         {
           "period_index": 5,
           "period_name": "4th Period",
-          "period_time": "11:05 to 11:50",
+          "period_time": "11:00 AM to 11:45 AM",
           "bookings": [
             {
               "subject": "Yoga",
@@ -5528,7 +5528,7 @@
         {
           "period_index": 6,
           "period_name": "5th Period",
-          "period_time": "11:50 to 12:30",
+          "period_time": "11:45 AM to 12:25 PM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -5537,7 +5537,7 @@
         {
           "period_index": 7,
           "period_name": "6th Period",
-          "period_time": "12:30 to 1:10",
+          "period_time": "12:25 PM to 01:05 PM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,
@@ -5546,7 +5546,7 @@
         {
           "period_index": 8,
           "period_name": "7th Period",
-          "period_time": "1:10 to 1:50",
+          "period_time": "01:05 PM to 01:45 PM",
           "bookings": [],
           "is_occupied": false,
           "occupancy_count": 0,

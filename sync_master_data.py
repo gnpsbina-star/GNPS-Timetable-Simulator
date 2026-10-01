@@ -17,6 +17,13 @@ print("=== 2. Reading Master Schedule from timetable.sqlite ===")
 conn = sqlite3.connect(os.path.join(BASE_DIR, "timetable.sqlite"))
 cur = conn.cursor()
 
+# Synchronize period_time in timetable.sqlite with master period_definitions
+p_time_map = {p["period_index"]: p["time"] for p in period_defs}
+for p_idx, new_time in p_time_map.items():
+    cur.execute("UPDATE schedule_entries SET period_time = ? WHERE period_index = ?", (new_time, p_idx))
+conn.commit()
+print("Synchronized period_time in timetable.sqlite with master period_definitions.")
+
 # Get distinct classes
 cur.execute("SELECT DISTINCT class_name, class_teacher FROM schedule_entries ORDER BY id")
 class_meta = cur.fetchall()
@@ -52,6 +59,7 @@ for row in all_entries:
                 all_subjects_set.add(s.strip())
         
     room_type = "Ground" if subj in ["Games", "Sports", "PE"] else ("Activity Hall" if subj == "Yoga" else "Classroom")
+    p_time = p_time_map.get(p_idx, p_time)
 
     period_item = {
         "period_index": p_idx,
@@ -185,6 +193,21 @@ with open(os.path.join(BASE_DIR, "timetable_entries.csv"), "w", newline="", enco
     writer.writeheader()
     writer.writerows(flat_entries)
 print("Saved timetable_entries.csv")
+
+# 6b. Update timetable_rooms.json period_time
+rooms_path = os.path.join(BASE_DIR, "timetable_rooms.json")
+if os.path.exists(rooms_path):
+    with open(rooms_path, "r", encoding="utf-8") as f:
+        rooms_data = json.load(f)
+    for r_id, r_info in rooms_data.items():
+        for d, periods_list in r_info.get("schedule", {}).items():
+            for p_slot in periods_list:
+                p_idx = p_slot.get("period_index")
+                if p_idx in p_time_map:
+                    p_slot["period_time"] = p_time_map[p_idx]
+    with open(rooms_path, "w", encoding="utf-8") as f:
+        json.dump(rooms_data, f, indent=2, ensure_ascii=False)
+    print("Saved updated timetable_rooms.json with synchronized bell schedule.")
 
 # 7. Update timetable_config.json events & assigned workloads
 # Adjust events for the 11 classes to 1 Art & Craft + 1 Games/Sports
