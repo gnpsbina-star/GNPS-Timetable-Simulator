@@ -42,7 +42,10 @@ class TimetableGenerator:
     def from_json(cls, config_path: str) -> "TimetableGenerator":
         with open(config_path, "r", encoding="utf-8") as f:
             data = json.load(f)
+        return cls.from_dict(data)
 
+    @classmethod
+    def from_dict(cls, data: Dict[str, Any]) -> "TimetableGenerator":
         cfg_data = data.get("config", {})
         config = SchoolConfig(
             academic_year=cfg_data.get("academic_year", "2026-27"),
@@ -51,7 +54,9 @@ class TimetableGenerator:
             periods_per_day=cfg_data.get("periods_per_day", 8),
             period_definitions=cfg_data.get("period_definitions", []),
             school_timings=cfg_data.get("school_timings", []),
-            fixed_locks=cfg_data.get("fixed_locks", [])
+            wing_bell_schedules=cfg_data.get("wing_bell_schedules", {}),
+            fixed_locks=cfg_data.get("fixed_locks", []),
+            enforce_class_teacher_p1=cfg_data.get("enforce_class_teacher_p1", True)
         )
 
         teachers = {}
@@ -78,27 +83,11 @@ class TimetableGenerator:
 
         rooms = {}
         for r in data.get("rooms", []):
-            rooms[r["id"]] = Room(
-                id=r["id"],
-                name=r["name"],
-                room_type=r.get("room_type", "Classroom"),
-                capacity=r.get("capacity", 40)
-            )
+            rooms[r["id"]] = Room.from_dict(r)
 
         events = []
         for e in data.get("events", []):
-            events.append(Event(
-                id=e["id"],
-                subject=e["subject"],
-                teacher_ids=e.get("teacher_ids", []),
-                section_ids=e.get("section_ids", []),
-                weekly_quota=e.get("weekly_quota", 1),
-                room_type=e.get("room_type", "Classroom"),
-                duration=e.get("duration", 1),
-                basket_id=e.get("basket_id"),
-                is_locked=e.get("is_locked", False),
-                locked_slots=[tuple(s) for s in e.get("locked_slots", [])]
-            ))
+            events.append(Event.from_dict(e))
 
         baskets = []
         for b in data.get("baskets", []):
@@ -148,4 +137,4 @@ class TimetableGenerator:
         return result
 
     def export(self, grid: TimetableGrid, output_dir: str) -> Dict[str, str]:
-        return export_all(grid, self.teachers, self.classes, output_dir)
+        return export_all(grid, self.teachers, self.classes, output_dir, rooms=self.rooms)

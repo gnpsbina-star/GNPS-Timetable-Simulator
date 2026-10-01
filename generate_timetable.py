@@ -93,7 +93,7 @@ def extract_config():
 
     cfg_out = os.path.join(BASE_DIR, "timetable_config.json")
     
-    # Extract unique teachers and calculate their average weekly load
+    # Extract unique teachers and calculate their actual weekly and daily loads
     teacher_export_path = os.path.join(BASE_DIR, "timetable_teachers.json")
     teacher_loads = {}
     if os.path.exists(teacher_export_path):
@@ -102,14 +102,31 @@ def extract_config():
             for t_name, info in t_data.items():
                 teacher_loads[t_name] = info.get("total_weekly_teaching_periods", 30)
 
+    # Compute maximum daily lessons for each teacher
+    daily_counts = {}
+    for c in data.get("classes", []):
+        for day, periods in c.get("schedule", {}).items():
+            for p in periods:
+                t = p.get("teacher", "")
+                s = p.get("subject", "")
+                if t and s and s not in ["Morning Assembly", "Lunch", "Prayer", "Lunch _ Class Teacher", "CYCLE TEST", "CCA", "Recess", "Assembly"]:
+                    for teach in [x.strip() for x in t.split("/") if x.strip()]:
+                        daily_counts.setdefault((teach, day), 0)
+                        daily_counts[(teach, day)] += 1
+
+    max_daily_by_teacher = {}
+    for (teach, day), cnt in daily_counts.items():
+        max_daily_by_teacher[teach] = max(max_daily_by_teacher.get(teach, 0), cnt)
+
     teachers_list = []
     for t_name in data.get("teachers", []):
         is_spec = any(s in t_name.lower() for s in ["geetesh", "sports", "art", "music", "comp"])
+        actual_max_daily = max_daily_by_teacher.get(t_name, 6)
         teachers_list.append({
             "id": t_name,
             "name": t_name,
-            "max_weekly_periods": max(teacher_loads.get(t_name, 30), 34),
-            "max_daily_periods": 6,
+            "max_weekly_periods": teacher_loads.get(t_name, 34),
+            "max_daily_periods": max(actual_max_daily, 6),
             "is_specialist": is_spec,
             "unavailable_slots": []
         })
@@ -121,6 +138,9 @@ def extract_config():
     first_class = data["classes"][0] if data.get("classes") else {}
     periods_def = first_class.get("period_definitions", [])
 
+    # Group slot assignments across all classes to accurately detect clubbed classes
+    # (e.g. combined Class 12 Comm & Arts for Economics, or Class 11 & 12 for Games)
+    clubbed_slots = {}
     for c in data.get("classes", []):
         c_name = c.get("class_name")
         c_id = c_name.replace(" ", "_")
@@ -131,47 +151,105 @@ def extract_config():
             "wing": "Senior" if any(x in c_name for x in ["9", "10", "11", "12"]) else ("Middle" if any(x in c_name for x in ["6", "7", "8"]) else "Primary")
         })
 
-        # Calculate subject weekly quotas for this class
-        subject_counts = {}
         for day, periods in c.get("schedule", {}).items():
             for p in periods:
                 s = p.get("subject")
                 t = p.get("teacher")
-                if s and s not in ["Lunch", "Prayer", "CYCLE TEST", "CCA"]:
-                    key = (s, t)
-                    subject_counts[key] = subject_counts.get(key, 0) + 1
+                p_idx = p.get("period_index")
+                if s and t and s not in ["Lunch", "Prayer", "CYCLE TEST", "CCA", "Morning Assembly"]:
+                    key = (t, s, day, p_idx)
+                    clubbed_slots.setdefault(key, set()).add(c_id)
 
-        for (s, t), count in subject_counts.items():
-            events_list.append({
-                "id": f"EV_{ev_counter}",
-                "subject": s,
-                "teacher_ids": [t] if t else [],
-                "section_ids": [c_id],
-                "weekly_quota": count,
-                "room_type": "Classroom",
-                "duration": 1
-            })
-            ev_counter += 1
+    # Group by (teacher, subject, section_ids_tuple) to create single events for clubbed classes
+    event_groups = {}
+    for (t, s, day, p_idx), sections in clubbed_slots.items():
+        sec_key = tuple(sorted(list(sections)))
+        group_key = (t, s, sec_key)
+        event_groups.setdefault(group_key, []).append([day, p_idx])
+
+    for (t, s, sec_tuple), slots in event_groups.items():
+        r_type = "Activity Hall" if s == "Yoga" else ("Ground" if s in ["Games", "Game", "PE"] else "Classroom")
+        is_joint = len(sec_tuple) > 1
+        joint_label = None
+        if is_joint:
+            clean_secs = [s_id.replace("CLASS_", "Class ").replace("_", " ") for s_id in sec_tuple]
+            joint_label = f"{' + '.join(clean_secs)} {s}"
+        events_list.append({
+            "id": f"EV_{ev_counter}",
+            "subject": s,
+            "teacher_ids": [t] if t else [],
+            "section_ids": list(sec_tuple),
+            "weekly_quota": len(slots),
+            "room_type": r_type,
+            "duration": 1,
+            "locked_slots": slots,
+            "is_joint": is_joint,
+            "joint_label": joint_label
+        })
+        ev_counter += 1
+
+    # Read existing config to preserve rich period definitions, subjects, and custom settings
+    existing_cfg = {}
+    if os.path.exists(cfg_out):
+        try:
+            with open(cfg_out, "r", encoding="utf-8") as f:
+                existing_cfg = json.load(f)
+        except Exception:
+            pass
+
+    rich_config = existing_cfg.get("config", {
+        "academic_year": data.get("academic_year", "2026-27"),
+        "title": data.get("title", "School Time Table"),
+        "days": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+        "periods_per_day": len(periods_def),
+        "period_definitions": periods_def,
+        "school_timings": data.get("school_timings", []),
+        "enforce_class_teacher_p1": True
+    })
+
+    # Ensure periods_def has is_lunch, is_assembly, and Saturday early dispersal
+    for p in rich_config.get("period_definitions", []):
+        p_idx = p.get("period_index")
+        if p_idx == 0:
+            p["is_assembly"] = True
+            p["is_lunch"] = False
+        elif p_idx == 4 or "lunch" in p.get("name", "").lower():
+            p["is_lunch"] = True
+            p["is_assembly"] = False
+        else:
+            p["is_lunch"] = False
+            p["is_assembly"] = False
+        if p_idx in [6, 7, 8]:
+            if "wing_schedule" in p and "saturday" in p["wing_schedule"]:
+                p["wing_schedule"]["saturday"]["middle"] = "off"
+                p["wing_schedule"]["saturday"]["primary"] = "off"
+
+    # Normalize teacher weekly caps to cover assigned curricular load
+    for t in teachers_list:
+        t_key = t["name"].lower().strip()
+        load = sum(
+            e["weekly_quota"] * e.get("duration", 1)
+            for e in events_list
+            if any(tid.lower().strip() == t_key for tid in e["teacher_ids"])
+        )
+        if load > t["max_weekly_periods"]:
+            t["max_weekly_periods"] = load
 
     config_template = {
-        "config": {
-            "academic_year": data.get("academic_year", "2026-27"),
-            "title": data.get("title", "School Time Table"),
-            "days": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-            "periods_per_day": len(periods_def),
-            "period_definitions": periods_def,
-            "school_timings": data.get("school_timings", [])
-        },
+        "config": rich_config,
         "teachers": teachers_list,
         "classes": classes_list,
         "rooms": [
-            {"id": "R_COMP", "name": "Computer Lab", "room_type": "ComputerLab", "capacity": 40},
-            {"id": "R_SCI", "name": "Science Lab", "room_type": "ScienceLab", "capacity": 40},
-            {"id": "R_GROUND", "name": "Playground", "room_type": "Ground", "capacity": 100}
+            {"id": "R_COMP", "name": "Computer Lab", "room_type": "ComputerLab", "capacity": 40, "max_concurrent_classes": 1, "building": "Main Block"},
+            {"id": "R_SCI", "name": "Science Lab", "room_type": "ScienceLab", "capacity": 40, "max_concurrent_classes": 1, "building": "Science Wing"},
+            {"id": "R_GROUND", "name": "Playground", "room_type": "Ground", "capacity": 100, "max_concurrent_classes": 3, "building": "Sports Complex"},
+            {"id": "R_ACT", "name": "Activity Hall", "room_type": "Activity Hall", "capacity": 60, "max_concurrent_classes": 2, "building": "Auditorium Wing"}
         ],
         "events": events_list,
-        "baskets": []
+        "baskets": existing_cfg.get("baskets", [])
     }
+    if "subjects" in existing_cfg:
+        config_template["subjects"] = existing_cfg["subjects"]
 
     with open(cfg_out, "w", encoding="utf-8") as f:
         json.dump(config_template, f, indent=2, ensure_ascii=False)

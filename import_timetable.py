@@ -131,14 +131,16 @@ def process_timetable():
                         
                         subj = ''
                         teach = ''
-                        if cell_val:
-                            if cell_val in ['Prayer', 'CYCLE TEST', 'CCA']:
-                                subj = cell_val
-                                teach = ''
-                            elif 'Lunch' in cell_val:
-                                subj = 'Lunch'
-                                teach = class_teacher if 'Class Teacher' in cell_val else ''
-                            elif '_' in cell_val:
+                        if p_def.get('period_index') == 0 or 'Assembly' in p_def.get('name', '') or '07:50' in p_def.get('time', ''):
+                            subj = 'Morning Assembly'
+                            teach = ''
+                            cell_val = 'Morning Assembly'
+                        elif p_def.get('is_lunch') or 'Lunch' in p_def.get('name', '') or 'Lunch' in cell_val or p_def.get('period_index') == 4:
+                            subj = 'Lunch'
+                            teach = class_teacher
+                            cell_val = f'Lunch _ {class_teacher}'
+                        elif cell_val:
+                            if '_' in cell_val:
                                 s_parts = cell_val.split('_', 1)
                                 subj = clean_name(s_parts[0])
                                 teach = clean_name(s_parts[1])
@@ -224,6 +226,11 @@ def process_timetable():
                             'slot': s2_header[c_idx - 3] if (c_idx - 3) < len(s2_header) else f'Slot {c_idx-2}',
                             'details': val
                         })
+
+    for s in ['', 'Prayer', 'CYCLE TEST', 'CCA']:
+        all_subjects.discard(s)
+    all_subjects.add('Morning Assembly')
+    all_subjects.add('Lunch')
 
     print(f'Parsed {len(classes_list)} classes')
     print(f'Parsed {len(flat_entries)} total period slots')

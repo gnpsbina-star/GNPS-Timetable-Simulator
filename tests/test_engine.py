@@ -68,6 +68,20 @@ def run_tests():
     print(f"T3 (Geetesh) Physical Periods: {t3_workload['total_weekly_periods']} (expected 1 for clubbed games)")
     assert t3_workload["total_weekly_periods"] == 1, "Clubbed class failed deduplicated contact hours check"
 
+    # Test Subject model
+    from engine.models import Subject
+    sub = Subject(id="SUB_MATH", name="Mathematics", code="MATH", category="theory", default_quota=6, duration_type="single")
+    assert sub.code == "MATH"
+    assert sub.category == "theory"
+
+    # Test Class Teacher Period 1 Priority
+    # In the generated grid for C1, check if T1 (Vandna, class teacher of C1) is placed in Period 1
+    c1_p1_assignments = [a for (sec, day, p_idx), a in grid.section_grid.items() if sec == "C1" and p_idx == 1]
+    assigned_teachers_p1 = [t for a in c1_p1_assignments for t in a.teacher_ids]
+    print(f"C1 Period 1 assigned teachers: {assigned_teachers_p1}")
+    assert "T1" in assigned_teachers_p1, "Class Teacher T1 was not prioritized in Period 1 for C1!"
+
+
     # Test Infeasibility detection
     print("\nTesting Infeasibility Detection on Impossible Load...")
     bad_events = events + [
@@ -78,7 +92,8 @@ def run_tests():
     print("Bad audit correctly failed:", not bad_audit.is_feasible)
     assert not bad_audit.is_feasible, "Failed to catch impossible arithmetic load in precheck"
 
-    print("\nALL ENGINE TESTS PASSED SUCCESSFULLY! ✅")
+    print("\nALL ENGINE TESTS (INCLUDING CLASS TEACHER P1 & SUBJECTS) PASSED SUCCESSFULLY! ✅")
 
 if __name__ == "__main__":
     run_tests()
+

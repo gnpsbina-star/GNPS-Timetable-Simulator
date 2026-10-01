@@ -1,0 +1,5558 @@
+{
+  "R_COMP": {
+    "id": "R_COMP",
+    "name": "Computer Lab",
+    "room_type": "ComputerLab",
+    "building": "Main Block",
+    "capacity": 40,
+    "max_concurrent_classes": 1,
+    "total_bookings_per_week": 0,
+    "schedule": {
+      "Monday": [
+        {
+          "period_index": 0,
+          "period_name": "Morning Assembly",
+          "period_time": "07:50 to 08:20",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 1,
+          "period_name": "1st Period",
+          "period_time": "08:30 to 9:15",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 2,
+          "period_name": "2nd Period",
+          "period_time": "9:15 to 10:00",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 3,
+          "period_name": "3rd Period",
+          "period_time": "10:00 to 10:45",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 4,
+          "period_name": "Lunch",
+          "period_time": "10:45 to 11:05",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 5,
+          "period_name": "4th Period",
+          "period_time": "11:05 to 11:50",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 6,
+          "period_name": "5th Period",
+          "period_time": "11:50 to 12:30",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 7,
+          "period_name": "6th Period",
+          "period_time": "12:30 to 1:10",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 8,
+          "period_name": "7th Period",
+          "period_time": "1:10 to 1:50",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        }
+      ],
+      "Tuesday": [
+        {
+          "period_index": 0,
+          "period_name": "Morning Assembly",
+          "period_time": "07:50 to 08:20",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 1,
+          "period_name": "1st Period",
+          "period_time": "08:30 to 9:15",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 2,
+          "period_name": "2nd Period",
+          "period_time": "9:15 to 10:00",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 3,
+          "period_name": "3rd Period",
+          "period_time": "10:00 to 10:45",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 4,
+          "period_name": "Lunch",
+          "period_time": "10:45 to 11:05",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 5,
+          "period_name": "4th Period",
+          "period_time": "11:05 to 11:50",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 6,
+          "period_name": "5th Period",
+          "period_time": "11:50 to 12:30",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 7,
+          "period_name": "6th Period",
+          "period_time": "12:30 to 1:10",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 8,
+          "period_name": "7th Period",
+          "period_time": "1:10 to 1:50",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        }
+      ],
+      "Wednesday": [
+        {
+          "period_index": 0,
+          "period_name": "Morning Assembly",
+          "period_time": "07:50 to 08:20",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 1,
+          "period_name": "1st Period",
+          "period_time": "08:30 to 9:15",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 2,
+          "period_name": "2nd Period",
+          "period_time": "9:15 to 10:00",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 3,
+          "period_name": "3rd Period",
+          "period_time": "10:00 to 10:45",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 4,
+          "period_name": "Lunch",
+          "period_time": "10:45 to 11:05",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 5,
+          "period_name": "4th Period",
+          "period_time": "11:05 to 11:50",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 6,
+          "period_name": "5th Period",
+          "period_time": "11:50 to 12:30",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 7,
+          "period_name": "6th Period",
+          "period_time": "12:30 to 1:10",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 8,
+          "period_name": "7th Period",
+          "period_time": "1:10 to 1:50",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        }
+      ],
+      "Thursday": [
+        {
+          "period_index": 0,
+          "period_name": "Morning Assembly",
+          "period_time": "07:50 to 08:20",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 1,
+          "period_name": "1st Period",
+          "period_time": "08:30 to 9:15",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 2,
+          "period_name": "2nd Period",
+          "period_time": "9:15 to 10:00",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 3,
+          "period_name": "3rd Period",
+          "period_time": "10:00 to 10:45",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 4,
+          "period_name": "Lunch",
+          "period_time": "10:45 to 11:05",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 5,
+          "period_name": "4th Period",
+          "period_time": "11:05 to 11:50",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 6,
+          "period_name": "5th Period",
+          "period_time": "11:50 to 12:30",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 7,
+          "period_name": "6th Period",
+          "period_time": "12:30 to 1:10",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 8,
+          "period_name": "7th Period",
+          "period_time": "1:10 to 1:50",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        }
+      ],
+      "Friday": [
+        {
+          "period_index": 0,
+          "period_name": "Morning Assembly",
+          "period_time": "07:50 to 08:20",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 1,
+          "period_name": "1st Period",
+          "period_time": "08:30 to 9:15",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 2,
+          "period_name": "2nd Period",
+          "period_time": "9:15 to 10:00",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 3,
+          "period_name": "3rd Period",
+          "period_time": "10:00 to 10:45",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 4,
+          "period_name": "Lunch",
+          "period_time": "10:45 to 11:05",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 5,
+          "period_name": "4th Period",
+          "period_time": "11:05 to 11:50",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 6,
+          "period_name": "5th Period",
+          "period_time": "11:50 to 12:30",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 7,
+          "period_name": "6th Period",
+          "period_time": "12:30 to 1:10",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 8,
+          "period_name": "7th Period",
+          "period_time": "1:10 to 1:50",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        }
+      ],
+      "Saturday": [
+        {
+          "period_index": 0,
+          "period_name": "Morning Assembly",
+          "period_time": "07:50 to 08:20",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 1,
+          "period_name": "1st Period",
+          "period_time": "08:30 to 9:15",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 2,
+          "period_name": "2nd Period",
+          "period_time": "9:15 to 10:00",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 3,
+          "period_name": "3rd Period",
+          "period_time": "10:00 to 10:45",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 4,
+          "period_name": "Lunch",
+          "period_time": "10:45 to 11:05",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 5,
+          "period_name": "4th Period",
+          "period_time": "11:05 to 11:50",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 6,
+          "period_name": "5th Period",
+          "period_time": "11:50 to 12:30",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 7,
+          "period_name": "6th Period",
+          "period_time": "12:30 to 1:10",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 8,
+          "period_name": "7th Period",
+          "period_time": "1:10 to 1:50",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        }
+      ]
+    }
+  },
+  "Computer Lab": {
+    "id": "R_COMP",
+    "name": "Computer Lab",
+    "room_type": "ComputerLab",
+    "building": "Main Block",
+    "capacity": 40,
+    "max_concurrent_classes": 1,
+    "total_bookings_per_week": 0,
+    "schedule": {
+      "Monday": [
+        {
+          "period_index": 0,
+          "period_name": "Morning Assembly",
+          "period_time": "07:50 to 08:20",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 1,
+          "period_name": "1st Period",
+          "period_time": "08:30 to 9:15",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 2,
+          "period_name": "2nd Period",
+          "period_time": "9:15 to 10:00",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 3,
+          "period_name": "3rd Period",
+          "period_time": "10:00 to 10:45",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 4,
+          "period_name": "Lunch",
+          "period_time": "10:45 to 11:05",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 5,
+          "period_name": "4th Period",
+          "period_time": "11:05 to 11:50",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 6,
+          "period_name": "5th Period",
+          "period_time": "11:50 to 12:30",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 7,
+          "period_name": "6th Period",
+          "period_time": "12:30 to 1:10",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 8,
+          "period_name": "7th Period",
+          "period_time": "1:10 to 1:50",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        }
+      ],
+      "Tuesday": [
+        {
+          "period_index": 0,
+          "period_name": "Morning Assembly",
+          "period_time": "07:50 to 08:20",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 1,
+          "period_name": "1st Period",
+          "period_time": "08:30 to 9:15",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 2,
+          "period_name": "2nd Period",
+          "period_time": "9:15 to 10:00",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 3,
+          "period_name": "3rd Period",
+          "period_time": "10:00 to 10:45",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 4,
+          "period_name": "Lunch",
+          "period_time": "10:45 to 11:05",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 5,
+          "period_name": "4th Period",
+          "period_time": "11:05 to 11:50",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 6,
+          "period_name": "5th Period",
+          "period_time": "11:50 to 12:30",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 7,
+          "period_name": "6th Period",
+          "period_time": "12:30 to 1:10",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 8,
+          "period_name": "7th Period",
+          "period_time": "1:10 to 1:50",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        }
+      ],
+      "Wednesday": [
+        {
+          "period_index": 0,
+          "period_name": "Morning Assembly",
+          "period_time": "07:50 to 08:20",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 1,
+          "period_name": "1st Period",
+          "period_time": "08:30 to 9:15",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 2,
+          "period_name": "2nd Period",
+          "period_time": "9:15 to 10:00",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 3,
+          "period_name": "3rd Period",
+          "period_time": "10:00 to 10:45",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 4,
+          "period_name": "Lunch",
+          "period_time": "10:45 to 11:05",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 5,
+          "period_name": "4th Period",
+          "period_time": "11:05 to 11:50",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 6,
+          "period_name": "5th Period",
+          "period_time": "11:50 to 12:30",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 7,
+          "period_name": "6th Period",
+          "period_time": "12:30 to 1:10",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 8,
+          "period_name": "7th Period",
+          "period_time": "1:10 to 1:50",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        }
+      ],
+      "Thursday": [
+        {
+          "period_index": 0,
+          "period_name": "Morning Assembly",
+          "period_time": "07:50 to 08:20",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 1,
+          "period_name": "1st Period",
+          "period_time": "08:30 to 9:15",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 2,
+          "period_name": "2nd Period",
+          "period_time": "9:15 to 10:00",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 3,
+          "period_name": "3rd Period",
+          "period_time": "10:00 to 10:45",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 4,
+          "period_name": "Lunch",
+          "period_time": "10:45 to 11:05",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 5,
+          "period_name": "4th Period",
+          "period_time": "11:05 to 11:50",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 6,
+          "period_name": "5th Period",
+          "period_time": "11:50 to 12:30",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 7,
+          "period_name": "6th Period",
+          "period_time": "12:30 to 1:10",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 8,
+          "period_name": "7th Period",
+          "period_time": "1:10 to 1:50",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        }
+      ],
+      "Friday": [
+        {
+          "period_index": 0,
+          "period_name": "Morning Assembly",
+          "period_time": "07:50 to 08:20",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 1,
+          "period_name": "1st Period",
+          "period_time": "08:30 to 9:15",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 2,
+          "period_name": "2nd Period",
+          "period_time": "9:15 to 10:00",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 3,
+          "period_name": "3rd Period",
+          "period_time": "10:00 to 10:45",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 4,
+          "period_name": "Lunch",
+          "period_time": "10:45 to 11:05",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 5,
+          "period_name": "4th Period",
+          "period_time": "11:05 to 11:50",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 6,
+          "period_name": "5th Period",
+          "period_time": "11:50 to 12:30",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 7,
+          "period_name": "6th Period",
+          "period_time": "12:30 to 1:10",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 8,
+          "period_name": "7th Period",
+          "period_time": "1:10 to 1:50",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        }
+      ],
+      "Saturday": [
+        {
+          "period_index": 0,
+          "period_name": "Morning Assembly",
+          "period_time": "07:50 to 08:20",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 1,
+          "period_name": "1st Period",
+          "period_time": "08:30 to 9:15",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 2,
+          "period_name": "2nd Period",
+          "period_time": "9:15 to 10:00",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 3,
+          "period_name": "3rd Period",
+          "period_time": "10:00 to 10:45",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 4,
+          "period_name": "Lunch",
+          "period_time": "10:45 to 11:05",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 5,
+          "period_name": "4th Period",
+          "period_time": "11:05 to 11:50",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 6,
+          "period_name": "5th Period",
+          "period_time": "11:50 to 12:30",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 7,
+          "period_name": "6th Period",
+          "period_time": "12:30 to 1:10",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 8,
+          "period_name": "7th Period",
+          "period_time": "1:10 to 1:50",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        }
+      ]
+    }
+  },
+  "R_SCI": {
+    "id": "R_SCI",
+    "name": "Science Lab",
+    "room_type": "ScienceLab",
+    "building": "Science Wing",
+    "capacity": 40,
+    "max_concurrent_classes": 1,
+    "total_bookings_per_week": 0,
+    "schedule": {
+      "Monday": [
+        {
+          "period_index": 0,
+          "period_name": "Morning Assembly",
+          "period_time": "07:50 to 08:20",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 1,
+          "period_name": "1st Period",
+          "period_time": "08:30 to 9:15",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 2,
+          "period_name": "2nd Period",
+          "period_time": "9:15 to 10:00",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 3,
+          "period_name": "3rd Period",
+          "period_time": "10:00 to 10:45",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 4,
+          "period_name": "Lunch",
+          "period_time": "10:45 to 11:05",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 5,
+          "period_name": "4th Period",
+          "period_time": "11:05 to 11:50",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 6,
+          "period_name": "5th Period",
+          "period_time": "11:50 to 12:30",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 7,
+          "period_name": "6th Period",
+          "period_time": "12:30 to 1:10",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 8,
+          "period_name": "7th Period",
+          "period_time": "1:10 to 1:50",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        }
+      ],
+      "Tuesday": [
+        {
+          "period_index": 0,
+          "period_name": "Morning Assembly",
+          "period_time": "07:50 to 08:20",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 1,
+          "period_name": "1st Period",
+          "period_time": "08:30 to 9:15",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 2,
+          "period_name": "2nd Period",
+          "period_time": "9:15 to 10:00",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 3,
+          "period_name": "3rd Period",
+          "period_time": "10:00 to 10:45",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 4,
+          "period_name": "Lunch",
+          "period_time": "10:45 to 11:05",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 5,
+          "period_name": "4th Period",
+          "period_time": "11:05 to 11:50",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 6,
+          "period_name": "5th Period",
+          "period_time": "11:50 to 12:30",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 7,
+          "period_name": "6th Period",
+          "period_time": "12:30 to 1:10",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 8,
+          "period_name": "7th Period",
+          "period_time": "1:10 to 1:50",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        }
+      ],
+      "Wednesday": [
+        {
+          "period_index": 0,
+          "period_name": "Morning Assembly",
+          "period_time": "07:50 to 08:20",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 1,
+          "period_name": "1st Period",
+          "period_time": "08:30 to 9:15",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 2,
+          "period_name": "2nd Period",
+          "period_time": "9:15 to 10:00",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 3,
+          "period_name": "3rd Period",
+          "period_time": "10:00 to 10:45",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 4,
+          "period_name": "Lunch",
+          "period_time": "10:45 to 11:05",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 5,
+          "period_name": "4th Period",
+          "period_time": "11:05 to 11:50",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 6,
+          "period_name": "5th Period",
+          "period_time": "11:50 to 12:30",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 7,
+          "period_name": "6th Period",
+          "period_time": "12:30 to 1:10",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 8,
+          "period_name": "7th Period",
+          "period_time": "1:10 to 1:50",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        }
+      ],
+      "Thursday": [
+        {
+          "period_index": 0,
+          "period_name": "Morning Assembly",
+          "period_time": "07:50 to 08:20",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 1,
+          "period_name": "1st Period",
+          "period_time": "08:30 to 9:15",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 2,
+          "period_name": "2nd Period",
+          "period_time": "9:15 to 10:00",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 3,
+          "period_name": "3rd Period",
+          "period_time": "10:00 to 10:45",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 4,
+          "period_name": "Lunch",
+          "period_time": "10:45 to 11:05",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 5,
+          "period_name": "4th Period",
+          "period_time": "11:05 to 11:50",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 6,
+          "period_name": "5th Period",
+          "period_time": "11:50 to 12:30",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 7,
+          "period_name": "6th Period",
+          "period_time": "12:30 to 1:10",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 8,
+          "period_name": "7th Period",
+          "period_time": "1:10 to 1:50",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        }
+      ],
+      "Friday": [
+        {
+          "period_index": 0,
+          "period_name": "Morning Assembly",
+          "period_time": "07:50 to 08:20",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 1,
+          "period_name": "1st Period",
+          "period_time": "08:30 to 9:15",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 2,
+          "period_name": "2nd Period",
+          "period_time": "9:15 to 10:00",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 3,
+          "period_name": "3rd Period",
+          "period_time": "10:00 to 10:45",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 4,
+          "period_name": "Lunch",
+          "period_time": "10:45 to 11:05",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 5,
+          "period_name": "4th Period",
+          "period_time": "11:05 to 11:50",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 6,
+          "period_name": "5th Period",
+          "period_time": "11:50 to 12:30",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 7,
+          "period_name": "6th Period",
+          "period_time": "12:30 to 1:10",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 8,
+          "period_name": "7th Period",
+          "period_time": "1:10 to 1:50",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        }
+      ],
+      "Saturday": [
+        {
+          "period_index": 0,
+          "period_name": "Morning Assembly",
+          "period_time": "07:50 to 08:20",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 1,
+          "period_name": "1st Period",
+          "period_time": "08:30 to 9:15",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 2,
+          "period_name": "2nd Period",
+          "period_time": "9:15 to 10:00",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 3,
+          "period_name": "3rd Period",
+          "period_time": "10:00 to 10:45",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 4,
+          "period_name": "Lunch",
+          "period_time": "10:45 to 11:05",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 5,
+          "period_name": "4th Period",
+          "period_time": "11:05 to 11:50",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 6,
+          "period_name": "5th Period",
+          "period_time": "11:50 to 12:30",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 7,
+          "period_name": "6th Period",
+          "period_time": "12:30 to 1:10",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 8,
+          "period_name": "7th Period",
+          "period_time": "1:10 to 1:50",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        }
+      ]
+    }
+  },
+  "Science Lab": {
+    "id": "R_SCI",
+    "name": "Science Lab",
+    "room_type": "ScienceLab",
+    "building": "Science Wing",
+    "capacity": 40,
+    "max_concurrent_classes": 1,
+    "total_bookings_per_week": 0,
+    "schedule": {
+      "Monday": [
+        {
+          "period_index": 0,
+          "period_name": "Morning Assembly",
+          "period_time": "07:50 to 08:20",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 1,
+          "period_name": "1st Period",
+          "period_time": "08:30 to 9:15",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 2,
+          "period_name": "2nd Period",
+          "period_time": "9:15 to 10:00",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 3,
+          "period_name": "3rd Period",
+          "period_time": "10:00 to 10:45",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 4,
+          "period_name": "Lunch",
+          "period_time": "10:45 to 11:05",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 5,
+          "period_name": "4th Period",
+          "period_time": "11:05 to 11:50",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 6,
+          "period_name": "5th Period",
+          "period_time": "11:50 to 12:30",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 7,
+          "period_name": "6th Period",
+          "period_time": "12:30 to 1:10",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 8,
+          "period_name": "7th Period",
+          "period_time": "1:10 to 1:50",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        }
+      ],
+      "Tuesday": [
+        {
+          "period_index": 0,
+          "period_name": "Morning Assembly",
+          "period_time": "07:50 to 08:20",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 1,
+          "period_name": "1st Period",
+          "period_time": "08:30 to 9:15",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 2,
+          "period_name": "2nd Period",
+          "period_time": "9:15 to 10:00",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 3,
+          "period_name": "3rd Period",
+          "period_time": "10:00 to 10:45",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 4,
+          "period_name": "Lunch",
+          "period_time": "10:45 to 11:05",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 5,
+          "period_name": "4th Period",
+          "period_time": "11:05 to 11:50",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 6,
+          "period_name": "5th Period",
+          "period_time": "11:50 to 12:30",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 7,
+          "period_name": "6th Period",
+          "period_time": "12:30 to 1:10",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 8,
+          "period_name": "7th Period",
+          "period_time": "1:10 to 1:50",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        }
+      ],
+      "Wednesday": [
+        {
+          "period_index": 0,
+          "period_name": "Morning Assembly",
+          "period_time": "07:50 to 08:20",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 1,
+          "period_name": "1st Period",
+          "period_time": "08:30 to 9:15",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 2,
+          "period_name": "2nd Period",
+          "period_time": "9:15 to 10:00",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 3,
+          "period_name": "3rd Period",
+          "period_time": "10:00 to 10:45",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 4,
+          "period_name": "Lunch",
+          "period_time": "10:45 to 11:05",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 5,
+          "period_name": "4th Period",
+          "period_time": "11:05 to 11:50",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 6,
+          "period_name": "5th Period",
+          "period_time": "11:50 to 12:30",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 7,
+          "period_name": "6th Period",
+          "period_time": "12:30 to 1:10",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 8,
+          "period_name": "7th Period",
+          "period_time": "1:10 to 1:50",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        }
+      ],
+      "Thursday": [
+        {
+          "period_index": 0,
+          "period_name": "Morning Assembly",
+          "period_time": "07:50 to 08:20",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 1,
+          "period_name": "1st Period",
+          "period_time": "08:30 to 9:15",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 2,
+          "period_name": "2nd Period",
+          "period_time": "9:15 to 10:00",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 3,
+          "period_name": "3rd Period",
+          "period_time": "10:00 to 10:45",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 4,
+          "period_name": "Lunch",
+          "period_time": "10:45 to 11:05",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 5,
+          "period_name": "4th Period",
+          "period_time": "11:05 to 11:50",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 6,
+          "period_name": "5th Period",
+          "period_time": "11:50 to 12:30",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 7,
+          "period_name": "6th Period",
+          "period_time": "12:30 to 1:10",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 8,
+          "period_name": "7th Period",
+          "period_time": "1:10 to 1:50",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        }
+      ],
+      "Friday": [
+        {
+          "period_index": 0,
+          "period_name": "Morning Assembly",
+          "period_time": "07:50 to 08:20",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 1,
+          "period_name": "1st Period",
+          "period_time": "08:30 to 9:15",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 2,
+          "period_name": "2nd Period",
+          "period_time": "9:15 to 10:00",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 3,
+          "period_name": "3rd Period",
+          "period_time": "10:00 to 10:45",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 4,
+          "period_name": "Lunch",
+          "period_time": "10:45 to 11:05",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 5,
+          "period_name": "4th Period",
+          "period_time": "11:05 to 11:50",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 6,
+          "period_name": "5th Period",
+          "period_time": "11:50 to 12:30",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 7,
+          "period_name": "6th Period",
+          "period_time": "12:30 to 1:10",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 8,
+          "period_name": "7th Period",
+          "period_time": "1:10 to 1:50",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        }
+      ],
+      "Saturday": [
+        {
+          "period_index": 0,
+          "period_name": "Morning Assembly",
+          "period_time": "07:50 to 08:20",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 1,
+          "period_name": "1st Period",
+          "period_time": "08:30 to 9:15",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 2,
+          "period_name": "2nd Period",
+          "period_time": "9:15 to 10:00",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 3,
+          "period_name": "3rd Period",
+          "period_time": "10:00 to 10:45",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 4,
+          "period_name": "Lunch",
+          "period_time": "10:45 to 11:05",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 5,
+          "period_name": "4th Period",
+          "period_time": "11:05 to 11:50",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 6,
+          "period_name": "5th Period",
+          "period_time": "11:50 to 12:30",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 7,
+          "period_name": "6th Period",
+          "period_time": "12:30 to 1:10",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        },
+        {
+          "period_index": 8,
+          "period_name": "7th Period",
+          "period_time": "1:10 to 1:50",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 1
+        }
+      ]
+    }
+  },
+  "R_GROUND": {
+    "id": "R_GROUND",
+    "name": "Playground",
+    "room_type": "Ground",
+    "building": "Sports Complex",
+    "capacity": 100,
+    "max_concurrent_classes": 3,
+    "total_bookings_per_week": 39,
+    "schedule": {
+      "Monday": [
+        {
+          "period_index": 0,
+          "period_name": "Morning Assembly",
+          "period_time": "07:50 to 08:20",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 3
+        },
+        {
+          "period_index": 1,
+          "period_name": "1st Period",
+          "period_time": "08:30 to 9:15",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 3
+        },
+        {
+          "period_index": 2,
+          "period_name": "2nd Period",
+          "period_time": "9:15 to 10:00",
+          "bookings": [
+            {
+              "subject": "Games",
+              "classes": [
+                "CLASS 9 Marigold"
+              ],
+              "teachers": [
+                "Geetesh"
+              ],
+              "raw_value": "Games (CLASS 9 Marigold)"
+            },
+            {
+              "subject": "Games",
+              "classes": [
+                "CLASS 5 Rose"
+              ],
+              "teachers": [
+                "Komal"
+              ],
+              "raw_value": "Games (CLASS 5 Rose)"
+            }
+          ],
+          "is_occupied": true,
+          "occupancy_count": 2,
+          "max_capacity": 3
+        },
+        {
+          "period_index": 3,
+          "period_name": "3rd Period",
+          "period_time": "10:00 to 10:45",
+          "bookings": [
+            {
+              "subject": "PE",
+              "classes": [
+                "CLASS 12 (Bio + Math)"
+              ],
+              "teachers": [
+                "Shailandra"
+              ],
+              "raw_value": "PE (CLASS 12 (Bio + Math))"
+            }
+          ],
+          "is_occupied": true,
+          "occupancy_count": 1,
+          "max_capacity": 3
+        },
+        {
+          "period_index": 4,
+          "period_name": "Lunch",
+          "period_time": "10:45 to 11:05",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 3
+        },
+        {
+          "period_index": 5,
+          "period_name": "4th Period",
+          "period_time": "11:05 to 11:50",
+          "bookings": [
+            {
+              "subject": "Games",
+              "classes": [
+                "CLASS 10 Marigold"
+              ],
+              "teachers": [
+                "Geetesh"
+              ],
+              "raw_value": "Games (CLASS 10 Marigold)"
+            },
+            {
+              "subject": "PE",
+              "classes": [
+                "CLASS 11 (Bio + Math)"
+              ],
+              "teachers": [
+                "Shailandra"
+              ],
+              "raw_value": "PE (CLASS 11 (Bio + Math))"
+            }
+          ],
+          "is_occupied": true,
+          "occupancy_count": 2,
+          "max_capacity": 3
+        },
+        {
+          "period_index": 6,
+          "period_name": "5th Period",
+          "period_time": "11:50 to 12:30",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 3
+        },
+        {
+          "period_index": 7,
+          "period_name": "6th Period",
+          "period_time": "12:30 to 1:10",
+          "bookings": [
+            {
+              "subject": "PE",
+              "classes": [
+                "CLASS 12 (Arts)",
+                "CLASS 12 (Comm.)"
+              ],
+              "teachers": [
+                "Shailandra"
+              ],
+              "raw_value": "PE (CLASS 12 (Arts), CLASS 12 (Comm.))"
+            }
+          ],
+          "is_occupied": true,
+          "occupancy_count": 1,
+          "max_capacity": 3
+        },
+        {
+          "period_index": 8,
+          "period_name": "7th Period",
+          "period_time": "1:10 to 1:50",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 3
+        }
+      ],
+      "Tuesday": [
+        {
+          "period_index": 0,
+          "period_name": "Morning Assembly",
+          "period_time": "07:50 to 08:20",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 3
+        },
+        {
+          "period_index": 1,
+          "period_name": "1st Period",
+          "period_time": "08:30 to 9:15",
+          "bookings": [
+            {
+              "subject": "Games",
+              "classes": [
+                "CLASS 2 Rose"
+              ],
+              "teachers": [
+                "Komal"
+              ],
+              "raw_value": "Games (CLASS 2 Rose)"
+            }
+          ],
+          "is_occupied": true,
+          "occupancy_count": 1,
+          "max_capacity": 3
+        },
+        {
+          "period_index": 2,
+          "period_name": "2nd Period",
+          "period_time": "9:15 to 10:00",
+          "bookings": [
+            {
+              "subject": "Games",
+              "classes": [
+                "CLASS 3 Marigold"
+              ],
+              "teachers": [
+                "Komal"
+              ],
+              "raw_value": "Games (CLASS 3 Marigold)"
+            }
+          ],
+          "is_occupied": true,
+          "occupancy_count": 1,
+          "max_capacity": 3
+        },
+        {
+          "period_index": 3,
+          "period_name": "3rd Period",
+          "period_time": "10:00 to 10:45",
+          "bookings": [
+            {
+              "subject": "PE",
+              "classes": [
+                "CLASS 12 (Bio + Math)"
+              ],
+              "teachers": [
+                "Shailandra"
+              ],
+              "raw_value": "PE (CLASS 12 (Bio + Math))"
+            }
+          ],
+          "is_occupied": true,
+          "occupancy_count": 1,
+          "max_capacity": 3
+        },
+        {
+          "period_index": 4,
+          "period_name": "Lunch",
+          "period_time": "10:45 to 11:05",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 3
+        },
+        {
+          "period_index": 5,
+          "period_name": "4th Period",
+          "period_time": "11:05 to 11:50",
+          "bookings": [
+            {
+              "subject": "Games",
+              "classes": [
+                "CLASS 1 Rose"
+              ],
+              "teachers": [
+                "Komal"
+              ],
+              "raw_value": "Games (CLASS 1 Rose)"
+            },
+            {
+              "subject": "PE",
+              "classes": [
+                "CLASS 11 (Bio + Math)"
+              ],
+              "teachers": [
+                "Shailandra"
+              ],
+              "raw_value": "PE (CLASS 11 (Bio + Math))"
+            }
+          ],
+          "is_occupied": true,
+          "occupancy_count": 2,
+          "max_capacity": 3
+        },
+        {
+          "period_index": 6,
+          "period_name": "5th Period",
+          "period_time": "11:50 to 12:30",
+          "bookings": [
+            {
+              "subject": "Games",
+              "classes": [
+                "CLASS 1 Marigold"
+              ],
+              "teachers": [
+                "Komal"
+              ],
+              "raw_value": "Games (CLASS 1 Marigold)"
+            }
+          ],
+          "is_occupied": true,
+          "occupancy_count": 1,
+          "max_capacity": 3
+        },
+        {
+          "period_index": 7,
+          "period_name": "6th Period",
+          "period_time": "12:30 to 1:10",
+          "bookings": [
+            {
+              "subject": "PE",
+              "classes": [
+                "CLASS 12 (Arts)",
+                "CLASS 12 (Comm.)"
+              ],
+              "teachers": [
+                "Shailandra"
+              ],
+              "raw_value": "PE (CLASS 12 (Arts), CLASS 12 (Comm.))"
+            },
+            {
+              "subject": "Games",
+              "classes": [
+                "CLASS 2 Lily"
+              ],
+              "teachers": [
+                "Komal"
+              ],
+              "raw_value": "Games (CLASS 2 Lily)"
+            }
+          ],
+          "is_occupied": true,
+          "occupancy_count": 2,
+          "max_capacity": 3
+        },
+        {
+          "period_index": 8,
+          "period_name": "7th Period",
+          "period_time": "1:10 to 1:50",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 3
+        }
+      ],
+      "Wednesday": [
+        {
+          "period_index": 0,
+          "period_name": "Morning Assembly",
+          "period_time": "07:50 to 08:20",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 3
+        },
+        {
+          "period_index": 1,
+          "period_name": "1st Period",
+          "period_time": "08:30 to 9:15",
+          "bookings": [
+            {
+              "subject": "Games",
+              "classes": [
+                "CLASS 9 Rose"
+              ],
+              "teachers": [
+                "Komal"
+              ],
+              "raw_value": "Games (CLASS 9 Rose)"
+            }
+          ],
+          "is_occupied": true,
+          "occupancy_count": 1,
+          "max_capacity": 3
+        },
+        {
+          "period_index": 2,
+          "period_name": "2nd Period",
+          "period_time": "9:15 to 10:00",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 3
+        },
+        {
+          "period_index": 3,
+          "period_name": "3rd Period",
+          "period_time": "10:00 to 10:45",
+          "bookings": [
+            {
+              "subject": "Games",
+              "classes": [
+                "CLASS 12 (Bio + Math)"
+              ],
+              "teachers": [
+                "Geetesh"
+              ],
+              "raw_value": "Games (CLASS 12 (Bio + Math))"
+            },
+            {
+              "subject": "Games",
+              "classes": [
+                "CLASS 2 Marigold"
+              ],
+              "teachers": [
+                "Komal"
+              ],
+              "raw_value": "Games (CLASS 2 Marigold)"
+            }
+          ],
+          "is_occupied": true,
+          "occupancy_count": 2,
+          "max_capacity": 3
+        },
+        {
+          "period_index": 4,
+          "period_name": "Lunch",
+          "period_time": "10:45 to 11:05",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 3
+        },
+        {
+          "period_index": 5,
+          "period_name": "4th Period",
+          "period_time": "11:05 to 11:50",
+          "bookings": [
+            {
+              "subject": "Games",
+              "classes": [
+                "CLASS 3 Rose"
+              ],
+              "teachers": [
+                "Komal"
+              ],
+              "raw_value": "Games (CLASS 3 Rose)"
+            }
+          ],
+          "is_occupied": true,
+          "occupancy_count": 1,
+          "max_capacity": 3
+        },
+        {
+          "period_index": 6,
+          "period_name": "5th Period",
+          "period_time": "11:50 to 12:30",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 3
+        },
+        {
+          "period_index": 7,
+          "period_name": "6th Period",
+          "period_time": "12:30 to 1:10",
+          "bookings": [
+            {
+              "subject": "Games",
+              "classes": [
+                "CLASS 5 Marigold"
+              ],
+              "teachers": [
+                "Komal"
+              ],
+              "raw_value": "Games (CLASS 5 Marigold)"
+            }
+          ],
+          "is_occupied": true,
+          "occupancy_count": 1,
+          "max_capacity": 3
+        },
+        {
+          "period_index": 8,
+          "period_name": "7th Period",
+          "period_time": "1:10 to 1:50",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 3
+        }
+      ],
+      "Thursday": [
+        {
+          "period_index": 0,
+          "period_name": "Morning Assembly",
+          "period_time": "07:50 to 08:20",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 3
+        },
+        {
+          "period_index": 1,
+          "period_name": "1st Period",
+          "period_time": "08:30 to 9:15",
+          "bookings": [
+            {
+              "subject": "Games",
+              "classes": [
+                "CLASS 10 Rose"
+              ],
+              "teachers": [
+                "Geetesh"
+              ],
+              "raw_value": "Games (CLASS 10 Rose)"
+            }
+          ],
+          "is_occupied": true,
+          "occupancy_count": 1,
+          "max_capacity": 3
+        },
+        {
+          "period_index": 2,
+          "period_name": "2nd Period",
+          "period_time": "9:15 to 10:00",
+          "bookings": [
+            {
+              "subject": "Games",
+              "classes": [
+                "CLASS 5 Lily"
+              ],
+              "teachers": [
+                "Komal"
+              ],
+              "raw_value": "Games (CLASS 5 Lily)"
+            }
+          ],
+          "is_occupied": true,
+          "occupancy_count": 1,
+          "max_capacity": 3
+        },
+        {
+          "period_index": 3,
+          "period_name": "3rd Period",
+          "period_time": "10:00 to 10:45",
+          "bookings": [
+            {
+              "subject": "Games",
+              "classes": [
+                "CLASS 11 Comm.",
+                "CLASS 12 (Comm.)"
+              ],
+              "teachers": [
+                "Geetesh"
+              ],
+              "raw_value": "Games (CLASS 11 Comm., CLASS 12 (Comm.))"
+            },
+            {
+              "subject": "Games",
+              "classes": [
+                "CLASS 1 Lily"
+              ],
+              "teachers": [
+                "Komal"
+              ],
+              "raw_value": "Games (CLASS 1 Lily)"
+            }
+          ],
+          "is_occupied": true,
+          "occupancy_count": 2,
+          "max_capacity": 3
+        },
+        {
+          "period_index": 4,
+          "period_name": "Lunch",
+          "period_time": "10:45 to 11:05",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 3
+        },
+        {
+          "period_index": 5,
+          "period_name": "4th Period",
+          "period_time": "11:05 to 11:50",
+          "bookings": [
+            {
+              "subject": "Games",
+              "classes": [
+                "CLASS 3 Sunflower"
+              ],
+              "teachers": [
+                "Komal"
+              ],
+              "raw_value": "Games (CLASS 3 Sunflower)"
+            }
+          ],
+          "is_occupied": true,
+          "occupancy_count": 1,
+          "max_capacity": 3
+        },
+        {
+          "period_index": 6,
+          "period_name": "5th Period",
+          "period_time": "11:50 to 12:30",
+          "bookings": [
+            {
+              "subject": "Games",
+              "classes": [
+                "CLASS 9 Lily"
+              ],
+              "teachers": [
+                "Geetesh"
+              ],
+              "raw_value": "Games (CLASS 9 Lily)"
+            },
+            {
+              "subject": "Games",
+              "classes": [
+                "CLASS 4 Rose"
+              ],
+              "teachers": [
+                "Komal"
+              ],
+              "raw_value": "Games (CLASS 4 Rose)"
+            }
+          ],
+          "is_occupied": true,
+          "occupancy_count": 2,
+          "max_capacity": 3
+        },
+        {
+          "period_index": 7,
+          "period_name": "6th Period",
+          "period_time": "12:30 to 1:10",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 3
+        },
+        {
+          "period_index": 8,
+          "period_name": "7th Period",
+          "period_time": "1:10 to 1:50",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 3
+        }
+      ],
+      "Friday": [
+        {
+          "period_index": 0,
+          "period_name": "Morning Assembly",
+          "period_time": "07:50 to 08:20",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 3
+        },
+        {
+          "period_index": 1,
+          "period_name": "1st Period",
+          "period_time": "08:30 to 9:15",
+          "bookings": [
+            {
+              "subject": "Games",
+              "classes": [
+                "CLASS 9 Rose"
+              ],
+              "teachers": [
+                "Geetesh"
+              ],
+              "raw_value": "Games (CLASS 9 Rose)"
+            }
+          ],
+          "is_occupied": true,
+          "occupancy_count": 1,
+          "max_capacity": 3
+        },
+        {
+          "period_index": 2,
+          "period_name": "2nd Period",
+          "period_time": "9:15 to 10:00",
+          "bookings": [
+            {
+              "subject": "Games",
+              "classes": [
+                "CLASS 10 Lily"
+              ],
+              "teachers": [
+                "Geetesh"
+              ],
+              "raw_value": "Games (CLASS 10 Lily)"
+            },
+            {
+              "subject": "Games",
+              "classes": [
+                "CLASS 4 Lily"
+              ],
+              "teachers": [
+                "Komal"
+              ],
+              "raw_value": "Games (CLASS 4 Lily)"
+            }
+          ],
+          "is_occupied": true,
+          "occupancy_count": 2,
+          "max_capacity": 3
+        },
+        {
+          "period_index": 3,
+          "period_name": "3rd Period",
+          "period_time": "10:00 to 10:45",
+          "bookings": [
+            {
+              "subject": "Games",
+              "classes": [
+                "CLASS 11 Comm.",
+                "CLASS 12 (Comm.)"
+              ],
+              "teachers": [
+                "Geetesh"
+              ],
+              "raw_value": "Games (CLASS 11 Comm., CLASS 12 (Comm.))"
+            },
+            {
+              "subject": "Games",
+              "classes": [
+                "CLASS 4 Marigold"
+              ],
+              "teachers": [
+                "Komal"
+              ],
+              "raw_value": "Games (CLASS 4 Marigold)"
+            }
+          ],
+          "is_occupied": true,
+          "occupancy_count": 2,
+          "max_capacity": 3
+        },
+        {
+          "period_index": 4,
+          "period_name": "Lunch",
+          "period_time": "10:45 to 11:05",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 3
+        },
+        {
+          "period_index": 5,
+          "period_name": "4th Period",
+          "period_time": "11:05 to 11:50",
+          "bookings": [
+            {
+              "subject": "Games",
+              "classes": [
+                "CLASS 5 Sunflower"
+              ],
+              "teachers": [
+                "Komal"
+              ],
+              "raw_value": "Games (CLASS 5 Sunflower)"
+            },
+            {
+              "subject": "PE",
+              "classes": [
+                "CLASS 11 Comm."
+              ],
+              "teachers": [
+                "Shailandra"
+              ],
+              "raw_value": "PE (CLASS 11 Comm.)"
+            }
+          ],
+          "is_occupied": true,
+          "occupancy_count": 2,
+          "max_capacity": 3
+        },
+        {
+          "period_index": 6,
+          "period_name": "5th Period",
+          "period_time": "11:50 to 12:30",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 3
+        },
+        {
+          "period_index": 7,
+          "period_name": "6th Period",
+          "period_time": "12:30 to 1:10",
+          "bookings": [
+            {
+              "subject": "Games",
+              "classes": [
+                "CLASS 1 Sunflower"
+              ],
+              "teachers": [
+                "Komal"
+              ],
+              "raw_value": "Games (CLASS 1 Sunflower)"
+            }
+          ],
+          "is_occupied": true,
+          "occupancy_count": 1,
+          "max_capacity": 3
+        },
+        {
+          "period_index": 8,
+          "period_name": "7th Period",
+          "period_time": "1:10 to 1:50",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 3
+        }
+      ],
+      "Saturday": [
+        {
+          "period_index": 0,
+          "period_name": "Morning Assembly",
+          "period_time": "07:50 to 08:20",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 3
+        },
+        {
+          "period_index": 1,
+          "period_name": "1st Period",
+          "period_time": "08:30 to 9:15",
+          "bookings": [
+            {
+              "subject": "Games",
+              "classes": [
+                "CLASS 3 Lily"
+              ],
+              "teachers": [
+                "Komal"
+              ],
+              "raw_value": "Games (CLASS 3 Lily)"
+            }
+          ],
+          "is_occupied": true,
+          "occupancy_count": 1,
+          "max_capacity": 3
+        },
+        {
+          "period_index": 2,
+          "period_name": "2nd Period",
+          "period_time": "9:15 to 10:00",
+          "bookings": [
+            {
+              "subject": "Games",
+              "classes": [
+                "CLASS 9 Lily"
+              ],
+              "teachers": [
+                "Geetesh"
+              ],
+              "raw_value": "Games (CLASS 9 Lily)"
+            }
+          ],
+          "is_occupied": true,
+          "occupancy_count": 1,
+          "max_capacity": 3
+        },
+        {
+          "period_index": 3,
+          "period_name": "3rd Period",
+          "period_time": "10:00 to 10:45",
+          "bookings": [
+            {
+              "subject": "Games",
+              "classes": [
+                "CLASS 11 Comm.",
+                "CLASS 12 (Comm.)"
+              ],
+              "teachers": [
+                "Geetesh"
+              ],
+              "raw_value": "Games (CLASS 11 Comm., CLASS 12 (Comm.))"
+            },
+            {
+              "subject": "Games",
+              "classes": [
+                "CLASS 9 Marigold"
+              ],
+              "teachers": [
+                "Komal"
+              ],
+              "raw_value": "Games (CLASS 9 Marigold)"
+            }
+          ],
+          "is_occupied": true,
+          "occupancy_count": 2,
+          "max_capacity": 3
+        },
+        {
+          "period_index": 4,
+          "period_name": "Lunch",
+          "period_time": "10:45 to 11:05",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 3
+        },
+        {
+          "period_index": 5,
+          "period_name": "4th Period",
+          "period_time": "11:05 to 11:50",
+          "bookings": [
+            {
+              "subject": "PE",
+              "classes": [
+                "CLASS 11 Comm."
+              ],
+              "teachers": [
+                "Shailandra"
+              ],
+              "raw_value": "PE (CLASS 11 Comm.)"
+            }
+          ],
+          "is_occupied": true,
+          "occupancy_count": 1,
+          "max_capacity": 3
+        },
+        {
+          "period_index": 6,
+          "period_name": "5th Period",
+          "period_time": "11:50 to 12:30",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 3
+        },
+        {
+          "period_index": 7,
+          "period_name": "6th Period",
+          "period_time": "12:30 to 1:10",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 3
+        },
+        {
+          "period_index": 8,
+          "period_name": "7th Period",
+          "period_time": "1:10 to 1:50",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 3
+        }
+      ]
+    }
+  },
+  "Playground": {
+    "id": "R_GROUND",
+    "name": "Playground",
+    "room_type": "Ground",
+    "building": "Sports Complex",
+    "capacity": 100,
+    "max_concurrent_classes": 3,
+    "total_bookings_per_week": 39,
+    "schedule": {
+      "Monday": [
+        {
+          "period_index": 0,
+          "period_name": "Morning Assembly",
+          "period_time": "07:50 to 08:20",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 3
+        },
+        {
+          "period_index": 1,
+          "period_name": "1st Period",
+          "period_time": "08:30 to 9:15",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 3
+        },
+        {
+          "period_index": 2,
+          "period_name": "2nd Period",
+          "period_time": "9:15 to 10:00",
+          "bookings": [
+            {
+              "subject": "Games",
+              "classes": [
+                "CLASS 9 Marigold"
+              ],
+              "teachers": [
+                "Geetesh"
+              ],
+              "raw_value": "Games (CLASS 9 Marigold)"
+            },
+            {
+              "subject": "Games",
+              "classes": [
+                "CLASS 5 Rose"
+              ],
+              "teachers": [
+                "Komal"
+              ],
+              "raw_value": "Games (CLASS 5 Rose)"
+            }
+          ],
+          "is_occupied": true,
+          "occupancy_count": 2,
+          "max_capacity": 3
+        },
+        {
+          "period_index": 3,
+          "period_name": "3rd Period",
+          "period_time": "10:00 to 10:45",
+          "bookings": [
+            {
+              "subject": "PE",
+              "classes": [
+                "CLASS 12 (Bio + Math)"
+              ],
+              "teachers": [
+                "Shailandra"
+              ],
+              "raw_value": "PE (CLASS 12 (Bio + Math))"
+            }
+          ],
+          "is_occupied": true,
+          "occupancy_count": 1,
+          "max_capacity": 3
+        },
+        {
+          "period_index": 4,
+          "period_name": "Lunch",
+          "period_time": "10:45 to 11:05",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 3
+        },
+        {
+          "period_index": 5,
+          "period_name": "4th Period",
+          "period_time": "11:05 to 11:50",
+          "bookings": [
+            {
+              "subject": "Games",
+              "classes": [
+                "CLASS 10 Marigold"
+              ],
+              "teachers": [
+                "Geetesh"
+              ],
+              "raw_value": "Games (CLASS 10 Marigold)"
+            },
+            {
+              "subject": "PE",
+              "classes": [
+                "CLASS 11 (Bio + Math)"
+              ],
+              "teachers": [
+                "Shailandra"
+              ],
+              "raw_value": "PE (CLASS 11 (Bio + Math))"
+            }
+          ],
+          "is_occupied": true,
+          "occupancy_count": 2,
+          "max_capacity": 3
+        },
+        {
+          "period_index": 6,
+          "period_name": "5th Period",
+          "period_time": "11:50 to 12:30",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 3
+        },
+        {
+          "period_index": 7,
+          "period_name": "6th Period",
+          "period_time": "12:30 to 1:10",
+          "bookings": [
+            {
+              "subject": "PE",
+              "classes": [
+                "CLASS 12 (Arts)",
+                "CLASS 12 (Comm.)"
+              ],
+              "teachers": [
+                "Shailandra"
+              ],
+              "raw_value": "PE (CLASS 12 (Arts), CLASS 12 (Comm.))"
+            }
+          ],
+          "is_occupied": true,
+          "occupancy_count": 1,
+          "max_capacity": 3
+        },
+        {
+          "period_index": 8,
+          "period_name": "7th Period",
+          "period_time": "1:10 to 1:50",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 3
+        }
+      ],
+      "Tuesday": [
+        {
+          "period_index": 0,
+          "period_name": "Morning Assembly",
+          "period_time": "07:50 to 08:20",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 3
+        },
+        {
+          "period_index": 1,
+          "period_name": "1st Period",
+          "period_time": "08:30 to 9:15",
+          "bookings": [
+            {
+              "subject": "Games",
+              "classes": [
+                "CLASS 2 Rose"
+              ],
+              "teachers": [
+                "Komal"
+              ],
+              "raw_value": "Games (CLASS 2 Rose)"
+            }
+          ],
+          "is_occupied": true,
+          "occupancy_count": 1,
+          "max_capacity": 3
+        },
+        {
+          "period_index": 2,
+          "period_name": "2nd Period",
+          "period_time": "9:15 to 10:00",
+          "bookings": [
+            {
+              "subject": "Games",
+              "classes": [
+                "CLASS 3 Marigold"
+              ],
+              "teachers": [
+                "Komal"
+              ],
+              "raw_value": "Games (CLASS 3 Marigold)"
+            }
+          ],
+          "is_occupied": true,
+          "occupancy_count": 1,
+          "max_capacity": 3
+        },
+        {
+          "period_index": 3,
+          "period_name": "3rd Period",
+          "period_time": "10:00 to 10:45",
+          "bookings": [
+            {
+              "subject": "PE",
+              "classes": [
+                "CLASS 12 (Bio + Math)"
+              ],
+              "teachers": [
+                "Shailandra"
+              ],
+              "raw_value": "PE (CLASS 12 (Bio + Math))"
+            }
+          ],
+          "is_occupied": true,
+          "occupancy_count": 1,
+          "max_capacity": 3
+        },
+        {
+          "period_index": 4,
+          "period_name": "Lunch",
+          "period_time": "10:45 to 11:05",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 3
+        },
+        {
+          "period_index": 5,
+          "period_name": "4th Period",
+          "period_time": "11:05 to 11:50",
+          "bookings": [
+            {
+              "subject": "Games",
+              "classes": [
+                "CLASS 1 Rose"
+              ],
+              "teachers": [
+                "Komal"
+              ],
+              "raw_value": "Games (CLASS 1 Rose)"
+            },
+            {
+              "subject": "PE",
+              "classes": [
+                "CLASS 11 (Bio + Math)"
+              ],
+              "teachers": [
+                "Shailandra"
+              ],
+              "raw_value": "PE (CLASS 11 (Bio + Math))"
+            }
+          ],
+          "is_occupied": true,
+          "occupancy_count": 2,
+          "max_capacity": 3
+        },
+        {
+          "period_index": 6,
+          "period_name": "5th Period",
+          "period_time": "11:50 to 12:30",
+          "bookings": [
+            {
+              "subject": "Games",
+              "classes": [
+                "CLASS 1 Marigold"
+              ],
+              "teachers": [
+                "Komal"
+              ],
+              "raw_value": "Games (CLASS 1 Marigold)"
+            }
+          ],
+          "is_occupied": true,
+          "occupancy_count": 1,
+          "max_capacity": 3
+        },
+        {
+          "period_index": 7,
+          "period_name": "6th Period",
+          "period_time": "12:30 to 1:10",
+          "bookings": [
+            {
+              "subject": "PE",
+              "classes": [
+                "CLASS 12 (Arts)",
+                "CLASS 12 (Comm.)"
+              ],
+              "teachers": [
+                "Shailandra"
+              ],
+              "raw_value": "PE (CLASS 12 (Arts), CLASS 12 (Comm.))"
+            },
+            {
+              "subject": "Games",
+              "classes": [
+                "CLASS 2 Lily"
+              ],
+              "teachers": [
+                "Komal"
+              ],
+              "raw_value": "Games (CLASS 2 Lily)"
+            }
+          ],
+          "is_occupied": true,
+          "occupancy_count": 2,
+          "max_capacity": 3
+        },
+        {
+          "period_index": 8,
+          "period_name": "7th Period",
+          "period_time": "1:10 to 1:50",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 3
+        }
+      ],
+      "Wednesday": [
+        {
+          "period_index": 0,
+          "period_name": "Morning Assembly",
+          "period_time": "07:50 to 08:20",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 3
+        },
+        {
+          "period_index": 1,
+          "period_name": "1st Period",
+          "period_time": "08:30 to 9:15",
+          "bookings": [
+            {
+              "subject": "Games",
+              "classes": [
+                "CLASS 9 Rose"
+              ],
+              "teachers": [
+                "Komal"
+              ],
+              "raw_value": "Games (CLASS 9 Rose)"
+            }
+          ],
+          "is_occupied": true,
+          "occupancy_count": 1,
+          "max_capacity": 3
+        },
+        {
+          "period_index": 2,
+          "period_name": "2nd Period",
+          "period_time": "9:15 to 10:00",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 3
+        },
+        {
+          "period_index": 3,
+          "period_name": "3rd Period",
+          "period_time": "10:00 to 10:45",
+          "bookings": [
+            {
+              "subject": "Games",
+              "classes": [
+                "CLASS 12 (Bio + Math)"
+              ],
+              "teachers": [
+                "Geetesh"
+              ],
+              "raw_value": "Games (CLASS 12 (Bio + Math))"
+            },
+            {
+              "subject": "Games",
+              "classes": [
+                "CLASS 2 Marigold"
+              ],
+              "teachers": [
+                "Komal"
+              ],
+              "raw_value": "Games (CLASS 2 Marigold)"
+            }
+          ],
+          "is_occupied": true,
+          "occupancy_count": 2,
+          "max_capacity": 3
+        },
+        {
+          "period_index": 4,
+          "period_name": "Lunch",
+          "period_time": "10:45 to 11:05",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 3
+        },
+        {
+          "period_index": 5,
+          "period_name": "4th Period",
+          "period_time": "11:05 to 11:50",
+          "bookings": [
+            {
+              "subject": "Games",
+              "classes": [
+                "CLASS 3 Rose"
+              ],
+              "teachers": [
+                "Komal"
+              ],
+              "raw_value": "Games (CLASS 3 Rose)"
+            }
+          ],
+          "is_occupied": true,
+          "occupancy_count": 1,
+          "max_capacity": 3
+        },
+        {
+          "period_index": 6,
+          "period_name": "5th Period",
+          "period_time": "11:50 to 12:30",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 3
+        },
+        {
+          "period_index": 7,
+          "period_name": "6th Period",
+          "period_time": "12:30 to 1:10",
+          "bookings": [
+            {
+              "subject": "Games",
+              "classes": [
+                "CLASS 5 Marigold"
+              ],
+              "teachers": [
+                "Komal"
+              ],
+              "raw_value": "Games (CLASS 5 Marigold)"
+            }
+          ],
+          "is_occupied": true,
+          "occupancy_count": 1,
+          "max_capacity": 3
+        },
+        {
+          "period_index": 8,
+          "period_name": "7th Period",
+          "period_time": "1:10 to 1:50",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 3
+        }
+      ],
+      "Thursday": [
+        {
+          "period_index": 0,
+          "period_name": "Morning Assembly",
+          "period_time": "07:50 to 08:20",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 3
+        },
+        {
+          "period_index": 1,
+          "period_name": "1st Period",
+          "period_time": "08:30 to 9:15",
+          "bookings": [
+            {
+              "subject": "Games",
+              "classes": [
+                "CLASS 10 Rose"
+              ],
+              "teachers": [
+                "Geetesh"
+              ],
+              "raw_value": "Games (CLASS 10 Rose)"
+            }
+          ],
+          "is_occupied": true,
+          "occupancy_count": 1,
+          "max_capacity": 3
+        },
+        {
+          "period_index": 2,
+          "period_name": "2nd Period",
+          "period_time": "9:15 to 10:00",
+          "bookings": [
+            {
+              "subject": "Games",
+              "classes": [
+                "CLASS 5 Lily"
+              ],
+              "teachers": [
+                "Komal"
+              ],
+              "raw_value": "Games (CLASS 5 Lily)"
+            }
+          ],
+          "is_occupied": true,
+          "occupancy_count": 1,
+          "max_capacity": 3
+        },
+        {
+          "period_index": 3,
+          "period_name": "3rd Period",
+          "period_time": "10:00 to 10:45",
+          "bookings": [
+            {
+              "subject": "Games",
+              "classes": [
+                "CLASS 11 Comm.",
+                "CLASS 12 (Comm.)"
+              ],
+              "teachers": [
+                "Geetesh"
+              ],
+              "raw_value": "Games (CLASS 11 Comm., CLASS 12 (Comm.))"
+            },
+            {
+              "subject": "Games",
+              "classes": [
+                "CLASS 1 Lily"
+              ],
+              "teachers": [
+                "Komal"
+              ],
+              "raw_value": "Games (CLASS 1 Lily)"
+            }
+          ],
+          "is_occupied": true,
+          "occupancy_count": 2,
+          "max_capacity": 3
+        },
+        {
+          "period_index": 4,
+          "period_name": "Lunch",
+          "period_time": "10:45 to 11:05",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 3
+        },
+        {
+          "period_index": 5,
+          "period_name": "4th Period",
+          "period_time": "11:05 to 11:50",
+          "bookings": [
+            {
+              "subject": "Games",
+              "classes": [
+                "CLASS 3 Sunflower"
+              ],
+              "teachers": [
+                "Komal"
+              ],
+              "raw_value": "Games (CLASS 3 Sunflower)"
+            }
+          ],
+          "is_occupied": true,
+          "occupancy_count": 1,
+          "max_capacity": 3
+        },
+        {
+          "period_index": 6,
+          "period_name": "5th Period",
+          "period_time": "11:50 to 12:30",
+          "bookings": [
+            {
+              "subject": "Games",
+              "classes": [
+                "CLASS 9 Lily"
+              ],
+              "teachers": [
+                "Geetesh"
+              ],
+              "raw_value": "Games (CLASS 9 Lily)"
+            },
+            {
+              "subject": "Games",
+              "classes": [
+                "CLASS 4 Rose"
+              ],
+              "teachers": [
+                "Komal"
+              ],
+              "raw_value": "Games (CLASS 4 Rose)"
+            }
+          ],
+          "is_occupied": true,
+          "occupancy_count": 2,
+          "max_capacity": 3
+        },
+        {
+          "period_index": 7,
+          "period_name": "6th Period",
+          "period_time": "12:30 to 1:10",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 3
+        },
+        {
+          "period_index": 8,
+          "period_name": "7th Period",
+          "period_time": "1:10 to 1:50",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 3
+        }
+      ],
+      "Friday": [
+        {
+          "period_index": 0,
+          "period_name": "Morning Assembly",
+          "period_time": "07:50 to 08:20",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 3
+        },
+        {
+          "period_index": 1,
+          "period_name": "1st Period",
+          "period_time": "08:30 to 9:15",
+          "bookings": [
+            {
+              "subject": "Games",
+              "classes": [
+                "CLASS 9 Rose"
+              ],
+              "teachers": [
+                "Geetesh"
+              ],
+              "raw_value": "Games (CLASS 9 Rose)"
+            }
+          ],
+          "is_occupied": true,
+          "occupancy_count": 1,
+          "max_capacity": 3
+        },
+        {
+          "period_index": 2,
+          "period_name": "2nd Period",
+          "period_time": "9:15 to 10:00",
+          "bookings": [
+            {
+              "subject": "Games",
+              "classes": [
+                "CLASS 10 Lily"
+              ],
+              "teachers": [
+                "Geetesh"
+              ],
+              "raw_value": "Games (CLASS 10 Lily)"
+            },
+            {
+              "subject": "Games",
+              "classes": [
+                "CLASS 4 Lily"
+              ],
+              "teachers": [
+                "Komal"
+              ],
+              "raw_value": "Games (CLASS 4 Lily)"
+            }
+          ],
+          "is_occupied": true,
+          "occupancy_count": 2,
+          "max_capacity": 3
+        },
+        {
+          "period_index": 3,
+          "period_name": "3rd Period",
+          "period_time": "10:00 to 10:45",
+          "bookings": [
+            {
+              "subject": "Games",
+              "classes": [
+                "CLASS 11 Comm.",
+                "CLASS 12 (Comm.)"
+              ],
+              "teachers": [
+                "Geetesh"
+              ],
+              "raw_value": "Games (CLASS 11 Comm., CLASS 12 (Comm.))"
+            },
+            {
+              "subject": "Games",
+              "classes": [
+                "CLASS 4 Marigold"
+              ],
+              "teachers": [
+                "Komal"
+              ],
+              "raw_value": "Games (CLASS 4 Marigold)"
+            }
+          ],
+          "is_occupied": true,
+          "occupancy_count": 2,
+          "max_capacity": 3
+        },
+        {
+          "period_index": 4,
+          "period_name": "Lunch",
+          "period_time": "10:45 to 11:05",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 3
+        },
+        {
+          "period_index": 5,
+          "period_name": "4th Period",
+          "period_time": "11:05 to 11:50",
+          "bookings": [
+            {
+              "subject": "Games",
+              "classes": [
+                "CLASS 5 Sunflower"
+              ],
+              "teachers": [
+                "Komal"
+              ],
+              "raw_value": "Games (CLASS 5 Sunflower)"
+            },
+            {
+              "subject": "PE",
+              "classes": [
+                "CLASS 11 Comm."
+              ],
+              "teachers": [
+                "Shailandra"
+              ],
+              "raw_value": "PE (CLASS 11 Comm.)"
+            }
+          ],
+          "is_occupied": true,
+          "occupancy_count": 2,
+          "max_capacity": 3
+        },
+        {
+          "period_index": 6,
+          "period_name": "5th Period",
+          "period_time": "11:50 to 12:30",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 3
+        },
+        {
+          "period_index": 7,
+          "period_name": "6th Period",
+          "period_time": "12:30 to 1:10",
+          "bookings": [
+            {
+              "subject": "Games",
+              "classes": [
+                "CLASS 1 Sunflower"
+              ],
+              "teachers": [
+                "Komal"
+              ],
+              "raw_value": "Games (CLASS 1 Sunflower)"
+            }
+          ],
+          "is_occupied": true,
+          "occupancy_count": 1,
+          "max_capacity": 3
+        },
+        {
+          "period_index": 8,
+          "period_name": "7th Period",
+          "period_time": "1:10 to 1:50",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 3
+        }
+      ],
+      "Saturday": [
+        {
+          "period_index": 0,
+          "period_name": "Morning Assembly",
+          "period_time": "07:50 to 08:20",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 3
+        },
+        {
+          "period_index": 1,
+          "period_name": "1st Period",
+          "period_time": "08:30 to 9:15",
+          "bookings": [
+            {
+              "subject": "Games",
+              "classes": [
+                "CLASS 3 Lily"
+              ],
+              "teachers": [
+                "Komal"
+              ],
+              "raw_value": "Games (CLASS 3 Lily)"
+            }
+          ],
+          "is_occupied": true,
+          "occupancy_count": 1,
+          "max_capacity": 3
+        },
+        {
+          "period_index": 2,
+          "period_name": "2nd Period",
+          "period_time": "9:15 to 10:00",
+          "bookings": [
+            {
+              "subject": "Games",
+              "classes": [
+                "CLASS 9 Lily"
+              ],
+              "teachers": [
+                "Geetesh"
+              ],
+              "raw_value": "Games (CLASS 9 Lily)"
+            }
+          ],
+          "is_occupied": true,
+          "occupancy_count": 1,
+          "max_capacity": 3
+        },
+        {
+          "period_index": 3,
+          "period_name": "3rd Period",
+          "period_time": "10:00 to 10:45",
+          "bookings": [
+            {
+              "subject": "Games",
+              "classes": [
+                "CLASS 11 Comm.",
+                "CLASS 12 (Comm.)"
+              ],
+              "teachers": [
+                "Geetesh"
+              ],
+              "raw_value": "Games (CLASS 11 Comm., CLASS 12 (Comm.))"
+            },
+            {
+              "subject": "Games",
+              "classes": [
+                "CLASS 9 Marigold"
+              ],
+              "teachers": [
+                "Komal"
+              ],
+              "raw_value": "Games (CLASS 9 Marigold)"
+            }
+          ],
+          "is_occupied": true,
+          "occupancy_count": 2,
+          "max_capacity": 3
+        },
+        {
+          "period_index": 4,
+          "period_name": "Lunch",
+          "period_time": "10:45 to 11:05",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 3
+        },
+        {
+          "period_index": 5,
+          "period_name": "4th Period",
+          "period_time": "11:05 to 11:50",
+          "bookings": [
+            {
+              "subject": "PE",
+              "classes": [
+                "CLASS 11 Comm."
+              ],
+              "teachers": [
+                "Shailandra"
+              ],
+              "raw_value": "PE (CLASS 11 Comm.)"
+            }
+          ],
+          "is_occupied": true,
+          "occupancy_count": 1,
+          "max_capacity": 3
+        },
+        {
+          "period_index": 6,
+          "period_name": "5th Period",
+          "period_time": "11:50 to 12:30",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 3
+        },
+        {
+          "period_index": 7,
+          "period_name": "6th Period",
+          "period_time": "12:30 to 1:10",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 3
+        },
+        {
+          "period_index": 8,
+          "period_name": "7th Period",
+          "period_time": "1:10 to 1:50",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 3
+        }
+      ]
+    }
+  },
+  "R_ACT": {
+    "id": "R_ACT",
+    "name": "Activity Hall",
+    "room_type": "Activity Hall",
+    "building": "Auditorium Wing",
+    "capacity": 60,
+    "max_concurrent_classes": 2,
+    "total_bookings_per_week": 29,
+    "schedule": {
+      "Monday": [
+        {
+          "period_index": 0,
+          "period_name": "Morning Assembly",
+          "period_time": "07:50 to 08:20",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 2
+        },
+        {
+          "period_index": 1,
+          "period_name": "1st Period",
+          "period_time": "08:30 to 9:15",
+          "bookings": [
+            {
+              "subject": "Yoga",
+              "classes": [
+                "CLASS 1 Rose"
+              ],
+              "teachers": [
+                "Pradeep"
+              ],
+              "raw_value": "Yoga (CLASS 1 Rose)"
+            }
+          ],
+          "is_occupied": true,
+          "occupancy_count": 1,
+          "max_capacity": 2
+        },
+        {
+          "period_index": 2,
+          "period_name": "2nd Period",
+          "period_time": "9:15 to 10:00",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 2
+        },
+        {
+          "period_index": 3,
+          "period_name": "3rd Period",
+          "period_time": "10:00 to 10:45",
+          "bookings": [
+            {
+              "subject": "Yoga",
+              "classes": [
+                "CLASS 7 Rose"
+              ],
+              "teachers": [
+                "Pradeep"
+              ],
+              "raw_value": "Yoga (CLASS 7 Rose)"
+            }
+          ],
+          "is_occupied": true,
+          "occupancy_count": 1,
+          "max_capacity": 2
+        },
+        {
+          "period_index": 4,
+          "period_name": "Lunch",
+          "period_time": "10:45 to 11:05",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 2
+        },
+        {
+          "period_index": 5,
+          "period_name": "4th Period",
+          "period_time": "11:05 to 11:50",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 2
+        },
+        {
+          "period_index": 6,
+          "period_name": "5th Period",
+          "period_time": "11:50 to 12:30",
+          "bookings": [
+            {
+              "subject": "Yoga",
+              "classes": [
+                "CLASS 1 Marigold"
+              ],
+              "teachers": [
+                "Pradeep"
+              ],
+              "raw_value": "Yoga (CLASS 1 Marigold)"
+            }
+          ],
+          "is_occupied": true,
+          "occupancy_count": 1,
+          "max_capacity": 2
+        },
+        {
+          "period_index": 7,
+          "period_name": "6th Period",
+          "period_time": "12:30 to 1:10",
+          "bookings": [
+            {
+              "subject": "Yoga",
+              "classes": [
+                "CLASS 2 Lily"
+              ],
+              "teachers": [
+                "Pradeep"
+              ],
+              "raw_value": "Yoga (CLASS 2 Lily)"
+            }
+          ],
+          "is_occupied": true,
+          "occupancy_count": 1,
+          "max_capacity": 2
+        },
+        {
+          "period_index": 8,
+          "period_name": "7th Period",
+          "period_time": "1:10 to 1:50",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 2
+        }
+      ],
+      "Tuesday": [
+        {
+          "period_index": 0,
+          "period_name": "Morning Assembly",
+          "period_time": "07:50 to 08:20",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 2
+        },
+        {
+          "period_index": 1,
+          "period_name": "1st Period",
+          "period_time": "08:30 to 9:15",
+          "bookings": [
+            {
+              "subject": "Yoga",
+              "classes": [
+                "CLASS 4 Marigold"
+              ],
+              "teachers": [
+                "Pradeep"
+              ],
+              "raw_value": "Yoga (CLASS 4 Marigold)"
+            }
+          ],
+          "is_occupied": true,
+          "occupancy_count": 1,
+          "max_capacity": 2
+        },
+        {
+          "period_index": 2,
+          "period_name": "2nd Period",
+          "period_time": "9:15 to 10:00",
+          "bookings": [
+            {
+              "subject": "Yoga",
+              "classes": [
+                "CLASS 7 Marigold"
+              ],
+              "teachers": [
+                "Pradeep"
+              ],
+              "raw_value": "Yoga (CLASS 7 Marigold)"
+            }
+          ],
+          "is_occupied": true,
+          "occupancy_count": 1,
+          "max_capacity": 2
+        },
+        {
+          "period_index": 3,
+          "period_name": "3rd Period",
+          "period_time": "10:00 to 10:45",
+          "bookings": [
+            {
+              "subject": "Yoga",
+              "classes": [
+                "CLASS 4 Lily"
+              ],
+              "teachers": [
+                "Pradeep"
+              ],
+              "raw_value": "Yoga (CLASS 4 Lily)"
+            }
+          ],
+          "is_occupied": true,
+          "occupancy_count": 1,
+          "max_capacity": 2
+        },
+        {
+          "period_index": 4,
+          "period_name": "Lunch",
+          "period_time": "10:45 to 11:05",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 2
+        },
+        {
+          "period_index": 5,
+          "period_name": "4th Period",
+          "period_time": "11:05 to 11:50",
+          "bookings": [
+            {
+              "subject": "Yoga",
+              "classes": [
+                "CLASS 6 Marigold"
+              ],
+              "teachers": [
+                "Pradeep"
+              ],
+              "raw_value": "Yoga (CLASS 6 Marigold)"
+            }
+          ],
+          "is_occupied": true,
+          "occupancy_count": 1,
+          "max_capacity": 2
+        },
+        {
+          "period_index": 6,
+          "period_name": "5th Period",
+          "period_time": "11:50 to 12:30",
+          "bookings": [
+            {
+              "subject": "Yoga",
+              "classes": [
+                "CLASS 7 Sunflower"
+              ],
+              "teachers": [
+                "Pradeep"
+              ],
+              "raw_value": "Yoga (CLASS 7 Sunflower)"
+            }
+          ],
+          "is_occupied": true,
+          "occupancy_count": 1,
+          "max_capacity": 2
+        },
+        {
+          "period_index": 7,
+          "period_name": "6th Period",
+          "period_time": "12:30 to 1:10",
+          "bookings": [
+            {
+              "subject": "Yoga",
+              "classes": [
+                "CLASS 5 Marigold"
+              ],
+              "teachers": [
+                "Pradeep"
+              ],
+              "raw_value": "Yoga (CLASS 5 Marigold)"
+            }
+          ],
+          "is_occupied": true,
+          "occupancy_count": 1,
+          "max_capacity": 2
+        },
+        {
+          "period_index": 8,
+          "period_name": "7th Period",
+          "period_time": "1:10 to 1:50",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 2
+        }
+      ],
+      "Wednesday": [
+        {
+          "period_index": 0,
+          "period_name": "Morning Assembly",
+          "period_time": "07:50 to 08:20",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 2
+        },
+        {
+          "period_index": 1,
+          "period_name": "1st Period",
+          "period_time": "08:30 to 9:15",
+          "bookings": [
+            {
+              "subject": "Yoga",
+              "classes": [
+                "CLASS 2 Marigold"
+              ],
+              "teachers": [
+                "Pradeep"
+              ],
+              "raw_value": "Yoga (CLASS 2 Marigold)"
+            }
+          ],
+          "is_occupied": true,
+          "occupancy_count": 1,
+          "max_capacity": 2
+        },
+        {
+          "period_index": 2,
+          "period_name": "2nd Period",
+          "period_time": "9:15 to 10:00",
+          "bookings": [
+            {
+              "subject": "Yoga",
+              "classes": [
+                "CLASS 3 Sunflower"
+              ],
+              "teachers": [
+                "Pradeep"
+              ],
+              "raw_value": "Yoga (CLASS 3 Sunflower)"
+            }
+          ],
+          "is_occupied": true,
+          "occupancy_count": 1,
+          "max_capacity": 2
+        },
+        {
+          "period_index": 3,
+          "period_name": "3rd Period",
+          "period_time": "10:00 to 10:45",
+          "bookings": [
+            {
+              "subject": "Yoga",
+              "classes": [
+                "CLASS 3 Marigold"
+              ],
+              "teachers": [
+                "Pradeep"
+              ],
+              "raw_value": "Yoga (CLASS 3 Marigold)"
+            }
+          ],
+          "is_occupied": true,
+          "occupancy_count": 1,
+          "max_capacity": 2
+        },
+        {
+          "period_index": 4,
+          "period_name": "Lunch",
+          "period_time": "10:45 to 11:05",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 2
+        },
+        {
+          "period_index": 5,
+          "period_name": "4th Period",
+          "period_time": "11:05 to 11:50",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 2
+        },
+        {
+          "period_index": 6,
+          "period_name": "5th Period",
+          "period_time": "11:50 to 12:30",
+          "bookings": [
+            {
+              "subject": "Yoga",
+              "classes": [
+                "CLASS 5 Lily"
+              ],
+              "teachers": [
+                "Pradeep"
+              ],
+              "raw_value": "Yoga (CLASS 5 Lily)"
+            }
+          ],
+          "is_occupied": true,
+          "occupancy_count": 1,
+          "max_capacity": 2
+        },
+        {
+          "period_index": 7,
+          "period_name": "6th Period",
+          "period_time": "12:30 to 1:10",
+          "bookings": [
+            {
+              "subject": "Yoga",
+              "classes": [
+                "CLASS 5 Rose"
+              ],
+              "teachers": [
+                "Pradeep"
+              ],
+              "raw_value": "Yoga (CLASS 5 Rose)"
+            }
+          ],
+          "is_occupied": true,
+          "occupancy_count": 1,
+          "max_capacity": 2
+        },
+        {
+          "period_index": 8,
+          "period_name": "7th Period",
+          "period_time": "1:10 to 1:50",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 2
+        }
+      ],
+      "Thursday": [
+        {
+          "period_index": 0,
+          "period_name": "Morning Assembly",
+          "period_time": "07:50 to 08:20",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 2
+        },
+        {
+          "period_index": 1,
+          "period_name": "1st Period",
+          "period_time": "08:30 to 9:15",
+          "bookings": [
+            {
+              "subject": "Yoga",
+              "classes": [
+                "CLASS 3 Lily"
+              ],
+              "teachers": [
+                "Pradeep"
+              ],
+              "raw_value": "Yoga (CLASS 3 Lily)"
+            }
+          ],
+          "is_occupied": true,
+          "occupancy_count": 1,
+          "max_capacity": 2
+        },
+        {
+          "period_index": 2,
+          "period_name": "2nd Period",
+          "period_time": "9:15 to 10:00",
+          "bookings": [
+            {
+              "subject": "Yoga",
+              "classes": [
+                "CLASS 1 Sunflower"
+              ],
+              "teachers": [
+                "Pradeep"
+              ],
+              "raw_value": "Yoga (CLASS 1 Sunflower)"
+            }
+          ],
+          "is_occupied": true,
+          "occupancy_count": 1,
+          "max_capacity": 2
+        },
+        {
+          "period_index": 3,
+          "period_name": "3rd Period",
+          "period_time": "10:00 to 10:45",
+          "bookings": [
+            {
+              "subject": "Yoga",
+              "classes": [
+                "CLASS 4 Rose"
+              ],
+              "teachers": [
+                "Pradeep"
+              ],
+              "raw_value": "Yoga (CLASS 4 Rose)"
+            }
+          ],
+          "is_occupied": true,
+          "occupancy_count": 1,
+          "max_capacity": 2
+        },
+        {
+          "period_index": 4,
+          "period_name": "Lunch",
+          "period_time": "10:45 to 11:05",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 2
+        },
+        {
+          "period_index": 5,
+          "period_name": "4th Period",
+          "period_time": "11:05 to 11:50",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 2
+        },
+        {
+          "period_index": 6,
+          "period_name": "5th Period",
+          "period_time": "11:50 to 12:30",
+          "bookings": [
+            {
+              "subject": "Yoga",
+              "classes": [
+                "CLASS 3 Rose"
+              ],
+              "teachers": [
+                "Pradeep"
+              ],
+              "raw_value": "Yoga (CLASS 3 Rose)"
+            }
+          ],
+          "is_occupied": true,
+          "occupancy_count": 1,
+          "max_capacity": 2
+        },
+        {
+          "period_index": 7,
+          "period_name": "6th Period",
+          "period_time": "12:30 to 1:10",
+          "bookings": [
+            {
+              "subject": "Yoga",
+              "classes": [
+                "CLASS 5 Sunflower"
+              ],
+              "teachers": [
+                "Pradeep"
+              ],
+              "raw_value": "Yoga (CLASS 5 Sunflower)"
+            }
+          ],
+          "is_occupied": true,
+          "occupancy_count": 1,
+          "max_capacity": 2
+        },
+        {
+          "period_index": 8,
+          "period_name": "7th Period",
+          "period_time": "1:10 to 1:50",
+          "bookings": [
+            {
+              "subject": "Yoga",
+              "classes": [
+                "CLASS 8 Lily"
+              ],
+              "teachers": [
+                "Pradeep"
+              ],
+              "raw_value": "Yoga (CLASS 8 Lily)"
+            }
+          ],
+          "is_occupied": true,
+          "occupancy_count": 1,
+          "max_capacity": 2
+        }
+      ],
+      "Friday": [
+        {
+          "period_index": 0,
+          "period_name": "Morning Assembly",
+          "period_time": "07:50 to 08:20",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 2
+        },
+        {
+          "period_index": 1,
+          "period_name": "1st Period",
+          "period_time": "08:30 to 9:15",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 2
+        },
+        {
+          "period_index": 2,
+          "period_name": "2nd Period",
+          "period_time": "9:15 to 10:00",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 2
+        },
+        {
+          "period_index": 3,
+          "period_name": "3rd Period",
+          "period_time": "10:00 to 10:45",
+          "bookings": [
+            {
+              "subject": "Yoga",
+              "classes": [
+                "CLASS 6 Lily"
+              ],
+              "teachers": [
+                "Pradeep"
+              ],
+              "raw_value": "Yoga (CLASS 6 Lily)"
+            }
+          ],
+          "is_occupied": true,
+          "occupancy_count": 1,
+          "max_capacity": 2
+        },
+        {
+          "period_index": 4,
+          "period_name": "Lunch",
+          "period_time": "10:45 to 11:05",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 2
+        },
+        {
+          "period_index": 5,
+          "period_name": "4th Period",
+          "period_time": "11:05 to 11:50",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 2
+        },
+        {
+          "period_index": 6,
+          "period_name": "5th Period",
+          "period_time": "11:50 to 12:30",
+          "bookings": [
+            {
+              "subject": "Yoga",
+              "classes": [
+                "CLASS 6 Rose"
+              ],
+              "teachers": [
+                "Pradeep"
+              ],
+              "raw_value": "Yoga (CLASS 6 Rose)"
+            }
+          ],
+          "is_occupied": true,
+          "occupancy_count": 1,
+          "max_capacity": 2
+        },
+        {
+          "period_index": 7,
+          "period_name": "6th Period",
+          "period_time": "12:30 to 1:10",
+          "bookings": [
+            {
+              "subject": "Yoga",
+              "classes": [
+                "CLASS 8 Rose"
+              ],
+              "teachers": [
+                "Pradeep"
+              ],
+              "raw_value": "Yoga (CLASS 8 Rose)"
+            }
+          ],
+          "is_occupied": true,
+          "occupancy_count": 1,
+          "max_capacity": 2
+        },
+        {
+          "period_index": 8,
+          "period_name": "7th Period",
+          "period_time": "1:10 to 1:50",
+          "bookings": [
+            {
+              "subject": "Yoga",
+              "classes": [
+                "CLASS 6 Sunflower"
+              ],
+              "teachers": [
+                "Pradeep"
+              ],
+              "raw_value": "Yoga (CLASS 6 Sunflower)"
+            }
+          ],
+          "is_occupied": true,
+          "occupancy_count": 1,
+          "max_capacity": 2
+        }
+      ],
+      "Saturday": [
+        {
+          "period_index": 0,
+          "period_name": "Morning Assembly",
+          "period_time": "07:50 to 08:20",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 2
+        },
+        {
+          "period_index": 1,
+          "period_name": "1st Period",
+          "period_time": "08:30 to 9:15",
+          "bookings": [
+            {
+              "subject": "Yoga",
+              "classes": [
+                "CLASS 8 Marigold"
+              ],
+              "teachers": [
+                "Pradeep"
+              ],
+              "raw_value": "Yoga (CLASS 8 Marigold)"
+            }
+          ],
+          "is_occupied": true,
+          "occupancy_count": 1,
+          "max_capacity": 2
+        },
+        {
+          "period_index": 2,
+          "period_name": "2nd Period",
+          "period_time": "9:15 to 10:00",
+          "bookings": [
+            {
+              "subject": "Yoga",
+              "classes": [
+                "CLASS 7 Lily"
+              ],
+              "teachers": [
+                "Pradeep"
+              ],
+              "raw_value": "Yoga (CLASS 7 Lily)"
+            }
+          ],
+          "is_occupied": true,
+          "occupancy_count": 1,
+          "max_capacity": 2
+        },
+        {
+          "period_index": 3,
+          "period_name": "3rd Period",
+          "period_time": "10:00 to 10:45",
+          "bookings": [
+            {
+              "subject": "Yoga",
+              "classes": [
+                "CLASS 1 Lily"
+              ],
+              "teachers": [
+                "Pradeep"
+              ],
+              "raw_value": "Yoga (CLASS 1 Lily)"
+            }
+          ],
+          "is_occupied": true,
+          "occupancy_count": 1,
+          "max_capacity": 2
+        },
+        {
+          "period_index": 4,
+          "period_name": "Lunch",
+          "period_time": "10:45 to 11:05",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 2
+        },
+        {
+          "period_index": 5,
+          "period_name": "4th Period",
+          "period_time": "11:05 to 11:50",
+          "bookings": [
+            {
+              "subject": "Yoga",
+              "classes": [
+                "CLASS 2 Rose"
+              ],
+              "teachers": [
+                "Pradeep"
+              ],
+              "raw_value": "Yoga (CLASS 2 Rose)"
+            }
+          ],
+          "is_occupied": true,
+          "occupancy_count": 1,
+          "max_capacity": 2
+        },
+        {
+          "period_index": 6,
+          "period_name": "5th Period",
+          "period_time": "11:50 to 12:30",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 2
+        },
+        {
+          "period_index": 7,
+          "period_name": "6th Period",
+          "period_time": "12:30 to 1:10",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 2
+        },
+        {
+          "period_index": 8,
+          "period_name": "7th Period",
+          "period_time": "1:10 to 1:50",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 2
+        }
+      ]
+    }
+  },
+  "Activity Hall": {
+    "id": "R_ACT",
+    "name": "Activity Hall",
+    "room_type": "Activity Hall",
+    "building": "Auditorium Wing",
+    "capacity": 60,
+    "max_concurrent_classes": 2,
+    "total_bookings_per_week": 29,
+    "schedule": {
+      "Monday": [
+        {
+          "period_index": 0,
+          "period_name": "Morning Assembly",
+          "period_time": "07:50 to 08:20",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 2
+        },
+        {
+          "period_index": 1,
+          "period_name": "1st Period",
+          "period_time": "08:30 to 9:15",
+          "bookings": [
+            {
+              "subject": "Yoga",
+              "classes": [
+                "CLASS 1 Rose"
+              ],
+              "teachers": [
+                "Pradeep"
+              ],
+              "raw_value": "Yoga (CLASS 1 Rose)"
+            }
+          ],
+          "is_occupied": true,
+          "occupancy_count": 1,
+          "max_capacity": 2
+        },
+        {
+          "period_index": 2,
+          "period_name": "2nd Period",
+          "period_time": "9:15 to 10:00",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 2
+        },
+        {
+          "period_index": 3,
+          "period_name": "3rd Period",
+          "period_time": "10:00 to 10:45",
+          "bookings": [
+            {
+              "subject": "Yoga",
+              "classes": [
+                "CLASS 7 Rose"
+              ],
+              "teachers": [
+                "Pradeep"
+              ],
+              "raw_value": "Yoga (CLASS 7 Rose)"
+            }
+          ],
+          "is_occupied": true,
+          "occupancy_count": 1,
+          "max_capacity": 2
+        },
+        {
+          "period_index": 4,
+          "period_name": "Lunch",
+          "period_time": "10:45 to 11:05",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 2
+        },
+        {
+          "period_index": 5,
+          "period_name": "4th Period",
+          "period_time": "11:05 to 11:50",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 2
+        },
+        {
+          "period_index": 6,
+          "period_name": "5th Period",
+          "period_time": "11:50 to 12:30",
+          "bookings": [
+            {
+              "subject": "Yoga",
+              "classes": [
+                "CLASS 1 Marigold"
+              ],
+              "teachers": [
+                "Pradeep"
+              ],
+              "raw_value": "Yoga (CLASS 1 Marigold)"
+            }
+          ],
+          "is_occupied": true,
+          "occupancy_count": 1,
+          "max_capacity": 2
+        },
+        {
+          "period_index": 7,
+          "period_name": "6th Period",
+          "period_time": "12:30 to 1:10",
+          "bookings": [
+            {
+              "subject": "Yoga",
+              "classes": [
+                "CLASS 2 Lily"
+              ],
+              "teachers": [
+                "Pradeep"
+              ],
+              "raw_value": "Yoga (CLASS 2 Lily)"
+            }
+          ],
+          "is_occupied": true,
+          "occupancy_count": 1,
+          "max_capacity": 2
+        },
+        {
+          "period_index": 8,
+          "period_name": "7th Period",
+          "period_time": "1:10 to 1:50",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 2
+        }
+      ],
+      "Tuesday": [
+        {
+          "period_index": 0,
+          "period_name": "Morning Assembly",
+          "period_time": "07:50 to 08:20",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 2
+        },
+        {
+          "period_index": 1,
+          "period_name": "1st Period",
+          "period_time": "08:30 to 9:15",
+          "bookings": [
+            {
+              "subject": "Yoga",
+              "classes": [
+                "CLASS 4 Marigold"
+              ],
+              "teachers": [
+                "Pradeep"
+              ],
+              "raw_value": "Yoga (CLASS 4 Marigold)"
+            }
+          ],
+          "is_occupied": true,
+          "occupancy_count": 1,
+          "max_capacity": 2
+        },
+        {
+          "period_index": 2,
+          "period_name": "2nd Period",
+          "period_time": "9:15 to 10:00",
+          "bookings": [
+            {
+              "subject": "Yoga",
+              "classes": [
+                "CLASS 7 Marigold"
+              ],
+              "teachers": [
+                "Pradeep"
+              ],
+              "raw_value": "Yoga (CLASS 7 Marigold)"
+            }
+          ],
+          "is_occupied": true,
+          "occupancy_count": 1,
+          "max_capacity": 2
+        },
+        {
+          "period_index": 3,
+          "period_name": "3rd Period",
+          "period_time": "10:00 to 10:45",
+          "bookings": [
+            {
+              "subject": "Yoga",
+              "classes": [
+                "CLASS 4 Lily"
+              ],
+              "teachers": [
+                "Pradeep"
+              ],
+              "raw_value": "Yoga (CLASS 4 Lily)"
+            }
+          ],
+          "is_occupied": true,
+          "occupancy_count": 1,
+          "max_capacity": 2
+        },
+        {
+          "period_index": 4,
+          "period_name": "Lunch",
+          "period_time": "10:45 to 11:05",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 2
+        },
+        {
+          "period_index": 5,
+          "period_name": "4th Period",
+          "period_time": "11:05 to 11:50",
+          "bookings": [
+            {
+              "subject": "Yoga",
+              "classes": [
+                "CLASS 6 Marigold"
+              ],
+              "teachers": [
+                "Pradeep"
+              ],
+              "raw_value": "Yoga (CLASS 6 Marigold)"
+            }
+          ],
+          "is_occupied": true,
+          "occupancy_count": 1,
+          "max_capacity": 2
+        },
+        {
+          "period_index": 6,
+          "period_name": "5th Period",
+          "period_time": "11:50 to 12:30",
+          "bookings": [
+            {
+              "subject": "Yoga",
+              "classes": [
+                "CLASS 7 Sunflower"
+              ],
+              "teachers": [
+                "Pradeep"
+              ],
+              "raw_value": "Yoga (CLASS 7 Sunflower)"
+            }
+          ],
+          "is_occupied": true,
+          "occupancy_count": 1,
+          "max_capacity": 2
+        },
+        {
+          "period_index": 7,
+          "period_name": "6th Period",
+          "period_time": "12:30 to 1:10",
+          "bookings": [
+            {
+              "subject": "Yoga",
+              "classes": [
+                "CLASS 5 Marigold"
+              ],
+              "teachers": [
+                "Pradeep"
+              ],
+              "raw_value": "Yoga (CLASS 5 Marigold)"
+            }
+          ],
+          "is_occupied": true,
+          "occupancy_count": 1,
+          "max_capacity": 2
+        },
+        {
+          "period_index": 8,
+          "period_name": "7th Period",
+          "period_time": "1:10 to 1:50",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 2
+        }
+      ],
+      "Wednesday": [
+        {
+          "period_index": 0,
+          "period_name": "Morning Assembly",
+          "period_time": "07:50 to 08:20",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 2
+        },
+        {
+          "period_index": 1,
+          "period_name": "1st Period",
+          "period_time": "08:30 to 9:15",
+          "bookings": [
+            {
+              "subject": "Yoga",
+              "classes": [
+                "CLASS 2 Marigold"
+              ],
+              "teachers": [
+                "Pradeep"
+              ],
+              "raw_value": "Yoga (CLASS 2 Marigold)"
+            }
+          ],
+          "is_occupied": true,
+          "occupancy_count": 1,
+          "max_capacity": 2
+        },
+        {
+          "period_index": 2,
+          "period_name": "2nd Period",
+          "period_time": "9:15 to 10:00",
+          "bookings": [
+            {
+              "subject": "Yoga",
+              "classes": [
+                "CLASS 3 Sunflower"
+              ],
+              "teachers": [
+                "Pradeep"
+              ],
+              "raw_value": "Yoga (CLASS 3 Sunflower)"
+            }
+          ],
+          "is_occupied": true,
+          "occupancy_count": 1,
+          "max_capacity": 2
+        },
+        {
+          "period_index": 3,
+          "period_name": "3rd Period",
+          "period_time": "10:00 to 10:45",
+          "bookings": [
+            {
+              "subject": "Yoga",
+              "classes": [
+                "CLASS 3 Marigold"
+              ],
+              "teachers": [
+                "Pradeep"
+              ],
+              "raw_value": "Yoga (CLASS 3 Marigold)"
+            }
+          ],
+          "is_occupied": true,
+          "occupancy_count": 1,
+          "max_capacity": 2
+        },
+        {
+          "period_index": 4,
+          "period_name": "Lunch",
+          "period_time": "10:45 to 11:05",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 2
+        },
+        {
+          "period_index": 5,
+          "period_name": "4th Period",
+          "period_time": "11:05 to 11:50",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 2
+        },
+        {
+          "period_index": 6,
+          "period_name": "5th Period",
+          "period_time": "11:50 to 12:30",
+          "bookings": [
+            {
+              "subject": "Yoga",
+              "classes": [
+                "CLASS 5 Lily"
+              ],
+              "teachers": [
+                "Pradeep"
+              ],
+              "raw_value": "Yoga (CLASS 5 Lily)"
+            }
+          ],
+          "is_occupied": true,
+          "occupancy_count": 1,
+          "max_capacity": 2
+        },
+        {
+          "period_index": 7,
+          "period_name": "6th Period",
+          "period_time": "12:30 to 1:10",
+          "bookings": [
+            {
+              "subject": "Yoga",
+              "classes": [
+                "CLASS 5 Rose"
+              ],
+              "teachers": [
+                "Pradeep"
+              ],
+              "raw_value": "Yoga (CLASS 5 Rose)"
+            }
+          ],
+          "is_occupied": true,
+          "occupancy_count": 1,
+          "max_capacity": 2
+        },
+        {
+          "period_index": 8,
+          "period_name": "7th Period",
+          "period_time": "1:10 to 1:50",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 2
+        }
+      ],
+      "Thursday": [
+        {
+          "period_index": 0,
+          "period_name": "Morning Assembly",
+          "period_time": "07:50 to 08:20",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 2
+        },
+        {
+          "period_index": 1,
+          "period_name": "1st Period",
+          "period_time": "08:30 to 9:15",
+          "bookings": [
+            {
+              "subject": "Yoga",
+              "classes": [
+                "CLASS 3 Lily"
+              ],
+              "teachers": [
+                "Pradeep"
+              ],
+              "raw_value": "Yoga (CLASS 3 Lily)"
+            }
+          ],
+          "is_occupied": true,
+          "occupancy_count": 1,
+          "max_capacity": 2
+        },
+        {
+          "period_index": 2,
+          "period_name": "2nd Period",
+          "period_time": "9:15 to 10:00",
+          "bookings": [
+            {
+              "subject": "Yoga",
+              "classes": [
+                "CLASS 1 Sunflower"
+              ],
+              "teachers": [
+                "Pradeep"
+              ],
+              "raw_value": "Yoga (CLASS 1 Sunflower)"
+            }
+          ],
+          "is_occupied": true,
+          "occupancy_count": 1,
+          "max_capacity": 2
+        },
+        {
+          "period_index": 3,
+          "period_name": "3rd Period",
+          "period_time": "10:00 to 10:45",
+          "bookings": [
+            {
+              "subject": "Yoga",
+              "classes": [
+                "CLASS 4 Rose"
+              ],
+              "teachers": [
+                "Pradeep"
+              ],
+              "raw_value": "Yoga (CLASS 4 Rose)"
+            }
+          ],
+          "is_occupied": true,
+          "occupancy_count": 1,
+          "max_capacity": 2
+        },
+        {
+          "period_index": 4,
+          "period_name": "Lunch",
+          "period_time": "10:45 to 11:05",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 2
+        },
+        {
+          "period_index": 5,
+          "period_name": "4th Period",
+          "period_time": "11:05 to 11:50",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 2
+        },
+        {
+          "period_index": 6,
+          "period_name": "5th Period",
+          "period_time": "11:50 to 12:30",
+          "bookings": [
+            {
+              "subject": "Yoga",
+              "classes": [
+                "CLASS 3 Rose"
+              ],
+              "teachers": [
+                "Pradeep"
+              ],
+              "raw_value": "Yoga (CLASS 3 Rose)"
+            }
+          ],
+          "is_occupied": true,
+          "occupancy_count": 1,
+          "max_capacity": 2
+        },
+        {
+          "period_index": 7,
+          "period_name": "6th Period",
+          "period_time": "12:30 to 1:10",
+          "bookings": [
+            {
+              "subject": "Yoga",
+              "classes": [
+                "CLASS 5 Sunflower"
+              ],
+              "teachers": [
+                "Pradeep"
+              ],
+              "raw_value": "Yoga (CLASS 5 Sunflower)"
+            }
+          ],
+          "is_occupied": true,
+          "occupancy_count": 1,
+          "max_capacity": 2
+        },
+        {
+          "period_index": 8,
+          "period_name": "7th Period",
+          "period_time": "1:10 to 1:50",
+          "bookings": [
+            {
+              "subject": "Yoga",
+              "classes": [
+                "CLASS 8 Lily"
+              ],
+              "teachers": [
+                "Pradeep"
+              ],
+              "raw_value": "Yoga (CLASS 8 Lily)"
+            }
+          ],
+          "is_occupied": true,
+          "occupancy_count": 1,
+          "max_capacity": 2
+        }
+      ],
+      "Friday": [
+        {
+          "period_index": 0,
+          "period_name": "Morning Assembly",
+          "period_time": "07:50 to 08:20",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 2
+        },
+        {
+          "period_index": 1,
+          "period_name": "1st Period",
+          "period_time": "08:30 to 9:15",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 2
+        },
+        {
+          "period_index": 2,
+          "period_name": "2nd Period",
+          "period_time": "9:15 to 10:00",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 2
+        },
+        {
+          "period_index": 3,
+          "period_name": "3rd Period",
+          "period_time": "10:00 to 10:45",
+          "bookings": [
+            {
+              "subject": "Yoga",
+              "classes": [
+                "CLASS 6 Lily"
+              ],
+              "teachers": [
+                "Pradeep"
+              ],
+              "raw_value": "Yoga (CLASS 6 Lily)"
+            }
+          ],
+          "is_occupied": true,
+          "occupancy_count": 1,
+          "max_capacity": 2
+        },
+        {
+          "period_index": 4,
+          "period_name": "Lunch",
+          "period_time": "10:45 to 11:05",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 2
+        },
+        {
+          "period_index": 5,
+          "period_name": "4th Period",
+          "period_time": "11:05 to 11:50",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 2
+        },
+        {
+          "period_index": 6,
+          "period_name": "5th Period",
+          "period_time": "11:50 to 12:30",
+          "bookings": [
+            {
+              "subject": "Yoga",
+              "classes": [
+                "CLASS 6 Rose"
+              ],
+              "teachers": [
+                "Pradeep"
+              ],
+              "raw_value": "Yoga (CLASS 6 Rose)"
+            }
+          ],
+          "is_occupied": true,
+          "occupancy_count": 1,
+          "max_capacity": 2
+        },
+        {
+          "period_index": 7,
+          "period_name": "6th Period",
+          "period_time": "12:30 to 1:10",
+          "bookings": [
+            {
+              "subject": "Yoga",
+              "classes": [
+                "CLASS 8 Rose"
+              ],
+              "teachers": [
+                "Pradeep"
+              ],
+              "raw_value": "Yoga (CLASS 8 Rose)"
+            }
+          ],
+          "is_occupied": true,
+          "occupancy_count": 1,
+          "max_capacity": 2
+        },
+        {
+          "period_index": 8,
+          "period_name": "7th Period",
+          "period_time": "1:10 to 1:50",
+          "bookings": [
+            {
+              "subject": "Yoga",
+              "classes": [
+                "CLASS 6 Sunflower"
+              ],
+              "teachers": [
+                "Pradeep"
+              ],
+              "raw_value": "Yoga (CLASS 6 Sunflower)"
+            }
+          ],
+          "is_occupied": true,
+          "occupancy_count": 1,
+          "max_capacity": 2
+        }
+      ],
+      "Saturday": [
+        {
+          "period_index": 0,
+          "period_name": "Morning Assembly",
+          "period_time": "07:50 to 08:20",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 2
+        },
+        {
+          "period_index": 1,
+          "period_name": "1st Period",
+          "period_time": "08:30 to 9:15",
+          "bookings": [
+            {
+              "subject": "Yoga",
+              "classes": [
+                "CLASS 8 Marigold"
+              ],
+              "teachers": [
+                "Pradeep"
+              ],
+              "raw_value": "Yoga (CLASS 8 Marigold)"
+            }
+          ],
+          "is_occupied": true,
+          "occupancy_count": 1,
+          "max_capacity": 2
+        },
+        {
+          "period_index": 2,
+          "period_name": "2nd Period",
+          "period_time": "9:15 to 10:00",
+          "bookings": [
+            {
+              "subject": "Yoga",
+              "classes": [
+                "CLASS 7 Lily"
+              ],
+              "teachers": [
+                "Pradeep"
+              ],
+              "raw_value": "Yoga (CLASS 7 Lily)"
+            }
+          ],
+          "is_occupied": true,
+          "occupancy_count": 1,
+          "max_capacity": 2
+        },
+        {
+          "period_index": 3,
+          "period_name": "3rd Period",
+          "period_time": "10:00 to 10:45",
+          "bookings": [
+            {
+              "subject": "Yoga",
+              "classes": [
+                "CLASS 1 Lily"
+              ],
+              "teachers": [
+                "Pradeep"
+              ],
+              "raw_value": "Yoga (CLASS 1 Lily)"
+            }
+          ],
+          "is_occupied": true,
+          "occupancy_count": 1,
+          "max_capacity": 2
+        },
+        {
+          "period_index": 4,
+          "period_name": "Lunch",
+          "period_time": "10:45 to 11:05",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 2
+        },
+        {
+          "period_index": 5,
+          "period_name": "4th Period",
+          "period_time": "11:05 to 11:50",
+          "bookings": [
+            {
+              "subject": "Yoga",
+              "classes": [
+                "CLASS 2 Rose"
+              ],
+              "teachers": [
+                "Pradeep"
+              ],
+              "raw_value": "Yoga (CLASS 2 Rose)"
+            }
+          ],
+          "is_occupied": true,
+          "occupancy_count": 1,
+          "max_capacity": 2
+        },
+        {
+          "period_index": 6,
+          "period_name": "5th Period",
+          "period_time": "11:50 to 12:30",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 2
+        },
+        {
+          "period_index": 7,
+          "period_name": "6th Period",
+          "period_time": "12:30 to 1:10",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 2
+        },
+        {
+          "period_index": 8,
+          "period_name": "7th Period",
+          "period_time": "1:10 to 1:50",
+          "bookings": [],
+          "is_occupied": false,
+          "occupancy_count": 0,
+          "max_capacity": 2
+        }
+      ]
+    }
+  }
+}

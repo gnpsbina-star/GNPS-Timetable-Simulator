@@ -1,0 +1,1283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Master Settings Dashboard - Guru Nanak Public School</title>
+  <script src="https://www.gstatic.com/antigravity/web/dev/tailwindcss.min.js"></script>
+  <style>
+    .tab-active {
+      background-color: #312e81 !important;
+      color: #ffffff !important;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+    }
+    .wing-tab-active {
+      background-color: #4f46e5 !important;
+      color: #ffffff !important;
+      font-weight: 800 !important;
+      box-shadow: 0 2px 5px rgba(79, 70, 229, 0.3);
+    }
+    .badge-status {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      padding: 0.2rem 0.65rem;
+      border-radius: 9999px;
+      font-size: 0.72rem;
+      font-weight: 800;
+    }
+    /* Timeline styling */
+    .timeline-bar {
+      position: relative;
+      height: 38px;
+      border-radius: 8px;
+      overflow: hidden;
+      display: flex;
+    }
+    .tl-segment {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 10px;
+      font-weight: 800;
+      color: white;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      padding: 0 4px;
+      border-right: 1px solid rgba(255,255,255,0.25);
+      transition: all 0.2s;
+    }
+    .tl-segment:hover {
+      filter: brightness(1.15);
+      z-index: 10;
+    }
+  </style>
+</head>
+<body class="bg-slate-100 text-slate-800 antialiased min-h-screen flex flex-col font-sans">
+
+  <!-- ======================================================== -->
+  <!-- MASTER TOPBAR -->
+  <!-- ======================================================== -->
+  <header class="bg-indigo-950 text-white sticky top-0 z-40 shadow-lg border-b border-indigo-900/80">
+    <div class="max-w-[1920px] mx-auto px-4 sm:px-6 lg:px-8 py-3 flex flex-wrap items-center justify-between gap-4">
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-2xl bg-gradient-to-tr from-amber-400 via-orange-500 to-indigo-500 p-0.5 shadow-md flex items-center justify-center">
+          <div class="w-full h-full bg-indigo-950 rounded-[14px] flex items-center justify-center text-lg font-black text-amber-400">
+            ⚙️
+          </div>
+        </div>
+        <div>
+          <div class="flex items-center gap-2">
+            <h1 class="text-base font-black tracking-tight text-white">GURU NANAK PUBLIC SCHOOL, BINA</h1>
+            <span class="text-[10px] bg-amber-400/20 text-amber-300 px-2 py-0.5 rounded-full font-black uppercase tracking-wider border border-amber-400/30">Master Settings Dashboard</span>
+          </div>
+          <p class="text-xs text-indigo-300 font-medium">Independent Wing Bell Schedules &bull; School Timings &bull; Operational & Workload Rules</p>
+        </div>
+      </div>
+
+      <!-- Action Buttons -->
+      <div class="flex items-center gap-2">
+        <a href="prerequisites.html" class="px-3.5 py-1.5 rounded-xl bg-indigo-900/90 hover:bg-indigo-800 text-indigo-200 font-bold text-xs transition border border-indigo-700/50 flex items-center gap-1.5 shadow-sm">
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
+          Prerequisites Studio
+        </a>
+        <a href="index.html" class="px-3.5 py-1.5 rounded-xl bg-indigo-900/90 hover:bg-indigo-800 text-indigo-200 font-bold text-xs transition border border-indigo-700/50 flex items-center gap-1.5 shadow-sm">
+          Timetable Grid
+        </a>
+        <button onclick="saveAllSettings()" class="px-4 py-1.5 rounded-xl bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white font-black text-xs transition flex items-center gap-1.5 shadow-md">
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7H5a2 2 0 00-2 2v9a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-3m-1 4l-3 3m0 0l-3-3m3 3V4"></path></svg>
+          Save All Settings
+        </button>
+      </div>
+    </div>
+
+    <!-- Navigation Tabs -->
+    <div class="bg-indigo-900/90 border-t border-indigo-900/90 px-4 sm:px-6 lg:px-8 max-w-[1920px] mx-auto overflow-x-auto">
+      <div class="flex items-center space-x-1 py-2 text-xs font-bold text-indigo-200">
+        <button onclick="switchMasterTab('wing-schedules')" id="mtab-btn-wing-schedules" class="tab-active px-3.5 py-1.5 rounded-lg flex items-center gap-1.5 transition">
+          🔔 1. Wing Bell Schedules
+        </button>
+        <button onclick="switchMasterTab('school-profile')" id="mtab-btn-school-profile" class="px-3.5 py-1.5 rounded-lg hover:text-white hover:bg-indigo-800/50 flex items-center gap-1.5 transition">
+          🏫 2. School Profile & Calendar
+        </button>
+        <button onclick="switchMasterTab('arrival-dispersal')" id="mtab-btn-arrival-dispersal" class="px-3.5 py-1.5 rounded-lg hover:text-white hover:bg-indigo-800/50 flex items-center gap-1.5 transition">
+          ⏰ 3. Arrival & Dispersal Registry
+        </button>
+        <button onclick="switchMasterTab('faculty-rules')" id="mtab-btn-faculty-rules" class="px-3.5 py-1.5 rounded-lg hover:text-white hover:bg-indigo-800/50 flex items-center gap-1.5 transition">
+          👨‍🏫 4. Faculty Workload & Rules
+        </button>
+        <button onclick="switchMasterTab('print-settings')" id="mtab-btn-print-settings" class="px-3.5 py-1.5 rounded-lg hover:text-white hover:bg-indigo-800/50 flex items-center gap-1.5 transition">
+          🖨️ 5. Print & Display Formatting
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ======================================================== -->
+  <!-- MAIN CONTENT CONTAINER -->
+  <!-- ======================================================== -->
+  <main class="flex-1 w-full max-w-[1920px] mx-auto p-4 sm:p-6 lg:p-8 space-y-6">
+
+    <!-- Save Notification Banner (Hidden by default) -->
+    <div id="save-toast" class="hidden p-4 rounded-xl bg-emerald-600 text-white font-bold text-sm shadow-lg flex items-center justify-between">
+      <div class="flex items-center gap-2">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+        <span>All settings saved successfully to system configuration!</span>
+      </div>
+      <button onclick="document.getElementById('save-toast').classList.add('hidden')" class="text-white hover:text-emerald-100">&times;</button>
+    </div>
+
+    <!-- ======================================================== -->
+    <!-- TAB 1: SEPARATE WING BELL SCHEDULES -->
+    <!-- ======================================================== -->
+    <div id="view-wing-schedules" class="space-y-6">
+
+      <!-- Wing Selector Sub-bar -->
+      <div class="bg-white rounded-2xl p-4 shadow-sm border border-slate-200 flex flex-wrap items-center justify-between gap-4">
+        <div>
+          <span class="text-[10px] font-black uppercase tracking-wider text-indigo-600">Select Wing to Configure</span>
+          <h2 class="text-base font-extrabold text-slate-900">Separate Bell Schedule by Wing</h2>
+        </div>
+
+        <!-- 5 Wings + Master Overview Pills -->
+        <div class="flex items-center bg-slate-100 p-1.5 rounded-2xl flex-wrap gap-1">
+          <button onclick="switchWing('playgroup')" id="wbtn-playgroup" class="px-3 py-1.5 rounded-xl text-xs font-bold text-slate-600 hover:text-slate-900 transition flex items-center gap-1.5">
+            👶 Playgroup
+          </button>
+          <button onclick="switchWing('pre_primary')" id="wbtn-pre_primary" class="px-3 py-1.5 rounded-xl text-xs font-bold text-slate-600 hover:text-slate-900 transition flex items-center gap-1.5">
+            🧸 Pre-Primary
+          </button>
+          <button onclick="switchWing('primary')" id="wbtn-primary" class="px-3 py-1.5 rounded-xl text-xs font-bold text-slate-600 hover:text-slate-900 transition flex items-center gap-1.5">
+            🎒 Primary (1–5)
+          </button>
+          <button onclick="switchWing('middle')" id="wbtn-middle" class="px-3 py-1.5 rounded-xl text-xs font-bold text-slate-600 hover:text-slate-900 transition flex items-center gap-1.5">
+            📚 Middle (6–8)
+          </button>
+          <button onclick="switchWing('senior')" id="wbtn-senior" class="wing-tab-active px-3 py-1.5 rounded-xl text-xs font-bold transition flex items-center gap-1.5">
+            🎓 Senior (9–12)
+          </button>
+          <button onclick="switchWing('master_sync')" id="wbtn-master_sync" class="px-3 py-1.5 rounded-xl text-xs font-bold text-indigo-700 hover:text-indigo-900 bg-indigo-50 border border-indigo-200 transition flex items-center gap-1.5">
+            🌐 Master Comparison & Timeline
+          </button>
+        </div>
+      </div>
+
+      <!-- Live Dynamic Wing Schedule Card -->
+      <div id="wing-single-card" class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200 space-y-4">
+        
+        <!-- Wing Meta Bar -->
+        <div class="flex items-center justify-between pb-3 border-b border-slate-100 flex-wrap gap-3">
+          <div class="flex items-center gap-3">
+            <span id="wing-icon" class="text-3xl">🎓</span>
+            <div>
+              <div class="flex items-center gap-2">
+                <h3 id="wing-title" class="text-lg font-black text-slate-900">Senior Wing (Class 9 to 12)</h3>
+                <span id="wing-timing-badge" class="badge-status bg-indigo-100 text-indigo-800">Arrival: 07:50 AM &bull; Dispersal: 02:20 PM</span>
+              </div>
+              <p id="wing-desc" class="text-xs text-slate-500 mt-0.5">High school academic schedule featuring 60-minute in-depth lecture blocks</p>
+            </div>
+          </div>
+
+          <!-- Wing Presets & Quick Controls -->
+          <div class="flex items-center gap-2">
+            <!-- Senior Mode Toggle -->
+            <div id="senior-mode-controls" class="flex items-center gap-1 bg-slate-100 p-1 rounded-xl">
+              <span class="text-[10px] font-bold text-slate-400 px-2 uppercase">Senior Mode:</span>
+              <button onclick="setSeniorBlockMode(60)" id="smode-60" class="px-3 py-1 rounded-lg bg-indigo-600 text-white font-black text-xs shadow-xs">
+                60 Mins (6 Blocks &bull; 02:20 PM)
+              </button>
+              <button onclick="setSeniorBlockMode(40)" id="smode-40" class="px-3 py-1 rounded-lg text-slate-600 font-bold text-xs hover:text-slate-900">
+                40 Mins (7 Slots &bull; 01:10 PM)
+              </button>
+            </div>
+
+            <button onclick="openAddPeriodModal()" class="px-3.5 py-1.5 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white font-bold text-xs flex items-center gap-1.5 shadow-sm transition">
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path></svg>
+              + Add Period
+            </button>
+          </div>
+        </div>
+
+        <!-- Universal Lunch Notification -->
+        <div class="p-3 bg-amber-50/80 border border-amber-200 rounded-xl flex items-center justify-between text-xs">
+          <div class="flex items-center gap-2">
+            <span class="text-lg">🥪</span>
+            <div>
+              <span class="font-extrabold text-amber-950">Universal Whole-School Lunch Synchronization:</span>
+              <span class="text-amber-800 ml-1">Lunch break is synchronized across all wings to prevent faculty overlaps and cafeteria queues.</span>
+            </div>
+          </div>
+          <span class="badge-status bg-amber-200 text-amber-900 font-black">🔒 Locked</span>
+        </div>
+
+        <!-- Period Table for Selected Wing -->
+        <div class="overflow-x-auto rounded-xl border border-slate-200">
+          <table class="w-full text-left text-xs">
+            <thead class="bg-slate-50 text-slate-500 font-extrabold uppercase text-[10px] tracking-wider border-b border-slate-200">
+              <tr>
+                <th class="py-3 px-3 w-12">Slot #</th>
+                <th class="py-3 px-3">Period Name</th>
+                <th class="py-3 px-3">Time Range</th>
+                <th class="py-3 px-3">Duration</th>
+                <th class="py-3 px-3">Period Type</th>
+                <th class="py-3 px-3">Saturday Status</th>
+                <th class="py-3 px-3 text-right">Actions</th>
+              </tr>
+            </thead>
+            <tbody id="wing-periods-tbody" class="divide-y divide-slate-200 font-medium">
+              <!-- Dynamically populated -->
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Bottom Wing Summary -->
+        <div class="flex items-center justify-between flex-wrap gap-3 pt-3 border-t border-slate-100 text-xs text-slate-500 font-semibold">
+          <div class="flex items-center gap-4">
+            <span>Total Active Periods: <strong id="wing-stat-periods" class="text-indigo-950 font-black">6 Periods</strong></span>
+            <span>&bull;</span>
+            <span>Total Teaching Time: <strong id="wing-stat-hours" class="text-indigo-950 font-black">360 Minutes (6.0 Hours)</strong></span>
+          </div>
+          <div>
+            <span>Dispersal Bell: <strong id="wing-stat-dispersal" class="text-emerald-700 font-black text-sm">02:20 PM</strong></span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- MASTER SYNC & TIMELINE CARD (Shown when "Master Comparison" is clicked) -->
+      <div id="wing-master-sync-card" class="hidden bg-white rounded-2xl p-6 shadow-sm border border-slate-200 space-y-6">
+        <div class="flex items-center justify-between pb-3 border-b border-slate-100">
+          <div class="flex items-center gap-3">
+            <span class="text-3xl">🌐</span>
+            <div>
+              <h3 class="text-lg font-black text-slate-900">Whole-School Bell Schedule Synchronization & Visual Timeline</h3>
+              <p class="text-xs text-slate-500">Visual proof of side-by-side alignment across all 5 wings with locked universal lunch</p>
+            </div>
+          </div>
+          <span class="badge-status bg-emerald-100 text-emerald-800 border border-emerald-300 font-black">✓ 0 Wing Clashes Detected</span>
+        </div>
+
+        <!-- Horizontal Timeline Graph -->
+        <div class="bg-slate-50 p-5 rounded-2xl border border-slate-200 space-y-4">
+          <div class="flex items-center justify-between">
+            <h4 class="text-xs font-black uppercase tracking-wider text-slate-700">Timeline Ruler (07:30 AM &rarr; 02:30 PM)</h4>
+            <div class="flex items-center gap-4 text-[11px] font-bold text-slate-500">
+              <span class="flex items-center gap-1.5"><span class="w-3 h-3 rounded bg-indigo-600 inline-block"></span> Study Class</span>
+              <span class="flex items-center gap-1.5"><span class="w-3 h-3 rounded bg-amber-500 inline-block"></span> Lunch Break</span>
+              <span class="flex items-center gap-1.5"><span class="w-3 h-3 rounded bg-purple-600 inline-block"></span> Assembly</span>
+            </div>
+          </div>
+
+          <!-- Time Markers (07:30 to 14:30 = 7 hours = 420 mins) -->
+          <div class="relative w-full text-[10px] font-mono text-slate-400 flex justify-between px-1 border-b border-slate-300 pb-1">
+            <span>07:30</span>
+            <span>08:00</span>
+            <span>09:00</span>
+            <span>10:00</span>
+            <span class="text-amber-700 font-black">11:00 (Lunch)</span>
+            <span>12:00</span>
+            <span>01:00</span>
+            <span>02:00</span>
+            <span>02:30</span>
+          </div>
+
+          <!-- Wing 1: Playgroup -->
+          <div class="space-y-1">
+            <div class="flex justify-between text-xs font-bold text-slate-700">
+              <span>👶 Playgroup (9:30 AM – 12:10 PM)</span>
+              <span class="text-[11px] text-slate-400">4 Periods &bull; 40m &bull; Disp 12:10 PM</span>
+            </div>
+            <div class="w-full bg-slate-200 rounded-lg h-9 relative flex overflow-hidden">
+              <div style="width: 28.57%;"></div> <!-- 07:30 to 09:30 empty (120m) -->
+              <div style="width: 9.52%;" class="tl-segment bg-sky-600" title="P1: 09:30-10:10 (40m)">P1 (40m)</div>
+              <div style="width: 8.33%;" class="tl-segment bg-sky-600" title="P2: 10:10-10:45 (35m)">P2 (35m)</div>
+              <div style="width: 4.76%;" class="tl-segment bg-amber-500 font-black text-amber-950" title="Lunch: 10:45-11:05 (20m)">🥪 Lunch</div>
+              <div style="width: 9.52%;" class="tl-segment bg-sky-600" title="P3: 11:05-11:45 (40m)">P3 (40m)</div>
+              <div style="width: 5.95%;" class="tl-segment bg-sky-500" title="P4: 11:45-12:10 (25m)">P4 (25m)</div>
+            </div>
+          </div>
+
+          <!-- Wing 2: Pre-Primary -->
+          <div class="space-y-1">
+            <div class="flex justify-between text-xs font-bold text-slate-700">
+              <span>🧸 Pre-Primary (Nursery, LKG, UKG) (8:30 AM – 1:15 PM)</span>
+              <span class="text-[11px] text-slate-400">6 Periods &bull; 45m &bull; Disp 01:15 PM</span>
+            </div>
+            <div class="w-full bg-slate-200 rounded-lg h-9 relative flex overflow-hidden">
+              <div style="width: 14.28%;"></div> <!-- 07:30 to 08:30 empty (60m) -->
+              <div style="width: 10.71%;" class="tl-segment bg-teal-600" title="P1: 08:30-09:15">P1 (45m)</div>
+              <div style="width: 10.71%;" class="tl-segment bg-teal-600" title="P2: 09:15-10:00">P2 (45m)</div>
+              <div style="width: 10.71%;" class="tl-segment bg-teal-600" title="P3: 10:00-10:45">P3 (45m)</div>
+              <div style="width: 4.76%;" class="tl-segment bg-amber-500 font-black text-amber-950" title="Lunch: 10:45-11:05 (20m)">🥪 Lunch</div>
+              <div style="width: 10.71%;" class="tl-segment bg-teal-600" title="P4: 11:05-11:50">P4 (45m)</div>
+              <div style="width: 9.52%;" class="tl-segment bg-teal-600" title="P5: 11:50-12:30">P5 (40m)</div>
+              <div style="width: 10.71%;" class="tl-segment bg-teal-600" title="P6: 12:30-01:15">P6 (45m)</div>
+            </div>
+          </div>
+
+          <!-- Wing 3: Primary (Class 1 to 5) -->
+          <div class="space-y-1">
+            <div class="flex justify-between text-xs font-bold text-slate-700">
+              <span>🎒 Primary (Class 1 to 5) (7:50 AM – 1:10 PM / Sat 11:50 AM)</span>
+              <span class="text-[11px] text-slate-400">Assembly + 6 Periods &bull; 40m &bull; Disp 01:10 PM</span>
+            </div>
+            <div class="w-full bg-slate-200 rounded-lg h-9 relative flex overflow-hidden">
+              <div style="width: 4.76%;"></div> <!-- 07:30 to 07:50 empty (20m) -->
+              <div style="width: 7.14%;" class="tl-segment bg-purple-600" title="Assembly: 07:50-08:20">🔔 Assm</div>
+              <div style="width: 2.38%;"></div> <!-- 10m roll call -->
+              <div style="width: 10.71%;" class="tl-segment bg-indigo-600" title="P1: 08:30-09:15">P1 (45m)</div>
+              <div style="width: 10.71%;" class="tl-segment bg-indigo-600" title="P2: 09:15-10:00">P2 (45m)</div>
+              <div style="width: 10.71%;" class="tl-segment bg-indigo-600" title="P3: 10:00-10:45">P3 (45m)</div>
+              <div style="width: 4.76%;" class="tl-segment bg-amber-500 font-black text-amber-950" title="Lunch: 10:45-11:05 (20m)">🥪 Lunch</div>
+              <div style="width: 10.71%;" class="tl-segment bg-indigo-600" title="P4: 11:05-11:50">P4 (45m)</div>
+              <div style="width: 9.52%;" class="tl-segment bg-indigo-600/80" title="P5: 11:50-12:30 (Sat OFF)">P5 (40m)</div>
+              <div style="width: 9.52%;" class="tl-segment bg-indigo-600/80" title="P6: 12:30-01:10 (Sat OFF)">P6 (40m)</div>
+            </div>
+          </div>
+
+          <!-- Wing 4: Middle (Class 6 to 8) -->
+          <div class="space-y-1">
+            <div class="flex justify-between text-xs font-bold text-slate-700">
+              <span>📚 Middle (Class 6 to 8) (7:50 AM – 1:50 PM)</span>
+              <span class="text-[11px] text-slate-400">Assembly + 7 Periods &bull; 40m &bull; Disp 01:50 PM</span>
+            </div>
+            <div class="w-full bg-slate-200 rounded-lg h-9 relative flex overflow-hidden">
+              <div style="width: 4.76%;"></div> <!-- 07:30 to 07:50 empty (20m) -->
+              <div style="width: 7.14%;" class="tl-segment bg-purple-600" title="Assembly: 07:50-08:20">🔔 Assm</div>
+              <div style="width: 2.38%;"></div> <!-- 10m roll call -->
+              <div style="width: 10.71%;" class="tl-segment bg-blue-700" title="P1: 08:30-09:15">P1 (45m)</div>
+              <div style="width: 10.71%;" class="tl-segment bg-blue-700" title="P2: 09:15-10:00">P2 (45m)</div>
+              <div style="width: 10.71%;" class="tl-segment bg-blue-700" title="P3: 10:00-10:45">P3 (45m)</div>
+              <div style="width: 4.76%;" class="tl-segment bg-amber-500 font-black text-amber-950" title="Lunch: 10:45-11:05 (20m)">🥪 Lunch</div>
+              <div style="width: 10.71%;" class="tl-segment bg-blue-700" title="P4: 11:05-11:50">P4 (45m)</div>
+              <div style="width: 9.52%;" class="tl-segment bg-blue-700" title="P5: 11:50-12:30">P5 (40m)</div>
+              <div style="width: 9.52%;" class="tl-segment bg-blue-700" title="P6: 12:30-01:10">P6 (40m)</div>
+              <div style="width: 9.52%;" class="tl-segment bg-blue-700" title="P7: 01:10-01:50">P7 (40m)</div>
+            </div>
+          </div>
+
+          <!-- Wing 5: Senior (Class 9 to 12) - 60 MIN BLOCKS -->
+          <div class="space-y-1">
+            <div class="flex justify-between text-xs font-bold text-indigo-950">
+              <span class="font-black">🎓 Senior (Class 9 to 12) (8:00 AM – 02:20 PM) [60-MIN LECTURE BLOCKS]</span>
+              <span class="text-[11px] font-black text-indigo-700">6 Periods &bull; 60m Each &bull; Disp 02:20 PM</span>
+            </div>
+            <div class="w-full bg-slate-200 rounded-lg h-10 relative flex overflow-hidden ring-2 ring-indigo-500 ring-offset-1">
+              <div style="width: 7.14%;"></div> <!-- 07:30 to 08:00 empty (30m) -->
+              <div style="width: 14.28%;" class="tl-segment bg-indigo-900" title="P1: 08:00-09:00 (60m)">P1 (60m)</div>
+              <div style="width: 14.28%;" class="tl-segment bg-indigo-900" title="P2: 09:00-10:00 (60m)">P2 (60m)</div>
+              <div style="width: 14.28%;" class="tl-segment bg-indigo-900" title="P3: 10:00-11:00 (60m)">P3 (60m)</div>
+              <div style="width: 4.76%;" class="tl-segment bg-amber-500 font-black text-amber-950 ring-2 ring-amber-300" title="Lunch: 11:00-11:20 (20m)">🥪 Lunch</div>
+              <div style="width: 14.28%;" class="tl-segment bg-indigo-900" title="P4: 11:20-12:20 (60m)">P4 (60m)</div>
+              <div style="width: 14.28%;" class="tl-segment bg-indigo-900" title="P5: 12:20-01:20 (60m)">P5 (60m)</div>
+              <div style="width: 14.28%;" class="tl-segment bg-indigo-900" title="P6: 01:20-02:20 (60m)">P6 (60m)</div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Master Comparison Summary Table -->
+        <div class="overflow-x-auto rounded-xl border border-slate-200">
+          <table class="w-full text-left text-xs">
+            <thead class="bg-slate-100 text-slate-600 font-black uppercase text-[10px]">
+              <tr>
+                <th class="py-3 px-4">Wing</th>
+                <th class="py-3 px-4">Arrival Bell</th>
+                <th class="py-3 px-4">Teaching Time</th>
+                <th class="py-3 px-4">Period Duration</th>
+                <th class="py-3 px-4">Lunch Break</th>
+                <th class="py-3 px-4">Mon–Fri Dispersal</th>
+                <th class="py-3 px-4">Saturday Dispersal</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-slate-200 font-medium">
+              <tr>
+                <td class="py-3 px-4 font-black text-slate-900">👶 Playgroup</td>
+                <td class="py-3 px-4 font-mono">09:30 AM</td>
+                <td class="py-3 px-4">4 Periods (140 min)</td>
+                <td class="py-3 px-4 font-bold text-indigo-700">40 min</td>
+                <td class="py-3 px-4 font-mono text-amber-800">10:45 – 11:05 AM</td>
+                <td class="py-3 px-4 font-bold text-slate-900">12:10 PM</td>
+                <td class="py-3 px-4 text-slate-500">Early / OFF</td>
+              </tr>
+              <tr>
+                <td class="py-3 px-4 font-black text-slate-900">🧸 Pre-Primary (Nur–UKG)</td>
+                <td class="py-3 px-4 font-mono">08:30 AM</td>
+                <td class="py-3 px-4">6 Periods (265 min)</td>
+                <td class="py-3 px-4 font-bold text-indigo-700">45 / 40 min</td>
+                <td class="py-3 px-4 font-mono text-amber-800">10:45 – 11:05 AM</td>
+                <td class="py-3 px-4 font-bold text-slate-900">01:15 PM</td>
+                <td class="py-3 px-4 text-slate-500">11:50 AM</td>
+              </tr>
+              <tr>
+                <td class="py-3 px-4 font-black text-slate-900">🎒 Primary (Class 1 to 5)</td>
+                <td class="py-3 px-4 font-mono">07:50 AM (Assm)</td>
+                <td class="py-3 px-4">6 Periods (255 min)</td>
+                <td class="py-3 px-4 font-bold text-indigo-700">45 / 40 min</td>
+                <td class="py-3 px-4 font-mono text-amber-800">10:45 – 11:05 AM</td>
+                <td class="py-3 px-4 font-bold text-slate-900">01:10 PM</td>
+                <td class="py-3 px-4 font-black text-amber-700 bg-amber-50">11:50 AM (Sat Early)</td>
+              </tr>
+              <tr>
+                <td class="py-3 px-4 font-black text-slate-900">📚 Middle (Class 6 to 8)</td>
+                <td class="py-3 px-4 font-mono">07:50 AM (Assm)</td>
+                <td class="py-3 px-4">7 Periods (295 min)</td>
+                <td class="py-3 px-4 font-bold text-indigo-700">45 / 40 min</td>
+                <td class="py-3 px-4 font-mono text-amber-800">10:45 – 11:05 AM</td>
+                <td class="py-3 px-4 font-bold text-slate-900">01:50 PM</td>
+                <td class="py-3 px-4 font-bold text-slate-900">01:50 PM</td>
+              </tr>
+              <tr class="bg-indigo-50/70 border-t-2 border-indigo-300 font-semibold">
+                <td class="py-3 px-4 font-black text-indigo-950">🎓 Senior (Class 9 to 12)</td>
+                <td class="py-3 px-4 font-mono font-black text-indigo-900">08:00 AM</td>
+                <td class="py-3 px-4 font-black text-indigo-900">6 Deep Periods (360 min)</td>
+                <td class="py-3 px-4 font-black text-indigo-700">60 min</td>
+                <td class="py-3 px-4 font-mono font-black text-amber-900">11:00 – 11:20 AM</td>
+                <td class="py-3 px-4 font-black text-indigo-950 text-sm">02:20 PM</td>
+                <td class="py-3 px-4 font-black text-indigo-950 text-sm">02:20 PM</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ======================================================== -->
+    <!-- TAB 2: SCHOOL PROFILE & CALENDAR -->
+    <!-- ======================================================== -->
+    <div id="view-school-profile" class="hidden space-y-6">
+      <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200 space-y-5">
+        <div class="flex items-center justify-between pb-3 border-b border-slate-100">
+          <div>
+            <h2 class="text-base font-extrabold text-slate-900">School Profile & Academic Calendar</h2>
+            <p class="text-xs text-slate-500">Official institutional identity and academic session metadata</p>
+          </div>
+          <span class="badge-status bg-indigo-100 text-indigo-800">CBSE Affiliation # 1030198</span>
+        </div>
+        
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-5 text-xs">
+          <div>
+            <label class="block font-bold text-slate-700 mb-1.5">School Name</label>
+            <input type="text" id="cfg-school-name" value="GURU NANAK PUBLIC SCHOOL" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 font-bold text-slate-900 bg-white focus:ring-2 focus:ring-indigo-500 focus:outline-none">
+          </div>
+          <div>
+            <label class="block font-bold text-slate-700 mb-1.5">Campus Location</label>
+            <input type="text" id="cfg-location" value="Bina, Madhya Pradesh" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 font-bold text-slate-900 bg-white focus:ring-2 focus:ring-indigo-500 focus:outline-none">
+          </div>
+          <div>
+            <label class="block font-bold text-slate-700 mb-1.5">Academic Session</label>
+            <input type="text" id="cfg-session" value="2026-27" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 font-bold text-slate-900 bg-white focus:ring-2 focus:ring-indigo-500 focus:outline-none">
+          </div>
+          <div>
+            <label class="block font-bold text-slate-700 mb-1.5">Effective Date (w.e.f)</label>
+            <input type="text" id="cfg-wef" value="01/04/2026" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 font-bold text-slate-900 bg-white focus:ring-2 focus:ring-indigo-500 focus:outline-none">
+          </div>
+          <div>
+            <label class="block font-bold text-slate-700 mb-1.5">Weekly Schedule Mode</label>
+            <select id="cfg-week-mode" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 font-bold text-slate-900 bg-white focus:ring-2 focus:ring-indigo-500 focus:outline-none">
+              <option selected>6 Working Days (Monday to Saturday)</option>
+              <option>5 Working Days (Monday to Friday)</option>
+            </select>
+          </div>
+          <div>
+            <label class="block font-bold text-slate-700 mb-1.5">Official Document Title</label>
+            <input type="text" id="cfg-title" value="School Time Table (w.e.f - 01/04/2026)" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 font-bold text-slate-900 bg-white focus:ring-2 focus:ring-indigo-500 focus:outline-none">
+          </div>
+        </div>
+
+        <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl space-y-2">
+          <span class="font-extrabold text-slate-900 text-xs">Operating Days Configuration:</span>
+          <div class="flex flex-wrap gap-2 text-xs">
+            <span class="px-3 py-1.5 rounded-lg bg-indigo-600 text-white font-bold">Monday (Full Day)</span>
+            <span class="px-3 py-1.5 rounded-lg bg-indigo-600 text-white font-bold">Tuesday (Full Day)</span>
+            <span class="px-3 py-1.5 rounded-lg bg-indigo-600 text-white font-bold">Wednesday (Full Day)</span>
+            <span class="px-3 py-1.5 rounded-lg bg-indigo-600 text-white font-bold">Thursday (Full Day)</span>
+            <span class="px-3 py-1.5 rounded-lg bg-indigo-600 text-white font-bold">Friday (Full Day)</span>
+            <span class="px-3 py-1.5 rounded-lg bg-amber-600 text-white font-bold">Saturday (Wing Specific Rules)</span>
+            <span class="px-3 py-1.5 rounded-lg bg-rose-100 text-rose-700 font-bold border border-rose-200">Sunday (Weekly Off)</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ======================================================== -->
+    <!-- TAB 3: ARRIVAL & DISPERSAL REGISTRY -->
+    <!-- ======================================================== -->
+    <div id="view-arrival-dispersal" class="hidden space-y-6">
+      <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200 space-y-4">
+        <div class="flex items-center justify-between pb-2 border-b border-slate-100">
+          <div>
+            <h2 class="text-base font-extrabold text-slate-900">Official Wing Arrival & Dispersal Registry</h2>
+            <p class="text-xs text-slate-500">Published directly to parents, school buses, security gates, and student diaries</p>
+          </div>
+          <button onclick="saveAllSettings()" class="px-3 py-1 rounded-xl bg-indigo-50 text-indigo-700 font-bold text-xs hover:bg-indigo-100 transition">Save Registry</button>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-5 gap-4">
+          <!-- Playgroup -->
+          <div class="p-4 rounded-xl border border-slate-200 bg-slate-50 space-y-3">
+            <div class="flex items-center gap-2">
+              <span class="text-2xl">👶</span>
+              <div>
+                <h4 class="font-extrabold text-slate-900 text-xs">Playgroup</h4>
+                <span class="text-[10px] text-slate-500">Early Childhood</span>
+              </div>
+            </div>
+            <div class="space-y-1.5 text-xs">
+              <div><span class="text-[10px] text-slate-400 block font-bold uppercase">Arrival</span><span class="font-black text-slate-800 font-mono">09:30 AM</span></div>
+              <div><span class="text-[10px] text-slate-400 block font-bold uppercase">Mon–Fri Dispersal</span><span class="font-black text-indigo-950 font-mono">12:10 PM</span></div>
+              <div><span class="text-[10px] text-slate-400 block font-bold uppercase">Saturday Dispersal</span><span class="font-bold text-slate-600 font-mono">11:50 AM / OFF</span></div>
+            </div>
+          </div>
+
+          <!-- Pre-Primary -->
+          <div class="p-4 rounded-xl border border-slate-200 bg-slate-50 space-y-3">
+            <div class="flex items-center gap-2">
+              <span class="text-2xl">🧸</span>
+              <div>
+                <h4 class="font-extrabold text-slate-900 text-xs">Pre-Primary</h4>
+                <span class="text-[10px] text-slate-500">Nur, LKG, UKG</span>
+              </div>
+            </div>
+            <div class="space-y-1.5 text-xs">
+              <div><span class="text-[10px] text-slate-400 block font-bold uppercase">Arrival</span><span class="font-black text-slate-800 font-mono">08:30 AM</span></div>
+              <div><span class="text-[10px] text-slate-400 block font-bold uppercase">Mon–Fri Dispersal</span><span class="font-black text-indigo-950 font-mono">01:15 PM</span></div>
+              <div><span class="text-[10px] text-slate-400 block font-bold uppercase">Saturday Dispersal</span><span class="font-bold text-slate-600 font-mono">11:50 AM</span></div>
+            </div>
+          </div>
+
+          <!-- Primary -->
+          <div class="p-4 rounded-xl border border-slate-200 bg-slate-50 space-y-3">
+            <div class="flex items-center gap-2">
+              <span class="text-2xl">🎒</span>
+              <div>
+                <h4 class="font-extrabold text-slate-900 text-xs">Primary Wing</h4>
+                <span class="text-[10px] text-slate-500">Class 1 to 5</span>
+              </div>
+            </div>
+            <div class="space-y-1.5 text-xs">
+              <div><span class="text-[10px] text-slate-400 block font-bold uppercase">Arrival</span><span class="font-black text-slate-800 font-mono">07:50 AM</span></div>
+              <div><span class="text-[10px] text-slate-400 block font-bold uppercase">Mon–Fri Dispersal</span><span class="font-black text-indigo-950 font-mono">01:10 PM</span></div>
+              <div><span class="text-[10px] text-slate-400 block font-bold uppercase">Saturday Dispersal</span><span class="font-black text-amber-700 font-mono">11:50 AM (Early)</span></div>
+            </div>
+          </div>
+
+          <!-- Middle -->
+          <div class="p-4 rounded-xl border border-slate-200 bg-slate-50 space-y-3">
+            <div class="flex items-center gap-2">
+              <span class="text-2xl">📚</span>
+              <div>
+                <h4 class="font-extrabold text-slate-900 text-xs">Middle Wing</h4>
+                <span class="text-[10px] text-slate-500">Class 6 to 8</span>
+              </div>
+            </div>
+            <div class="space-y-1.5 text-xs">
+              <div><span class="text-[10px] text-slate-400 block font-bold uppercase">Arrival</span><span class="font-black text-slate-800 font-mono">07:50 AM</span></div>
+              <div><span class="text-[10px] text-slate-400 block font-bold uppercase">Mon–Fri Dispersal</span><span class="font-black text-indigo-950 font-mono">01:50 PM</span></div>
+              <div><span class="text-[10px] text-slate-400 block font-bold uppercase">Saturday Dispersal</span><span class="font-black text-slate-900 font-mono">01:50 PM</span></div>
+            </div>
+          </div>
+
+          <!-- Senior -->
+          <div class="p-4 rounded-xl border-2 border-indigo-400 bg-indigo-50/50 space-y-3 shadow-xs">
+            <div class="flex items-center gap-2">
+              <span class="text-2xl">🎓</span>
+              <div>
+                <h4 class="font-extrabold text-indigo-950 text-xs">Senior Wing</h4>
+                <span class="text-[10px] text-indigo-600 font-bold">Class 9 to 12</span>
+              </div>
+            </div>
+            <div class="space-y-1.5 text-xs">
+              <div><span class="text-[10px] text-indigo-400 block font-bold uppercase">Arrival Bell</span><span class="font-black text-indigo-950 font-mono">08:00 AM</span></div>
+              <div><span class="text-[10px] text-indigo-400 block font-bold uppercase">Mon–Fri Dispersal</span><span class="font-black text-indigo-950 font-mono text-sm">02:20 PM</span></div>
+              <div><span class="text-[10px] text-indigo-400 block font-bold uppercase">Saturday Dispersal</span><span class="font-black text-indigo-950 font-mono text-sm">02:20 PM</span></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ======================================================== -->
+    <!-- TAB 4: FACULTY WORKLOAD RULES -->
+    <!-- ======================================================== -->
+    <div id="view-faculty-rules" class="hidden space-y-6">
+      <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200 space-y-5">
+        <div class="flex items-center justify-between pb-3 border-b border-slate-100">
+          <div>
+            <h2 class="text-base font-extrabold text-slate-900">Faculty Workload & Allocation Limits</h2>
+            <p class="text-xs text-slate-500">Universal constraints applied during timetable generation</p>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-5 text-xs">
+          <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 space-y-2">
+            <span class="font-extrabold text-slate-900 block">Default Weekly Teaching Cap</span>
+            <div class="flex items-center gap-2">
+              <input type="number" id="cfg-weekly-cap" value="34" class="w-24 text-base font-black p-2 rounded-lg border border-slate-300 bg-white">
+              <span class="text-xs font-bold text-slate-500">periods/wk</span>
+            </div>
+            <p class="text-[10px] text-slate-400">Maximum teaching workload per teacher before flagged as overload</p>
+          </div>
+
+          <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 space-y-2">
+            <span class="font-extrabold text-slate-900 block">Daily Consecutive Class Limit</span>
+            <div class="flex items-center gap-2">
+              <input type="number" id="cfg-consec-cap" value="3" class="w-24 text-base font-black p-2 rounded-lg border border-slate-300 bg-white">
+              <span class="text-xs font-bold text-slate-500">continuous periods</span>
+            </div>
+            <p class="text-[10px] text-slate-400">Forces an automatic free period after 3 consecutive classes</p>
+          </div>
+
+          <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 space-y-2">
+            <span class="font-extrabold text-slate-900 block">Cross-Wing Transition Protection</span>
+            <div class="flex items-center gap-2">
+              <span class="badge-status bg-emerald-100 text-emerald-800 font-bold">Active (5 Teachers)</span>
+            </div>
+            <p class="text-[10px] text-slate-400">Prevents assigning teachers to simultaneous 40m & 60m periods</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ======================================================== -->
+    <!-- TAB 5: PRINT & DISPLAY SETTINGS -->
+    <!-- ======================================================== -->
+    <div id="view-print-settings" class="hidden space-y-6">
+      <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200 space-y-5">
+        <div class="flex items-center justify-between pb-3 border-b border-slate-100">
+          <div>
+            <h2 class="text-base font-extrabold text-slate-900">A4 Single-Sheet Print & Layout Preferences</h2>
+            <p class="text-xs text-slate-500">Strict CSS rules ensuring perfect physical printouts on standard office printers</p>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs">
+          <label class="p-4 rounded-xl border border-slate-200 bg-slate-50 flex items-start gap-3 cursor-pointer hover:bg-slate-100/70 transition">
+            <input type="checkbox" id="cfg-a4-fit" checked class="rounded text-indigo-600 mt-0.5 w-4 h-4">
+            <div>
+              <span class="font-black text-slate-900 block text-xs">Enforce Single A4 Landscape Page Fit</span>
+              <span class="text-slate-500 text-[11px] leading-relaxed">Applies fixed column width and dynamic font-scaling so class and teacher schedules fit precisely on one page without spilling.</span>
+            </div>
+          </label>
+
+          <label class="p-4 rounded-xl border border-slate-200 bg-slate-50 flex items-start gap-3 cursor-pointer hover:bg-slate-100/70 transition">
+            <input type="checkbox" id="cfg-jet-black" checked class="rounded text-indigo-600 mt-0.5 w-4 h-4">
+            <div>
+              <span class="font-black text-slate-900 block text-xs">Jet-Black High Contrast Headers</span>
+              <span class="text-slate-500 text-[11px] leading-relaxed">Overrides browser print grey-scaling with `#000000` text and 1.5px borders for sharp clarity on monochrome photocopiers.</span>
+            </div>
+          </label>
+
+          <label class="p-4 rounded-xl border border-slate-200 bg-slate-50 flex items-start gap-3 cursor-pointer hover:bg-slate-100/70 transition">
+            <input type="checkbox" id="cfg-show-teacher-codes" checked class="rounded text-indigo-600 mt-0.5 w-4 h-4">
+            <div>
+              <span class="font-black text-slate-900 block text-xs">Show Faculty Codes in Class Grids</span>
+              <span class="text-slate-500 text-[11px] leading-relaxed">Displays short teacher names (e.g. "Math - Komal") in class timetable cells.</span>
+            </div>
+          </label>
+
+          <label class="p-4 rounded-xl border border-slate-200 bg-slate-50 flex items-start gap-3 cursor-pointer hover:bg-slate-100/70 transition">
+            <input type="checkbox" id="cfg-show-room-numbers" checked class="rounded text-indigo-600 mt-0.5 w-4 h-4">
+            <div>
+              <span class="font-black text-slate-900 block text-xs">Show Designated Room Numbers</span>
+              <span class="text-slate-500 text-[11px] leading-relaxed">Includes room allocations (e.g. "Physics Lab", "Room 104") below subject names.</span>
+            </div>
+          </label>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- ======================================================== -->
+  <!-- ADD / EDIT PERIOD MODAL -->
+  <!-- ======================================================== -->
+  <div id="period-modal" class="fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-xs flex items-center justify-center hidden p-4">
+    <div class="bg-white rounded-2xl shadow-2xl max-w-md w-full overflow-hidden border border-slate-200 animate-in fade-in zoom-in-95 duration-150">
+      <div class="bg-indigo-950 px-5 py-4 text-white flex items-center justify-between">
+        <div class="flex items-center gap-2">
+          <span class="text-lg">⏰</span>
+          <h3 id="modal-heading" class="font-black text-sm">Configure Period Slot</h3>
+        </div>
+        <button onclick="closePeriodModal()" class="text-indigo-300 hover:text-white text-lg font-bold">&times;</button>
+      </div>
+
+      <div class="p-5 space-y-4 text-xs">
+        <input type="hidden" id="modal-period-id">
+
+        <div>
+          <label class="block font-bold text-slate-700 mb-1">Period Name</label>
+          <input type="text" id="modal-period-name" placeholder="e.g., 1st Period, Core Major" class="w-full px-3 py-2 rounded-xl border border-slate-300 font-bold text-slate-900 bg-white focus:ring-2 focus:ring-indigo-500 focus:outline-none">
+        </div>
+
+        <!-- Start Time & Duration -->
+        <div class="grid grid-cols-2 gap-3">
+          <div>
+            <label class="block font-bold text-slate-700 mb-1 flex items-center justify-between">
+              <span>Start Time</span>
+              <span class="text-[10px] text-slate-400 font-normal">e.g. 08:00 AM</span>
+            </label>
+            <input type="text" id="modal-start-time" placeholder="08:00 AM" oninput="autoCalcEndTime()" onchange="autoCalcEndTime()" class="w-full px-3 py-2 rounded-xl border border-slate-300 font-bold text-slate-900 bg-white focus:ring-2 focus:ring-indigo-500 focus:outline-none">
+          </div>
+          <div>
+            <label class="block font-bold text-slate-700 mb-1 flex items-center justify-between">
+              <span>Period Duration</span>
+              <span class="text-[10px] text-indigo-600 font-bold">Pick to Auto-Calc</span>
+            </label>
+            <select id="modal-duration" onchange="autoCalcEndTime()" class="w-full px-3 py-2 rounded-xl border border-indigo-300 font-bold text-indigo-950 bg-indigo-50/60 focus:ring-2 focus:ring-indigo-500 focus:outline-none">
+              <option value="60 min">60 Minutes (Senior Block)</option>
+              <option value="55 min">55 Minutes</option>
+              <option value="50 min">50 Minutes</option>
+              <option value="45 min">45 Minutes (Standard)</option>
+              <option value="40 min">40 Minutes (Standard)</option>
+              <option value="35 min">35 Minutes (Playgroup)</option>
+              <option value="30 min">30 Minutes (Assembly)</option>
+              <option value="25 min">25 Minutes (Prep)</option>
+              <option value="20 min">20 Minutes (Lunch)</option>
+              <option value="15 min">15 Minutes (Recess)</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Quick 1-Click Duration Presets -->
+        <div class="space-y-1">
+          <label class="text-[10px] font-extrabold uppercase tracking-wider text-slate-400 block">⚡ 1-Click Duration Presets</label>
+          <div class="flex flex-wrap gap-1.5" id="modal-duration-pills">
+            <button type="button" onclick="selectDurationPreset('60 min')" class="dur-pill px-2.5 py-1 rounded-lg bg-slate-100 hover:bg-indigo-100 hover:text-indigo-800 text-slate-700 font-bold text-[11px] transition border border-slate-200">60 min</button>
+            <button type="button" onclick="selectDurationPreset('45 min')" class="dur-pill px-2.5 py-1 rounded-lg bg-slate-100 hover:bg-indigo-100 hover:text-indigo-800 text-slate-700 font-bold text-[11px] transition border border-slate-200">45 min</button>
+            <button type="button" onclick="selectDurationPreset('40 min')" class="dur-pill px-2.5 py-1 rounded-lg bg-slate-100 hover:bg-indigo-100 hover:text-indigo-800 text-slate-700 font-bold text-[11px] transition border border-slate-200">40 min</button>
+            <button type="button" onclick="selectDurationPreset('35 min')" class="dur-pill px-2.5 py-1 rounded-lg bg-slate-100 hover:bg-indigo-100 hover:text-indigo-800 text-slate-700 font-bold text-[11px] transition border border-slate-200">35 min</button>
+            <button type="button" onclick="selectDurationPreset('30 min')" class="dur-pill px-2.5 py-1 rounded-lg bg-slate-100 hover:bg-indigo-100 hover:text-indigo-800 text-slate-700 font-bold text-[11px] transition border border-slate-200">30 min</button>
+            <button type="button" onclick="selectDurationPreset('20 min')" class="dur-pill px-2.5 py-1 rounded-lg bg-amber-100 hover:bg-amber-200 text-amber-900 font-black text-[11px] transition border border-amber-300">🥪 20 min Lunch</button>
+          </div>
+        </div>
+
+        <!-- End Time Auto-Calculated Output -->
+        <div>
+          <label class="block font-bold text-slate-700 mb-1 flex items-center justify-between">
+            <span class="flex items-center gap-1.5">
+              <span>Period End Time</span>
+              <span class="badge-status bg-emerald-100 text-emerald-800 border border-emerald-300 py-0.5 px-2 text-[10px] font-black">✨ Auto-Calculated</span>
+            </span>
+            <span class="text-[10px] text-slate-400 font-normal">Start + Duration</span>
+          </label>
+          <div class="relative">
+            <input type="text" id="modal-end-time" placeholder="09:00 AM" oninput="onManualEndTimeChange()" class="w-full px-3.5 py-2.5 rounded-xl border-2 border-emerald-400 font-black text-emerald-950 bg-emerald-50/60 text-sm font-mono focus:ring-2 focus:ring-emerald-500 focus:outline-none">
+            <span class="absolute right-3 top-2.5 text-xs text-emerald-600 font-black">✓ Auto</span>
+          </div>
+          <div id="modal-time-calc-hint" class="mt-1 text-[11px] font-bold text-emerald-700 flex items-center gap-1">
+            <span>⚡ Auto-Calculated: 08:00 AM + 60 min ➔ 09:00 AM</span>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-2 gap-3 pt-1">
+          <div>
+            <label class="block font-bold text-slate-700 mb-1">Period Category</label>
+            <select id="modal-type" class="w-full px-3 py-2 rounded-xl border border-slate-300 font-bold text-slate-900 bg-white">
+              <option value="study">🟢 Academic / Study Class</option>
+              <option value="lunch">🥪 Lunch Break</option>
+              <option value="assembly">🔔 Morning Assembly</option>
+            </select>
+          </div>
+          <div>
+            <label class="block font-bold text-slate-700 mb-1">Saturday Schedule</label>
+            <select id="modal-sat-status" class="w-full px-3 py-2 rounded-xl border border-slate-300 font-bold text-slate-900 bg-white">
+              <option value="🟢 Normal Study">🟢 Normal Study Class</option>
+              <option value="⚪ OFF / Dispersal">⚪ OFF / Dispersal Bell</option>
+              <option value="🥪 Lunch">🥪 Lunch Break</option>
+              <option value="🔔 Assembly">🔔 Assembly</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="pt-3 border-t border-slate-200 flex justify-end gap-2">
+          <button onclick="closePeriodModal()" class="px-4 py-2 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold text-xs">Cancel</button>
+          <button onclick="savePeriodModal()" class="px-4 py-2 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white font-bold text-xs shadow-sm">Apply & Update</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======================================================== -->
+  <!-- JAVASCRIPT LOGIC -->
+  <!-- ======================================================== -->
+  <script>
+    // Tab Switching
+    function switchMasterTab(tabKey) {
+      const tabs = ['wing-schedules', 'school-profile', 'arrival-dispersal', 'faculty-rules', 'print-settings'];
+      tabs.forEach(t => {
+        const el = document.getElementById('view-' + t);
+        const btn = document.getElementById('mtab-btn-' + t);
+        if (t === tabKey) {
+          el.classList.remove('hidden');
+          btn.className = "tab-active px-3.5 py-1.5 rounded-lg flex items-center gap-1.5 transition";
+        } else {
+          el.classList.add('hidden');
+          btn.className = "px-3.5 py-1.5 rounded-lg hover:text-white hover:bg-indigo-800/50 flex items-center gap-1.5 transition";
+        }
+      });
+    }
+
+    // Wings State & Data
+    let currentWing = 'senior';
+    let seniorMode = 60; // 60 or 40
+
+    const WINGS_DATA = {
+      playgroup: {
+        icon: "👶",
+        title: "Playgroup Bell Schedule",
+        badge: "Arrival: 09:30 AM • Dispersal: 12:10 PM",
+        desc: "Early childhood timing with relaxed activity & play periods",
+        isSenior: false,
+        periods: [
+          { id: "pg_1", idx: "#1", name: "1st Period (Activity & Rhymes)", time: "09:30 AM to 10:10 AM", dur: "40 min", type: "study", sat: "🟢 Study" },
+          { id: "pg_2", idx: "#2", name: "2nd Period (Free Play)", time: "10:10 AM to 10:45 AM", dur: "35 min", type: "study", sat: "🟢 Study" },
+          { id: "pg_l", idx: "🥪", name: "LUNCH BREAK", time: "10:45 AM to 11:05 AM", dur: "20 min", type: "lunch", sat: "🥪 Lunch" },
+          { id: "pg_3", idx: "#3", name: "3rd Period (Story Time)", time: "11:05 AM to 11:45 AM", dur: "40 min", type: "study", sat: "🟢 Study" },
+          { id: "pg_4", idx: "#4", name: "4th Period (Dispersal Prep)", time: "11:45 AM to 12:10 PM", dur: "25 min", type: "study", sat: "⚪ OFF" }
+        ],
+        stats: { periods: "4 Periods", hours: "140 Minutes", disp: "12:10 PM" }
+      },
+      pre_primary: {
+        icon: "🧸",
+        title: "Pre-Primary (Nursery, LKG, UKG) Bell Schedule",
+        badge: "Arrival: 08:30 AM • Dispersal: 01:15 PM",
+        desc: "Foundational stage curriculum with 6 activity and learning periods",
+        isSenior: false,
+        periods: [
+          { id: "pp_1", idx: "#1", name: "1st Period", time: "08:30 AM to 09:15 AM", dur: "45 min", type: "study", sat: "🟢 Study" },
+          { id: "pp_2", idx: "#2", name: "2nd Period", time: "09:15 AM to 10:00 AM", dur: "45 min", type: "study", sat: "🟢 Study" },
+          { id: "pp_3", idx: "#3", name: "3rd Period", time: "10:00 AM to 10:45 AM", dur: "45 min", type: "study", sat: "🟢 Study" },
+          { id: "pp_l", idx: "🥪", name: "LUNCH BREAK", time: "10:45 AM to 11:05 AM", dur: "20 min", type: "lunch", sat: "🥪 Lunch" },
+          { id: "pp_4", idx: "#4", name: "4th Period", time: "11:05 AM to 11:50 AM", dur: "45 min", type: "study", sat: "🟢 Study" },
+          { id: "pp_5", idx: "#5", name: "5th Period", time: "11:50 AM to 12:30 PM", dur: "40 min", type: "study", sat: "⚪ OFF (Dispersal 11:50)" },
+          { id: "pp_6", idx: "#6", name: "6th Period", time: "12:30 PM to 01:15 PM", dur: "45 min", type: "study", sat: "⚪ OFF" }
+        ],
+        stats: { periods: "6 Periods", hours: "265 Minutes", disp: "01:15 PM (Sat 11:50 AM)" }
+      },
+      primary: {
+        icon: "🎒",
+        title: "Primary Wing (Class 1 to 5) Bell Schedule",
+        badge: "Mon–Fri: 07:50 AM to 01:10 PM • Sat Early: 11:50 AM",
+        desc: "Elementary classes with morning assembly and early Saturday weekend dispersal",
+        isSenior: false,
+        periods: [
+          { id: "pr_0", idx: "🔔", name: "Morning Assembly", time: "07:50 AM to 08:20 AM", dur: "30 min", type: "assembly", sat: "🔔 Assembly" },
+          { id: "pr_1", idx: "#1", name: "1st Period", time: "08:30 AM to 09:15 AM", dur: "45 min", type: "study", sat: "🟢 Study" },
+          { id: "pr_2", idx: "#2", name: "2nd Period", time: "09:15 AM to 10:00 AM", dur: "45 min", type: "study", sat: "🟢 Study" },
+          { id: "pr_3", idx: "#3", name: "3rd Period", time: "10:00 AM to 10:45 AM", dur: "45 min", type: "study", sat: "🟢 Study" },
+          { id: "pr_l", idx: "🥪", name: "LUNCH BREAK", time: "10:45 AM to 11:05 AM", dur: "20 min", type: "lunch", sat: "🥪 Lunch" },
+          { id: "pr_4", idx: "#4", name: "4th Period", time: "11:05 AM to 11:50 AM", dur: "45 min", type: "study", sat: "🟢 Study (Disperses 11:50)" },
+          { id: "pr_5", idx: "#5", name: "5th Period", time: "11:50 AM to 12:30 PM", dur: "40 min", type: "study", sat: "⚪ OFF (Saturday Early)" },
+          { id: "pr_6", idx: "#6", name: "6th Period", time: "12:30 PM to 01:10 PM", dur: "40 min", type: "study", sat: "⚪ OFF (Saturday Early)" }
+        ],
+        stats: { periods: "6 Periods + Assembly", hours: "255 Minutes", disp: "01:10 PM (Sat 11:50 AM)" }
+      },
+      middle: {
+        icon: "📚",
+        title: "Middle Wing (Class 6 to 8) Bell Schedule",
+        badge: "All Days: 07:50 AM to 01:50 PM",
+        desc: "Full school day across 7 academic periods plus morning assembly",
+        isSenior: false,
+        periods: [
+          { id: "md_0", idx: "🔔", name: "Morning Assembly", time: "07:50 AM to 08:20 AM", dur: "30 min", type: "assembly", sat: "🔔 Assembly" },
+          { id: "md_1", idx: "#1", name: "1st Period", time: "08:30 AM to 09:15 AM", dur: "45 min", type: "study", sat: "🟢 Study" },
+          { id: "md_2", idx: "#2", name: "2nd Period", time: "09:15 AM to 10:00 AM", dur: "45 min", type: "study", sat: "🟢 Study" },
+          { id: "md_3", idx: "#3", name: "3rd Period", time: "10:00 AM to 10:45 AM", dur: "45 min", type: "study", sat: "🟢 Study" },
+          { id: "md_l", idx: "🥪", name: "LUNCH BREAK", time: "10:45 AM to 11:05 AM", dur: "20 min", type: "lunch", sat: "🥪 Lunch" },
+          { id: "md_4", idx: "#4", name: "4th Period", time: "11:05 AM to 11:50 AM", dur: "45 min", type: "study", sat: "🟢 Study" },
+          { id: "md_5", idx: "#5", name: "5th Period", time: "11:50 AM to 12:30 PM", dur: "40 min", type: "study", sat: "🟢 Study" },
+          { id: "md_6", idx: "#6", name: "6th Period", time: "12:30 PM to 01:10 PM", dur: "40 min", type: "study", sat: "🟢 Study" },
+          { id: "md_7", idx: "#7", name: "7th Period", time: "01:10 PM to 01:50 PM", dur: "40 min", type: "study", sat: "🟢 Study" }
+        ],
+        stats: { periods: "7 Periods + Assembly", hours: "295 Minutes", disp: "01:50 PM" }
+      },
+      senior: {
+        icon: "🎓",
+        title: "Senior Wing (Class 9 to 12) Bell Schedule",
+        badge: "08:00 AM Start • Dispersal: 02:20 PM",
+        desc: "High school academic schedule featuring 60-minute in-depth lecture blocks",
+        isSenior: true,
+        periods: [
+          { id: "sr_1", idx: "#1", name: "1st Period (Core Major)", time: "08:00 AM to 09:00 AM", dur: "60 min", type: "study", sat: "🟢 Study" },
+          { id: "sr_2", idx: "#2", name: "2nd Period (Core Major)", time: "09:00 AM to 10:00 AM", dur: "60 min", type: "study", sat: "🟢 Study" },
+          { id: "sr_3", idx: "#3", name: "3rd Period (Core Major)", time: "10:00 AM to 11:00 AM", dur: "60 min", type: "study", sat: "🟢 Study" },
+          { id: "sr_l", idx: "🥪", name: "LUNCH BREAK (Whole School)", time: "11:00 AM to 11:20 AM", dur: "20 min", type: "lunch", sat: "🥪 Lunch" },
+          { id: "sr_4", idx: "#4", name: "4th Period (Language/Core)", time: "11:20 AM to 12:20 PM", dur: "60 min", type: "study", sat: "🟢 Study" },
+          { id: "sr_5", idx: "#5", name: "5th Period (Science Labs/Practicals)", time: "12:20 PM to 01:20 PM", dur: "60 min", type: "study", sat: "🟢 Study" },
+          { id: "sr_6", idx: "#6", name: "6th Period (Board Prep/Doubts)", time: "01:20 PM to 02:20 PM", dur: "60 min", type: "study", sat: "🟢 Study" }
+        ],
+        stats: { periods: "6 Deep Periods", hours: "360 Minutes (6.0 Hours)", disp: "02:20 PM" }
+      }
+    };
+
+    function switchWing(wingKey) {
+      currentWing = wingKey;
+
+      const wings = ['playgroup', 'pre_primary', 'primary', 'middle', 'senior', 'master_sync'];
+      wings.forEach(w => {
+        const btn = document.getElementById('wbtn-' + w);
+        if (w === wingKey) {
+          btn.className = "wing-tab-active px-3 py-1.5 rounded-xl text-xs font-bold transition flex items-center gap-1.5";
+        } else {
+          btn.className = "px-3 py-1.5 rounded-xl text-xs font-bold text-slate-600 hover:text-slate-900 transition flex items-center gap-1.5";
+        }
+      });
+
+      if (wingKey === 'master_sync') {
+        document.getElementById('wing-single-card').classList.add('hidden');
+        document.getElementById('wing-master-sync-card').classList.remove('hidden');
+      } else {
+        document.getElementById('wing-single-card').classList.remove('hidden');
+        document.getElementById('wing-master-sync-card').classList.add('hidden');
+        renderWingView();
+      }
+    }
+
+    function setSeniorBlockMode(mode) {
+      seniorMode = mode;
+      const b60 = document.getElementById('smode-60');
+      const b40 = document.getElementById('smode-40');
+      if (mode === 60) {
+        b60.className = "px-3 py-1 rounded-lg bg-indigo-600 text-white font-black text-xs shadow-xs";
+        b40.className = "px-3 py-1 rounded-lg text-slate-600 font-bold text-xs hover:text-slate-900";
+        WINGS_DATA.senior.stats.disp = "02:20 PM";
+        WINGS_DATA.senior.stats.periods = "6 Deep Periods";
+        WINGS_DATA.senior.stats.hours = "360 Minutes (6.0 Hours)";
+        WINGS_DATA.senior.badge = "08:00 AM Start • Dispersal: 02:20 PM";
+        WINGS_DATA.senior.periods = [
+          { id: "sr_1", idx: "#1", name: "1st Period (Core Major)", time: "08:00 AM to 09:00 AM", dur: "60 min", type: "study", sat: "🟢 Study" },
+          { id: "sr_2", idx: "#2", name: "2nd Period (Core Major)", time: "09:00 AM to 10:00 AM", dur: "60 min", type: "study", sat: "🟢 Study" },
+          { id: "sr_3", idx: "#3", name: "3rd Period (Core Major)", time: "10:00 AM to 11:00 AM", dur: "60 min", type: "study", sat: "🟢 Study" },
+          { id: "sr_l", idx: "🥪", name: "LUNCH BREAK", time: "11:00 AM to 11:20 AM", dur: "20 min", type: "lunch", sat: "🥪 Lunch" },
+          { id: "sr_4", idx: "#4", name: "4th Period (Language/Core)", time: "11:20 AM to 12:20 PM", dur: "60 min", type: "study", sat: "🟢 Study" },
+          { id: "sr_5", idx: "#5", name: "5th Period (Science Labs)", time: "12:20 PM to 01:20 PM", dur: "60 min", type: "study", sat: "🟢 Study" },
+          { id: "sr_6", idx: "#6", name: "6th Period (Board Prep)", time: "01:20 PM to 02:20 PM", dur: "60 min", type: "study", sat: "🟢 Study" }
+        ];
+      } else {
+        b40.className = "px-3 py-1 rounded-lg bg-indigo-600 text-white font-black text-xs shadow-xs";
+        b60.className = "px-3 py-1 rounded-lg text-slate-600 font-bold text-xs hover:text-slate-900";
+        WINGS_DATA.senior.stats.disp = "01:10 PM";
+        WINGS_DATA.senior.stats.periods = "6 Periods + Assembly";
+        WINGS_DATA.senior.stats.hours = "285 Minutes";
+        WINGS_DATA.senior.badge = "07:50 AM Start • Dispersal: 01:10 PM";
+        WINGS_DATA.senior.periods = [
+          { id: "sr_0", idx: "🔔", name: "Morning Assembly", time: "07:50 AM to 08:20 AM", dur: "30 min", type: "assembly", sat: "🔔 Assembly" },
+          { id: "sr_1", idx: "#1", name: "1st Period", time: "08:30 AM to 09:15 AM", dur: "45 min", type: "study", sat: "🟢 Study" },
+          { id: "sr_2", idx: "#2", name: "2nd Period", time: "09:15 AM to 10:00 AM", dur: "45 min", type: "study", sat: "🟢 Study" },
+          { id: "sr_3", idx: "#3", name: "3rd Period", time: "10:00 AM to 10:45 AM", dur: "45 min", type: "study", sat: "🟢 Study" },
+          { id: "sr_l", idx: "🥪", name: "LUNCH BREAK", time: "10:45 AM to 11:05 AM", dur: "20 min", type: "lunch", sat: "🥪 Lunch" },
+          { id: "sr_4", idx: "#4", name: "4th Period", time: "11:05 AM to 11:50 AM", dur: "45 min", type: "study", sat: "🟢 Study" },
+          { id: "sr_5", idx: "#5", name: "5th Period", time: "11:50 AM to 12:30 PM", dur: "40 min", type: "study", sat: "🟢 Study" },
+          { id: "sr_6", idx: "#6", name: "6th Period", time: "12:30 PM to 01:10 PM", dur: "40 min", type: "study", sat: "🟢 Study" }
+        ];
+      }
+      renderWingView();
+    }
+
+    function renderWingView() {
+      const data = WINGS_DATA[currentWing];
+      document.getElementById('wing-icon').textContent = data.icon;
+      document.getElementById('wing-title').textContent = data.title;
+      document.getElementById('wing-timing-badge').textContent = data.badge;
+      document.getElementById('wing-desc').textContent = data.desc;
+
+      const seniorCtrl = document.getElementById('senior-mode-controls');
+      seniorCtrl.style.display = data.isSenior ? 'flex' : 'none';
+
+      document.getElementById('wing-stat-periods').textContent = data.stats.periods;
+      document.getElementById('wing-stat-hours').textContent = data.stats.hours;
+      document.getElementById('wing-stat-dispersal').textContent = data.stats.disp;
+
+      const tbody = document.getElementById('wing-periods-tbody');
+      tbody.innerHTML = data.periods.map(p => {
+        let typeBadge = '';
+        if (p.type === 'lunch') typeBadge = '<span class="badge-status bg-amber-100 text-amber-900 border border-amber-300">🥪 Lunch Break</span>';
+        else if (p.type === 'assembly') typeBadge = '<span class="badge-status bg-purple-100 text-purple-900 border border-purple-200">🔔 Morning Assembly</span>';
+        else typeBadge = '<span class="badge-status bg-emerald-100 text-emerald-800 border border-emerald-200">🟢 Academic Lecture</span>';
+
+        return `
+          <tr class="hover:bg-slate-50 transition">
+            <td class="py-2.5 px-3 font-mono font-bold text-slate-400">${p.idx}</td>
+            <td class="py-2.5 px-3 font-black text-slate-900">${p.name}</td>
+            <td class="py-2.5 px-3 font-mono font-bold text-slate-700">${p.time}</td>
+            <td class="py-2.5 px-3 font-mono font-extrabold text-indigo-700">${p.dur}</td>
+            <td class="py-2.5 px-3">${typeBadge}</td>
+            <td class="py-2.5 px-3 font-bold text-xs ${p.sat.includes('OFF') ? 'text-slate-400' : 'text-emerald-700'}">${p.sat}</td>
+            <td class="py-2.5 px-3 text-right space-x-1">
+              <button onclick="editPeriod('${p.id}')" class="px-2 py-1 rounded bg-slate-100 hover:bg-indigo-50 text-indigo-600 font-bold transition">Edit</button>
+              <button onclick="deletePeriod('${p.id}')" class="px-2 py-1 rounded bg-slate-100 hover:bg-rose-50 text-rose-600 font-bold transition">Delete</button>
+            </td>
+          </tr>
+        `;
+      }).join('');
+    }
+
+    // ==========================================
+    // AUTO-CALCULATION TIME UTILITIES
+    // ==========================================
+    function parseTimeToMinutes(timeStr) {
+      if (!timeStr) return null;
+      timeStr = timeStr.trim();
+      const match = timeStr.match(/^(\d{1,2}):(\d{2})\s*(AM|PM)?$/i);
+      if (!match) return null;
+      let hours = parseInt(match[1], 10);
+      let mins = parseInt(match[2], 10);
+      const meridiem = match[3] ? match[3].toUpperCase() : null;
+
+      if (meridiem === 'PM' && hours < 12) {
+        hours += 12;
+      } else if (meridiem === 'AM' && hours === 12) {
+        hours = 0;
+      } else if (!meridiem) {
+        if (hours >= 1 && hours <= 6) hours += 12;
+      }
+
+      return hours * 60 + mins;
+    }
+
+    function minutesToTimeString(totalMinutes) {
+      totalMinutes = (totalMinutes + 24 * 60) % (24 * 60);
+      let hours = Math.floor(totalMinutes / 60);
+      const mins = totalMinutes % 60;
+      const meridiem = hours >= 12 ? 'PM' : 'AM';
+      let displayHour = hours % 12;
+      if (displayHour === 0) displayHour = 12;
+      const padHour = displayHour < 10 ? '0' + displayHour : '' + displayHour;
+      const padMin = mins < 10 ? '0' + mins : '' + mins;
+      return `${padHour}:${padMin} ${meridiem}`;
+    }
+
+    function autoCalcEndTime() {
+      const startInput = document.getElementById('modal-start-time');
+      const durSelect = document.getElementById('modal-duration');
+      const endInput = document.getElementById('modal-end-time');
+      const hintEl = document.getElementById('modal-time-calc-hint');
+
+      if (!startInput || !durSelect || !endInput) return;
+
+      const startVal = startInput.value.trim();
+      const durVal = durSelect.value;
+      const durMatch = durVal.match(/\d+/);
+      if (!durMatch) return;
+      const durMins = parseInt(durMatch[0], 10);
+
+      // Highlight active pill
+      document.querySelectorAll('#modal-duration-pills .dur-pill').forEach(btn => {
+        if (btn.textContent.includes(durMins + ' min')) {
+          btn.className = "dur-pill px-2.5 py-1 rounded-lg bg-indigo-600 text-white font-black text-[11px] shadow-xs transition border border-indigo-700";
+        } else {
+          btn.className = "dur-pill px-2.5 py-1 rounded-lg bg-slate-100 hover:bg-indigo-100 hover:text-indigo-800 text-slate-700 font-bold text-[11px] transition border border-slate-200";
+        }
+      });
+
+      const startMins = parseTimeToMinutes(startVal);
+      if (startMins !== null && !isNaN(startMins)) {
+        const endMins = startMins + durMins;
+        const endStr = minutesToTimeString(endMins);
+        endInput.value = endStr;
+        if (hintEl) {
+          hintEl.innerHTML = `<span>⚡ Auto-Calculated: <strong class="text-indigo-950 font-black">${startVal}</strong> + <strong class="text-indigo-950 font-black">${durMins} min</strong> ➔ <strong class="text-emerald-900 font-black underline">${endStr}</strong></span>`;
+        }
+      } else {
+        if (hintEl) {
+          hintEl.innerHTML = `<span class="text-amber-600 font-medium">⚠️ Enter start time (e.g. 08:00 AM) to auto-calculate end time</span>`;
+        }
+      }
+    }
+
+    function selectDurationPreset(durText) {
+      const durSelect = document.getElementById('modal-duration');
+      if (durSelect) {
+        // Find matching option
+        for (let i = 0; i < durSelect.options.length; i++) {
+          if (durSelect.options[i].value.startsWith(durText)) {
+            durSelect.selectedIndex = i;
+            break;
+          }
+        }
+        autoCalcEndTime();
+      }
+    }
+
+    function onManualEndTimeChange() {
+      const startInput = document.getElementById('modal-start-time');
+      const endInput = document.getElementById('modal-end-time');
+      const durSelect = document.getElementById('modal-duration');
+      const hintEl = document.getElementById('modal-time-calc-hint');
+
+      if (!startInput || !endInput || !durSelect) return;
+
+      const startMins = parseTimeToMinutes(startInput.value);
+      const endMins = parseTimeToMinutes(endInput.value);
+
+      if (startMins !== null && endMins !== null) {
+        let diff = endMins - startMins;
+        if (diff < 0) diff += 24 * 60;
+        if (diff > 0 && diff <= 180) {
+          let found = false;
+          for (let i = 0; i < durSelect.options.length; i++) {
+            if (durSelect.options[i].value.startsWith(diff + ' min')) {
+              durSelect.selectedIndex = i;
+              found = true;
+              break;
+            }
+          }
+          if (hintEl) {
+            hintEl.innerHTML = `<span class="text-indigo-700 font-bold">⏱️ Custom range: ${diff} minutes detected (${startInput.value} ➔ ${endInput.value})</span>`;
+          }
+        }
+      }
+    }
+
+    // Modal Operations
+    function openAddPeriodModal() {
+      document.getElementById('modal-heading').textContent = `Add Period Slot to ${WINGS_DATA[currentWing]?.title || 'Wing'}`;
+      document.getElementById('modal-period-id').value = '';
+      
+      const wingData = WINGS_DATA[currentWing];
+      const count = wingData.periods.filter(p => p.type === 'study').length;
+      document.getElementById('modal-period-name').value = `${count + 1}th Period`;
+
+      // Determine suggested start time from last period end time
+      let suggestedStart = '08:00 AM';
+      if (wingData.periods && wingData.periods.length > 0) {
+        const lastP = wingData.periods[wingData.periods.length - 1];
+        if (lastP.time && lastP.time.includes('to')) {
+          const parts = lastP.time.split('to');
+          if (parts[1]) suggestedStart = parts[1].trim();
+        }
+      } else {
+        if (currentWing === 'playgroup') suggestedStart = '09:30 AM';
+        else if (currentWing === 'pre_primary') suggestedStart = '08:30 AM';
+        else suggestedStart = '07:50 AM';
+      }
+
+      document.getElementById('modal-start-time').value = suggestedStart;
+      
+      // Default duration
+      const defaultDur = currentWing === 'senior' ? (seniorMode === 60 ? '60 min' : '40 min') : (currentWing === 'playgroup' ? '40 min' : '45 min');
+      const durSelect = document.getElementById('modal-duration');
+      for (let i = 0; i < durSelect.options.length; i++) {
+        if (durSelect.options[i].value.startsWith(defaultDur)) {
+          durSelect.selectedIndex = i;
+          break;
+        }
+      }
+
+      document.getElementById('modal-type').value = 'study';
+      document.getElementById('modal-sat-status').value = '🟢 Normal Study';
+      
+      // Auto-calculate end time immediately
+      autoCalcEndTime();
+
+      document.getElementById('period-modal').classList.remove('hidden');
+    }
+
+    function editPeriod(periodId) {
+      const data = WINGS_DATA[currentWing];
+      const period = data.periods.find(p => p.id === periodId);
+      if (!period) return;
+
+      document.getElementById('modal-heading').textContent = `Edit Period: ${period.name}`;
+      document.getElementById('modal-period-id').value = period.id;
+      document.getElementById('modal-period-name').value = period.name;
+      
+      const times = period.time.split(' to ');
+      document.getElementById('modal-start-time').value = times[0] ? times[0].trim() : '08:00 AM';
+      
+      // Match duration
+      const durSelect = document.getElementById('modal-duration');
+      let matched = false;
+      for (let i = 0; i < durSelect.options.length; i++) {
+        if (durSelect.options[i].value.startsWith(period.dur.trim())) {
+          durSelect.selectedIndex = i;
+          matched = true;
+          break;
+        }
+      }
+      if (!matched) {
+        durSelect.value = period.dur;
+      }
+
+      document.getElementById('modal-type').value = period.type;
+      document.getElementById('modal-sat-status').value = period.sat;
+
+      // Auto-calculate end time immediately
+      autoCalcEndTime();
+
+      // If period has an exact end time saved, verify/set it
+      if (times[1] && times[1].trim()) {
+        document.getElementById('modal-end-time').value = times[1].trim();
+      }
+
+      document.getElementById('period-modal').classList.remove('hidden');
+    }
+
+    function closePeriodModal() {
+      document.getElementById('period-modal').classList.add('hidden');
+    }
+
+    function savePeriodModal() {
+      const id = document.getElementById('modal-period-id').value;
+      const name = document.getElementById('modal-period-name').value || 'New Period';
+      const start = document.getElementById('modal-start-time').value;
+      const end = document.getElementById('modal-end-time').value;
+      const dur = document.getElementById('modal-duration').value;
+      const type = document.getElementById('modal-type').value;
+      const sat = document.getElementById('modal-sat-status').value;
+
+      const data = WINGS_DATA[currentWing];
+      if (id) {
+        // Edit existing
+        const p = data.periods.find(x => x.id === id);
+        if (p) {
+          p.name = name;
+          p.time = `${start} to ${end}`;
+          p.dur = dur;
+          p.type = type;
+          p.sat = sat;
+        }
+      } else {
+        // Add new
+        const newId = 'slot_' + Date.now();
+        const nextIdx = '#' + (data.periods.filter(x => x.type === 'study').length + 1);
+        data.periods.push({
+          id: newId,
+          idx: nextIdx,
+          name: name,
+          time: `${start} to ${end}`,
+          dur: dur,
+          type: type,
+          sat: sat
+        });
+      }
+
+      closePeriodModal();
+      renderWingView();
+    }
+
+    function deletePeriod(periodId) {
+      const data = WINGS_DATA[currentWing];
+      if (confirm('Are you sure you want to remove this period slot?')) {
+        data.periods = data.periods.filter(p => p.id !== periodId);
+        renderWingView();
+      }
+    }
+
+    function saveAllSettings() {
+      const toast = document.getElementById('save-toast');
+      toast.classList.remove('hidden');
+      setTimeout(() => {
+        toast.classList.add('hidden');
+      }, 4000);
+    }
+
+    // Initialize on page load
+    renderWingView();
+  </script>
+</body>
+</html>

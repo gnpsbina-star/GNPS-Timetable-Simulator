@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Preview: 60-Minute Senior Wing Period Schedule</title>
+  <script src="https://www.gstatic.com/antigravity/web/dev/tailwindcss.min.js"></script>
+  <style>
+    .transition-all-fast {
+      transition: all 0.2s ease-in-out;
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased p-3 sm:p-6 font-sans">
+
+  <div class="max-w-5xl mx-auto space-y-6">
+
+    <!-- Top Hero Banner -->
+    <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200 flex flex-wrap items-center justify-between gap-4">
+      <div>
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-50 text-indigo-700 text-xs font-black mb-2">
+          <span>⏱️ Duration Architecture Preview</span>
+        </div>
+        <h1 class="text-xl sm:text-2xl font-black text-slate-900 tracking-tight">
+          Setting 60-Minute Periods for Senior Wing (Class 9 to 12)
+        </h1>
+        <p class="text-xs text-slate-500 mt-1 max-w-2xl">
+          While Junior & Middle wings run on standard <strong>40-minute periods</strong>, Senior classes (9–12) can run on <strong>60-minute in-depth lecture blocks</strong>. Explore how the bell schedule aligns and how you would configure it.
+        </p>
+      </div>
+
+      <!-- Quick Toggle Mode -->
+      <div class="bg-slate-100 p-1.5 rounded-2xl border border-slate-200 flex items-center gap-1">
+        <button id="btn-mode-40" onclick="setSeniorMode(40)" class="px-4 py-2 rounded-xl text-xs font-black transition-all-fast text-slate-600 hover:text-slate-900">
+          40 Mins (Standard)
+        </button>
+        <button id="btn-mode-60" onclick="setSeniorMode(60)" class="px-4 py-2 rounded-xl text-xs font-black transition-all-fast bg-indigo-600 text-white shadow-sm">
+          ⚡ 60 Mins (Senior Block)
+        </button>
+      </div>
+    </div>
+
+    <!-- Interface Preview: How You Would Set This in Prerequisites Studio -->
+    <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200 space-y-4">
+      <div class="flex items-center justify-between pb-3 border-b border-slate-100">
+        <div>
+          <span class="text-[10px] font-black uppercase tracking-wider text-indigo-600">Proposed Prerequisites Studio UI</span>
+          <h2 class="text-base font-extrabold text-slate-900">1. Wing Period Duration Configuration</h2>
+        </div>
+        <span class="text-xs font-bold text-emerald-700 bg-emerald-50 px-3 py-1 rounded-lg border border-emerald-200">
+          Ultra Simple 1-Click Setup
+        </span>
+      </div>
+
+      <p class="text-xs text-slate-600">
+        In <strong>Prerequisites Studio</strong> (<code class="bg-slate-100 px-1.5 py-0.5 rounded text-indigo-600 font-mono">prerequisites.html</code>), a new card labeled <strong>"Period Durations by Wing"</strong> allows setting custom lecture lengths for each wing:
+      </p>
+
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-1">
+        <!-- Primary -->
+        <div class="p-4 rounded-xl border border-slate-200 bg-slate-50 space-y-2">
+          <div class="flex items-center justify-between">
+            <span class="font-bold text-xs text-slate-800 flex items-center gap-1.5">🎒 Primary (Class 1–5)</span>
+            <span class="text-[10px] font-bold text-slate-400">7 Periods</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <select disabled class="w-full text-xs font-extrabold p-2 rounded-lg border border-slate-300 bg-slate-100 text-slate-700 cursor-not-allowed">
+              <option selected>40 Minutes per Period</option>
+            </select>
+          </div>
+          <span class="text-[10px] text-slate-400 block">Standard primary school pacing</span>
+        </div>
+
+        <!-- Middle -->
+        <div class="p-4 rounded-xl border border-slate-200 bg-slate-50 space-y-2">
+          <div class="flex items-center justify-between">
+            <span class="font-bold text-xs text-slate-800 flex items-center gap-1.5">📚 Middle (Class 6–8)</span>
+            <span class="text-[10px] font-bold text-slate-400">8 Periods</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <select disabled class="w-full text-xs font-extrabold p-2 rounded-lg border border-slate-300 bg-slate-100 text-slate-700 cursor-not-allowed">
+              <option selected>40 Minutes per Period</option>
+            </select>
+          </div>
+          <span class="text-[10px] text-slate-400 block">Full day until 01:50 PM</span>
+        </div>
+
+        <!-- Senior (Configurable) -->
+        <div class="p-4 rounded-xl border-2 border-indigo-500 bg-indigo-50/40 space-y-2 relative">
+          <span class="absolute -top-2.5 right-3 px-2 py-0.5 rounded-full bg-indigo-600 text-white text-[9px] font-black uppercase tracking-wider">
+            Customizable
+          </span>
+          <div class="flex items-center justify-between">
+            <span class="font-black text-xs text-indigo-950 flex items-center gap-1.5">🎓 Senior (Class 9–12)</span>
+            <span id="senior-badge-count" class="text-[10px] font-black text-indigo-600">4 Blocks + 1 Tutorial</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <select id="select-senior-duration" onchange="setSeniorMode(parseInt(this.value))" class="w-full text-xs font-black p-2 rounded-lg border border-indigo-400 bg-white text-indigo-950 shadow-xs focus:ring-2 focus:ring-indigo-500">
+              <option value="40">40 Minutes (Standard 7-slot Schedule)</option>
+              <option value="60" selected>60 Minutes (College-Prep 1-Hour Lectures)</option>
+            </select>
+          </div>
+          <span class="text-[10px] text-indigo-700 font-semibold block">Disperses exactly at 01:10 PM</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Comparative Timeline Visualizer -->
+    <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200 space-y-4">
+      <div class="flex items-center justify-between pb-3 border-b border-slate-100 flex-wrap gap-2">
+        <div>
+          <span class="text-[10px] font-black uppercase tracking-wider text-indigo-600">Comparative Timeline</span>
+          <h2 class="text-base font-extrabold text-slate-900">2. Side-by-Side Bell Schedule Comparison</h2>
+        </div>
+        <div class="flex items-center gap-4 text-xs font-bold">
+          <span class="flex items-center gap-1.5"><span class="w-3 h-3 rounded-md bg-indigo-600"></span> Senior Wing</span>
+          <span class="flex items-center gap-1.5"><span class="w-3 h-3 rounded-md bg-teal-600"></span> Middle Wing</span>
+          <span class="flex items-center gap-1.5"><span class="w-3 h-3 rounded-md bg-amber-400"></span> Lunch / Break</span>
+        </div>
+      </div>
+
+      <!-- Timeline Bars -->
+      <div class="space-y-4 pt-2">
+        
+        <!-- Senior Wing Timeline -->
+        <div>
+          <div class="flex items-center justify-between text-xs mb-1.5 font-bold">
+            <span class="text-indigo-950 font-black flex items-center gap-2">
+              <span>🎓 Senior Wing (Class 9 to 12)</span>
+              <span id="senior-timeline-label" class="px-2 py-0.5 rounded bg-indigo-100 text-indigo-800 text-[10px]">60-Minute Block Mode</span>
+            </span>
+            <span class="text-slate-500 font-semibold">Dispersal: <strong class="text-indigo-950 font-black">01:10 PM</strong></span>
+          </div>
+
+          <div id="senior-timeline-bars" class="flex gap-1 h-14 rounded-xl overflow-hidden p-1 bg-slate-100 border border-slate-200">
+            <!-- Dynamically populated based on active senior mode -->
+          </div>
+        </div>
+
+        <!-- Middle Wing Timeline (For reference) -->
+        <div>
+          <div class="flex items-center justify-between text-xs mb-1.5 font-bold">
+            <span class="text-slate-800 font-extrabold flex items-center gap-2">
+              <span>📚 Middle Wing (Class 6 to 8)</span>
+              <span class="px-2 py-0.5 rounded bg-slate-200 text-slate-700 text-[10px]">Standard 40-Minute Periods</span>
+            </span>
+            <span class="text-slate-500 font-semibold">Dispersal: <strong class="text-slate-900 font-black">01:50 PM</strong></span>
+          </div>
+
+          <div class="flex gap-1 h-14 rounded-xl overflow-hidden p-1 bg-slate-100 border border-slate-200">
+            <div class="flex-[30] bg-purple-100 border border-purple-200 rounded-lg p-1 text-center flex flex-col justify-center">
+              <div class="text-[9px] font-bold text-purple-900 leading-none">Assembly</div>
+              <div class="text-[8px] text-purple-700 mt-0.5 font-mono">07:50-08:20</div>
+            </div>
+            <div class="flex-[45] bg-teal-600 text-white rounded-lg p-1 text-center flex flex-col justify-center">
+              <div class="text-[10px] font-black leading-none">P1 (45m)</div>
+              <div class="text-[8px] text-teal-100 mt-0.5 font-mono">08:30-09:15</div>
+            </div>
+            <div class="flex-[45] bg-teal-600 text-white rounded-lg p-1 text-center flex flex-col justify-center">
+              <div class="text-[10px] font-black leading-none">P2 (45m)</div>
+              <div class="text-[8px] text-teal-100 mt-0.5 font-mono">09:15-10:00</div>
+            </div>
+            <div class="flex-[45] bg-teal-600 text-white rounded-lg p-1 text-center flex flex-col justify-center">
+              <div class="text-[10px] font-black leading-none">P3 (45m)</div>
+              <div class="text-[8px] text-teal-100 mt-0.5 font-mono">10:00-10:45</div>
+            </div>
+            <div class="flex-[20] bg-amber-400 text-amber-950 font-black rounded-lg p-1 text-center flex flex-col justify-center">
+              <div class="text-[9px] leading-none">Lunch</div>
+              <div class="text-[7px] mt-0.5 font-mono">10:45-11:05</div>
+            </div>
+            <div class="flex-[45] bg-teal-600 text-white rounded-lg p-1 text-center flex flex-col justify-center">
+              <div class="text-[10px] font-black leading-none">P4 (45m)</div>
+              <div class="text-[8px] text-teal-100 mt-0.5 font-mono">11:05-11:50</div>
+            </div>
+            <div class="flex-[40] bg-teal-600 text-white rounded-lg p-1 text-center flex flex-col justify-center">
+              <div class="text-[10px] font-black leading-none">P5 (40m)</div>
+              <div class="text-[8px] text-teal-100 mt-0.5 font-mono">11:50-12:30</div>
+            </div>
+            <div class="flex-[40] bg-teal-600 text-white rounded-lg p-1 text-center flex flex-col justify-center">
+              <div class="text-[10px] font-black leading-none">P6 (40m)</div>
+              <div class="text-[8px] text-teal-100 mt-0.5 font-mono">12:30-01:10</div>
+            </div>
+            <div class="flex-[40] bg-teal-600 text-white rounded-lg p-1 text-center flex flex-col justify-center">
+              <div class="text-[10px] font-black leading-none">P7 (40m)</div>
+              <div class="text-[8px] text-teal-100 mt-0.5 font-mono">01:10-01:50</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Live Sample Senior Class Schedule Preview -->
+    <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200 space-y-4">
+      <div class="flex items-center justify-between pb-3 border-b border-slate-100 flex-wrap gap-2">
+        <div>
+          <span class="text-[10px] font-black uppercase tracking-wider text-indigo-600">Sample Timetable View</span>
+          <h2 class="text-base font-extrabold text-slate-900">3. Class Timetable: CLASS 10 Rose</h2>
+        </div>
+        <div class="text-xs text-slate-500 font-semibold">
+          Class Teacher: <strong class="text-slate-900">Komal</strong>
+        </div>
+      </div>
+
+      <div class="overflow-x-auto rounded-xl border border-slate-200">
+        <table class="w-full text-left text-xs">
+          <thead id="sample-table-head" class="bg-slate-900 text-white font-black uppercase text-[10px] tracking-wider">
+            <!-- Dynamically populated -->
+          </thead>
+          <tbody id="sample-table-body" class="divide-y divide-slate-200 font-medium">
+            <!-- Dynamically populated -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- How the Architecture Works (3 Key Answers for the User) -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+      <div class="bg-white rounded-2xl p-5 shadow-sm border border-slate-200 space-y-2">
+        <div class="w-8 h-8 rounded-xl bg-blue-50 text-blue-700 flex items-center justify-center font-black text-sm">1</div>
+        <h3 class="text-sm font-extrabold text-slate-900">Equal Instructional Hours</h3>
+        <p class="text-xs text-slate-600 leading-relaxed">
+          At 40 mins &times; 6 periods = <strong>240 mins (4 hours)</strong> of teaching per day. At 60 mins &times; 4 periods = <strong>240 mins (4 hours)</strong>! Teachers and students get the exact same total teaching time, but in deeper, uninterrupted lecture blocks.
+        </p>
+      </div>
+
+      <div class="bg-white rounded-2xl p-5 shadow-sm border border-slate-200 space-y-2">
+        <div class="w-8 h-8 rounded-xl bg-purple-50 text-purple-700 flex items-center justify-center font-black text-sm">2</div>
+        <h3 class="text-sm font-extrabold text-slate-900">Shared Faculty Handling</h3>
+        <p class="text-xs text-slate-600 leading-relaxed">
+          Out of 51 teachers, only 5 teach across Senior and other wings (e.g. Komal, Mraganshi). The timetable engine schedules shared teachers during aligned break windows or dedicates them to senior periods.
+        </p>
+      </div>
+
+      <div class="bg-white rounded-2xl p-5 shadow-sm border border-slate-200 space-y-2">
+        <div class="w-8 h-8 rounded-xl bg-emerald-50 text-emerald-700 flex items-center justify-center font-black text-sm">3</div>
+        <h3 class="text-sm font-extrabold text-slate-900">Dispersal Stays 01:10 PM</h3>
+        <p class="text-xs text-slate-600 leading-relaxed">
+          Both schedules end cleanly at <strong>01:10 PM</strong>! School bus routes, parent pickups, and dispersal bells for Classes 9 to 12 remain 100% synchronized with the rest of the school.
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    let seniorMode = 60; // 40 or 60
+
+    function setSeniorMode(mode) {
+      seniorMode = mode;
+      
+      const btn40 = document.getElementById('btn-mode-40');
+      const btn60 = document.getElementById('btn-mode-60');
+      const select = document.getElementById('select-senior-duration');
+      const label = document.getElementById('senior-timeline-label');
+      const countBadge = document.getElementById('senior-badge-count');
+
+      if (mode === 40) {
+        btn40.className = 'px-4 py-2 rounded-xl text-xs font-black transition-all-fast bg-indigo-600 text-white shadow-sm';
+        btn60.className = 'px-4 py-2 rounded-xl text-xs font-black transition-all-fast text-slate-600 hover:text-slate-900';
+        select.value = "40";
+        label.textContent = "40-Minute Standard Mode";
+        label.className = "px-2 py-0.5 rounded bg-slate-200 text-slate-700 text-[10px]";
+        countBadge.textContent = "6 Periods (Disperses 01:10 PM)";
+      } else {
+        btn60.className = 'px-4 py-2 rounded-xl text-xs font-black transition-all-fast bg-indigo-600 text-white shadow-sm';
+        btn40.className = 'px-4 py-2 rounded-xl text-xs font-black transition-all-fast text-slate-600 hover:text-slate-900';
+        select.value = "60";
+        label.textContent = "60-Minute Block Mode";
+        label.className = "px-2 py-0.5 rounded bg-indigo-100 text-indigo-800 text-[10px]";
+        countBadge.textContent = "4 Blocks + 1 Tutorial";
+      }
+
+      renderSeniorTimeline();
+      renderSampleTable();
+    }
+
+    function renderSeniorTimeline() {
+      const container = document.getElementById('senior-timeline-bars');
+      container.innerHTML = '';
+
+      if (seniorMode === 40) {
+        // Standard 40m
+        container.innerHTML = `
+          <div class="flex-[30] bg-purple-100 border border-purple-200 rounded-lg p-1 text-center flex flex-col justify-center">
+            <div class="text-[9px] font-bold text-purple-900 leading-none">Assembly</div>
+            <div class="text-[8px] text-purple-700 mt-0.5 font-mono">07:50-08:20</div>
+          </div>
+          <div class="flex-[45] bg-indigo-600 text-white rounded-lg p-1 text-center flex flex-col justify-center">
+            <div class="text-[10px] font-black leading-none">P1 (45m)</div>
+            <div class="text-[8px] text-indigo-100 mt-0.5 font-mono">08:30-09:15</div>
+          </div>
+          <div class="flex-[45] bg-indigo-600 text-white rounded-lg p-1 text-center flex flex-col justify-center">
+            <div class="text-[10px] font-black leading-none">P2 (45m)</div>
+            <div class="text-[8px] text-indigo-100 mt-0.5 font-mono">09:15-10:00</div>
+          </div>
+          <div class="flex-[45] bg-indigo-600 text-white rounded-lg p-1 text-center flex flex-col justify-center">
+            <div class="text-[10px] font-black leading-none">P3 (45m)</div>
+            <div class="text-[8px] text-indigo-100 mt-0.5 font-mono">10:00-10:45</div>
+          </div>
+          <div class="flex-[20] bg-amber-400 text-amber-950 font-black rounded-lg p-1 text-center flex flex-col justify-center">
+            <div class="text-[9px] leading-none">Lunch</div>
+            <div class="text-[7px] mt-0.5 font-mono">10:45-11:05</div>
+          </div>
+          <div class="flex-[45] bg-indigo-600 text-white rounded-lg p-1 text-center flex flex-col justify-center">
+            <div class="text-[10px] font-black leading-none">P4 (45m)</div>
+            <div class="text-[8px] text-indigo-100 mt-0.5 font-mono">11:05-11:50</div>
+          </div>
+          <div class="flex-[40] bg-indigo-600 text-white rounded-lg p-1 text-center flex flex-col justify-center">
+            <div class="text-[10px] font-black leading-none">P5 (40m)</div>
+            <div class="text-[8px] text-indigo-100 mt-0.5 font-mono">11:50-12:30</div>
+          </div>
+          <div class="flex-[40] bg-indigo-600 text-white rounded-lg p-1 text-center flex flex-col justify-center">
+            <div class="text-[10px] font-black leading-none">P6 (40m)</div>
+            <div class="text-[8px] text-indigo-100 mt-0.5 font-mono">12:30-01:10</div>
+          </div>
+          <div class="flex-[40] bg-slate-200 border border-slate-300 text-slate-500 rounded-lg p-1 text-center flex flex-col justify-center">
+            <div class="text-[9px] font-bold leading-none">OFF</div>
+            <div class="text-[7px] mt-0.5 font-mono">Dispersed</div>
+          </div>
+        `;
+      } else {
+        // 60-Minute Block Mode
+        container.innerHTML = `
+          <div class="flex-[30] bg-purple-100 border border-purple-200 rounded-lg p-1 text-center flex flex-col justify-center">
+            <div class="text-[9px] font-bold text-purple-900 leading-none">Assembly</div>
+            <div class="text-[8px] text-purple-700 mt-0.5 font-mono">07:50-08:20</div>
+          </div>
+          <div class="flex-[60] bg-indigo-600 text-white rounded-lg p-1.5 text-center flex flex-col justify-center shadow-xs">
+            <div class="text-[11px] font-black leading-none">Block 1 (60 min)</div>
+            <div class="text-[9px] text-indigo-100 mt-0.5 font-mono font-bold">08:20 – 09:20</div>
+          </div>
+          <div class="flex-[60] bg-indigo-600 text-white rounded-lg p-1.5 text-center flex flex-col justify-center shadow-xs">
+            <div class="text-[11px] font-black leading-none">Block 2 (60 min)</div>
+            <div class="text-[9px] text-indigo-100 mt-0.5 font-mono font-bold">09:20 – 10:20</div>
+          </div>
+          <div class="flex-[25] bg-amber-400 text-amber-950 font-black rounded-lg p-1 text-center flex flex-col justify-center">
+            <div class="text-[9px] leading-none">Snack Break</div>
+            <div class="text-[8px] mt-0.5 font-mono">10:20-10:45</div>
+          </div>
+          <div class="flex-[60] bg-indigo-600 text-white rounded-lg p-1.5 text-center flex flex-col justify-center shadow-xs">
+            <div class="text-[11px] font-black leading-none">Block 3 (60 min)</div>
+            <div class="text-[9px] text-indigo-100 mt-0.5 font-mono font-bold">10:45 – 11:45</div>
+          </div>
+          <div class="flex-[60] bg-indigo-600 text-white rounded-lg p-1.5 text-center flex flex-col justify-center shadow-xs">
+            <div class="text-[11px] font-black leading-none">Block 4 (60 min)</div>
+            <div class="text-[9px] text-indigo-100 mt-0.5 font-mono font-bold">11:45 – 12:45</div>
+          </div>
+          <div class="flex-[25] bg-indigo-50 border border-indigo-200 text-indigo-900 rounded-lg p-1 text-center flex flex-col justify-center">
+            <div class="text-[9px] font-bold leading-none">Tutorial / Prep</div>
+            <div class="text-[8px] text-indigo-600 mt-0.5 font-mono">12:45-01:10</div>
+          </div>
+        `;
+      }
+    }
+
+    function renderSampleTable() {
+      const thead = document.getElementById('sample-table-head');
+      const tbody = document.getElementById('sample-table-body');
+
+      if (seniorMode === 40) {
+        thead.innerHTML = `
+          <tr>
+            <th class="py-2.5 px-3">Day</th>
+            <th class="py-2.5 px-3">Assembly<br><span class="text-[9px] font-normal text-slate-300">07:50-08:20</span></th>
+            <th class="py-2.5 px-3">1st Period<br><span class="text-[9px] font-normal text-slate-300">08:30-09:15</span></th>
+            <th class="py-2.5 px-3">2nd Period<br><span class="text-[9px] font-normal text-slate-300">09:15-10:00</span></th>
+            <th class="py-2.5 px-3">3rd Period<br><span class="text-[9px] font-normal text-slate-300">10:00-10:45</span></th>
+            <th class="py-2.5 px-2 text-center bg-amber-500 text-white">Lunch<br><span class="text-[9px] font-normal">10:45-11:05</span></th>
+            <th class="py-2.5 px-3">4th Period<br><span class="text-[9px] font-normal text-slate-300">11:05-11:50</span></th>
+            <th class="py-2.5 px-3">5th Period<br><span class="text-[9px] font-normal text-slate-300">11:50-12:30</span></th>
+            <th class="py-2.5 px-3">6th Period<br><span class="text-[9px] font-normal text-slate-300">12:30-01:10</span></th>
+            <th class="py-2.5 px-3 text-slate-400">7th Period<br><span class="text-[9px] font-normal">01:10-01:50</span></th>
+          </tr>
+        `;
+
+        const days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+        tbody.innerHTML = days.map(d => `
+          <tr class="hover:bg-slate-50">
+            <td class="py-2 px-3 font-black text-indigo-950">${d}</td>
+            <td class="py-2 px-3 bg-purple-50 text-purple-900 font-bold text-[11px]">Morning Assembly</td>
+            <td class="py-2 px-3"><div class="font-black text-slate-900">Maths</div><div class="text-[10px] text-slate-500">Avdesh</div></td>
+            <td class="py-2 px-3"><div class="font-black text-slate-900">Science</div><div class="text-[10px] text-slate-500">Prashant</div></td>
+            <td class="py-2 px-3"><div class="font-black text-slate-900">English</div><div class="text-[10px] text-slate-500">Komal</div></td>
+            <td class="py-2 px-2 bg-amber-50 text-amber-900 text-center font-bold text-[10px]">Lunch</td>
+            <td class="py-2 px-3"><div class="font-black text-slate-900">Social Sci</div><div class="text-[10px] text-slate-500">Rupesh</div></td>
+            <td class="py-2 px-3"><div class="font-black text-slate-900">Hindi</div><div class="text-[10px] text-slate-500">Ganesh</div></td>
+            <td class="py-2 px-3"><div class="font-black text-slate-900">IT / AI</div><div class="text-[10px] text-slate-500">Pradeep</div></td>
+            <td class="py-2 px-3 bg-slate-100 text-slate-400 font-bold text-center text-[10px]">⚪ OFF</td>
+          </tr>
+        `).join('');
+
+      } else {
+        // 60-Minute Block
+        thead.innerHTML = `
+          <tr>
+            <th class="py-3 px-3">Day</th>
+            <th class="py-3 px-3">Assembly<br><span class="text-[9px] font-normal text-slate-300">07:50-08:20</span></th>
+            <th class="py-3 px-3 bg-indigo-950 text-amber-300">Block 1 (60 min)<br><span class="text-[9px] font-normal text-slate-300">08:20-09:20</span></th>
+            <th class="py-3 px-3 bg-indigo-950 text-amber-300">Block 2 (60 min)<br><span class="text-[9px] font-normal text-slate-300">09:20-10:20</span></th>
+            <th class="py-3 px-2 text-center bg-amber-500 text-white">Break<br><span class="text-[9px] font-normal">10:20-10:45</span></th>
+            <th class="py-3 px-3 bg-indigo-950 text-amber-300">Block 3 (60 min)<br><span class="text-[9px] font-normal text-slate-300">10:45-11:45</span></th>
+            <th class="py-3 px-3 bg-indigo-950 text-amber-300">Block 4 (60 min)<br><span class="text-[9px] font-normal text-slate-300">11:45-12:45</span></th>
+            <th class="py-3 px-3 bg-indigo-900 text-indigo-100">Tutorial / Doubt (25m)<br><span class="text-[9px] font-normal text-slate-300">12:45-01:10</span></th>
+          </tr>
+        `;
+
+        const days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+        tbody.innerHTML = days.map(d => `
+          <tr class="hover:bg-slate-50">
+            <td class="py-3 px-3 font-black text-indigo-950">${d}</td>
+            <td class="py-3 px-3 bg-purple-50 text-purple-900 font-bold text-[11px]">Morning Assembly</td>
+            <td class="py-3 px-3 bg-indigo-50/50">
+              <div class="font-black text-indigo-950 text-sm">Mathematics</div>
+              <div class="text-[10px] text-indigo-700 font-bold">Avdesh • Theory & Problem Solving</div>
+            </td>
+            <td class="py-3 px-3 bg-indigo-50/50">
+              <div class="font-black text-indigo-950 text-sm">Physics / Chemistry</div>
+              <div class="text-[10px] text-indigo-700 font-bold">Prashant • In-depth Lab/Concept</div>
+            </td>
+            <td class="py-3 px-2 bg-amber-50 text-amber-900 text-center font-bold text-[10px]">Snack Break</td>
+            <td class="py-3 px-3 bg-indigo-50/50">
+              <div class="font-black text-indigo-950 text-sm">Social Science</div>
+              <div class="text-[10px] text-indigo-700 font-bold">Rupesh • Detailed Syllabus</div>
+            </td>
+            <td class="py-3 px-3 bg-indigo-50/50">
+              <div class="font-black text-indigo-950 text-sm">English Language</div>
+              <div class="text-[10px] text-indigo-700 font-bold">Komal • Comprehension & Writing</div>
+            </td>
+            <td class="py-3 px-3 bg-slate-50 text-slate-700">
+              <div class="font-black text-slate-900 text-xs">Board Prep / Doubts</div>
+              <div class="text-[10px] text-slate-500 font-semibold">Teacher Mentoring Session</div>
+            </td>
+          </tr>
+        `).join('');
+      }
+    }
+
+    // Initialize
+    setSeniorMode(60);
+  </script>
+</body>
+</html>

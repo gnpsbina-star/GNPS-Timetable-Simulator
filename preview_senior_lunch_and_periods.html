@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Senior Wing 60-Min Periods & Late Dispersal Preview</title>
+  <script src="https://www.gstatic.com/antigravity/web/dev/tailwindcss.min.js"></script>
+  <style>
+    .tab-btn.active {
+      background-color: #4f46e5;
+      color: #ffffff;
+      box-shadow: 0 2px 4px rgba(79, 70, 229, 0.25);
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased p-3 sm:p-6 font-sans">
+
+  <div class="max-w-5xl mx-auto space-y-6">
+
+    <!-- Hero Header -->
+    <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200 flex flex-wrap items-center justify-between gap-4">
+      <div>
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-50 text-indigo-700 text-xs font-black mb-2 border border-indigo-200">
+          <span>⏰ Schedule Architecture Preview</span>
+        </div>
+        <h1 class="text-xl sm:text-2xl font-black text-slate-900 tracking-tight">
+          Class 9 to 12: 60-Min Periods &bull; 8:00 AM Start &bull; Late Dispersal
+        </h1>
+        <p class="text-xs text-slate-500 mt-1 max-w-2xl">
+          Because 6 periods &times; 60 minutes = <strong>6 full hours</strong>, Senior Wing will naturally disperse at <strong>02:20 PM</strong> (instead of 01:10 PM). Here is how lunch stays 100% synchronized for the whole school.
+        </p>
+      </div>
+
+      <!-- Quick Status Badge -->
+      <div class="p-3.5 bg-slate-900 text-white rounded-2xl text-xs font-bold space-y-1">
+        <div class="text-[10px] text-slate-400 uppercase tracking-wider font-extrabold">Senior Dispersal</div>
+        <div class="text-lg font-black text-amber-400">02:20 PM</div>
+        <div class="text-[10px] text-slate-300 font-semibold">6 Hours Total Teaching</div>
+      </div>
+    </div>
+
+    <!-- The Core Math of 6 Periods of 60 Minutes -->
+    <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200 space-y-4">
+      <div class="flex items-center justify-between pb-3 border-b border-slate-100">
+        <div>
+          <span class="text-[10px] font-black uppercase tracking-wider text-indigo-600">The Exact Mathematics</span>
+          <h2 class="text-base font-extrabold text-slate-900">Why Senior Dispersal Shifts to 02:20 PM</h2>
+        </div>
+        <span class="text-xs font-bold text-slate-500 font-mono">6 &times; 60 mins = 360 mins</span>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-4 gap-3 text-xs">
+        <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 space-y-1">
+          <span class="text-slate-400 font-bold uppercase text-[10px]">Start Time</span>
+          <div class="text-xl font-black text-slate-900">08:00 AM</div>
+          <p class="text-[11px] text-slate-500">First bell rings right after short morning assembly</p>
+        </div>
+
+        <div class="p-4 rounded-xl bg-indigo-50 border border-indigo-200 space-y-1">
+          <span class="text-indigo-600 font-bold uppercase text-[10px]">Teaching Duration</span>
+          <div class="text-xl font-black text-indigo-900">360 mins</div>
+          <p class="text-[11px] text-indigo-700">6 periods &times; exactly 60 minutes each</p>
+        </div>
+
+        <div class="p-4 rounded-xl bg-amber-50 border border-amber-200 space-y-1">
+          <span class="text-amber-700 font-bold uppercase text-[10px]">Lunch Break</span>
+          <div class="text-xl font-black text-amber-900">20 mins</div>
+          <p class="text-[11px] text-amber-800">Universal whole school break</p>
+        </div>
+
+        <div class="p-4 rounded-xl bg-emerald-50 border border-emerald-300 space-y-1">
+          <span class="text-emerald-700 font-bold uppercase text-[10px]">New Dispersal</span>
+          <div class="text-xl font-black text-emerald-900">02:20 PM</div>
+          <p class="text-[11px] text-emerald-800">08:00 AM + 6 hrs + 20m lunch</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Interactive Synchronization Switcher -->
+    <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200 space-y-5">
+      <div class="flex items-center justify-between flex-wrap gap-3 pb-3 border-b border-slate-100">
+        <div>
+          <span class="text-[10px] font-black uppercase tracking-wider text-indigo-600">Lunch Synchronization Options</span>
+          <h2 class="text-base font-extrabold text-slate-900">How to Align the Whole School Lunch</h2>
+        </div>
+        
+        <div class="flex items-center bg-slate-100 p-1 rounded-xl gap-1">
+          <button id="btn-sync-1" onclick="switchSync(1)" class="tab-btn active px-3.5 py-2 rounded-lg text-xs font-black transition">
+            Option A: 11:00 AM Lunch (Pure 60-Min Split)
+          </button>
+          <button id="btn-sync-2" onclick="switchSync(2)" class="tab-btn px-3.5 py-2 rounded-lg text-xs font-black text-slate-600 hover:text-slate-900 transition">
+            Option B: 10:45 AM Lunch (Current Lunch Kept)
+          </button>
+        </div>
+      </div>
+
+      <!-- Option Description -->
+      <div id="sync-description-box" class="p-4 rounded-xl bg-indigo-50 border border-indigo-200 text-xs text-indigo-950">
+        <!-- Injected dynamically -->
+      </div>
+
+      <!-- Senior Wing Visual Timeline -->
+      <div class="space-y-2">
+        <div class="flex items-center justify-between text-xs font-bold text-slate-600">
+          <span>Senior Wing (Class 9 to 12) Daily Bell Timeline:</span>
+          <span id="sync-dispersal-label" class="px-2.5 py-0.5 rounded-full bg-slate-900 text-white font-black text-[11px]">
+            Dispersal: 02:20 PM
+          </span>
+        </div>
+
+        <div id="sync-timeline-bars" class="flex gap-1 h-14 rounded-xl overflow-hidden p-1 bg-slate-100 border border-slate-200">
+          <!-- Injected dynamically -->
+        </div>
+      </div>
+
+      <!-- Detailed Period by Period Schedule -->
+      <div class="space-y-2">
+        <h3 class="text-xs font-extrabold text-slate-800">Senior Wing Period Master Schedule:</h3>
+        <div class="overflow-x-auto rounded-xl border border-slate-200">
+          <table class="w-full text-left text-xs">
+            <thead class="bg-slate-900 text-white uppercase text-[10px] tracking-wider font-black">
+              <tr>
+                <th class="py-2.5 px-3">Slot #</th>
+                <th class="py-2.5 px-3">Period Name</th>
+                <th class="py-2.5 px-3">Time Range</th>
+                <th class="py-2.5 px-3">Duration</th>
+                <th class="py-2.5 px-3">Subjects / Curriculum</th>
+                <th class="py-2.5 px-3">School Alignment</th>
+              </tr>
+            </thead>
+            <tbody id="sync-table-body" class="divide-y divide-slate-200 font-medium">
+              <!-- Injected dynamically -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- Whole School Comparison Grid -->
+    <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200 space-y-4">
+      <div class="flex items-center justify-between pb-3 border-b border-slate-100">
+        <div>
+          <span class="text-[10px] font-black uppercase tracking-wider text-indigo-600">Whole School Overview</span>
+          <h2 class="text-base font-extrabold text-slate-900">Comparing All School Wings Side-by-Side</h2>
+        </div>
+        <span class="text-xs font-bold text-emerald-700 bg-emerald-50 px-3 py-1 rounded-lg border border-emerald-200">
+          🥪 Lunch 100% Synchronized
+        </span>
+      </div>
+
+      <div class="overflow-x-auto rounded-xl border border-slate-200">
+        <table class="w-full text-left text-xs">
+          <thead class="bg-slate-100 text-slate-700 uppercase font-black text-[10px]">
+            <tr>
+              <th class="py-2.5 px-3">Wing / Grades</th>
+              <th class="py-2.5 px-3">Period Length</th>
+              <th class="py-2.5 px-3">Periods Count</th>
+              <th class="py-2.5 px-3 bg-amber-100 text-amber-950 font-black">Lunch Timing</th>
+              <th class="py-2.5 px-3">Dispersal Time</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-200 font-medium">
+            <tr>
+              <td class="py-2.5 px-3 font-bold text-slate-800">👶 Playgroup</td>
+              <td class="py-2.5 px-3 font-mono">40 mins</td>
+              <td class="py-2.5 px-3 font-mono">4 periods</td>
+              <td class="py-2.5 px-3 bg-amber-50 font-bold text-amber-900 font-mono" id="cell-lunch-pg">11:00 – 11:20 AM</td>
+              <td class="py-2.5 px-3 font-bold text-slate-900 font-mono">12:10 PM</td>
+            </tr>
+            <tr>
+              <td class="py-2.5 px-3 font-bold text-slate-800">🧸 Pre-Primary (Nur–UKG)</td>
+              <td class="py-2.5 px-3 font-mono">40 mins</td>
+              <td class="py-2.5 px-3 font-mono">7 periods</td>
+              <td class="py-2.5 px-3 bg-amber-50 font-bold text-amber-900 font-mono" id="cell-lunch-prep">11:00 – 11:20 AM</td>
+              <td class="py-2.5 px-3 font-bold text-slate-900 font-mono">01:15 PM</td>
+            </tr>
+            <tr>
+              <td class="py-2.5 px-3 font-bold text-slate-800">🎒 Primary (Class 1 to 5)</td>
+              <td class="py-2.5 px-3 font-mono">40 mins</td>
+              <td class="py-2.5 px-3 font-mono">6 periods</td>
+              <td class="py-2.5 px-3 bg-amber-50 font-bold text-amber-900 font-mono" id="cell-lunch-pri">11:00 – 11:20 AM</td>
+              <td class="py-2.5 px-3 font-bold text-slate-900 font-mono">01:10 PM</td>
+            </tr>
+            <tr>
+              <td class="py-2.5 px-3 font-bold text-slate-800">📚 Middle (Class 6 to 8)</td>
+              <td class="py-2.5 px-3 font-mono">40 mins</td>
+              <td class="py-2.5 px-3 font-mono">7 periods</td>
+              <td class="py-2.5 px-3 bg-amber-50 font-bold text-amber-900 font-mono" id="cell-lunch-mid">11:00 – 11:20 AM</td>
+              <td class="py-2.5 px-3 font-bold text-slate-900 font-mono">01:50 PM</td>
+            </tr>
+            <tr class="bg-indigo-50/70 border-t-2 border-indigo-300">
+              <td class="py-2.5 px-3 font-black text-indigo-950">🎓 Senior (Class 9 to 12)</td>
+              <td class="py-2.5 px-3 font-mono font-black text-indigo-700">60 mins</td>
+              <td class="py-2.5 px-3 font-mono font-black text-indigo-700">6 periods</td>
+              <td class="py-2.5 px-3 bg-amber-100 font-black text-amber-950 font-mono" id="cell-lunch-sen">11:00 – 11:20 AM</td>
+              <td class="py-2.5 px-3 font-black text-indigo-950 font-mono" id="cell-disp-sen">02:20 PM</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    let activeSync = 1;
+
+    const SYNC_MODELS = {
+      1: {
+        title: "Option A: 11:00 AM Lunch (Pure Mathematical Elegance)",
+        dispersal: "Dispersal: 02:20 PM",
+        lunchText: "11:00 – 11:20 AM",
+        dispText: "02:20 PM",
+        description: `
+          <strong>How Lunch is synchronized:</strong> By shifting the school-wide lunch break slightly from 10:45 AM to <strong>11:00 AM</strong>, Class 9 to 12 gets exactly <strong>3 periods of 60 minutes</strong> before lunch (8:00 to 11:00 AM = exactly 3 hours!). Everyone eats together at 11:00 AM. After lunch, Senior students have another <strong>3 periods of 60 minutes</strong> (11:20 AM to 02:20 PM). 
+        `,
+        timeline: [
+          { name: "P1 (60 min)", time: "08:00-09:00", flex: 60, bg: "bg-indigo-600 text-white" },
+          { name: "P2 (60 min)", time: "09:00-10:00", flex: 60, bg: "bg-indigo-600 text-white" },
+          { name: "P3 (60 min)", time: "10:00-11:00", flex: 60, bg: "bg-indigo-600 text-white" },
+          { name: "Lunch", time: "11:00-11:20", flex: 20, bg: "bg-amber-400 text-amber-950 font-black" },
+          { name: "P4 (60 min)", time: "11:20-12:20", flex: 60, bg: "bg-teal-600 text-white" },
+          { name: "P5 (60 min)", time: "12:20-01:20", flex: 60, bg: "bg-teal-600 text-white" },
+          { name: "P6 (60 min)", time: "01:20-02:20", flex: 60, bg: "bg-teal-600 text-white" }
+        ],
+        table: [
+          { idx: "#1", name: "1st Period", time: "08:00 AM to 09:00 AM", dur: "60 mins", sub: "Core Major (Maths / Physics / Accounts)", align: "Starts at 08:00 AM" },
+          { idx: "#2", name: "2nd Period", time: "09:00 AM to 10:00 AM", dur: "60 mins", sub: "Core Major (Chemistry / Biology / Business)", align: "Senior Block" },
+          { idx: "#3", name: "3rd Period", time: "10:00 AM to 11:00 AM", dur: "60 mins", sub: "Core Major (Economics / Social Sci / IT)", align: "Ends right at Lunch" },
+          { idx: "🥪", name: "LUNCH BREAK", time: "11:00 AM to 11:20 AM", dur: "20 mins", sub: "School-wide Lunch & Recreation", align: "⭐ 100% SAME FOR WHOLE SCHOOL" },
+          { idx: "#4", name: "4th Period", time: "11:20 AM to 12:20 PM", dur: "60 mins", sub: "Language (English Literature / Core)", align: "Senior Block" },
+          { idx: "#5", name: "5th Period", time: "12:20 PM to 01:20 PM", dur: "60 mins", sub: "Science Lab Practical / Numerical Session", align: "Senior Block" },
+          { idx: "#6", name: "6th Period", time: "01:20 PM to 02:20 PM", dur: "60 mins", sub: "Board Prep / Doubts / Optional Subject", align: "Disperses at 02:20 PM" }
+        ]
+      },
+      2: {
+        title: "Option B: 10:45 AM Lunch (Current Lunch Timing Preserved)",
+        dispersal: "Dispersal: 02:05 PM",
+        lunchText: "10:45 – 11:05 AM",
+        dispText: "02:05 PM",
+        description: `
+          <strong>How Lunch is synchronized:</strong> If the school's lunch break must strictly stay at <strong>10:45 AM</strong>, Senior Wing has two 60-min periods (8:00–10:00) + one 45-min period (10:00–10:45) before lunch. After lunch (11:05 AM), they have three full 60-min periods, ending at <strong>02:05 PM</strong>.
+        `,
+        timeline: [
+          { name: "P1 (60 min)", time: "08:00-09:00", flex: 60, bg: "bg-indigo-600 text-white" },
+          { name: "P2 (60 min)", time: "09:00-10:00", flex: 60, bg: "bg-indigo-600 text-white" },
+          { name: "P3 (45 min)", time: "10:00-10:45", flex: 45, bg: "bg-indigo-500 text-white" },
+          { name: "Lunch", time: "10:45-11:05", flex: 20, bg: "bg-amber-400 text-amber-950 font-black" },
+          { name: "P4 (60 min)", time: "11:05-12:05", flex: 60, bg: "bg-teal-600 text-white" },
+          { name: "P5 (60 min)", time: "12:05-01:05", flex: 60, bg: "bg-teal-600 text-white" },
+          { name: "P6 (60 min)", time: "01:05-02:05", flex: 60, bg: "bg-teal-600 text-white" }
+        ],
+        table: [
+          { idx: "#1", name: "1st Period", time: "08:00 AM to 09:00 AM", dur: "60 mins", sub: "Core Major (Maths / Physics / Accounts)", align: "Starts at 08:00 AM" },
+          { idx: "#2", name: "2nd Period", time: "09:00 AM to 10:00 AM", dur: "60 mins", sub: "Core Major (Chemistry / Biology / Business)", align: "Senior Block" },
+          { idx: "#3", name: "3rd Period", time: "10:00 AM to 10:45 AM", dur: "45 mins", sub: "Language / English Literature", align: "Ends right at Lunch" },
+          { idx: "🥪", name: "LUNCH BREAK", time: "10:45 AM to 11:05 AM", dur: "20 mins", sub: "School-wide Lunch & Recreation", align: "⭐ 100% SAME FOR WHOLE SCHOOL" },
+          { idx: "#4", name: "4th Period", time: "11:05 AM to 12:05 PM", dur: "60 mins", sub: "Core Major (Economics / Social Sci / IT)", align: "Senior Block" },
+          { idx: "#5", name: "5th Period", time: "12:05 PM to 01:05 PM", dur: "60 mins", sub: "Science Lab Practical / Numerical Session", align: "Senior Block" },
+          { idx: "#6", name: "6th Period", time: "01:05 PM to 02:05 PM", dur: "60 mins", sub: "Board Prep / Doubts / Optional Subject", align: "Disperses at 02:05 PM" }
+        ]
+      }
+    };
+
+    function switchSync(id) {
+      activeSync = id;
+      [1, 2].forEach(n => {
+        const btn = document.getElementById(`btn-sync-${n}`);
+        if (n === id) {
+          btn.className = "tab-btn active px-3.5 py-2 rounded-lg text-xs font-black transition";
+        } else {
+          btn.className = "tab-btn px-3.5 py-2 rounded-lg text-xs font-black text-slate-600 hover:text-slate-900 transition";
+        }
+      });
+
+      renderSync();
+    }
+
+    function renderSync() {
+      const data = SYNC_MODELS[activeSync];
+
+      document.getElementById('sync-description-box').innerHTML = data.description;
+      document.getElementById('sync-dispersal-label').textContent = data.dispersal;
+
+      // Update comparison table cells
+      document.getElementById('cell-lunch-pg').textContent = data.lunchText;
+      document.getElementById('cell-lunch-prep').textContent = data.lunchText;
+      document.getElementById('cell-lunch-pri').textContent = data.lunchText;
+      document.getElementById('cell-lunch-mid').textContent = data.lunchText;
+      document.getElementById('cell-lunch-sen').textContent = data.lunchText;
+      document.getElementById('cell-disp-sen').textContent = data.dispText;
+
+      // Render timeline
+      const timelineCont = document.getElementById('sync-timeline-bars');
+      timelineCont.innerHTML = data.timeline.map(b => `
+        <div style="flex: ${b.flex}" class="${b.bg} rounded-lg p-1 text-center flex flex-col justify-center overflow-hidden">
+          <div class="text-[10px] font-black leading-none truncate">${b.name}</div>
+          <div class="text-[8px] opacity-80 mt-0.5 font-mono truncate">${b.time}</div>
+        </div>
+      `).join('');
+
+      // Render table
+      const tbody = document.getElementById('sync-table-body');
+      tbody.innerHTML = data.table.map(r => `
+        <tr class="hover:bg-slate-50">
+          <td class="py-2.5 px-3 font-mono font-bold text-slate-400">${r.idx}</td>
+          <td class="py-2.5 px-3 font-black ${r.name.includes('LUNCH') ? 'text-amber-800' : 'text-indigo-950'}">${r.name}</td>
+          <td class="py-2.5 px-3 font-mono font-bold text-slate-700">${r.time}</td>
+          <td class="py-2.5 px-3 font-mono font-extrabold text-indigo-700">${r.dur}</td>
+          <td class="py-2.5 px-3 font-semibold text-slate-800">${r.sub}</td>
+          <td class="py-2.5 px-3 font-bold ${r.align.includes('SAME') ? 'text-amber-700 bg-amber-50 font-black' : 'text-slate-500'}">${r.align}</td>
+        </tr>
+      `).join('');
+    }
+
+    // Initialize
+    renderSync();
+  </script>
+</body>
+</html>

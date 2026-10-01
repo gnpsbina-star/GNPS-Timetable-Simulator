@@ -1,0 +1,2280 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full bg-slate-100">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily Substitution & Proxy Management | AG Projects</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Plus Jakarta Sans', sans-serif; }
+    ::-webkit-scrollbar { height: 8px; width: 8px; }
+    ::-webkit-scrollbar-track { background: #f1f5f9; }
+    ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 4px; }
+    ::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
+
+    /* Print Styles */
+    @media screen {
+      .print-only { display: none !important; }
+    }
+    @media print {
+      @page {
+        size: A4 landscape;
+        margin: 6mm 7mm 6mm 7mm;
+      }
+      *, *::before, *::after {
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+        color-adjust: exact !important;
+      }
+      html, body {
+        background: #ffffff !important;
+        color: #000000 !important;
+        font-family: Arial, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+        width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+      }
+      .no-print { display: none !important; }
+      .print-only { display: block !important; }
+
+      /* Top Header: Solid Jet Black */
+      #print-master-register h1, #print-master-register h2, #print-master-register span, #print-master-register strong, #print-master-register div {
+        color: #000000 !important;
+        -webkit-text-fill-color: #000000 !important;
+      }
+      #print-master-register h1 {
+        font-size: 16pt !important;
+        font-weight: 900 !important;
+        letter-spacing: 0.5px !important;
+      }
+      #print-master-register h2 {
+        font-size: 12pt !important;
+        font-weight: 900 !important;
+      }
+
+      /* Master Register Table: Fixed A4 Landscape */
+      #print-master-register table {
+        width: 100% !important;
+        table-layout: fixed !important;
+        border-collapse: collapse !important;
+        border: 2px solid #000000 !important;
+        page-break-inside: avoid !important;
+      }
+      #print-master-register th, #print-master-register td {
+        border: 1px solid #000000 !important;
+        color: #000000 !important;
+        -webkit-text-fill-color: #000000 !important;
+        padding: 5px 3px !important;
+        text-align: center !important;
+        vertical-align: middle !important;
+        font-size: 10pt !important;
+        word-wrap: break-word !important;
+      }
+      #print-master-register thead th {
+        background-color: #f1f5f9 !important;
+        font-weight: 900 !important;
+        font-size: 10.5pt !important;
+        text-transform: uppercase !important;
+        border-bottom: 2px solid #000000 !important;
+      }
+
+      /* Column Width Allocations for Master Register */
+      #print-master-register th:nth-child(1), #print-master-register td:nth-child(1) { width: 4% !important; }
+      #print-master-register th:nth-child(2), #print-master-register td:nth-child(2) { width: 14% !important; }
+      #print-master-register th:nth-child(3), #print-master-register td:nth-child(3) { width: 14% !important; }
+      #print-master-register th:nth-child(4), #print-master-register td:nth-child(4) { width: 15% !important; }
+      #print-master-register th:nth-child(5), #print-master-register td:nth-child(5) { width: 13% !important; }
+      #print-master-register th:nth-child(6), #print-master-register td:nth-child(6) { width: 16% !important; }
+      #print-master-register th:nth-child(7), #print-master-register td:nth-child(7) { width: 12% !important; }
+      #print-master-register th:nth-child(8), #print-master-register td:nth-child(8) { width: 12% !important; }
+
+      /* Duty Chits (Slips) Styling */
+      #print-duty-chits {
+        width: 100% !important;
+      }
+      #print-duty-chits * {
+        color: #000000 !important;
+        -webkit-text-fill-color: #000000 !important;
+      }
+      .chit-box {
+        break-inside: avoid !important;
+        page-break-inside: avoid !important;
+        border: 1.5px dashed #000000 !important;
+        background: #ffffff !important;
+        padding: 10px !important;
+        margin-bottom: 10px !important;
+      }
+      .chit-box p {
+        font-size: 10pt !important;
+        color: #000000 !important;
+        line-height: 1.3 !important;
+      }
+      .chit-box strong {
+        color: #000000 !important;
+        font-weight: 900 !important;
+      }
+      .chit-box span {
+        color: #000000 !important;
+        font-weight: 700 !important;
+      }
+
+      .print-hidden {
+        display: none !important;
+      }
+
+      /* Substitution Report (Sorted by Substitute Teacher) */
+      #print-teacher-report h1, #print-teacher-report h2, #print-teacher-report span, #print-teacher-report strong, #print-teacher-report div {
+        color: #000000 !important;
+        -webkit-text-fill-color: #000000 !important;
+      }
+      #print-teacher-report h1 {
+        font-size: 16pt !important;
+        font-weight: 900 !important;
+        letter-spacing: 0.5px !important;
+      }
+      #print-teacher-report h2 {
+        font-size: 12pt !important;
+        font-weight: 900 !important;
+      }
+      #print-teacher-report table {
+        width: 100% !important;
+        table-layout: fixed !important;
+        border-collapse: collapse !important;
+        border: 2px solid #000000 !important;
+        page-break-inside: avoid !important;
+      }
+      #print-teacher-report th, #print-teacher-report td {
+        border: 1px solid #000000 !important;
+        color: #000000 !important;
+        -webkit-text-fill-color: #000000 !important;
+        padding: 5px 4px !important;
+        text-align: center !important;
+        vertical-align: middle !important;
+        font-size: 9.5pt !important;
+        word-wrap: break-word !important;
+      }
+      #print-teacher-report thead th {
+        background-color: #f1f5f9 !important;
+        font-weight: 900 !important;
+        font-size: 10pt !important;
+        text-transform: uppercase !important;
+        border-bottom: 2px solid #000000 !important;
+      }
+      /* Column Width Allocations for Teacher Report */
+      #print-teacher-report th:nth-child(1), #print-teacher-report td:nth-child(1) { width: 4% !important; text-align: center !important; }
+      #print-teacher-report th:nth-child(2), #print-teacher-report td:nth-child(2) { width: 11% !important; text-align: center !important; }
+      #print-teacher-report th:nth-child(3), #print-teacher-report td:nth-child(3) { width: 22% !important; text-align: left !important; padding-left: 8px !important; }
+      #print-teacher-report th:nth-child(4), #print-teacher-report td:nth-child(4) { width: 24% !important; text-align: center !important; }
+      #print-teacher-report th:nth-child(5), #print-teacher-report td:nth-child(5) { width: 14% !important; text-align: center !important; }
+      #print-teacher-report th:nth-child(6), #print-teacher-report td:nth-child(6) { width: 15% !important; text-align: center !important; }
+      #print-teacher-report th:nth-child(7), #print-teacher-report td:nth-child(7) { width: 10% !important; text-align: center !important; }
+    }
+  </style>
+</head>
+<body class="h-full flex flex-col text-slate-800 antialiased bg-slate-100">
+
+  <!-- ================= HEADER (NO-PRINT) ================= -->
+  <header class="bg-indigo-950 text-white shadow-md sticky top-0 z-50 no-print border-b border-indigo-900">
+    <div class="w-full px-4 sm:px-6 lg:px-8 py-3 flex flex-wrap items-center justify-between gap-4 max-w-[1920px] mx-auto">
+      <div class="flex items-center space-x-3.5">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-rose-500 via-purple-600 to-indigo-500 flex items-center justify-center shadow-lg shadow-indigo-950/40">
+          <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"></path>
+          </svg>
+        </div>
+        <div>
+          <h1 class="text-xl font-black tracking-tight text-white flex items-center gap-2">
+            Daily Substitution Studio
+            <span class="text-[11px] font-extrabold px-2 py-0.5 bg-rose-500/20 text-rose-300 border border-rose-500/40 rounded-md">Smart Proxy Engine</span>
+          </h1>
+          <p class="text-xs text-indigo-300 font-medium">Automated Candidate Ranking • Zero-Clash Auto Fill • Printable Register & Slips</p>
+        </div>
+      </div>
+
+      <!-- Navigation Links -->
+      <div class="flex items-center flex-wrap gap-2 text-xs font-bold">
+        <a href="index.html" class="px-3 py-1.5 rounded-xl bg-indigo-900/80 hover:bg-indigo-800 text-indigo-100 transition border border-indigo-700/80 flex items-center gap-1.5">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path></svg>
+          Main Timetable
+        </a>
+        <a href="free_teachers.html" class="px-3 py-1.5 rounded-xl bg-indigo-900/80 hover:bg-indigo-800 text-emerald-300 transition border border-emerald-500/40 flex items-center gap-1.5">
+          <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+          Free Teachers
+        </a>
+        <a href="prerequisites.html" class="px-3 py-1.5 rounded-xl bg-indigo-900/80 hover:bg-indigo-800 text-teal-300 transition border border-teal-500/40 flex items-center gap-1.5">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+          Prerequisites
+        </a>
+        <a href="creator.html" class="px-3 py-1.5 rounded-xl bg-indigo-900/80 hover:bg-indigo-800 text-amber-300 transition border border-amber-500/40 flex items-center gap-1.5">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path></svg>
+          Creator
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= MAIN CONTAINER (NO-PRINT) ================= -->
+  <main class="flex-1 max-w-[1920px] w-full mx-auto p-4 sm:p-6 lg:p-8 space-y-6 no-print">
+
+    <!-- Offline/CORS Warning Banner (if opened via file://) -->
+    <div id="offline-warning-banner" class="hidden p-4 rounded-2xl bg-amber-50 border border-amber-300 text-amber-900 text-xs font-medium flex items-center justify-between gap-3 shadow-sm">
+      <div class="flex items-center gap-2">
+        <svg class="w-5 h-5 text-amber-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
+        <span><strong>Web Server Notice:</strong> If timetable data is not loading, ensure you are browsing via the local web server: <a href="http://localhost:8080/substitution.html" class="font-bold underline text-indigo-700">http://localhost:8080/substitution.html</a>.</span>
+      </div>
+    </div>
+
+    <!-- STEP 1 & 2: DATE & ABSENT TEACHERS CONTROLS -->
+    <div class="bg-white rounded-3xl p-6 shadow-sm border border-slate-200/80 space-y-5">
+      <div class="flex flex-wrap items-center justify-between gap-4 border-b border-slate-100 pb-5">
+        <div>
+          <span class="text-xs font-black uppercase tracking-wider text-rose-600 bg-rose-50 px-2.5 py-1 rounded-full border border-rose-200">
+            Step 1 of 2 • Mark Absent Faculty Members
+          </span>
+          <h2 class="text-xl font-extrabold text-slate-900 mt-1">First: Mark All Faculty on Leave Today</h2>
+          <p class="text-xs text-slate-500 font-medium mt-0.5">Search and select all absent teachers below before proceeding to assign proxy periods.</p>
+        </div>
+
+        <!-- Quick Summary Counters -->
+        <div class="flex items-center gap-3">
+          <div class="px-3.5 py-2 rounded-2xl bg-rose-50 border border-rose-200 text-rose-800 flex items-center gap-2">
+            <span class="w-2.5 h-2.5 rounded-full bg-rose-500 animate-pulse"></span>
+            <span class="text-xs font-bold"><strong id="stat-absent-count" class="text-base font-black text-rose-900">0</strong> Teachers Absent</span>
+          </div>
+          <div class="px-3.5 py-2 rounded-2xl bg-indigo-50 border border-indigo-200 text-indigo-800 flex items-center gap-2">
+            <span class="w-2.5 h-2.5 rounded-full bg-indigo-500"></span>
+            <span class="text-xs font-bold"><strong id="stat-periods-count" class="text-base font-black text-indigo-950">0</strong> Periods to Cover</span>
+          </div>
+          <div class="px-3.5 py-2 rounded-2xl bg-emerald-50 border border-emerald-200 text-emerald-800 flex items-center gap-2">
+            <span class="w-2.5 h-2.5 rounded-full bg-emerald-500"></span>
+            <span class="text-xs font-bold"><strong id="stat-covered-count" class="text-base font-black text-emerald-950">0</strong> Covered</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Input Filters Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-12 lg:grid-cols-12 gap-4">
+        <!-- Date Selector -->
+        <div class="sm:col-span-6 lg:col-span-3 space-y-1.5">
+          <label for="sub-date" class="block text-xs font-bold text-slate-700">Arrangement Date</label>
+          <input type="date" id="sub-date" onchange="onDateChanged()" oninput="onDateChanged()" class="w-full px-3.5 py-2 rounded-xl border border-slate-300 text-sm font-semibold focus:outline-none focus:ring-2 focus:ring-rose-500 bg-slate-50">
+        </div>
+
+        <!-- Day of Week (Auto-syncs or manual) -->
+        <div class="sm:col-span-6 lg:col-span-2 space-y-1.5">
+          <label for="sub-day" class="block text-xs font-bold text-slate-700">Timetable Day</label>
+          <select id="sub-day" onchange="onDayChanged()" class="w-full px-3.5 py-2 rounded-xl border border-slate-300 text-sm font-bold text-indigo-950 focus:outline-none focus:ring-2 focus:ring-rose-500 bg-slate-50">
+            <option value="Monday">Monday</option>
+            <option value="Tuesday">Tuesday</option>
+            <option value="Wednesday">Wednesday</option>
+            <option value="Thursday">Thursday</option>
+            <option value="Friday">Friday</option>
+            <option value="Saturday">Saturday</option>
+          </select>
+        </div>
+
+        <!-- Quick Teacher Search & Multi-Picker -->
+        <div class="sm:col-span-12 lg:col-span-7 space-y-1.5 min-w-0">
+          <div class="flex items-center justify-between">
+            <label for="teacher-search-input" class="block text-xs font-bold text-slate-700">
+              Search & Add Absent Faculty Member
+            </label>
+            <span class="text-[11px] text-slate-400 font-medium" id="picker-total-badge">Select from faculty catalog</span>
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-12 gap-2 min-w-0">
+            <!-- Real-time Filter Search Input -->
+            <div class="sm:col-span-5 relative">
+              <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-slate-400">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+              </div>
+              <input type="text" id="teacher-search-input" oninput="onTeacherSearchInput()" onkeydown="onTeacherSearchKeydown(event)" placeholder="Search name or subject..." class="w-full pl-9 pr-7 py-2 rounded-xl border border-slate-300 text-sm font-semibold text-slate-800 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-rose-500 bg-white shadow-sm">
+              <button id="teacher-search-clear" onclick="clearTeacherSearch()" class="hidden absolute inset-y-0 right-0 pr-2.5 flex items-center text-slate-400 hover:text-slate-600 font-bold text-xs" title="Clear filter">✕</button>
+            </div>
+            <!-- Matching Dropdown Picker -->
+            <div class="sm:col-span-7 flex items-center gap-2 min-w-0">
+              <select id="teacher-picker" class="w-0 flex-1 min-w-0 px-3 py-2 rounded-xl border border-slate-300 text-sm font-semibold text-slate-800 focus:outline-none focus:ring-2 focus:ring-rose-500 bg-slate-50">
+                <option value="">-- Choose faculty on leave --</option>
+              </select>
+              <button onclick="addSelectedTeacher()" id="btn-mark-absent" class="shrink-0 px-3.5 py-2 rounded-xl bg-rose-600 hover:bg-rose-700 text-white font-bold text-xs transition flex items-center gap-1.5 shadow-sm whitespace-nowrap">
+                <svg class="w-4 h-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path></svg>
+                Mark Absent
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Absent Faculty Chips List -->
+      <div id="absent-chips-container" class="flex flex-wrap items-center gap-2 pt-1 min-h-[38px]">
+        <span class="text-xs text-slate-400 italic">No teachers marked absent yet. Select one above.</span>
+      </div>
+    </div>
+
+    <!-- ACTION CONTROLS RIBBON -->
+    <div class="flex flex-wrap items-center justify-between gap-3 bg-white p-4 rounded-2xl shadow-sm border border-slate-200/80">
+      <div class="flex flex-wrap items-center gap-2.5">
+        <!-- 1-Click Auto Assign Button -->
+        <button onclick="autoAssignAll()" id="btn-auto-assign" class="px-4 py-2.5 rounded-xl bg-gradient-to-r from-purple-600 via-indigo-600 to-indigo-700 hover:from-purple-500 hover:to-indigo-600 text-white font-extrabold text-xs transition flex items-center gap-2 shadow-md hover:shadow-lg">
+          <svg class="w-4 h-4 text-amber-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+          ✨ Auto-Assign Best Substitutes
+        </button>
+
+        <!-- Max Proxies Limit Selector -->
+        <div class="flex items-center gap-1.5 bg-slate-50 border border-slate-200 px-3 py-1.5 rounded-xl">
+          <span class="text-xs font-bold text-slate-600">Daily Proxy Limit:</span>
+          <select id="max-proxies-select" onchange="onMaxProxiesChanged()" class="text-xs font-extrabold bg-white border border-slate-300 rounded-lg px-2 py-1 text-slate-800 focus:outline-none focus:ring-1 focus:ring-indigo-500">
+            <option value="1">Max 1 Duty / Day</option>
+            <option value="2" selected>Max 2 Duties / Day (Balanced)</option>
+            <option value="3">Max 3 Duties / Day (Emergency)</option>
+            <option value="4">Max 4 Duties / Day</option>
+          </select>
+        </div>
+
+        <!-- Clear Assignments -->
+        <button onclick="clearAllAssignments()" class="px-3.5 py-2.5 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold text-xs transition border border-slate-300 flex items-center gap-1.5">
+          <svg class="w-3.5 h-3.5 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path></svg>
+          Reset Allocations
+        </button>
+      </div>
+
+      <!-- Export & Print Actions -->
+      <div class="flex flex-wrap items-center gap-2">
+        <!-- WhatsApp Broadcast -->
+        <button onclick="openWhatsAppModal()" class="px-3.5 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs transition flex items-center gap-1.5 shadow-sm">
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+          WhatsApp Share
+        </button>
+
+        <!-- Print Master Register -->
+        <button onclick="printMasterRegister()" class="px-3 py-2.5 rounded-xl bg-indigo-900 hover:bg-indigo-800 text-white font-bold text-xs transition flex items-center gap-1.5 shadow-sm" title="Print Master Substitution Register (Period-wise)">
+          <svg class="w-4 h-4 text-indigo-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"></path></svg>
+          Print Register (A4)
+        </button>
+
+        <!-- Print Substitution Report Sorted by Substitute Teacher -->
+        <button onclick="printTeacherReport()" id="btn-print-teacher-report" class="px-3.5 py-2.5 rounded-xl bg-purple-900 hover:bg-purple-800 text-white font-extrabold text-xs transition flex items-center gap-1.5 shadow-sm border border-purple-500/40" title="Print Substitution Report sorted alphabetically by Substitute Teacher name">
+          <svg class="w-4 h-4 text-purple-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+          Substitution Report (By Teacher)
+        </button>
+
+        <!-- Export Substitution Report as CSV -->
+        <button onclick="downloadTeacherReportCSV()" id="btn-export-csv" class="px-3 py-2.5 rounded-xl bg-emerald-800 hover:bg-emerald-700 text-white font-bold text-xs transition flex items-center gap-1.5 shadow-sm border border-emerald-500/40" title="Download Report as CSV (Date, Substitute, Period, Subject, Absent Teacher, Signature)">
+          <svg class="w-4 h-4 text-emerald-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+          Export Report (CSV)
+        </button>
+
+        <!-- Print Individual Chits -->
+        <button onclick="printChits()" class="px-3 py-2.5 rounded-xl bg-teal-800 hover:bg-teal-700 text-white font-bold text-xs transition flex items-center gap-1.5 shadow-sm" title="Print individual teacher duty slips">
+          <svg class="w-4 h-4 text-teal-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.121 14.121L19 19m-7-7l7-7m-7 7l-2.879 2.879M12 12L9.121 9.121m0 5.758a3 3 0 10-4.243 4.243 3 3 0 004.243-4.243zm0-5.758a3 3 0 10-4.243-4.243 3 3 0 004.243 4.243z"></path></svg>
+          Duty Slips (Chits)
+        </button>
+
+        <!-- Save Record -->
+        <button onclick="saveTodayRecord()" id="btn-save-record" class="px-3 py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-white font-bold text-xs transition flex items-center gap-1.5 shadow-sm">
+          <svg class="w-4 h-4 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7H5a2 2 0 00-2 2v9a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-3m-1 4l-3 3m0 0l-3-3m3 3V4"></path></svg>
+          Save Log
+        </button>
+      </div>
+    </div>
+
+    <!-- MAIN WORKSPACE: 2 COLUMNS -->
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+
+      <!-- LEFT COLUMN: AFFECTED PERIODS LIST (8 cols) -->
+      <div id="step-2-section" class="lg:col-span-8 space-y-4">
+        <div class="bg-white rounded-3xl p-6 shadow-sm border border-slate-200/80">
+          <div class="flex items-center justify-between mb-4">
+            <div>
+              <span class="text-[11px] font-black uppercase tracking-wider text-indigo-700 bg-indigo-50 px-2.5 py-0.5 rounded-full border border-indigo-200">
+                Step 2 of 2 • Assign Substitutions
+              </span>
+              <h3 class="text-lg font-extrabold text-slate-900 flex items-center gap-2 mt-1">
+                <span>Affected Class Periods & Allocations</span>
+                <span id="badge-slot-count" class="text-xs font-bold px-2.5 py-0.5 rounded-full bg-slate-100 text-slate-700">0 Slots</span>
+              </h3>
+              <p class="text-xs text-slate-500 font-medium flex flex-wrap items-center gap-2">
+                <span>Assign a verified free substitute for each vacancy. Clashes and absent teachers are prevented automatically.</span>
+                <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-md bg-slate-100 text-slate-700 font-extrabold text-[10.5px] border border-slate-300 shadow-2xs">
+                  🛡️ Management Excluded: Sonakshi &amp; Shailendra Kurmi
+                </span>
+              </p>
+            </div>
+            
+            <!-- Grouping Filter (By Absent Teacher / By Period / By Substitute) -->
+            <div class="flex items-center gap-1.5 text-xs font-bold bg-slate-100 p-1 rounded-xl border border-slate-200">
+              <span class="text-slate-400 px-1.5">View:</span>
+              <button id="view-mode-teacher" onclick="switchSlotView('teacher')" class="px-2.5 py-1 rounded-lg bg-indigo-600 text-white font-bold shadow-sm">By Absent Teacher</button>
+              <button id="view-mode-substitute" onclick="switchSlotView('substitute')" class="px-2.5 py-1 rounded-lg text-slate-600 hover:bg-white hover:text-slate-900 transition">By Substitute</button>
+              <button id="view-mode-period" onclick="switchSlotView('period')" class="px-2.5 py-1 rounded-lg text-slate-600 hover:bg-white hover:text-slate-900 transition">By Period</button>
+            </div>
+          </div>
+
+          <!-- Slots Container -->
+          <div id="affected-slots-container" class="space-y-3">
+            <div class="py-12 text-center text-slate-400 font-medium text-sm space-y-2">
+              <svg class="w-10 h-10 mx-auto text-slate-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+              <p>No absent teachers marked yet. Add absent faculty above to view their classes.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT COLUMN: LOAD BALANCER & AUDIT MONITOR (4 cols) -->
+      <div class="lg:col-span-4 space-y-5">
+
+        <!-- Today's Proxy Load Monitor -->
+        <div class="bg-white rounded-3xl p-6 shadow-sm border border-slate-200/80 space-y-4">
+          <div class="flex items-center justify-between border-b border-slate-100 pb-3">
+            <h3 class="font-extrabold text-sm text-slate-900 flex items-center gap-1.5">
+              <svg class="w-4 h-4 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path></svg>
+              Substitute Load Distribution
+            </h3>
+            <span id="badge-active-proxies" class="text-[10px] font-extrabold px-2 py-0.5 bg-indigo-50 text-indigo-700 rounded-full border border-indigo-200">0 Proxies</span>
+          </div>
+
+          <p class="text-xs text-slate-500 font-medium">Monitors how many extra substitution duties each faculty member has accepted today to prevent teacher exhaustion.</p>
+
+          <div id="proxy-load-list" class="space-y-2 max-h-[300px] overflow-y-auto pr-1">
+            <div class="text-center py-6 text-slate-400 text-xs font-semibold">No substitutes allocated yet.</div>
+          </div>
+        </div>
+
+        <!-- Saved History Logs Drawer -->
+        <div class="bg-white rounded-3xl p-6 shadow-sm border border-slate-200/80 space-y-4">
+          <div class="flex items-center justify-between border-b border-slate-100 pb-3">
+            <h3 class="font-extrabold text-sm text-slate-900 flex items-center gap-1.5">
+              <svg class="w-4 h-4 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+              Past Arrangement Records
+            </h3>
+            <button onclick="refreshHistory()" class="text-indigo-600 hover:text-indigo-800 text-xs font-bold">Refresh</button>
+          </div>
+          <div id="saved-history-list" class="space-y-2 max-h-[220px] overflow-y-auto text-xs pr-1">
+            <div class="text-center py-4 text-slate-400 font-semibold">Loading history...</div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </main>
+
+  <!-- ================= WHATSAPP EXPORT MODAL (NO-PRINT) ================= -->
+  <div id="whatsapp-modal" class="fixed inset-0 bg-slate-900/60 backdrop-blur-sm z-50 flex items-center justify-center p-4 hidden no-print">
+    <div class="bg-white rounded-3xl max-w-xl w-full p-6 shadow-2xl space-y-4 border border-slate-200">
+      <div class="flex items-center justify-between border-b border-slate-100 pb-3">
+        <div class="flex items-center gap-2">
+          <div class="w-8 h-8 rounded-lg bg-emerald-500 text-white flex items-center justify-center font-black">WA</div>
+          <h3 class="font-extrabold text-slate-900 text-base">WhatsApp Broadcast Preview</h3>
+        </div>
+        <button onclick="closeWhatsAppModal()" class="text-slate-400 hover:text-slate-600">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+        </button>
+      </div>
+
+      <p class="text-xs text-slate-500 font-medium">Copy this pre-formatted message and paste it into the Faculty WhatsApp Group.</p>
+
+      <textarea id="whatsapp-text-area" rows="12" readonly class="w-full p-3.5 bg-slate-50 border border-slate-200 rounded-xl font-mono text-xs text-slate-800 focus:outline-none"></textarea>
+
+      <div class="flex items-center justify-end gap-2 pt-2">
+        <button onclick="closeWhatsAppModal()" class="px-4 py-2 rounded-xl text-slate-600 hover:bg-slate-100 text-xs font-bold transition">Close</button>
+        <button onclick="copyWhatsAppText()" id="btn-copy-wa" class="px-5 py-2 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs transition flex items-center gap-1.5 shadow-md">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3"></path></svg>
+          Copy to Clipboard
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= PRINT VIEW 1: MASTER DAILY REGISTER (PRINT ONLY) ================= -->
+  <div id="print-master-register" class="print-only p-4">
+    <div class="text-center border-b-2 border-black pb-3 mb-4">
+      <h1 class="text-2xl font-black uppercase tracking-tight text-black" id="print-school-title">GURU NANAK PUBLIC SCHOOL, BINA</h1>
+      <h2 class="text-base font-black uppercase tracking-wider text-black mt-0.5">Daily Faculty Substitution & Proxy Register</h2>
+      <div class="flex items-center justify-between text-xs font-black text-black mt-2 px-1">
+        <span><strong>Date:</strong> <span id="print-date">—</span></span>
+        <span><strong>Day:</strong> <span id="print-day">—</span></span>
+        <span><strong>Session:</strong> 2026-27</span>
+        <span><strong>Total Substitutions:</strong> <span id="print-total-subs">0</span></span>
+      </div>
+    </div>
+
+    <!-- Master Table -->
+    <table class="w-full border-collapse border border-slate-800 text-xs">
+      <thead>
+        <tr class="bg-slate-200 text-slate-900 font-extrabold text-center border-b border-slate-800">
+          <th class="border border-slate-800 py-1.5 px-2 w-8">#</th>
+          <th class="border border-slate-800 py-1.5 px-2">Period & Time</th>
+          <th class="border border-slate-800 py-1.5 px-3">Class & Section</th>
+          <th class="border border-slate-800 py-1.5 px-3">Regular Faculty (On Leave)</th>
+          <th class="border border-slate-800 py-1.5 px-3">Subject</th>
+          <th class="border border-slate-800 py-1.5 px-3">Assigned Substitute</th>
+          <th class="border border-slate-800 py-1.5 px-4 w-32">Substitute Sign</th>
+          <th class="border border-slate-800 py-1.5 px-2 w-28">Remarks</th>
+        </tr>
+      </thead>
+      <tbody id="print-register-tbody">
+        <!-- Injected via JS -->
+      </tbody>
+    </table>
+
+    <div class="mt-8 flex items-center justify-between text-xs font-bold pt-12 text-slate-800 px-6">
+      <div class="text-center">
+        <div class="border-t border-slate-800 w-48 mx-auto mb-1"></div>
+        <span>Timetable In-charge</span>
+      </div>
+      <div class="text-center">
+        <div class="border-t border-slate-800 w-48 mx-auto mb-1"></div>
+        <span>Vice Principal</span>
+      </div>
+      <div class="text-center">
+        <div class="border-t border-slate-800 w-48 mx-auto mb-1"></div>
+        <span>Principal</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= PRINT VIEW 2: INDIVIDUAL DUTY CHITS (PRINT ONLY) ================= -->
+  <div id="print-duty-chits" class="print-only print-hidden p-2">
+    <div id="chits-container" class="grid grid-cols-2 gap-4">
+      <!-- Injected via JS -->
+    </div>
+  </div>
+
+  <!-- ================= PRINT VIEW 3: SUBSTITUTION REPORT (SORTED BY SUBSTITUTE TEACHER) ================= -->
+  <div id="print-teacher-report" class="print-only print-hidden p-4">
+    <div class="text-center border-b-2 border-black pb-3 mb-4">
+      <h1 class="text-2xl font-black uppercase tracking-tight text-black" id="print-teacher-school-title">GURU NANAK PUBLIC SCHOOL, BINA</h1>
+      <h2 class="text-base font-black uppercase tracking-wider text-black mt-0.5">Substitution Report (Sorted by Substitute Teacher)</h2>
+      <div class="flex items-center justify-between text-xs font-black text-black mt-2 px-1">
+        <span><strong>Date:</strong> <span id="print-teacher-date">—</span></span>
+        <span><strong>Day:</strong> <span id="print-teacher-day">—</span></span>
+        <span><strong>Session:</strong> 2026-27</span>
+        <span><strong>Total Substitutions:</strong> <span id="print-teacher-total-subs">0</span></span>
+      </div>
+    </div>
+
+    <!-- Teacher-Sorted Substitution Table -->
+    <table class="w-full border-collapse border border-slate-800 text-xs">
+      <thead>
+        <tr class="bg-slate-200 text-slate-900 font-extrabold text-center border-b border-slate-800">
+          <th class="border border-slate-800 py-2 px-1 w-8">#</th>
+          <th class="border border-slate-800 py-2 px-2 w-24">Date</th>
+          <th class="border border-slate-800 py-2 px-3 text-left">Name of the Substitution teacher</th>
+          <th class="border border-slate-800 py-2 px-3">Period</th>
+          <th class="border border-slate-800 py-2 px-3">Subject</th>
+          <th class="border border-slate-800 py-2 px-3">Name of the Teacher who is absent</th>
+          <th class="border border-slate-800 py-2 px-3">Signature</th>
+        </tr>
+      </thead>
+      <tbody id="print-teacher-report-tbody">
+        <!-- Injected via JS -->
+      </tbody>
+    </table>
+
+    <div class="mt-8 flex items-center justify-between text-xs font-bold pt-12 text-slate-800 px-6">
+      <div class="text-center">
+        <div class="border-t border-slate-800 w-48 mx-auto mb-1"></div>
+        <span>Timetable In-charge</span>
+      </div>
+      <div class="text-center">
+        <div class="border-t border-slate-800 w-48 mx-auto mb-1"></div>
+        <span>Vice Principal</span>
+      </div>
+      <div class="text-center">
+        <div class="border-t border-slate-800 w-48 mx-auto mb-1"></div>
+        <span>Principal</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= JAVASCRIPT ENGINE ================= -->
+  <script>
+    // Global State
+    let TEACHER_DATA = {};
+    let FREE_DATA = {};
+    let TIMETABLE_DATA = {};
+    let CONFIG_DATA = {};
+    let teacherBlackoutSlots = new Map();
+    let absentTeachers = new Set();
+    let currentDay = 'Monday';
+    let currentDate = new Date().toISOString().split('T')[0];
+    let slotAssignments = {}; // Key: `${period_name}__${class_name}` -> substitute teacher name
+    let viewMode = 'teacher'; // 'teacher' (default) or 'period'
+    let teacherKeyMap = {}; // Lowercase trimmed -> Canonical teacher name
+
+    function buildTeacherBlackoutIndex() {
+      teacherBlackoutSlots.clear();
+      if (CONFIG_DATA && CONFIG_DATA.teachers) {
+        CONFIG_DATA.teachers.forEach(t => {
+          const tName = (t.name || t.id || '').trim().toLowerCase();
+          const slotSet = new Set();
+          (t.unavailable_slots || []).forEach(s => {
+            if (Array.isArray(s) && s.length === 2) {
+              slotSet.add(`${s[0]}_${s[1]}`);
+            } else if (s && typeof s === 'object') {
+              slotSet.add(`${s.day}_${s.period_index}`);
+            }
+          });
+          if (slotSet.size > 0) {
+            teacherBlackoutSlots.set(tName, slotSet);
+          }
+        });
+      }
+
+      // Synchronize with local storage blackout registry & slots for instant cross-tab reactivity
+      try {
+        const rawLocal = localStorage.getItem('gnps_blackout_slots');
+        if (rawLocal) {
+          const localMap = JSON.parse(rawLocal);
+          Object.keys(localMap).forEach(teacherKey => {
+            const cleanKey = teacherKey.trim().toLowerCase();
+            const slots = localMap[teacherKey];
+            if (Array.isArray(slots)) {
+              let slotSet = teacherBlackoutSlots.get(cleanKey);
+              if (!slotSet) {
+                slotSet = new Set();
+                teacherBlackoutSlots.set(cleanKey, slotSet);
+              }
+              slots.forEach(s => {
+                if (Array.isArray(s) && s.length === 2) {
+                  slotSet.add(`${s[0]}_${s[1]}`);
+                }
+              });
+            }
+          });
+        }
+      } catch (e) {
+        console.warn('Could not read localStorage blackout slots:', e);
+      }
+    }
+
+    function isCandidateBlackout(name, day, periodIndex, periodName) {
+      if (!name || teacherBlackoutSlots.size === 0) return false;
+      const clean = (name || '').trim().toLowerCase();
+
+      let slotSet = teacherBlackoutSlots.get(clean);
+      if (!slotSet) {
+        for (const [key, set] of teacherBlackoutSlots.entries()) {
+          if (key === clean || key.startsWith(clean + ' ') || clean.startsWith(key + ' ')) {
+            slotSet = set;
+            break;
+          }
+        }
+      }
+
+      if (!slotSet) return false;
+
+      if (periodIndex !== undefined && periodIndex !== null && slotSet.has(`${day}_${periodIndex}`)) {
+        return true;
+      }
+
+      if (periodName && CONFIG_DATA && CONFIG_DATA.config && CONFIG_DATA.config.period_definitions) {
+        const pDef = CONFIG_DATA.config.period_definitions.find(p => (p.name || '').toLowerCase() === (periodName || '').toLowerCase());
+        if (pDef && slotSet.has(`${day}_${pDef.period_index}`)) {
+          return true;
+        }
+      }
+
+      return false;
+    }
+
+    function isCandidateAbsent(name) {
+      if (!name) return false;
+      const clean = name.trim().toLowerCase();
+      // 1. Direct match in absent set
+      for (const abs of absentTeachers) {
+        const absClean = (abs || '').trim().toLowerCase();
+        if (clean === absClean) return true;
+        // 2. Multi-word prefix / alias match (e.g. "Vandna" matches "Vandna Saraf", "Divy" matches "Divya Upadhyay")
+        if (clean.length >= 3 && absClean.length >= 3) {
+          if (clean.startsWith(absClean + ' ') || absClean.startsWith(clean + ' ')) return true;
+        }
+      }
+      // 3. Canonical name check
+      const canonical = teacherKeyMap[clean];
+      if (canonical && absentTeachers.has(canonical)) return true;
+      return false;
+    }
+
+    function isManagementTeacher(name) {
+      if (!name) return false;
+      const clean = name.trim().toLowerCase();
+      return clean === 'sonakshi' || clean === 'shailandra' || clean === 'shailendra' ||
+             clean === 'shailandra kurmi' || clean === 'shailendra kurmi' ||
+             clean.startsWith('sonakshi') || clean.startsWith('shailandra') || clean.startsWith('shailendra');
+    }
+
+    function normalizeSubject(subj) {
+      const s = (subj || '').trim().toLowerCase();
+      if (s === 'math' || s === 'maths' || s === 'mathematics') return 'maths';
+      if (s === 'sci' || s === 'science') return 'science';
+      if (s === 'game' || s === 'games') return 'games';
+      if (s === 'art&craft' || s === 'art & craft' || s === 'drawing') return 'art & craft';
+      if (s === 'distation & cursive' || s === 'dictation & cursive') return 'dictation & cursive';
+      if (s === 'eng' || s === 'english') return 'eng';
+      if (s === 'skt' || s === 'sanskrit') return 'skt';
+      if (s === 'pe' || s === 'physical education' || s === 'pe practical') return 'pe';
+      return s;
+    }
+
+    function getSubjectFamily(subj) {
+      const s = (subj || '').trim().toLowerCase();
+      if (s.includes('math')) return 'maths';
+      if (s.includes('physic') || s.includes('chem') || s.includes('bio') || s.includes('sci') || s.includes('evs')) return 'science';
+      if (s.includes('eng') || s.includes('dictation') || s.includes('cursive')) return 'english';
+      if (s.includes('hindi') || s.includes('skt') || s.includes('sanskrit')) return 'hindi';
+      if (s.includes('sst') || s.includes('social') || s.includes('geo') || s.includes('history') || s.includes('political')) return 'social';
+      if (s.includes('account') || s.includes('bst') || s.includes('business') || s.includes('eco') || s.includes('commerce')) return 'commerce';
+      if (s.includes('pe') || s.includes('physical') || s.includes('game') || s.includes('yoga') || s.includes('sport')) return 'sports';
+      if (s.includes('art') || s.includes('craft') || s.includes('drawing') || s.includes('music')) return 'arts';
+      if (s.includes('it') || s.includes('comp')) return 'it';
+      if (s.includes('lib')) return 'library';
+      if (s.includes('gk')) return 'gk';
+      return 'general';
+    }
+
+    function matchSubject(targetSubj, candSubjs) {
+      if (!targetSubj || !candSubjs || candSubjs.length === 0) return { score: 0, reason: null };
+      const tNorm = normalizeSubject(targetSubj);
+      const candNorms = candSubjs.map(normalizeSubject);
+      if (candNorms.includes(tNorm)) return { score: 120, reason: 'Subject Match' };
+      const tFam = getSubjectFamily(targetSubj);
+      if (tFam !== 'general') {
+        for (const s of candSubjs) {
+          if (getSubjectFamily(s) === tFam) {
+            return { score: 70, reason: 'Related Subject' };
+          }
+        }
+      }
+      return { score: 0, reason: null };
+    }
+
+    let CLASS_WINGS = {};
+    let TEACHER_WINGS = {};
+
+    function buildWingIndexes() {
+      CLASS_WINGS = {};
+      if (CONFIG_DATA && CONFIG_DATA.classes) {
+        CONFIG_DATA.classes.forEach(c => {
+          if (c.name && c.wing) CLASS_WINGS[c.name] = c.wing;
+        });
+      }
+      TEACHER_WINGS = {};
+      if (TEACHER_DATA) {
+        Object.keys(TEACHER_DATA).forEach(tName => {
+          const tInfo = TEACHER_DATA[tName] || {};
+          const wings = new Set();
+          (tInfo.classes || []).forEach(cName => {
+            const w = getClassWing(cName);
+            if (w) wings.add(w);
+          });
+          TEACHER_WINGS[tName] = wings;
+        });
+      }
+    }
+
+    function getClassWing(className) {
+      if (!className) return 'General';
+      if (CLASS_WINGS[className]) return CLASS_WINGS[className];
+      const upper = className.toUpperCase();
+      if (/CLASS [1-5] /.test(upper) || upper.includes('PRIMARY')) return 'Primary';
+      if (/CLASS [6-8] /.test(upper) || upper.includes('MIDDLE')) return 'Middle';
+      if (/CLASS (9|10|11|12) /.test(upper) || upper.includes('SENIOR')) return 'Senior';
+      return 'General';
+    }
+
+    function getWingScore(targetClass, candName) {
+      const targetWing = getClassWing(targetClass);
+      const candWings = TEACHER_WINGS[candName];
+      if (!candWings || candWings.size === 0) return { score: 0, reason: null };
+      if (candWings.has(targetWing)) return { score: 30, reason: 'Same Wing' };
+      if (targetWing === 'Middle' && (candWings.has('Primary') || candWings.has('Senior'))) return { score: 15, reason: 'Adjacent Wing' };
+      if ((targetWing === 'Primary' || targetWing === 'Senior') && candWings.has('Middle')) return { score: 15, reason: 'Adjacent Wing' };
+      if (targetWing === 'Primary' && candWings.size === 1 && candWings.has('Senior')) return { score: -50, reason: null };
+      if (targetWing === 'Senior' && candWings.size === 1 && candWings.has('Primary')) return { score: -50, reason: null };
+      return { score: 0, reason: null };
+    }
+
+    const DAY_MAP = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+
+    async function init() {
+      // Set default date to local today (avoid UTC offset issues)
+      const today = new Date();
+      const y = today.getFullYear();
+      const m = String(today.getMonth() + 1).padStart(2, '0');
+      const d = String(today.getDate()).padStart(2, '0');
+      currentDate = `${y}-${m}-${d}`;
+      const subDateInput = document.getElementById('sub-date');
+      if (subDateInput) subDateInput.value = currentDate;
+      
+      let dayIdx = today.getDay();
+      if (dayIdx === 0) dayIdx = 1; // Default Sunday to Monday
+      currentDay = DAY_MAP[dayIdx];
+      const subDaySelect = document.getElementById('sub-day');
+      if (subDaySelect) subDaySelect.value = currentDay;
+
+      // Check URL parameters for preset absent teacher
+      const urlParams = new URLSearchParams(window.location.search);
+      const urlAbsent = urlParams.get('absent');
+
+      try {
+        const cacheBuster = '?t=' + Date.now();
+        const [teachersRes, freeRes, masterRes, configRes] = await Promise.all([
+          fetch('timetable_teachers.json' + cacheBuster, { cache: 'no-store' }),
+          fetch('free_teachers.json' + cacheBuster, { cache: 'no-store' }),
+          fetch('timetable.json' + cacheBuster, { cache: 'no-store' }),
+          fetch('timetable_config.json' + cacheBuster, { cache: 'no-store' })
+        ]);
+
+        if (teachersRes.ok) {
+          TEACHER_DATA = await teachersRes.json();
+          teacherKeyMap = {};
+          Object.keys(TEACHER_DATA).forEach(k => {
+            teacherKeyMap[k.trim().toLowerCase()] = k;
+          });
+          populateTeacherPicker();
+        }
+        if (freeRes.ok) {
+          FREE_DATA = await freeRes.json();
+        }
+        if (masterRes.ok) {
+          TIMETABLE_DATA = await masterRes.json();
+        }
+        if (configRes && configRes.ok) {
+          CONFIG_DATA = await configRes.json();
+          buildTeacherBlackoutIndex();
+          buildWingIndexes();
+        }
+
+        if (urlAbsent && TEACHER_DATA[urlAbsent]) {
+          absentTeachers.add(urlAbsent);
+        }
+
+        renderAbsentChips();
+        renderAffectedSlots();
+        loadHistory();
+      } catch (err) {
+        console.error('Failed to load timetable data:', err);
+        const banner = document.getElementById('offline-warning-banner');
+        if (banner) {
+          banner.classList.remove('hidden');
+        }
+      }
+    }
+
+    function populateTeacherPicker(filterQuery = '') {
+      const picker = document.getElementById('teacher-picker');
+      if (!picker) return;
+
+      function normalizeForSearch(str) {
+        return (str || '')
+          .toLowerCase()
+          .replace(/aa+/g, 'a')
+          .replace(/ee+/g, 'i')
+          .replace(/oo+/g, 'u')
+          .replace(/sh+/g, 's')
+          .trim();
+      }
+
+      const q = (filterQuery || '').trim().toLowerCase();
+      const qNorm = normalizeForSearch(q);
+      const allNames = Object.keys(TEACHER_DATA).sort();
+
+      const filteredNames = allNames.filter(name => {
+        if (!q) return true;
+        const nameLower = name.toLowerCase();
+        if (nameLower.includes(q) || (qNorm && normalizeForSearch(nameLower).includes(qNorm))) return true;
+        const subjs = (TEACHER_DATA[name].subjects || []).join(' ').toLowerCase();
+        if (subjs.includes(q) || (qNorm && normalizeForSearch(subjs).includes(qNorm))) return true;
+        return false;
+      });
+
+      picker.innerHTML = '';
+      const defaultOpt = document.createElement('option');
+      defaultOpt.value = '';
+      if (filteredNames.length === 0) {
+        defaultOpt.textContent = `-- No matching faculty for "${filterQuery}" --`;
+      } else if (q) {
+        defaultOpt.textContent = `-- Choose from ${filteredNames.length} matching --`;
+      } else {
+        defaultOpt.textContent = '-- Choose faculty on leave --';
+      }
+      picker.appendChild(defaultOpt);
+
+      filteredNames.forEach(name => {
+        const opt = document.createElement('option');
+        opt.value = name;
+        const subjs = TEACHER_DATA[name].subjects || [];
+        let subjStr = '';
+        if (subjs.length > 3) {
+          subjStr = subjs.slice(0, 3).join(', ') + ` +${subjs.length - 3} more`;
+        } else if (subjs.length > 0) {
+          subjStr = subjs.join(', ');
+        } else {
+          subjStr = 'General';
+        }
+        opt.textContent = `${name} (${subjStr})`;
+        picker.appendChild(opt);
+      });
+
+      // If user typed and there is at least 1 match, auto-select first match so Enter / Click works immediately
+      if (q && filteredNames.length > 0) {
+        picker.selectedIndex = 1;
+      }
+
+      // Update badge
+      const badge = document.getElementById('picker-total-badge');
+      if (badge) {
+        if (q) {
+          badge.textContent = `Showing ${filteredNames.length} of ${allNames.length} faculty`;
+        } else {
+          badge.textContent = `Select from ${allNames.length} faculty members`;
+        }
+      }
+
+      // Toggle clear button
+      const clearBtn = document.getElementById('teacher-search-clear');
+      if (clearBtn) {
+        clearBtn.classList.toggle('hidden', !q);
+      }
+    }
+
+    function onTeacherSearchInput() {
+      const q = document.getElementById('teacher-search-input')?.value || '';
+      populateTeacherPicker(q);
+    }
+
+    function onTeacherSearchKeydown(e) {
+      if (e.key === 'Enter') {
+        e.preventDefault();
+        addSelectedTeacher();
+      } else if (e.key === 'Escape') {
+        clearTeacherSearch();
+      }
+    }
+
+    function clearTeacherSearch() {
+      const input = document.getElementById('teacher-search-input');
+      if (input) input.value = '';
+      populateTeacherPicker('');
+      input?.focus();
+    }
+
+    function onMaxProxiesChanged() {
+      renderAffectedSlots();
+    }
+
+    function onDateChanged() {
+      const subDateInput = document.getElementById('sub-date');
+      const dateInput = subDateInput?.value;
+      if (!dateInput) return;
+      currentDate = dateInput;
+
+      // Robust local date parsing (no UTC timezone shift)
+      const parts = dateInput.split('-').map(Number);
+      if (parts.length === 3) {
+        const d = new Date(parts[0], parts[1] - 1, parts[2]);
+        let dayIdx = d.getDay();
+        if (dayIdx === 0) dayIdx = 1; // Fallback Sunday to Monday
+        currentDay = DAY_MAP[dayIdx];
+        const subDaySelect = document.getElementById('sub-day');
+        if (subDaySelect) {
+          subDaySelect.value = currentDay;
+        }
+      }
+
+      slotAssignments = {};
+      renderAffectedSlots();
+    }
+
+    function onDayChanged() {
+      currentDay = document.getElementById('sub-day').value;
+      slotAssignments = {};
+      renderAffectedSlots();
+    }
+
+    function addSelectedTeacher() {
+      const picker = document.getElementById('teacher-picker');
+      let teacher = picker?.value;
+      
+      // If nothing selected in picker, fallback to current search match
+      if (!teacher) {
+        const searchInput = document.getElementById('teacher-search-input');
+        const q = searchInput?.value.trim().toLowerCase();
+        if (q) {
+          const qNorm = q.replace(/aa+/g, 'a').replace(/ee+/g, 'i').replace(/oo+/g, 'u').replace(/sh+/g, 's');
+          const match = Object.keys(TEACHER_DATA).find(n => {
+            const nLower = n.toLowerCase();
+            return nLower.includes(q) || nLower.replace(/aa+/g, 'a').replace(/ee+/g, 'i').replace(/oo+/g, 'u').replace(/sh+/g, 's').includes(qNorm);
+          });
+          if (match) teacher = match;
+        }
+      }
+
+      if (!teacher) {
+        alert('Please choose or search a faculty member to mark absent.');
+        return;
+      }
+
+      absentTeachers.add(teacher);
+      if (picker) picker.value = '';
+      
+      const searchInput = document.getElementById('teacher-search-input');
+      if (searchInput) searchInput.value = '';
+      populateTeacherPicker('');
+
+      // Critical Rule: Immediately scrub any allocations where this teacher was previously chosen as substitute
+      Object.keys(slotAssignments).forEach(key => {
+        const sub = slotAssignments[key];
+        if (isCandidateAbsent(sub)) {
+          delete slotAssignments[key];
+        }
+      });
+
+      renderAbsentChips();
+      renderAffectedSlots();
+    }
+
+    function removeAbsentTeacher(teacher) {
+      absentTeachers.delete(teacher);
+      renderAbsentChips();
+      renderAffectedSlots();
+    }
+
+    function renderAbsentChips() {
+      const container = document.getElementById('absent-chips-container');
+      container.innerHTML = '';
+
+      const slots = getRequiredSlots();
+      const totalSlots = slots.length;
+
+      if (absentTeachers.size === 0) {
+        container.innerHTML = '<span class="text-xs text-slate-400 italic">No teachers marked absent yet. Select one above.</span>';
+        document.getElementById('stat-absent-count').textContent = '0';
+        return;
+      }
+
+      document.getElementById('stat-absent-count').textContent = absentTeachers.size;
+
+      // Group slot count per absent teacher
+      const slotsPerTeacher = {};
+      slots.forEach(s => {
+        slotsPerTeacher[s.absent_teacher] = (slotsPerTeacher[s.absent_teacher] || 0) + 1;
+      });
+
+      absentTeachers.forEach(teacher => {
+        const chip = document.createElement('div');
+        chip.className = 'inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-rose-50 text-rose-900 border border-rose-200 text-xs font-bold shadow-xs';
+        
+        const subj = (TEACHER_DATA[teacher]?.subjects || []).slice(0, 2).join(', ');
+        const pCount = slotsPerTeacher[teacher] || 0;
+        chip.innerHTML = `
+          <span class="w-2 h-2 rounded-full bg-rose-500"></span>
+          <span>${teacher} ${subj ? `<span class="font-normal text-slate-500">(${subj})</span>` : ''}</span>
+          <span class="px-1.5 py-0.5 rounded-md bg-rose-200 text-rose-800 text-[10px] font-black">${pCount} ${pCount === 1 ? 'period' : 'periods'}</span>
+          <button onclick="removeAbsentTeacher('${teacher}')" class="w-4 h-4 rounded-full hover:bg-rose-200 text-rose-600 hover:text-rose-900 flex items-center justify-center font-black text-xs ml-0.5" title="Remove">✕</button>
+        `;
+        container.appendChild(chip);
+      });
+
+      // Add "Proceed to Assign Substitutions" CTA button inside chip container
+      const proceedBtn = document.createElement('button');
+      proceedBtn.className = 'inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-indigo-600 hover:bg-indigo-700 text-white text-xs font-extrabold shadow-sm transition ml-auto';
+      proceedBtn.innerHTML = `
+        <span>Proceed to Assign Substitutions (${totalSlots} ${totalSlots === 1 ? 'slot' : 'slots'})</span>
+        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
+      `;
+      proceedBtn.onclick = () => {
+        document.getElementById('step-2-section')?.scrollIntoView({ behavior: 'smooth' });
+      };
+      container.appendChild(proceedBtn);
+    }
+
+    // Gathers all slots requiring substitution for today
+    function getRequiredSlots() {
+      const slots = [];
+      const teacherKeyMap = {};
+      Object.keys(TEACHER_DATA).forEach(k => {
+        teacherKeyMap[k.trim().toLowerCase()] = k;
+      });
+
+      absentTeachers.forEach(teacher => {
+        const actualKey = teacherKeyMap[(teacher || '').trim().toLowerCase()] || teacher;
+        const tInfo = TEACHER_DATA[actualKey];
+        if (!tInfo || !tInfo.weekly_schedule) return;
+
+        const daySchedule = tInfo.weekly_schedule[currentDay] || [];
+        daySchedule.forEach(p => {
+          // Skip break periods (must match backend EXCLUDED_BREAK_SUBJECTS)
+          if (p.subject && !['Lunch', 'Prayer', 'Lunch _ Class Teacher', 'Morning Assembly', 'CYCLE TEST', 'CCA', 'Recess', 'Assembly'].includes(p.subject)) {
+            slots.push({
+              key: p.parallel_group_id ? `${p.period_name}__${p.class_name}__${p.subject}` : `${p.period_name}__${p.class_name}`,
+              period_index: p.period_index,
+              period_name: p.period_name,
+              period_time: p.period_time,
+              class_name: p.class_name,
+              subject: p.subject,
+              absent_teacher: actualKey,
+              is_duty: false
+            });
+          }
+        });
+
+        // Homeroom Duties: Morning Assembly & Lunch Break
+        // In morning assembly time and lunch time, class teacher pays duty; in her absence, someone must be sent
+        const ctClasses = tInfo.is_class_teacher_of || [];
+        ctClasses.forEach(cName => {
+          slots.push({
+            key: `Morning Assembly__${cName}`,
+            period_index: 0,
+            period_name: 'Morning Assembly',
+            period_time: '07:50 to 08:20',
+            class_name: cName,
+            subject: 'Duty: Morning Assembly',
+            absent_teacher: actualKey,
+            is_duty: true
+          });
+          slots.push({
+            key: `Lunch__${cName}`,
+            period_index: 4,
+            period_name: 'Lunch',
+            period_time: '10:45 to 11:05',
+            class_name: cName,
+            subject: 'Duty: Lunch Break',
+            absent_teacher: actualKey,
+            is_duty: true
+          });
+        });
+      });
+
+      // Sort by period index, then class name
+      return slots.sort((a, b) => a.period_index - b.period_index || a.class_name.localeCompare(b.class_name));
+    }
+
+    // Recommendation Algorithm: Ranks candidates for a specific slot
+    function getRankedSubstitutes(slot, maxProxiesOverride = null, maxDutiesOverride = 1) {
+      const periodName = slot.period_name;
+      const dayRoster = FREE_DATA.roster?.[currentDay]?.[periodName];
+      if (!dayRoster || !dayRoster.free_teachers) return [];
+
+      // Find who is already occupied as a substitute in this exact slot
+      const currentlyAssignedThisSlot = new Set();
+      Object.entries(slotAssignments).forEach(([sKey, subName]) => {
+        if (sKey.startsWith(`${periodName}__`)) {
+          currentlyAssignedThisSlot.add(subName);
+        }
+      });
+
+      // Count teaching proxies and duty proxies separately
+      const teachingProxyCounts = {};
+      const dutyProxyCounts = {};
+      Object.entries(slotAssignments).forEach(([sKey, subName]) => {
+        if (!subName) return;
+        const isDutyKey = sKey.startsWith('Morning Assembly__') || sKey.startsWith('Lunch__') || sKey.includes('__Duty:');
+        if (isDutyKey) {
+          dutyProxyCounts[subName] = (dutyProxyCounts[subName] || 0) + 1;
+        } else {
+          teachingProxyCounts[subName] = (teachingProxyCounts[subName] || 0) + 1;
+        }
+      });
+
+      const candidates = [];
+      const absentTeachersLower = new Set(
+        Array.from(absentTeachers).map(t => (t || '').trim().toLowerCase())
+      );
+      const slotAbsentLower = (slot.absent_teacher || '').trim().toLowerCase();
+
+      const defaultMaxProxies = parseInt(document.getElementById('max-proxies-select')?.value) || 2;
+      const maxProxies = (maxProxiesOverride !== null) ? maxProxiesOverride : defaultMaxProxies;
+
+      const isDuty = slot.is_duty || ['Morning Assembly', 'Lunch'].includes(slot.period_name) || [0, 4].includes(slot.period_index);
+
+      dayRoster.free_teachers.forEach(candidate => {
+        const candName = candidate.name;
+        const candNameLower = (candName || '').trim().toLowerCase();
+
+        // Constraint 0: Management Faculty Excluded (Sonakshi & Shailendra Kurmi)
+        if (isManagementTeacher(candName)) return;
+
+        // Constraint 1: Teacher cannot be absent today
+        if (isCandidateAbsent(candName)) return;
+
+        // Constraint 1b: Teacher cannot be assigned to cover their own period
+        if (candNameLower === slotAbsentLower || (isCandidateAbsent(slot.absent_teacher) && isCandidateAbsent(candName))) return;
+
+        // Constraint 1c: Teacher has marked this period as Blackout / Unavailable
+        if (isCandidateBlackout(candName, currentDay, slot.period_index, slot.period_name)) return;
+
+        // Constraint 2: Teacher cannot be assigned to another class in this exact period
+        if (currentlyAssignedThisSlot.has(candName) && slotAssignments[slot.key] !== candName) return;
+
+        const isCurrentlyAssignedHere = (slotAssignments[slot.key] === candName);
+        const ctClasses = candidate.is_class_teacher_of || [];
+        const candClasses = candidate.classes || [];
+        const candSubjects = candidate.subjects || [];
+
+        // Constraint 3: Proxy ceilings
+        if (isDuty) {
+          if (ctClasses.length > 0) return;
+          const dToday = dutyProxyCounts[candName] || 0;
+          if (dToday >= maxDutiesOverride && !isCurrentlyAssignedHere) return;
+          const totalAssignedToday = (teachingProxyCounts[candName] || 0) + dToday;
+          if (totalAssignedToday >= (maxProxies + (maxDutiesOverride - 1)) && !isCurrentlyAssignedHere) return;
+        } else {
+          const tToday = teachingProxyCounts[candName] || 0;
+          if (tToday >= maxProxies && !isCurrentlyAssignedHere) return;
+        }
+
+        let score = 0;
+        let reasons = [];
+
+        if (isDuty) {
+          score += 50;
+          reasons.push('Duty Available');
+
+          const wingRes = getWingScore(slot.class_name, candName);
+          score += wingRes.score;
+          if (wingRes.reason) reasons.push(wingRes.reason);
+
+          if (candClasses.includes(slot.class_name)) {
+            score += 30;
+            reasons.push('Teaches Class');
+          }
+
+          const dToday = dutyProxyCounts[candName] || 0;
+          score -= (dToday * 25);
+        } else {
+          // Priority 1: Subject Specialist (+120 exact, +70 related family)
+          const sMatch = matchSubject(slot.subject, candSubjects);
+          score += sMatch.score;
+          if (sMatch.reason) reasons.push(sMatch.reason);
+
+          // Priority 2: Familiarity with class
+          if (ctClasses.includes(slot.class_name)) {
+            score += 50;
+            reasons.push('Class Teacher');
+          } else if (candClasses.includes(slot.class_name)) {
+            score += 40;
+            reasons.push('Teaches Class');
+          }
+
+          // Priority 3: Wing / Grade-Level Alignment
+          const wingRes = getWingScore(slot.class_name, candName);
+          score += wingRes.score;
+          if (wingRes.reason) reasons.push(wingRes.reason);
+
+          // Activity penalty for academic slots
+          const isAcademicSlot = !['sports', 'arts', 'library'].includes(getSubjectFamily(slot.subject));
+          const candIsActivityOnly = candSubjects.length > 0 && candSubjects.every(s => ['sports', 'arts', 'library'].includes(getSubjectFamily(s)));
+          if (isAcademicSlot && candIsActivityOnly && sMatch.score === 0) {
+            score -= 20;
+          }
+        }
+
+        // Priority 4: Weekly Workload
+        const load = candidate.weekly_load || 0;
+        if (load < 20) {
+          score += 15;
+          reasons.push('Light Load');
+        } else if (load < 25) {
+          score += 8;
+        } else if (load >= 28) {
+          score -= 10;
+        }
+
+        // Priority 5: Fatigue penalty
+        const tProxies = teachingProxyCounts[candName] || 0;
+        if (tProxies === 0) score += 10;
+        else if (tProxies === 1) score -= 15;
+        else score -= 35;
+
+        candidates.push({
+          name: candName,
+          score: score,
+          reasons: reasons,
+          subjects: candSubjects,
+          weekly_load: load,
+          proxies_today: isDuty ? (dutyProxyCounts[candName] || 0) : tProxies
+        });
+      });
+
+      // Sort descending by score, then ascending by weekly load, then alphabetical
+      return candidates.sort((a, b) => b.score - a.score || a.weekly_load - b.weekly_load || a.name.localeCompare(b.name));
+    }
+
+    function switchSlotView(mode) {
+      viewMode = mode;
+      const btnPeriod = document.getElementById('view-mode-period');
+      const btnTeacher = document.getElementById('view-mode-teacher');
+      const btnSub = document.getElementById('view-mode-substitute');
+
+      const activeClass = 'px-2.5 py-1 rounded-lg bg-indigo-600 text-white font-bold shadow-sm';
+      const inactiveClass = 'px-2.5 py-1 rounded-lg text-slate-600 hover:bg-white hover:text-slate-900 transition';
+
+      if (btnTeacher) btnTeacher.className = (mode === 'teacher') ? activeClass : inactiveClass;
+      if (btnSub) btnSub.className = (mode === 'substitute') ? activeClass : inactiveClass;
+      if (btnPeriod) btnPeriod.className = (mode === 'period') ? activeClass : inactiveClass;
+
+      renderAffectedSlots();
+    }
+
+    function createSlotCard(slot) {
+      const candidates = getRankedSubstitutes(slot);
+      let currentSub = slotAssignments[slot.key] || '';
+
+      // Hard check: If current substitute is marked absent or blackout, clear them immediately!
+      if (currentSub && (isCandidateAbsent(currentSub) || isCandidateBlackout(currentSub, currentDay, slot.period_index, slot.period_name))) {
+        delete slotAssignments[slot.key];
+        currentSub = '';
+      }
+
+      const card = document.createElement('div');
+      card.className = `p-3.5 rounded-xl border transition ${currentSub ? 'bg-emerald-50/50 border-emerald-200' : 'bg-slate-50 border-slate-200 hover:border-slate-300'}`;
+
+      let optionsHtml = '<option value="">-- Select Free Substitute --</option>';
+      candidates.forEach((cand, idx) => {
+        // Double-check candidate is not absent or on blackout
+        if (isCandidateAbsent(cand.name) || isCandidateBlackout(cand.name, currentDay, slot.period_index, slot.period_name)) return;
+        const isSelected = cand.name === currentSub;
+        const badgeText = cand.reasons.length > 0 ? ` [${cand.reasons.join(', ')}]` : '';
+        const proxyText = cand.proxies_today > 0 ? ` (${cand.proxies_today} proxy today)` : '';
+        optionsHtml += `<option value="${cand.name}" ${isSelected ? 'selected' : ''}>
+          ${idx === 0 ? '⭐ ' : ''}${cand.name} (Load: ${cand.weekly_load}p)${badgeText}${proxyText}
+        </option>`;
+      });
+
+      // Top recommended badge
+      let topRecBadge = '';
+      if (candidates.length > 0 && !currentSub) {
+        const best = candidates[0];
+        topRecBadge = `
+          <div class="mt-2 text-[11px] text-indigo-700 bg-indigo-50 border border-indigo-200/80 rounded-lg px-2.5 py-1 flex items-center justify-between">
+            <span><strong>Suggested:</strong> ${best.name} ${best.reasons.length ? `• ${best.reasons.join(' • ')}` : ''}</span>
+            <button onclick="assignSpecificSubstitute('${slot.key}', '${best.name}')" class="text-xs font-black text-indigo-900 hover:underline">Quick Assign</button>
+          </div>
+        `;
+      }
+
+      const isDuty = slot.is_duty;
+      card.innerHTML = `
+        <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
+          <div class="flex items-center gap-2">
+            <span class="px-2.5 py-1 rounded-lg ${isDuty ? 'bg-amber-600' : 'bg-indigo-900'} text-white font-extrabold text-xs">
+              ${slot.period_name}
+            </span>
+            <span class="text-xs font-semibold text-slate-500">${slot.period_time}</span>
+            <span class="px-2 py-0.5 rounded-md bg-slate-200 text-slate-800 font-extrabold text-xs">
+              ${slot.class_name}
+            </span>
+            ${isDuty ? '<span class="px-2 py-0.5 rounded-md bg-amber-100 text-amber-900 border border-amber-300 font-black text-[10px] uppercase tracking-wider">🛡️ Homeroom Duty</span>' : ''}
+          </div>
+          
+          <div class="flex items-center gap-1.5 text-xs">
+            <span class="text-slate-400 font-medium">${isDuty ? 'Class Teacher:' : 'Regular:'}</span>
+            <span class="font-extrabold text-rose-700">${slot.absent_teacher}</span>
+            <span class="text-slate-400 font-bold">•</span>
+            <span class="font-bold ${isDuty ? 'text-amber-800' : 'text-slate-800'}">${slot.subject}</span>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-12 gap-3 items-center mt-2.5">
+          <div class="sm:col-span-8">
+            <select onchange="onSubstituteSelected('${slot.key}', this.value)" class="w-full px-3 py-1.5 text-xs font-bold rounded-xl border ${currentSub ? 'border-emerald-400 bg-white text-emerald-950 ring-1 ring-emerald-400' : 'border-slate-300 bg-white text-slate-800'} focus:outline-none">
+              ${optionsHtml}
+            </select>
+          </div>
+
+          <div class="sm:col-span-4 flex items-center justify-end gap-2">
+            ${currentSub ? `
+              <span class="text-[11px] font-black text-emerald-700 bg-emerald-100 px-2 py-1 rounded-md border border-emerald-200 flex items-center gap-1">
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                Assigned
+              </span>
+              <button onclick="clearSpecificSlot('${slot.key}')" class="text-slate-400 hover:text-rose-600 text-xs font-bold p-1">Clear</button>
+            ` : `
+              <span class="text-[11px] font-bold text-amber-700 bg-amber-50 px-2 py-1 rounded-md border border-amber-200">
+                Vacant (${candidates.length} free)
+              </span>
+            `}
+          </div>
+        </div>
+
+        ${topRecBadge}
+      `;
+      return card;
+    }
+
+    function renderAffectedSlots() {
+      const container = document.getElementById('affected-slots-container');
+      container.innerHTML = '';
+
+      const slots = getRequiredSlots();
+      document.getElementById('stat-periods-count').textContent = slots.length;
+      document.getElementById('badge-slot-count').textContent = `${slots.length} Slots`;
+
+      let coveredCount = 0;
+      slots.forEach(s => {
+        const sub = slotAssignments[s.key];
+        if (sub && !isCandidateAbsent(sub)) {
+          coveredCount++;
+        } else if (sub && isCandidateAbsent(sub)) {
+          delete slotAssignments[s.key];
+        }
+      });
+      document.getElementById('stat-covered-count').textContent = coveredCount;
+
+      // 1. If no teachers marked absent yet, show Step 1 guidance box
+      if (absentTeachers.size === 0) {
+        container.innerHTML = `
+          <div class="py-12 px-6 text-center max-w-md mx-auto space-y-4">
+            <div class="w-14 h-14 mx-auto rounded-2xl bg-amber-50 border border-amber-200 flex items-center justify-center text-amber-600 shadow-sm">
+              <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
+            </div>
+            <div>
+              <h4 class="text-base font-extrabold text-slate-800">Step 1 in Progress: Mark Absent Faculty First</h4>
+              <p class="text-xs text-slate-500 mt-1 leading-relaxed">
+                Please search and add all teachers who are on leave today in Step 1 above. Once faculty are marked absent, their affected periods will appear here grouped by teacher for substitution.
+              </p>
+            </div>
+            <button onclick="document.getElementById('teacher-search-input')?.focus()" class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-rose-600 hover:bg-rose-700 text-white font-bold text-xs shadow-sm transition">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+              Mark Absent Teachers Now
+            </button>
+          </div>
+        `;
+        renderProxyLoadMonitor();
+        return;
+      }
+
+      // 2. If teachers marked absent, but 0 teaching periods (e.g. Sunday or only breaks)
+      if (slots.length === 0) {
+        container.innerHTML = `
+          <div class="py-12 text-center text-slate-500 font-medium text-sm space-y-2">
+            <svg class="w-10 h-10 mx-auto text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+            <p class="font-bold text-slate-700">No teaching periods to cover for marked teachers on ${currentDay}!</p>
+            <p class="text-xs text-slate-400">The marked faculty members have no scheduled classes or have only break periods today.</p>
+          </div>
+        `;
+        renderProxyLoadMonitor();
+        return;
+      }
+
+      // 3. Render according to viewMode (Default: 'teacher')
+      if (viewMode === 'teacher') {
+        // Group slots by absent teacher
+        const teacherSlotsMap = new Map();
+        absentTeachers.forEach(t => {
+          teacherSlotsMap.set(t, []);
+        });
+
+        slots.forEach(slot => {
+          let foundKey = slot.absent_teacher;
+          if (!teacherSlotsMap.has(foundKey)) {
+            for (const key of teacherSlotsMap.keys()) {
+              if (key.trim().toLowerCase() === slot.absent_teacher.trim().toLowerCase() ||
+                  isCandidateAbsent(key)) {
+                foundKey = key;
+                break;
+              }
+            }
+          }
+          if (!teacherSlotsMap.has(foundKey)) {
+            teacherSlotsMap.set(foundKey, []);
+          }
+          teacherSlotsMap.get(foundKey).push(slot);
+        });
+
+        teacherSlotsMap.forEach((tSlots, teacherName) => {
+          const tInfo = TEACHER_DATA[teacherName] || {};
+          const teacherCard = document.createElement('div');
+          teacherCard.className = 'bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-xs space-y-3 p-4 mb-4';
+
+          const tCovered = tSlots.filter(s => slotAssignments[s.key] && !isCandidateAbsent(slotAssignments[s.key])).length;
+          const isAllCovered = tSlots.length > 0 && tCovered === tSlots.length;
+          const isNoneCovered = tCovered === 0;
+
+          let statusBadge = '';
+          if (tSlots.length === 0) {
+            statusBadge = '<span class="text-[11px] font-bold px-2.5 py-1 rounded-full bg-slate-100 text-slate-600">0 Classes Today</span>';
+          } else if (isAllCovered) {
+            statusBadge = `<span class="text-[11px] font-extrabold px-2.5 py-1 rounded-full bg-emerald-100 text-emerald-800 border border-emerald-300 flex items-center gap-1">
+              <svg class="w-3.5 h-3.5 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>
+              All ${tSlots.length} Covered
+            </span>`;
+          } else if (isNoneCovered) {
+            statusBadge = `<span class="text-[11px] font-extrabold px-2.5 py-1 rounded-full bg-rose-100 text-rose-800 border border-rose-300 flex items-center gap-1">
+              <span class="w-2 h-2 rounded-full bg-rose-500 animate-pulse"></span>
+              0 of ${tSlots.length} Covered
+            </span>`;
+          } else {
+            statusBadge = `<span class="text-[11px] font-extrabold px-2.5 py-1 rounded-full bg-amber-100 text-amber-900 border border-amber-300 flex items-center gap-1">
+              <span class="w-2 h-2 rounded-full bg-amber-500"></span>
+              ${tCovered} of ${tSlots.length} Covered
+            </span>`;
+          }
+
+          const subjectsStr = (tInfo.subjects || []).join(', ') || 'General';
+          const ctClasses = tInfo.is_class_teacher_of || [];
+          const ctBadge = ctClasses.length > 0 ? `<span class="px-2 py-0.5 rounded bg-indigo-50 text-indigo-700 text-[10px] font-bold border border-indigo-200">CT: ${ctClasses.join(', ')}</span>` : '';
+
+          const headerDiv = document.createElement('div');
+          headerDiv.className = 'flex flex-wrap items-center justify-between gap-3 pb-3 border-b border-slate-100';
+          headerDiv.innerHTML = `
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-rose-500 to-rose-600 text-white font-black flex items-center justify-center text-sm shadow-sm">
+                ${teacherName.charAt(0).toUpperCase()}
+              </div>
+              <div>
+                <div class="flex items-center gap-2">
+                  <h4 class="font-extrabold text-slate-900 text-sm">${teacherName}</h4>
+                  <span class="text-[11px] font-bold px-2 py-0.5 rounded-full bg-rose-50 text-rose-700 border border-rose-200">On Leave</span>
+                  ${ctBadge}
+                </div>
+                <p class="text-[11px] text-slate-500 font-medium">${subjectsStr} • ${tSlots.length} teaching ${tSlots.length === 1 ? 'period' : 'periods'} today</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-2">
+              ${statusBadge}
+            </div>
+          `;
+          teacherCard.appendChild(headerDiv);
+
+          if (tSlots.length === 0) {
+            const emptySlotDiv = document.createElement('div');
+            emptySlotDiv.className = 'py-4 text-center text-xs text-slate-400 italic';
+            emptySlotDiv.textContent = `No scheduled teaching periods for ${teacherName} on ${currentDay}.`;
+            teacherCard.appendChild(emptySlotDiv);
+          } else {
+            const slotsListDiv = document.createElement('div');
+            slotsListDiv.className = 'space-y-2.5 pt-1';
+            tSlots.forEach(slot => {
+              slotsListDiv.appendChild(createSlotCard(slot));
+            });
+            teacherCard.appendChild(slotsListDiv);
+          }
+
+          container.appendChild(teacherCard);
+        });
+      } else if (viewMode === 'substitute') {
+        // Group by Assigned Substitute Teacher, sorted alphabetically
+        const subGroups = new Map();
+        const unassignedSlots = [];
+
+        slots.forEach(slot => {
+          const sub = slotAssignments[slot.key];
+          if (sub && !isCandidateAbsent(sub)) {
+            if (!subGroups.has(sub)) subGroups.set(sub, []);
+            subGroups.get(sub).push(slot);
+          } else {
+            unassignedSlots.push(slot);
+          }
+        });
+
+        // Sort assigned substitutes alphabetically
+        const sortedSubNames = Array.from(subGroups.keys()).sort((a, b) => a.localeCompare(b, undefined, { sensitivity: 'base' }));
+
+        sortedSubNames.forEach(subName => {
+          const subSlots = subGroups.get(subName);
+          subSlots.sort((a, b) => a.period_index - b.period_index);
+
+          const subCard = document.createElement('div');
+          subCard.className = 'bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-xs space-y-3 p-4 mb-4';
+
+          const tInfo = TEACHER_DATA[subName] || {};
+          const subjectsStr = (tInfo.subjects || []).join(', ') || 'General';
+
+          subCard.innerHTML = `
+            <div class="flex flex-wrap items-center justify-between gap-3 pb-3 border-b border-slate-100">
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-purple-600 to-indigo-700 text-white font-black flex items-center justify-center text-sm shadow-sm">
+                  ${subName.charAt(0).toUpperCase()}
+                </div>
+                <div>
+                  <div class="flex items-center gap-2">
+                    <h4 class="font-extrabold text-slate-900 text-sm">${subName}</h4>
+                    <span class="text-[11px] font-bold px-2 py-0.5 rounded-full bg-purple-50 text-purple-700 border border-purple-200">Substitute Teacher</span>
+                  </div>
+                  <p class="text-[11px] text-slate-500 font-medium">${subjectsStr} • ${subSlots.length} proxy ${subSlots.length === 1 ? 'duty' : 'duties'} assigned today</p>
+                </div>
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="text-[11px] font-extrabold px-2.5 py-1 rounded-full bg-emerald-100 text-emerald-800 border border-emerald-300 flex items-center gap-1">
+                  <svg class="w-3.5 h-3.5 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>
+                  ${subSlots.length} ${subSlots.length === 1 ? 'Period' : 'Periods'}
+                </span>
+              </div>
+            </div>
+            <div class="space-y-2.5 pt-1"></div>
+          `;
+
+          const slotsListDiv = subCard.querySelector('div.space-y-2\\.5');
+          subSlots.forEach(slot => {
+            slotsListDiv.appendChild(createSlotCard(slot));
+          });
+
+          container.appendChild(subCard);
+        });
+
+        // Render Unassigned Vacancies if any
+        if (unassignedSlots.length > 0) {
+          const unassignedCard = document.createElement('div');
+          unassignedCard.className = 'bg-amber-50/60 rounded-2xl border border-amber-200 overflow-hidden shadow-xs space-y-3 p-4 mb-4';
+          unassignedCard.innerHTML = `
+            <div class="flex items-center justify-between pb-3 border-b border-amber-200/80">
+              <div class="flex items-center gap-2">
+                <span class="w-3 h-3 rounded-full bg-amber-500 animate-pulse"></span>
+                <h4 class="font-extrabold text-amber-950 text-sm">Unassigned Vacancies (${unassignedSlots.length})</h4>
+              </div>
+              <span class="text-xs font-bold text-amber-800">Requires Substitute Allocation</span>
+            </div>
+            <div class="space-y-2.5 pt-1"></div>
+          `;
+          const unList = unassignedCard.querySelector('div.space-y-2\\.5');
+          unassignedSlots.forEach(slot => {
+            unList.appendChild(createSlotCard(slot));
+          });
+          container.appendChild(unassignedCard);
+        }
+      } else {
+        // viewMode === 'period': Group by Period
+        const periodGroups = new Map();
+        slots.forEach(slot => {
+          if (!periodGroups.has(slot.period_name)) {
+            periodGroups.set(slot.period_name, []);
+          }
+          periodGroups.get(slot.period_name).push(slot);
+        });
+
+        periodGroups.forEach((pSlots, pName) => {
+          const pGroupCard = document.createElement('div');
+          pGroupCard.className = 'bg-white rounded-2xl border border-slate-200 p-4 mb-3 space-y-3';
+          
+          const time = pSlots[0]?.period_time || '';
+          pGroupCard.innerHTML = `
+            <div class="flex items-center justify-between border-b border-slate-100 pb-2">
+              <div class="flex items-center gap-2">
+                <span class="px-2.5 py-1 rounded-lg bg-indigo-900 text-white font-extrabold text-xs">${pName}</span>
+                <span class="text-xs font-semibold text-slate-500">${time}</span>
+              </div>
+              <span class="text-xs font-bold text-slate-600">${pSlots.length} ${pSlots.length === 1 ? 'Vacancy' : 'Vacancies'}</span>
+            </div>
+            <div class="space-y-2.5"></div>
+          `;
+          const list = pGroupCard.querySelector('div.space-y-2\\.5');
+          pSlots.forEach(slot => {
+            list.appendChild(createSlotCard(slot));
+          });
+          container.appendChild(pGroupCard);
+        });
+      }
+
+      renderProxyLoadMonitor();
+    }
+
+    function onSubstituteSelected(slotKey, substituteName) {
+      if (substituteName) {
+        slotAssignments[slotKey] = substituteName;
+      } else {
+        delete slotAssignments[slotKey];
+      }
+      renderAffectedSlots();
+    }
+
+    function assignSpecificSubstitute(slotKey, substituteName) {
+      slotAssignments[slotKey] = substituteName;
+      renderAffectedSlots();
+    }
+
+    function clearSpecificSlot(slotKey) {
+      delete slotAssignments[slotKey];
+      renderAffectedSlots();
+    }
+
+    function clearAllAssignments() {
+      slotAssignments = {};
+      renderAffectedSlots();
+    }
+
+    // 1-Click Smart Auto-Assign Algorithm (Backend Constraint Satisfaction + MRV Fallback)
+    async function autoAssignAll() {
+      if (absentTeachers.size === 0) {
+        alert('Please mark all absent teachers in Step 1 first before auto-assigning substitutions!');
+        document.getElementById('teacher-search-input')?.focus();
+        return;
+      }
+
+      const slots = getRequiredSlots();
+      if (slots.length === 0) {
+        alert(`The marked absent teachers have no teaching periods to cover on ${currentDay}!`);
+        return;
+      }
+
+      const btn = document.getElementById('btn-auto-assign');
+      const originalText = btn.innerHTML;
+      btn.innerHTML = `
+        <svg class="w-4 h-4 animate-spin" fill="none" viewBox="0 0 24 24"><circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle><path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path></svg>
+        <span>Solving Constraints...</span>
+      `;
+      btn.disabled = true;
+
+      const maxProxies = parseInt(document.getElementById('max-proxies-select')?.value) || 2;
+      const absentList = Array.from(absentTeachers);
+
+      try {
+        const response = await fetch('/api/substitutions/auto-assign', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            day: currentDay,
+            absent_teachers: absentList,
+            max_proxies: maxProxies
+          })
+        });
+
+        if (response.ok) {
+          const data = await response.json();
+          if (data && data.assignments) {
+            slotAssignments = data.assignments;
+            // Strict guarantee: Remove any absent, management, or blackout teachers from received assignments
+            Object.keys(slotAssignments).forEach(key => {
+              const subName = slotAssignments[key];
+              const sObj = slots.find(s => s.key === key);
+              if (isCandidateAbsent(subName) || isManagementTeacher(subName) || 
+                  (sObj && isCandidateBlackout(subName, currentDay, sObj.period_index, sObj.period_name))) {
+                delete slotAssignments[key];
+              }
+            });
+            renderAffectedSlots();
+            btn.innerHTML = originalText;
+            btn.disabled = false;
+
+            const assignedCount = Object.keys(slotAssignments).length;
+            const totalCount = slots.length;
+            if (assignedCount === totalCount) {
+              showAssignmentToast(`✨ Successfully auto-assigned all ${totalCount} periods with optimal subject & wing matches!`, 'success');
+            } else {
+              showAssignmentToast(`⚠️ Auto-assigned ${assignedCount} of ${totalCount} periods. (${totalCount - assignedCount} periods have no free faculty in that timeslot).`, 'warning');
+            }
+            return;
+          }
+        }
+      } catch (err) {
+        console.warn('Backend auto-assign offline or error, using client-side MRV solver:', err);
+      }
+
+      // Client-side MRV (Most Restricted Variable) fallback with 2-pass expansion
+      slotAssignments = {};
+      const remainingSlots = [...slots];
+      const unassignedSlots = [];
+
+      // PASS 1: Preferred limit (maxProxies, maxDuties = 1)
+      while (remainingSlots.length > 0) {
+        const candidateMaps = remainingSlots.map(s => ({
+          slot: s,
+          cands: getRankedSubstitutes(s, maxProxies, 1)
+        }));
+
+        candidateMaps.sort((a, b) => a.cands.length - b.cands.length);
+        const bestPair = candidateMaps[0];
+
+        if (bestPair.cands.length > 0) {
+          const pickedSub = bestPair.cands[0].name;
+          if (!isCandidateAbsent(pickedSub) && !isManagementTeacher(pickedSub) && 
+              !isCandidateBlackout(pickedSub, currentDay, bestPair.slot.period_index, bestPair.slot.period_name)) {
+            slotAssignments[bestPair.slot.key] = pickedSub;
+          }
+        } else {
+          unassignedSlots.push(bestPair.slot);
+        }
+        const idx = remainingSlots.indexOf(bestPair.slot);
+        if (idx !== -1) remainingSlots.splice(idx, 1);
+      }
+
+      // PASS 2: Flexible Auto-Expansion for unassigned slots (maxProxies + 1, maxDuties = 2)
+      if (unassignedSlots.length > 0) {
+        const retrySlots = [...unassignedSlots];
+        while (retrySlots.length > 0) {
+          const candidateMaps = retrySlots.map(s => ({
+            slot: s,
+            cands: getRankedSubstitutes(s, maxProxies + 1, 2)
+          }));
+
+          candidateMaps.sort((a, b) => a.cands.length - b.cands.length);
+          const bestPair = candidateMaps[0];
+
+          if (bestPair.cands.length > 0) {
+            const pickedSub = bestPair.cands[0].name;
+            if (!isCandidateAbsent(pickedSub) && !isManagementTeacher(pickedSub) && 
+                !isCandidateBlackout(pickedSub, currentDay, bestPair.slot.period_index, bestPair.slot.period_name)) {
+              slotAssignments[bestPair.slot.key] = pickedSub;
+            }
+          }
+          const idx = retrySlots.indexOf(bestPair.slot);
+          if (idx !== -1) retrySlots.splice(idx, 1);
+        }
+      }
+
+      renderAffectedSlots();
+      btn.innerHTML = originalText;
+      btn.disabled = false;
+
+      const assignedCount = Object.keys(slotAssignments).length;
+      const totalCount = slots.length;
+      if (assignedCount === totalCount) {
+        showAssignmentToast(`✨ Successfully auto-assigned all ${totalCount} periods with optimal subject & wing matches!`, 'success');
+      } else {
+        showAssignmentToast(`⚠️ Auto-assigned ${assignedCount} of ${totalCount} periods. (${totalCount - assignedCount} periods have no free faculty in that timeslot).`, 'warning');
+      }
+    }
+
+    function showAssignmentToast(message, type = 'success') {
+      let toast = document.getElementById('auto-assign-toast');
+      if (!toast) {
+        toast = document.createElement('div');
+        toast.id = 'auto-assign-toast';
+        toast.className = 'fixed bottom-5 right-5 z-50 px-4 py-3 rounded-2xl shadow-xl border font-bold text-xs flex items-center gap-2.5 transition-all transform duration-300';
+        document.body.appendChild(toast);
+      }
+      if (type === 'success') {
+        toast.className = 'fixed bottom-5 right-5 z-50 px-4 py-3 rounded-2xl shadow-xl border border-emerald-300 bg-emerald-900 text-emerald-100 font-extrabold text-xs flex items-center gap-2.5 transition-all transform duration-300 translate-y-0 opacity-100';
+      } else {
+        toast.className = 'fixed bottom-5 right-5 z-50 px-4 py-3 rounded-2xl shadow-xl border border-amber-300 bg-amber-900 text-amber-100 font-extrabold text-xs flex items-center gap-2.5 transition-all transform duration-300 translate-y-0 opacity-100';
+      }
+      toast.innerHTML = `<span>${message}</span>`;
+      setTimeout(() => {
+        if (toast) {
+          toast.classList.add('opacity-0', 'translate-y-4');
+        }
+      }, 4500);
+    }
+
+    // Render Side Monitor: Who has how many substitutions today
+    function renderProxyLoadMonitor() {
+      const container = document.getElementById('proxy-load-list');
+      container.innerHTML = '';
+
+      const counts = {};
+      Object.values(slotAssignments).forEach(sub => {
+        counts[sub] = (counts[sub] || 0) + 1;
+      });
+
+      const assignedTeachers = Object.keys(counts).sort((a, b) => counts[b] - counts[a]);
+      document.getElementById('badge-active-proxies').textContent = `${Object.values(slotAssignments).length} Proxies`;
+
+      if (assignedTeachers.length === 0) {
+        container.innerHTML = '<div class="text-center py-6 text-slate-400 text-xs font-semibold">No substitutes allocated yet.</div>';
+        return;
+      }
+
+      assignedTeachers.forEach(teacher => {
+        const c = counts[teacher];
+        const normalLoad = TEACHER_DATA[teacher]?.total_weekly_teaching_periods || 0;
+        const row = document.createElement('div');
+        row.className = 'flex items-center justify-between p-2.5 rounded-xl border border-slate-100 bg-slate-50 text-xs';
+        
+        let badgeColor = 'bg-emerald-100 text-emerald-800 border-emerald-200';
+        if (c >= 2) badgeColor = 'bg-amber-100 text-amber-800 border-amber-200';
+        if (c >= 3) badgeColor = 'bg-rose-100 text-rose-800 border-rose-200';
+
+        row.innerHTML = `
+          <div>
+            <span class="font-extrabold text-slate-800">${teacher}</span>
+            <div class="text-[10px] text-slate-400">Weekly: ${normalLoad} p/w</div>
+          </div>
+          <span class="px-2.5 py-0.5 rounded-full font-black text-xs border ${badgeColor}">
+            +${c} ${c === 1 ? 'Period' : 'Periods'}
+          </span>
+        `;
+        container.appendChild(row);
+      });
+    }
+
+    function formatDisplayDate(dStr) {
+      if (!dStr) return '';
+      const parts = dStr.split('-');
+      if (parts.length === 3 && parts[0].length === 4) {
+        return `${parts[2]}/${parts[1]}/${parts[0]}`;
+      }
+      return dStr;
+    }
+
+    function getTeacherSortedReportData() {
+      const slots = getRequiredSlots();
+      const rows = [];
+
+      slots.forEach(slot => {
+        const sub = slotAssignments[slot.key];
+        rows.push({
+          date: currentDate,
+          displayDate: formatDisplayDate(currentDate),
+          substitute: sub || '',
+          isAssigned: Boolean(sub && !isCandidateAbsent(sub)),
+          period_index: slot.period_index !== undefined ? slot.period_index : 99,
+          period_name: slot.period_name,
+          period_time: slot.period_time,
+          class_name: slot.class_name,
+          subject: slot.subject,
+          absent_teacher: slot.absent_teacher,
+          key: slot.key
+        });
+      });
+
+      // Sort alphabetically by Substitute Teacher Name ascending (A to Z)
+      // Secondary sort: period_index ascending
+      rows.sort((a, b) => {
+        if (a.isAssigned && !b.isAssigned) return -1;
+        if (!a.isAssigned && b.isAssigned) return 1;
+        const nameComp = (a.substitute || '').localeCompare(b.substitute || '', undefined, { sensitivity: 'base' });
+        if (nameComp !== 0) return nameComp;
+        return (a.period_index || 0) - (b.period_index || 0);
+      });
+
+      return rows;
+    }
+
+    function printMasterRegister() {
+      const slots = getRequiredSlots();
+      if (slots.length === 0) {
+        alert('No absent teachers or periods to print!');
+        return;
+      }
+
+      document.getElementById('print-school-title').textContent = TIMETABLE_DATA.title || 'School Timetable Portal';
+      document.getElementById('print-date').textContent = formatDisplayDate(currentDate);
+      document.getElementById('print-day').textContent = currentDay;
+      document.getElementById('print-total-subs').textContent = Object.keys(slotAssignments).length;
+
+      const tbody = document.getElementById('print-register-tbody');
+      tbody.innerHTML = '';
+
+      slots.forEach((slot, i) => {
+        const sub = slotAssignments[slot.key] || '<span class="text-rose-700 font-black">UNASSIGNED</span>';
+        const tr = document.createElement('tr');
+        tr.className = 'border-b border-slate-700 text-center';
+        tr.innerHTML = `
+          <td class="border border-slate-700 py-2 px-1 font-mono font-bold">${i + 1}</td>
+          <td class="border border-slate-700 py-2 px-2 font-bold">${slot.period_name} (${slot.period_time})</td>
+          <td class="border border-slate-700 py-2 px-2 font-extrabold">${slot.class_name}</td>
+          <td class="border border-slate-700 py-2 px-2 font-medium">${slot.absent_teacher}</td>
+          <td class="border border-slate-700 py-2 px-2 font-bold">${slot.subject}</td>
+          <td class="border border-slate-700 py-2 px-2 font-black">${sub}</td>
+          <td class="border border-slate-700 py-2 px-2"></td>
+          <td class="border border-slate-700 py-2 px-2"></td>
+        `;
+        tbody.appendChild(tr);
+      });
+
+      // Show print view 1, hide print views 2 & 3
+      const pv1 = document.getElementById('print-master-register');
+      const pv2 = document.getElementById('print-duty-chits');
+      const pv3 = document.getElementById('print-teacher-report');
+
+      if (pv1) { pv1.classList.remove('print-hidden'); pv1.style.display = 'block'; }
+      if (pv2) { pv2.classList.add('print-hidden'); pv2.style.display = 'none'; }
+      if (pv3) { pv3.classList.add('print-hidden'); pv3.style.display = 'none'; }
+
+      window.print();
+    }
+
+    function printChits() {
+      const slots = getRequiredSlots();
+      const chitsContainer = document.getElementById('chits-container');
+      chitsContainer.innerHTML = '';
+
+      let chitCount = 0;
+      slots.forEach(slot => {
+        const sub = slotAssignments[slot.key];
+        if (!sub) return;
+        chitCount++;
+
+        const chit = document.createElement('div');
+        chit.className = 'chit-box border-2 border-dashed border-black p-4 rounded-xl space-y-2 bg-white';
+        chit.innerHTML = `
+          <div class="flex items-center justify-between border-b-2 border-black pb-1.5">
+            <span class="font-black text-xs uppercase tracking-wider text-black">Substitution Duty Slip</span>
+            <span class="text-[11px] font-black text-black">${formatDisplayDate(currentDate)} • ${currentDay}</span>
+          </div>
+          <div class="text-xs space-y-1 pt-1 text-black font-semibold">
+            <p>To Faculty Member: <strong class="text-sm font-black text-black uppercase underline decoration-1">${sub}</strong></p>
+            <p>Please engage Class: <strong class="font-black text-black">${slot.class_name}</strong></p>
+            <p>Period: <strong class="font-black text-black">${slot.period_name}</strong> (${slot.period_time})</p>
+            <p>Subject: <strong class="font-black text-black">${slot.subject}</strong> (In place of: <strong>${slot.absent_teacher}</strong>)</p>
+          </div>
+          <div class="pt-3 flex items-center justify-between text-[11px] font-black text-black border-t-2 border-black mt-2">
+            <span>Room: Classroom</span>
+            <span>Signature: ________________</span>
+          </div>
+        `;
+        chitsContainer.appendChild(chit);
+      });
+
+      if (chitCount === 0) {
+        alert('Please assign substitutes before printing slips!');
+        return;
+      }
+
+      // Show print view 2, hide print views 1 & 3
+      const pv1 = document.getElementById('print-master-register');
+      const pv2 = document.getElementById('print-duty-chits');
+      const pv3 = document.getElementById('print-teacher-report');
+
+      if (pv1) { pv1.classList.add('print-hidden'); pv1.style.display = 'none'; }
+      if (pv2) { pv2.classList.remove('print-hidden'); pv2.style.display = 'grid'; }
+      if (pv3) { pv3.classList.add('print-hidden'); pv3.style.display = 'none'; }
+
+      window.print();
+    }
+
+    function printTeacherReport() {
+      const rows = getTeacherSortedReportData();
+      if (rows.length === 0) {
+        alert('No absent teachers or substitution slots to print!');
+        return;
+      }
+
+      const assignedRows = rows.filter(r => r.isAssigned);
+      if (assignedRows.length === 0) {
+        alert('Please assign substitutes (or click "Auto-Assign Best Substitutes") before generating the Substitution Report!');
+        return;
+      }
+
+      document.getElementById('print-teacher-school-title').textContent = TIMETABLE_DATA.title || 'GURU NANAK PUBLIC SCHOOL, BINA';
+      document.getElementById('print-teacher-date').textContent = formatDisplayDate(currentDate);
+      document.getElementById('print-teacher-day').textContent = currentDay;
+      document.getElementById('print-teacher-total-subs').textContent = assignedRows.length;
+
+      const tbody = document.getElementById('print-teacher-report-tbody');
+      tbody.innerHTML = '';
+
+      assignedRows.forEach((row, i) => {
+        const tr = document.createElement('tr');
+        tr.className = 'border-b border-slate-700 text-center';
+        tr.innerHTML = `
+          <td class="border border-slate-700 py-1.5 px-1 font-mono font-bold">${i + 1}</td>
+          <td class="border border-slate-700 py-1.5 px-2 font-bold">${row.displayDate}</td>
+          <td class="border border-slate-700 py-1.5 px-3 font-extrabold text-left">${row.substitute}</td>
+          <td class="border border-slate-700 py-1.5 px-2 font-bold">
+            <div>${row.period_name} (${row.period_time})</div>
+            <div class="font-extrabold text-[10.5px] uppercase">${row.class_name}</div>
+          </td>
+          <td class="border border-slate-700 py-1.5 px-2 font-bold">${row.subject}</td>
+          <td class="border border-slate-700 py-1.5 px-2 font-semibold">${row.absent_teacher}</td>
+          <td class="border border-slate-700 py-1.5 px-2"><div class="h-6"></div></td>
+        `;
+        tbody.appendChild(tr);
+      });
+
+      // Show print view 3, hide print views 1 & 2
+      const pv1 = document.getElementById('print-master-register');
+      const pv2 = document.getElementById('print-duty-chits');
+      const pv3 = document.getElementById('print-teacher-report');
+
+      if (pv1) { pv1.classList.add('print-hidden'); pv1.style.display = 'none'; }
+      if (pv2) { pv2.classList.add('print-hidden'); pv2.style.display = 'none'; }
+      if (pv3) { pv3.classList.remove('print-hidden'); pv3.style.display = 'block'; }
+
+      window.print();
+    }
+
+    function downloadTeacherReportCSV() {
+      const rows = getTeacherSortedReportData();
+      const assignedRows = rows.filter(r => r.isAssigned);
+      if (assignedRows.length === 0) {
+        alert('Please assign substitutes (or click "Auto-Assign Best Substitutes") before exporting the Substitution Report!');
+        return;
+      }
+
+      // Exact columns requested:
+      // Date / Name of the Substitution teacher / Period / Subject / Name of the Teacher who is absent / Signature
+      const headers = [
+        "Date",
+        "Name of the Substitution teacher",
+        "Period",
+        "Subject",
+        "Name of the Teacher who is absent",
+        "Signature"
+      ];
+
+      const csvLines = [headers.map(h => `"${h}"`).join(',')];
+
+      assignedRows.forEach(row => {
+        const periodStr = `${row.period_name} (${row.period_time}) — ${row.class_name}`;
+        const line = [
+          `"${row.displayDate}"`,
+          `"${(row.substitute || '').replace(/"/g, '""')}"`,
+          `"${periodStr.replace(/"/g, '""')}"`,
+          `"${(row.subject || '').replace(/"/g, '""')}"`,
+          `"${(row.absent_teacher || '').replace(/"/g, '""')}"`,
+          `""`
+        ];
+        csvLines.push(line.join(','));
+      });
+
+      const csvContent = "data:text/csv;charset=utf-8,\uFEFF" + encodeURIComponent(csvLines.join('\r\n'));
+      const link = document.createElement("a");
+      link.setAttribute("href", csvContent);
+      link.setAttribute("download", `Substitution_Report_${currentDate}.csv`);
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    }
+
+    function openWhatsAppModal() {
+      const slots = getRequiredSlots();
+      if (slots.length === 0) {
+        alert('No absent teachers or periods to share!');
+        return;
+      }
+
+      let msg = `📋 *DAILY SUBSTITUTION REGISTER - ${currentDate} (${currentDay})*\n`;
+      msg += `*${TIMETABLE_DATA.title || 'School Timetable Portal'}*\n`;
+      msg += `────────────────────────\n`;
+      msg += `*Absent Faculty:* ${Array.from(absentTeachers).join(', ')}\n\n`;
+      msg += `*ARRANGEMENTS:*\n`;
+
+      slots.forEach(slot => {
+        const sub = slotAssignments[slot.key] || '⚠️ [UNASSIGNED]';
+        msg += `🔹 *${slot.period_name}* (${slot.period_time})\n`;
+        msg += `   • Class: *${slot.class_name}*\n`;
+        msg += `   • Subject: ${slot.subject} (Leave: ${slot.absent_teacher})\n`;
+        msg += `   • Substitute: *${sub}*\n\n`;
+      });
+
+      msg += `────────────────────────\n`;
+      msg += `_Kindly engage your respective classes promptly. Thank you!_`;
+
+      document.getElementById('whatsapp-text-area').value = msg;
+      document.getElementById('whatsapp-modal').classList.remove('hidden');
+    }
+
+    function closeWhatsAppModal() {
+      document.getElementById('whatsapp-modal').classList.add('hidden');
+    }
+
+    function copyWhatsAppText() {
+      const ta = document.getElementById('whatsapp-text-area');
+      ta.select();
+      navigator.clipboard.writeText(ta.value).then(() => {
+        const btn = document.getElementById('btn-copy-wa');
+        const orig = btn.innerHTML;
+        btn.innerHTML = '✅ Copied!';
+        setTimeout(() => { btn.innerHTML = orig; }, 2000);
+      });
+    }
+
+    // ================= PERSISTENCE (LOCALSTORAGE & BACKEND) =================
+
+    function saveTodayRecord() {
+      const record = {
+        date: currentDate,
+        day: currentDay,
+        timestamp: new Date().toISOString(),
+        absent_teachers: Array.from(absentTeachers),
+        assignments: slotAssignments
+      };
+
+      // Save to localStorage
+      try {
+        let history = JSON.parse(localStorage.getItem('substitution_history') || '[]');
+        history = history.filter(h => h.date !== currentDate);
+        history.unshift(record);
+        localStorage.setItem('substitution_history', JSON.stringify(history.slice(0, 50)));
+      } catch (e) {
+        console.error('Local storage save failed:', e);
+      }
+
+      // Try server save if available
+      fetch('/api/substitutions/save', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(record)
+      }).then(r => r.json()).then(res => {
+        console.log('Saved to server:', res);
+      }).catch(err => {
+        console.log('Server not responding (static mode): using localStorage');
+      });
+
+      const btn = document.getElementById('btn-save-record');
+      btn.innerHTML = '✅ Log Saved';
+      setTimeout(() => {
+        btn.innerHTML = `
+          <svg class="w-4 h-4 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7H5a2 2 0 00-2 2v9a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-3m-1 4l-3 3m0 0l-3-3m3 3V4"></path></svg>
+          Save Log
+        `;
+      }, 2000);
+
+      loadHistory();
+    }
+
+    async function loadHistory() {
+      const container = document.getElementById('saved-history-list');
+      container.innerHTML = '';
+
+      let history = [];
+      try {
+        const res = await fetch('/api/substitutions/history');
+        if (res.ok) {
+          const data = await res.json();
+          if (data && data.records && data.records.length > 0) {
+            history = data.records;
+          }
+        }
+      } catch (err) {
+        // Fallback to localStorage if offline
+      }
+
+      if (history.length === 0) {
+        try {
+          history = JSON.parse(localStorage.getItem('substitution_history') || '[]');
+        } catch (e) {}
+      }
+
+      if (history.length === 0) {
+        container.innerHTML = '<div class="text-center py-4 text-slate-400 font-semibold">No saved records found.</div>';
+        return;
+      }
+
+      history.forEach(item => {
+        const div = document.createElement('div');
+        div.className = 'p-2.5 rounded-xl border border-slate-100 bg-slate-50 hover:bg-slate-100 transition cursor-pointer flex items-center justify-between';
+        div.onclick = () => loadRecord(item);
+        div.innerHTML = `
+          <div>
+            <div class="font-bold text-slate-800">${item.date} (${item.day})</div>
+            <div class="text-[10px] text-slate-400">${item.absent_teachers.length} Absent • ${Object.keys(item.assignments || {}).length} Assigned</div>
+          </div>
+          <span class="text-xs text-indigo-600 font-extrabold hover:underline">Load</span>
+        `;
+        container.appendChild(div);
+      });
+    }
+
+    function loadRecord(record) {
+      currentDate = record.date;
+      currentDay = record.day;
+      document.getElementById('sub-date').value = currentDate;
+      document.getElementById('sub-day').value = currentDay;
+
+      absentTeachers = new Set(record.absent_teachers || []);
+      slotAssignments = Object.assign({}, record.assignments || {});
+
+      renderAbsentChips();
+      renderAffectedSlots();
+    }
+
+    function refreshHistory() {
+      loadHistory();
+    }
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', init);
+    } else {
+      init();
+    }
+  </script>
+</body>
+</html>
