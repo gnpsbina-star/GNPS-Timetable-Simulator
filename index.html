@@ -87,16 +87,17 @@
       width: calc((100% - 95px) / 8) !important;
     }
 
-    /* Professional A4 Landscape Print Styles (High Contrast & Jet Black) */
+    /* Professional A4 Landscape Print Styles (High Contrast & Jet Black, Fits Perfectly on 1 Page) */
     @media print {
       @page {
         size: A4 landscape;
-        margin: 6mm 7mm 6mm 7mm;
+        margin: 5mm 6mm 5mm 6mm;
       }
       *, *::before, *::after {
         -webkit-print-color-adjust: exact !important;
         print-color-adjust: exact !important;
         color-adjust: exact !important;
+        box-sizing: border-box !important;
       }
       html, body {
         background: #ffffff !important;
@@ -109,53 +110,52 @@
       }
       .no-print { display: none !important; }
       .print-only { display: block !important; }
-      .print-full {
+      .print-full, .overflow-x-auto, main, #tab-class, #tab-teacher {
         width: 100% !important;
         max-width: 100% !important;
+        min-width: 0 !important;
         margin: 0 !important;
         padding: 0 !important;
         box-shadow: none !important;
         border: none !important;
-      }
-      main {
-        max-width: 100% !important;
-        padding: 0 !important;
-        margin: 0 !important;
+        overflow: visible !important;
       }
 
-      /* Document Letterhead Top Header: Bold Jet Black */
+      /* Document Letterhead Top Header: Compact Jet Black */
       .print-only {
         color: #000000 !important;
-        border-bottom: 2.5px solid #000000 !important;
-        padding: 0 0 6px 0 !important;
-        margin: 0 0 6px 0 !important;
+        border-bottom: 2px solid #000000 !important;
+        padding: 0 0 4px 0 !important;
+        margin: 0 0 4px 0 !important;
       }
       .print-only * {
         color: #000000 !important;
         -webkit-text-fill-color: #000000 !important;
       }
       .print-only h1 {
-        font-size: 15pt !important;
+        font-size: 13.5pt !important;
         font-weight: 900 !important;
-        line-height: 1.2 !important;
-        letter-spacing: 0.5px !important;
+        line-height: 1.15 !important;
+        letter-spacing: 0.3px !important;
       }
       .print-only h2 {
-        font-size: 12pt !important;
+        font-size: 11pt !important;
         font-weight: 900 !important;
-        line-height: 1.2 !important;
+        line-height: 1.15 !important;
       }
       .print-only strong, .print-only span, .print-only div {
         color: #000000 !important;
         font-weight: 800 !important;
       }
 
-      /* Fixed Table Layout to Perfectly Fill A4 Landscape (No Overflow) */
-      table {
+      /* Fixed Table Layout: Zero Overflows, Fits 100% Width */
+      #class-table, #teacher-table, table, .range-print-page table {
         width: 100% !important;
         max-width: 100% !important;
+        min-width: 0 !important;
         table-layout: fixed !important;
         border-collapse: collapse !important;
+        border-spacing: 0 !important;
         border: 2px solid #000000 !important;
         page-break-inside: avoid !important;
         break-inside: avoid !important;
@@ -185,31 +185,48 @@
         break-after: auto !important;
       }
 
-      /* Crisp 1px Cell Borders & Center Alignment */
+      /* Cell Dimensions & Reset */
       th, td {
         border: 1px solid #000000 !important;
         color: #000000 !important;
         text-align: center !important;
         vertical-align: middle !important;
-        padding: 4px 2px !important;
+        padding: 3px 1.5px !important;
         overflow: hidden !important;
         word-wrap: break-word !important;
+        box-sizing: border-box !important;
       }
 
-      /* Column Width Proportions for A4 Landscape */
+      /* Reset any screen fixed heights / min-widths */
+      #class-table tbody td.tt-period-cell, 
+      #teacher-table tbody td.tt-period-cell,
+      #class-table tbody td:not(.tt-day-col),
+      #teacher-table tbody td:not(.tt-day-col),
+      tbody td, tbody th, thead th {
+        height: auto !important;
+        min-height: 0 !important;
+        max-height: none !important;
+      }
+
+      /* Exact Proportional Columns: Day (7.6%) + 9 Periods (10.266% each) = 100% */
       th.tt-th-day, td.tt-day-col, th:first-child, td:first-child {
-        width: 8.5% !important;
+        width: 7.6% !important;
+        min-width: 0 !important;
+        max-width: none !important;
         background-color: #f1f5f9 !important;
         color: #000000 !important;
         font-weight: 900 !important;
-        font-size: 11px !important;
+        font-size: 8.5pt !important;
         text-transform: uppercase !important;
+        letter-spacing: 0.3px !important;
       }
-      th.tt-th-period, th:not(:first-child) {
-        width: 10.16% !important;
+      th.tt-th-period, th:not(:first-child), td.tt-period-cell, td:not(:first-child) {
+        width: 10.266% !important;
+        min-width: 0 !important;
+        max-width: none !important;
       }
 
-      /* TABLE HEADER (PERIODS & TIMINGS): 100% SOLID JET BLACK */
+      /* Table Header */
       thead, thead tr {
         background-color: #f1f5f9 !important;
         border-bottom: 2px solid #000000 !important;
@@ -222,61 +239,77 @@
         border-color: #000000 !important;
         opacity: 1 !important;
       }
+
+      /* Remove text truncation and allow natural wrapping without cutoffs */
+      .tt-th-name, .tt-th-time, .tt-subject, .tt-teacher, .tt-class,
+      .truncate, [class*="truncate"], [class*="line-clamp"], [class*="line-clamp-2"] {
+        white-space: normal !important;
+        text-overflow: clip !important;
+        overflow: visible !important;
+        word-break: normal !important;
+        overflow-wrap: break-word !important;
+        -webkit-line-clamp: unset !important;
+        display: block !important;
+      }
+
       .tt-th-name {
-        font-size: 11px !important;
+        font-size: 7.5pt !important;
         font-weight: 900 !important;
         color: #000000 !important;
         text-transform: uppercase !important;
         line-height: 1.15 !important;
-        display: block !important;
       }
       .tt-th-time {
-        font-size: 9.5px !important;
+        font-size: 6.5pt !important;
         font-weight: 800 !important;
         color: #000000 !important;
-        margin-top: 1.5px !important;
-        line-height: 1.1 !important;
-        display: block !important;
+        margin-top: 1px !important;
+        line-height: 1.05 !important;
       }
 
-      /* Day column on the left */
+      /* Cell Content */
       tbody td.tt-day-col, tbody td:first-child {
         background-color: #f8fafc !important;
         color: #000000 !important;
         -webkit-text-fill-color: #000000 !important;
-        font-size: 12px !important;
+        font-size: 8.5pt !important;
         font-weight: 900 !important;
         border: 1px solid #000000 !important;
       }
-
-      /* Timetable Content Cells: High-Contrast Pure Black */
       tbody td, tbody td * {
         color: #000000 !important;
         -webkit-text-fill-color: #000000 !important;
       }
       .tt-subject {
-        font-size: 12.5px !important;
+        font-size: 8.5pt !important;
         font-weight: 900 !important;
         color: #000000 !important;
         text-transform: uppercase !important;
         line-height: 1.15 !important;
-        display: block !important;
       }
       .tt-teacher {
-        font-size: 11px !important;
+        font-size: 7.5pt !important;
         font-weight: 800 !important;
         color: #000000 !important;
-        margin-top: 2px !important;
+        margin-top: 1.5px !important;
         line-height: 1.15 !important;
-        display: block !important;
       }
       .tt-class {
-        font-size: 12.5px !important;
+        font-size: 8.5pt !important;
         font-weight: 900 !important;
         color: #000000 !important;
         text-transform: uppercase !important;
         line-height: 1.15 !important;
-        display: block !important;
+      }
+      .tt-cell-inner {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+        height: auto !important;
+        width: 100% !important;
+        overflow: visible !important;
+        padding: 1px 0 !important;
       }
     }
   </style>
@@ -1406,6 +1439,19 @@
           wrapper.style.background = '#ffffff';
           wrapper.style.color = '#000000';
           wrapper.style.fontFamily = 'Arial, sans-serif';
+          wrapper.innerHTML = `
+            <style>
+              table { width: 100% !important; table-layout: fixed !important; border-collapse: collapse !important; border-spacing: 0 !important; }
+              th.tt-th-day, td.tt-day-col { width: 7.6% !important; min-width: 0 !important; max-width: none !important; font-size: 10px !important; }
+              th.tt-th-period, td.tt-period-cell { width: 10.266% !important; min-width: 0 !important; max-width: none !important; }
+              .truncate, [class*="truncate"], [class*="line-clamp"], [class*="line-clamp-2"] { white-space: normal !important; text-overflow: clip !important; overflow: visible !important; }
+              .tt-th-name { font-size: 10px !important; font-weight: 900 !important; line-height: 1.15 !important; }
+              .tt-th-time { font-size: 8.5px !important; font-weight: 800 !important; }
+              .tt-subject { font-size: 10.5px !important; font-weight: 900 !important; line-height: 1.15 !important; }
+              .tt-teacher { font-size: 9.5px !important; font-weight: 800 !important; }
+              .tt-cell-inner { height: auto !important; width: 100% !important; overflow: visible !important; }
+            </style>
+          `;
 
           slice.forEach((c, idx) => {
             const pageDiv = document.createElement('div');

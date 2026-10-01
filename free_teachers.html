@@ -101,15 +101,19 @@
 
       /* Column Width Proportions for A4 Landscape */
       th.tt-th-day, td.tt-day-col, th:first-child, td:first-child {
-        width: 8.5% !important;
+        width: 7.6% !important;
+        min-width: 0 !important;
+        max-width: none !important;
         background-color: #f1f5f9 !important;
         color: #000000 !important;
         font-weight: 900 !important;
-        font-size: 11px !important;
+        font-size: 8.5pt !important;
         text-transform: uppercase !important;
       }
-      th.tt-th-period, th:not(:first-child) {
-        width: 11.43% !important;
+      th.tt-th-period, th:not(:first-child), td:not(:first-child) {
+        width: 10.266% !important;
+        min-width: 0 !important;
+        max-width: none !important;
       }
 
       /* TABLE HEADER (PERIODS & TIMINGS): 100% SOLID JET BLACK */
