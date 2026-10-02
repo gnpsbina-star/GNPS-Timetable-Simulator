@@ -139,8 +139,16 @@ class TimetableRequestHandler(http.server.SimpleHTTPRequestHandler):
                     except Exception:
                         pass
 
+                # Renamed teachers ({old_name: new_name}) keep their timetable instead of being purged
+                renames = data.pop('_teacher_renames', None) or {}
                 new_teachers = {t.get('name', '').strip() for t in data.get('teachers', []) if t.get('name')}
                 deleted_teachers = old_teachers - new_teachers
+                renamed_teachers = {
+                    o.strip(): n.strip() for o, n in renames.items()
+                    if isinstance(o, str) and isinstance(n, str)
+                    and o.strip() in deleted_teachers and n.strip() in new_teachers
+                }
+                deleted_teachers -= set(renamed_teachers)
                 for del_t in deleted_teachers:
                     try:
                         from purge_faculty import purge_faculty
@@ -151,6 +159,16 @@ class TimetableRequestHandler(http.server.SimpleHTTPRequestHandler):
 
                 with open(config_path, 'w', encoding='utf-8') as f:
                     json.dump(data, f, indent=2, ensure_ascii=False)
+
+                if renamed_teachers:
+                    from transfer_faculty import transfer_faculty
+                    for old_name, new_name in renamed_teachers.items():
+                        print(f"⚡ Moving timetable of renamed faculty: {old_name} -> {new_name}", flush=True)
+                        transfer_faculty(old_name, new_name, base_dir=BASE_DIR, force=True, rebuild=False)
+                    from transfer_faculty import rebuild_outputs
+                    rebuild_outputs(BASE_DIR)
+                    with open(config_path, 'r', encoding='utf-8') as f:
+                        data = json.load(f)
 
                 # Sync school_timings and metadata into timetable.json
                 master_path = os.path.join(BASE_DIR, 'timetable.json')
@@ -389,6 +407,24 @@ class TimetableRequestHandler(http.server.SimpleHTTPRequestHandler):
             except Exception as e:
                 traceback.print_exc()
                 self._send_json({'success': False, 'error': str(e)}, status=500)
+        elif path == '/api/transfer-faculty':
+            try:
+                data = self._read_json_body()
+                from transfer_faculty import transfer_faculty, TransferError
+                try:
+                    summary = transfer_faculty(
+                        data.get('from', ''), data.get('to', ''),
+                        base_dir=BASE_DIR, force=bool(data.get('force')),
+                    )
+                except TransferError as te:
+                    status = 409 if te.clashes else 400
+                    self._send_json({'success': False, 'error': str(te), 'clashes': te.clashes}, status=status)
+                    return
+                self._send_json({'success': True, **summary})
+            except Exception as e:
+                traceback.print_exc()
+                self._send_json({'success': False, 'error': str(e)}, status=500)
+
         elif path == '/api/purge-faculty':
             try:
                 data = self._read_json_body()

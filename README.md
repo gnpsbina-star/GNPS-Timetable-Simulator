@@ -2,7 +2,7 @@
 **Gomti Nandan Public School**
 
 [![Python 3.9+](https://img.shields.io/badge/Python-3.9+-3776AB?style=flat&logo=python&logoColor=white)](https://python.org)
-[![Tests Passing](https://img.shields.io/badge/Tests-105%20Passed-success?style=flat&logo=pytest)](file:///Users/vikas/Desktop/AG%20Projects%20TT/tests)
+[![Tests Passing](https://img.shields.io/badge/Tests-114%20Passed-success?style=flat&logo=pytest)](file:///Users/vikas/Desktop/AG%20Projects%20TT/tests)
 [![Deployment](https://img.shields.io/badge/Deployment-Vercel%20%2B%20GitHub-black?style=flat&logo=vercel)](https://vercel.com)
 [![Platform](https://img.shields.io/badge/Architecture-Vanilla%20JS%20%7C%20Tailwind%20%7C%20SQLite-indigo)](https://tailwindcss.com)
 
@@ -35,6 +35,7 @@ A high-performance, zero-external-build timetable scheduling, constraint-satisfa
 - **Faculty Quota Manager**: Weekly teaching limits, max daily periods, and Class Teacher assignments.
 - **Subject & Room Constraints**: Dedicated lab requirements (Physics, Chemistry, Biology, Computer Labs), sports ground rules, and activity hall allocations.
 - **Cascade Deletion Engine**: Removing a faculty member automatically purges references across all configurations, database tables, and operational rosters.
+- **Timetable Transfer**: The **Transfer** button on a teacher row hands that teacher's whole timetable (every period, lesson allocation and class-teacher role) to another teacher in the same slots, leaving the original teacher free. It refuses if the receiving teacher is already busy in any of those slots, unless you confirm. Renaming a teacher via **Edit** also keeps their periods under the new name.
 
 ### 5. 🧩 CSP Solver & Generation Studio (`creator.html`)
 - **Automated Scheduling Engine**: Powered by Constraint Satisfaction Problem (CSP) algorithms enforcing hard constraints (0 teacher clashes, 0 room conflicts, max 1 double lab/day) and soft preferences.
@@ -147,6 +148,7 @@ This script automatically:
 | Script | Command | Purpose |
 | :--- | :--- | :--- |
 | **Cascade Faculty Purge** | `python3 purge_faculty.py "<Faculty Name>"` | Completely unassigns and deletes a faculty member across all JSONs, database tables, and rosters. |
+| **Timetable Transfer** | `python3 transfer_faculty.py "<From>" "<To>" [--force]` | Moves every period, lesson allocation and class-teacher role from one teacher to another (same slots) and rebuilds all outputs. Add the new teacher in Prerequisites first. |
 | **Master Data Sync** | `python3 sync_master_data.py` | Synchronizes SQLite entries and config into compiled JSON rosters and CSV exports. |
 | **Clash Verifier** | `python3 generate_timetable.py --verify` | Audits the current master timetable for any duplicate teacher assignments or room over-allocations. |
 | **Excel Exporter** | `python3 -c "import sync_master_data"` | Refreshes `timetable_entries.csv` and class matrices. |
@@ -157,7 +159,8 @@ This script automatically:
 
 When running `server.py`, the following REST endpoints are available:
 
-- `POST /api/save-config`: Atomically writes updated configuration to `timetable_config.json`, detects deleted faculty, and triggers auto-purge.
+- `POST /api/save-config`: Atomically writes updated configuration to `timetable_config.json`, detects deleted faculty, and triggers auto-purge. Teachers renamed in Prerequisites are sent in `_teacher_renames` and have their periods moved to the new name instead of purged.
+- `POST /api/transfer-faculty`: Accepts `{"from": "Name", "to": "Name", "force": false}` and moves the whole timetable of `from` to `to`. Returns `409` with the list of clashing slots if `to` is already busy and `force` is not set.
 - `POST /api/purge-faculty`: Accepts `{"faculty_name": "Name"}` and executes a multi-layer cascade unassignment across databases and outputs.
 - `POST /api/run-audit`: Runs a feasibility check on current rules and quotas without modifying the live schedule.
 - `POST /api/run-generate`: Executes the CSP solver to build a fresh timetable and updates `timetable.sqlite` and JSON files.
@@ -173,7 +176,7 @@ The codebase includes an extensive automated test suite covering CSP constraints
 python3 -m unittest discover -s tests
 ```
 
-**Status**: 105 tests passing (0 failures, 0 errors).
+**Status**: 114 tests passing (0 failures, 0 errors).
 
 ---
 
@@ -190,6 +193,7 @@ python3 -m unittest discover -s tests
 ├── login.html                          # Google Sign-In & authentication
 ├── auth.js                             # Client-side session and auth manager
 ├── nav.js                              # Shared responsive navigation header
+├── transfer_faculty.py                 # Hand a teacher's whole timetable to another teacher
 ├── purge_faculty.py                    # Multi-layer cascade faculty deletion tool
 ├── sync_master_data.py                 # SQLite-to-JSON data synchronizer
 ├── generate_timetable.py               # CSP timetable generator CLI
@@ -207,7 +211,7 @@ python3 -m unittest discover -s tests
 │   ├── generator.py                    # CSP scheduling logic
 │   ├── substitution.py                 # Proxy ranking algorithm
 │   └── excel_exporter.py               # Excel formatting utility
-└── tests/                              # Unit & integration test suite (105 tests)
+└── tests/                              # Unit & integration test suite (114 tests)
 ```
 
 ---
