@@ -186,7 +186,7 @@ def build_class_worksheet_xml(class_data: Dict[str, Any], academic_year: str = "
     
     # Row 1: School Title Banner
     rows_xml.append(f"""    <row r="1" ht="32" customHeight="1">
-      <c r="A1" s="1" t="inlineStr"><is><t>GURU NANAK PUBLIC SCHOOL, BINA</t></is></c>
+      <c r="A1" s="1" t="inlineStr"><is><t>GOMTI NANDAN PUBLIC SCHOOL, BINA</t></is></c>
     </row>""")
     
     # Row 2: Class & Session Subtitle
@@ -284,7 +284,7 @@ def build_summary_worksheet_xml(classes_subset: List[Dict[str, Any]], academic_y
     
     # Title
     rows_xml.append("""    <row r="1" ht="30" customHeight="1">
-      <c r="A1" s="1" t="inlineStr"><is><t>GURU NANAK PUBLIC SCHOOL, BINA - TIMETABLE RANGE SUMMARY</t></is></c>
+      <c r="A1" s="1" t="inlineStr"><is><t>GOMTI NANDAN PUBLIC SCHOOL, BINA - TIMETABLE RANGE SUMMARY</t></is></c>
     </row>""")
     
     rows_xml.append(f"""    <row r="2" ht="24" customHeight="1">
@@ -371,7 +371,7 @@ def build_stacked_worksheet_xml(classes_subset: List[Dict[str, Any]], academic_y
     merges = []
 
     # Row 1: Master School Title Banner
-    school_title = f"GURU NANAK PUBLIC SCHOOL, BINA — MASTER TIMETABLE ({academic_year})"
+    school_title = f"GOMTI NANDAN PUBLIC SCHOOL, BINA — MASTER TIMETABLE ({academic_year})"
     rows_xml.append(f"""    <row r="1" ht="32" customHeight="1">
       <c r="A1" s="1" t="inlineStr"><is><t>{escape(school_title)}</t></is></c>
     </row>""")

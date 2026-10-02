@@ -1,12 +1,12 @@
 # GNPS Timetable Simulator (2026-27)
-**Guru Nanak Public School**
+**Gomti Nandan Public School**
 
 [![Python 3.9+](https://img.shields.io/badge/Python-3.9+-3776AB?style=flat&logo=python&logoColor=white)](https://python.org)
 [![Tests Passing](https://img.shields.io/badge/Tests-105%20Passed-success?style=flat&logo=pytest)](file:///Users/vikas/Desktop/AG%20Projects%20TT/tests)
 [![Deployment](https://img.shields.io/badge/Deployment-Vercel%20%2B%20GitHub-black?style=flat&logo=vercel)](https://vercel.com)
 [![Platform](https://img.shields.io/badge/Architecture-Vanilla%20JS%20%7C%20Tailwind%20%7C%20SQLite-indigo)](https://tailwindcss.com)
 
-A high-performance, zero-external-build timetable scheduling, constraint-satisfaction solver, and daily substitution management platform built specifically for the academic operations of **Guru Nanak Public School** for the 2026-27 academic session.
+A high-performance, zero-external-build timetable scheduling, constraint-satisfaction solver, and daily substitution management platform built specifically for the academic operations of **Gomti Nandan Public School** for the 2026-27 academic session.
 
 ---
 
@@ -214,5 +214,5 @@ python3 -m unittest discover -s tests
 
 ## 🏫 Attribution & License
 
-Designed and maintained for **Guru Nanak Public School (2026-27)**.  
+Designed and maintained for **Gomti Nandan Public School (2026-27)**.  
 All school schedules, period layouts, and faculty structures are configured according to GNPS institutional guidelines.
