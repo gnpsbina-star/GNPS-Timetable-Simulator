@@ -392,6 +392,10 @@
           <svg class="w-3.5 h-3.5 text-teal-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
           Prerequisites
         </a>
+        <span id="pill-custom-subjects" class="hidden px-2.5 py-1.5 bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 rounded-xl text-[11px] font-black items-center gap-1.5 shadow-2xs" title="Custom subject names synced from Prerequisites Master Catalog">
+          <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+          <span>Custom Subjects Active</span>
+        </span>
         <a href="creator.html" class="px-3 py-2 bg-gradient-to-r from-amber-500 to-indigo-600 hover:from-amber-400 hover:to-indigo-500 text-white rounded-xl text-xs font-black transition flex items-center gap-1.5 shadow-sm">
           <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path></svg>
           Creator Studio
@@ -1076,7 +1080,7 @@
       return 'senior';
     }
 
-    const CANONICAL_SUBJECT_ORDER = [
+    const BASE_CANONICAL_SUBJECT_ORDER = [
       // Core Languages
       'Eng',
       'Hindi',
@@ -1115,6 +1119,129 @@
       // Library & Activities
       'Library'
     ];
+
+    let CANONICAL_SUBJECT_ORDER = [...BASE_CANONICAL_SUBJECT_ORDER];
+
+    function mapSubjectName(subj, renames) {
+      if (!subj || typeof subj !== 'string') return subj;
+      const trimmed = subj.trim();
+      if (renames[trimmed]) return renames[trimmed];
+      if (trimmed.includes(' / ')) {
+        const parts = trimmed.split(' / ').map(p => renames[p.trim()] || p.trim());
+        return parts.join(' / ');
+      }
+      if (trimmed.includes('/')) {
+        const parts = trimmed.split('/').map(p => renames[p.trim()] || p.trim());
+        return parts.join('/');
+      }
+      return subj;
+    }
+
+    function applyLocalSubjectRenames() {
+      let renames = {};
+      try {
+        const raw = localStorage.getItem('gnps_subject_renames');
+        if (raw) renames = JSON.parse(raw) || {};
+      } catch (e) {
+        console.warn("Could not parse gnps_subject_renames:", e);
+      }
+
+      const renameKeys = Object.keys(renames);
+      const pill = document.getElementById('pill-custom-subjects');
+      if (pill) {
+        if (renameKeys.length > 0) {
+          pill.classList.remove('hidden');
+          pill.classList.add('flex');
+          pill.title = `${renameKeys.length} Custom Subject(s) Synced from Prerequisites Studio:\n${renameKeys.map(k => `${k} → ${renames[k]}`).join('\n')}`;
+        } else {
+          pill.classList.add('hidden');
+          pill.classList.remove('flex');
+        }
+      }
+
+      if (renameKeys.length === 0) {
+        CANONICAL_SUBJECT_ORDER = [...BASE_CANONICAL_SUBJECT_ORDER];
+        return 0;
+      }
+
+      let renameCount = 0;
+
+      // 1. Update CANONICAL_SUBJECT_ORDER
+      CANONICAL_SUBJECT_ORDER = BASE_CANONICAL_SUBJECT_ORDER.map(s => mapSubjectName(s, renames));
+      renameKeys.forEach(oldName => {
+        const newName = renames[oldName];
+        if (!CANONICAL_SUBJECT_ORDER.includes(newName)) {
+          CANONICAL_SUBJECT_ORDER.push(newName);
+        }
+      });
+
+      // 2. Update TIMETABLE_DATA.classes schedule periods
+      if (TIMETABLE_DATA && Array.isArray(TIMETABLE_DATA.classes)) {
+        TIMETABLE_DATA.classes.forEach(c => {
+          if (!c.schedule) return;
+          Object.values(c.schedule).forEach(dayPeriods => {
+            if (!Array.isArray(dayPeriods)) return;
+            dayPeriods.forEach(p => {
+              if (p && p.subject) {
+                const mapped = mapSubjectName(p.subject, renames);
+                if (mapped !== p.subject) {
+                  p.subject = mapped;
+                  if (p.raw_value && p.raw_value.startsWith(p.subject + '_')) {
+                    p.raw_value = mapped + '_' + p.raw_value.slice(p.subject.length + 1);
+                  }
+                  renameCount++;
+                }
+              }
+            });
+          });
+        });
+      }
+
+      // 3. Update TEACHER_DATA
+      if (TEACHER_DATA && typeof TEACHER_DATA === 'object') {
+        Object.values(TEACHER_DATA).forEach(t => {
+          if (Array.isArray(t.subjects)) {
+            t.subjects = Array.from(new Set(t.subjects.map(s => mapSubjectName(s, renames))));
+          }
+          if (t.weekly_schedule) {
+            Object.values(t.weekly_schedule).forEach(dayPeriods => {
+              if (!Array.isArray(dayPeriods)) return;
+              dayPeriods.forEach(p => {
+                if (p && p.subject) {
+                  p.subject = mapSubjectName(p.subject, renames);
+                }
+              });
+            });
+          }
+        });
+      }
+
+      // 4. Update FREE_DATA roster if present
+      if (FREE_DATA && FREE_DATA.roster) {
+        Object.values(FREE_DATA.roster).forEach(t => {
+          if (t.weekly_schedule) {
+            Object.values(t.weekly_schedule).forEach(dayPeriods => {
+              if (!Array.isArray(dayPeriods)) return;
+              dayPeriods.forEach(p => {
+                if (p && p.subject) {
+                  p.subject = mapSubjectName(p.subject, renames);
+                }
+              });
+            });
+          }
+        });
+      }
+
+      // 5. Update summary subjects count if changed
+      if (TIMETABLE_DATA && TIMETABLE_DATA.subjects && Array.isArray(TIMETABLE_DATA.subjects)) {
+        TIMETABLE_DATA.subjects = Array.from(new Set(TIMETABLE_DATA.subjects.map(s => {
+          const sName = typeof s === 'string' ? s : s.name;
+          return mapSubjectName(sName, renames);
+        })));
+      }
+
+      return renameCount;
+    }
 
     function getSubjectSortIndex(subjName) {
       if (!subjName) return 999;
@@ -1240,6 +1367,9 @@
         console.log('Using inlined fallback data:', e);
       }
 
+      // Synchronize custom subject names from Prerequisites Master Catalog (localStorage)
+      applyLocalSubjectRenames();
+
       populateClassSelect('ALL');
 
       const teacherSelect = document.getElementById('teacher-select');
@@ -1277,6 +1407,17 @@
         } else if (e.key === 'ArrowRight') {
           if (activeTabClass) navigateClass(1);
           else if (activeTabTeacher) navigateTeacher(1);
+        }
+      });
+
+      window.addEventListener('storage', (e) => {
+        if (e.key === 'gnps_subject_renames' || e.key === 'gnps_custom_subjects') {
+          console.log('🔄 Detected subject catalog change from Prerequisites Studio. Re-syncing timetable...');
+          applyLocalSubjectRenames();
+          renderClassTimetable();
+          renderTeacherTimetable();
+          if (currentWorkloadSubView === 'teachers') renderWorkloadTable();
+          else renderClassWorkloadTable();
         }
       });
 

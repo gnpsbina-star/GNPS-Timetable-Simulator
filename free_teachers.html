@@ -452,6 +452,65 @@
       return false;
     }
 
+    function mapSubjectName(subj, renames) {
+      if (!subj || typeof subj !== 'string') return subj;
+      const trimmed = subj.trim();
+      if (renames[trimmed]) return renames[trimmed];
+      if (trimmed.includes(' / ')) {
+        const parts = trimmed.split(' / ').map(p => renames[p.trim()] || p.trim());
+        return parts.join(' / ');
+      }
+      if (trimmed.includes('/')) {
+        const parts = trimmed.split('/').map(p => renames[p.trim()] || p.trim());
+        return parts.join('/');
+      }
+      return subj;
+    }
+
+    function applyLocalSubjectRenames() {
+      let renames = {};
+      try {
+        const raw = localStorage.getItem('gnps_subject_renames');
+        if (raw) renames = JSON.parse(raw) || {};
+      } catch (e) {
+        console.warn("Could not parse gnps_subject_renames:", e);
+      }
+      if (Object.keys(renames).length === 0) return;
+
+      if (TEACHER_DATA && typeof TEACHER_DATA === 'object') {
+        Object.values(TEACHER_DATA).forEach(t => {
+          if (Array.isArray(t.subjects)) {
+            t.subjects = Array.from(new Set(t.subjects.map(s => mapSubjectName(s, renames))));
+          }
+          if (t.weekly_schedule) {
+            Object.values(t.weekly_schedule).forEach(dayPeriods => {
+              if (!Array.isArray(dayPeriods)) return;
+              dayPeriods.forEach(p => {
+                if (p && p.subject) {
+                  p.subject = mapSubjectName(p.subject, renames);
+                }
+              });
+            });
+          }
+        });
+      }
+
+      if (FREE_DATA && FREE_DATA.roster) {
+        Object.values(FREE_DATA.roster).forEach(t => {
+          if (t.weekly_schedule) {
+            Object.values(t.weekly_schedule).forEach(dayPeriods => {
+              if (!Array.isArray(dayPeriods)) return;
+              dayPeriods.forEach(p => {
+                if (p && p.subject) {
+                  p.subject = mapSubjectName(p.subject, renames);
+                }
+              });
+            });
+          }
+        });
+      }
+    }
+
     async function init() {
       const cacheBuster = '?t=' + Date.now();
       try {
@@ -464,6 +523,8 @@
       } catch (e) {
         console.warn('Using embedded dataset fallback:', e);
       }
+
+      applyLocalSubjectRenames();
 
       if (FREE_DATA && FREE_DATA.periods && FREE_DATA.periods.length > 0) {
         periodHeaders = FREE_DATA.periods.map(p => ({
@@ -498,6 +559,18 @@
       } else {
         renderTeacherFreeTimetable();
       }
+
+      window.addEventListener('storage', (e) => {
+        if (e.key === 'gnps_subject_renames' || e.key === 'gnps_custom_subjects') {
+          console.log('🔄 Detected subject catalog change from Prerequisites Studio. Re-syncing free teachers view...');
+          applyLocalSubjectRenames();
+          if (currentMode === 'teacher') {
+            renderTeacherFreeTimetable();
+          } else {
+            renderSlotFreeTeachers();
+          }
+        }
+      });
     }
 
     function openTeacherFreeTimetable(teacherName) {

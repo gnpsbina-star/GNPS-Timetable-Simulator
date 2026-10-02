@@ -652,6 +652,79 @@
       }
     }
 
+    function mapSubjectName(subj, renames) {
+      if (!subj || typeof subj !== 'string') return subj;
+      const trimmed = subj.trim();
+      if (renames[trimmed]) return renames[trimmed];
+      if (trimmed.includes(' / ')) {
+        const parts = trimmed.split(' / ').map(p => renames[p.trim()] || p.trim());
+        return parts.join(' / ');
+      }
+      if (trimmed.includes('/')) {
+        const parts = trimmed.split('/').map(p => renames[p.trim()] || p.trim());
+        return parts.join('/');
+      }
+      return subj;
+    }
+
+    function applyLocalSubjectRenames() {
+      let renames = {};
+      try {
+        const raw = localStorage.getItem('gnps_subject_renames');
+        if (raw) renames = JSON.parse(raw) || {};
+      } catch (e) {
+        console.warn("Could not parse gnps_subject_renames:", e);
+      }
+      if (Object.keys(renames).length === 0) return;
+
+      if (TEACHER_DATA && typeof TEACHER_DATA === 'object') {
+        Object.values(TEACHER_DATA).forEach(t => {
+          if (Array.isArray(t.subjects)) {
+            t.subjects = Array.from(new Set(t.subjects.map(s => mapSubjectName(s, renames))));
+          }
+          if (t.weekly_schedule) {
+            Object.values(t.weekly_schedule).forEach(dayPeriods => {
+              if (!Array.isArray(dayPeriods)) return;
+              dayPeriods.forEach(p => {
+                if (p && p.subject) {
+                  p.subject = mapSubjectName(p.subject, renames);
+                }
+              });
+            });
+          }
+        });
+      }
+
+      if (TIMETABLE_DATA && Array.isArray(TIMETABLE_DATA.classes)) {
+        TIMETABLE_DATA.classes.forEach(c => {
+          if (!c.schedule) return;
+          Object.values(c.schedule).forEach(dayPeriods => {
+            if (!Array.isArray(dayPeriods)) return;
+            dayPeriods.forEach(p => {
+              if (p && p.subject) {
+                p.subject = mapSubjectName(p.subject, renames);
+              }
+            });
+          });
+        });
+      }
+
+      if (FREE_DATA && FREE_DATA.roster) {
+        Object.values(FREE_DATA.roster).forEach(t => {
+          if (t.weekly_schedule) {
+            Object.values(t.weekly_schedule).forEach(dayPeriods => {
+              if (!Array.isArray(dayPeriods)) return;
+              dayPeriods.forEach(p => {
+                if (p && p.subject) {
+                  p.subject = mapSubjectName(p.subject, renames);
+                }
+              });
+            });
+          }
+        });
+      }
+    }
+
     function isCandidateBlackout(name, day, periodIndex, periodName) {
       if (!name || teacherBlackoutSlots.size === 0) return false;
       const clean = (name || '').trim().toLowerCase();
@@ -853,6 +926,8 @@
           buildWingIndexes();
         }
 
+        applyLocalSubjectRenames();
+
         if (urlAbsent && TEACHER_DATA[urlAbsent]) {
           absentTeachers.add(urlAbsent);
         }
@@ -860,6 +935,16 @@
         renderAbsentChips();
         renderAffectedSlots();
         loadHistory();
+
+        window.addEventListener('storage', (e) => {
+          if (e.key === 'gnps_subject_renames' || e.key === 'gnps_custom_subjects') {
+            console.log('🔄 Detected subject catalog change from Prerequisites Studio. Re-syncing substitution data...');
+            applyLocalSubjectRenames();
+            populateTeacherPicker();
+            renderAbsentChips();
+            renderAffectedSlots();
+          }
+        });
       } catch (err) {
         console.error('Failed to load timetable data:', err);
         const banner = document.getElementById('offline-warning-banner');

@@ -456,6 +456,10 @@
               <option value="activity">Co-Curricular / Sports / Arts</option>
               <option value="language">Languages</option>
             </select>
+            <button onclick="resetSubjectsToDefaults()" title="Reset subject names & catalog to original default dataset" class="px-2.5 py-2 rounded-xl bg-slate-100 hover:bg-rose-50 text-slate-600 hover:text-rose-700 font-bold text-xs flex items-center gap-1 border border-slate-200 transition">
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path></svg>
+              <span>Reset</span>
+            </button>
             <button onclick="openAddSubjectModal()" class="px-3.5 py-2 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white font-bold text-xs flex items-center gap-1.5 shadow-sm transition">
               <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path></svg>
               + Add New Subject
@@ -1802,6 +1806,104 @@
       }
     }
 
+    function recordSubjectRename(oldName, newName) {
+      if (!oldName || !newName || oldName === newName) return;
+      try {
+        let renames = {};
+        const raw = localStorage.getItem('gnps_subject_renames');
+        if (raw) renames = JSON.parse(raw) || {};
+
+        // If any previous rename mapped to oldName, update target to newName
+        Object.keys(renames).forEach(k => {
+          if (renames[k] === oldName) renames[k] = newName;
+        });
+
+        renames[oldName] = newName;
+        localStorage.setItem('gnps_subject_renames', JSON.stringify(renames));
+        console.log(`Recorded subject rename: "${oldName}" -> "${newName}"`);
+      } catch (e) {
+        console.warn("Failed recording subject rename to localStorage:", e);
+      }
+    }
+
+    function persistSubjectsToLocalStorage() {
+      try {
+        if (CONFIG && CONFIG.subjects) {
+          localStorage.setItem('gnps_custom_subjects', JSON.stringify(CONFIG.subjects));
+        }
+        if (CONFIG) {
+          localStorage.setItem('gnps_timetable_config', JSON.stringify(CONFIG));
+        }
+      } catch (e) {
+        console.warn("Failed persisting subjects to localStorage:", e);
+      }
+    }
+
+    function applyLocalSubjectRegistry(cfg) {
+      if (!cfg) return;
+      try {
+        const rawCustom = localStorage.getItem('gnps_custom_subjects');
+        const rawRenames = localStorage.getItem('gnps_subject_renames');
+        const renames = rawRenames ? JSON.parse(rawRenames) : {};
+
+        // 1. If custom subjects list is in localStorage, restore it
+        if (rawCustom) {
+          const customSubjects = JSON.parse(rawCustom);
+          if (Array.isArray(customSubjects) && customSubjects.length > 0) {
+            cfg.subjects = customSubjects;
+            console.log(`Restored ${customSubjects.length} subjects from custom localStorage catalog.`);
+          }
+        } else if (Object.keys(renames).length > 0) {
+          (cfg.subjects || []).forEach(sub => {
+            if (renames[sub.name]) {
+              sub.name = renames[sub.name];
+            }
+          });
+        }
+
+        // 2. Cascade renames into events
+        if (Object.keys(renames).length > 0) {
+          let eventRenames = 0;
+          (cfg.events || []).forEach(ev => {
+            if (renames[ev.subject]) {
+              ev.subject = renames[ev.subject];
+              eventRenames++;
+            }
+          });
+          if (eventRenames > 0) {
+            console.log(`Cascaded subject renames to ${eventRenames} curriculum events.`);
+          }
+        }
+      } catch (e) {
+        console.warn("Error applying local subject registry:", e);
+      }
+    }
+
+    async function resetSubjectsToDefaults() {
+      if (!confirm("Reset Subjects Catalog to original factory defaults? Any custom subject names or added subjects will be restored to defaults.")) return;
+      try {
+        localStorage.removeItem('gnps_custom_subjects');
+        localStorage.removeItem('gnps_subject_renames');
+        const res = await fetch('timetable_config.json?t=' + Date.now(), { cache: 'no-store' });
+        if (res.ok) {
+          const fresh = await res.json();
+          CONFIG.subjects = fresh.subjects || [];
+          CONFIG.events = fresh.events || [];
+        } else {
+          populateDefaultSubjectsIfEmpty();
+        }
+        localStorage.setItem('gnps_timetable_config', JSON.stringify(CONFIG));
+        renderSubjectsTable();
+        renderClassesTable();
+        renderPayloadsTable();
+        updateTopMetrics();
+        showToast("Subjects Catalog reset to original defaults!");
+      } catch (e) {
+        console.error("Error resetting subjects:", e);
+        showToast("Failed to reset subjects: " + e.message, true);
+      }
+    }
+
     function applyLocalBlackoutRegistry(cfg) {
       if (!cfg || !cfg.teachers) return;
       try {
@@ -1876,6 +1978,9 @@
       } catch (err) {
         console.warn("Could not load timetable_teachers.json, using defaults", err);
       }
+
+      // Synchronize custom subjects and subject renames from local storage to guarantee persistence across refresh
+      applyLocalSubjectRegistry(CONFIG);
 
       // Synchronize user blackout slots from local storage to guarantee persistence across refresh
       applyLocalBlackoutRegistry(CONFIG);
@@ -3012,6 +3117,8 @@
                 ev.subject = name;
               }
             });
+            // Record rename rule so it reflects across Class & Teacher Timetables
+            recordSubjectRename(oldName, name);
           }
         }
       } else {
@@ -3027,10 +3134,15 @@
         });
       }
 
+      // Persist to localStorage immediately (survives refresh and syncs to timetable)
+      persistSubjectsToLocalStorage();
+
       closeModal('modal-subject');
       renderSubjectsTable();
+      renderClassesTable();
+      renderPayloadsTable();
       updateTopMetrics();
-      showToast(`Subject "${name}" saved to Master Catalog!`);
+      showToast(`Subject "${name}" saved & synced across portal!`);
     }
 
     function deleteSubject(subId) {
@@ -3048,6 +3160,7 @@
       }
 
       CONFIG.subjects = CONFIG.subjects.filter(s => s.id !== subId);
+      persistSubjectsToLocalStorage();
       renderSubjectsTable();
       renderClassesTable();
       renderPayloadsTable();
