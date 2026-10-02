@@ -94,7 +94,7 @@ timetable.json  timetable_teachers.json  free_teachers.json
 - **Backend / Server**: Python 3 standard library (`http.server`, `socketserver`, `sqlite3`, `json`, `csv`). No external framework dependencies required.
 - **Database**: SQLite3 (`timetable.sqlite`).
 - **Scheduling Engine**: Custom Python CSP / Constraint Satisfaction Engine (`engine/`).
-- **Cloud Hosting & CI/CD**: Vercel (Frontend static assets) + GitHub (`gnpsbina-star/gnps`).
+- **Cloud Hosting & CI/CD**: Vercel (Frontend static assets) + GitHub (`gnpsbina-star/GNPS-Timetable-Simulator`).
 
 ---
 
@@ -127,7 +127,7 @@ The server will start on:
 
 ## 🌐 Online Deployment (Vercel & GitHub)
 
-- **Repository**: [github.com/gnpsbina-star/gnps](https://github.com/gnpsbina-star/gnps)
+- **Repository**: [github.com/gnpsbina-star/GNPS-Timetable-Simulator](https://github.com/gnpsbina-star/GNPS-Timetable-Simulator)
 - **Live Deployment**: Connected to **Vercel** for automated continuous deployment.
 
 ### 1-Click Online Sync Script

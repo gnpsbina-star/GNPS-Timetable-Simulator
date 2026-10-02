@@ -67,7 +67,7 @@ A key architectural principle of this system is that **it requires no external p
    - Runs on the administrator's Mac via `python3 server.py`.
    - Has full write access to the filesystem, executes the CSP solver, performs SQLite mutations, triggers cascade faculty purges, and rebuilds JSON caches.
 2. **Cloud Public/Faculty Mirror (`https://gnps.vercel.app`)**:
-   - Hosted on Vercel and connected to GitHub repository `gnpsbina-star/gnps`.
+   - Hosted on Vercel and connected to GitHub repository `gnpsbina-star/GNPS-Timetable-Simulator`.
    - Serves static pre-compiled JSONs and HTML pages to teachers, students, and parents with CDN performance and 99.99% availability.
    - Pushing updates takes one click via `./update_online.sh`.
 
@@ -211,6 +211,6 @@ python3 -m unittest discover -s tests
 | **Working Days** | 6 days (Monday through Saturday) |
 | **Hard Timetable Clashes** | **0** (Mathematically verified) |
 | **External pip / npm dependencies** | **0** (Pure Python 3 standard library + CDN CSS) |
-| **Primary Code Repository** | `github.com/gnpsbina-star/gnps` |
+| **Primary Code Repository** | `github.com/gnpsbina-star/GNPS-Timetable-Simulator` |
 | **Live Web URL** | `https://gnps.vercel.app` |
 | **Local Web URL** | `http://localhost:8080` |
