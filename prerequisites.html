@@ -1395,6 +1395,38 @@
   </div>
 
   <!-- ======================================================== -->
+  <!-- MODAL: TRANSFER TIMETABLE TO ANOTHER TEACHER -->
+  <!-- ======================================================== -->
+  <div id="modal-transfer" class="fixed inset-0 z-50 bg-slate-900/50 backdrop-blur-sm hidden items-center justify-center p-4">
+    <div class="bg-white rounded-2xl max-w-lg w-full p-6 shadow-2xl space-y-4 border border-slate-200 animate-in fade-in zoom-in duration-150">
+      <div class="flex items-center justify-between pb-2 border-b border-slate-100">
+        <div>
+          <h3 class="text-base font-extrabold text-indigo-950">Transfer Timetable</h3>
+          <p class="text-xs text-slate-500 font-medium">Hand over every period, lesson and class-teacher role to another teacher in the same slots</p>
+        </div>
+        <button onclick="closeModal('modal-transfer')" class="text-slate-400 hover:text-slate-600 font-bold">✕</button>
+      </div>
+      <div class="space-y-3.5 text-xs">
+        <div>
+          <label class="block font-bold text-slate-700 mb-1">From (will become completely free)</label>
+          <div id="m-transfer-from" class="px-3 py-2 rounded-xl border border-slate-200 bg-slate-50 font-bold text-slate-900"></div>
+        </div>
+        <div>
+          <label class="block font-bold text-slate-700 mb-1">To (takes over the timetable)</label>
+          <select id="m-transfer-to" class="w-full px-3 py-2 rounded-xl border border-slate-300 font-bold text-slate-900 focus:ring-2 focus:ring-indigo-500"></select>
+          <p class="text-[11px] text-slate-500 mt-1">New teacher not listed? Close this, use <b>+ Add Faculty</b>, then come back.</p>
+        </div>
+        <div id="m-transfer-summary" class="px-3 py-2 rounded-xl bg-indigo-50 border border-indigo-100 text-indigo-900 font-semibold"></div>
+        <div id="m-transfer-clashes" class="hidden px-3 py-2 rounded-xl bg-rose-50 border border-rose-200 text-rose-900 font-semibold max-h-40 overflow-y-auto"></div>
+      </div>
+      <div class="flex items-center justify-end gap-2 pt-2 border-t border-slate-100">
+        <button onclick="closeModal('modal-transfer')" class="px-3.5 py-2 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold text-xs">Cancel</button>
+        <button id="btn-transfer" onclick="runTransfer()" class="px-4 py-2 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white font-bold text-xs shadow-sm">Transfer Timetable</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======================================================== -->
   <!-- MODAL: TEACHER AVAILABILITY PICKER -->
   <!-- ======================================================== -->
   <div id="modal-availability" class="fixed inset-0 z-50 bg-slate-900/50 backdrop-blur-sm hidden items-center justify-center p-4">
@@ -3253,6 +3285,7 @@
           <td class="py-2.5 px-4 text-right space-x-1 whitespace-nowrap">
             <a href="substitution.html?absent=${encodeURIComponent(t.name)}" title="Manage Proxy for ${t.name}" class="px-2 py-1 rounded bg-rose-50 hover:bg-rose-100 text-rose-700 font-bold border border-rose-200 inline-block">Proxy</a>
             <button onclick="editTeacher('${t.id}')" class="px-2 py-1 rounded bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold">Edit</button>
+            <button onclick="openTransferModal('${t.id}')" title="Hand over ${t.name}'s whole timetable to another teacher" class="px-2 py-1 rounded bg-indigo-50 hover:bg-indigo-100 text-indigo-700 font-bold border border-indigo-200">Transfer</button>
             <button onclick="deleteTeacher('${t.id}')" class="px-2 py-1 rounded bg-slate-100 hover:bg-rose-50 text-rose-600 font-bold">Delete</button>
           </td>
         `;
@@ -3390,6 +3423,7 @@
 
           // Cascade teacher name changes across events and classes
           if (oldName !== name) {
+            recordTeacherRename(oldName, name);
             (CONFIG.events || []).forEach(ev => {
               if (ev.teacher_ids) {
                 ev.teacher_ids = ev.teacher_ids.map(tid => tid === oldName ? name : tid);
@@ -3429,6 +3463,123 @@
       renderClassesTable();
       updateTopMetrics();
       showToast(`Faculty member "${name}" saved.`);
+    }
+
+    // Renames are sent with the next save so the server moves the teacher's periods
+    // to the new name instead of treating the old name as deleted (which purges them).
+    function loadPendingTeacherRenames() {
+      try {
+        return JSON.parse(localStorage.getItem('gnps_pending_teacher_renames') || '{}') || {};
+      } catch (e) {
+        return {};
+      }
+    }
+
+    function savePendingTeacherRenames(renames) {
+      try {
+        if (Object.keys(renames).length) {
+          localStorage.setItem('gnps_pending_teacher_renames', JSON.stringify(renames));
+        } else {
+          localStorage.removeItem('gnps_pending_teacher_renames');
+        }
+      } catch (e) {
+        console.warn("Could not persist pending teacher renames:", e);
+      }
+    }
+
+    function recordTeacherRename(oldName, newName) {
+      const renames = loadPendingTeacherRenames();
+      let chained = false;
+      Object.keys(renames).forEach(k => {
+        if (renames[k] === oldName) { renames[k] = newName; chained = true; }
+      });
+      if (!chained) renames[oldName] = newName;
+      Object.keys(renames).forEach(k => { if (k === renames[k]) delete renames[k]; });
+      savePendingTeacherRenames(renames);
+    }
+
+    let transferFromName = null;
+
+    function openTransferModal(tId) {
+      const t = (CONFIG.teachers || []).find(x => x.id === tId || x.name === tId);
+      if (!t) return;
+      transferFromName = t.name;
+      document.getElementById('m-transfer-from').textContent = t.name;
+
+      const sel = document.getElementById('m-transfer-to');
+      sel.innerHTML = '<option value="">-- Choose teacher --</option>';
+      (CONFIG.teachers || [])
+        .filter(x => x.name !== t.name)
+        .sort((a, b) => a.name.localeCompare(b.name))
+        .forEach(x => {
+          const opt = document.createElement('option');
+          opt.value = x.name;
+          opt.textContent = x.name;
+          sel.appendChild(opt);
+        });
+
+      const sched = TEACHER_SCHEDULES && TEACHER_SCHEDULES[t.name];
+      const periods = sched ? (sched.total_weekly_teaching_periods || 0) : null;
+      const hrClass = (CONFIG.classes || []).find(c => (c.class_teacher || '').trim().toLowerCase() === t.name.trim().toLowerCase());
+      document.getElementById('m-transfer-summary').innerHTML =
+        `${periods !== null ? `<b>${periods}</b> periods/week` : 'All periods'}` +
+        `${hrClass ? ` and Class Teacher of <b>${hrClass.name}</b>` : ''} will move to the selected teacher. ` +
+        `${t.name} stays on the faculty list with no periods.`;
+      const clashBox = document.getElementById('m-transfer-clashes');
+      clashBox.classList.add('hidden');
+      clashBox.innerHTML = '';
+      openModal('modal-transfer');
+    }
+
+    async function runTransfer(force = false) {
+      const from = transferFromName;
+      const to = document.getElementById('m-transfer-to').value;
+      if (!from || !to) return alert("Choose the teacher who should take over the timetable.");
+      if (!force && !confirm(`Move ALL of ${from}'s periods and duties to ${to}?\n\n${from} will be left completely free.`)) return;
+
+      const btn = document.getElementById('btn-transfer');
+      btn.disabled = true;
+      btn.textContent = 'Transferring...';
+      try {
+        // Make sure the server knows about any newly added teacher before transferring
+        await saveConfiguration();
+        const res = await fetch('/api/transfer-faculty', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ from, to, force })
+        });
+        const out = await res.json();
+
+        if (res.status === 409 && out.clashes && out.clashes.length) {
+          const clashBox = document.getElementById('m-transfer-clashes');
+          clashBox.innerHTML = `<div class="mb-1">${to} is already teaching in ${out.clashes.length} of these slots:</div>` +
+            out.clashes.map(c => `<div>• ${c.day} P${c.period_index}: ${c.from_classes.join(', ')} vs ${c.to_classes.join(', ')}</div>`).join('');
+          clashBox.classList.remove('hidden');
+          if (confirm(`${to} already teaches in ${out.clashes.length} of ${from}'s slots, so the transfer would create clashes.\n\nTransfer anyway and fix the clashes afterwards?`)) {
+            btn.disabled = false;
+            btn.textContent = 'Transfer Timetable';
+            return runTransfer(true);
+          }
+          return;
+        }
+        if (!res.ok || !out.success) throw new Error(out.error || `Server returned ${res.status}`);
+
+        closeModal('modal-transfer');
+        await loadInitialData();
+        try {
+          localStorage.setItem('gnps_timetable_config', JSON.stringify(CONFIG));
+        } catch (e) {
+          console.warn("Could not sync localStorage after transfer:", e);
+        }
+        showToast(`Transferred ${out.from}'s timetable to ${out.to}. ${out.from} is now free.`);
+        if (out.warning) alert(out.warning);
+      } catch (e) {
+        console.error("Transfer failed:", e);
+        showToast("Transfer failed: " + e.message + " (is server.py running?)", true);
+      } finally {
+        btn.disabled = false;
+        btn.textContent = 'Transfer Timetable';
+      }
     }
 
     function deleteTeacher(tId) {
@@ -5222,7 +5373,11 @@
         console.warn("Failed saving CONFIG to localStorage:", e);
       }
 
-      // 2. Multi-tier API save
+      // 2. Multi-tier API save (pending teacher renames ride along so their periods move with them)
+      const pendingRenames = loadPendingTeacherRenames();
+      const savePayload = Object.keys(pendingRenames).length
+        ? Object.assign({}, CONFIG, { _teacher_renames: pendingRenames })
+        : CONFIG;
       const primaryUrl = '/api/save-config';
       const fallbackUrl = 'http://localhost:8080/api/save-config';
       let serverSaved = false;
@@ -5234,7 +5389,7 @@
           const res = await fetch(primaryUrl, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify(CONFIG)
+            body: JSON.stringify(savePayload)
           });
           if (res.ok) {
             serverSaved = true;
@@ -5255,7 +5410,7 @@
           const res = await fetch(fallbackUrl, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify(CONFIG)
+            body: JSON.stringify(savePayload)
           });
           if (res.ok) {
             serverSaved = true;
@@ -5264,6 +5419,10 @@
         } catch (e) {
           console.warn("Fallback save-config failed:", e);
         }
+      }
+
+      if (serverSaved) {
+        savePendingTeacherRenames({});
       }
 
       if (!serverSaved && !serverRefused) {
