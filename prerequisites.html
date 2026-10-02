@@ -5226,6 +5226,7 @@
       const primaryUrl = '/api/save-config';
       const fallbackUrl = 'http://localhost:8080/api/save-config';
       let serverSaved = false;
+      let serverRefused = false;
 
       // Try primary URL if running on web server
       if (window.location.protocol === 'http:' || window.location.protocol === 'https:') {
@@ -5238,6 +5239,10 @@
           if (res.ok) {
             serverSaved = true;
             showToast("Saved & synced to timetable_config.json successfully!");
+          } else if (res.status === 403) {
+            // The server only accepts changes from the computer it runs on
+            serverRefused = true;
+            showToast("Not saved to the server: changes can only be made on the computer running it (http://localhost:8080). Kept in this browser only.", true);
           }
         } catch (e) {
           console.warn("Primary save-config failed, trying fallback:", e);
@@ -5245,7 +5250,7 @@
       }
 
       // If not saved (e.g. running via file:// or non-backend port), try localhost:8080
-      if (!serverSaved) {
+      if (!serverSaved && !serverRefused) {
         try {
           const res = await fetch(fallbackUrl, {
             method: 'POST',
@@ -5261,7 +5266,7 @@
         }
       }
 
-      if (!serverSaved) {
+      if (!serverSaved && !serverRefused) {
         // Saved in localStorage at least!
         showToast("Saved to local browser storage! (Local server not reachable, changes preserved on refresh)", false);
       }
