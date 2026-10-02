@@ -709,6 +709,49 @@ class TestBugFixesComprehensive(unittest.TestCase):
             self.assertIn(",Art & Craft,", csv_content, "CSV must have canonical ',Art & Craft,' subject")
 
 
+    # ---------------------------------------------------------
+    # BUG: Deleted faculty still shown from stale HTML-embedded data
+    # ---------------------------------------------------------
+    def test_embedded_html_data_matches_json(self):
+        """index.html and free_teachers.html must embed the same data as the JSON files."""
+        import re
+        root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+        def load(name):
+            with open(os.path.join(root, name), 'r', encoding='utf-8') as f:
+                return json.load(f)
+
+        def embedded(html_name, const):
+            with open(os.path.join(root, html_name), 'r', encoding='utf-8') as f:
+                m = re.search(r'const %s = (.*?);\n' % const, f.read())
+            self.assertIsNotNone(m, f"{const} must be embedded in {html_name}")
+            return json.loads(m.group(1))
+
+        self.assertEqual(embedded('index.html', 'TIMETABLE_DATA'), load('timetable.json'))
+        self.assertEqual(embedded('index.html', 'TEACHER_DATA'), load('timetable_teachers.json'))
+        self.assertEqual(embedded('index.html', 'FREE_DATA'), load('free_teachers.json'))
+        self.assertEqual(embedded('free_teachers.html', 'FREE_DATA'), load('free_teachers.json'))
+        self.assertEqual(embedded('free_teachers.html', 'TEACHER_DATA'), load('timetable_teachers.json'))
+
+        with open(os.path.join(root, 'purge_faculty.py'), 'r', encoding='utf-8') as f:
+            self.assertIn('embed_html_data.py', f.read(), "Faculty purge must refresh embedded HTML data")
+
+    # ---------------------------------------------------------
+    # BUG: Free teachers heatmap headers shifted one column from the counts
+    # ---------------------------------------------------------
+    def test_free_heatmap_headers_built_from_period_list(self):
+        """Heatmap headers must come from FREE_DATA.periods, the same list the count cells use."""
+        root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+        for html_name, head_id in [('index.html', 'tab-free-heatmap-head'),
+                                   ('free_teachers.html', 'slot-heatmap-head')]:
+            with open(os.path.join(root, html_name), 'r', encoding='utf-8') as f:
+                content = f.read()
+            self.assertIn(f'<tr id="{head_id}">', content)
+            self.assertIn(f"document.getElementById('{head_id}')", content)
+            self.assertNotIn('<th class="py-2.5 px-2">1st Period<br>', content,
+                             f"{html_name} must not hardcode heatmap period headers")
+
+
 if __name__ == '__main__':
     unittest.main()
 

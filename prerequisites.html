@@ -59,60 +59,14 @@
           <span>Free Teachers</span>
         </a>
 
-        <!-- 4. Studio & Setup Dropdown (Active) -->
-        <div class="relative" id="nav-dropdown-studio-container">
-          <button onclick="toggleNavDropdown('studio')" id="nav-studio-btn" class="px-3.5 py-1.5 rounded-lg text-xs font-bold transition bg-white text-indigo-950 shadow-sm flex items-center gap-1.5">
-            <svg class="w-4 h-4 text-amber-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
-            <span>Studio & Setup</span>
-            <svg class="w-3 h-3 text-indigo-900 transition-transform duration-200" id="studio-chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"></path></svg>
-          </button>
-
-          <!-- Studio Dropdown Panel -->
-          <div id="nav-dropdown-studio" class="hidden absolute left-0 mt-2 w-72 bg-slate-900 border border-slate-700/80 rounded-2xl shadow-2xl py-2 z-50 divide-y divide-slate-800">
-            <div class="px-3 py-1.5 text-[10px] font-extrabold uppercase tracking-wider text-slate-400">Timetable Engineering & Admin</div>
-            <div class="py-1">
-              <a href="prerequisites.html" class="flex items-start gap-2.5 px-3 py-2.5 bg-slate-800/90 transition text-left group">
-                <div class="w-7 h-7 rounded-lg bg-teal-500 text-white flex items-center justify-center shrink-0 mt-0.5">
-                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"></path></svg>
-                </div>
-                <div>
-                  <div class="text-xs font-bold text-teal-300">Master Prerequisites (Active)</div>
-                  <div class="text-[10px] text-slate-400 leading-tight">Bell timings, teachers, classes, quotas & rules</div>
-                </div>
-              </a>
-              <a href="creator.html" class="flex items-start gap-2.5 px-3 py-2.5 hover:bg-slate-800/90 transition text-left group">
-                <div class="w-7 h-7 rounded-lg bg-amber-500/20 text-amber-300 flex items-center justify-center shrink-0 mt-0.5 group-hover:bg-amber-500 group-hover:text-white transition">
-                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path></svg>
-                </div>
-                <div>
-                  <div class="text-xs font-bold text-white group-hover:text-amber-300">Creator Studio & Canvas</div>
-                  <div class="text-[10px] text-slate-400 leading-tight">Interactive grid, manual overrides & CSP solver</div>
-                </div>
-              </a>
-              <a href="creator.html?tab=audit" class="flex items-start gap-2.5 px-3 py-2.5 hover:bg-slate-800/90 transition text-left group">
-                <div class="w-7 h-7 rounded-lg bg-indigo-500/20 text-indigo-300 flex items-center justify-center shrink-0 mt-0.5 group-hover:bg-indigo-500 group-hover:text-white transition">
-                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                </div>
-                <div>
-                  <div class="text-xs font-bold text-white group-hover:text-indigo-300">Feasibility & Bottleneck Audit</div>
-                  <div class="text-[10px] text-slate-400 leading-tight">Precheck validation & zero-clash diagnostics</div>
-                </div>
-              </a>
-              <a href="swap_preview.html" class="flex items-start gap-2.5 px-3 py-2.5 hover:bg-slate-800/90 transition text-left group">
-                <div class="w-7 h-7 rounded-lg bg-purple-500/20 text-purple-300 flex items-center justify-center shrink-0 mt-0.5 group-hover:bg-purple-500 group-hover:text-white transition">
-                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"></path></svg>
-                </div>
-                <div>
-                  <div class="text-xs font-bold text-white group-hover:text-purple-300">Period Swap Simulator</div>
-                  <div class="text-[10px] text-slate-400 leading-tight">Preview reciprocal slot exchanges</div>
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
+        <!-- 4. Prerequisites (Active) -->
+        <a href="prerequisites.html" class="px-3.5 py-1.5 rounded-lg text-xs font-bold transition bg-white text-indigo-950 shadow-sm flex items-center gap-1.5">
+          <svg class="w-4 h-4 text-teal-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"></path></svg>
+          <span>Prerequisites</span>
+        </a>
       </nav>
 
-      <!-- Right: Master Actions + User Profile -->
+      <!-- Right: Master Actions -->
       <div class="flex items-center space-x-2">
         <button onclick="runPreAudit()" class="px-3 py-1.5 rounded-xl bg-indigo-900/80 hover:bg-indigo-800 text-indigo-100 font-bold text-xs transition border border-indigo-700/80 flex items-center gap-1.5 shadow-sm" title="Run Pre-Generation Feasibility Audit">
           <svg class="w-3.5 h-3.5 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
@@ -123,13 +77,6 @@
           <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7H5a2 2 0 00-2 2v9a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-3m-1 4l-3 3m0 0l-3-3m3 3V4"></path></svg>
           <span>Save Configuration</span>
         </button>
-
-        <div class="h-5 w-px bg-indigo-800/80 mx-1 hidden sm:block"></div>
-
-        <!-- User Profile / Google Sign-In Container -->
-        <div id="nav-user-container" class="relative">
-          <!-- Populated dynamically by nav.js -->
-        </div>
       </div>
     </div>
   </header>
@@ -1827,10 +1774,7 @@
         </div>
       </div>
 
-      <div class="flex items-center justify-between pt-3 border-t border-slate-200">
-        <a href="creator.html" class="px-3.5 py-2 rounded-xl bg-indigo-50 hover:bg-indigo-100 text-indigo-700 font-bold text-xs transition border border-indigo-200">
-          Open in Creator Studio →
-        </a>
+      <div class="flex items-center justify-end pt-3 border-t border-slate-200">
         <button onclick="closeModal('modal-audit')" class="px-4 py-2 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white font-bold text-xs">Close</button>
       </div>
     </div>
@@ -5437,6 +5381,7 @@
       const primaryUrl = '/api/save-config';
       const fallbackUrl = 'http://localhost:8080/api/save-config';
       let serverSaved = false;
+      let serverRefused = false;
 
       // Try primary URL if running on web server
       if (window.location.protocol === 'http:' || window.location.protocol === 'https:') {
@@ -5449,6 +5394,10 @@
           if (res.ok) {
             serverSaved = true;
             showToast("Saved & synced to timetable_config.json successfully!");
+          } else if (res.status === 403) {
+            // The server only accepts changes from the computer it runs on
+            serverRefused = true;
+            showToast("Not saved to the server: changes can only be made on the computer running it (http://localhost:8080). Kept in this browser only.", true);
           }
         } catch (e) {
           console.warn("Primary save-config failed, trying fallback:", e);
@@ -5456,7 +5405,7 @@
       }
 
       // If not saved (e.g. running via file:// or non-backend port), try localhost:8080
-      if (!serverSaved) {
+      if (!serverSaved && !serverRefused) {
         try {
           const res = await fetch(fallbackUrl, {
             method: 'POST',
@@ -5476,7 +5425,7 @@
         savePendingTeacherRenames({});
       }
 
-      if (!serverSaved) {
+      if (!serverSaved && !serverRefused) {
         // Saved in localStorage at least!
         showToast("Saved to local browser storage! (Local server not reachable, changes preserved on refresh)", false);
       }

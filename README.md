@@ -2,7 +2,7 @@
 **Gomti Nandan Public School**
 
 [![Python 3.9+](https://img.shields.io/badge/Python-3.9+-3776AB?style=flat&logo=python&logoColor=white)](https://python.org)
-[![Tests Passing](https://img.shields.io/badge/Tests-114%20Passed-success?style=flat&logo=pytest)](file:///Users/vikas/Desktop/AG%20Projects%20TT/tests)
+[![Tests Passing](https://img.shields.io/badge/Tests-126%20Passed-success?style=flat&logo=pytest)](tests/)
 [![Deployment](https://img.shields.io/badge/Deployment-Vercel%20%2B%20GitHub-black?style=flat&logo=vercel)](https://vercel.com)
 [![Platform](https://img.shields.io/badge/Architecture-Vanilla%20JS%20%7C%20Tailwind%20%7C%20SQLite-indigo)](https://tailwindcss.com)
 
@@ -37,16 +37,10 @@ A high-performance, zero-external-build timetable scheduling, constraint-satisfa
 - **Cascade Deletion Engine**: Removing a faculty member automatically purges references across all configurations, database tables, and operational rosters.
 - **Timetable Transfer**: The **Transfer** button on a teacher row hands that teacher's whole timetable (every period, lesson allocation and class-teacher role) to another teacher in the same slots, leaving the original teacher free. It refuses if the receiving teacher is already busy in any of those slots, unless you confirm. Renaming a teacher via **Edit** also keeps their periods under the new name.
 
-### 5. 🧩 CSP Solver & Generation Studio (`creator.html`)
+### 5. 🧩 CSP Solver Engine (`engine/`, via `POST /api/run-generate`)
 - **Automated Scheduling Engine**: Powered by Constraint Satisfaction Problem (CSP) algorithms enforcing hard constraints (0 teacher clashes, 0 room conflicts, max 1 double lab/day) and soft preferences.
 - **Feasibility Precheck**: Audits room quotas, teacher hours, and section requirements before generation.
 - **Class Teacher Period 1 Rule**: Ensures Class Teachers are prioritized for Period 1 with their designated class.
-
-### 6. 🔐 User Authentication & Roles (`login.html`, `auth.js`, `nav.js`)
-- **Google Workspace OAuth 2.0**: Official Google Identity Services (GSI) SDK sign-in with JWT token decoding.
-- **Customizable Google Client ID**: In-browser configuration drawer allowing easy pairing with your school's Google Cloud project.
-- **Instant Demo Logins**: 1-click test roles for Administrator (`admin@gnps.ac.in`) and Faculty (`jyotsharan@gnps.ac.in`) for offline/local workflows.
-- **Unified Navigation Bar**: User avatar, role badges, and universal logout synced across all 5 pages.
 
 ---
 
@@ -82,8 +76,6 @@ timetable.json  timetable_teachers.json  free_teachers.json
       │ - substitution.html   │
       │ - free_teachers.html  │
       │ - prerequisites.html  │
-      │ - creator.html        │
-      │ - login.html          │
       └───────────────────────┘
 ```
 
@@ -91,7 +83,7 @@ timetable.json  timetable_teachers.json  free_teachers.json
 
 ## 💻 Tech Stack
 
-- **Frontend**: Vanilla JavaScript (ES6+), HTML5, Tailwind CSS (via CDN), Google Identity Services (GSI) SDK.
+- **Frontend**: Vanilla JavaScript (ES6+), HTML5, Tailwind CSS (via CDN).
 - **Backend / Server**: Python 3 standard library (`http.server`, `socketserver`, `sqlite3`, `json`, `csv`). No external framework dependencies required.
 - **Database**: SQLite3 (`timetable.sqlite`).
 - **Scheduling Engine**: Custom Python CSP / Constraint Satisfaction Engine (`engine/`).
@@ -117,12 +109,10 @@ The server will start on:
 ### 3. Open in Browser
 | Page | URL | Description |
 | :--- | :--- | :--- |
-| **Login / Sign In** | `http://localhost:8080/login.html` | Google Sign-In & Demo role access |
 | **Master Timetable** | `http://localhost:8080/index.html` | Class & Teacher timetable viewer |
 | **Substitution Studio** | `http://localhost:8080/substitution.html` | Proxy assignment & register printing |
 | **Free Teachers** | `http://localhost:8080/free_teachers.html` | Teacher vacancy matrix |
 | **Prerequisites** | `http://localhost:8080/prerequisites.html` | Rules, periods, and catalog setup |
-| **Timetable Studio** | `http://localhost:8080/creator.html` | Automated CSP solver interface |
 
 ---
 
@@ -138,7 +128,7 @@ To verify timetable validity and push updates to the live site:
 ```
 This script automatically:
 1. Runs `import_timetable.py` and `generate_timetable.py --verify` to guarantee 0 teacher/room clashes.
-2. Commits and pushes changes to the GitHub repository.
+2. Commits and pushes changes to the GitHub repository. The substitution history (`substitutions_history.json`, which holds teacher leave records) is never published.
 3. Triggers immediate deployment on Vercel.
 
 ---
@@ -159,6 +149,8 @@ This script automatically:
 
 When running `server.py`, the following REST endpoints are available:
 
+> **Access:** anyone on the network can view the pages and use the read-only endpoints, but the endpoints that change data (`save-config`, `run-generate`, `purge-faculty`, `transfer-faculty`, `substitutions/save`) only accept requests from the computer running the server, made from a page it served (`http://localhost:8080`). Other computers get `403 Forbidden`. The substitution history (teacher leave records) is likewise only readable on that computer through `GET /api/substitutions/history`, and the `substitutions_history.json` file itself is never served.
+
 - `POST /api/save-config`: Atomically writes updated configuration to `timetable_config.json`, detects deleted faculty, and triggers auto-purge. Teachers renamed in Prerequisites are sent in `_teacher_renames` and have their periods moved to the new name instead of purged.
 - `POST /api/transfer-faculty`: Accepts `{"from": "Name", "to": "Name", "force": false}` and moves the whole timetable of `from` to `to`. Returns `409` with the list of clashing slots if `to` is already busy and `force` is not set.
 - `POST /api/purge-faculty`: Accepts `{"faculty_name": "Name"}` and executes a multi-layer cascade unassignment across databases and outputs.
@@ -176,7 +168,7 @@ The codebase includes an extensive automated test suite covering CSP constraints
 python3 -m unittest discover -s tests
 ```
 
-**Status**: 114 tests passing (0 failures, 0 errors).
+**Status**: 126 tests passing (0 failures, 0 errors).
 
 ---
 
@@ -189,9 +181,6 @@ python3 -m unittest discover -s tests
 ├── substitution.html                   # Daily substitution & proxy register
 ├── free_teachers.html                  # Availability matrix
 ├── prerequisites.html                  # Rules, periods & teachers setup
-├── creator.html                        # CSP solver interface
-├── login.html                          # Google Sign-In & authentication
-├── auth.js                             # Client-side session and auth manager
 ├── nav.js                              # Shared responsive navigation header
 ├── transfer_faculty.py                 # Hand a teacher's whole timetable to another teacher
 ├── purge_faculty.py                    # Multi-layer cascade faculty deletion tool
@@ -211,7 +200,8 @@ python3 -m unittest discover -s tests
 │   ├── generator.py                    # CSP scheduling logic
 │   ├── substitution.py                 # Proxy ranking algorithm
 │   └── excel_exporter.py               # Excel formatting utility
-└── tests/                              # Unit & integration test suite (114 tests)
+├── tests/                              # Unit & integration test suite (126 tests)
+└── archive/                            # Retired one-off migration scripts and HTML prototypes
 ```
 
 ---

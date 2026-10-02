@@ -8,6 +8,7 @@ the target teacher in the same day/period slots, leaving the source teacher comp
   2. timetable.sqlite (schedule_entries teacher/raw_value/class_teacher, classes, teachers)
   3. timetable.json, timetable_teachers.json, free_teachers.json, timetable_entries.csv
      (rebuilt via sync_master_data.py)
+  4. index.html / free_teachers.html embedded data snapshots (via embed_html_data.py)
 
 The target teacher must already exist in the faculty catalog (add them in Prerequisites first).
 If the target already teaches in any of the source teacher's slots, the transfer is refused
@@ -155,14 +156,19 @@ def transfer_in_sqlite(db_path, old, new):
 
 
 def rebuild_outputs(base_dir=BASE_DIR):
-    """Regenerate timetable.json, timetable_teachers.json, free_teachers.json and the CSV."""
-    sync_script = os.path.join(base_dir, "sync_master_data.py")
-    if not os.path.exists(sync_script):
-        return False
-    res = subprocess.run([sys.executable, sync_script], capture_output=True, text=True, cwd=base_dir)
-    if res.returncode != 0:
-        print("⚠️ Warning running sync_master_data.py:", res.stderr, flush=True)
-    return res.returncode == 0
+    """Regenerate timetable.json, timetable_teachers.json, free_teachers.json and the CSV,
+    then re-embed them into index.html and free_teachers.html, which carry their own copies."""
+    ok = True
+    for script in ("sync_master_data.py", "embed_html_data.py"):
+        path = os.path.join(base_dir, script)
+        if not os.path.exists(path):
+            ok = False
+            continue
+        res = subprocess.run([sys.executable, path], capture_output=True, text=True, cwd=base_dir)
+        if res.returncode != 0:
+            print(f"⚠️ Warning running {script}:", res.stderr, flush=True)
+            ok = False
+    return ok
 
 
 def transfer_faculty(from_name, to_name, base_dir=BASE_DIR, force=False, rebuild=True):

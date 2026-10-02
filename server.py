@@ -10,12 +10,14 @@ Serves static web files and provides REST APIs for:
 import os
 import sys
 import json
+import ipaddress
 import http.server
 import socketserver
 import traceback
 
+import posixpath
 import urllib.parse
-from urllib.parse import urlparse, parse_qs
+from urllib.parse import urlparse, parse_qs, unquote
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 PORT = 8080
@@ -25,9 +27,74 @@ from engine.generator import TimetableGenerator
 from engine.substitution import SubstitutionManager
 from engine.excel_exporter import export_classes_to_excel
 
+# Endpoints that change files on disk. Only this computer may call them; other
+# computers on the network can still view pages and use the read-only endpoints.
+CHANGE_ENDPOINTS = {
+    '/api/save-config',
+    '/api/run-generate',
+    '/api/purge-faculty',
+    '/api/transfer-faculty',
+    '/api/substitutions/save',
+}
+
+# Endpoints that return teacher leave records; only this computer may read them.
+PRIVATE_READ_ENDPOINTS = {
+    '/api/substitutions/history',
+}
+
+# Files that are never served as static files, to anyone (teacher leave records).
+PRIVATE_FILES = {
+    'substitutions_history.json',
+    'substitutions_history.json.tmp',
+}
+
+
+def is_loopback_host(host):
+    """True for localhost or a loopback IP such as 127.0.0.1 or ::1."""
+    if not host:
+        return False
+    if host.lower() == 'localhost':
+        return True
+    try:
+        ip = ipaddress.ip_address(host.strip('[]'))
+    except ValueError:
+        return False
+    if ip.version == 6 and ip.ipv4_mapped:
+        ip = ip.ipv4_mapped
+    return ip.is_loopback
+
+
+def is_loopback_origin(origin):
+    """True when a browser Origin header names a page served from this computer."""
+    if not origin or origin == 'null':
+        return False
+    return is_loopback_host(urlparse(origin).hostname)
+
+
+def is_local_request(client_ip, origin):
+    """
+    True only when the connection comes from this computer and, if a browser sent
+    it, from a page this computer served. The Origin check stops other websites
+    open in the admin's browser from making changes or reading private data.
+    """
+    if not is_loopback_host(client_ip):
+        return False
+    return origin is None or is_loopback_origin(origin)
+
+
+def is_private_file(url_path):
+    """True when a URL path names a private file, however it is encoded or cased."""
+    name = posixpath.basename(posixpath.normpath(unquote(url_path)))
+    return name.lower() in PRIVATE_FILES
+
+
 class TimetableRequestHandler(http.server.SimpleHTTPRequestHandler):
     def end_headers(self):
-        self.send_header('Access-Control-Allow-Origin', '*')
+        # Only pages served from this computer may read responses cross-origin.
+        origin = self.headers.get('Origin')
+        if is_loopback_origin(origin):
+            self.send_header('Access-Control-Allow-Origin', origin)
+            self.send_header('Vary', 'Origin')
         self.send_header('Access-Control-Allow-Methods', 'GET, POST, OPTIONS')
         self.send_header('Access-Control-Allow-Headers', 'Content-Type, Authorization, X-Requested-With')
         self.send_header('Cache-Control', 'no-cache, no-store, must-revalidate, max-age=0')
@@ -58,8 +125,22 @@ class TimetableRequestHandler(http.server.SimpleHTTPRequestHandler):
             self._send_json({'success': False, 'error': f'Invalid JSON: {str(e)}'}, status=400)
             raise
 
+    def _refuse_non_local(self, path):
+        print(f"⛔ Blocked {path} from {self.client_address[0]} (origin: {self.headers.get('Origin')})", flush=True)
+        self._send_json({
+            'success': False,
+            'error': 'Only available on the computer running the server (http://localhost:8080).'
+        }, status=403)
+
     def do_GET(self):
         parsed = urlparse(self.path)
+        if parsed.path in PRIVATE_READ_ENDPOINTS and not is_local_request(
+                self.client_address[0], self.headers.get('Origin')):
+            self._refuse_non_local(parsed.path)
+            return
+        if is_private_file(parsed.path):
+            self.send_error(403, "Forbidden: file or path not allowed")
+            return
         if parsed.path == '/api/substitutions/history':
             try:
                 mgr = SubstitutionManager(BASE_DIR)
@@ -115,6 +196,10 @@ class TimetableRequestHandler(http.server.SimpleHTTPRequestHandler):
     def do_POST(self):
         parsed = urlparse(self.path)
         path = parsed.path
+        if path in CHANGE_ENDPOINTS and not is_local_request(
+                self.client_address[0], self.headers.get('Origin')):
+            self._refuse_non_local(path)
+            return
         if path == '/api/save-config':
             try:
                 data = self._read_json_body()
@@ -156,6 +241,16 @@ class TimetableRequestHandler(http.server.SimpleHTTPRequestHandler):
                         purge_faculty(del_t)
                     except Exception as purge_err:
                         print(f"Warning during cascade purge of {del_t}: {purge_err}", flush=True)
+
+                    # The incoming config is written over the purged file below, so
+                    # also drop the deleted faculty from its class teacher and event slots.
+                    del_lower = del_t.lower()
+                    for c in data.get('classes', []):
+                        if (c.get('class_teacher') or '').strip().lower() == del_lower:
+                            c['class_teacher'] = ''
+                    for ev in data.get('events', []):
+                        if 'teacher_ids' in ev:
+                            ev['teacher_ids'] = [t for t in ev['teacher_ids'] if t.strip().lower() != del_lower]
 
                 with open(config_path, 'w', encoding='utf-8') as f:
                     json.dump(data, f, indent=2, ensure_ascii=False)
