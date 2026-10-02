@@ -36,7 +36,7 @@ A high-performance, zero-external-build timetable scheduling, constraint-satisfa
 - **Subject & Room Constraints**: Dedicated lab requirements (Physics, Chemistry, Biology, Computer Labs), sports ground rules, and activity hall allocations.
 - **Cascade Deletion Engine**: Removing a faculty member automatically purges references across all configurations, database tables, and operational rosters.
 
-### 5. 🧩 CSP Solver & Generation Studio (`creator.html`)
+### 5. 🧩 CSP Solver Engine (`engine/`, via `POST /api/run-generate`)
 - **Automated Scheduling Engine**: Powered by Constraint Satisfaction Problem (CSP) algorithms enforcing hard constraints (0 teacher clashes, 0 room conflicts, max 1 double lab/day) and soft preferences.
 - **Feasibility Precheck**: Audits room quotas, teacher hours, and section requirements before generation.
 - **Class Teacher Period 1 Rule**: Ensures Class Teachers are prioritized for Period 1 with their designated class.
@@ -45,7 +45,7 @@ A high-performance, zero-external-build timetable scheduling, constraint-satisfa
 - **Google Workspace OAuth 2.0**: Official Google Identity Services (GSI) SDK sign-in with JWT token decoding.
 - **Customizable Google Client ID**: In-browser configuration drawer allowing easy pairing with your school's Google Cloud project.
 - **Instant Demo Logins**: 1-click test roles for Administrator (`admin@gnps.ac.in`) and Faculty (`jyotsharan@gnps.ac.in`) for offline/local workflows.
-- **Unified Navigation Bar**: User avatar, role badges, and universal logout synced across all 5 pages.
+- **Unified Navigation Bar**: User avatar, role badges, and universal logout synced across all pages.
 
 ---
 
@@ -81,7 +81,6 @@ timetable.json  timetable_teachers.json  free_teachers.json
       │ - substitution.html   │
       │ - free_teachers.html  │
       │ - prerequisites.html  │
-      │ - creator.html        │
       │ - login.html          │
       └───────────────────────┘
 ```
@@ -121,7 +120,6 @@ The server will start on:
 | **Substitution Studio** | `http://localhost:8080/substitution.html` | Proxy assignment & register printing |
 | **Free Teachers** | `http://localhost:8080/free_teachers.html` | Teacher vacancy matrix |
 | **Prerequisites** | `http://localhost:8080/prerequisites.html` | Rules, periods, and catalog setup |
-| **Timetable Studio** | `http://localhost:8080/creator.html` | Automated CSP solver interface |
 
 ---
 
@@ -186,7 +184,6 @@ python3 -m unittest discover -s tests
 ├── substitution.html                   # Daily substitution & proxy register
 ├── free_teachers.html                  # Availability matrix
 ├── prerequisites.html                  # Rules, periods & teachers setup
-├── creator.html                        # CSP solver interface
 ├── login.html                          # Google Sign-In & authentication
 ├── auth.js                             # Client-side session and auth manager
 ├── nav.js                              # Shared responsive navigation header
