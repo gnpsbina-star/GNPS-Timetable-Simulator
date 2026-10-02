@@ -1,6 +1,6 @@
 # GNPS Timetable Simulator (2026-27)
 ## Comprehensive Technical Architecture & Operational Guide
-**Institution**: Guru Nanak Public School  
+**Institution**: Gomti Nandan Public School  
 **Academic Session**: 2026–2027  
 **Version**: 2.4.0 (Production Release)  
 **Repository**: `github.com/gnpsbina-star/GNPS-Timetable-Simulator` (Branch: `main`)  
@@ -9,7 +9,7 @@
 
 ## 1. Executive Summary & Institutional Context
 
-Managing the academic operations of a multi-wing K-12 institution like **Guru Nanak Public School** involves complex combinatorial and operational challenges:
+Managing the academic operations of a multi-wing K-12 institution like **Gomti Nandan Public School** involves complex combinatorial and operational challenges:
 1. **Curricular Constraints**: Managing distinct requirements across Primary (Classes 1–5), Middle (Classes 6–8), Secondary (Classes 9–10), and Senior Secondary (Classes 11–12), including double-period laboratory practicals, joint elective baskets, language electives, and physical education grounds.
 2. **Faculty Quotas & Well-being**: Ensuring 49+ faculty members have balanced weekly lesson counts (typically 30–34 periods max), preventing cognitive burnout by capping daily teaching loads at 5–6 periods, and guaranteeing non-teaching preparation periods.
 3. **Daily Substitution Volatility**: When teachers take leave, the school must rapidly reallocate unassigned periods to qualified, available colleagues without violating faculty load maximums or creating room conflicts, followed by generating official physical proxy registers for the morning assembly.
