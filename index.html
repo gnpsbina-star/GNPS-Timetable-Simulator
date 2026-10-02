@@ -209,7 +209,9 @@
       }
 
       /* Exact Proportional Columns: Day (7.6%) + 9 Periods (10.266% each) = 100% */
-      th.tt-th-day, td.tt-day-col, th:first-child, td:first-child {
+      #class-table th.tt-th-day, #class-table td.tt-day-col, #class-table th:first-child, #class-table td:first-child,
+      #teacher-table th.tt-th-day, #teacher-table td.tt-day-col, #teacher-table th:first-child, #teacher-table td:first-child,
+      .range-print-page table:not(.tt-summary-table) th:first-child, .range-print-page table:not(.tt-summary-table) td:first-child {
         width: 7.6% !important;
         min-width: 0 !important;
         max-width: none !important;
@@ -220,10 +222,42 @@
         text-transform: uppercase !important;
         letter-spacing: 0.3px !important;
       }
-      th.tt-th-period, th:not(:first-child), td.tt-period-cell, td:not(:first-child) {
+      #class-table th.tt-th-period, #class-table th:not(:first-child), #class-table td.tt-period-cell, #class-table td:not(:first-child),
+      #teacher-table th.tt-th-period, #teacher-table th:not(:first-child), #teacher-table td.tt-period-cell, #teacher-table td:not(:first-child),
+      .range-print-page table:not(.tt-summary-table) th:not(:first-child), .range-print-page table:not(.tt-summary-table) td:not(:first-child) {
         width: 10.266% !important;
         min-width: 0 !important;
         max-width: none !important;
+      }
+
+      /* Subject Summary Table Print Styles */
+      .tt-summary-table {
+        width: 100% !important;
+        margin-top: 4px !important;
+        border-collapse: collapse !important;
+        table-layout: fixed !important;
+        border: 1.5px solid #000000 !important;
+        page-break-inside: avoid !important;
+        break-inside: avoid !important;
+      }
+      .tt-summary-table th, .tt-summary-table td {
+        width: 25% !important;
+        min-width: 0 !important;
+        max-width: none !important;
+        padding: 2.5px 5px !important;
+        text-align: left !important;
+        vertical-align: middle !important;
+        border: 1px solid #000000 !important;
+        font-size: 7.5pt !important;
+        line-height: 1.2 !important;
+        background-color: #ffffff !important;
+        color: #000000 !important;
+        overflow: hidden !important;
+        box-sizing: border-box !important;
+      }
+      .tt-summary-table thead th, .tt-summary-table tfoot td {
+        background-color: #f1f5f9 !important;
+        font-weight: 900 !important;
       }
 
       /* Table Header */
@@ -491,6 +525,7 @@
           <table class="w-full text-left border-collapse" id="class-table">
           </table>
         </div>
+        <div id="class-subject-summary"></div>
       </div>
     </div>
 
@@ -569,6 +604,7 @@
           <table class="w-full text-left border-collapse" id="teacher-table">
           </table>
         </div>
+        <div id="teacher-subject-summary"></div>
       </div>
     </div>
 
@@ -1157,6 +1193,332 @@
       return html;
     }
 
+    function getSubjectSummaryData(classObj, dayFilter = 'ALL') {
+      const days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+      const subjectMap = {};
+      let totalFilteredPeriods = 0;
+
+      days.forEach(day => {
+        const pList = classObj.schedule[day] || [];
+        pList.forEach(p => {
+          const isAssembly = p.period_index === 0 || p.subject === 'Morning Assembly' || (p.raw_value && (p.raw_value.includes('Assembly') || p.raw_value === 'Prayer'));
+          const isLunch = p.is_lunch || (p.subject === 'Lunch') || (p.raw_value && p.raw_value.includes('Lunch')) || (p.period_name && p.period_name.toLowerCase().includes('lunch')) || (p.period_index === 4);
+
+          if (isAssembly || isLunch) return;
+
+          const raw = p.raw_value ? p.raw_value.trim() : '';
+          const subj = p.subject ? p.subject.trim() : '';
+
+          if (!subj && !raw) return;
+          if (raw === 'OFF PERIOD' || subj.toLowerCase() === 'off period') return;
+
+          const subjName = subj || raw;
+          const teacher = p.teacher ? p.teacher.trim() : '';
+
+          if (!subjectMap[subjName]) {
+            subjectMap[subjName] = { count: 0, dayCount: 0, teachers: new Set() };
+          }
+          subjectMap[subjName].count += 1;
+          if (dayFilter === 'ALL' || dayFilter === day) {
+            subjectMap[subjName].dayCount += 1;
+            totalFilteredPeriods += 1;
+          }
+          if (teacher) {
+            teacher.split('/').forEach(t => {
+              const trimmed = t.trim();
+              if (trimmed) subjectMap[subjName].teachers.add(trimmed);
+            });
+          }
+        });
+      });
+
+      const items = Object.entries(subjectMap).map(([subject, data]) => ({
+        subject,
+        count: data.count,
+        dayCount: data.dayCount,
+        teachers: Array.from(data.teachers).join(', ')
+      }));
+
+      // Sort by weekly count descending, then subject name
+      items.sort((a, b) => b.count - a.count || a.subject.localeCompare(b.subject));
+      const totalWeeklyPeriods = items.reduce((sum, item) => sum + item.count, 0);
+
+      return { items, totalWeeklyPeriods, totalFilteredPeriods };
+    }
+
+    function buildClassSubjectSummaryHTML(classObj, isPrint = false, dayFilter = 'ALL') {
+      const { items, totalWeeklyPeriods, totalFilteredPeriods } = getSubjectSummaryData(classObj, dayFilter);
+      if (!items || items.length === 0) return '';
+
+      // Build compact 4-column print table
+      const cols = 4;
+      const rows = [];
+      for (let i = 0; i < items.length; i += cols) {
+        rows.push(items.slice(i, i + cols));
+      }
+
+      let printRowsHtml = '';
+      rows.forEach((rowItems) => {
+        printRowsHtml += `<tr>`;
+        for (let c = 0; c < cols; c++) {
+          const item = rowItems[c];
+          if (item) {
+            printRowsHtml += `<td class="tt-summary-cell" style="width: 25%;">
+              <div style="display: flex; justify-content: space-between; align-items: baseline; gap: 4px;">
+                <span style="font-weight: 800; text-transform: uppercase;">
+                  ${item.subject}
+                  ${item.teachers ? `<span style="font-size: 6.5pt; font-weight: 600; color: #333;">(${item.teachers})</span>` : ''}
+                </span>
+                <span style="font-weight: 900; font-size: 8pt; white-space: nowrap;">${item.count}</span>
+              </div>
+            </td>`;
+          } else {
+            printRowsHtml += `<td style="width: 25%; background-color: #fafafa;"></td>`;
+          }
+        }
+        printRowsHtml += `</tr>`;
+      });
+
+      const printHtml = `
+        <div class="tt-summary-wrapper ${isPrint ? '' : 'print-only'}" style="margin-top: 4px; break-inside: avoid; page-break-inside: avoid;">
+          <table class="tt-summary-table" style="width: 100%; border-collapse: collapse; table-layout: fixed; border: 1.5px solid #000000; font-size: 7.5pt;">
+            <thead>
+              <tr style="background-color: #f1f5f9; border-bottom: 1.5px solid #000000;">
+                <th colspan="4" style="padding: 2.5px 6px; font-weight: 900; font-size: 7.5pt; text-transform: uppercase; border: 1px solid #000000;">
+                  <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <span>SUBJECT PER WEEK DETAILS (${classObj.class_name})</span>
+                    <span style="font-weight: 900;">TOTAL: ${totalWeeklyPeriods} PERIODS / WEEK</span>
+                  </div>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              ${printRowsHtml}
+            </tbody>
+            <tfoot>
+              <tr style="background-color: #f1f5f9; border-top: 1.5px solid #000000;">
+                <td colspan="4" style="padding: 2.5px 6px; text-align: right; font-weight: 900; font-size: 7.5pt; border: 1px solid #000000;">
+                  TOTAL WEEKLY TEACHING LOAD: ${totalWeeklyPeriods} PERIODS / WEEK
+                </td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+      `;
+
+      if (isPrint) {
+        return printHtml;
+      }
+
+      // Screen HTML (Modern Tailwind UI)
+      const isFiltered = dayFilter && dayFilter !== 'ALL';
+      const screenHtml = `
+        <div class="px-6 py-4 bg-slate-50/70 border-t border-slate-200 no-print">
+          <div class="flex flex-wrap items-center justify-between gap-3 mb-3">
+            <div class="flex items-center space-x-2.5">
+              <div class="w-8 h-8 rounded-xl bg-indigo-100 text-indigo-700 flex items-center justify-center font-bold shadow-xs">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path></svg>
+              </div>
+              <div>
+                <h3 class="text-sm font-black text-slate-900 tracking-tight flex items-center gap-2">
+                  Subject Per Week Details
+                  <span class="text-[10px] font-bold px-2 py-0.5 bg-indigo-100 text-indigo-800 rounded-md border border-indigo-200">${items.length} Subjects</span>
+                  ${isFiltered ? `<span class="text-[10px] font-bold px-2 py-0.5 bg-amber-100 text-amber-800 rounded-md border border-amber-200">${dayFilter}: ${totalFilteredPeriods} periods</span>` : ''}
+                </h3>
+                <p class="text-[11px] text-slate-500 font-semibold">Weekly period breakdown & assigned faculty for ${classObj.class_name}</p>
+              </div>
+            </div>
+            <div class="flex items-center space-x-2">
+              <div class="text-right">
+                <span class="text-[10px] text-slate-500 font-bold uppercase tracking-wider block">Weekly Teaching Load</span>
+                <span class="text-sm font-black text-indigo-950">Total: ${totalWeeklyPeriods} Periods / Week</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-2.5">
+            ${items.map(s => `
+              <div class="bg-white border border-slate-200/90 rounded-xl p-2.5 shadow-2xs hover:border-indigo-400 hover:shadow-xs transition flex flex-col justify-between group">
+                <div class="flex items-start justify-between gap-1.5">
+                  <span class="text-xs font-black text-slate-900 uppercase tracking-tight leading-snug truncate group-hover:text-indigo-600 transition" title="${s.subject}">${s.subject}</span>
+                  <span class="text-xs font-black text-indigo-700 bg-indigo-50 border border-indigo-200 px-2 py-0.5 rounded-md shrink-0 shadow-2xs">${s.count}</span>
+                </div>
+                ${s.teachers ? `
+                  <div class="mt-1 text-[11px] font-bold text-slate-500 truncate" title="${s.teachers}">
+                    ${s.teachers}
+                  </div>
+                ` : `
+                  <div class="mt-1 text-[11px] font-medium text-slate-400 italic">Not Assigned</div>
+                `}
+              </div>
+            `).join('')}
+
+            <div class="bg-gradient-to-br from-indigo-950 to-slate-900 border border-slate-950 rounded-xl p-2.5 shadow-xs text-white flex flex-col justify-between">
+              <div class="flex items-start justify-between gap-1.5">
+                <span class="text-xs font-black uppercase tracking-wider text-indigo-200">Total</span>
+                <span class="text-xs font-black text-amber-300 bg-indigo-900/90 border border-indigo-700/60 px-2.5 py-0.5 rounded-md shrink-0">${totalWeeklyPeriods}</span>
+              </div>
+              <div class="mt-1 text-[11px] font-extrabold text-indigo-300">Teaching Periods</div>
+            </div>
+          </div>
+
+          <div class="mt-3 pt-2.5 border-t border-slate-200/80 flex items-center justify-between text-xs text-slate-500 font-semibold">
+            <div class="flex items-center gap-1.5 truncate mr-4">
+              <span class="font-bold text-slate-700">Details:</span>
+              <span class="truncate">${items.map(s => `${s.subject} - ${s.count}`).join(' • ')}</span>
+            </div>
+            <div class="shrink-0 font-black text-slate-900 bg-slate-100 px-3 py-1 rounded-lg border border-slate-200">
+              --------- Total - ${totalWeeklyPeriods}
+            </div>
+          </div>
+        </div>
+      `;
+
+      return screenHtml + printHtml;
+    }
+
+    function getTeacherSummaryData(tInfo) {
+      const days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+      const classSubjMap = {};
+      const subjMap = {};
+
+      days.forEach(day => {
+        const list = (tInfo.weekly_schedule && tInfo.weekly_schedule[day]) || [];
+        list.forEach(p => {
+          const s = p.subject || 'General';
+          const c = p.class_name || 'Class';
+          const key = `${c} (${s})`;
+          classSubjMap[key] = (classSubjMap[key] || 0) + 1;
+          subjMap[s] = (subjMap[s] || 0) + 1;
+        });
+      });
+
+      const classItems = Object.entries(classSubjMap).map(([title, count]) => ({ title, count }));
+      classItems.sort((a, b) => b.count - a.count || a.title.localeCompare(b.title));
+
+      const subjItems = Object.entries(subjMap).map(([subject, count]) => ({ subject, count }));
+      subjItems.sort((a, b) => b.count - a.count || a.subject.localeCompare(b.subject));
+
+      const totalPeriods = tInfo.total_weekly_teaching_periods || classItems.reduce((sum, item) => sum + item.count, 0);
+
+      return { classItems, subjItems, totalPeriods };
+    }
+
+    function buildTeacherSubjectSummaryHTML(tInfo, teacherName) {
+      const { classItems, totalPeriods } = getTeacherSummaryData(tInfo);
+      if (!classItems || classItems.length === 0) return '';
+
+      // Build compact 4-column print table
+      const cols = 4;
+      const rows = [];
+      for (let i = 0; i < classItems.length; i += cols) {
+        rows.push(classItems.slice(i, i + cols));
+      }
+
+      let printRowsHtml = '';
+      rows.forEach((rowItems) => {
+        printRowsHtml += `<tr>`;
+        for (let c = 0; c < cols; c++) {
+          const item = rowItems[c];
+          if (item) {
+            printRowsHtml += `<td class="tt-summary-cell" style="width: 25%;">
+              <div style="display: flex; justify-content: space-between; align-items: baseline; gap: 4px;">
+                <span style="font-weight: 800; text-transform: uppercase;">${item.title}</span>
+                <span style="font-weight: 900; font-size: 8pt; white-space: nowrap;">${item.count}</span>
+              </div>
+            </td>`;
+          } else {
+            printRowsHtml += `<td style="width: 25%; background-color: #fafafa;"></td>`;
+          }
+        }
+        printRowsHtml += `</tr>`;
+      });
+
+      const printHtml = `
+        <div class="tt-summary-wrapper print-only" style="margin-top: 4px; break-inside: avoid; page-break-inside: avoid;">
+          <table class="tt-summary-table" style="width: 100%; border-collapse: collapse; table-layout: fixed; border: 1.5px solid #000000; font-size: 7.5pt;">
+            <thead>
+              <tr style="background-color: #f1f5f9; border-bottom: 1.5px solid #000000;">
+                <th colspan="4" style="padding: 2.5px 6px; font-weight: 900; font-size: 7.5pt; text-transform: uppercase; border: 1px solid #000000;">
+                  <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <span>TEACHING LOAD DETAILS (${teacherName})</span>
+                    <span style="font-weight: 900;">TOTAL: ${totalPeriods} PERIODS / WEEK</span>
+                  </div>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              ${printRowsHtml}
+            </tbody>
+            <tfoot>
+              <tr style="background-color: #f1f5f9; border-top: 1.5px solid #000000;">
+                <td colspan="4" style="padding: 2.5px 6px; text-align: right; font-weight: 900; font-size: 7.5pt; border: 1px solid #000000;">
+                  TOTAL WEEKLY TEACHING LOAD: ${totalPeriods} PERIODS / WEEK
+                </td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+      `;
+
+      const screenHtml = `
+        <div class="px-6 py-4 bg-emerald-50/40 border-t border-slate-200 no-print">
+          <div class="flex flex-wrap items-center justify-between gap-3 mb-3">
+            <div class="flex items-center space-x-2.5">
+              <div class="w-8 h-8 rounded-xl bg-emerald-100 text-emerald-800 flex items-center justify-center font-bold shadow-xs">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+              </div>
+              <div>
+                <h3 class="text-sm font-black text-slate-900 tracking-tight flex items-center gap-2">
+                  Weekly Teaching Load Details
+                  <span class="text-[10px] font-bold px-2 py-0.5 bg-emerald-100 text-emerald-800 rounded-md border border-emerald-200">${classItems.length} Allocations</span>
+                </h3>
+                <p class="text-[11px] text-slate-500 font-semibold">Periods per week across assigned classes for ${teacherName}</p>
+              </div>
+            </div>
+            <div class="flex items-center space-x-2">
+              <div class="text-right">
+                <span class="text-[10px] text-slate-500 font-bold uppercase tracking-wider block">Weekly Teaching Load</span>
+                <span class="text-sm font-black text-emerald-950">Total: ${totalPeriods} Periods / Week</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-2.5">
+            ${classItems.map(item => `
+              <div class="bg-white border border-slate-200/90 rounded-xl p-2.5 shadow-2xs hover:border-emerald-400 hover:shadow-xs transition flex flex-col justify-between group">
+                <div class="flex items-start justify-between gap-1.5">
+                  <span class="text-xs font-black text-slate-900 uppercase tracking-tight leading-snug truncate group-hover:text-emerald-700 transition" title="${item.title}">${item.title}</span>
+                  <span class="text-xs font-black text-emerald-800 bg-emerald-50 border border-emerald-200 px-2 py-0.5 rounded-md shrink-0 shadow-2xs">${item.count}</span>
+                </div>
+                <div class="mt-1 text-[11px] font-semibold text-slate-500">Periods / Week</div>
+              </div>
+            `).join('')}
+
+            <div class="bg-gradient-to-br from-emerald-950 to-slate-900 border border-slate-950 rounded-xl p-2.5 shadow-xs text-white flex flex-col justify-between">
+              <div class="flex items-start justify-between gap-1.5">
+                <span class="text-xs font-black uppercase tracking-wider text-emerald-200">Total</span>
+                <span class="text-xs font-black text-amber-300 bg-emerald-900/90 border border-emerald-700/60 px-2.5 py-0.5 rounded-md shrink-0">${totalPeriods}</span>
+              </div>
+              <div class="mt-1 text-[11px] font-extrabold text-emerald-300">Teaching Periods</div>
+            </div>
+          </div>
+
+          <div class="mt-3 pt-2.5 border-t border-slate-200/80 flex items-center justify-between text-xs text-slate-500 font-semibold">
+            <div class="flex items-center gap-1.5 truncate mr-4">
+              <span class="font-bold text-slate-700">Details:</span>
+              <span class="truncate">${classItems.map(item => `${item.title} - ${item.count}`).join(' • ')}</span>
+            </div>
+            <div class="shrink-0 font-black text-slate-900 bg-slate-100 px-3 py-1 rounded-lg border border-slate-200">
+              --------- Total - ${totalPeriods}
+            </div>
+          </div>
+        </div>
+      `;
+
+      return screenHtml + printHtml;
+    }
+
     function renderClassTimetable() {
       const select = document.getElementById('class-select');
       const selectedClassName = select.value;
@@ -1180,6 +1542,11 @@
 
       const table = document.getElementById('class-table');
       table.innerHTML = buildClassTableHTML(classObj, dayFilter);
+
+      const summaryContainer = document.getElementById('class-subject-summary');
+      if (summaryContainer) {
+        summaryContainer.innerHTML = buildClassSubjectSummaryHTML(classObj, false, dayFilter);
+      }
     }
 
     /* Range Export Modal & Download Logic */
@@ -1450,6 +1817,9 @@
               .tt-subject { font-size: 10.5px !important; font-weight: 900 !important; line-height: 1.15 !important; }
               .tt-teacher { font-size: 9.5px !important; font-weight: 800 !important; }
               .tt-cell-inner { height: auto !important; width: 100% !important; overflow: visible !important; }
+              .tt-summary-table { width: 100% !important; margin-top: 4px !important; border-collapse: collapse !important; table-layout: fixed !important; border: 1.5px solid #000000 !important; }
+              .tt-summary-table td, .tt-summary-table th { width: 25% !important; font-size: 8.5px !important; padding: 2px 4px !important; text-align: left !important; border: 1px solid #000000 !important; }
+              .tt-summary-table thead th, .tt-summary-table tfoot td { background-color: #f1f5f9 !important; font-weight: 900 !important; }
             </style>
           `;
 
@@ -1472,6 +1842,7 @@
               <table style="width: 100%; border-collapse: collapse; border: 2px solid #000000; table-layout: fixed; font-size: 11px;">
                 ${buildClassTableHTML(c, 'ALL')}
               </table>
+              ${buildClassSubjectSummaryHTML(c, true, 'ALL')}
               <div style="margin-top: 6px; font-size: 9.5px; font-weight: 700; color: #333333; display: flex; justify-content: space-between;">
                 <span>Session 2026-27 • Guru Nanak Public School</span>
                 <span>Class: ${c.class_name} • Page ${idx + 1} of ${slice.length}</span>
@@ -1536,6 +1907,7 @@
           <table class="w-full text-left border-collapse border-2 border-black" style="table-layout: fixed;">
             ${buildClassTableHTML(c, 'ALL')}
           </table>
+          ${buildClassSubjectSummaryHTML(c, true, 'ALL')}
           <div class="mt-2 text-[10px] text-black font-bold flex justify-between">
             <span>Session 2026-27 • Guru Nanak Public School</span>
             <span>Class: ${c.class_name} • Page ${idx + 1} of ${slice.length}</span>
@@ -1722,6 +2094,11 @@
 
       html += `</tbody>`;
       table.innerHTML = html;
+
+      const summaryContainer = document.getElementById('teacher-subject-summary');
+      if (summaryContainer) {
+        summaryContainer.innerHTML = buildTeacherSubjectSummaryHTML(tInfo, teacherName);
+      }
     }
 
     // FREE TEACHERS TAB FUNCTIONS
