@@ -5,3 +5,7 @@
 __pycache__/
 *.pyc
 timetable.db
+
+# Substitution history holds teacher leave records; keep it local, never publish it
+substitutions_history.json
+substitutions_history.json.tmp

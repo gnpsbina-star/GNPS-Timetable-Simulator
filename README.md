@@ -127,7 +127,7 @@ To verify timetable validity and push updates to the live site:
 ```
 This script automatically:
 1. Runs `import_timetable.py` and `generate_timetable.py --verify` to guarantee 0 teacher/room clashes.
-2. Commits and pushes changes to the GitHub repository.
+2. Commits and pushes changes to the GitHub repository. The substitution history (`substitutions_history.json`, which holds teacher leave records) is never published.
 3. Triggers immediate deployment on Vercel.
 
 ---
