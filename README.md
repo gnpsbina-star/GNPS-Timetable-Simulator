@@ -2,7 +2,7 @@
 **Gomti Nandan Public School**
 
 [![Python 3.9+](https://img.shields.io/badge/Python-3.9+-3776AB?style=flat&logo=python&logoColor=white)](https://python.org)
-[![Tests Passing](https://img.shields.io/badge/Tests-114%20Passed-success?style=flat&logo=pytest)](tests/)
+[![Tests Passing](https://img.shields.io/badge/Tests-117%20Passed-success?style=flat&logo=pytest)](tests/)
 [![Deployment](https://img.shields.io/badge/Deployment-Vercel%20%2B%20GitHub-black?style=flat&logo=vercel)](https://vercel.com)
 [![Platform](https://img.shields.io/badge/Architecture-Vanilla%20JS%20%7C%20Tailwind%20%7C%20SQLite-indigo)](https://tailwindcss.com)
 
@@ -147,7 +147,7 @@ This script automatically:
 
 When running `server.py`, the following REST endpoints are available:
 
-> **Access:** anyone on the network can view the pages and use the read-only endpoints, but the endpoints that change data (`save-config`, `run-generate`, `purge-faculty`, `substitutions/save`) only accept requests from the computer running the server, made from a page it served (`http://localhost:8080`). Other computers get `403 Forbidden`.
+> **Access:** anyone on the network can view the pages and use the read-only endpoints, but the endpoints that change data (`save-config`, `run-generate`, `purge-faculty`, `substitutions/save`) only accept requests from the computer running the server, made from a page it served (`http://localhost:8080`). Other computers get `403 Forbidden`. The substitution history (teacher leave records) is likewise only readable on that computer through `GET /api/substitutions/history`, and the `substitutions_history.json` file itself is never served.
 
 - `POST /api/save-config`: Atomically writes updated configuration to `timetable_config.json`, detects deleted faculty, and triggers auto-purge.
 - `POST /api/purge-faculty`: Accepts `{"faculty_name": "Name"}` and executes a multi-layer cascade unassignment across databases and outputs.
@@ -165,7 +165,7 @@ The codebase includes an extensive automated test suite covering CSP constraints
 python3 -m unittest discover -s tests
 ```
 
-**Status**: 114 tests passing (0 failures, 0 errors).
+**Status**: 117 tests passing (0 failures, 0 errors).
 
 ---
 
@@ -196,7 +196,7 @@ python3 -m unittest discover -s tests
 │   ├── generator.py                    # CSP scheduling logic
 │   ├── substitution.py                 # Proxy ranking algorithm
 │   └── excel_exporter.py               # Excel formatting utility
-├── tests/                              # Unit & integration test suite (114 tests)
+├── tests/                              # Unit & integration test suite (117 tests)
 └── archive/                            # Retired one-off migration scripts and HTML prototypes
 ```
 

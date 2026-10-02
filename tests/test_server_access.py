@@ -19,7 +19,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, BASE_DIR)
 
 import server
-from server import is_loopback_host, is_loopback_origin, is_local_change_request
+from server import is_loopback_host, is_loopback_origin, is_local_request, is_private_file
 
 
 class TestLocalChangeRules(unittest.TestCase):
@@ -38,15 +38,23 @@ class TestLocalChangeRules(unittest.TestCase):
 
     def test_change_request_rules(self):
         # This computer, no browser Origin (e.g. a script or curl)
-        self.assertTrue(is_local_change_request('127.0.0.1', None))
+        self.assertTrue(is_local_request('127.0.0.1', None))
         # This computer, page served by this computer
-        self.assertTrue(is_local_change_request('127.0.0.1', 'http://localhost:8080'))
+        self.assertTrue(is_local_request('127.0.0.1', 'http://localhost:8080'))
         # Another computer on the network
-        self.assertFalse(is_local_change_request('192.168.1.20', None))
-        self.assertFalse(is_local_change_request('192.168.1.20', 'http://192.168.1.5:8080'))
+        self.assertFalse(is_local_request('192.168.1.20', None))
+        self.assertFalse(is_local_request('192.168.1.20', 'http://192.168.1.5:8080'))
         # Another website open in the admin's browser on this computer
-        self.assertFalse(is_local_change_request('127.0.0.1', 'https://evil.example'))
-        self.assertFalse(is_local_change_request('127.0.0.1', 'null'))
+        self.assertFalse(is_local_request('127.0.0.1', 'https://evil.example'))
+        self.assertFalse(is_local_request('127.0.0.1', 'null'))
+
+    def test_private_files(self):
+        for path in ['/substitutions_history.json', '/SUBSTITUTIONS_HISTORY.JSON',
+                     '/%73ubstitutions_history.json', '/./substitutions_history.json',
+                     '/x/../substitutions_history.json', '/substitutions_history.json.tmp']:
+            self.assertTrue(is_private_file(path), path)
+        for path in ['/timetable.json', '/free_teachers.json', '/', '/substitution.html']:
+            self.assertFalse(is_private_file(path), path)
 
 
 class TestServerAccess(unittest.TestCase):
@@ -99,6 +107,18 @@ class TestServerAccess(unittest.TestCase):
         for path in server.CHANGE_ENDPOINTS:
             status, _, _ = self._request(path, {}, origin='https://evil.example')
             self.assertEqual(status, 403, path)
+
+    def test_history_file_is_never_served(self):
+        for path in ['/substitutions_history.json', '/SUBSTITUTIONS_HISTORY.JSON', '/%73ubstitutions_history.json']:
+            status, _, _ = self._request(path)
+            self.assertEqual(status, 403, path)
+
+    def test_history_endpoint_only_for_this_computer(self):
+        status, _, body = self._request('/api/substitutions/history')
+        self.assertEqual(status, 200)
+        self.assertIn('records', json.loads(body))
+        status, _, _ = self._request('/api/substitutions/history', origin='https://evil.example')
+        self.assertEqual(status, 403)
 
     def test_other_websites_cannot_read_responses(self):
         _, headers, _ = self._request('/index.html', origin='https://evil.example')
