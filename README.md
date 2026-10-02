@@ -2,7 +2,7 @@
 **Guru Nanak Public School**
 
 [![Python 3.9+](https://img.shields.io/badge/Python-3.9+-3776AB?style=flat&logo=python&logoColor=white)](https://python.org)
-[![Tests Passing](https://img.shields.io/badge/Tests-105%20Passed-success?style=flat&logo=pytest)](file:///Users/vikas/Desktop/AG%20Projects%20TT/tests)
+[![Tests Passing](https://img.shields.io/badge/Tests-105%20Passed-success?style=flat&logo=pytest)](tests/)
 [![Deployment](https://img.shields.io/badge/Deployment-Vercel%20%2B%20GitHub-black?style=flat&logo=vercel)](https://vercel.com)
 [![Platform](https://img.shields.io/badge/Architecture-Vanilla%20JS%20%7C%20Tailwind%20%7C%20SQLite-indigo)](https://tailwindcss.com)
 
@@ -207,7 +207,8 @@ python3 -m unittest discover -s tests
 │   ├── generator.py                    # CSP scheduling logic
 │   ├── substitution.py                 # Proxy ranking algorithm
 │   └── excel_exporter.py               # Excel formatting utility
-└── tests/                              # Unit & integration test suite (105 tests)
+├── tests/                              # Unit & integration test suite (105 tests)
+└── archive/                            # Retired one-off migration scripts and HTML prototypes
 ```
 
 ---
