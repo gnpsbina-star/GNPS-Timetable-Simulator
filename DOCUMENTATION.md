@@ -51,7 +51,6 @@ timetable.json  timetable_teachers.json  free_teachers.json
       │ - substitution.html   │
       │ - free_teachers.html  │
       │ - prerequisites.html  │
-      │ - login.html          │
       └───────────────────────┘
 ```
 
@@ -150,15 +149,6 @@ The Python Constraint Satisfaction Problem (CSP) scheduling engine in `engine/ge
 - **Hard Constraints**: 0 faculty clashes, 0 room clashes, weekly teacher quotas, daily load limits, double-period lab continuity.
 - **Soft Constraints**: Prioritizes Class Teachers for Period 1 with their designated class.
 - **Feasibility Audit**: Pre-checks room capacities, teacher hours, and section quotas before running the solver.
-
----
-
-### 3.6 Module 6: Authentication & Navigation (`login.html`, `auth.js`, `nav.js`)
-
-- **Google Workspace OAuth 2.0**: Official Google Identity Services (GSI) SDK integration with JWT credential decoding.
-- **Customizable Google Client ID**: In-browser configuration drawer allowing easy pairing with your school's Google Cloud project.
-- **Instant Demo Logins**: 1-click test roles for Administrator (`admin@gnps.ac.in`) and Faculty (`jyotsharan@gnps.ac.in`) for offline/local workflows.
-- **Unified Navigation Bar**: User avatar, role badges, and universal logout synced across all pages.
 
 ---
 

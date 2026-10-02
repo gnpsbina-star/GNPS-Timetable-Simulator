@@ -41,12 +41,6 @@ A high-performance, zero-external-build timetable scheduling, constraint-satisfa
 - **Feasibility Precheck**: Audits room quotas, teacher hours, and section requirements before generation.
 - **Class Teacher Period 1 Rule**: Ensures Class Teachers are prioritized for Period 1 with their designated class.
 
-### 6. 🔐 User Authentication & Roles (`login.html`, `auth.js`, `nav.js`)
-- **Google Workspace OAuth 2.0**: Official Google Identity Services (GSI) SDK sign-in with JWT token decoding.
-- **Customizable Google Client ID**: In-browser configuration drawer allowing easy pairing with your school's Google Cloud project.
-- **Instant Demo Logins**: 1-click test roles for Administrator (`admin@gnps.ac.in`) and Faculty (`jyotsharan@gnps.ac.in`) for offline/local workflows.
-- **Unified Navigation Bar**: User avatar, role badges, and universal logout synced across all pages.
-
 ---
 
 ## 🏗️ System Architecture & Data Flow
@@ -81,7 +75,6 @@ timetable.json  timetable_teachers.json  free_teachers.json
       │ - substitution.html   │
       │ - free_teachers.html  │
       │ - prerequisites.html  │
-      │ - login.html          │
       └───────────────────────┘
 ```
 
@@ -89,7 +82,7 @@ timetable.json  timetable_teachers.json  free_teachers.json
 
 ## 💻 Tech Stack
 
-- **Frontend**: Vanilla JavaScript (ES6+), HTML5, Tailwind CSS (via CDN), Google Identity Services (GSI) SDK.
+- **Frontend**: Vanilla JavaScript (ES6+), HTML5, Tailwind CSS (via CDN).
 - **Backend / Server**: Python 3 standard library (`http.server`, `socketserver`, `sqlite3`, `json`, `csv`). No external framework dependencies required.
 - **Database**: SQLite3 (`timetable.sqlite`).
 - **Scheduling Engine**: Custom Python CSP / Constraint Satisfaction Engine (`engine/`).
@@ -115,7 +108,6 @@ The server will start on:
 ### 3. Open in Browser
 | Page | URL | Description |
 | :--- | :--- | :--- |
-| **Login / Sign In** | `http://localhost:8080/login.html` | Google Sign-In & Demo role access |
 | **Master Timetable** | `http://localhost:8080/index.html` | Class & Teacher timetable viewer |
 | **Substitution Studio** | `http://localhost:8080/substitution.html` | Proxy assignment & register printing |
 | **Free Teachers** | `http://localhost:8080/free_teachers.html` | Teacher vacancy matrix |
@@ -184,8 +176,6 @@ python3 -m unittest discover -s tests
 ├── substitution.html                   # Daily substitution & proxy register
 ├── free_teachers.html                  # Availability matrix
 ├── prerequisites.html                  # Rules, periods & teachers setup
-├── login.html                          # Google Sign-In & authentication
-├── auth.js                             # Client-side session and auth manager
 ├── nav.js                              # Shared responsive navigation header
 ├── purge_faculty.py                    # Multi-layer cascade faculty deletion tool
 ├── sync_master_data.py                 # SQLite-to-JSON data synchronizer
