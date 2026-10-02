@@ -7,6 +7,7 @@ purge_faculty.py - Completely purge or unassign a deleted faculty member across 
   4. timetable_teachers.json (individual teacher schedules)
   5. free_teachers.json (availability rosters)
   6. timetable_entries.csv (raw CSV records)
+  7. index.html / free_teachers.html (embedded data snapshots)
 """
 
 import sys
@@ -134,6 +135,17 @@ def purge_faculty(faculty_name):
             print("✅ Successfully rebuilt timetable.json, timetable_teachers.json, free_teachers.json, and timetable_entries.csv.")
         else:
             print("⚠️ Warning running sync_master_data.py:", res.stderr)
+
+    # 4. Re-embed the rebuilt JSON into index.html and free_teachers.html, which
+    #    carry their own copies of the data and otherwise keep showing the faculty.
+    embed_script = os.path.join(BASE_DIR, "embed_html_data.py")
+    if os.path.exists(embed_script):
+        import subprocess
+        res = subprocess.run([sys.executable, embed_script], capture_output=True, text=True)
+        if res.returncode == 0:
+            print("✅ Refreshed embedded data in index.html and free_teachers.html.")
+        else:
+            print("⚠️ Warning running embed_html_data.py:", res.stderr)
 
     print(f"\n🎉 Completed! Faculty '{clean_name}' has been completely purged from all timetable grids, rosters, and data files.")
 
