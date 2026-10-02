@@ -15,8 +15,9 @@ import http.server
 import socketserver
 import traceback
 
+import posixpath
 import urllib.parse
-from urllib.parse import urlparse, parse_qs
+from urllib.parse import urlparse, parse_qs, unquote
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 PORT = 8080
@@ -33,6 +34,17 @@ CHANGE_ENDPOINTS = {
     '/api/run-generate',
     '/api/purge-faculty',
     '/api/substitutions/save',
+}
+
+# Endpoints that return teacher leave records; only this computer may read them.
+PRIVATE_READ_ENDPOINTS = {
+    '/api/substitutions/history',
+}
+
+# Files that are never served as static files, to anyone (teacher leave records).
+PRIVATE_FILES = {
+    'substitutions_history.json',
+    'substitutions_history.json.tmp',
 }
 
 
@@ -58,15 +70,21 @@ def is_loopback_origin(origin):
     return is_loopback_host(urlparse(origin).hostname)
 
 
-def is_local_change_request(client_ip, origin):
+def is_local_request(client_ip, origin):
     """
-    A change is allowed only when the connection comes from this computer and,
-    if a browser sent it, from a page this computer served. The Origin check stops
-    other websites open in the admin's browser from making changes.
+    True only when the connection comes from this computer and, if a browser sent
+    it, from a page this computer served. The Origin check stops other websites
+    open in the admin's browser from making changes or reading private data.
     """
     if not is_loopback_host(client_ip):
         return False
     return origin is None or is_loopback_origin(origin)
+
+
+def is_private_file(url_path):
+    """True when a URL path names a private file, however it is encoded or cased."""
+    name = posixpath.basename(posixpath.normpath(unquote(url_path)))
+    return name.lower() in PRIVATE_FILES
 
 
 class TimetableRequestHandler(http.server.SimpleHTTPRequestHandler):
@@ -106,8 +124,22 @@ class TimetableRequestHandler(http.server.SimpleHTTPRequestHandler):
             self._send_json({'success': False, 'error': f'Invalid JSON: {str(e)}'}, status=400)
             raise
 
+    def _refuse_non_local(self, path):
+        print(f"⛔ Blocked {path} from {self.client_address[0]} (origin: {self.headers.get('Origin')})", flush=True)
+        self._send_json({
+            'success': False,
+            'error': 'Only available on the computer running the server (http://localhost:8080).'
+        }, status=403)
+
     def do_GET(self):
         parsed = urlparse(self.path)
+        if parsed.path in PRIVATE_READ_ENDPOINTS and not is_local_request(
+                self.client_address[0], self.headers.get('Origin')):
+            self._refuse_non_local(parsed.path)
+            return
+        if is_private_file(parsed.path):
+            self.send_error(403, "Forbidden: file or path not allowed")
+            return
         if parsed.path == '/api/substitutions/history':
             try:
                 mgr = SubstitutionManager(BASE_DIR)
@@ -163,13 +195,9 @@ class TimetableRequestHandler(http.server.SimpleHTTPRequestHandler):
     def do_POST(self):
         parsed = urlparse(self.path)
         path = parsed.path
-        if path in CHANGE_ENDPOINTS and not is_local_change_request(
+        if path in CHANGE_ENDPOINTS and not is_local_request(
                 self.client_address[0], self.headers.get('Origin')):
-            print(f"⛔ Blocked {path} from {self.client_address[0]} (origin: {self.headers.get('Origin')})", flush=True)
-            self._send_json({
-                'success': False,
-                'error': 'Changes can only be made on the computer running the server (http://localhost:8080).'
-            }, status=403)
+            self._refuse_non_local(path)
             return
         if path == '/api/save-config':
             try:
