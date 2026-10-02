@@ -99,7 +99,7 @@ function handleNavLogout() {
   localStorage.removeItem('tt_auth_user');
   renderNavUserProfile();
   // Optional redirect if page is protected
-  if (window.location.pathname.includes('creator') || window.location.pathname.includes('prerequisites')) {
+  if (window.location.pathname.includes('prerequisites')) {
     window.location.href = 'index.html';
   } else {
     window.location.reload();
