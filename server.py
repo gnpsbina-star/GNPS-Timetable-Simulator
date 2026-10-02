@@ -129,6 +129,26 @@ class TimetableRequestHandler(http.server.SimpleHTTPRequestHandler):
                     except Exception:
                         pass
 
+                # Detect if any teacher was removed in incoming config
+                old_teachers = set()
+                if os.path.exists(config_path):
+                    try:
+                        with open(config_path, 'r', encoding='utf-8') as f_old:
+                            old_cfg = json.load(f_old)
+                            old_teachers = {t.get('name', '').strip() for t in old_cfg.get('teachers', []) if t.get('name')}
+                    except Exception:
+                        pass
+
+                new_teachers = {t.get('name', '').strip() for t in data.get('teachers', []) if t.get('name')}
+                deleted_teachers = old_teachers - new_teachers
+                for del_t in deleted_teachers:
+                    try:
+                        from purge_faculty import purge_faculty
+                        print(f"⚡ Auto-purging deleted faculty: {del_t}", flush=True)
+                        purge_faculty(del_t)
+                    except Exception as purge_err:
+                        print(f"Warning during cascade purge of {del_t}: {purge_err}", flush=True)
+
                 with open(config_path, 'w', encoding='utf-8') as f:
                     json.dump(data, f, indent=2, ensure_ascii=False)
 
@@ -366,6 +386,19 @@ class TimetableRequestHandler(http.server.SimpleHTTPRequestHandler):
                 self.send_header('Content-Length', str(len(excel_bytes)))
                 self.end_headers()
                 self.wfile.write(excel_bytes)
+            except Exception as e:
+                traceback.print_exc()
+                self._send_json({'success': False, 'error': str(e)}, status=500)
+        elif path == '/api/purge-faculty':
+            try:
+                data = self._read_json_body()
+                faculty_name = data.get("faculty_name", "").strip()
+                if not faculty_name:
+                    self._send_json({'success': False, 'error': 'Missing faculty_name'}, status=400)
+                    return
+                from purge_faculty import purge_faculty
+                purge_faculty(faculty_name)
+                self._send_json({'success': True, 'message': f'Faculty {faculty_name} successfully purged from all layers.'})
             except Exception as e:
                 traceback.print_exc()
                 self._send_json({'success': False, 'error': str(e)}, status=500)

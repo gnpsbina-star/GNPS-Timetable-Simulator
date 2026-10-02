@@ -4,8 +4,8 @@
 # ----------------------------------------------------
 cd "$(dirname "$0")"
 
-echo "🔄 Step 1: Processing timetable and verifying 0 clashes..."
-python3 import_timetable.py
+echo "🔄 Step 1: Synchronizing master data and verifying 0 clashes..."
+python3 sync_master_data.py
 python3 generate_timetable.py --verify || { echo "❌ Aborting: Clashes detected!"; exit 1; }
 
 echo ""

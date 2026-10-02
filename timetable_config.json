@@ -366,15 +366,6 @@
       "assigned_periods": 35
     },
     {
-      "id": "Deepak Kushwaha",
-      "name": "Deepak Kushwaha",
-      "max_weekly_periods": 34,
-      "max_daily_periods": 6,
-      "is_specialist": false,
-      "unavailable_slots": [],
-      "assigned_periods": 0
-    },
-    {
       "id": "Deepmali",
       "name": "Deepmali",
       "max_weekly_periods": 34,

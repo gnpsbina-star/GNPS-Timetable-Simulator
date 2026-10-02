@@ -5077,21 +5077,6 @@
       ]
     }
   },
-  "Deepak Kushwaha": {
-    "teacher_name": "Deepak Kushwaha",
-    "is_class_teacher_of": [],
-    "total_weekly_teaching_periods": 0,
-    "classes": [],
-    "subjects": [],
-    "weekly_schedule": {
-      "Monday": [],
-      "Tuesday": [],
-      "Wednesday": [],
-      "Thursday": [],
-      "Friday": [],
-      "Saturday": []
-    }
-  },
   "Deepmali": {
     "teacher_name": "Deepmali",
     "is_class_teacher_of": [

@@ -1,5 +1,5 @@
 {
-  "total_active_teachers": 50,
+  "total_active_teachers": 49,
   "days": [
     "Monday",
     "Tuesday",
@@ -73,7 +73,7 @@
           "name": "Morning Assembly",
           "time": "07:50 to 08:20"
         },
-        "free_count": 10,
+        "free_count": 9,
         "busy_count": 39,
         "busy_teachers": {
           "Anjali Jain": {
@@ -306,13 +306,6 @@
             "weekly_load": 33
           },
           {
-            "name": "Deepak Kushwaha",
-            "is_class_teacher_of": [],
-            "subjects": [],
-            "classes": [],
-            "weekly_load": 0
-          },
-          {
             "name": "Geetesh",
             "is_class_teacher_of": [],
             "subjects": [
@@ -521,7 +514,7 @@
           "name": "1st Period",
           "time": "08:30 to 09:10 AM"
         },
-        "free_count": 10,
+        "free_count": 9,
         "busy_count": 40,
         "busy_teachers": {
           "Anjali Jain": {
@@ -749,13 +742,6 @@
             "weekly_load": 20
           },
           {
-            "name": "Deepak Kushwaha",
-            "is_class_teacher_of": [],
-            "subjects": [],
-            "classes": [],
-            "weekly_load": 0
-          },
-          {
             "name": "Deepmali",
             "is_class_teacher_of": [
               "CLASS 7 Marigold"
@@ -916,7 +902,7 @@
           "name": "2nd Period",
           "time": "09:10 AM to 09:55 AM"
         },
-        "free_count": 9,
+        "free_count": 8,
         "busy_count": 41,
         "busy_teachers": {
           "Anjali Jain": {
@@ -1146,13 +1132,6 @@
             "weekly_load": 35
           },
           {
-            "name": "Deepak Kushwaha",
-            "is_class_teacher_of": [],
-            "subjects": [],
-            "classes": [],
-            "weekly_load": 0
-          },
-          {
             "name": "Pradeep",
             "is_class_teacher_of": [],
             "subjects": [
@@ -1317,7 +1296,7 @@
           "name": "3rd Period",
           "time": "09:55 AM to 10:40 AM"
         },
-        "free_count": 10,
+        "free_count": 9,
         "busy_count": 40,
         "busy_teachers": {
           "Anjali Jain": {
@@ -1545,13 +1524,6 @@
             "weekly_load": 20
           },
           {
-            "name": "Deepak Kushwaha",
-            "is_class_teacher_of": [],
-            "subjects": [],
-            "classes": [],
-            "weekly_load": 0
-          },
-          {
             "name": "Geetesh",
             "is_class_teacher_of": [],
             "subjects": [
@@ -1713,7 +1685,7 @@
           "name": "Lunch",
           "time": "10:40 AM to 11:00 AM"
         },
-        "free_count": 10,
+        "free_count": 9,
         "busy_count": 39,
         "busy_teachers": {
           "Anjali Jain": {
@@ -1946,13 +1918,6 @@
             "weekly_load": 33
           },
           {
-            "name": "Deepak Kushwaha",
-            "is_class_teacher_of": [],
-            "subjects": [],
-            "classes": [],
-            "weekly_load": 0
-          },
-          {
             "name": "Geetesh",
             "is_class_teacher_of": [],
             "subjects": [
@@ -2161,7 +2126,7 @@
           "name": "4th Period",
           "time": "11:00 AM to 11:45 AM"
         },
-        "free_count": 9,
+        "free_count": 8,
         "busy_count": 40,
         "busy_teachers": {
           "Anjali Jain": {
@@ -2389,13 +2354,6 @@
             "weekly_load": 20
           },
           {
-            "name": "Deepak Kushwaha",
-            "is_class_teacher_of": [],
-            "subjects": [],
-            "classes": [],
-            "weekly_load": 0
-          },
-          {
             "name": "Manish Mathur",
             "is_class_teacher_of": [
               "CLASS 9 Lily"
@@ -2551,7 +2509,7 @@
           "name": "5th Period",
           "time": "11:45 AM to 12:25 PM"
         },
-        "free_count": 9,
+        "free_count": 8,
         "busy_count": 40,
         "busy_teachers": {
           "Anjali Jain": {
@@ -2797,13 +2755,6 @@
             "weekly_load": 35
           },
           {
-            "name": "Deepak Kushwaha",
-            "is_class_teacher_of": [],
-            "subjects": [],
-            "classes": [],
-            "weekly_load": 0
-          },
-          {
             "name": "Divya Upadhyay",
             "is_class_teacher_of": [
               "CLASS 11 (Bio + Math)"
@@ -2909,7 +2860,7 @@
           "name": "6th Period",
           "time": "12:25 PM to 01:05 PM"
         },
-        "free_count": 10,
+        "free_count": 9,
         "busy_count": 39,
         "busy_teachers": {
           "Anjali Jain": {
@@ -3132,13 +3083,6 @@
             "weekly_load": 20
           },
           {
-            "name": "Deepak Kushwaha",
-            "is_class_teacher_of": [],
-            "subjects": [],
-            "classes": [],
-            "weekly_load": 0
-          },
-          {
             "name": "Geetesh",
             "is_class_teacher_of": [],
             "subjects": [
@@ -3308,7 +3252,7 @@
           "name": "7th Period",
           "time": "01:05 PM to 01:45 PM"
         },
-        "free_count": 37,
+        "free_count": 36,
         "busy_count": 11,
         "busy_teachers": {
           "Anuraj": {
@@ -3539,13 +3483,6 @@
               "CLASS 6 Marigold"
             ],
             "weekly_load": 34
-          },
-          {
-            "name": "Deepak Kushwaha",
-            "is_class_teacher_of": [],
-            "subjects": [],
-            "classes": [],
-            "weekly_load": 0
           },
           {
             "name": "Deepmali",
@@ -4137,7 +4074,7 @@
           "name": "Morning Assembly",
           "time": "07:50 to 08:20"
         },
-        "free_count": 10,
+        "free_count": 9,
         "busy_count": 39,
         "busy_teachers": {
           "Anjali Jain": {
@@ -4370,13 +4307,6 @@
             "weekly_load": 33
           },
           {
-            "name": "Deepak Kushwaha",
-            "is_class_teacher_of": [],
-            "subjects": [],
-            "classes": [],
-            "weekly_load": 0
-          },
-          {
             "name": "Geetesh",
             "is_class_teacher_of": [],
             "subjects": [
@@ -4585,7 +4515,7 @@
           "name": "1st Period",
           "time": "08:30 to 09:10 AM"
         },
-        "free_count": 10,
+        "free_count": 9,
         "busy_count": 40,
         "busy_teachers": {
           "Anjali Jain": {
@@ -4813,13 +4743,6 @@
             "weekly_load": 20
           },
           {
-            "name": "Deepak Kushwaha",
-            "is_class_teacher_of": [],
-            "subjects": [],
-            "classes": [],
-            "weekly_load": 0
-          },
-          {
             "name": "Deepmali",
             "is_class_teacher_of": [
               "CLASS 7 Marigold"
@@ -4960,7 +4883,7 @@
           "name": "2nd Period",
           "time": "09:10 AM to 09:55 AM"
         },
-        "free_count": 9,
+        "free_count": 8,
         "busy_count": 41,
         "busy_teachers": {
           "Anjali Jain": {
@@ -5193,13 +5116,6 @@
             "weekly_load": 20
           },
           {
-            "name": "Deepak Kushwaha",
-            "is_class_teacher_of": [],
-            "subjects": [],
-            "classes": [],
-            "weekly_load": 0
-          },
-          {
             "name": "Prashant",
             "is_class_teacher_of": [],
             "subjects": [
@@ -5348,7 +5264,7 @@
           "name": "3rd Period",
           "time": "09:55 AM to 10:40 AM"
         },
-        "free_count": 10,
+        "free_count": 9,
         "busy_count": 40,
         "busy_teachers": {
           "Anjali Jain": {
@@ -5554,13 +5470,6 @@
         },
         "free_teachers": [
           {
-            "name": "Deepak Kushwaha",
-            "is_class_teacher_of": [],
-            "subjects": [],
-            "classes": [],
-            "weekly_load": 0
-          },
-          {
             "name": "Geetesh",
             "is_class_teacher_of": [],
             "subjects": [
@@ -5753,7 +5662,7 @@
           "name": "Lunch",
           "time": "10:40 AM to 11:00 AM"
         },
-        "free_count": 10,
+        "free_count": 9,
         "busy_count": 39,
         "busy_teachers": {
           "Anjali Jain": {
@@ -5986,13 +5895,6 @@
             "weekly_load": 33
           },
           {
-            "name": "Deepak Kushwaha",
-            "is_class_teacher_of": [],
-            "subjects": [],
-            "classes": [],
-            "weekly_load": 0
-          },
-          {
             "name": "Geetesh",
             "is_class_teacher_of": [],
             "subjects": [
@@ -6201,7 +6103,7 @@
           "name": "4th Period",
           "time": "11:00 AM to 11:45 AM"
         },
-        "free_count": 9,
+        "free_count": 8,
         "busy_count": 40,
         "busy_teachers": {
           "Anjali Jain": {
@@ -6461,13 +6363,6 @@
             "weekly_load": 33
           },
           {
-            "name": "Deepak Kushwaha",
-            "is_class_teacher_of": [],
-            "subjects": [],
-            "classes": [],
-            "weekly_load": 0
-          },
-          {
             "name": "Geetesh",
             "is_class_teacher_of": [],
             "subjects": [
@@ -6591,7 +6486,7 @@
           "name": "5th Period",
           "time": "11:45 AM to 12:25 PM"
         },
-        "free_count": 9,
+        "free_count": 8,
         "busy_count": 40,
         "busy_teachers": {
           "Anjali Jain": {
@@ -6851,13 +6746,6 @@
             "weekly_load": 33
           },
           {
-            "name": "Deepak Kushwaha",
-            "is_class_teacher_of": [],
-            "subjects": [],
-            "classes": [],
-            "weekly_load": 0
-          },
-          {
             "name": "Divya Upadhyay",
             "is_class_teacher_of": [
               "CLASS 11 (Bio + Math)"
@@ -6963,7 +6851,7 @@
           "name": "6th Period",
           "time": "12:25 PM to 01:05 PM"
         },
-        "free_count": 10,
+        "free_count": 9,
         "busy_count": 39,
         "busy_teachers": {
           "Anjali Jain": {
@@ -7207,13 +7095,6 @@
             "weekly_load": 36
           },
           {
-            "name": "Deepak Kushwaha",
-            "is_class_teacher_of": [],
-            "subjects": [],
-            "classes": [],
-            "weekly_load": 0
-          },
-          {
             "name": "Geetesh",
             "is_class_teacher_of": [],
             "subjects": [
@@ -7348,7 +7229,7 @@
           "name": "7th Period",
           "time": "01:05 PM to 01:45 PM"
         },
-        "free_count": 37,
+        "free_count": 36,
         "busy_count": 11,
         "busy_teachers": {
           "Anjali Nalvanshi": {
@@ -7557,13 +7438,6 @@
               "CLASS 6 Marigold"
             ],
             "weekly_load": 34
-          },
-          {
-            "name": "Deepak Kushwaha",
-            "is_class_teacher_of": [],
-            "subjects": [],
-            "classes": [],
-            "weekly_load": 0
           },
           {
             "name": "Deepmali",
@@ -8171,7 +8045,7 @@
           "name": "Morning Assembly",
           "time": "07:50 to 08:20"
         },
-        "free_count": 10,
+        "free_count": 9,
         "busy_count": 39,
         "busy_teachers": {
           "Anjali Jain": {
@@ -8404,13 +8278,6 @@
             "weekly_load": 33
           },
           {
-            "name": "Deepak Kushwaha",
-            "is_class_teacher_of": [],
-            "subjects": [],
-            "classes": [],
-            "weekly_load": 0
-          },
-          {
             "name": "Geetesh",
             "is_class_teacher_of": [],
             "subjects": [
@@ -8619,7 +8486,7 @@
           "name": "1st Period",
           "time": "08:30 to 09:10 AM"
         },
-        "free_count": 10,
+        "free_count": 9,
         "busy_count": 40,
         "busy_teachers": {
           "Anjali Jain": {
@@ -8901,13 +8768,6 @@
             "weekly_load": 33
           },
           {
-            "name": "Deepak Kushwaha",
-            "is_class_teacher_of": [],
-            "subjects": [],
-            "classes": [],
-            "weekly_load": 0
-          },
-          {
             "name": "Harshita",
             "is_class_teacher_of": [
               "CLASS 6 Sunflower"
@@ -9035,7 +8895,7 @@
           "name": "2nd Period",
           "time": "09:10 AM to 09:55 AM"
         },
-        "free_count": 9,
+        "free_count": 8,
         "busy_count": 41,
         "busy_teachers": {
           "Anjali Jain": {
@@ -9269,13 +9129,6 @@
             "weekly_load": 33
           },
           {
-            "name": "Deepak Kushwaha",
-            "is_class_teacher_of": [],
-            "subjects": [],
-            "classes": [],
-            "weekly_load": 0
-          },
-          {
             "name": "Geetesh",
             "is_class_teacher_of": [],
             "subjects": [
@@ -9429,7 +9282,7 @@
           "name": "3rd Period",
           "time": "09:55 AM to 10:40 AM"
         },
-        "free_count": 10,
+        "free_count": 9,
         "busy_count": 40,
         "busy_teachers": {
           "Anjali Jain": {
@@ -9657,13 +9510,6 @@
             "weekly_load": 31
           },
           {
-            "name": "Deepak Kushwaha",
-            "is_class_teacher_of": [],
-            "subjects": [],
-            "classes": [],
-            "weekly_load": 0
-          },
-          {
             "name": "Mraganshi",
             "is_class_teacher_of": [
               "CLASS 8 Rose"
@@ -9801,7 +9647,7 @@
           "name": "Lunch",
           "time": "10:40 AM to 11:00 AM"
         },
-        "free_count": 10,
+        "free_count": 9,
         "busy_count": 39,
         "busy_teachers": {
           "Anjali Jain": {
@@ -10034,13 +9880,6 @@
             "weekly_load": 33
           },
           {
-            "name": "Deepak Kushwaha",
-            "is_class_teacher_of": [],
-            "subjects": [],
-            "classes": [],
-            "weekly_load": 0
-          },
-          {
             "name": "Geetesh",
             "is_class_teacher_of": [],
             "subjects": [
@@ -10249,7 +10088,7 @@
           "name": "4th Period",
           "time": "11:00 AM to 11:45 AM"
         },
-        "free_count": 9,
+        "free_count": 8,
         "busy_count": 40,
         "busy_teachers": {
           "Anjali Jain": {
@@ -10477,13 +10316,6 @@
             "weekly_load": 20
           },
           {
-            "name": "Deepak Kushwaha",
-            "is_class_teacher_of": [],
-            "subjects": [],
-            "classes": [],
-            "weekly_load": 0
-          },
-          {
             "name": "Manish Chauhan",
             "is_class_teacher_of": [
               "CLASS 8 Marigold"
@@ -10639,7 +10471,7 @@
           "name": "5th Period",
           "time": "11:45 AM to 12:25 PM"
         },
-        "free_count": 9,
+        "free_count": 8,
         "busy_count": 40,
         "busy_teachers": {
           "Anjali Jain": {
@@ -10864,13 +10696,6 @@
             "weekly_load": 35
           },
           {
-            "name": "Deepak Kushwaha",
-            "is_class_teacher_of": [],
-            "subjects": [],
-            "classes": [],
-            "weekly_load": 0
-          },
-          {
             "name": "Divya Upadhyay",
             "is_class_teacher_of": [
               "CLASS 11 (Bio + Math)"
@@ -11019,7 +10844,7 @@
           "name": "6th Period",
           "time": "12:25 PM to 01:05 PM"
         },
-        "free_count": 10,
+        "free_count": 9,
         "busy_count": 39,
         "busy_teachers": {
           "Anjali Jain": {
@@ -11220,13 +11045,6 @@
         },
         "free_teachers": [
           {
-            "name": "Deepak Kushwaha",
-            "is_class_teacher_of": [],
-            "subjects": [],
-            "classes": [],
-            "weekly_load": 0
-          },
-          {
             "name": "Neha Rai",
             "is_class_teacher_of": [
               "CLASS 3 Sunflower"
@@ -11382,7 +11200,7 @@
           "name": "7th Period",
           "time": "01:05 PM to 01:45 PM"
         },
-        "free_count": 37,
+        "free_count": 36,
         "busy_count": 11,
         "busy_teachers": {
           "Anjali Nalvanshi": {
@@ -11612,13 +11430,6 @@
               "CLASS 6 Marigold"
             ],
             "weekly_load": 34
-          },
-          {
-            "name": "Deepak Kushwaha",
-            "is_class_teacher_of": [],
-            "subjects": [],
-            "classes": [],
-            "weekly_load": 0
           },
           {
             "name": "Geetesh",
@@ -12223,7 +12034,7 @@
           "name": "Morning Assembly",
           "time": "07:50 to 08:20"
         },
-        "free_count": 10,
+        "free_count": 9,
         "busy_count": 39,
         "busy_teachers": {
           "Anjali Jain": {
@@ -12456,13 +12267,6 @@
             "weekly_load": 33
           },
           {
-            "name": "Deepak Kushwaha",
-            "is_class_teacher_of": [],
-            "subjects": [],
-            "classes": [],
-            "weekly_load": 0
-          },
-          {
             "name": "Geetesh",
             "is_class_teacher_of": [],
             "subjects": [
@@ -12671,7 +12475,7 @@
           "name": "1st Period",
           "time": "08:30 to 09:10 AM"
         },
-        "free_count": 10,
+        "free_count": 9,
         "busy_count": 40,
         "busy_teachers": {
           "Anjali Jain": {
@@ -12899,13 +12703,6 @@
             "weekly_load": 20
           },
           {
-            "name": "Deepak Kushwaha",
-            "is_class_teacher_of": [],
-            "subjects": [],
-            "classes": [],
-            "weekly_load": 0
-          },
-          {
             "name": "Deepmali",
             "is_class_teacher_of": [
               "CLASS 7 Marigold"
@@ -13049,7 +12846,7 @@
           "name": "2nd Period",
           "time": "09:10 AM to 09:55 AM"
         },
-        "free_count": 9,
+        "free_count": 8,
         "busy_count": 41,
         "busy_teachers": {
           "Anjali Jain": {
@@ -13282,13 +13079,6 @@
             "weekly_load": 20
           },
           {
-            "name": "Deepak Kushwaha",
-            "is_class_teacher_of": [],
-            "subjects": [],
-            "classes": [],
-            "weekly_load": 0
-          },
-          {
             "name": "Divya Upadhyay",
             "is_class_teacher_of": [
               "CLASS 11 (Bio + Math)"
@@ -13423,7 +13213,7 @@
           "name": "3rd Period",
           "time": "09:55 AM to 10:40 AM"
         },
-        "free_count": 10,
+        "free_count": 9,
         "busy_count": 40,
         "busy_teachers": {
           "Anjali Jain": {
@@ -13661,13 +13451,6 @@
             "weekly_load": 33
           },
           {
-            "name": "Deepak Kushwaha",
-            "is_class_teacher_of": [],
-            "subjects": [],
-            "classes": [],
-            "weekly_load": 0
-          },
-          {
             "name": "Prashant",
             "is_class_teacher_of": [],
             "subjects": [
@@ -13811,7 +13594,7 @@
           "name": "Lunch",
           "time": "10:40 AM to 11:00 AM"
         },
-        "free_count": 10,
+        "free_count": 9,
         "busy_count": 39,
         "busy_teachers": {
           "Anjali Jain": {
@@ -14044,13 +13827,6 @@
             "weekly_load": 33
           },
           {
-            "name": "Deepak Kushwaha",
-            "is_class_teacher_of": [],
-            "subjects": [],
-            "classes": [],
-            "weekly_load": 0
-          },
-          {
             "name": "Geetesh",
             "is_class_teacher_of": [],
             "subjects": [
@@ -14259,7 +14035,7 @@
           "name": "4th Period",
           "time": "11:00 AM to 11:45 AM"
         },
-        "free_count": 10,
+        "free_count": 9,
         "busy_count": 39,
         "busy_teachers": {
           "Anjali Jain": {
@@ -14482,13 +14258,6 @@
             "weekly_load": 35
           },
           {
-            "name": "Deepak Kushwaha",
-            "is_class_teacher_of": [],
-            "subjects": [],
-            "classes": [],
-            "weekly_load": 0
-          },
-          {
             "name": "Nidhi",
             "is_class_teacher_of": [
               "CLASS 6 Marigold"
@@ -14653,7 +14422,7 @@
           "name": "5th Period",
           "time": "11:45 AM to 12:25 PM"
         },
-        "free_count": 10,
+        "free_count": 9,
         "busy_count": 40,
         "busy_teachers": {
           "Anjali Jain": {
@@ -14859,13 +14628,6 @@
         },
         "free_teachers": [
           {
-            "name": "Deepak Kushwaha",
-            "is_class_teacher_of": [],
-            "subjects": [],
-            "classes": [],
-            "weekly_load": 0
-          },
-          {
             "name": "Manish Chauhan",
             "is_class_teacher_of": [
               "CLASS 8 Marigold"
@@ -15033,7 +14795,7 @@
           "name": "6th Period",
           "time": "12:25 PM to 01:05 PM"
         },
-        "free_count": 10,
+        "free_count": 9,
         "busy_count": 39,
         "busy_teachers": {
           "Anjali Jain": {
@@ -15234,13 +14996,6 @@
         },
         "free_teachers": [
           {
-            "name": "Deepak Kushwaha",
-            "is_class_teacher_of": [],
-            "subjects": [],
-            "classes": [],
-            "weekly_load": 0
-          },
-          {
             "name": "Harshita",
             "is_class_teacher_of": [
               "CLASS 6 Sunflower"
@@ -15426,7 +15181,7 @@
           "name": "7th Period",
           "time": "01:05 PM to 01:45 PM"
         },
-        "free_count": 37,
+        "free_count": 36,
         "busy_count": 11,
         "busy_teachers": {
           "Anuraj": {
@@ -15657,13 +15412,6 @@
               "CLASS 6 Marigold"
             ],
             "weekly_load": 34
-          },
-          {
-            "name": "Deepak Kushwaha",
-            "is_class_teacher_of": [],
-            "subjects": [],
-            "classes": [],
-            "weekly_load": 0
           },
           {
             "name": "Geetesh",
@@ -16252,7 +16000,7 @@
           "name": "Morning Assembly",
           "time": "07:50 to 08:20"
         },
-        "free_count": 10,
+        "free_count": 9,
         "busy_count": 39,
         "busy_teachers": {
           "Anjali Jain": {
@@ -16485,13 +16233,6 @@
             "weekly_load": 33
           },
           {
-            "name": "Deepak Kushwaha",
-            "is_class_teacher_of": [],
-            "subjects": [],
-            "classes": [],
-            "weekly_load": 0
-          },
-          {
             "name": "Geetesh",
             "is_class_teacher_of": [],
             "subjects": [
@@ -16700,7 +16441,7 @@
           "name": "1st Period",
           "time": "08:30 to 09:10 AM"
         },
-        "free_count": 10,
+        "free_count": 9,
         "busy_count": 40,
         "busy_teachers": {
           "Anjali Jain": {
@@ -16905,13 +16646,6 @@
           }
         },
         "free_teachers": [
-          {
-            "name": "Deepak Kushwaha",
-            "is_class_teacher_of": [],
-            "subjects": [],
-            "classes": [],
-            "weekly_load": 0
-          },
           {
             "name": "Deepmali",
             "is_class_teacher_of": [
@@ -17125,7 +16859,7 @@
           "name": "2nd Period",
           "time": "09:10 AM to 09:55 AM"
         },
-        "free_count": 9,
+        "free_count": 8,
         "busy_count": 41,
         "busy_teachers": {
           "Anjali Jain": {
@@ -17358,13 +17092,6 @@
             "weekly_load": 20
           },
           {
-            "name": "Deepak Kushwaha",
-            "is_class_teacher_of": [],
-            "subjects": [],
-            "classes": [],
-            "weekly_load": 0
-          },
-          {
             "name": "Divya Upadhyay",
             "is_class_teacher_of": [
               "CLASS 11 (Bio + Math)"
@@ -17506,7 +17233,7 @@
           "name": "3rd Period",
           "time": "09:55 AM to 10:40 AM"
         },
-        "free_count": 10,
+        "free_count": 9,
         "busy_count": 40,
         "busy_teachers": {
           "Anjali Nalvanshi": {
@@ -17735,13 +17462,6 @@
             "weekly_load": 33
           },
           {
-            "name": "Deepak Kushwaha",
-            "is_class_teacher_of": [],
-            "subjects": [],
-            "classes": [],
-            "weekly_load": 0
-          },
-          {
             "name": "Prashant",
             "is_class_teacher_of": [],
             "subjects": [
@@ -17879,7 +17599,7 @@
           "name": "Lunch",
           "time": "10:40 AM to 11:00 AM"
         },
-        "free_count": 10,
+        "free_count": 9,
         "busy_count": 39,
         "busy_teachers": {
           "Anjali Jain": {
@@ -18112,13 +17832,6 @@
             "weekly_load": 33
           },
           {
-            "name": "Deepak Kushwaha",
-            "is_class_teacher_of": [],
-            "subjects": [],
-            "classes": [],
-            "weekly_load": 0
-          },
-          {
             "name": "Geetesh",
             "is_class_teacher_of": [],
             "subjects": [
@@ -18327,7 +18040,7 @@
           "name": "4th Period",
           "time": "11:00 AM to 11:45 AM"
         },
-        "free_count": 9,
+        "free_count": 8,
         "busy_count": 40,
         "busy_teachers": {
           "Anjali Jain": {
@@ -18533,13 +18246,6 @@
         },
         "free_teachers": [
           {
-            "name": "Deepak Kushwaha",
-            "is_class_teacher_of": [],
-            "subjects": [],
-            "classes": [],
-            "weekly_load": 0
-          },
-          {
             "name": "Harshita",
             "is_class_teacher_of": [
               "CLASS 6 Sunflower"
@@ -18731,7 +18437,7 @@
           "name": "5th Period",
           "time": "11:45 AM to 12:25 PM"
         },
-        "free_count": 10,
+        "free_count": 9,
         "busy_count": 40,
         "busy_teachers": {
           "Anjali Jain": {
@@ -18937,13 +18643,6 @@
         },
         "free_teachers": [
           {
-            "name": "Deepak Kushwaha",
-            "is_class_teacher_of": [],
-            "subjects": [],
-            "classes": [],
-            "weekly_load": 0
-          },
-          {
             "name": "Deepmali",
             "is_class_teacher_of": [
               "CLASS 7 Marigold"
@@ -19124,7 +18823,7 @@
           "name": "6th Period",
           "time": "12:25 PM to 01:05 PM"
         },
-        "free_count": 10,
+        "free_count": 9,
         "busy_count": 39,
         "busy_teachers": {
           "Anjali Jain": {
@@ -19325,13 +19024,6 @@
         },
         "free_teachers": [
           {
-            "name": "Deepak Kushwaha",
-            "is_class_teacher_of": [],
-            "subjects": [],
-            "classes": [],
-            "weekly_load": 0
-          },
-          {
             "name": "Deepmali",
             "is_class_teacher_of": [
               "CLASS 7 Marigold"
@@ -19517,7 +19209,7 @@
           "name": "7th Period",
           "time": "01:05 PM to 01:45 PM"
         },
-        "free_count": 37,
+        "free_count": 36,
         "busy_count": 11,
         "busy_teachers": {
           "Anuraj": {
@@ -19748,13 +19440,6 @@
               "CLASS 6 Marigold"
             ],
             "weekly_load": 34
-          },
-          {
-            "name": "Deepak Kushwaha",
-            "is_class_teacher_of": [],
-            "subjects": [],
-            "classes": [],
-            "weekly_load": 0
           },
           {
             "name": "Geetesh",
@@ -20343,7 +20028,7 @@
           "name": "Morning Assembly",
           "time": "07:50 to 08:20"
         },
-        "free_count": 10,
+        "free_count": 9,
         "busy_count": 39,
         "busy_teachers": {
           "Anjali Jain": {
@@ -20576,13 +20261,6 @@
             "weekly_load": 33
           },
           {
-            "name": "Deepak Kushwaha",
-            "is_class_teacher_of": [],
-            "subjects": [],
-            "classes": [],
-            "weekly_load": 0
-          },
-          {
             "name": "Geetesh",
             "is_class_teacher_of": [],
             "subjects": [
@@ -20791,7 +20469,7 @@
           "name": "1st Period",
           "time": "08:30 to 09:10 AM"
         },
-        "free_count": 10,
+        "free_count": 9,
         "busy_count": 40,
         "busy_teachers": {
           "Anjali Jain": {
@@ -20997,13 +20675,6 @@
         },
         "free_teachers": [
           {
-            "name": "Deepak Kushwaha",
-            "is_class_teacher_of": [],
-            "subjects": [],
-            "classes": [],
-            "weekly_load": 0
-          },
-          {
             "name": "Neelam Sahu",
             "is_class_teacher_of": [
               "CLASS 5 Rose"
@@ -21166,7 +20837,7 @@
           "name": "2nd Period",
           "time": "09:10 AM to 09:55 AM"
         },
-        "free_count": 9,
+        "free_count": 8,
         "busy_count": 41,
         "busy_teachers": {
           "Anjali Jain": {
@@ -21431,13 +21102,6 @@
             "weekly_load": 33
           },
           {
-            "name": "Deepak Kushwaha",
-            "is_class_teacher_of": [],
-            "subjects": [],
-            "classes": [],
-            "weekly_load": 0
-          },
-          {
             "name": "Divya Upadhyay",
             "is_class_teacher_of": [
               "CLASS 11 (Bio + Math)"
@@ -21557,7 +21221,7 @@
           "name": "3rd Period",
           "time": "09:55 AM to 10:40 AM"
         },
-        "free_count": 10,
+        "free_count": 9,
         "busy_count": 40,
         "busy_teachers": {
           "Anjali Jain": {
@@ -21814,13 +21478,6 @@
             "weekly_load": 35
           },
           {
-            "name": "Deepak Kushwaha",
-            "is_class_teacher_of": [],
-            "subjects": [],
-            "classes": [],
-            "weekly_load": 0
-          },
-          {
             "name": "Prashant",
             "is_class_teacher_of": [],
             "subjects": [
@@ -21936,7 +21593,7 @@
           "name": "Lunch",
           "time": "10:40 AM to 11:00 AM"
         },
-        "free_count": 10,
+        "free_count": 9,
         "busy_count": 39,
         "busy_teachers": {
           "Anjali Jain": {
@@ -22169,13 +21826,6 @@
             "weekly_load": 33
           },
           {
-            "name": "Deepak Kushwaha",
-            "is_class_teacher_of": [],
-            "subjects": [],
-            "classes": [],
-            "weekly_load": 0
-          },
-          {
             "name": "Geetesh",
             "is_class_teacher_of": [],
             "subjects": [
@@ -22384,7 +22034,7 @@
           "name": "4th Period",
           "time": "11:00 AM to 11:45 AM"
         },
-        "free_count": 9,
+        "free_count": 8,
         "busy_count": 40,
         "busy_teachers": {
           "Anjali Jain": {
@@ -22590,13 +22240,6 @@
         },
         "free_teachers": [
           {
-            "name": "Deepak Kushwaha",
-            "is_class_teacher_of": [],
-            "subjects": [],
-            "classes": [],
-            "weekly_load": 0
-          },
-          {
             "name": "Harshita",
             "is_class_teacher_of": [
               "CLASS 6 Sunflower"
@@ -22749,7 +22392,7 @@
           "name": "5th Period",
           "time": "11:45 AM to 12:25 PM"
         },
-        "free_count": 39,
+        "free_count": 38,
         "busy_count": 11,
         "busy_teachers": {
           "Anuj Jain": {
@@ -23032,13 +22675,6 @@
               "CLASS 7 Sunflower"
             ],
             "weekly_load": 35
-          },
-          {
-            "name": "Deepak Kushwaha",
-            "is_class_teacher_of": [],
-            "subjects": [],
-            "classes": [],
-            "weekly_load": 0
           },
           {
             "name": "Deepmali",
@@ -23659,7 +23295,7 @@
           "name": "6th Period",
           "time": "12:25 PM to 01:05 PM"
         },
-        "free_count": 39,
+        "free_count": 38,
         "busy_count": 10,
         "busy_teachers": {
           "Anuj Jain": {
@@ -23937,13 +23573,6 @@
               "CLASS 7 Sunflower"
             ],
             "weekly_load": 35
-          },
-          {
-            "name": "Deepak Kushwaha",
-            "is_class_teacher_of": [],
-            "subjects": [],
-            "classes": [],
-            "weekly_load": 0
           },
           {
             "name": "Deepmali",
@@ -24566,7 +24195,7 @@
           "name": "7th Period",
           "time": "01:05 PM to 01:45 PM"
         },
-        "free_count": 48,
+        "free_count": 47,
         "busy_count": 0,
         "busy_teachers": {},
         "free_teachers": [
@@ -24813,13 +24442,6 @@
               "CLASS 7 Sunflower"
             ],
             "weekly_load": 35
-          },
-          {
-            "name": "Deepak Kushwaha",
-            "is_class_teacher_of": [],
-            "subjects": [],
-            "classes": [],
-            "weekly_load": 0
           },
           {
             "name": "Deepmali",
@@ -25586,7 +25208,6 @@
     "Monday": {
       "Morning Assembly": [
         "Atul",
-        "Deepak Kushwaha",
         "Geetesh",
         "Komal",
         "Pradeep",
@@ -25598,7 +25219,6 @@
       ],
       "1st Period": [
         "Anubha",
-        "Deepak Kushwaha",
         "Deepmali",
         "Komal",
         "Prashant",
@@ -25610,7 +25230,6 @@
       ],
       "2nd Period": [
         "Charulata",
-        "Deepak Kushwaha",
         "Pradeep",
         "Prashant",
         "Shailandra",
@@ -25621,7 +25240,6 @@
       ],
       "3rd Period": [
         "Anubha",
-        "Deepak Kushwaha",
         "Geetesh",
         "Komal",
         "Neelam Sahu",
@@ -25633,7 +25251,6 @@
       ],
       "Lunch": [
         "Atul",
-        "Deepak Kushwaha",
         "Geetesh",
         "Komal",
         "Pradeep",
@@ -25645,7 +25262,6 @@
       ],
       "4th Period": [
         "Anubha",
-        "Deepak Kushwaha",
         "Manish Mathur",
         "Pradeep",
         "Rajaram",
@@ -25657,7 +25273,6 @@
       "5th Period": [
         "Anuraj",
         "Charulata",
-        "Deepak Kushwaha",
         "Divya Upadhyay",
         "Rajaram",
         "Shailandra",
@@ -25667,7 +25282,6 @@
       ],
       "6th Period": [
         "Anubha",
-        "Deepak Kushwaha",
         "Geetesh",
         "Komal",
         "Mraganshi",
@@ -25686,7 +25300,6 @@
         "Arti Ahirwar",
         "Arti Sagar",
         "Avdesh",
-        "Deepak Kushwaha",
         "Deepmali",
         "Geetesh",
         "Jageshwar R",
@@ -25720,7 +25333,6 @@
     "Tuesday": {
       "Morning Assembly": [
         "Atul",
-        "Deepak Kushwaha",
         "Geetesh",
         "Komal",
         "Pradeep",
@@ -25732,7 +25344,6 @@
       ],
       "1st Period": [
         "Anubha",
-        "Deepak Kushwaha",
         "Deepmali",
         "Prashant",
         "Rajaram",
@@ -25744,7 +25355,6 @@
       ],
       "2nd Period": [
         "Anubha",
-        "Deepak Kushwaha",
         "Prashant",
         "Rajaram",
         "Shailandra",
@@ -25754,7 +25364,6 @@
         "Vandna Saraf"
       ],
       "3rd Period": [
-        "Deepak Kushwaha",
         "Geetesh",
         "Komal",
         "Manish Chauhan",
@@ -25767,7 +25376,6 @@
       ],
       "Lunch": [
         "Atul",
-        "Deepak Kushwaha",
         "Geetesh",
         "Komal",
         "Pradeep",
@@ -25780,7 +25388,6 @@
       "4th Period": [
         "Arti Ahirwar",
         "Atul",
-        "Deepak Kushwaha",
         "Geetesh",
         "Manish Mathur",
         "Rajaram",
@@ -25791,7 +25398,6 @@
       "5th Period": [
         "Anubha",
         "Atul",
-        "Deepak Kushwaha",
         "Divya Upadhyay",
         "Rajaram",
         "Shailandra",
@@ -25802,7 +25408,6 @@
       "6th Period": [
         "Anubha",
         "Anuraj",
-        "Deepak Kushwaha",
         "Geetesh",
         "Neha Rai",
         "Sanskriti Singhai",
@@ -25819,7 +25424,6 @@
         "Arti Ahirwar",
         "Arti Sagar",
         "Avdesh",
-        "Deepak Kushwaha",
         "Deepmali",
         "Geetesh",
         "Jageshwar R",
@@ -25854,7 +25458,6 @@
     "Wednesday": {
       "Morning Assembly": [
         "Atul",
-        "Deepak Kushwaha",
         "Geetesh",
         "Komal",
         "Pradeep",
@@ -25868,7 +25471,6 @@
         "Anubha",
         "Arti Ahirwar",
         "Atul",
-        "Deepak Kushwaha",
         "Harshita",
         "Prashant",
         "Shailandra",
@@ -25878,7 +25480,6 @@
       ],
       "2nd Period": [
         "Arshee",
-        "Deepak Kushwaha",
         "Geetesh",
         "Komal",
         "Prashant",
@@ -25889,7 +25490,6 @@
       ],
       "3rd Period": [
         "Arti Ahirwar",
-        "Deepak Kushwaha",
         "Mraganshi",
         "Prashant",
         "Shailandra",
@@ -25901,7 +25501,6 @@
       ],
       "Lunch": [
         "Atul",
-        "Deepak Kushwaha",
         "Geetesh",
         "Komal",
         "Pradeep",
@@ -25913,7 +25512,6 @@
       ],
       "4th Period": [
         "Anubha",
-        "Deepak Kushwaha",
         "Manish Chauhan",
         "Manish Mathur",
         "Nidhi",
@@ -25924,7 +25522,6 @@
       ],
       "5th Period": [
         "Charulata",
-        "Deepak Kushwaha",
         "Divya Upadhyay",
         "Rajaram",
         "Rajkmari Yadav",
@@ -25934,7 +25531,6 @@
         "Vandna Saraf"
       ],
       "6th Period": [
-        "Deepak Kushwaha",
         "Neha Rai",
         "Nidhi",
         "Rashmi",
@@ -25954,7 +25550,6 @@
         "Arti Ahirwar",
         "Arti Sagar",
         "Avdesh",
-        "Deepak Kushwaha",
         "Geetesh",
         "Jageshwar R",
         "Jageshwar Sharma",
@@ -25988,7 +25583,6 @@
     "Thursday": {
       "Morning Assembly": [
         "Atul",
-        "Deepak Kushwaha",
         "Geetesh",
         "Komal",
         "Pradeep",
@@ -26000,7 +25594,6 @@
       ],
       "1st Period": [
         "Anubha",
-        "Deepak Kushwaha",
         "Deepmali",
         "Prashant",
         "Rajaram",
@@ -26012,7 +25605,6 @@
       ],
       "2nd Period": [
         "Anubha",
-        "Deepak Kushwaha",
         "Divya Upadhyay",
         "Prashant",
         "Rajaram",
@@ -26023,7 +25615,6 @@
       ],
       "3rd Period": [
         "Atul",
-        "Deepak Kushwaha",
         "Prashant",
         "Rajaram",
         "Raji Jain",
@@ -26035,7 +25626,6 @@
       ],
       "Lunch": [
         "Atul",
-        "Deepak Kushwaha",
         "Geetesh",
         "Komal",
         "Pradeep",
@@ -26047,7 +25637,6 @@
       ],
       "4th Period": [
         "Anjali Nalvanshi",
-        "Deepak Kushwaha",
         "Nidhi",
         "Pradeep",
         "Prashant",
@@ -26058,7 +25647,6 @@
         "Vandna Saraf"
       ],
       "5th Period": [
-        "Deepak Kushwaha",
         "Manish Chauhan",
         "Rajkmari Yadav",
         "Sanchitika",
@@ -26070,7 +25658,6 @@
         "Vandna Saraf"
       ],
       "6th Period": [
-        "Deepak Kushwaha",
         "Harshita",
         "Jageshwar Sharma",
         "Komal",
@@ -26090,7 +25677,6 @@
         "Arti Ahirwar",
         "Arti Sagar",
         "Avdesh",
-        "Deepak Kushwaha",
         "Geetesh",
         "Jageshwar R",
         "Jageshwar Sharma",
@@ -26124,7 +25710,6 @@
     "Friday": {
       "Morning Assembly": [
         "Atul",
-        "Deepak Kushwaha",
         "Geetesh",
         "Komal",
         "Pradeep",
@@ -26135,7 +25720,6 @@
         "Sonakshi"
       ],
       "1st Period": [
-        "Deepak Kushwaha",
         "Deepmali",
         "Komal",
         "Pradeep",
@@ -26148,7 +25732,6 @@
       ],
       "2nd Period": [
         "Anubha",
-        "Deepak Kushwaha",
         "Divya Upadhyay",
         "Nidhi",
         "Pradeep",
@@ -26159,7 +25742,6 @@
       ],
       "3rd Period": [
         "Anjali Jain",
-        "Deepak Kushwaha",
         "Prashant",
         "Rajaram",
         "Rajkmari Yadav",
@@ -26171,7 +25753,6 @@
       ],
       "Lunch": [
         "Atul",
-        "Deepak Kushwaha",
         "Geetesh",
         "Komal",
         "Pradeep",
@@ -26182,7 +25763,6 @@
         "Sonakshi"
       ],
       "4th Period": [
-        "Deepak Kushwaha",
         "Harshita",
         "Manish Chauhan",
         "Nidhi",
@@ -26193,7 +25773,6 @@
         "Sonakshi"
       ],
       "5th Period": [
-        "Deepak Kushwaha",
         "Deepmali",
         "Komal",
         "Rajaram",
@@ -26205,7 +25784,6 @@
         "Vandna Saraf"
       ],
       "6th Period": [
-        "Deepak Kushwaha",
         "Deepmali",
         "Geetesh",
         "Jageshwar Sharma",
@@ -26225,7 +25803,6 @@
         "Arti Ahirwar",
         "Arti Sagar",
         "Avdesh",
-        "Deepak Kushwaha",
         "Geetesh",
         "Jageshwar R",
         "Jageshwar Sharma",
@@ -26259,7 +25836,6 @@
     "Saturday": {
       "Morning Assembly": [
         "Atul",
-        "Deepak Kushwaha",
         "Geetesh",
         "Komal",
         "Pradeep",
@@ -26270,7 +25846,6 @@
         "Sonakshi"
       ],
       "1st Period": [
-        "Deepak Kushwaha",
         "Neelam Sahu",
         "Prashant",
         "Rajaram",
@@ -26284,7 +25859,6 @@
       "2nd Period": [
         "Anubha",
         "Atul",
-        "Deepak Kushwaha",
         "Divya Upadhyay",
         "Komal",
         "Prashant",
@@ -26295,7 +25869,6 @@
       "3rd Period": [
         "Atul",
         "Charulata",
-        "Deepak Kushwaha",
         "Prashant",
         "Rashmi",
         "Shailandra",
@@ -26306,7 +25879,6 @@
       ],
       "Lunch": [
         "Atul",
-        "Deepak Kushwaha",
         "Geetesh",
         "Komal",
         "Pradeep",
@@ -26317,7 +25889,6 @@
         "Sonakshi"
       ],
       "4th Period": [
-        "Deepak Kushwaha",
         "Harshita",
         "Kalyani Choudhary",
         "Nidhi",
@@ -26338,7 +25909,6 @@
         "Atul",
         "Avdesh",
         "Charulata",
-        "Deepak Kushwaha",
         "Deepmali",
         "Geetesh",
         "Harshita",
@@ -26379,7 +25949,6 @@
         "Atul",
         "Avdesh",
         "Charulata",
-        "Deepak Kushwaha",
         "Deepmali",
         "Geetesh",
         "Harshita",
@@ -26421,7 +25990,6 @@
         "Atul",
         "Avdesh",
         "Charulata",
-        "Deepak Kushwaha",
         "Deepmali",
         "Geetesh",
         "Harshita",

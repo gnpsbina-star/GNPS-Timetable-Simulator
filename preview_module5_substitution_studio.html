@@ -56,27 +56,38 @@
       }
 
       /* Master Register Table: Fixed A4 Landscape */
+      #print-master-register {
+        padding: 0 !important;
+      }
       #print-master-register table {
         width: 100% !important;
         table-layout: fixed !important;
         border-collapse: collapse !important;
         border: 2px solid #000000 !important;
+        page-break-inside: auto !important;
+        break-inside: auto !important;
+      }
+      #print-master-register thead {
+        display: table-header-group !important;
+      }
+      #print-master-register tbody tr {
         page-break-inside: avoid !important;
+        break-inside: avoid !important;
       }
       #print-master-register th, #print-master-register td {
         border: 1px solid #000000 !important;
         color: #000000 !important;
         -webkit-text-fill-color: #000000 !important;
-        padding: 5px 3px !important;
+        padding: 4px 3px !important;
         text-align: center !important;
         vertical-align: middle !important;
-        font-size: 10pt !important;
+        font-size: 9.5pt !important;
         word-wrap: break-word !important;
       }
       #print-master-register thead th {
         background-color: #f1f5f9 !important;
         font-weight: 900 !important;
-        font-size: 10.5pt !important;
+        font-size: 10pt !important;
         text-transform: uppercase !important;
         border-bottom: 2px solid #000000 !important;
       }
@@ -126,6 +137,9 @@
       }
 
       /* Substitution Report (Sorted by Substitute Teacher) */
+      #print-teacher-report {
+        padding: 0 !important;
+      }
       #print-teacher-report h1, #print-teacher-report h2, #print-teacher-report span, #print-teacher-report strong, #print-teacher-report div {
         color: #000000 !important;
         -webkit-text-fill-color: #000000 !important;
@@ -144,13 +158,21 @@
         table-layout: fixed !important;
         border-collapse: collapse !important;
         border: 2px solid #000000 !important;
+        page-break-inside: auto !important;
+        break-inside: auto !important;
+      }
+      #print-teacher-report thead {
+        display: table-header-group !important;
+      }
+      #print-teacher-report tbody tr {
         page-break-inside: avoid !important;
+        break-inside: avoid !important;
       }
       #print-teacher-report th, #print-teacher-report td {
         border: 1px solid #000000 !important;
         color: #000000 !important;
         -webkit-text-fill-color: #000000 !important;
-        padding: 5px 4px !important;
+        padding: 4px 4px !important;
         text-align: center !important;
         vertical-align: middle !important;
         font-size: 9.5pt !important;
