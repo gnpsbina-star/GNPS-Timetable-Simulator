@@ -742,16 +742,8 @@
         <div class="overflow-x-auto">
           <table class="min-w-full text-center border-collapse text-xs" id="heatmap-table">
             <thead class="bg-slate-50 font-black text-slate-700 border-b border-slate-200">
-              <tr>
+              <tr id="tab-free-heatmap-head">
                 <th class="py-2.5 px-3 text-left w-28 bg-slate-100/80">Day</th>
-                <th class="py-2.5 px-2">1st Period<br><span class="text-[10px] font-normal text-slate-400">08:30-09:15</span></th>
-                <th class="py-2.5 px-2">2nd Period<br><span class="text-[10px] font-normal text-slate-400">09:15-10:00</span></th>
-                <th class="py-2.5 px-2">3rd Period<br><span class="text-[10px] font-normal text-slate-400">10:00-10:45</span></th>
-                <th class="py-2.5 px-2">Lunch Break<br><span class="text-[10px] font-normal text-slate-400">10:45-11:05</span></th>
-                <th class="py-2.5 px-2">4th Period<br><span class="text-[10px] font-normal text-slate-400">11:05-11:50</span></th>
-                <th class="py-2.5 px-2">5th Period<br><span class="text-[10px] font-normal text-slate-400">11:50-12:30</span></th>
-                <th class="py-2.5 px-2">6th Period<br><span class="text-[10px] font-normal text-slate-400">12:30-01:10</span></th>
-                <th class="py-2.5 px-2">7th Period<br><span class="text-[10px] font-normal text-slate-400">01:10-01:50</span></th>
               </tr>
             </thead>
             <tbody class="divide-y divide-slate-100 font-bold" id="tab-free-heatmap-tbody">
@@ -2623,6 +2615,14 @@
     function renderTabFreeHeatmap() {
       const tbody = document.getElementById('tab-free-heatmap-tbody');
       tbody.innerHTML = '';
+
+      // Build the header from the same period list the rows use, so every count sits under its own period.
+      const head = document.getElementById('tab-free-heatmap-head');
+      if (head) {
+        head.innerHTML = '<th class="py-2.5 px-3 text-left w-28 bg-slate-100/80">Day</th>' + FREE_DATA.periods.map(p =>
+          `<th class="py-2.5 px-2">${p.name}<br><span class="text-[10px] font-normal text-slate-400">${(p.time || '').replace(/\s*to\s*/, '-')}</span></th>`
+        ).join('');
+      }
 
       FREE_DATA.days.forEach(day => {
         const tr = document.createElement('tr');
