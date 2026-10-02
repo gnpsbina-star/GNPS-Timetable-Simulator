@@ -736,6 +736,21 @@ class TestBugFixesComprehensive(unittest.TestCase):
         with open(os.path.join(root, 'purge_faculty.py'), 'r', encoding='utf-8') as f:
             self.assertIn('embed_html_data.py', f.read(), "Faculty purge must refresh embedded HTML data")
 
+    # ---------------------------------------------------------
+    # BUG: Free teachers heatmap headers shifted one column from the counts
+    # ---------------------------------------------------------
+    def test_free_heatmap_headers_built_from_period_list(self):
+        """Heatmap headers must come from FREE_DATA.periods, the same list the count cells use."""
+        root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+        for html_name, head_id in [('index.html', 'tab-free-heatmap-head'),
+                                   ('free_teachers.html', 'slot-heatmap-head')]:
+            with open(os.path.join(root, html_name), 'r', encoding='utf-8') as f:
+                content = f.read()
+            self.assertIn(f'<tr id="{head_id}">', content)
+            self.assertIn(f"document.getElementById('{head_id}')", content)
+            self.assertNotIn('<th class="py-2.5 px-2">1st Period<br>', content,
+                             f"{html_name} must not hardcode heatmap period headers")
+
 
 if __name__ == '__main__':
     unittest.main()
