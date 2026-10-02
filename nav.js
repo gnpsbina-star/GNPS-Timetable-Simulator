@@ -26,8 +26,7 @@ function closeAllNavDropdowns() {
 
 // Global click-outside listener
 document.addEventListener('click', function(e) {
-  if (!e.target.closest('#nav-dropdown-studio-container') && 
-      !e.target.closest('#nav-dropdown-export-container') &&
+  if (!e.target.closest('#nav-dropdown-export-container') &&
       !e.target.closest('#nav-dropdown-user-container')) {
     closeAllNavDropdowns();
   }
