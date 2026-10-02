@@ -790,6 +790,18 @@
               <button onclick="filterClassWorkloadWing('senior')" id="btn-cwing-senior" class="px-2.5 py-1 rounded-lg font-semibold text-slate-600 hover:text-slate-900">Senior (9-12) (11)</button>
             </div>
 
+            <!-- Display mode toggle for classes view (Matrix Table vs Single-Line Badges) -->
+            <div id="class-workload-mode-filters" class="hidden flex items-center space-x-1 bg-slate-100 p-1 rounded-xl border border-slate-200 text-xs">
+              <button onclick="switchClassWorkloadMode('matrix')" id="btn-cmode-matrix" class="px-2.5 py-1 rounded-lg font-black bg-white text-indigo-950 shadow-2xs transition flex items-center gap-1.5" title="Spreadsheet matrix table with dedicated subject columns in a single row line">
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M3 14h18m-9-4v8m-7 0h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg>
+                <span>Matrix Table</span>
+              </button>
+              <button onclick="switchClassWorkloadMode('badges')" id="btn-cmode-badges" class="px-2.5 py-1 rounded-lg font-semibold text-slate-600 hover:text-slate-900 transition flex items-center gap-1.5" title="Single horizontal line of subject chips">
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 10h16M4 14h16M4 18h16"></path></svg>
+                <span>Single-Line Badges</span>
+              </button>
+            </div>
+
             <input type="text" id="workload-search" placeholder="Search teacher or subject..." onkeyup="onWorkloadSearch()" class="bg-white border border-slate-300 rounded-xl px-3 py-1.5 text-xs font-medium focus:ring-2 focus:ring-indigo-500 focus:outline-none min-w-[210px]">
 
             <a id="btn-download-class-csv" href="class_subjects_per_week.csv" download class="hidden px-3 py-1.5 bg-indigo-600 hover:bg-indigo-500 text-white rounded-xl text-xs font-extrabold transition shadow-xs flex items-center gap-1.5">
@@ -818,9 +830,9 @@
         </div>
 
         <!-- Classes Subjects Table Container -->
-        <div id="container-table-classes" class="hidden overflow-x-auto max-h-[600px]">
+        <div id="container-table-classes" class="hidden overflow-x-auto max-h-[600px] border border-slate-200/90 rounded-2xl shadow-2xs bg-white">
           <table class="w-full text-left border-collapse text-sm" id="class-workload-table">
-            <thead class="bg-slate-100 sticky top-0 z-10 border-b border-slate-200 font-extrabold text-slate-700 text-xs uppercase tracking-wider">
+            <thead class="bg-slate-100 sticky top-0 z-20 border-b border-slate-200 font-extrabold text-slate-700 text-xs uppercase tracking-wider" id="class-workload-thead">
               <tr>
                 <th class="py-3.5 px-4 w-12">#</th>
                 <th class="py-3.5 px-4 w-44">Class Name</th>
@@ -1058,6 +1070,52 @@
         if (grade >= 9 && grade <= 12) return 'senior';
       }
       return 'senior';
+    }
+
+    const CANONICAL_SUBJECT_ORDER = [
+      // Core Languages
+      'Eng',
+      'Hindi',
+      'SKT',
+      // Core Primary & Middle Academics
+      'Maths',
+      'EVS',
+      'Science',
+      'SST',
+      // Senior Science Electives
+      'Physics',
+      'Chem',
+      'Bio',
+      'Bio / Maths',
+      // Senior Commerce & Humanities Electives
+      'Account',
+      'BST',
+      'Eco',
+      'Political Sci',
+      'Geo',
+      // Primary Foundational Readers & Writing
+      'Dictation & Cursive',
+      'Eng Read',
+      'Hindi Read',
+      // Computer & General Knowledge
+      'IT',
+      'GK',
+      // Arts & Co-curricular
+      'Art & Craft',
+      'Music',
+      // Sports, Fitness & Wellness
+      'PE',
+      'PE Practical',
+      'Games',
+      'Yoga',
+      // Library & Activities
+      'Library'
+    ];
+
+    function getSubjectSortIndex(subjName) {
+      if (!subjName) return 999;
+      const idx = CANONICAL_SUBJECT_ORDER.indexOf(subjName.trim());
+      return idx >= 0 ? idx : 900;
     }
 
     function populateClassSelect(wing = 'ALL', selectedName = null) {
@@ -1357,8 +1415,13 @@
         teachers: Array.from(data.teachers).join(', ')
       }));
 
-      // Sort by weekly count descending, then subject name
-      items.sort((a, b) => b.count - a.count || a.subject.localeCompare(b.subject));
+      // Sort by standardized canonical subject order identically across all classes
+      items.sort((a, b) => {
+        const orderA = getSubjectSortIndex(a.subject);
+        const orderB = getSubjectSortIndex(b.subject);
+        if (orderA !== orderB) return orderA - orderB;
+        return a.subject.localeCompare(b.subject);
+      });
       const totalWeeklyPeriods = items.reduce((sum, item) => sum + item.count, 0);
 
       return { items, totalWeeklyPeriods, totalFilteredPeriods };
@@ -2400,11 +2463,13 @@
       const tableTeachers = document.getElementById('container-table-teachers');
       const tableClasses = document.getElementById('container-table-classes');
       const wingFilters = document.getElementById('class-workload-wing-filters');
+      const modeFilters = document.getElementById('class-workload-mode-filters');
       const btnCsv = document.getElementById('btn-download-class-csv');
 
       if (tableTeachers) tableTeachers.classList.toggle('hidden', !isTeachers);
       if (tableClasses) tableClasses.classList.toggle('hidden', isTeachers);
       if (wingFilters) wingFilters.classList.toggle('hidden', isTeachers);
+      if (modeFilters) modeFilters.classList.toggle('hidden', isTeachers);
       if (btnCsv) btnCsv.classList.toggle('hidden', isTeachers);
 
       const titleEl = document.getElementById('workload-panel-title');
@@ -2482,20 +2547,38 @@
       });
     }
 
+    let currentClassWorkloadDisplayMode = 'matrix';
+
+    function switchClassWorkloadMode(mode) {
+      currentClassWorkloadDisplayMode = mode;
+      const btnMatrix = document.getElementById('btn-cmode-matrix');
+      const btnBadges = document.getElementById('btn-cmode-badges');
+      if (btnMatrix) {
+        btnMatrix.className = mode === 'matrix' ?
+          'px-2.5 py-1 rounded-lg font-black bg-white text-indigo-950 shadow-2xs transition flex items-center gap-1.5' :
+          'px-2.5 py-1 rounded-lg font-semibold text-slate-600 hover:text-slate-900 transition flex items-center gap-1.5';
+      }
+      if (btnBadges) {
+        btnBadges.className = mode === 'badges' ?
+          'px-2.5 py-1 rounded-lg font-black bg-white text-indigo-950 shadow-2xs transition flex items-center gap-1.5' :
+          'px-2.5 py-1 rounded-lg font-semibold text-slate-600 hover:text-slate-900 transition flex items-center gap-1.5';
+      }
+      renderClassWorkloadTable();
+    }
+
     function renderClassWorkloadTable() {
       const query = (document.getElementById('workload-search').value || '').toLowerCase();
       const tbody = document.getElementById('class-workload-tbody');
+      const thead = document.getElementById('class-workload-thead');
       if (!tbody || !TIMETABLE_DATA || !TIMETABLE_DATA.classes) return;
       tbody.innerHTML = '';
 
-      let idx = 1;
+      // 1. Filter matching classes
+      const matched = [];
       TIMETABLE_DATA.classes.forEach(c => {
         const cName = c.class_name;
         const wing = getClassWing(cName);
-
-        if (currentClassWorkloadWing !== 'ALL' && currentClassWorkloadWing !== wing) {
-          return;
-        }
+        if (currentClassWorkloadWing !== 'ALL' && currentClassWorkloadWing !== wing) return;
 
         const summary = getSubjectSummaryData(c, 'ALL');
         const ct = c.class_teacher || '—';
@@ -2507,50 +2590,124 @@
           if (!matchClass && !matchCt && !matchSubj) return;
         }
 
+        matched.push({ c, cName, wing, ct, summary });
+      });
+
+      // 2. Active subjects in exact canonical sequence
+      const activeSubjs = CANONICAL_SUBJECT_ORDER.filter(s => {
+        return matched.some(m => m.summary.items.some(si => si.subject === s));
+      });
+
+      // 3. Render Table Header based on display mode
+      if (thead) {
+        if (currentClassWorkloadDisplayMode === 'matrix') {
+          thead.innerHTML = `
+            <tr>
+              <th class="py-3.5 px-3 w-12 text-center sticky left-0 bg-slate-100 z-30 font-extrabold text-slate-700 text-xs uppercase tracking-wider">#</th>
+              <th class="py-3.5 px-4 w-44 sticky left-12 bg-slate-100 z-30 font-extrabold text-slate-800 text-xs uppercase tracking-wider border-r border-slate-200 shadow-xs whitespace-nowrap">Class Name</th>
+              <th class="py-3.5 px-3.5 w-36 whitespace-nowrap font-extrabold text-slate-700 text-xs uppercase tracking-wider">Class Teacher</th>
+              <th class="py-3.5 px-3 w-28 text-center whitespace-nowrap font-extrabold text-slate-700 text-xs uppercase tracking-wider">Total Load</th>
+              ${activeSubjs.map(s => `
+                <th class="py-3.5 px-2.5 text-center border-l border-slate-200 text-xs font-black text-slate-800 whitespace-nowrap bg-slate-50 min-w-[62px]" title="${s}">
+                  ${s}
+                </th>
+              `).join('')}
+            </tr>
+          `;
+        } else {
+          thead.innerHTML = `
+            <tr>
+              <th class="py-3.5 px-4 w-12 font-extrabold text-slate-700 text-xs uppercase tracking-wider">#</th>
+              <th class="py-3.5 px-4 w-44 font-extrabold text-slate-700 text-xs uppercase tracking-wider">Class Name</th>
+              <th class="py-3.5 px-4 w-36 font-extrabold text-slate-700 text-xs uppercase tracking-wider">Class Teacher</th>
+              <th class="py-3.5 px-4 w-32 text-center font-extrabold text-slate-700 text-xs uppercase tracking-wider">Total Periods</th>
+              <th class="py-3.5 px-4 font-extrabold text-slate-700 text-xs uppercase tracking-wider">Weekly Subjects &amp; Period Allocations (Single Line)</th>
+            </tr>
+          `;
+        }
+      }
+
+      // 4. Render Rows
+      let idx = 1;
+      matched.forEach(({ c, cName, wing, ct, summary }) => {
         const wingBadge = wing === 'primary' ? '<span class="px-2 py-0.5 rounded-md text-[10px] font-extrabold bg-indigo-50 text-indigo-700 border border-indigo-200">Primary</span>' :
           wing === 'middle' ? '<span class="px-2 py-0.5 rounded-md text-[10px] font-extrabold bg-purple-50 text-purple-700 border border-purple-200">Middle</span>' :
           '<span class="px-2 py-0.5 rounded-md text-[10px] font-extrabold bg-amber-50 text-amber-800 border border-amber-200">Senior</span>';
 
         const tr = document.createElement('tr');
-        tr.className = 'hover:bg-slate-50 transition cursor-pointer';
+        tr.className = 'hover:bg-slate-50/80 transition cursor-pointer group';
         tr.title = `Click to view ${cName} Timetable`;
         tr.onclick = () => {
           filterGradeCategory(wing, cName);
           switchTab('class');
         };
 
-        const chipsHtml = summary.items.map(s => `
-          <span class="inline-flex items-center gap-1 px-2 py-1 rounded-lg text-xs font-bold bg-white text-slate-800 border border-slate-200 shadow-2xs" title="${s.teachers ? 'Teacher: ' + s.teachers : ''}">
-            <span>${s.subject}</span>
-            <b class="text-indigo-700 font-black ml-0.5 bg-indigo-50 px-1.5 py-0.2 rounded border border-indigo-100">${s.count}</b>
-          </span>
-        `).join(' ');
+        if (currentClassWorkloadDisplayMode === 'matrix') {
+          const cellsHtml = activeSubjs.map(s => {
+            const item = summary.items.find(si => si.subject === s);
+            if (item && item.count > 0) {
+              return `
+                <td class="py-2.5 px-2 text-center border-l border-slate-100 whitespace-nowrap bg-indigo-50/20 group-hover:bg-indigo-50/40 transition" title="${s}: ${item.count} p/w (${item.teachers || 'Teacher'})">
+                  <span class="inline-block px-2 py-0.5 rounded-md text-xs font-black bg-indigo-100/90 text-indigo-950 border border-indigo-200 shadow-2xs font-mono">${item.count}</span>
+                </td>
+              `;
+            }
+            return `<td class="py-2.5 px-2 text-center border-l border-slate-100 text-slate-300 font-mono text-xs whitespace-nowrap">—</td>`;
+          }).join('');
 
-        tr.innerHTML = `
-          <td class="py-3 px-4 font-mono text-xs text-slate-400 font-bold">${idx++}</td>
-          <td class="py-3 px-4">
-            <div class="font-black text-indigo-950 text-sm flex items-center gap-2">
-              <span>${cName}</span>
-              ${wingBadge}
-            </div>
-          </td>
-          <td class="py-3 px-4 font-bold text-slate-800 text-xs">${ct}</td>
-          <td class="py-3 px-4 text-center">
-            <span class="inline-block px-2.5 py-1 rounded-lg text-xs font-black bg-indigo-100 text-indigo-950 border border-indigo-200 shadow-2xs">
-              ${summary.totalWeeklyPeriods} p/w
+          tr.innerHTML = `
+            <td class="py-2.5 px-3 font-mono text-xs text-slate-400 font-bold text-center sticky left-0 bg-white group-hover:bg-slate-50 transition z-10">${idx++}</td>
+            <td class="py-2.5 px-4 font-black text-indigo-950 text-sm sticky left-12 bg-white group-hover:bg-slate-50 transition z-10 border-r border-slate-200 shadow-xs whitespace-nowrap">
+              <div class="flex items-center gap-2">
+                <span>${cName}</span>
+                ${wingBadge}
+              </div>
+            </td>
+            <td class="py-2.5 px-3.5 font-bold text-slate-800 text-xs whitespace-nowrap">${ct}</td>
+            <td class="py-2.5 px-3 text-center whitespace-nowrap">
+              <span class="inline-block px-2.5 py-1 rounded-lg text-xs font-black bg-indigo-100 text-indigo-950 border border-indigo-200 shadow-2xs">
+                ${summary.totalWeeklyPeriods} p/w
+              </span>
+            </td>
+            ${cellsHtml}
+          `;
+        } else {
+          // Badges mode: single-line horizontal badges with exact same canonical order
+          const chipsHtml = summary.items.map(s => `
+            <span class="inline-flex shrink-0 items-center gap-1.5 px-2.5 py-1 rounded-lg text-xs font-bold bg-white text-slate-800 border border-slate-200/90 shadow-2xs whitespace-nowrap" title="${s.teachers ? 'Teacher: ' + s.teachers : ''}">
+              <span>${s.subject}</span>
+              <b class="text-indigo-700 font-black ml-0.5 bg-indigo-50 px-1.5 py-0.2 rounded border border-indigo-100 text-[11px]">${s.count}</b>
             </span>
-          </td>
-          <td class="py-3 px-4">
-            <div class="flex flex-wrap gap-1.5 max-w-full">
-              ${chipsHtml}
-            </div>
-          </td>
-        `;
+          `).join(' ');
+
+          tr.innerHTML = `
+            <td class="py-3 px-4 font-mono text-xs text-slate-400 font-bold">${idx++}</td>
+            <td class="py-3 px-4 whitespace-nowrap">
+              <div class="font-black text-indigo-950 text-sm flex items-center gap-2">
+                <span>${cName}</span>
+                ${wingBadge}
+              </div>
+            </td>
+            <td class="py-3 px-4 font-bold text-slate-800 text-xs whitespace-nowrap">${ct}</td>
+            <td class="py-3 px-4 text-center whitespace-nowrap">
+              <span class="inline-block px-2.5 py-1 rounded-lg text-xs font-black bg-indigo-100 text-indigo-950 border border-indigo-200 shadow-2xs">
+                ${summary.totalWeeklyPeriods} p/w
+              </span>
+            </td>
+            <td class="py-3 px-4 max-w-[850px]">
+              <div class="flex flex-nowrap items-center gap-1.5 overflow-x-auto py-1 scrollbar-thin whitespace-nowrap">
+                ${chipsHtml}
+              </div>
+            </td>
+          `;
+        }
+
         tbody.appendChild(tr);
       });
 
-      if (idx === 1) {
-        tbody.innerHTML = `<tr><td colspan="5" class="py-8 text-center text-slate-400 font-semibold text-xs">No classes match the filter criteria</td></tr>`;
+      if (matched.length === 0) {
+        const colSpan = currentClassWorkloadDisplayMode === 'matrix' ? activeSubjs.length + 4 : 5;
+        tbody.innerHTML = `<tr><td colspan="${colSpan}" class="py-8 text-center text-slate-400 font-semibold text-xs">No classes match the filter criteria</td></tr>`;
       }
     }
 
