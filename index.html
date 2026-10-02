@@ -412,6 +412,10 @@
           <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
           <span>Download Range</span>
         </button>
+        <a href="class_subjects_per_week.csv" download class="px-3 py-2 bg-purple-600 hover:bg-purple-500 text-white rounded-xl text-xs font-extrabold transition shadow-sm flex items-center gap-1.5" title="Download Subject per Week Table for All Classes (CSV)">
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+          <span>Subjects CSV</span>
+        </a>
         <a href="timetable.json" download class="px-3 py-2 bg-amber-500 hover:bg-amber-400 text-slate-950 rounded-xl text-xs font-extrabold transition shadow-sm">
           JSON
         </a>
@@ -759,14 +763,43 @@
       </div>
 
       <div class="bg-white rounded-2xl shadow-sm border border-slate-200/90 overflow-hidden">
-        <div class="px-6 py-4 border-b border-slate-200 bg-slate-50/80 flex flex-wrap items-center justify-between gap-2">
-          <div>
-            <h3 class="text-lg font-bold text-slate-900">Teacher Weekly Workload Distribution</h3>
-            <p class="text-xs text-slate-500">Accurate single unified records for all 49 teachers (Zero duplicates)</p>
+        <div class="px-6 py-4 border-b border-slate-200 bg-slate-50/80 flex flex-wrap items-center justify-between gap-3">
+          <div class="flex flex-wrap items-center gap-3">
+            <div class="inline-flex p-1 bg-slate-200/90 rounded-xl">
+              <button id="btn-view-workload-teachers" onclick="switchWorkloadSubView('teachers')" class="px-3.5 py-1.5 rounded-lg text-xs font-black bg-white text-indigo-950 shadow-2xs transition">
+                Teacher Workload
+              </button>
+              <button id="btn-view-workload-classes" onclick="switchWorkloadSubView('classes')" class="px-3.5 py-1.5 rounded-lg text-xs font-semibold text-slate-600 hover:text-slate-900 transition flex items-center gap-1.5">
+                <span>Class Subjects Table</span>
+                <span class="px-1.5 py-0.5 bg-indigo-100 text-indigo-700 text-[10px] font-black rounded-md">40 Classes</span>
+              </button>
+            </div>
+            <div>
+              <h3 id="workload-panel-title" class="text-base font-extrabold text-slate-900">Teacher Weekly Workload Distribution</h3>
+              <p id="workload-panel-desc" class="text-xs text-slate-500">Accurate single unified records for all 49 faculty members</p>
+            </div>
           </div>
-          <input type="text" id="workload-search" placeholder="Search teacher or subject..." onkeyup="renderWorkloadTable()" class="bg-white border border-slate-300 rounded-xl px-3 py-1.5 text-xs font-medium focus:ring-2 focus:ring-indigo-500 focus:outline-none min-w-[220px]">
+
+          <div class="flex flex-wrap items-center gap-2.5">
+            <!-- Wing filters for classes view -->
+            <div id="class-workload-wing-filters" class="hidden flex items-center space-x-1 bg-slate-100 p-1 rounded-xl border border-slate-200 text-xs">
+              <button onclick="filterClassWorkloadWing('ALL')" id="btn-cwing-all" class="px-2.5 py-1 rounded-lg font-black bg-white text-indigo-950 shadow-2xs">All (40)</button>
+              <button onclick="filterClassWorkloadWing('primary')" id="btn-cwing-primary" class="px-2.5 py-1 rounded-lg font-semibold text-slate-600 hover:text-slate-900">Primary (1-5)</button>
+              <button onclick="filterClassWorkloadWing('middle')" id="btn-cwing-middle" class="px-2.5 py-1 rounded-lg font-semibold text-slate-600 hover:text-slate-900">Middle (6-8)</button>
+              <button onclick="filterClassWorkloadWing('senior')" id="btn-cwing-senior" class="px-2.5 py-1 rounded-lg font-semibold text-slate-600 hover:text-slate-900">Senior (9-12)</button>
+            </div>
+
+            <input type="text" id="workload-search" placeholder="Search teacher or subject..." onkeyup="onWorkloadSearch()" class="bg-white border border-slate-300 rounded-xl px-3 py-1.5 text-xs font-medium focus:ring-2 focus:ring-indigo-500 focus:outline-none min-w-[210px]">
+
+            <a id="btn-download-class-csv" href="class_subjects_per_week.csv" download class="hidden px-3 py-1.5 bg-indigo-600 hover:bg-indigo-500 text-white rounded-xl text-xs font-extrabold transition shadow-xs flex items-center gap-1.5">
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+              <span>Download CSV</span>
+            </a>
+          </div>
         </div>
-        <div class="overflow-x-auto max-h-[550px]">
+
+        <!-- Teachers Table Container -->
+        <div id="container-table-teachers" class="overflow-x-auto max-h-[550px]">
           <table class="w-full text-left border-collapse text-sm" id="workload-table">
             <thead class="bg-slate-100 sticky top-0 z-10 border-b border-slate-200 font-extrabold text-slate-700 text-xs uppercase tracking-wider">
               <tr>
@@ -779,6 +812,23 @@
               </tr>
             </thead>
             <tbody class="divide-y divide-slate-100 text-slate-600 font-medium" id="workload-tbody">
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Classes Subjects Table Container -->
+        <div id="container-table-classes" class="hidden overflow-x-auto max-h-[600px]">
+          <table class="w-full text-left border-collapse text-sm" id="class-workload-table">
+            <thead class="bg-slate-100 sticky top-0 z-10 border-b border-slate-200 font-extrabold text-slate-700 text-xs uppercase tracking-wider">
+              <tr>
+                <th class="py-3.5 px-4 w-12">#</th>
+                <th class="py-3.5 px-4 w-44">Class Name</th>
+                <th class="py-3.5 px-4 w-36">Class Teacher</th>
+                <th class="py-3.5 px-4 w-32 text-center">Total Periods</th>
+                <th class="py-3.5 px-4">Weekly Subjects &amp; Period Allocations</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-slate-100 text-slate-600 font-medium" id="class-workload-tbody">
             </tbody>
           </table>
         </div>
@@ -968,7 +1018,10 @@
             'px-3.5 py-2 rounded-lg text-xs sm:text-sm font-semibold text-indigo-200 hover:text-white transition-all';
         }
       });
-      if (tab === 'stats') renderWorkloadTable();
+      if (tab === 'stats') {
+        if (currentWorkloadSubView === 'teachers') renderWorkloadTable();
+        else renderClassWorkloadTable();
+      }
       if (tab === 'free') renderTabFreeTeachers();
     }
 
@@ -2253,9 +2306,79 @@
       }
     }
 
+    let currentWorkloadSubView = 'teachers';
+    let currentClassWorkloadWing = 'ALL';
+
+    function switchWorkloadSubView(view) {
+      currentWorkloadSubView = view;
+      const isTeachers = view === 'teachers';
+      
+      const btnTeachers = document.getElementById('btn-view-workload-teachers');
+      const btnClasses = document.getElementById('btn-view-workload-classes');
+      if (btnTeachers) {
+        btnTeachers.className = isTeachers ?
+          'px-3.5 py-1.5 rounded-lg text-xs font-black bg-white text-indigo-950 shadow-2xs transition' :
+          'px-3.5 py-1.5 rounded-lg text-xs font-semibold text-slate-600 hover:text-slate-900 transition';
+      }
+      if (btnClasses) {
+        btnClasses.className = !isTeachers ?
+          'px-3.5 py-1.5 rounded-lg text-xs font-black bg-white text-indigo-950 shadow-2xs transition flex items-center gap-1.5' :
+          'px-3.5 py-1.5 rounded-lg text-xs font-semibold text-slate-600 hover:text-slate-900 transition flex items-center gap-1.5';
+      }
+
+      const tableTeachers = document.getElementById('container-table-teachers');
+      const tableClasses = document.getElementById('container-table-classes');
+      const wingFilters = document.getElementById('class-workload-wing-filters');
+      const btnCsv = document.getElementById('btn-download-class-csv');
+
+      if (tableTeachers) tableTeachers.classList.toggle('hidden', !isTeachers);
+      if (tableClasses) tableClasses.classList.toggle('hidden', isTeachers);
+      if (wingFilters) wingFilters.classList.toggle('hidden', isTeachers);
+      if (btnCsv) btnCsv.classList.toggle('hidden', isTeachers);
+
+      const titleEl = document.getElementById('workload-panel-title');
+      const descEl = document.getElementById('workload-panel-desc');
+      const searchInput = document.getElementById('workload-search');
+
+      if (isTeachers) {
+        if (titleEl) titleEl.textContent = 'Teacher Weekly Workload Distribution';
+        if (descEl) descEl.textContent = 'Accurate single unified records for all 49 faculty members';
+        if (searchInput) searchInput.placeholder = 'Search teacher or subject...';
+        renderWorkloadTable();
+      } else {
+        if (titleEl) titleEl.textContent = 'Class-Wise Weekly Subject Distribution (All 40 Classes)';
+        if (descEl) descEl.textContent = 'Complete subject-wise period quotas and allocated faculty across all sections';
+        if (searchInput) searchInput.placeholder = 'Search class or subject (e.g. Class 6, Hindi, Maths)...';
+        renderClassWorkloadTable();
+      }
+    }
+
+    function filterClassWorkloadWing(wing) {
+      currentClassWorkloadWing = wing;
+      ['all', 'primary', 'middle', 'senior'].forEach(w => {
+        const btn = document.getElementById('btn-cwing-' + w);
+        if (btn) {
+          const active = (w === 'all' && wing === 'ALL') || (w === wing);
+          btn.className = active ?
+            'px-2.5 py-1 rounded-lg font-black bg-white text-indigo-950 shadow-2xs' :
+            'px-2.5 py-1 rounded-lg font-semibold text-slate-600 hover:text-slate-900';
+        }
+      });
+      renderClassWorkloadTable();
+    }
+
+    function onWorkloadSearch() {
+      if (currentWorkloadSubView === 'teachers') {
+        renderWorkloadTable();
+      } else {
+        renderClassWorkloadTable();
+      }
+    }
+
     function renderWorkloadTable() {
       const query = (document.getElementById('workload-search').value || '').toLowerCase();
       const tbody = document.getElementById('workload-tbody');
+      if (!tbody) return;
       tbody.innerHTML = '';
 
       let idx = 1;
@@ -2286,6 +2409,80 @@
         `;
         tbody.appendChild(tr);
       });
+    }
+
+    function renderClassWorkloadTable() {
+      const query = (document.getElementById('workload-search').value || '').toLowerCase();
+      const tbody = document.getElementById('class-workload-tbody');
+      if (!tbody || !TIMETABLE_DATA || !TIMETABLE_DATA.classes) return;
+      tbody.innerHTML = '';
+
+      let idx = 1;
+      TIMETABLE_DATA.classes.forEach(c => {
+        const cName = c.class_name;
+        const wing = (cName.startsWith('CLASS 1') || cName.startsWith('CLASS 2') || cName.startsWith('CLASS 3') || cName.startsWith('CLASS 4') || cName.startsWith('CLASS 5')) ? 'primary' :
+          (cName.startsWith('CLASS 6') || cName.startsWith('CLASS 7') || cName.startsWith('CLASS 8')) ? 'middle' : 'senior';
+
+        if (currentClassWorkloadWing !== 'ALL' && currentClassWorkloadWing !== wing) {
+          return;
+        }
+
+        const summary = getSubjectSummaryData(c, 'ALL');
+        const ct = c.class_teacher || '—';
+
+        if (query) {
+          const matchClass = cName.toLowerCase().includes(query);
+          const matchCt = ct.toLowerCase().includes(query);
+          const matchSubj = summary.items.some(s => s.subject.toLowerCase().includes(query) || s.teachers.toLowerCase().includes(query));
+          if (!matchClass && !matchCt && !matchSubj) return;
+        }
+
+        const wingBadge = wing === 'primary' ? '<span class="px-2 py-0.5 rounded-md text-[10px] font-extrabold bg-indigo-50 text-indigo-700 border border-indigo-200">Primary</span>' :
+          wing === 'middle' ? '<span class="px-2 py-0.5 rounded-md text-[10px] font-extrabold bg-purple-50 text-purple-700 border border-purple-200">Middle</span>' :
+          '<span class="px-2 py-0.5 rounded-md text-[10px] font-extrabold bg-amber-50 text-amber-800 border border-amber-200">Senior</span>';
+
+        const tr = document.createElement('tr');
+        tr.className = 'hover:bg-slate-50 transition cursor-pointer';
+        tr.title = `Click to view ${cName} Timetable`;
+        tr.onclick = () => {
+          document.getElementById('class-select').value = cName;
+          switchTab('class');
+          renderClassTimetable();
+        };
+
+        const chipsHtml = summary.items.map(s => `
+          <span class="inline-flex items-center gap-1 px-2 py-1 rounded-lg text-xs font-bold bg-white text-slate-800 border border-slate-200 shadow-2xs" title="${s.teachers ? 'Teacher: ' + s.teachers : ''}">
+            <span>${s.subject}</span>
+            <b class="text-indigo-700 font-black ml-0.5 bg-indigo-50 px-1.5 py-0.2 rounded border border-indigo-100">${s.count}</b>
+          </span>
+        `).join(' ');
+
+        tr.innerHTML = `
+          <td class="py-3 px-4 font-mono text-xs text-slate-400 font-bold">${idx++}</td>
+          <td class="py-3 px-4">
+            <div class="font-black text-indigo-950 text-sm flex items-center gap-2">
+              <span>${cName}</span>
+              ${wingBadge}
+            </div>
+          </td>
+          <td class="py-3 px-4 font-bold text-slate-800 text-xs">${ct}</td>
+          <td class="py-3 px-4 text-center">
+            <span class="inline-block px-2.5 py-1 rounded-lg text-xs font-black bg-indigo-100 text-indigo-950 border border-indigo-200 shadow-2xs">
+              ${summary.totalWeeklyPeriods} p/w
+            </span>
+          </td>
+          <td class="py-3 px-4">
+            <div class="flex flex-wrap gap-1.5 max-w-full">
+              ${chipsHtml}
+            </div>
+          </td>
+        `;
+        tbody.appendChild(tr);
+      });
+
+      if (idx === 1) {
+        tbody.innerHTML = `<tr><td colspan="5" class="py-8 text-center text-slate-400 font-semibold text-xs">No classes match the filter criteria</td></tr>`;
+      }
     }
 
     window.onload = init;
