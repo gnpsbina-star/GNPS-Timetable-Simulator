@@ -470,7 +470,8 @@
               <button onclick="filterGradeCategory('ALL')" id="btn-classwing-all" class="px-3 h-[42px] rounded-xl text-xs font-black bg-slate-900 text-white border border-slate-900 transition shadow-xs">All (40)</button>
               <button onclick="filterGradeCategory('1-5')" id="btn-classwing-primary" class="px-3 h-[42px] rounded-xl text-xs font-bold bg-indigo-50 text-indigo-700 hover:bg-indigo-100 border border-indigo-200 transition shadow-2xs">Primary (1-5)</button>
               <button onclick="filterGradeCategory('6-8')" id="btn-classwing-middle" class="px-3 h-[42px] rounded-xl text-xs font-bold bg-purple-50 text-purple-700 hover:bg-purple-100 border border-purple-200 transition shadow-2xs">Middle (6-8)</button>
-              <button onclick="filterGradeCategory('9-12')" id="btn-classwing-senior" class="px-3 h-[42px] rounded-xl text-xs font-bold bg-amber-50 text-amber-800 hover:bg-amber-100 border border-amber-200 transition shadow-2xs">Senior (9-12)</button>
+              <button onclick="filterGradeCategory('9-10')" id="btn-classwing-secondary" class="px-3 h-[42px] rounded-xl text-xs font-bold bg-sky-50 text-sky-700 hover:bg-sky-100 border border-sky-200 transition shadow-2xs">Secondary (9-10)</button>
+              <button onclick="filterGradeCategory('11-12')" id="btn-classwing-senior" class="px-3 h-[42px] rounded-xl text-xs font-bold bg-amber-50 text-amber-800 hover:bg-amber-100 border border-amber-200 transition shadow-2xs">Senior (11-12)</button>
             </div>
           </div>
 
@@ -787,7 +788,8 @@
               <button onclick="filterClassWorkloadWing('ALL')" id="btn-cwing-all" class="px-2.5 py-1 rounded-lg font-black bg-white text-indigo-950 shadow-2xs">All (40)</button>
               <button onclick="filterClassWorkloadWing('primary')" id="btn-cwing-primary" class="px-2.5 py-1 rounded-lg font-semibold text-slate-600 hover:text-slate-900">Primary (1-5) (18)</button>
               <button onclick="filterClassWorkloadWing('middle')" id="btn-cwing-middle" class="px-2.5 py-1 rounded-lg font-semibold text-slate-600 hover:text-slate-900">Middle (6-8) (11)</button>
-              <button onclick="filterClassWorkloadWing('senior')" id="btn-cwing-senior" class="px-2.5 py-1 rounded-lg font-semibold text-slate-600 hover:text-slate-900">Senior (9-12) (11)</button>
+              <button onclick="filterClassWorkloadWing('secondary')" id="btn-cwing-secondary" class="px-2.5 py-1 rounded-lg font-semibold text-slate-600 hover:text-slate-900">Secondary (9-10) (6)</button>
+              <button onclick="filterClassWorkloadWing('senior')" id="btn-cwing-senior" class="px-2.5 py-1 rounded-lg font-semibold text-slate-600 hover:text-slate-900">Senior (11-12) (5)</button>
             </div>
 
             <!-- Display mode toggle for classes view (Matrix Table vs Single-Line Badges) -->
@@ -874,7 +876,8 @@
               <button type="button" onclick="setRangePreset('all')" class="range-preset-btn px-3 py-1.5 rounded-xl text-xs font-bold border border-slate-200 bg-slate-100 hover:bg-indigo-50 hover:text-indigo-700 hover:border-indigo-300 transition">All 40 Classes</button>
               <button type="button" onclick="setRangePreset('primary')" class="range-preset-btn px-3 py-1.5 rounded-xl text-xs font-bold border border-indigo-200 bg-indigo-50 text-indigo-700 hover:bg-indigo-100 transition">Primary (Class 1–5)</button>
               <button type="button" onclick="setRangePreset('middle')" class="range-preset-btn px-3 py-1.5 rounded-xl text-xs font-bold border border-purple-200 bg-purple-50 text-purple-700 hover:bg-purple-100 transition">Middle (Class 6–8)</button>
-              <button type="button" onclick="setRangePreset('senior')" class="range-preset-btn px-3 py-1.5 rounded-xl text-xs font-bold border border-amber-200 bg-amber-50 text-amber-800 hover:bg-amber-100 transition">Senior (Class 9–12)</button>
+              <button type="button" onclick="setRangePreset('secondary')" class="range-preset-btn px-3 py-1.5 rounded-xl text-xs font-bold border border-sky-200 bg-sky-50 text-sky-700 hover:bg-sky-100 transition">Secondary (Class 9–10)</button>
+              <button type="button" onclick="setRangePreset('senior')" class="range-preset-btn px-3 py-1.5 rounded-xl text-xs font-bold border border-amber-200 bg-amber-50 text-amber-800 hover:bg-amber-100 transition">Senior Sec (Class 11–12)</button>
               <button type="button" onclick="setRangePreset('current')" class="range-preset-btn px-3 py-1.5 rounded-xl text-xs font-bold border border-slate-300 bg-white text-slate-700 hover:bg-slate-50 transition">Current Class</button>
             </div>
           </div>
@@ -1067,7 +1070,8 @@
         const grade = parseInt(m[1], 10);
         if (grade >= 1 && grade <= 5) return 'primary';
         if (grade >= 6 && grade <= 8) return 'middle';
-        if (grade >= 9 && grade <= 12) return 'senior';
+        if (grade >= 9 && grade <= 10) return 'secondary';
+        if (grade >= 11 && grade <= 12) return 'senior';
       }
       return 'senior';
     }
@@ -1145,7 +1149,8 @@
       let wing = 'ALL';
       if (cat === '1-5' || cat === 'primary') wing = 'primary';
       else if (cat === '6-8' || cat === 'middle') wing = 'middle';
-      else if (cat === '9-12' || cat === 'senior') wing = 'senior';
+      else if (cat === '9-10' || cat === 'secondary') wing = 'secondary';
+      else if (cat === '11-12' || cat === 'senior') wing = 'senior';
       else wing = 'ALL';
 
       // If user clicks the currently active wing without specifying targetClassName, toggle to ALL
@@ -1160,6 +1165,7 @@
         'ALL': document.getElementById('btn-classwing-all'),
         'primary': document.getElementById('btn-classwing-primary'),
         'middle': document.getElementById('btn-classwing-middle'),
+        'secondary': document.getElementById('btn-classwing-secondary'),
         'senior': document.getElementById('btn-classwing-senior')
       };
 
@@ -1171,6 +1177,8 @@
             btn.className = 'px-3 h-[42px] rounded-xl text-xs font-black bg-indigo-600 text-white shadow-xs border border-indigo-600 transition';
           } else if (w === 'middle') {
             btn.className = 'px-3 h-[42px] rounded-xl text-xs font-black bg-purple-600 text-white shadow-xs border border-purple-600 transition';
+          } else if (w === 'secondary') {
+            btn.className = 'px-3 h-[42px] rounded-xl text-xs font-black bg-sky-600 text-white shadow-xs border border-sky-600 transition';
           } else if (w === 'senior') {
             btn.className = 'px-3 h-[42px] rounded-xl text-xs font-black bg-amber-600 text-white shadow-xs border border-amber-600 transition';
           } else {
@@ -1181,6 +1189,8 @@
             btn.className = 'px-3 h-[42px] rounded-xl text-xs font-bold bg-indigo-50 text-indigo-700 hover:bg-indigo-100 border border-indigo-200 transition shadow-2xs';
           } else if (w === 'middle') {
             btn.className = 'px-3 h-[42px] rounded-xl text-xs font-bold bg-purple-50 text-purple-700 hover:bg-purple-100 border border-purple-200 transition shadow-2xs';
+          } else if (w === 'secondary') {
+            btn.className = 'px-3 h-[42px] rounded-xl text-xs font-bold bg-sky-50 text-sky-700 hover:bg-sky-100 border border-sky-200 transition shadow-2xs';
           } else if (w === 'senior') {
             btn.className = 'px-3 h-[42px] rounded-xl text-xs font-bold bg-amber-50 text-amber-800 hover:bg-amber-100 border border-amber-200 transition shadow-2xs';
           } else {
@@ -1711,7 +1721,8 @@
       if (badge) {
         const wingLabel = currentClassFilterWing === 'primary' ? 'Primary' :
           currentClassFilterWing === 'middle' ? 'Middle' :
-          currentClassFilterWing === 'senior' ? 'Senior' : '';
+          currentClassFilterWing === 'secondary' ? 'Secondary' :
+          currentClassFilterWing === 'senior' ? 'Senior Sec' : '';
         badge.textContent = wingLabel ?
           `${select.selectedIndex + 1} of ${select.options.length} (${wingLabel})` :
           `${select.selectedIndex + 1} of ${select.options.length}`;
@@ -1802,10 +1813,15 @@
         const mEnd = classes.map(c => getClassWing(c.class_name)).lastIndexOf('middle');
         fromSelect.selectedIndex = mStart >= 0 ? mStart : 18;
         toSelect.selectedIndex = mEnd >= 0 ? mEnd : Math.min(28, classes.length - 1);
+      } else if (preset === 'secondary') {
+        const secStart = classes.findIndex(c => getClassWing(c.class_name) === 'secondary');
+        const secEnd = classes.map(c => getClassWing(c.class_name)).lastIndexOf('secondary');
+        fromSelect.selectedIndex = secStart >= 0 ? secStart : 29;
+        toSelect.selectedIndex = secEnd >= 0 ? secEnd : Math.min(34, classes.length - 1);
       } else if (preset === 'senior') {
         const sStart = classes.findIndex(c => getClassWing(c.class_name) === 'senior');
         const sEnd = classes.map(c => getClassWing(c.class_name)).lastIndexOf('senior');
-        fromSelect.selectedIndex = sStart >= 0 ? sStart : 29;
+        fromSelect.selectedIndex = sStart >= 0 ? sStart : 35;
         toSelect.selectedIndex = sEnd >= 0 ? sEnd : classes.length - 1;
       } else if (preset === 'current') {
         const curSelect = document.getElementById('class-select');
@@ -2491,7 +2507,7 @@
 
     function filterClassWorkloadWing(wing) {
       currentClassWorkloadWing = wing;
-      ['all', 'primary', 'middle', 'senior'].forEach(w => {
+      ['all', 'primary', 'middle', 'secondary', 'senior'].forEach(w => {
         const btn = document.getElementById('btn-cwing-' + w);
         if (btn) {
           const active = (w === 'all' && wing === 'ALL') || (w === wing);
@@ -2632,7 +2648,8 @@
       matched.forEach(({ c, cName, wing, ct, summary }) => {
         const wingBadge = wing === 'primary' ? '<span class="px-2 py-0.5 rounded-md text-[10px] font-extrabold bg-indigo-50 text-indigo-700 border border-indigo-200">Primary</span>' :
           wing === 'middle' ? '<span class="px-2 py-0.5 rounded-md text-[10px] font-extrabold bg-purple-50 text-purple-700 border border-purple-200">Middle</span>' :
-          '<span class="px-2 py-0.5 rounded-md text-[10px] font-extrabold bg-amber-50 text-amber-800 border border-amber-200">Senior</span>';
+          wing === 'secondary' ? '<span class="px-2 py-0.5 rounded-md text-[10px] font-extrabold bg-sky-50 text-sky-700 border border-sky-200">Secondary (9-10)</span>' :
+          '<span class="px-2 py-0.5 rounded-md text-[10px] font-extrabold bg-amber-50 text-amber-800 border border-amber-200">Senior Sec (11-12)</span>';
 
         const tr = document.createElement('tr');
         tr.className = 'hover:bg-slate-50/80 transition cursor-pointer group';

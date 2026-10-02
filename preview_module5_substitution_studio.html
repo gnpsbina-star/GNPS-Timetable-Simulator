@@ -783,7 +783,8 @@
       const upper = className.toUpperCase();
       if (/CLASS [1-5] /.test(upper) || upper.includes('PRIMARY')) return 'Primary';
       if (/CLASS [6-8] /.test(upper) || upper.includes('MIDDLE')) return 'Middle';
-      if (/CLASS (9|10|11|12) /.test(upper) || upper.includes('SENIOR')) return 'Senior';
+      if (/CLASS (9|10) /.test(upper)) return 'Secondary';
+      if (/CLASS (11|12) /.test(upper) || upper.includes('SENIOR')) return 'Senior';
       return 'General';
     }
 
@@ -792,10 +793,12 @@
       const candWings = TEACHER_WINGS[candName];
       if (!candWings || candWings.size === 0) return { score: 0, reason: null };
       if (candWings.has(targetWing)) return { score: 30, reason: 'Same Wing' };
-      if (targetWing === 'Middle' && (candWings.has('Primary') || candWings.has('Senior'))) return { score: 15, reason: 'Adjacent Wing' };
-      if ((targetWing === 'Primary' || targetWing === 'Senior') && candWings.has('Middle')) return { score: 15, reason: 'Adjacent Wing' };
-      if (targetWing === 'Primary' && candWings.size === 1 && candWings.has('Senior')) return { score: -50, reason: null };
-      if (targetWing === 'Senior' && candWings.size === 1 && candWings.has('Primary')) return { score: -50, reason: null };
+      if (targetWing === 'Middle' && (candWings.has('Primary') || candWings.has('Secondary'))) return { score: 15, reason: 'Adjacent Wing' };
+      if (targetWing === 'Secondary' && (candWings.has('Middle') || candWings.has('Senior'))) return { score: 15, reason: 'Adjacent Wing' };
+      if (targetWing === 'Senior' && candWings.has('Secondary')) return { score: 15, reason: 'Adjacent Wing' };
+      if (targetWing === 'Primary' && candWings.has('Middle')) return { score: 15, reason: 'Adjacent Wing' };
+      if (targetWing === 'Primary' && candWings.size === 1 && (candWings.has('Senior') || candWings.has('Secondary'))) return { score: -50, reason: null };
+      if ((targetWing === 'Senior' || targetWing === 'Secondary') && candWings.size === 1 && candWings.has('Primary')) return { score: -50, reason: null };
       return { score: 0, reason: null };
     }
 
