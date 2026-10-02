@@ -149,6 +149,16 @@ class TimetableRequestHandler(http.server.SimpleHTTPRequestHandler):
                     except Exception as purge_err:
                         print(f"Warning during cascade purge of {del_t}: {purge_err}", flush=True)
 
+                    # The incoming config is written over the purged file below, so
+                    # also drop the deleted faculty from its class teacher and event slots.
+                    del_lower = del_t.lower()
+                    for c in data.get('classes', []):
+                        if (c.get('class_teacher') or '').strip().lower() == del_lower:
+                            c['class_teacher'] = ''
+                    for ev in data.get('events', []):
+                        if 'teacher_ids' in ev:
+                            ev['teacher_ids'] = [t for t in ev['teacher_ids'] if t.strip().lower() != del_lower]
+
                 with open(config_path, 'w', encoding='utf-8') as f:
                     json.dump(data, f, indent=2, ensure_ascii=False)
 
